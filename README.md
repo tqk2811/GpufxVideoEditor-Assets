@@ -46,6 +46,22 @@ come from the catalogs; FLAC durations are read from the file header, MP3 durati
 The licence and attribution of these packs are the MIT licence of AI Video Studio, listed in
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
+## Sticker pack
+
+107 emoji as 3D PNG images, from [Fluent Emoji](https://github.com/microsoft/fluentui-emoji) by Microsoft
+(MIT). The images are not in this repository. `scripts/pack_stickers.py` builds the zip from a checkout of
+that project, which must be at the commit pinned in the script (`FLUENT_COMMIT`):
+
+```sh
+py -I scripts/pack_stickers.py --source <fluentui-emoji> -o dist-stickers
+```
+
+It writes `stickers.zip` with `manifest.json` (format 1, type `sticker`; items have `id`, `file`, `name`,
+`tags`, `category`), `LICENSE.txt` (the Microsoft licence), `NOTICE.txt` and `images/<id>.png`. Names, tags
+and categories come from the `metadata.json` of each emoji, and the zip is reproducible byte for byte. The
+list of 107 emoji follows the sticker panel of AI Video Studio. Only the files in the checkout are used:
+a sparse checkout of the `LICENSE` and of the 107 `assets/<Name>/` folders is enough.
+
 ## License
 
 The repository is [MIT](LICENSE). Each package carries `LICENSE.txt` with the full text of every licence
