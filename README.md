@@ -30,6 +30,22 @@ py scripts/pack.py --notices        # rewrite THIRD_PARTY_NOTICES.md
 `scripts/pack.py` uses only the Python standard library. Each zip has `manifest.json` at its root and is
 reproducible byte for byte (sorted entries, fixed timestamps). Zips are build output and are not committed.
 
+## Audio packs
+
+Sound effects and music from AI Video Studio are shipped as release zips, but the audio is not in this
+repository. `scripts/pack_audio.py` builds them from a checkout of that project:
+
+```sh
+py scripts/pack_audio.py --source <ai-video-studio>/assets -o dist-audio
+```
+
+It writes `sfx-<category>.zip` for every category of `sfx/catalog.json` and `music.zip` (16 zips, 339
+audio files). Each zip has `manifest.json` (format 1), `LICENSE.txt`, `NOTICE.txt` and `audio/<file>`;
+audio is stored without recompression and the zips are reproducible byte for byte. Names, tags and loop
+come from the catalogs; FLAC durations are read from the file header, MP3 durations from the catalog.
+The licence and attribution of these packs are the MIT licence of AI Video Studio, listed in
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
 ## License
 
 The repository is [MIT](LICENSE). Each package carries `LICENSE.txt` with the full text of every licence
