@@ -1,0 +1,54 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.avs.punch",
+  "name": "Punch",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Starts zoomed in and settles to the unmodified frame.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "amp",
+      "type": "float",
+      "default": 0.12,
+      "min": 0,
+      "max": 0.5,
+      "description": "Extra scale at the first frame"
+    },
+    {
+      "name": "duration",
+      "type": "float",
+      "default": 0.25,
+      "min": 0.01,
+      "max": 10,
+      "description": "Length of the motion in seconds, shortened to the clip when the clip is shorter"
+    },
+    {
+      "name": "clip_time",
+      "type": "float",
+      "default": 0,
+      "description": "Seconds since the start of the clip, filled by the editor"
+    },
+    {
+      "name": "clip_duration",
+      "type": "float",
+      "default": 0,
+      "description": "Length of the clip on the timeline in seconds, filled by the editor"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/punch.wgsl"
+        }
+      ]
+    }
+  ]
+}

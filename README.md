@@ -5,7 +5,7 @@ Shader packages for [GpufxVideoEditor](https://github.com/tqk2811/GpufxVideoEdit
 
 Based on AI Video Studio by Nguyễn Tất Kiểm
 (<https://github.com/nguyentatkiem/ai-video-studio>). The masks, looks, transitions and the shake effect
-are rewritten in WGSL from its formulas. No code, image or preview of the original project is copied.
+are rewritten in WGSL from its formulas. `punch`, `zoom-in`, `whip`, `blur-in` and `push` read the `clip_time` and `clip_duration` parameters, which the editor fills in; a tool that does not leaves them at 0. No code, image or preview of the original project is copied.
 
 ## Packages
 
@@ -14,7 +14,7 @@ are rewritten in WGSL from its formulas. No code, image or preview of the origin
 | `packages/gpufx/avs-mask/` | `mask-circle`, `mask-rounded`, `mask-rect`, `mask-heart`, `mask-star`, `mask-diamond`, `mask-blob` |
 | `packages/gpufx/avs-look/` | `look-warm`, `look-cool`, `look-vivid`, `look-bw`, `look-film`, `look-fade`, `look-night`, `look-pop` |
 | `packages/gpufx/avs-transition/` | `chromatic-aberration-wipe`, `curtain-reveal`, `directional-wipe`, `grid-pixelate-wipe`, `halftone-dissolve`, `iris-reveal`, `whip-pan-cut`, `zoom-through-transition` |
-| `packages/gpufx/avs-effect/` | `shake` |
+| `packages/gpufx/avs-effect/` | `shake`, `punch`, `zoom-in`, `whip`, `blur-in`, `push` |
 
 Masks keep alpha: the area outside the shape is transparent, so they work on a clip placed over another
 one. The `bg` parameter fills it with a color instead.

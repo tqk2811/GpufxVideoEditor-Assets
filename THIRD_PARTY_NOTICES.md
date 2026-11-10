@@ -7,6 +7,67 @@ Each package zip carries its own `NOTICE.txt` and `LICENSE.txt` with the full li
 
 ### Licence 1
 
+Packages: `blur-in`, `look-bw`, `look-cool`, `look-fade`, `look-film`, `look-night`, `look-pop`, `look-vivid`, `look-warm`, `mask-blob`, `mask-circle`, `mask-diamond`, `mask-heart`, `mask-rect`, `mask-rounded`, `mask-star`, `punch`, `push`, `shake`, `whip`, `zoom-in`
+
+```text
+This package is distributed under the terms below. Every licence that applies is
+reproduced in full.
+
+==============================================================================
+AI Video Studio
+==============================================================================
+
+MIT License
+
+Copyright (c) 2026 Nguyễn Tất Kiểm
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+==============================================================================
+GpufxVideoEditor-Assets (this repackaging)
+==============================================================================
+
+MIT License
+
+Copyright (c) 2026 tqk2811
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+### Licence 2
+
 Packages: `chromatic-aberration-wipe`, `curtain-reveal`, `directional-wipe`, `grid-pixelate-wipe`, `halftone-dissolve`, `iris-reveal`, `whip-pan-cut`, `zoom-through-transition`
 
 ```text
@@ -261,67 +322,6 @@ HyperFrames (HeyGen, Inc.)
    limitations under the License.
 ```
 
-### Licence 2
-
-Packages: `look-bw`, `look-cool`, `look-fade`, `look-film`, `look-night`, `look-pop`, `look-vivid`, `look-warm`, `mask-blob`, `mask-circle`, `mask-diamond`, `mask-heart`, `mask-rect`, `mask-rounded`, `mask-star`, `shake`
-
-```text
-This package is distributed under the terms below. Every licence that applies is
-reproduced in full.
-
-==============================================================================
-AI Video Studio
-==============================================================================
-
-MIT License
-
-Copyright (c) 2026 Nguyễn Tất Kiểm
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-==============================================================================
-GpufxVideoEditor-Assets (this repackaging)
-==============================================================================
-
-MIT License
-
-Copyright (c) 2026 tqk2811
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
 ### Licence 3
 
 Packages: `sfx-<category>`, `music`
@@ -351,6 +351,19 @@ SOFTWARE.
 ```
 
 ## Package notices
+
+### `blur-in`
+
+```text
+Blur In
+
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+Source in AI Video Studio: engine/engine.js (fxWrap, type blur_in)
+Modifications: Rewritten in WGSL from the formula; driven by the clip's own clock.
+```
 
 ### `chromatic-aberration-wipe`
 
@@ -661,6 +674,32 @@ Source in AI Video Studio: engine/engine.js (MASK_SHAPES, maskCss); references/k
 Modifications: Rewritten in WGSL from the SVG mask shapes; the Gaussian feather is computed from a signed distance.
 ```
 
+### `punch`
+
+```text
+Punch
+
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+Source in AI Video Studio: engine/engine.js (fxWrap, type punch)
+Modifications: Rewritten in WGSL from the formula; driven by the clip's own clock.
+```
+
+### `push`
+
+```text
+Push
+
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+Source in AI Video Studio: engine/engine.js (fxWrap, type push)
+Modifications: Rewritten in WGSL from the formula; driven by the clip's own clock.
+```
+
 ### `shake`
 
 ```text
@@ -672,6 +711,19 @@ https://github.com/nguyentatkiem/ai-video-studio
 
 Source in AI Video Studio: engine/engine.js (fxWrap, type shake)
 Modifications: Rewritten in WGSL from the formula; the amplitude no longer decays, and the clip-time parameter is gone.
+```
+
+### `whip`
+
+```text
+Whip
+
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+Source in AI Video Studio: engine/engine.js (fxWrap, type whip)
+Modifications: Rewritten in WGSL from the formula; driven by the clip's own clock.
 ```
 
 ### `whip-pan-cut`
@@ -691,6 +743,19 @@ This package is a modified work based on the block `whip-pan-cut` of HyperFrames
 Apache License, Version 2.0, as bundled in AI Video Studio at engine/hf/.
 The original HTML, CSS and GSAP code is not included in this package: the timing and
 the formulas were rewritten in WGSL. Changes were made to the original work.
+```
+
+### `zoom-in`
+
+```text
+Zoom In
+
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+Source in AI Video Studio: engine/engine.js (fxWrap, type zoom_in)
+Modifications: Rewritten in WGSL from the formula; driven by the clip's own clock.
 ```
 
 ### `zoom-through-transition`

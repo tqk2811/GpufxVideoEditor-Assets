@@ -1,0 +1,77 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.avs.whip",
+  "name": "Whip",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "A fast horizontal whip that returns to the unmodified frame.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "distance",
+      "type": "float",
+      "default": 420,
+      "min": 0,
+      "max": 1280,
+      "description": "Travel in design pixels on a 1280 long side"
+    },
+    {
+      "name": "blur",
+      "type": "float",
+      "default": 22,
+      "min": 0,
+      "max": 80,
+      "description": "Peak blur (standard deviation) in design pixels"
+    },
+    {
+      "name": "duration",
+      "type": "float",
+      "default": 0.3,
+      "min": 0.01,
+      "max": 10,
+      "description": "Length of the motion in seconds, shortened to the clip when the clip is shorter"
+    },
+    {
+      "name": "clip_time",
+      "type": "float",
+      "default": 0,
+      "description": "Seconds since the start of the clip, filled by the editor"
+    },
+    {
+      "name": "clip_duration",
+      "type": "float",
+      "default": 0,
+      "description": "Length of the clip on the timeline in seconds, filled by the editor"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/whip_h.wgsl",
+          "inputs": [
+            "src"
+          ],
+          "outputs": [
+            "blur_h"
+          ]
+        },
+        {
+          "shader": "shaders/whip_v.wgsl",
+          "inputs": [
+            "blur_h"
+          ],
+          "outputs": [
+            "out"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+Blur In
+
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+Source in AI Video Studio: engine/engine.js (fxWrap, type blur_in)
+Modifications: Rewritten in WGSL from the formula; driven by the clip's own clock.

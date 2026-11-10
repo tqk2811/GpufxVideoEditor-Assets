@@ -1,0 +1,77 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.avs.blur-in",
+  "name": "Blur In",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Starts blurred and bright and clears to the unmodified frame.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "blur",
+      "type": "float",
+      "default": 24,
+      "min": 0,
+      "max": 80,
+      "description": "Blur (standard deviation) at the first frame in design pixels"
+    },
+    {
+      "name": "brightness",
+      "type": "float",
+      "default": 0.4,
+      "min": 0,
+      "max": 2,
+      "description": "Extra brightness at the first frame"
+    },
+    {
+      "name": "duration",
+      "type": "float",
+      "default": 0.35,
+      "min": 0.01,
+      "max": 10,
+      "description": "Length of the motion in seconds, shortened to the clip when the clip is shorter"
+    },
+    {
+      "name": "clip_time",
+      "type": "float",
+      "default": 0,
+      "description": "Seconds since the start of the clip, filled by the editor"
+    },
+    {
+      "name": "clip_duration",
+      "type": "float",
+      "default": 0,
+      "description": "Length of the clip on the timeline in seconds, filled by the editor"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/blur_in_h.wgsl",
+          "inputs": [
+            "src"
+          ],
+          "outputs": [
+            "blur_h"
+          ]
+        },
+        {
+          "shader": "shaders/blur_in_v.wgsl",
+          "inputs": [
+            "blur_h"
+          ],
+          "outputs": [
+            "out"
+          ]
+        }
+      ]
+    }
+  ]
+}

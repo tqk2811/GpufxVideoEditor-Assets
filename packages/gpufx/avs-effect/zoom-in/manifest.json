@@ -1,0 +1,60 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.avs.zoom-in",
+  "name": "Zoom In",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Zooms in with an eased curve; by default the frame returns to normal when the motion ends, as in the source.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "amp",
+      "type": "float",
+      "default": 0.15,
+      "min": 0,
+      "max": 0.5,
+      "description": "Scale added by the end of the motion"
+    },
+    {
+      "name": "duration",
+      "type": "float",
+      "default": 0.6,
+      "min": 0.01,
+      "max": 10,
+      "description": "Length of the motion in seconds, shortened to the clip when the clip is shorter"
+    },
+    {
+      "name": "hold",
+      "type": "bool",
+      "default": false,
+      "description": "Keep the end of the zoom after the motion finishes instead of snapping back to normal"
+    },
+    {
+      "name": "clip_time",
+      "type": "float",
+      "default": 0,
+      "description": "Seconds since the start of the clip, filled by the editor"
+    },
+    {
+      "name": "clip_duration",
+      "type": "float",
+      "default": 0,
+      "description": "Length of the clip on the timeline in seconds, filled by the editor"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/zoom_in.wgsl"
+        }
+      ]
+    }
+  ]
+}
