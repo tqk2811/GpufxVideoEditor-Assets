@@ -1,0 +1,72 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.avs.iris-reveal",
+  "name": "Iris Reveal",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "A circle opens from a chosen point with a thin accent rim.",
+  "inputs": [
+    {
+      "name": "first",
+      "description": "Outgoing clip"
+    },
+    {
+      "name": "second",
+      "description": "Incoming clip (same size as the first)",
+      "same_size": true
+    }
+  ],
+  "params": [
+    {
+      "name": "progress",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "description": "0 = first clip, 1 = second clip"
+    },
+    {
+      "name": "x",
+      "type": "float",
+      "default": 50,
+      "min": 0,
+      "max": 100,
+      "description": "Center X, percent of the frame"
+    },
+    {
+      "name": "y",
+      "type": "float",
+      "default": 50,
+      "min": 0,
+      "max": 100,
+      "description": "Center Y, percent of the frame"
+    },
+    {
+      "name": "style",
+      "type": "enum",
+      "values": {
+        "color": 0,
+        "plain": 1
+      },
+      "default": "color",
+      "description": "color dims and desaturates the first clip during the pass; plain does not"
+    },
+    {
+      "name": "accent",
+      "type": "color",
+      "default": "#22c55e",
+      "description": "Rim color"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/transition.wgsl"
+        }
+      ]
+    }
+  ]
+}

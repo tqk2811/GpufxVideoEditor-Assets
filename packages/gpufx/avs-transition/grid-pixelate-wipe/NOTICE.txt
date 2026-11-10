@@ -1,0 +1,14 @@
+Grid Pixelate Wipe
+
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+Source in AI Video Studio: engine/hf/grid-pixelate-wipe/
+Modifications: Rewritten in WGSL from the timeline and CSS formulas; progress drives the timeline in place of the clock. The clip swap happens at the moment the cells cover the frame; the source swapped a little earlier, while some cells were still growing.
+
+This package is a modified work based on the block `grid-pixelate-wipe` of HyperFrames
+(https://github.com/heygen-com/hyperframes), Copyright 2026 HeyGen, Inc., licensed under the
+Apache License, Version 2.0, as bundled in AI Video Studio at engine/hf/.
+The original HTML, CSS and GSAP code is not included in this package: the timing and
+the formulas were rewritten in WGSL. Changes were made to the original work.

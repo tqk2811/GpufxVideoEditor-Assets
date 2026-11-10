@@ -1,0 +1,52 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.avs.directional-wipe",
+  "name": "Directional Wipe",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Push wipe with a sweeping highlight band and a short red/cyan strobe.",
+  "inputs": [
+    {
+      "name": "first",
+      "description": "Outgoing clip"
+    },
+    {
+      "name": "second",
+      "description": "Incoming clip (same size as the first)",
+      "same_size": true
+    }
+  ],
+  "params": [
+    {
+      "name": "progress",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "description": "0 = first clip, 1 = second clip"
+    },
+    {
+      "name": "direction",
+      "type": "enum",
+      "values": [
+        "left",
+        "right",
+        "up",
+        "down"
+      ],
+      "default": "left",
+      "description": "Edge the wipe starts from: left, right, up (bottom edge) or down (top edge)"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/transition.wgsl"
+        }
+      ]
+    }
+  ]
+}

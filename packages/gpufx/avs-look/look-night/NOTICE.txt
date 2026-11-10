@@ -1,0 +1,8 @@
+Night Look
+
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+Source in AI Video Studio: studio/clips.js and engine/engine.js (LUT_CSS / LUT)
+Modifications: Rewritten in WGSL from the CSS filter chain `brightness(.8) saturate(1.2) hue-rotate(195deg) contrast(1.1)`; adds an `amount` parameter.

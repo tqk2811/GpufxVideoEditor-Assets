@@ -1,0 +1,60 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.avs.chromatic-aberration-wipe",
+  "name": "Chromatic Aberration Wipe",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Push wipe with a red/cyan strobe whose strength is adjustable.",
+  "inputs": [
+    {
+      "name": "first",
+      "description": "Outgoing clip"
+    },
+    {
+      "name": "second",
+      "description": "Incoming clip (same size as the first)",
+      "same_size": true
+    }
+  ],
+  "params": [
+    {
+      "name": "progress",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "description": "0 = first clip, 1 = second clip"
+    },
+    {
+      "name": "direction",
+      "type": "enum",
+      "values": [
+        "left",
+        "right",
+        "up",
+        "down"
+      ],
+      "default": "left",
+      "description": "Edge the wipe starts from: left, right, up (bottom edge) or down (top edge)"
+    },
+    {
+      "name": "aberration",
+      "type": "float",
+      "default": 1,
+      "min": 0,
+      "max": 2,
+      "description": "Strength and offset of the red/cyan strobe"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/transition.wgsl"
+        }
+      ]
+    }
+  ]
+}

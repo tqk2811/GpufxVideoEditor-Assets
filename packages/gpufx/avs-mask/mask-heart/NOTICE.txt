@@ -1,0 +1,8 @@
+Heart Mask
+
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+Source in AI Video Studio: engine/engine.js (MASK_SHAPES, maskCss); references/keyframes-mask-broll.md
+Modifications: Rewritten in WGSL from the SVG mask shapes; the Gaussian feather is computed from a signed distance.

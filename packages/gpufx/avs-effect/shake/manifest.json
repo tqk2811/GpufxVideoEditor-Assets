@@ -1,0 +1,42 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.avs.shake",
+  "name": "Shake",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Continuous camera shake; it follows the timeline clock and needs no clip time.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "amp",
+      "type": "float",
+      "default": 14,
+      "min": 0,
+      "max": 100,
+      "description": "Amplitude in design pixels on a 1280 long side"
+    },
+    {
+      "name": "rate",
+      "type": "float",
+      "default": 30,
+      "min": 1,
+      "max": 120,
+      "description": "Shakes per second"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/shake.wgsl"
+        }
+      ]
+    }
+  ]
+}

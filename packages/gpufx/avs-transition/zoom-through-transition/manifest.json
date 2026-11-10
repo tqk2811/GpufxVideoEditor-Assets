@@ -1,0 +1,51 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.avs.zoom-through-transition",
+  "name": "Zoom Through Transition",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Push wipe through depth: the parallax and blur grow with depth.",
+  "inputs": [
+    {
+      "name": "first",
+      "description": "Outgoing clip"
+    },
+    {
+      "name": "second",
+      "description": "Incoming clip (same size as the first)",
+      "same_size": true
+    }
+  ],
+  "params": [
+    {
+      "name": "progress",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "description": "0 = first clip, 1 = second clip"
+    },
+    {
+      "name": "depth",
+      "type": "enum",
+      "values": {
+        "close": 0,
+        "standard": 1,
+        "far": 2
+      },
+      "default": "standard",
+      "description": "close, standard or far (parallax and blur)"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/transition.wgsl"
+        }
+      ]
+    }
+  ]
+}

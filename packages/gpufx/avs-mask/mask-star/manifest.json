@@ -1,0 +1,84 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.avs.mask-star",
+  "name": "Star Mask",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Keeps the part of the picture inside a star and makes the rest transparent.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "out",
+      "pixel_layout": "rgba"
+    }
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "float",
+      "default": 50,
+      "min": -100,
+      "max": 200,
+      "description": "Center X, percent of the frame"
+    },
+    {
+      "name": "y",
+      "type": "float",
+      "default": 50,
+      "min": -100,
+      "max": 200,
+      "description": "Center Y, percent of the frame"
+    },
+    {
+      "name": "w",
+      "type": "float",
+      "default": 80,
+      "min": 1,
+      "max": 300,
+      "description": "Width, percent of the frame"
+    },
+    {
+      "name": "h",
+      "type": "float",
+      "default": 60,
+      "min": 1,
+      "max": 300,
+      "description": "Height, percent of the frame"
+    },
+    {
+      "name": "feather",
+      "type": "float",
+      "default": 0,
+      "min": 0,
+      "max": 20,
+      "description": "Soft edge, percent of the frame"
+    },
+    {
+      "name": "invert",
+      "type": "bool",
+      "default": false,
+      "description": "Keep the outside of the shape"
+    },
+    {
+      "name": "bg",
+      "type": "color",
+      "default": "#00000000",
+      "description": "Color under the masked part (transparent by default)"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/mask.wgsl"
+        }
+      ]
+    }
+  ]
+}

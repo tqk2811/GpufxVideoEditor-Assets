@@ -1,0 +1,64 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.avs.curtain-reveal",
+  "name": "Curtain Reveal",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Stage curtains close over the first clip and open onto the second.",
+  "inputs": [
+    {
+      "name": "first",
+      "description": "Outgoing clip"
+    },
+    {
+      "name": "second",
+      "description": "Incoming clip (same size as the first)",
+      "same_size": true
+    }
+  ],
+  "params": [
+    {
+      "name": "progress",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "description": "0 = first clip, 1 = second clip"
+    },
+    {
+      "name": "tone",
+      "type": "enum",
+      "values": [
+        "red",
+        "burgundy",
+        "navy",
+        "forest"
+      ],
+      "default": "burgundy",
+      "description": "Curtain color"
+    },
+    {
+      "name": "pelmet",
+      "type": "bool",
+      "default": true,
+      "description": "Draw the band along the top"
+    },
+    {
+      "name": "spotlight",
+      "type": "bool",
+      "default": true,
+      "description": "Warm light on the second clip while the curtains open"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/transition.wgsl"
+        }
+      ]
+    }
+  ]
+}
