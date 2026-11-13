@@ -1,0 +1,7 @@
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+The subtitle styles recreate, as style data, caption styles of engine/style.css, engine/slate.js and
+the packs in engine/packs/: colours, sizes, outlines, shadows, boxes, positions and how the spoken
+word is marked. No code or font of the original project is copied.

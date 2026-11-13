@@ -82,6 +82,38 @@ original ones; pixels of the 720x1280 canvas are turned into parts of the frame 
 (`dy`, `blur`). The skew of the slides is left out, because a curve has no skew. `fly`, `tumble` and
 `type` are left out too: they move each character or depend on per-line positions.
 
+## Text and subtitle style packs
+
+The text looks and caption styles of AI Video Studio, written again as style data for the editor's
+`text-style` and `subtitle-style` packs: colours, sizes, outlines, shadows, glows, boxes, weights,
+positions and how the spoken word is marked. Only measured values are kept; no code or font is copied.
+Each pack has its source in `text-styles/<pack>/`: `pack.json` (type, id, name, version, items),
+`LICENSE.txt` and `NOTICE.txt`. `scripts/pack_text_styles.py` checks every source with the rules of the
+editor's strict reader and builds the zips:
+
+```sh
+py -I scripts/pack_text_styles.py           # -> dist/<pack>.zip
+py -I scripts/pack_text_styles.py --check   # validate only
+```
+
+| Zip | Type | Styles | Licence |
+|-----|------|--------|---------|
+| `avs-text-style` | `text-style` | 12 text presets of `studio/library.js` | MIT (AI Video Studio) |
+| `avs-subtitle-style` | `subtitle-style` | 22: the basic, `tiktok` and `slate` captions and the caption style of each pack | MIT (AI Video Studio) |
+| `avs-subtitle-style-ghost` | `subtitle-style` | 16 of the print, broadcast, explain and montage packs | MIT (AI Video Studio, ghost-editor, lemo-opuscar) |
+| `avs-subtitle-style-hf` | `subtitle-style` | 10 of the `hf_*` styles | MIT (AI Video Studio) and Apache-2.0 (HyperFrames) |
+
+Each zip has `manifest.json` (format 1), `LICENSE.txt` and `NOTICE.txt`, and is reproducible byte for
+byte. Pixels are turned into parts: a size is a part of the frame height, outline widths, shadow offsets
+and blurs, box padding and radius and glow radius are parts of the font size, and the layout (`anchor_y`,
+`max_width`) is a part of the frame. The text presets use the 720x1280 canvas; the captions use the
+canvas they are drawn on by default, 1280x720, or 720x1280 for the vertical-only packs. Where CSS stacks
+several shadows, the hard drop shadow is kept and a stack of blurred shadows becomes the glow. Animations
+refer to items of the clip animation pack (`avs-clip-animation/<item>`). The `karaoke` part (active,
+spoken, upcoming and emphasised words) is filled in, though the editor does not draw it yet. Fonts are
+only hints; the editor picks the first one installed. Styles that need shaders, particles, textures,
+blending or per-character motion are left out; [docs/Backlog-vi.md](docs/Backlog-vi.md) lists them.
+
 ## License
 
 The repository is [MIT](LICENSE). Each package carries `LICENSE.txt` with the full text of every licence

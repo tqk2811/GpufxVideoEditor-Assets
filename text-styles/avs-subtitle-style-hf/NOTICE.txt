@@ -1,0 +1,12 @@
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+Source in AI Video Studio: engine/packs/captions_hf.js (the hf_* caption styles).
+Modifications: rewritten as style data (colours, sizes, outlines, shadows, boxes, positions and how
+the spoken word is marked); the per-word motion is not included.
+
+These styles take their visual ideas from the caption components of HyperFrames
+(https://github.com/heygen-com/hyperframes), Copyright 2026 HeyGen, Inc., licensed under the
+Apache License, Version 2.0. No HTML, CSS or JavaScript of HyperFrames or of AI Video Studio is
+included in this package. Changes were made to the original work.

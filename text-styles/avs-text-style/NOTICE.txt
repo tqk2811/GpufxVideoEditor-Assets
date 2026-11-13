@@ -1,0 +1,7 @@
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+The text styles recreate, as style data, the text looks of engine/vertical.js (TEXT_STYLE) and the
+text presets of studio/library.js: colours, sizes, outlines, shadows, boxes, weights and the animation
+each preset plays. No code or font of the original project is copied.

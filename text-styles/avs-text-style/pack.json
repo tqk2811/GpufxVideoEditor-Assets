@@ -1,0 +1,600 @@
+{
+  "type": "text-style",
+  "id": "avs-text-style",
+  "name": "Text styles: AI Video Studio",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "yellow-title",
+      "name": "Yellow title",
+      "category": "title",
+      "preview_text": "SIÊU HAY",
+      "style": {
+        "size": 0.0563,
+        "color": [
+          252,
+          219,
+          54,
+          255
+        ],
+        "line_spacing": 1.05,
+        "weight": 900,
+        "italic": true,
+        "letter_spacing": -0.01,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "offset": [
+            0.0417,
+            0.0556
+          ],
+          "blur": 0.0
+        },
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/pop",
+          "duration": 0.28
+        },
+        "out": {
+          "preset": "avs-clip-animation/fade_out",
+          "duration": 0.12
+        }
+      }
+    },
+    {
+      "id": "white-bold",
+      "name": "Bold white",
+      "category": "title",
+      "preview_text": "Chữ trắng",
+      "style": {
+        "size": 0.0469,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "line_spacing": 1.05,
+        "weight": 900,
+        "italic": true,
+        "letter_spacing": -0.01,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "offset": [
+            0.05,
+            0.0667
+          ],
+          "blur": 0.0
+        },
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/pop",
+          "duration": 0.28
+        },
+        "out": {
+          "preset": "avs-clip-animation/fade_out",
+          "duration": 0.12
+        }
+      }
+    },
+    {
+      "id": "ink-yellow",
+      "name": "Ink yellow",
+      "category": "title",
+      "preview_text": "CHÚ Ý",
+      "style": {
+        "size": 0.05,
+        "color": [
+          255,
+          229,
+          59,
+          255
+        ],
+        "line_spacing": 1.05,
+        "weight": 900,
+        "italic": true,
+        "letter_spacing": -0.01,
+        "outline": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "width": 0.0469
+        },
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "offset": [
+            0.0781,
+            0.0938
+          ],
+          "blur": 0.0
+        },
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/drop",
+          "duration": 0.3
+        },
+        "out": {
+          "preset": "avs-clip-animation/fade_out",
+          "duration": 0.12
+        }
+      }
+    },
+    {
+      "id": "fire",
+      "name": "Fire",
+      "category": "title",
+      "preview_text": "NÓNG!",
+      "style": {
+        "size": 0.0594,
+        "color": [
+          232,
+          67,
+          42,
+          255
+        ],
+        "line_spacing": 1.05,
+        "weight": 900,
+        "italic": true,
+        "letter_spacing": -0.01,
+        "outline": {
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "width": 0.0329
+        },
+        "shadow": {
+          "color": [
+            58,
+            10,
+            5,
+            255
+          ],
+          "offset": [
+            0.0526,
+            0.0658
+          ],
+          "blur": 0.0
+        },
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/blur_zoom",
+          "duration": 0.35
+        },
+        "out": {
+          "preset": "avs-clip-animation/fade_out",
+          "duration": 0.12
+        }
+      }
+    },
+    {
+      "id": "glow",
+      "name": "Glow",
+      "category": "glow",
+      "preview_text": "GLOW",
+      "style": {
+        "size": 0.0609,
+        "color": [
+          255,
+          255,
+          34,
+          255
+        ],
+        "line_spacing": 1.05,
+        "weight": 900,
+        "italic": true,
+        "letter_spacing": -0.01,
+        "outline": {
+          "color": [
+            179,
+            58,
+            0,
+            255
+          ],
+          "width": 0.0192
+        },
+        "glow": {
+          "color": [
+            255,
+            122,
+            0,
+            255
+          ],
+          "outer_color": [
+            255,
+            80,
+            0,
+            191
+          ],
+          "radius": 0.4359,
+          "intensity": 1.0,
+          "falloff": 1.5
+        },
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/blur_zoom",
+          "duration": 0.35
+        },
+        "out": {
+          "preset": "avs-clip-animation/fade_out",
+          "duration": 0.12
+        }
+      }
+    },
+    {
+      "id": "neon-green",
+      "name": "Neon",
+      "category": "glow",
+      "preview_text": "neon",
+      "style": {
+        "size": 0.0625,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "line_spacing": 1.05,
+        "weight": 900,
+        "italic": true,
+        "letter_spacing": -0.01,
+        "glow": {
+          "color": [
+            156,
+            255,
+            74,
+            255
+          ],
+          "outer_color": [
+            90,
+            255,
+            20,
+            191
+          ],
+          "radius": 0.8,
+          "intensity": 1.2,
+          "falloff": 1.6
+        },
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/fade",
+          "duration": 0.25
+        },
+        "out": {
+          "preset": "avs-clip-animation/fade_out",
+          "duration": 0.12
+        }
+      }
+    },
+    {
+      "id": "minimal",
+      "name": "Minimal",
+      "category": "minimal",
+      "preview_text": "Tối giản",
+      "style": {
+        "size": 0.0406,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "line_spacing": 1.05,
+        "weight": 600,
+        "italic": false,
+        "letter_spacing": -0.01,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "offset": [
+            0.0577,
+            0.0769
+          ],
+          "blur": 0.0
+        },
+        "font_hint": [
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/fade",
+          "duration": 0.25
+        },
+        "out": {
+          "preset": "avs-clip-animation/fade_out",
+          "duration": 0.12
+        }
+      }
+    },
+    {
+      "id": "luxury",
+      "name": "Luxury",
+      "category": "elegant",
+      "preview_text": "Luxury",
+      "style": {
+        "size": 0.05,
+        "color": [
+          243,
+          231,
+          201,
+          255
+        ],
+        "line_spacing": 1.05,
+        "weight": 600,
+        "italic": true,
+        "letter_spacing": -0.01,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "offset": [
+            0.0469,
+            0.0625
+          ],
+          "blur": 0.0
+        },
+        "font_hint": [
+          "Playfair Display",
+          "Georgia"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/fade",
+          "duration": 0.25
+        },
+        "out": {
+          "preset": "avs-clip-animation/fade_out",
+          "duration": 0.12
+        }
+      }
+    },
+    {
+      "id": "bungee",
+      "name": "Bungee",
+      "category": "title",
+      "preview_text": "BOOM",
+      "style": {
+        "size": 0.0547,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "line_spacing": 1.05,
+        "weight": 900,
+        "italic": false,
+        "letter_spacing": -0.01,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "offset": [
+            0.0429,
+            0.0571
+          ],
+          "blur": 0.0
+        },
+        "font_hint": [
+          "Bungee",
+          "Impact"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/pop",
+          "duration": 0.28
+        },
+        "out": {
+          "preset": "avs-clip-animation/fade_out",
+          "duration": 0.12
+        }
+      }
+    },
+    {
+      "id": "handwritten",
+      "name": "Handwritten",
+      "category": "script",
+      "preview_text": "Cảm ơn",
+      "style": {
+        "size": 0.0516,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "line_spacing": 1.05,
+        "weight": 400,
+        "italic": false,
+        "letter_spacing": -0.01,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "offset": [
+            0.0455,
+            0.0606
+          ],
+          "blur": 0.0
+        },
+        "font_hint": [
+          "Pacifico",
+          "Segoe Script"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/fade",
+          "duration": 0.25
+        },
+        "out": {
+          "preset": "avs-clip-animation/fade_out",
+          "duration": 0.12
+        }
+      }
+    },
+    {
+      "id": "dark-note",
+      "name": "Dark note",
+      "category": "note",
+      "preview_text": "Ghi chú",
+      "style": {
+        "size": 0.0406,
+        "color": [
+          17,
+          17,
+          17,
+          255
+        ],
+        "line_spacing": 1.05,
+        "weight": 800,
+        "italic": false,
+        "letter_spacing": -0.01,
+        "background": {
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "padding": 0.2,
+          "radius": 0.2
+        },
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/slide_l",
+          "duration": 0.35
+        },
+        "out": {
+          "preset": "avs-clip-animation/fade_out",
+          "duration": 0.12
+        }
+      }
+    },
+    {
+      "id": "oswald",
+      "name": "Oswald",
+      "category": "title",
+      "preview_text": "TIN NÓNG",
+      "style": {
+        "size": 0.0547,
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "line_spacing": 1.05,
+        "weight": 700,
+        "italic": false,
+        "letter_spacing": -0.01,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "offset": [
+            0.0429,
+            0.0571
+          ],
+          "blur": 0.0
+        },
+        "font_hint": [
+          "Oswald",
+          "Bahnschrift"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/slide_r",
+          "duration": 0.35
+        },
+        "out": {
+          "preset": "avs-clip-animation/fade_out",
+          "duration": 0.12
+        }
+      }
+    }
+  ]
+}

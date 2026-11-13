@@ -1,0 +1,834 @@
+{
+  "type": "subtitle-style",
+  "id": "avs-subtitle-style-ghost",
+  "name": "Subtitle styles: AI Video Studio (ghost-editor, lemo-opuscar)",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "print_swiss",
+      "name": "Swiss grid",
+      "category": "print",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.075,
+        "color": [
+          17,
+          17,
+          17,
+          255
+        ],
+        "align": "left",
+        "line_spacing": 1.06,
+        "letter_spacing": -0.02,
+        "background": {
+          "color": [
+            234,
+            233,
+            229,
+            255
+          ],
+          "padding": 0.2593,
+          "radius": 0
+        },
+        "font_hint": [
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ],
+        "weight": 700
+      },
+      "layout": {
+        "anchor_y": 0.8611,
+        "max_width": 0.8875,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "none",
+        "emphasis": {
+          "color": [
+            227,
+            6,
+            19,
+            255
+          ]
+        }
+      }
+    },
+    {
+      "id": "print_dossier",
+      "name": "Halftone dossier",
+      "category": "print",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.0444,
+        "weight": 800,
+        "color": [
+          255,
+          244,
+          226,
+          255
+        ],
+        "line_spacing": 1.2,
+        "background": {
+          "color": [
+            29,
+            35,
+            64,
+            255
+          ],
+          "padding": 0.4,
+          "radius": 0.4375
+        },
+        "shadow": {
+          "color": [
+            255,
+            90,
+            135,
+            255
+          ],
+          "offset": [
+            0.2188,
+            0.2188
+          ],
+          "blur": 0.0
+        },
+        "font_hint": [
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/pop",
+          "duration": 0.4
+        }
+      },
+      "layout": {
+        "anchor_y": 0.8611,
+        "max_width": 0.7812,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "none",
+        "emphasis": {
+          "color": [
+            255,
+            198,
+            40,
+            255
+          ]
+        }
+      }
+    },
+    {
+      "id": "print_paper",
+      "name": "Tactile paper",
+      "category": "print",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.0528,
+        "color": [
+          252,
+          252,
+          253,
+          255
+        ],
+        "transform": "uppercase",
+        "line_spacing": 1.05,
+        "letter_spacing": -0.025,
+        "background": {
+          "color": [
+            31,
+            31,
+            31,
+            217
+          ],
+          "padding": 0.3,
+          "radius": 0.2632
+        },
+        "font_hint": [
+          "Inter Tight",
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ],
+        "weight": 700
+      },
+      "layout": {
+        "anchor_y": 0.8333,
+        "max_width": 0.9375,
+        "max_lines": 1
+      },
+      "karaoke": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "print_kdoc",
+      "name": "Kinetic doc",
+      "category": "print",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.05,
+        "weight": 500,
+        "color": [
+          244,
+          243,
+          239,
+          255
+        ],
+        "line_spacing": 1.2,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            153
+          ],
+          "offset": [
+            0.0,
+            0.0556
+          ],
+          "blur": 0.3889
+        },
+        "font_hint": [
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "layout": {
+        "anchor_y": 0.7778,
+        "max_width": 0.9062,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "none",
+        "emphasis": {
+          "color": [
+            244,
+            243,
+            239,
+            255
+          ],
+          "background": [
+            214,
+            58,
+            47,
+            255
+          ],
+          "scale": 2.8
+        }
+      }
+    },
+    {
+      "id": "print_data",
+      "name": "Data story",
+      "category": "print",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.0472,
+        "weight": 500,
+        "color": [
+          43,
+          39,
+          35,
+          255
+        ],
+        "align": "left",
+        "line_spacing": 1.18,
+        "background": {
+          "color": [
+            246,
+            243,
+            236,
+            247
+          ],
+          "padding": 0.4,
+          "radius": 0
+        },
+        "font_hint": [
+          "Playfair Display",
+          "Georgia"
+        ]
+      },
+      "layout": {
+        "anchor_y": 0.9042,
+        "max_width": 0.875,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "none",
+        "emphasis": {
+          "color": [
+            168,
+            40,
+            58,
+            255
+          ]
+        }
+      }
+    },
+    {
+      "id": "bc_capnews",
+      "name": "Caption news",
+      "category": "broadcast",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.0694,
+        "weight": 900,
+        "color": [
+          247,
+          245,
+          239,
+          255
+        ],
+        "align": "left",
+        "line_spacing": 1.16,
+        "letter_spacing": -0.02,
+        "background": {
+          "color": [
+            14,
+            14,
+            12,
+            214
+          ],
+          "padding": 0.15,
+          "radius": 0
+        },
+        "font_hint": [
+          "Inter Tight",
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "layout": {
+        "anchor_y": 0.875,
+        "max_width": 0.7031,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "none",
+        "emphasis": {
+          "color": [
+            14,
+            14,
+            12,
+            255
+          ],
+          "background": [
+            255,
+            194,
+            26,
+            255
+          ]
+        }
+      }
+    },
+    {
+      "id": "bc_tele",
+      "name": "Telestrator",
+      "category": "broadcast",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.0444,
+        "weight": 600,
+        "color": [
+          244,
+          241,
+          232,
+          255
+        ],
+        "line_spacing": 1.3,
+        "background": {
+          "color": [
+            0,
+            0,
+            0,
+            163
+          ],
+          "padding": 0.3,
+          "radius": 0
+        },
+        "font_hint": [
+          "Inter Tight",
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/fade",
+          "duration": 0.06
+        }
+      },
+      "layout": {
+        "anchor_y": 0.8333,
+        "max_width": 0.8281,
+        "max_lines": 1
+      },
+      "karaoke": {
+        "mode": "none",
+        "emphasis": {
+          "color": [
+            255,
+            212,
+            0,
+            255
+          ]
+        }
+      }
+    },
+    {
+      "id": "ex_os",
+      "name": "Clean OS",
+      "category": "explain",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.0359,
+        "transform": "lowercase",
+        "line_spacing": 1.1,
+        "letter_spacing": -0.045,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            102
+          ],
+          "offset": [
+            0.0,
+            0.0435
+          ],
+          "blur": 0.3478
+        },
+        "font_hint": [
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ],
+        "weight": 700
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/fade",
+          "duration": 0.18
+        }
+      },
+      "layout": {
+        "anchor_y": 0.7031,
+        "max_width": 0.8889,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "ex_pp",
+      "name": "Product page",
+      "category": "explain",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.0437,
+        "weight": 800,
+        "color": [
+          255,
+          254,
+          255,
+          255
+        ],
+        "line_spacing": 1.06,
+        "letter_spacing": -0.035,
+        "font_hint": [
+          "Inter Tight",
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "layout": {
+        "anchor_y": 0.6641,
+        "max_width": 0.8889,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "none",
+        "emphasis": {
+          "scale": 1.45
+        }
+      }
+    },
+    {
+      "id": "ex_stan",
+      "name": "Stan",
+      "category": "explain",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.025,
+        "weight": 600,
+        "transform": "lowercase",
+        "line_spacing": 1.2,
+        "letter_spacing": -0.01,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            140
+          ],
+          "offset": [
+            0.0,
+            0.0312
+          ],
+          "blur": 0.0938
+        },
+        "font_hint": [
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "layout": {
+        "anchor_y": 0.6948,
+        "max_width": 0.8333,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "ex_deck",
+      "name": "Step deck",
+      "category": "explain",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.0391,
+        "weight": 600,
+        "color": [
+          253,
+          254,
+          252,
+          255
+        ],
+        "line_spacing": 1.08,
+        "letter_spacing": -0.04,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            89
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "blur": 0.48
+        },
+        "font_hint": [
+          "Inter Tight",
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "layout": {
+        "anchor_y": 0.2812,
+        "max_width": 0.8889,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "none",
+        "emphasis": {
+          "scale": 1.25
+        }
+      }
+    },
+    {
+      "id": "ex_board",
+      "name": "Whiteboard pill",
+      "category": "explain",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.025,
+        "weight": 800,
+        "color": [
+          22,
+          23,
+          27,
+          255
+        ],
+        "line_spacing": 1.25,
+        "letter_spacing": -0.015,
+        "background": {
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "padding": 0.4,
+          "radius": 0.9
+        },
+        "font_hint": [
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "layout": {
+        "anchor_y": 0.75,
+        "max_width": 0.8889,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "box",
+        "active": {
+          "background": [
+            255,
+            225,
+            77,
+            255
+          ]
+        }
+      }
+    },
+    {
+      "id": "mt_seoul",
+      "name": "Seoul",
+      "category": "montage",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.025,
+        "transform": "lowercase",
+        "line_spacing": 1.3,
+        "letter_spacing": -0.01,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            107
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "blur": 0.3125
+        },
+        "font_hint": [
+          "Inter Tight",
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ],
+        "weight": 700
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/blur_zoom",
+          "duration": 0.2
+        }
+      },
+      "layout": {
+        "anchor_y": 0.8047,
+        "max_width": 0.8333,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "none",
+        "emphasis": {
+          "scale": 1.3
+        }
+      }
+    },
+    {
+      "id": "mt_result",
+      "name": "Result card",
+      "category": "montage",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.0266,
+        "color": [
+          255,
+          253,
+          248,
+          255
+        ],
+        "line_spacing": 1.15,
+        "letter_spacing": -0.02,
+        "background": {
+          "color": [
+            18,
+            29,
+            50,
+            224
+          ],
+          "padding": 0.35,
+          "radius": 0.6471
+        },
+        "font_hint": [
+          "Inter Tight",
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ],
+        "weight": 700
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/fade",
+          "duration": 0.1
+        }
+      },
+      "layout": {
+        "anchor_y": 0.7812,
+        "max_width": 0.8889,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "none",
+        "emphasis": {
+          "color": [
+            255,
+            226,
+            160,
+            255
+          ],
+          "scale": 2.0
+        }
+      }
+    },
+    {
+      "id": "mt_pov",
+      "name": "POV lime",
+      "category": "montage",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.0312,
+        "weight": 800,
+        "line_spacing": 1.22,
+        "letter_spacing": -0.02,
+        "shadow": {
+          "color": [
+            0,
+            0,
+            0,
+            140
+          ],
+          "offset": [
+            0.0,
+            0.075
+          ],
+          "blur": 0.0
+        },
+        "font_hint": [
+          "Inter Tight",
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/fade",
+          "duration": 0.08
+        }
+      },
+      "layout": {
+        "anchor_y": 0.7812,
+        "max_width": 0.8611,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "box",
+        "active": {
+          "color": [
+            17,
+            17,
+            17,
+            255
+          ],
+          "background": [
+            166,
+            255,
+            0,
+            255
+          ]
+        },
+        "emphasis": {
+          "color": [
+            166,
+            255,
+            0,
+            255
+          ]
+        }
+      }
+    },
+    {
+      "id": "mt_vec",
+      "name": "Vector",
+      "category": "montage",
+      "preview_text": "Phụ đề mẫu cho video",
+      "style": {
+        "size": 0.0281,
+        "weight": 600,
+        "color": [
+          255,
+          248,
+          236,
+          255
+        ],
+        "transform": "lowercase",
+        "line_spacing": 1.3,
+        "shadow": {
+          "color": [
+            20,
+            12,
+            6,
+            217
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "blur": 0.3333
+        },
+        "font_hint": [
+          "Inter",
+          "Be Vietnam Pro",
+          "Segoe UI"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "avs-clip-animation/blur_zoom",
+          "duration": 0.3
+        }
+      },
+      "layout": {
+        "anchor_y": 0.7633,
+        "max_width": 0.8333,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "none",
+        "emphasis": {
+          "color": [
+            231,
+            194,
+            122,
+            255
+          ],
+          "scale": 1.12
+        }
+      }
+    }
+  ]
+}

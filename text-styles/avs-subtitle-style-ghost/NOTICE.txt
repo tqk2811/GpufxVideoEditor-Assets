@@ -1,0 +1,13 @@
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+The subtitle styles recreate, as style data, the caption styles of the print, broadcast, explain and
+montage packs of AI Video Studio (engine/packs/). No code or font of the original projects is copied.
+
+Those packs adapt the styles of ghost-editor (https://github.com/kurbaitaev/ghost-editor),
+Copyright (c) 2026 kurbaitaev, MIT License.
+
+print_swiss, print_dossier, print_data, bc_capnews and bc_tele come from the swiss-grid,
+halftone-dossier, data-story, caption-news and telestrator styles, which are in turn based on
+lemo-opuscar (https://github.com/lemomo-ai/lemo-opuscar), Copyright (c) 2026 LemoLab, MIT License.
