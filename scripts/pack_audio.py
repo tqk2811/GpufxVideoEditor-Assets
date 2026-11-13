@@ -4,7 +4,8 @@
 
 Binary audio is never committed to this repository. This script reads the `sfx/` and `music/`
 folders of AI Video Studio's `assets` directory and writes 16 zips: one `sfx-<category>.zip` per
-category of `sfx/catalog.json`, and `music.zip`. Each zip has, at its root, `manifest.json`,
+category of `sfx/catalog.json`, and `music.zip`, plus `audio-packs.zip`, a plain zip holding all 16 for
+a single download. Each pack zip has, at its root, `manifest.json`,
 `LICENSE.txt`, `NOTICE.txt` and `audio/<file>`. Zips are byte for byte reproducible (sorted entries,
 fixed timestamps), and audio is stored without recompression. Standard library only; run it with the
 `py` launcher on Windows. Run it with `py -I` when the source is not trusted: it only reads data.
@@ -25,6 +26,7 @@ import zipfile
 from pathlib import Path
 
 FIXED_TIME = (1980, 1, 1, 0, 0, 0)
+BUNDLE_NAME = "audio-packs.zip"
 ID_PATTERN = re.compile(r"^[a-z0-9._-]+$")
 VERSION = "1.0.0"
 # Categories whose sounds are meant to run under other audio and repeat: the catalog has no loop flag.
@@ -267,6 +269,19 @@ def main():
         total += len(pack_items)
         print(f"{zip_name}\t{len(pack_items)} items\t{target.stat().st_size} bytes")
     print(f"packed {len(packs)} zip(s), {total} audio item(s)")
+    # One plain zip holding every pack zip, so the release has a single download. The editor installs
+    # the inner zips, so it is unpacked first; pack zips are already compressed, hence stored.
+    bundle = args.output / BUNDLE_NAME
+    temporary = bundle.with_suffix(".zip.tmp")
+    with zipfile.ZipFile(temporary, "w") as archive:
+        for zip_name, _, _ in sorted(packs, key=lambda pack: pack[0]):
+            info = zipfile.ZipInfo(zip_name, FIXED_TIME)
+            info.create_system = 3
+            info.external_attr = 0o644 << 16
+            info.compress_type = zipfile.ZIP_STORED
+            archive.writestr(info, (args.output / zip_name).read_bytes())
+    temporary.replace(bundle)
+    print(f"{BUNDLE_NAME}\t{len(packs)} zips\t{bundle.stat().st_size} bytes")
     print(f"max |FLAC header - catalog dur| = {stats.get('flac_vs_catalog_max_diff', 0.0):.3f} s; "
           f"mp3 durations: {stats.get('mp3_catalog', 0)} from catalog, {stats.get('mp3_ffprobe', 0)} from ffprobe")
 
