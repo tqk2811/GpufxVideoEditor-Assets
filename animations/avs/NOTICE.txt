@@ -1,0 +1,6 @@
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+The clip animations recreate, as keyframe data, the text animations of engine/vertical.js
+(durations, easings, distances and blur amounts). No code of the original project is copied.

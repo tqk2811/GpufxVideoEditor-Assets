@@ -1,0 +1,129 @@
+{
+  "id": "avs-clip-animation",
+  "name": "Clip animations: AI Video Studio",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "pop",
+      "name": "Pop",
+      "kind": "in",
+      "default_duration": 0.28,
+      "curve": {
+        "tracks": {
+          "scale": [
+            { "t": 0, "value": 0.3, "ease": { "backOut": { "amplitude": 2 } } },
+            { "t": 1, "value": 1 }
+          ],
+          "opacity": [
+            { "t": 0, "value": 0 },
+            { "t": 0.428571, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fade",
+      "name": "Fade",
+      "kind": "in",
+      "default_duration": 0.25,
+      "curve": {
+        "tracks": {
+          "opacity": [
+            { "t": 0, "value": 0, "ease": "outCubic" },
+            { "t": 1, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "slide_l",
+      "name": "Slide from left",
+      "kind": "in",
+      "default_duration": 0.35,
+      "curve": {
+        "tracks": {
+          "dx": [
+            { "t": 0, "value": -0.583333, "ease": "outExpo" },
+            { "t": 1, "value": 0 }
+          ],
+          "blur": [
+            { "t": 0, "value": 0.0078125, "ease": "outExpo" },
+            { "t": 1, "value": 0 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "slide_r",
+      "name": "Slide from right",
+      "kind": "in",
+      "default_duration": 0.35,
+      "curve": {
+        "tracks": {
+          "dx": [
+            { "t": 0, "value": 0.583333, "ease": "outExpo" },
+            { "t": 1, "value": 0 }
+          ],
+          "blur": [
+            { "t": 0, "value": 0.0078125, "ease": "outExpo" },
+            { "t": 1, "value": 0 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "drop",
+      "name": "Drop",
+      "kind": "in",
+      "default_duration": 0.3,
+      "curve": {
+        "tracks": {
+          "dy": [
+            { "t": 0, "value": -0.0703125, "ease": { "backOut": { "amplitude": 1.6 } } },
+            { "t": 1, "value": 0 }
+          ],
+          "opacity": [
+            { "t": 0, "value": 0 },
+            { "t": 0.333333, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "blur_zoom",
+      "name": "Blur zoom",
+      "kind": "in",
+      "default_duration": 0.35,
+      "curve": {
+        "tracks": {
+          "scale": [
+            { "t": 0, "value": 1.7, "ease": "outCubic" },
+            { "t": 1, "value": 1 }
+          ],
+          "blur": [
+            { "t": 0, "value": 0.0125, "ease": "outCubic" },
+            { "t": 1, "value": 0 }
+          ],
+          "opacity": [
+            { "t": 0, "value": 0 },
+            { "t": 0.285714, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fade_out",
+      "name": "Fade out",
+      "kind": "out",
+      "default_duration": 0.12,
+      "curve": {
+        "tracks": {
+          "opacity": [
+            { "t": 0, "value": 1, "ease": "inCubic" },
+            { "t": 1, "value": 0 }
+          ]
+        }
+      }
+    }
+  ]
+}

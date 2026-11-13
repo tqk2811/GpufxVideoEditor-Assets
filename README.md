@@ -63,6 +63,25 @@ and categories come from the `metadata.json` of each emoji, and the zip is repro
 list of 107 emoji follows the sticker panel of AI Video Studio. Only the files in the checkout are used:
 a sparse checkout of the `LICENSE` and of the 107 `assets/<Name>/` folders is enough.
 
+## Clip animation pack
+
+The text animations of AI Video Studio (`engine/vertical.js`), written again as keyframe data for the
+editor's `clip-animation` packs. The source is `animations/avs/pack.json`, next to its `LICENSE.txt`
+(the MIT licence of AI Video Studio) and `NOTICE.txt`. `scripts/pack_animations.py` checks it with the
+rules of the editor's reader and builds the zip:
+
+```sh
+py -I scripts/pack_animations.py           # -> dist/avs-clip-animation.zip
+py -I scripts/pack_animations.py --check   # validate only
+```
+
+The zip has `manifest.json` (format 1, type `clip-animation`), `LICENSE.txt` and `NOTICE.txt`, and is
+reproducible byte for byte. Items: `pop`, `fade`, `slide_l`, `slide_r`, `drop`, `blur_zoom` (in) and
+`fade_out` (out, the exit all text lines share). Durations, easings, distances and blur amounts are the
+original ones; pixels of the 720x1280 canvas are turned into parts of the frame width (`dx`) and height
+(`dy`, `blur`). The skew of the slides is left out, because a curve has no skew. `fly`, `tumble` and
+`type` are left out too: they move each character or depend on per-line positions.
+
 ## License
 
 The repository is [MIT](LICENSE). Each package carries `LICENSE.txt` with the full text of every licence
