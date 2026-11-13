@@ -40,7 +40,8 @@ py scripts/pack_audio.py --source <ai-video-studio>/assets -o dist-audio
 ```
 
 It writes `sfx-<category>.zip` for every category of `sfx/catalog.json` and `music.zip` (16 zips, 339
-audio files). Each zip has `manifest.json` (format 1), `LICENSE.txt`, `NOTICE.txt` and `audio/<file>`;
+audio files), plus `audio-packs.zip`, a plain zip holding those 16 for a single download (unpack it,
+then install each inner zip). Each pack zip has `manifest.json` (format 1), `LICENSE.txt`, `NOTICE.txt` and `audio/<file>`;
 audio is stored without recompression and the zips are reproducible byte for byte. Names, tags and loop
 come from the catalogs; FLAC durations are read from the file header, MP3 durations from the catalog.
 The licence and attribution of these packs are the MIT licence of AI Video Studio, listed in
