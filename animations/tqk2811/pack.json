@@ -1,0 +1,34 @@
+{
+  "id": "tqk2811-clip-animation",
+  "name": "Clip animations: tqk2811",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "v_drop_circle",
+      "name": "V drop + circle reveal",
+      "kind": "in",
+      "default_duration": 1.2,
+      "applies_to": ["image", "video", "sticker"],
+      "curve": {
+        "tracks": {
+          "dx": [
+            { "t": 0, "value": -0.494, "ease": "outCubic" },
+            { "t": 0.45, "value": -0.269 },
+            { "t": 0.75, "value": -0.131, "ease": "inOutSine" },
+            { "t": 1, "value": 0 }
+          ],
+          "dy": [
+            { "t": 0, "value": -0.404, "ease": "inCubic" },
+            { "t": 0.45, "value": 0.385, "ease": "outCubic" },
+            { "t": 0.75, "value": -0.042, "ease": "inOutSine" },
+            { "t": 1, "value": 0 }
+          ]
+        }
+      },
+      "effect": {
+        "package": "io.github.tqk2811.circle-grow",
+        "params": { "center": [0, 0], "softness": 0.01 }
+      }
+    }
+  ]
+}
