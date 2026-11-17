@@ -15,6 +15,9 @@ are rewritten in WGSL from its formulas. `punch`, `zoom-in`, `whip`, `blur-in` a
 | `packages/gpufx/avs-look/` | `look-warm`, `look-cool`, `look-vivid`, `look-bw`, `look-film`, `look-fade`, `look-night`, `look-pop` |
 | `packages/gpufx/avs-transition/` | `chromatic-aberration-wipe`, `curtain-reveal`, `directional-wipe`, `grid-pixelate-wipe`, `halftone-dissolve`, `iris-reveal`, `whip-pan-cut`, `zoom-through-transition` |
 | `packages/gpufx/avs-effect/` | `shake`, `punch`, `zoom-in`, `whip`, `blur-in`, `push` |
+| `packages/gpufx/tqk2811-effect/` | `circle-grow` |
+
+The `tqk2811-effect` packages are original work under the MIT licence of this repository, not derived from AI Video Studio. Each has a `README.md` with its parameters. Effects that move (grain, particles, light leaks) follow the timeline clock (`globals.time_int` and `time_frac`) and keep no state between frames, so seeking gives the same picture again; particles come from an integer hash of their grid cell and layer. `circle-grow` is hidden: it is a building block of a clip animation.
 
 Masks keep alpha: the area outside the shape is transparent, so they work on a clip placed over another
 one. The `bg` parameter fills it with a color instead.

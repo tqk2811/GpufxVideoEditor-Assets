@@ -324,6 +324,34 @@ HyperFrames (HeyGen, Inc.)
 
 ### Licence 3
 
+Packages: `circle-grow`
+
+```text
+MIT License
+
+Copyright (c) 2026 tqk2811
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+### Licence 4
+
 Packages: `sfx-<category>`, `music`
 
 ```text
@@ -350,7 +378,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-### Licence 4
+### Licence 5
 
 Packages: `stickers`
 
@@ -378,7 +406,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE
 ```
 
-### Licence 5
+### Licence 6
 
 Packages: `avs-clip-animation`, `avs-subtitle-style`, `avs-text-style`
 
@@ -424,7 +452,7 @@ Thư viện đóng gói sẵn để chạy offline, giữ nguyên giấy phép g
 - studio/vendor/tabler-icons/: Tabler Icons (MIT, xem LICENSE trong thư mục).
 ```
 
-### Licence 6
+### Licence 7
 
 Packages: `avs-subtitle-style-ghost`
 
@@ -543,6 +571,17 @@ This package is a modified work based on the block `chromatic-aberration-wipe` o
 Apache License, Version 2.0, as bundled in AI Video Studio at engine/hf/.
 The original HTML, CSS and GSAP code is not included in this package: the timing and
 the formulas were rewritten in WGSL. Changes were made to the original work.
+```
+
+### `circle-grow`
+
+```text
+Circle Grow
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
 ### `curtain-reveal`
