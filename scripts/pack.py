@@ -85,7 +85,8 @@ def notices_text(packages):
     by_licence.setdefault(AUDIO_LICENSE, []).extend(["sfx-<category>", "music"])
     # The sticker zip is built by scripts/pack_stickers.py; its licence is Microsoft's, not AI Video Studio's.
     by_licence.setdefault(STICKER_LICENSE, []).append("stickers")
-    # The other sticker zips (scripts/pack_stickers_noto.py, pack_stickers_drawn.py) keep their LICENSE.txt and
+    # The other sticker zips (scripts/pack_stickers_noto.py, pack_stickers_noto_animated.py,
+    # pack_stickers_drawn.py) keep their LICENSE.txt and
     # NOTICE.txt in stickers/<zip name>/.
     sticker_packs = {folder.name: folder for folder in sorted(STICKER_DIR.iterdir()) if (folder / "LICENSE.txt").is_file()}
     for slug, folder in sticker_packs.items():

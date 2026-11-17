@@ -57,11 +57,12 @@ The licence and attribution of these packs are the MIT licence of AI Video Studi
 | `stickers.zip` | 107 Fluent Emoji (3D) | MIT (Microsoft) | `scripts/pack_stickers.py` |
 | `noto-stickers.zip` | 120 Noto Emoji: 59 emotions, 29 arrows, 32 marks | Apache-2.0 (Google) | `scripts/pack_stickers_noto.py` |
 | `tqk2811-stickers.zip` | 20 drawn here: 12 labels (Subscribe, Like, Share, Follow, Live, New, Sale...) and 8 frames and bubbles | MIT (original work) | `scripts/pack_stickers_drawn.py` |
+| `noto-animated-stickers.zip` | 46 Animated Noto Emoji (animated WebP, 512x512): 20 emotions, 7 hands, 19 marks | CC BY 4.0 (Google) | `scripts/pack_stickers_noto_animated.py` |
 
-All three are format 1, type `sticker`, with items `id`, `file`, `name`, `tags` and `category`, and are
-reproducible byte for byte. The LICENSE.txt and NOTICE.txt of the Noto and drawn packs are kept in
-`stickers/<zip name>/`. Stickers are still images: animated stickers (animated WebP) wait for the
-editor to play them.
+All four are format 1, type `sticker`, with items `id`, `file`, `name`, `tags` and `category`, and are
+reproducible byte for byte. The LICENSE.txt and NOTICE.txt of the Noto, animated Noto and drawn packs are kept in
+`stickers/<zip name>/`. The animated pack holds animated WebP files, which the editor loops over the
+length of the clip; the others are PNG images.
 
 ### Fluent Emoji
 
@@ -92,6 +93,19 @@ py -I scripts/pack_stickers_noto.py --source <noto-emoji> -o dist-stickers
 
 Names, ids and tags come from the Unicode name of each emoji; the categories are `Emotions`, `Arrows`
 and `Marks`.
+
+### Animated Noto Emoji
+
+46 emoji from [Animated Noto Emoji](https://googlefonts.github.io/noto-emoji-animation/) by Google, under
+CC BY 4.0 (the FAQ of that page: "Animated Noto Emoji is licensed under CC BY 4.0"). The images are the
+unmodified 512x512 animated WebP files of `https://fonts.gstatic.com/s/e/notoemoji/latest/<code>/512.webp`
+(about 370 KB each, 17 MB for the zip). That URL is not versioned, so the script pins every original by
+its SHA-256 and stops on a mismatch. Standard library only; the zip is reproducible byte for byte.
+
+```sh
+py -I scripts/pack_stickers_noto_animated.py --source <folder> --download   # once, fetches the originals
+py -I scripts/pack_stickers_noto_animated.py --source <folder> -o dist-stickers
+```
 
 ### Labels and frames
 
