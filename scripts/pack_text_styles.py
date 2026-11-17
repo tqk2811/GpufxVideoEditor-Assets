@@ -8,12 +8,16 @@
 Source: text-styles/<pack>/pack.json (type, id, name, version, items), LICENSE.txt and NOTICE.txt. Each
 zip has, at its root, manifest.json (format 1, type "text-style" or "subtitle-style"), LICENSE.txt and
 NOTICE.txt. It is reproducible byte for byte (sorted entries, fixed timestamps). Standard library only.
+A pack whose styles use a layer field (fill, outlines, shadows, inner_shadows, bloom) is written as
+format 2, the others as format 1. Textures and covers are not supported here (no pack ships pictures).
 
 Before writing, every manifest is checked with the rules of the editor's strict reader
 (crates/gpufx-editor/src/text_style_install.rs, subtitle_style_install.rs, asset_install.rs and
 engine::text_style_problems): known fields only, safe ids, unique item ids, texts of 1 to 200
 characters, colours [r, g, b, a] of 0..255, size 0.01..0.5, weight 100..900, letter spacing within
-+-2, glow radius 0..2, intensity 0..4, falloff 0.1..8, animation presets '<pack>/<item>' lasting
++-2, glow radius 0..2, intensity 0..4, falloff 0.1..8, the layers of format 2 (engine::validate
+layer_problems: 2 to 16 gradient stops in rising position, at most 4 outlines of width 0..0.5, shadow
+distance 0..4, blur 0..2 and spread 0..0.5, bloom strength and range 0..1), animation presets '<pack>/<item>' lasting
 0..60 s, subtitle layout and karaoke ranges. Animation presets must also name an item of the clip
 animation packs (animations/<pack>/pack.json) of the right kind.
 """
@@ -56,7 +60,16 @@ SPDX = {
     "avs-subtitle-style": "MIT",
     "avs-subtitle-style-ghost": "MIT",
     "avs-subtitle-style-hf": "MIT AND Apache-2.0",
+    "tqk2811-text-style": "MIT",
+    "tqk2811-subtitle-style": "MIT",
 }
+LAYERS = ("fill", "outlines", "shadows", "inner_shadows", "bloom")
+MAX_GRADIENT_STOPS = 16
+MAX_OUTLINES = 4
+MAX_OUTLINE_WIDTH = 0.5
+MAX_SHADOWS = 32
+MAX_SHADOW_DISTANCE = 4.0
+MAX_SHADOW_BLUR = 2.0
 
 
 def fail(message):
@@ -99,9 +112,80 @@ def not_negative(where, value):
         fail(f"{where} must be 0 or more")
 
 
+def in_range(where, value, high, low=0.0):
+    if not (number(value) and low <= value <= high):
+        fail(f"{where} must be from {low} to {high}")
+
+
+def check_paint(where, paint):
+    if not isinstance(paint, dict) or paint.get("kind") not in ("solid", "gradient"):
+        fail(f"{where} must be a solid or gradient paint (textures are not supported by this script)")
+    if paint["kind"] == "solid":
+        check_fields(where, paint, ("kind", "color"))
+        check_color(f"{where}.color", paint["color"])
+        return
+    check_fields(where, paint, ("kind", "stops"), ("angle", "per_glyph"))
+    stops = paint["stops"]
+    if not (isinstance(stops, list) and 2 <= len(stops) <= MAX_GRADIENT_STOPS):
+        fail(f"{where}: a gradient needs 2 to {MAX_GRADIENT_STOPS} stops")
+    last = 0.0
+    for stop in stops:
+        check_fields(f"{where} stop", stop, ("position", "color"))
+        in_range(f"{where} stop position", stop["position"], 1.0, last)
+        last = stop["position"]
+        check_color(f"{where} stop color", stop["color"])
+    if "angle" in paint and not number(paint["angle"]):
+        fail(f"{where}.angle must be a number")
+    if "per_glyph" in paint and not isinstance(paint["per_glyph"], bool):
+        fail(f"{where}.per_glyph must be true or false")
+
+
+def check_outlines(where, outlines):
+    if not isinstance(outlines, list) or len(outlines) > MAX_OUTLINES:
+        fail(f"{where} must be a list of at most {MAX_OUTLINES} outlines")
+    for outline in outlines:
+        check_fields(f"{where} item", outline, ("width", "paint"))
+        in_range(f"{where} width", outline["width"], MAX_OUTLINE_WIDTH)
+        check_paint(f"{where} paint", outline["paint"])
+
+
+def check_layers(where, style):
+    if "fill" in style:
+        check_paint(f"{where} fill", style["fill"])
+    if "outlines" in style:
+        check_outlines(f"{where} outlines", style["outlines"])
+    for name, optional in (("shadows", ("distance", "angle", "blur", "spread", "outlines")), ("inner_shadows", ("distance", "angle", "blur"))):
+        if name not in style:
+            continue
+        if not isinstance(style[name], list) or len(style[name]) > MAX_SHADOWS:
+            fail(f"{where}: {name} must be a list of at most {MAX_SHADOWS}")
+        for shadow in style[name]:
+            check_fields(f"{where} {name} item", shadow, ("paint",), optional)
+            in_range(f"{where} {name} distance", shadow.get("distance", 0), MAX_SHADOW_DISTANCE)
+            if not number(shadow.get("angle", 0)):
+                fail(f"{where}: {name} angle must be a number")
+            in_range(f"{where} {name} blur", shadow.get("blur", 0), MAX_SHADOW_BLUR)
+            in_range(f"{where} {name} spread", shadow.get("spread", 0), MAX_OUTLINE_WIDTH)
+            check_paint(f"{where} {name} paint", shadow["paint"])
+            if "outlines" in shadow:
+                check_outlines(f"{where} {name} outlines", shadow["outlines"])
+    if "bloom" in style:
+        bloom = style["bloom"]
+        check_fields(f"{where} bloom", bloom, ("color",), ("strength", "range", "dir_x", "dir_y"))
+        check_color(f"{where} bloom.color", bloom["color"])
+        in_range(f"{where} bloom.strength", bloom.get("strength", 0.5), 1.0)
+        in_range(f"{where} bloom.range", bloom.get("range", 0.4), 1.0)
+        for name in ("dir_x", "dir_y"):
+            in_range(f"{where} bloom.{name}", bloom.get(name, 0), 1.0, -1.0)
+    for old, new in (("color", "fill"), ("outline", "outlines"), ("shadow", "shadows")):
+        if old in style and new in style:
+            fail(f"{where}: {old} and {new} are both given")
+
+
 def check_style(where, style):
     check_fields(where, style, (), ("size", "color", "outline", "background", "shadow", "glow", "align", "line_spacing",
-                                    "weight", "italic", "transform", "letter_spacing", "font_hint"))
+                                    "weight", "italic", "transform", "letter_spacing", "font_hint") + LAYERS)
+    check_layers(where, style)
     if "size" in style and not (number(style["size"]) and SIZE_RANGE[0] <= style["size"] <= SIZE_RANGE[1]):
         fail(f"{where}: size must be from {SIZE_RANGE[0]} to {SIZE_RANGE[1]}")
     if "color" in style:
@@ -203,8 +287,11 @@ def check_karaoke(where, karaoke):
 def check_manifest(manifest, presets):
     check_fields("the manifest", manifest, ("format", "type", "id", "name", "version", "license", "items"))
     kind = manifest["type"]
-    if manifest["format"] != 1 or kind not in TYPES:
-        fail(f"format must be 1 and type one of {TYPES}")
+    if manifest["format"] not in (1, 2) or kind not in TYPES:
+        fail(f"format must be 1 or 2 and type one of {TYPES}")
+    layered = any(name in item.get("style", {}) for item in manifest["items"] for name in LAYERS)
+    if layered != (manifest["format"] == 2):
+        fail("a pack whose styles use fill, outlines, shadows, inner_shadows or bloom must be format 2, others format 1")
     if not safe_id(manifest["id"]):
         fail("unsafe pack id")
     for name in ("name", "version"):
@@ -256,8 +343,9 @@ def build_manifest(folder):
         fail(f"{folder.name}/pack.json: the id '{source['id']}' is not the folder name")
     if source["id"] not in SPDX:
         fail(f"{folder.name}: no licence is known for this pack")
+    layered = any(name in item.get("style", {}) for item in source["items"] for name in LAYERS)
     return {
-        "format": 1,
+        "format": 2 if layered else 1,
         "type": source["type"],
         "id": source["id"],
         "name": source["name"],

@@ -101,7 +101,7 @@ original ones; pixels of the 720x1280 canvas are turned into parts of the frame 
 
 ## Text and subtitle style packs
 
-The text looks and caption styles of AI Video Studio, written again as style data for the editor's
+The `avs-*` packs hold the text looks and caption styles of AI Video Studio, written again as style data for the editor's
 `text-style` and `subtitle-style` packs: colours, sizes, outlines, shadows, glows, boxes, weights,
 positions and how the spoken word is marked. Only measured values are kept; no code or font is copied.
 Each pack has its source in `text-styles/<pack>/`: `pack.json` (type, id, name, version, items),
@@ -119,14 +119,17 @@ py -I scripts/pack_text_styles.py --check   # validate only
 | `avs-subtitle-style` | `subtitle-style` | 22: the basic, `tiktok` and `slate` captions and the caption style of each pack | MIT (AI Video Studio) |
 | `avs-subtitle-style-ghost` | `subtitle-style` | 16 of the print, broadcast, explain and montage packs | MIT (AI Video Studio, ghost-editor, lemo-opuscar) |
 | `avs-subtitle-style-hf` | `subtitle-style` | 10 of the `hf_*` styles | MIT (AI Video Studio) and Apache-2.0 (HyperFrames) |
+| `tqk2811-text-style` | `text-style` | 10: `neon-pink`, `neon-cyan`, `double-outline`, `gradient-sunset`, `gradient-ocean`, `sticker`, `retro-3d`, `comic`, `fire`, `chrome` | MIT (original work) |
+| `tqk2811-subtitle-style` | `subtitle-style` | 3 karaoke captions: `karaoke-fill`, `karaoke-neon`, `karaoke-box` | MIT (original work) |
 
-Each zip has `manifest.json` (format 1), `LICENSE.txt` and `NOTICE.txt`, and is reproducible byte for
-byte. Pixels are turned into parts: a size is a part of the frame height, outline widths, shadow offsets
+Each zip has `manifest.json`, `LICENSE.txt` and `NOTICE.txt`, and is reproducible byte for byte. A pack
+whose styles use layers (`fill` with a gradient, several `outlines`, `shadows`, `inner_shadows`, `bloom`)
+is written as format 2, the others as format 1; the `tqk2811` packs are format 2 and use no picture. Pixels are turned into parts: a size is a part of the frame height, outline widths, shadow offsets
 and blurs, box padding and radius and glow radius are parts of the font size, and the layout (`anchor_y`,
 `max_width`) is a part of the frame. The text presets use the 720x1280 canvas; the captions use the
 canvas they are drawn on by default, 1280x720, or 720x1280 for the vertical-only packs. Where CSS stacks
 several shadows, the hard drop shadow is kept and a stack of blurred shadows becomes the glow. Animations
-refer to items of the clip animation pack (`avs-clip-animation/<item>`). The `karaoke` part (active,
+refer to items of the clip animation packs (`avs-clip-animation/<item>`, `tqk2811-clip-animation/<item>`). The `karaoke` part (active,
 spoken, upcoming and emphasised words) is filled in, though the editor does not draw it yet. Fonts are
 only hints; the editor picks the first one installed. Styles that need shaders, particles, textures,
 blending or per-character motion are left out; [docs/Backlog-vi.md](docs/Backlog-vi.md) lists them.

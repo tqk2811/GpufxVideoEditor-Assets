@@ -324,7 +324,7 @@ HyperFrames (HeyGen, Inc.)
 
 ### Licence 3
 
-Packages: `circle-grow`, `tqk2811-clip-animation`
+Packages: `circle-grow`, `tqk2811-clip-animation`, `tqk2811-subtitle-style`, `tqk2811-text-style`
 
 ```text
 MIT License
@@ -1071,4 +1071,27 @@ https://github.com/nguyentatkiem/ai-video-studio
 The text styles recreate, as style data, the text looks of engine/vertical.js (TEXT_STYLE) and the
 text presets of studio/library.js: colours, sizes, outlines, shadows, boxes, weights and the animation
 each preset plays. No code or font of the original project is copied.
+```
+
+### `tqk2811-subtitle-style`
+
+```text
+Subtitle styles: tqk2811
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work: karaoke subtitle styles (word fill, neon, box) for GpufxVideoEditor. MIT License.
+```
+
+### `tqk2811-text-style`
+
+```text
+Text styles: tqk2811
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work: neon, double outline, gradient, sticker, retro 3D, comic, fire and chrome
+text styles for GpufxVideoEditor. Animations refer to the tqk2811-clip-animation pack. MIT License.
 ```

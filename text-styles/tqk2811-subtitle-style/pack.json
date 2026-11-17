@@ -1,0 +1,219 @@
+{
+  "type": "subtitle-style",
+  "id": "tqk2811-subtitle-style",
+  "name": "Subtitle styles: tqk2811",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "karaoke-fill",
+      "name": "Karaoke fill",
+      "category": "karaoke",
+      "preview_text": "Từng chữ sáng dần lên",
+      "style": {
+        "size": 0.05,
+        "weight": 800,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "outlines": [
+          {
+            "width": 0.12,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                0,
+                0,
+                0,
+                255
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      },
+      "layout": {
+        "anchor_y": 0.88,
+        "max_width": 0.9,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "color",
+        "upcoming": {
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "active": {
+          "color": [
+            255,
+            214,
+            0,
+            255
+          ]
+        },
+        "spoken": {
+          "color": [
+            255,
+            214,
+            0,
+            255
+          ]
+        }
+      }
+    },
+    {
+      "id": "karaoke-neon",
+      "name": "Karaoke neon",
+      "category": "karaoke",
+      "preview_text": "Từng chữ sáng dần lên",
+      "style": {
+        "size": 0.05,
+        "weight": 700,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            200,
+            210,
+            230,
+            255
+          ]
+        },
+        "glow": {
+          "color": [
+            0,
+            200,
+            255,
+            200
+          ],
+          "radius": 0.3,
+          "intensity": 1.2,
+          "falloff": 2.0
+        },
+        "font_hint": [
+          "Nunito",
+          "Baloo 2",
+          "Segoe UI",
+          "Arial"
+        ]
+      },
+      "layout": {
+        "anchor_y": 0.88,
+        "max_width": 0.9,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "color",
+        "upcoming": {
+          "color": [
+            200,
+            210,
+            230,
+            255
+          ],
+          "opacity": 0.7
+        },
+        "active": {
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "spoken": {
+          "color": [
+            120,
+            240,
+            255,
+            255
+          ]
+        }
+      }
+    },
+    {
+      "id": "karaoke-box",
+      "name": "Karaoke box",
+      "category": "karaoke",
+      "preview_text": "Từng chữ sáng dần lên",
+      "style": {
+        "size": 0.05,
+        "weight": 800,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "shadows": [
+          {
+            "distance": 0.06,
+            "angle": -45,
+            "blur": 0.12,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                0,
+                0,
+                0,
+                180
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      },
+      "layout": {
+        "anchor_y": 0.88,
+        "max_width": 0.9,
+        "max_lines": 2
+      },
+      "karaoke": {
+        "mode": "box",
+        "active": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "background": [
+            255,
+            214,
+            0,
+            255
+          ]
+        },
+        "spoken": {
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ]
+        }
+      }
+    }
+  ]
+}
