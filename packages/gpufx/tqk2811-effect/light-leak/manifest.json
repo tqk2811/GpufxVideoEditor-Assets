@@ -1,0 +1,70 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.light-leak",
+  "name": "Light Leak",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Light leaks: warm colored light drifts in from the edges, as from a camera that lets light in.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "intensity",
+      "type": "float",
+      "default": 0.85,
+      "min": 0,
+      "max": 2,
+      "description": "Strength of the light"
+    },
+    {
+      "name": "speed",
+      "type": "float",
+      "default": 0.15,
+      "min": 0,
+      "max": 2,
+      "description": "How fast the light drifts"
+    },
+    {
+      "name": "size",
+      "type": "float",
+      "default": 0.6,
+      "min": 0.1,
+      "max": 2,
+      "description": "Size of the light patches, in frame heights"
+    },
+    {
+      "name": "color1",
+      "type": "color",
+      "default": "#ff7a2e",
+      "description": "First light color"
+    },
+    {
+      "name": "color2",
+      "type": "color",
+      "default": "#ff2e88",
+      "description": "Second light color"
+    },
+    {
+      "name": "seed",
+      "type": "int",
+      "default": 1,
+      "min": 0,
+      "max": 100000,
+      "description": "Changes where the light comes from"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/light_leak.wgsl"
+        }
+      ]
+    }
+  ]
+}

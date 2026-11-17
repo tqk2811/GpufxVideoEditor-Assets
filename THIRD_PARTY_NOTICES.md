@@ -68,7 +68,7 @@ SOFTWARE.
 
 ### Licence 2
 
-Packages: `cartoon`, `circle-grow`, `crt-scanline`, `emboss`, `glow`, `halftone`, `oil-paint`, `old-film`, `posterize`, `sketch`, `vhs`
+Packages: `cartoon`, `circle-grow`, `crt-scanline`, `emboss`, `glow`, `god-rays`, `halftone`, `lens-flare`, `light-leak`, `oil-paint`, `old-film`, `posterize`, `sketch`, `vhs`
 
 ```text
 MIT License
@@ -666,6 +666,17 @@ https://github.com/tqk2811/GpufxVideoEditor-Assets
 Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
+### `god-rays`
+
+```text
+God Rays
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `grid-pixelate-wipe`
 
 ```text
@@ -732,6 +743,28 @@ This package is a modified work based on the block `iris-reveal` of HyperFrames
 Apache License, Version 2.0, as bundled in AI Video Studio at engine/hf/.
 The original HTML, CSS and GSAP code is not included in this package: the timing and
 the formulas were rewritten in WGSL. Changes were made to the original work.
+```
+
+### `lens-flare`
+
+```text
+Lens Flare
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `light-leak`
+
+```text
+Light Leak
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
 ### `look-bw`

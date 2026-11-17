@@ -1,0 +1,84 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.god-rays",
+  "name": "God Rays",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "God rays: shafts of light stream out from a point through the bright parts of the picture.",
+  "inputs": [
+    {
+      "name": "src",
+      "mipmaps": true
+    }
+  ],
+  "params": [
+    {
+      "name": "center",
+      "type": "vec2",
+      "default": [
+        0.5,
+        0.15
+      ],
+      "min": -0.5,
+      "max": 1.5,
+      "description": "Where the rays come from, 0..1 of the frame ([0, 0] = top-left)"
+    },
+    {
+      "name": "intensity",
+      "type": "float",
+      "default": 1.0,
+      "min": 0,
+      "max": 4,
+      "description": "Brightness of the rays"
+    },
+    {
+      "name": "length",
+      "type": "float",
+      "default": 0.8,
+      "min": 0.05,
+      "max": 1,
+      "description": "Length of the rays, part of the way to the light"
+    },
+    {
+      "name": "decay",
+      "type": "float",
+      "default": 0.975,
+      "min": 0.8,
+      "max": 1,
+      "description": "How fast the rays fade along their length"
+    },
+    {
+      "name": "threshold",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 0.99,
+      "description": "Brightness (0..1) a pixel needs to cast rays"
+    },
+    {
+      "name": "samples",
+      "type": "int",
+      "default": 64,
+      "min": 8,
+      "max": 128,
+      "description": "Samples along each ray; more is smoother and slower"
+    },
+    {
+      "name": "tint",
+      "type": "color",
+      "default": "#fff1d6",
+      "description": "Color of the rays"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/god_rays.wgsl"
+        }
+      ]
+    }
+  ]
+}
