@@ -1,0 +1,66 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.emboss",
+  "name": "Emboss",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Emboss: the picture looks pressed into metal or paper, lit from one side.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "strength",
+      "type": "float",
+      "default": 2.5,
+      "min": 0,
+      "max": 10,
+      "description": "Depth of the relief"
+    },
+    {
+      "name": "angle",
+      "type": "float",
+      "default": 135,
+      "min": -180,
+      "max": 180,
+      "description": "Direction of the light in degrees"
+    },
+    {
+      "name": "distance",
+      "type": "float",
+      "default": 1.5,
+      "min": 0.5,
+      "max": 8,
+      "description": "Width of the relief edges in pixels"
+    },
+    {
+      "name": "color",
+      "type": "float",
+      "default": 0,
+      "min": 0,
+      "max": 1,
+      "description": "0 is a grey relief, 1 keeps the colors"
+    },
+    {
+      "name": "amount",
+      "type": "float",
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "description": "Strength: 0 is the original picture, 1 the full effect"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/emboss.wgsl"
+        }
+      ]
+    }
+  ]
+}

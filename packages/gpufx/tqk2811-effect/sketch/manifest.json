@@ -1,0 +1,78 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.sketch",
+  "name": "Sketch",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Pencil sketch: dark edges and cross-hatching on paper.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "strength",
+      "type": "float",
+      "default": 1.0,
+      "min": 0,
+      "max": 4,
+      "description": "Darkness of the pencil lines"
+    },
+    {
+      "name": "hatching",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "description": "Strength of the hatching in dark areas"
+    },
+    {
+      "name": "spacing",
+      "type": "float",
+      "default": 4,
+      "min": 2,
+      "max": 16,
+      "description": "Distance between hatching lines in pixels"
+    },
+    {
+      "name": "ink",
+      "type": "color",
+      "default": "#2a2a2e",
+      "description": "Pencil color"
+    },
+    {
+      "name": "paper",
+      "type": "color",
+      "default": "#f7f5ef",
+      "description": "Paper color"
+    },
+    {
+      "name": "colored",
+      "type": "float",
+      "default": 0,
+      "min": 0,
+      "max": 1,
+      "description": "Keeps some of the picture's colors"
+    },
+    {
+      "name": "amount",
+      "type": "float",
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "description": "Strength: 0 is the original picture, 1 the full effect"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/sketch.wgsl"
+        }
+      ]
+    }
+  ]
+}

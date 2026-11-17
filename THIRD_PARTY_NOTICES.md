@@ -68,6 +68,34 @@ SOFTWARE.
 
 ### Licence 2
 
+Packages: `cartoon`, `circle-grow`, `crt-scanline`, `emboss`, `glow`, `halftone`, `oil-paint`, `old-film`, `posterize`, `sketch`, `vhs`
+
+```text
+MIT License
+
+Copyright (c) 2026 tqk2811
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+### Licence 3
+
 Packages: `chromatic-aberration-wipe`, `curtain-reveal`, `directional-wipe`, `grid-pixelate-wipe`, `halftone-dissolve`, `iris-reveal`, `whip-pan-cut`, `zoom-through-transition`, `avs-subtitle-style-hf`
 
 ```text
@@ -322,34 +350,6 @@ HyperFrames (HeyGen, Inc.)
    limitations under the License.
 ```
 
-### Licence 3
-
-Packages: `circle-grow`, `crt-scanline`, `glow`, `halftone`, `old-film`, `posterize`, `vhs`
-
-```text
-MIT License
-
-Copyright (c) 2026 tqk2811
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
 ### Licence 4
 
 Packages: `sfx-<category>`, `music`
@@ -554,6 +554,17 @@ Source in AI Video Studio: engine/engine.js (fxWrap, type blur_in)
 Modifications: Rewritten in WGSL from the formula; driven by the clip's own clock.
 ```
 
+### `cartoon`
+
+```text
+Cartoon
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `chromatic-aberration-wipe`
 
 ```text
@@ -631,6 +642,17 @@ This package is a modified work based on the block `directional-wipe` of HyperFr
 Apache License, Version 2.0, as bundled in AI Video Studio at engine/hf/.
 The original HTML, CSS and GSAP code is not included in this package: the timing and
 the formulas were rewritten in WGSL. Changes were made to the original work.
+```
+
+### `emboss`
+
+```text
+Emboss
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
 ### `glow`
@@ -907,6 +929,17 @@ Source in AI Video Studio: engine/engine.js (MASK_SHAPES, maskCss); references/k
 Modifications: Rewritten in WGSL from the SVG mask shapes; the Gaussian feather is computed from a signed distance.
 ```
 
+### `oil-paint`
+
+```text
+Oil Paint
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `old-film`
 
 ```text
@@ -966,6 +999,17 @@ https://github.com/nguyentatkiem/ai-video-studio
 
 Source in AI Video Studio: engine/engine.js (fxWrap, type shake)
 Modifications: Rewritten in WGSL from the formula; the amplitude no longer decays, and the clip-time parameter is gone.
+```
+
+### `sketch`
+
+```text
+Sketch
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
 ### `vhs`
