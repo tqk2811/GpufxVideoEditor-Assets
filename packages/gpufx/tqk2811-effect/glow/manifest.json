@@ -1,0 +1,57 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.glow",
+  "name": "Glow",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Bloom: the bright parts of the picture bleed soft light around them.",
+  "inputs": [
+    {
+      "name": "src",
+      "mipmaps": true
+    }
+  ],
+  "params": [
+    {
+      "name": "intensity",
+      "type": "float",
+      "default": 1.0,
+      "min": 0,
+      "max": 4,
+      "description": "Strength of the glow"
+    },
+    {
+      "name": "threshold",
+      "type": "float",
+      "default": 0.55,
+      "min": 0,
+      "max": 0.99,
+      "description": "Brightness (0..1) a pixel needs before it glows"
+    },
+    {
+      "name": "radius",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.2,
+      "max": 2,
+      "description": "Spread of the glow; 1 reaches about a tenth of the frame"
+    },
+    {
+      "name": "tint",
+      "type": "color",
+      "default": "#ffffff",
+      "description": "Color the glow is multiplied by"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/glow.wgsl"
+        }
+      ]
+    }
+  ]
+}

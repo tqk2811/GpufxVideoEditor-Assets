@@ -1,0 +1,90 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.old-film",
+  "name": "Old Film",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Old film reel: sepia tone, grain, flicker, scratches, dust and gate weave.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "sepia",
+      "type": "float",
+      "default": 0.75,
+      "min": 0,
+      "max": 1,
+      "description": "Sepia tone: 0 keeps the colors"
+    },
+    {
+      "name": "grain",
+      "type": "float",
+      "default": 0.07,
+      "min": 0,
+      "max": 0.5,
+      "description": "Film grain"
+    },
+    {
+      "name": "flicker",
+      "type": "float",
+      "default": 0.12,
+      "min": 0,
+      "max": 0.5,
+      "description": "Brightness flicker between frames"
+    },
+    {
+      "name": "scratches",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "description": "How often vertical scratches show"
+    },
+    {
+      "name": "dust",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "description": "How many dust specks show"
+    },
+    {
+      "name": "vignette",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "description": "Darkening of the corners"
+    },
+    {
+      "name": "weave",
+      "type": "float",
+      "default": 1.0,
+      "min": 0,
+      "max": 4,
+      "description": "Up-and-down shake of the frame in the gate"
+    },
+    {
+      "name": "fps",
+      "type": "float",
+      "default": 18,
+      "min": 1,
+      "max": 60,
+      "description": "How many times a second the grain, dust and scratches change"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/old_film.wgsl"
+        }
+      ]
+    }
+  ]
+}

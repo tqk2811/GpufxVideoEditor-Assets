@@ -324,7 +324,7 @@ HyperFrames (HeyGen, Inc.)
 
 ### Licence 3
 
-Packages: `circle-grow`
+Packages: `circle-grow`, `glow`, `old-film`, `vhs`
 
 ```text
 MIT License
@@ -622,6 +622,17 @@ The original HTML, CSS and GSAP code is not included in this package: the timing
 the formulas were rewritten in WGSL. Changes were made to the original work.
 ```
 
+### `glow`
+
+```text
+Glow
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `grid-pixelate-wipe`
 
 ```text
@@ -874,6 +885,17 @@ Source in AI Video Studio: engine/engine.js (MASK_SHAPES, maskCss); references/k
 Modifications: Rewritten in WGSL from the SVG mask shapes; the Gaussian feather is computed from a signed distance.
 ```
 
+### `old-film`
+
+```text
+Old Film
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `punch`
 
 ```text
@@ -911,6 +933,17 @@ https://github.com/nguyentatkiem/ai-video-studio
 
 Source in AI Video Studio: engine/engine.js (fxWrap, type shake)
 Modifications: Rewritten in WGSL from the formula; the amplitude no longer decays, and the clip-time parameter is gone.
+```
+
+### `vhs`
+
+```text
+VHS
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
 ### `whip`
