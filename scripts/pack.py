@@ -23,7 +23,7 @@ from pack_stickers import LICENSE_TEXT as STICKER_LICENSE, NOTICE_TEXT as STICKE
 ROOT = Path(__file__).resolve().parent.parent
 PACKAGES = ROOT / "packages"
 NOTICES = ROOT / "THIRD_PARTY_NOTICES.md"
-ANIMATION_DIR = ROOT / "animations" / "avs"
+ANIMATION_DIR = ROOT / "animations"
 TEXT_STYLE_DIR = ROOT / "text-styles"
 FIXED_TIME = (1980, 1, 1, 0, 0, 0)
 REQUIRED = ("manifest.json", "LICENSE.txt", "NOTICE.txt")
@@ -84,8 +84,14 @@ def notices_text(packages):
     by_licence.setdefault(AUDIO_LICENSE, []).extend(["sfx-<category>", "music"])
     # The sticker zip is built by scripts/pack_stickers.py; its licence is Microsoft's, not AI Video Studio's.
     by_licence.setdefault(STICKER_LICENSE, []).append("stickers")
-    # The clip animation zip is built by scripts/pack_animations.py from animations/avs/.
-    by_licence.setdefault(ANIMATION_DIR.joinpath("LICENSE.txt").read_text(encoding="utf-8"), []).append("avs-clip-animation")
+    # The clip animation zips are built by scripts/pack_animations.py from animations/<pack>/, each named after
+    # the id in its pack.json.
+    animations = {}
+    for folder in sorted(ANIMATION_DIR.iterdir()):
+        if (folder / "pack.json").is_file():
+            animations[json.loads((folder / "pack.json").read_text(encoding="utf-8"))["id"]] = folder
+    for slug, folder in animations.items():
+        by_licence.setdefault((folder / "LICENSE.txt").read_text(encoding="utf-8"), []).append(slug)
     # The text and subtitle style zips are built by scripts/pack_text_styles.py from text-styles/<pack>/.
     styles = {folder.name: folder for folder in sorted(TEXT_STYLE_DIR.iterdir()) if (folder / "pack.json").is_file()}
     for slug, folder in styles.items():
@@ -96,6 +102,8 @@ def notices_text(packages):
     for slug, folder in sorted(packages.items()):
         out += [f"### `{slug}`", "", "```text", (folder / "NOTICE.txt").read_text(encoding="utf-8").rstrip("\n"), "```", ""]
     out += ["### `stickers`", "", "```text", STICKER_NOTICE.rstrip("\n"), "```", ""]
+    for slug, folder in animations.items():
+        out += [f"### `{slug}`", "", "```text", (folder / "NOTICE.txt").read_text(encoding="utf-8").rstrip("\n"), "```", ""]
     for slug, folder in styles.items():
         out += [f"### `{slug}`", "", "```text", (folder / "NOTICE.txt").read_text(encoding="utf-8").rstrip("\n"), "```", ""]
     return "\n".join(out).rstrip("\n") + "\n"

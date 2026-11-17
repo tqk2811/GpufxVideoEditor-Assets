@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
-"""Build the clip animation pack of AI Video Studio's text animations.
+"""Build the clip animation packs: AI Video Studio's text animations and the tqk2811 animations.
 
-    py -I scripts/pack_animations.py            # -> dist/avs-clip-animation.zip
+    py -I scripts/pack_animations.py            # -> dist/<pack id>.zip for every pack
     py -I scripts/pack_animations.py -o out     # into out/
-    py -I scripts/pack_animations.py --check    # only validate the source
+    py -I scripts/pack_animations.py --check    # only validate the sources
 
-Source: animations/avs/pack.json (id, name, version, items), LICENSE.txt and NOTICE.txt. The zip has,
-at its root, manifest.json (format 1, type "clip-animation"), LICENSE.txt and NOTICE.txt. It is
+Source: animations/<pack>/pack.json (id, name, version, items), LICENSE.txt and NOTICE.txt. Each zip
+has, at its root, manifest.json (format 1, type "clip-animation"), LICENSE.txt and NOTICE.txt. It is
 reproducible byte for byte (sorted entries, fixed timestamps). Standard library only.
 
 Before writing, the manifest is checked with the rules of the editor's strict reader
 (crates/d3d12-backend/src/clip_animation_pack.rs and engine::check_curve): known fields only, safe
 ids, kinds in/out/loop, 0 < default_duration <= 60, applies_to kinds, curve tracks with keyframes in
-rising t within 0..1 and finite values, known easings.
+rising t within 0..1 and finite values, known easings, an effect's package id and static parameters,
+and per_unit (engine::per_unit::check_per_unit: only on text items, stagger or selector, no blur).
 """
 
 import argparse
@@ -24,7 +25,14 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCE = ROOT / "animations" / "avs"
+SOURCE = ROOT / "animations"
+SPDX = {
+    "avs-clip-animation": "MIT",
+    "tqk2811-clip-animation": "MIT",
+}
+UNITS = ("char", "word", "line")
+ORDERS = ("forward", "backward", "center", "random")
+SHAPES = ("square", "ramp_up", "ramp_down", "triangle", "round", "smooth")
 FIXED_TIME = (1980, 1, 1, 0, 0, 0)
 SAFE_ID = re.compile(r"^[A-Za-z0-9._-]+$")
 KINDS = ("in", "out", "loop")
@@ -73,8 +81,75 @@ def check_ease(where, ease):
         fail(f"{where}: unknown ease '{name}'")
 
 
+def check_keys(where, keys):
+    last = 0.0
+    for key in keys:
+        check_fields(f"{where} keyframe", key, ("t", "value"), ("ease",))
+        t = key["t"]
+        if not (finite(t) and 0 <= t <= 1 and finite(key["value"])):
+            fail(f"{where}: a keyframe is not finite or its t is not in 0..1")
+        if t < last:
+            fail(f"{where}: the keyframes are not in rising t")
+        last = t
+        if "ease" in key:
+            check_ease(where, key["ease"])
+
+
+def check_curve(where, curve):
+    check_fields(f"{where} curve", curve, ("tracks",))
+    tracks = curve["tracks"]
+    if not isinstance(tracks, dict) or not tracks:
+        fail(f"{where}: the curve has no track")
+    for prop, keys in tracks.items():
+        if prop not in PROPERTIES:
+            fail(f"{where}: unknown property '{prop}'")
+        if not isinstance(keys, list) or not keys:
+            fail(f"{where}: the {prop} track has no keyframe")
+        check_keys(f"{where} {prop}", keys)
+
+
+def check_effect(where, effect):
+    check_fields(f"{where} effect", effect, ("package",), ("progress", "params"))
+    if not isinstance(effect["package"], str) or not SAFE_ID.match(effect["package"]):
+        fail(f"{where}: the effect package is not a package id")
+    progress = effect.get("progress", "progress")
+    if not isinstance(progress, str) or not progress.strip():
+        fail(f"{where}: the effect has an empty progress")
+    params = effect.get("params", {})
+    if not isinstance(params, dict) or len(params) > 64 or progress in params:
+        fail(f"{where}: bad effect params")
+    for name, value in params.items():
+        simple = finite(value) or isinstance(value, bool) or (isinstance(value, str) and value.strip()) or (
+            isinstance(value, list) and 2 <= len(value) <= 4 and all(finite(v) for v in value))
+        if not name.strip() or not simple:
+            fail(f"{where}: the effect parameter '{name}' must be a number, a bool, 2 to 4 numbers or an enum choice")
+
+
+def check_per_unit(where, per_unit):
+    check_fields(f"{where} per_unit", per_unit, ("curve",), ("unit", "order", "seed", "stagger", "selector"))
+    if per_unit.get("unit", "char") not in UNITS or per_unit.get("order", "forward") not in ORDERS:
+        fail(f"{where}: per_unit unit or order is unknown")
+    seed = per_unit.get("seed", 0)
+    if not (isinstance(seed, int) and not isinstance(seed, bool) and seed >= 0):
+        fail(f"{where}: per_unit seed must be a whole number")
+    if ("stagger" in per_unit) == ("selector" in per_unit):
+        fail(f"{where}: per_unit needs exactly one of stagger and selector")
+    if "stagger" in per_unit and not (finite(per_unit["stagger"]) and 0 <= per_unit["stagger"] <= 1):
+        fail(f"{where}: the stagger of per_unit must be in 0..1")
+    if "selector" in per_unit:
+        selector = per_unit["selector"]
+        check_fields(f"{where} selector", selector, (), ("start", "end", "offset", "shape"))
+        if selector.get("shape", "square") not in SHAPES:
+            fail(f"{where}: unknown selector shape")
+        for name in ("start", "end", "offset"):
+            check_keys(f"{where} selector {name}", selector.get(name, []))
+    check_curve(f"{where} per_unit", per_unit["curve"])
+    if "blur" in per_unit["curve"]["tracks"]:
+        fail(f"{where}: the per_unit curve cannot blur a unit")
+
+
 def check_item(item):
-    check_fields("an item", item, ("id", "name", "kind", "default_duration", "curve"), ("applies_to", "effect"))
+    check_fields("an item", item, ("id", "name", "kind", "default_duration"), ("curve", "applies_to", "effect", "per_unit"))
     where = f"item '{item['id']}'"
     if not isinstance(item["id"], str) or not SAFE_ID.match(item["id"]) or item["id"] in (".", ".."):
         fail(f"{where}: unsafe id")
@@ -89,26 +164,16 @@ def check_item(item):
         kinds = item["applies_to"]
         if not kinds or len(set(kinds)) != len(kinds) or any(k not in CLIP_KINDS for k in kinds):
             fail(f"{where}: bad applies_to")
-    check_fields(f"{where} curve", item["curve"], ("tracks",))
-    tracks = item["curve"]["tracks"]
-    if not isinstance(tracks, dict) or not tracks:
-        fail(f"{where}: the curve has no track")
-    for prop, keys in tracks.items():
-        if prop not in PROPERTIES:
-            fail(f"{where}: unknown property '{prop}'")
-        if not isinstance(keys, list) or not keys:
-            fail(f"{where}: the {prop} track has no keyframe")
-        last = 0.0
-        for key in keys:
-            check_fields(f"{where} {prop} keyframe", key, ("t", "value"), ("ease",))
-            t = key["t"]
-            if not (finite(t) and 0 <= t <= 1 and finite(key["value"])):
-                fail(f"{where}: a {prop} keyframe is not finite or its t is not in 0..1")
-            if t < last:
-                fail(f"{where}: the {prop} keyframes are not in rising t")
-            last = t
-            if "ease" in key:
-                check_ease(f"{where} {prop}", key["ease"])
+    if "per_unit" in item:
+        if item.get("applies_to") != ["text"]:
+            fail(f"{where}: an item with per_unit must have applies_to ['text']")
+        check_per_unit(where, item["per_unit"])
+    if "effect" in item:
+        check_effect(where, item["effect"])
+    if "curve" in item:
+        check_curve(where, item["curve"])
+    elif "effect" not in item and "per_unit" not in item:
+        fail(f"{where}: an item without an effect or per_unit needs a curve")
 
 
 def check_manifest(manifest):
@@ -133,25 +198,32 @@ def check_manifest(manifest):
         check_item(item)
 
 
-def build_manifest():
-    source = json.loads((SOURCE / "pack.json").read_text(encoding="utf-8"))
-    check_fields("pack.json", source, ("id", "name", "version", "items"))
+def build_manifest(folder):
+    source = json.loads((folder / "pack.json").read_text(encoding="utf-8"))
+    check_fields(f"{folder.name}/pack.json", source, ("id", "name", "version", "items"))
+    if source["id"] not in SPDX:
+        fail(f"{folder.name}: no licence is known for the pack '{source['id']}'")
     return {
         "format": 1,
         "type": "clip-animation",
         "id": source["id"],
         "name": source["name"],
         "version": source["version"],
-        "license": {"spdx": "MIT", "files": ["LICENSE.txt", "NOTICE.txt"]},
+        "license": {"spdx": SPDX[source["id"]], "files": ["LICENSE.txt", "NOTICE.txt"]},
         "items": source["items"],
     }
 
 
-def write_zip(target, manifest):
+def pack_folders():
+    """Every folder of animations/ with a pack.json, in name order."""
+    return sorted(p.parent for p in SOURCE.glob("*/pack.json"))
+
+
+def write_zip(target, folder, manifest):
     entries = {
         "manifest.json": json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
-        "LICENSE.txt": (SOURCE / "LICENSE.txt").read_text(encoding="utf-8"),
-        "NOTICE.txt": (SOURCE / "NOTICE.txt").read_text(encoding="utf-8"),
+        "LICENSE.txt": (folder / "LICENSE.txt").read_text(encoding="utf-8"),
+        "NOTICE.txt": (folder / "NOTICE.txt").read_text(encoding="utf-8"),
     }
     target.parent.mkdir(parents=True, exist_ok=True)
     temporary = target.with_suffix(".zip.tmp")
@@ -170,14 +242,25 @@ def main():
     parser.add_argument("-o", "--output", type=Path, default=ROOT / "dist", help="output directory")
     parser.add_argument("--check", action="store_true", help="only validate the source")
     args = parser.parse_args()
-    manifest = build_manifest()
-    check_manifest(manifest)
-    if args.check:
-        print(f"{manifest['id']}: {len(manifest['items'])} items ok")
-        return
-    target = args.output / f"{manifest['id']}.zip"
-    write_zip(target, manifest)
-    print(f"wrote {target} ({len(manifest['items'])} items)")
+    folders = pack_folders()
+    if not folders:
+        fail(f"no pack.json below {SOURCE}")
+    ids = set()
+    for folder in folders:
+        for name in ("LICENSE.txt", "NOTICE.txt"):
+            if not (folder / name).is_file():
+                fail(f"{folder.name}: missing {name}")
+        manifest = build_manifest(folder)
+        check_manifest(manifest)
+        if manifest["id"].lower() in ids:
+            fail(f"the pack id '{manifest['id']}' is used twice")
+        ids.add(manifest["id"].lower())
+        if args.check:
+            print(f"{manifest['id']}: {len(manifest['items'])} items ok")
+            continue
+        target = args.output / f"{manifest['id']}.zip"
+        write_zip(target, folder, manifest)
+        print(f"wrote {target} ({len(manifest['items'])} items)")
 
 
 if __name__ == "__main__":

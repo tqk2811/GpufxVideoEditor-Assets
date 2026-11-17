@@ -66,20 +66,34 @@ and categories come from the `metadata.json` of each emoji, and the zip is repro
 list of 107 emoji follows the sticker panel of AI Video Studio. Only the files in the checkout are used:
 a sparse checkout of the `LICENSE` and of the 107 `assets/<Name>/` folders is enough.
 
-## Clip animation pack
+## Clip animation packs
 
-The text animations of AI Video Studio (`engine/vertical.js`), written again as keyframe data for the
-editor's `clip-animation` packs. The source is `animations/avs/pack.json`, next to its `LICENSE.txt`
-(the MIT licence of AI Video Studio) and `NOTICE.txt`. `scripts/pack_animations.py` checks it with the
-rules of the editor's reader and builds the zip:
+Keyframe data for the editor's `clip-animation` packs. Each pack has its source in `animations/<pack>/`:
+`pack.json`, `LICENSE.txt` and `NOTICE.txt`. `scripts/pack_animations.py` checks every pack with the
+rules of the editor's reader and builds the zips:
 
 ```sh
-py -I scripts/pack_animations.py           # -> dist/avs-clip-animation.zip
+py -I scripts/pack_animations.py           # -> dist/<pack id>.zip
 py -I scripts/pack_animations.py --check   # validate only
 ```
 
-The zip has `manifest.json` (format 1, type `clip-animation`), `LICENSE.txt` and `NOTICE.txt`, and is
-reproducible byte for byte. Items: `pop`, `fade`, `slide_l`, `slide_r`, `drop`, `blur_zoom` (in) and
+Each zip has `manifest.json` (format 1, type `clip-animation`), `LICENSE.txt` and `NOTICE.txt`, and is
+reproducible byte for byte.
+
+| Zip | Items | Licence |
+|-----|-------|---------|
+| `avs-clip-animation` | 7, from AI Video Studio (below) | MIT (AI Video Studio) |
+| `tqk2811-clip-animation` | 25 | MIT (original work) |
+
+`tqk2811-clip-animation` is original work. In: `v_drop_circle` (runs the hidden `circle-grow` effect),
+`bounce_in`, `elastic_in`, `flip_in_x`, `flip_in_y`, `rotate_in`, `spin_pop`, `swing_in`, `shrink_in`,
+`rise_in`; for text only, `typewriter`, `char_rise` (letter by letter) and `word_pop` (word by word).
+Out: `bounce_out`, `flip_out_x`, `rotate_out`, `blow_up_out`, `sink_out` and, for text, `char_fall_out`.
+Loop: `pulse`, `heartbeat`, `swing`, `float`, `jitter` and, for text, `wave`. The flips squeeze the width
+or height towards 0, since a curve has no 3D turn. The text-only items use the `per_unit` part of an item.
+
+`avs-clip-animation` holds the text animations of AI Video Studio (`engine/vertical.js`), written again
+as keyframe data. Its items: `pop`, `fade`, `slide_l`, `slide_r`, `drop`, `blur_zoom` (in) and
 `fade_out` (out, the exit all text lines share). Durations, easings, distances and blur amounts are the
 original ones; pixels of the 720x1280 canvas are turned into parts of the frame width (`dx`) and height
 (`dy`, `blur`). The skew of the slides is left out, because a curve has no skew. `fly`, `tumble` and

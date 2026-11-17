@@ -324,7 +324,7 @@ HyperFrames (HeyGen, Inc.)
 
 ### Licence 3
 
-Packages: `circle-grow`
+Packages: `circle-grow`, `tqk2811-clip-animation`
 
 ```text
 MIT License
@@ -989,6 +989,29 @@ The images are the unmodified 3D PNG files of that repository, renamed to ASCII 
 Names, tags and categories are taken from the metadata.json of each emoji.
 The choice of the 107 emoji follows the sticker panel of AI Video Studio by Nguyễn Tất Kiểm
 (https://github.com/nguyentatkiem/ai-video-studio, MIT).
+```
+
+### `avs-clip-animation`
+
+```text
+Based on AI Video Studio by Nguyễn Tất Kiểm
+Copyright (c) 2026 Nguyễn Tất Kiểm
+https://github.com/nguyentatkiem/ai-video-studio
+
+The clip animations recreate, as keyframe data, the text animations of engine/vertical.js
+(durations, easings, distances and blur amounts). No code of the original project is copied.
+```
+
+### `tqk2811-clip-animation`
+
+```text
+Clip animations: tqk2811
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work: keyframe curves and per-unit text animations written for GpufxVideoEditor.
+v_drop_circle runs the circle-grow effect of packages/gpufx/tqk2811-effect. MIT License.
 ```
 
 ### `avs-subtitle-style`

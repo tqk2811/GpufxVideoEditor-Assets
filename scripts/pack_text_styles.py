@@ -15,7 +15,7 @@ engine::text_style_problems): known fields only, safe ids, unique item ids, text
 characters, colours [r, g, b, a] of 0..255, size 0.01..0.5, weight 100..900, letter spacing within
 +-2, glow radius 0..2, intensity 0..4, falloff 0.1..8, animation presets '<pack>/<item>' lasting
 0..60 s, subtitle layout and karaoke ranges. Animation presets must also name an item of the clip
-animation pack (animations/avs/pack.json) of the right kind.
+animation packs (animations/<pack>/pack.json) of the right kind.
 """
 
 import argparse
@@ -28,7 +28,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "text-styles"
-ANIMATIONS = ROOT / "animations" / "avs" / "pack.json"
+ANIMATIONS = ROOT / "animations"
 FIXED_TIME = (1980, 1, 1, 0, 0, 0)
 SAFE_ID = re.compile(r"^[A-Za-z0-9._-]+$")
 MAX_ID_LENGTH = 128
@@ -242,8 +242,11 @@ def check_manifest(manifest, presets):
 
 
 def animation_presets():
-    source = json.loads(ANIMATIONS.read_text(encoding="utf-8"))
-    return {f"{source['id']}/{item['id']}": item["kind"] for item in source["items"]}
+    presets = {}
+    for path in sorted(ANIMATIONS.glob("*/pack.json")):
+        source = json.loads(path.read_text(encoding="utf-8"))
+        presets.update({f"{source['id']}/{item['id']}": item["kind"] for item in source["items"]})
+    return presets
 
 
 def build_manifest(folder):
