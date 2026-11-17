@@ -68,7 +68,7 @@ SOFTWARE.
 
 ### Licence 2
 
-Packages: `cartoon`, `circle-grow`, `crt-scanline`, `emboss`, `glow`, `god-rays`, `halftone`, `lens-flare`, `light-leak`, `oil-paint`, `old-film`, `posterize`, `sketch`, `vhs`
+Packages: `cartoon`, `circle-grow`, `crt-scanline`, `emboss`, `glow`, `god-rays`, `halftone`, `lens-flare`, `light-leak`, `oil-paint`, `old-film`, `posterize`, `rain`, `sketch`, `snow`, `vhs`
 
 ```text
 MIT License
@@ -1021,6 +1021,17 @@ Source in AI Video Studio: engine/engine.js (fxWrap, type push)
 Modifications: Rewritten in WGSL from the formula; driven by the clip's own clock.
 ```
 
+### `rain`
+
+```text
+Rain
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `shake`
 
 ```text
@@ -1038,6 +1049,17 @@ Modifications: Rewritten in WGSL from the formula; the amplitude no longer decay
 
 ```text
 Sketch
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `snow`
+
+```text
+Snow
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
