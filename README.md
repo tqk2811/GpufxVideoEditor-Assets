@@ -15,7 +15,7 @@ are rewritten in WGSL from its formulas. `punch`, `zoom-in`, `whip`, `blur-in` a
 | `packages/gpufx/avs-look/` | `look-warm`, `look-cool`, `look-vivid`, `look-bw`, `look-film`, `look-fade`, `look-night`, `look-pop` |
 | `packages/gpufx/avs-transition/` | `chromatic-aberration-wipe`, `curtain-reveal`, `directional-wipe`, `grid-pixelate-wipe`, `halftone-dissolve`, `iris-reveal`, `whip-pan-cut`, `zoom-through-transition` |
 | `packages/gpufx/avs-effect/` | `shake`, `punch`, `zoom-in`, `whip`, `blur-in`, `push` |
-| `packages/gpufx/tqk2811-effect/` | `circle-grow`, `glow`, `old-film`, `vhs`, `crt-scanline`, `halftone`, `posterize`, `cartoon`, `oil-paint`, `sketch`, `emboss`, `light-leak`, `lens-flare`, `god-rays`, `snow`, `rain` |
+| `packages/gpufx/tqk2811-effect/` | `circle-grow`, `glow`, `old-film`, `vhs`, `crt-scanline`, `halftone`, `posterize`, `cartoon`, `oil-paint`, `sketch`, `emboss`, `light-leak`, `lens-flare`, `god-rays`, `snow`, `rain`, `hearts`, `bubbles`, `confetti` |
 
 The `tqk2811-effect` packages are original work under the MIT licence of this repository, not derived from AI Video Studio. Each has a `README.md` with its parameters. Effects that move (grain, particles, light leaks) follow the timeline clock (`globals.time_int` and `time_frac`) and keep no state between frames, so seeking gives the same picture again; particles come from an integer hash of their grid cell and layer. `circle-grow` is hidden: it is a building block of a clip animation.
 

@@ -68,7 +68,7 @@ SOFTWARE.
 
 ### Licence 2
 
-Packages: `cartoon`, `circle-grow`, `crt-scanline`, `emboss`, `glow`, `god-rays`, `halftone`, `lens-flare`, `light-leak`, `oil-paint`, `old-film`, `posterize`, `rain`, `sketch`, `snow`, `vhs`
+Packages: `bubbles`, `cartoon`, `circle-grow`, `confetti`, `crt-scanline`, `emboss`, `glow`, `god-rays`, `halftone`, `hearts`, `lens-flare`, `light-leak`, `oil-paint`, `old-film`, `posterize`, `rain`, `sketch`, `snow`, `vhs`
 
 ```text
 MIT License
@@ -554,6 +554,17 @@ Source in AI Video Studio: engine/engine.js (fxWrap, type blur_in)
 Modifications: Rewritten in WGSL from the formula; driven by the clip's own clock.
 ```
 
+### `bubbles`
+
+```text
+Bubbles
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `cartoon`
 
 ```text
@@ -588,6 +599,17 @@ the formulas were rewritten in WGSL. Changes were made to the original work.
 
 ```text
 Circle Grow
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `confetti`
+
+```text
+Confetti
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
@@ -724,6 +746,17 @@ This package is a modified work based on the block `halftone-dissolve` of HyperF
 Apache License, Version 2.0, as bundled in AI Video Studio at engine/hf/.
 The original HTML, CSS and GSAP code is not included in this package: the timing and
 the formulas were rewritten in WGSL. Changes were made to the original work.
+```
+
+### `hearts`
+
+```text
+Hearts
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
 ### `iris-reveal`

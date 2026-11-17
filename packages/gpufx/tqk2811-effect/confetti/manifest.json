@@ -1,0 +1,82 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.confetti",
+  "name": "Confetti",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Colored paper confetti tumbles down over the video.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "density",
+      "type": "float",
+      "default": 0.55,
+      "min": 0,
+      "max": 1,
+      "description": "Part of the grid cells that hold a particle"
+    },
+    {
+      "name": "speed",
+      "type": "float",
+      "default": 0.22,
+      "min": -3,
+      "max": 5,
+      "description": "Speed, frame heights per second"
+    },
+    {
+      "name": "wind",
+      "type": "float",
+      "default": 0.0,
+      "min": -2,
+      "max": 2,
+      "description": "Sideways drift, frame heights per second (negative blows left)"
+    },
+    {
+      "name": "size",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.2,
+      "max": 4,
+      "description": "Particle size; larger particles are also fewer"
+    },
+    {
+      "name": "opacity",
+      "type": "float",
+      "default": 1.0,
+      "min": 0,
+      "max": 1,
+      "description": "Opacity of the particles"
+    },
+    {
+      "name": "spin",
+      "type": "float",
+      "default": 1.0,
+      "min": 0,
+      "max": 4,
+      "description": "How fast the pieces turn and flip"
+    },
+    {
+      "name": "seed",
+      "type": "int",
+      "default": 1,
+      "min": 0,
+      "max": 100000,
+      "description": "Changes where the particles are"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/confetti.wgsl"
+        }
+      ]
+    }
+  ]
+}
