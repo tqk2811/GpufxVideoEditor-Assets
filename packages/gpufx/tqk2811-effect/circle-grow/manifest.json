@@ -4,6 +4,7 @@
   "name": "Circle Grow",
   "used_for": ["gpufx"],
   "version": "1.0.0",
+  "hidden": true,
   "description": "Shows the picture inside a circle that grows from a point; the rest is transparent. Drive `progress` from 0 (nothing) to 1 (the whole picture).",
   "inputs": [{ "name": "src" }],
   "outputs": [{ "name": "out", "pixel_layout": "rgba" }],
