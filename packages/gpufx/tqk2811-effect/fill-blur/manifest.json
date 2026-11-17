@@ -1,0 +1,67 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.fill-blur",
+  "name": "Fill Blur",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Fills the empty sides around a video of another shape with a blurred, enlarged copy of itself, as for a vertical phone video in a wide frame.",
+  "inputs": [
+    {
+      "name": "src",
+      "mipmaps": true
+    }
+  ],
+  "params": [
+    {
+      "name": "aspect",
+      "type": "float",
+      "default": 1.7777778,
+      "min": 0,
+      "max": 4,
+      "description": "Width / height of the output (16:9 = 1.778); 0 keeps the size of the clip and shrinks the picture by `scale`"
+    },
+    {
+      "name": "scale",
+      "type": "float",
+      "default": 1,
+      "min": 0.2,
+      "max": 1,
+      "description": "Size of the sharp picture inside the frame"
+    },
+    {
+      "name": "blur",
+      "type": "float",
+      "default": 4,
+      "min": 0,
+      "max": 9,
+      "description": "Blur of the background, as a mip level (each step doubles it)"
+    },
+    {
+      "name": "dim",
+      "type": "float",
+      "default": 0.3,
+      "min": 0,
+      "max": 1,
+      "description": "Darkens the background"
+    },
+    {
+      "name": "zoom",
+      "type": "float",
+      "default": 1.1,
+      "min": 1,
+      "max": 3,
+      "description": "Extra enlargement of the background"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/fill_blur.wgsl"
+        }
+      ]
+    }
+  ]
+}

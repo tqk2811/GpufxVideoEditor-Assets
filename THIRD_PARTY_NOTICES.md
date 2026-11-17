@@ -68,7 +68,7 @@ SOFTWARE.
 
 ### Licence 2
 
-Packages: `bubbles`, `cartoon`, `circle-grow`, `confetti`, `crt-scanline`, `emboss`, `glow`, `god-rays`, `halftone`, `hearts`, `lens-flare`, `light-leak`, `oil-paint`, `old-film`, `posterize`, `rain`, `sketch`, `snow`, `vhs`
+Packages: `bubbles`, `cartoon`, `circle-grow`, `confetti`, `crt-scanline`, `emboss`, `fill-blur`, `glow`, `god-rays`, `halftone`, `hearts`, `lens-flare`, `letterbox`, `light-leak`, `oil-paint`, `old-film`, `posterize`, `rain`, `sketch`, `snow`, `vhs`
 
 ```text
 MIT License
@@ -677,6 +677,17 @@ https://github.com/tqk2811/GpufxVideoEditor-Assets
 Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
+### `fill-blur`
+
+```text
+Fill Blur
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `glow`
 
 ```text
@@ -782,6 +793,17 @@ the formulas were rewritten in WGSL. Changes were made to the original work.
 
 ```text
 Lens Flare
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `letterbox`
+
+```text
+Letterbox
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
