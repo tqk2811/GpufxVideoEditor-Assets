@@ -1,0 +1,80 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.crt-scanline",
+  "name": "CRT Scanlines",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Old CRT screen: curved glass, scanlines, an RGB phosphor mask and dark corners.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "curvature",
+      "type": "float",
+      "default": 0.15,
+      "min": 0,
+      "max": 0.5,
+      "description": "Bulge of the glass"
+    },
+    {
+      "name": "lines",
+      "type": "float",
+      "default": 0,
+      "min": 0,
+      "max": 2000,
+      "description": "Number of scanlines; 0 is one every 3 pixels"
+    },
+    {
+      "name": "scanlines",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "description": "Darkness of the gaps between scanlines"
+    },
+    {
+      "name": "mask",
+      "type": "float",
+      "default": 0.3,
+      "min": 0,
+      "max": 1,
+      "description": "Strength of the RGB phosphor stripes"
+    },
+    {
+      "name": "vignette",
+      "type": "float",
+      "default": 0.4,
+      "min": 0,
+      "max": 1,
+      "description": "Darkening of the corners"
+    },
+    {
+      "name": "brightness",
+      "type": "float",
+      "default": 1.15,
+      "min": 0.5,
+      "max": 2,
+      "description": "Brightness, to make up for the dark gaps"
+    },
+    {
+      "name": "border",
+      "type": "color",
+      "default": "#000000",
+      "description": "Color outside the curved screen"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/crt_scanline.wgsl"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.halftone",
+  "name": "Halftone",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Printed halftone: the picture becomes a grid of ink dots on paper.",
+  "inputs": [
+    {
+      "name": "src",
+      "mipmaps": true
+    }
+  ],
+  "params": [
+    {
+      "name": "size",
+      "type": "float",
+      "default": 8,
+      "min": 2,
+      "max": 64,
+      "description": "Dot spacing in pixels"
+    },
+    {
+      "name": "angle",
+      "type": "float",
+      "default": 45,
+      "min": -180,
+      "max": 180,
+      "description": "Angle of the dot grid in degrees"
+    },
+    {
+      "name": "ink",
+      "type": "color",
+      "default": "#1a1a1a",
+      "description": "Ink color"
+    },
+    {
+      "name": "paper",
+      "type": "color",
+      "default": "#f4efe4",
+      "description": "Paper color"
+    },
+    {
+      "name": "colored",
+      "type": "bool",
+      "default": false,
+      "description": "Draw each dot in the picture's own color instead of the ink"
+    },
+    {
+      "name": "amount",
+      "type": "float",
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "description": "Strength: 0 is the original picture, 1 the full effect"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/halftone.wgsl"
+        }
+      ]
+    }
+  ]
+}

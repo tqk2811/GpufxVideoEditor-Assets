@@ -1,0 +1,50 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.posterize",
+  "name": "Posterize",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Posterize: each color channel is cut down to a few flat steps, like a screen print.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "levels",
+      "type": "int",
+      "default": 5,
+      "min": 2,
+      "max": 32,
+      "description": "Steps per color channel"
+    },
+    {
+      "name": "gamma",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.3,
+      "max": 3,
+      "description": "Moves the steps towards the shadows (above 1) or the highlights (below 1)"
+    },
+    {
+      "name": "amount",
+      "type": "float",
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "description": "Strength: 0 is the original picture, 1 the full effect"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/posterize.wgsl"
+        }
+      ]
+    }
+  ]
+}

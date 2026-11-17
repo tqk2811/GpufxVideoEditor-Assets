@@ -324,7 +324,7 @@ HyperFrames (HeyGen, Inc.)
 
 ### Licence 3
 
-Packages: `circle-grow`, `glow`, `old-film`, `vhs`
+Packages: `circle-grow`, `crt-scanline`, `glow`, `halftone`, `old-film`, `posterize`, `vhs`
 
 ```text
 MIT License
@@ -584,6 +584,17 @@ https://github.com/tqk2811/GpufxVideoEditor-Assets
 Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
+### `crt-scanline`
+
+```text
+CRT Scanlines
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `curtain-reveal`
 
 ```text
@@ -650,6 +661,17 @@ This package is a modified work based on the block `grid-pixelate-wipe` of Hyper
 Apache License, Version 2.0, as bundled in AI Video Studio at engine/hf/.
 The original HTML, CSS and GSAP code is not included in this package: the timing and
 the formulas were rewritten in WGSL. Changes were made to the original work.
+```
+
+### `halftone`
+
+```text
+Halftone
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
 ### `halftone-dissolve`
@@ -889,6 +911,17 @@ Modifications: Rewritten in WGSL from the SVG mask shapes; the Gaussian feather 
 
 ```text
 Old Film
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `posterize`
+
+```text
+Posterize
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
