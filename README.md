@@ -50,7 +50,20 @@ come from the catalogs; FLAC durations are read from the file header, MP3 durati
 The licence and attribution of these packs are the MIT licence of AI Video Studio, listed in
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-## Sticker pack
+## Sticker packs
+
+| Zip | Stickers | Licence | Script |
+|-----|----------|---------|--------|
+| `stickers.zip` | 107 Fluent Emoji (3D) | MIT (Microsoft) | `scripts/pack_stickers.py` |
+| `noto-stickers.zip` | 120 Noto Emoji: 59 emotions, 29 arrows, 32 marks | Apache-2.0 (Google) | `scripts/pack_stickers_noto.py` |
+| `tqk2811-stickers.zip` | 20 drawn here: 12 labels (Subscribe, Like, Share, Follow, Live, New, Sale...) and 8 frames and bubbles | MIT (original work) | `scripts/pack_stickers_drawn.py` |
+
+All three are format 1, type `sticker`, with items `id`, `file`, `name`, `tags` and `category`, and are
+reproducible byte for byte. The LICENSE.txt and NOTICE.txt of the Noto and drawn packs are kept in
+`stickers/<zip name>/`. Stickers are still images: animated stickers (animated WebP) wait for the
+editor to play them.
+
+### Fluent Emoji
 
 107 emoji as 3D PNG images, from [Fluent Emoji](https://github.com/microsoft/fluentui-emoji) by Microsoft
 (MIT). The images are not in this repository. `scripts/pack_stickers.py` builds the zip from a checkout of
@@ -65,6 +78,33 @@ It writes `stickers.zip` with `manifest.json` (format 1, type `sticker`; items h
 and categories come from the `metadata.json` of each emoji, and the zip is reproducible byte for byte. The
 list of 107 emoji follows the sticker panel of AI Video Studio. Only the files in the checkout are used:
 a sparse checkout of the `LICENSE` and of the 107 `assets/<Name>/` folders is enough.
+
+### Noto Emoji
+
+120 emoji from [Noto Emoji](https://github.com/googlefonts/noto-emoji) by Google, the 512x512 PNG files
+of `2D/png/512/`, under the Apache License 2.0 (the fonts of that repository are OFL and are not used).
+The images are not in this repository; the script reads a checkout at the commit pinned in
+`NOTO_COMMIT` (a sparse checkout of `2D/svg/LICENSE` and `2D/png/512/` is enough):
+
+```sh
+py -I scripts/pack_stickers_noto.py --source <noto-emoji> -o dist-stickers
+```
+
+Names, ids and tags come from the Unicode name of each emoji; the categories are `Emotions`, `Arrows`
+and `Marks`.
+
+### Labels and frames
+
+20 stickers drawn by `scripts/pack_stickers_drawn.py` with Pillow (`py -m pip install pillow`): labels
+(`subscribe`, `subscribed`, `like`, `share`, `comment`, `follow`, `live`, `hot`, `click-here`,
+`link-in-bio`, `new`, `sale`) and frames whose middle is transparent (`frame-rounded`, `frame-dashed`,
+`frame-corners`, `frame-circle`, `frame-polaroid`, `frame-film`, `speech-bubble`, `thought-bubble`). The
+words use Aileron Regular, the CC0 font built into Pillow. The zip is the same byte for byte with the
+same Pillow version.
+
+```sh
+py -I scripts/pack_stickers_drawn.py -o dist-stickers [--images <folder to look at the PNG files>]
+```
 
 ## Clip animation packs
 
