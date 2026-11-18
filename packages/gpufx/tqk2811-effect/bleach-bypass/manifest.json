@@ -1,0 +1,50 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.bleach-bypass",
+  "name": "Bleach Bypass",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Bleach bypass: low saturation, high contrast and silvery highlights, as when a film skips the bleach bath.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "amount",
+      "type": "float",
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "description": "Strength: 0 is the original picture, 1 the full effect"
+    },
+    {
+      "name": "contrast",
+      "type": "float",
+      "default": 1.1,
+      "min": 0.5,
+      "max": 2.5,
+      "description": "Contrast of the silver layer"
+    },
+    {
+      "name": "saturation",
+      "type": "float",
+      "default": 0.45,
+      "min": 0,
+      "max": 1,
+      "description": "Color left in the picture"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/bleach_bypass.wgsl"
+        }
+      ]
+    }
+  ]
+}

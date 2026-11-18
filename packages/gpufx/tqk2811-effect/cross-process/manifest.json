@@ -1,0 +1,42 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.cross-process",
+  "name": "Cross Process",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Cross processing: slide film developed as negative, with yellow-green highlights, blue shadows and strong contrast.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "amount",
+      "type": "float",
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "description": "Strength: 0 is the original picture, 1 the full effect"
+    },
+    {
+      "name": "strength",
+      "type": "float",
+      "default": 1.0,
+      "min": 0,
+      "max": 2,
+      "description": "How far the color curves bend"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/cross_process.wgsl"
+        }
+      ]
+    }
+  ]
+}

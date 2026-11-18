@@ -1,0 +1,51 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.infrared",
+  "name": "Infrared",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Infrared film: foliage and greens turn white or pink, skies go dark.",
+  "inputs": [
+    {
+      "name": "src",
+      "mipmaps": true
+    }
+  ],
+  "params": [
+    {
+      "name": "amount",
+      "type": "float",
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "description": "Strength: 0 is the original picture, 1 the full effect"
+    },
+    {
+      "name": "glow",
+      "type": "float",
+      "default": 0.4,
+      "min": 0,
+      "max": 1,
+      "description": "Soft glow around bright parts"
+    },
+    {
+      "name": "color",
+      "type": "float",
+      "default": 0.0,
+      "min": 0,
+      "max": 1,
+      "description": "0 = black and white, 1 = false color (pink foliage)"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/infrared.wgsl"
+        }
+      ]
+    }
+  ]
+}

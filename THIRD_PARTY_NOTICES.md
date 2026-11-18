@@ -7,6 +7,34 @@ Each package zip carries its own `NOTICE.txt` and `LICENSE.txt` with the full li
 
 ### Licence 1
 
+Packages: `bleach-bypass`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `emboss`, `fill-blur`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `lens-flare`, `letterbox`, `light-leak`, `oil-paint`, `old-film`, `posterize`, `rain`, `sketch`, `snow`, `teal-orange`, `vhs`
+
+```text
+MIT License
+
+Copyright (c) 2026 tqk2811
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+### Licence 2
+
 Packages: `blur-in`, `look-bw`, `look-cool`, `look-fade`, `look-film`, `look-night`, `look-pop`, `look-vivid`, `look-warm`, `mask-blob`, `mask-circle`, `mask-diamond`, `mask-heart`, `mask-rect`, `mask-rounded`, `mask-star`, `punch`, `push`, `shake`, `whip`, `zoom-in`
 
 ```text
@@ -43,34 +71,6 @@ SOFTWARE.
 GpufxVideoEditor-Assets (this repackaging)
 ==============================================================================
 
-MIT License
-
-Copyright (c) 2026 tqk2811
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
-### Licence 2
-
-Packages: `bubbles`, `cartoon`, `circle-grow`, `confetti`, `crt-scanline`, `emboss`, `fill-blur`, `glow`, `god-rays`, `halftone`, `hearts`, `lens-flare`, `letterbox`, `light-leak`, `oil-paint`, `old-film`, `posterize`, `rain`, `sketch`, `snow`, `vhs`
-
-```text
 MIT License
 
 Copyright (c) 2026 tqk2811
@@ -541,6 +541,17 @@ SOFTWARE.
 
 ## Package notices
 
+### `bleach-bypass`
+
+```text
+Bleach Bypass
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `blur-in`
 
 ```text
@@ -610,6 +621,17 @@ Original work, written in WGSL for GpufxVideoEditor. MIT License.
 
 ```text
 Confetti
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `cross-process`
+
+```text
+Cross Process
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
@@ -763,6 +785,17 @@ the formulas were rewritten in WGSL. Changes were made to the original work.
 
 ```text
 Hearts
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `infrared`
+
+```text
+Infrared
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
@@ -1115,6 +1148,17 @@ Original work, written in WGSL for GpufxVideoEditor. MIT License.
 
 ```text
 Snow
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `teal-orange`
+
+```text
+Teal & Orange
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
