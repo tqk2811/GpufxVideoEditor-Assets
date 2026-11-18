@@ -2,7 +2,7 @@
   "type": "text-style",
   "id": "tqk2811-text-style",
   "name": "Text styles: tqk2811",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "items": [
     {
       "id": "neon-pink",
@@ -750,6 +750,977 @@
                 0,
                 0,
                 150
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      }
+    },
+    {
+      "id": "glitch-rgb",
+      "name": "Glitch RGB",
+      "category": "effect",
+      "preview_text": "GLITCH",
+      "style": {
+        "size": 0.08,
+        "weight": 900,
+        "transform": "uppercase",
+        "fill": {
+          "kind": "solid",
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "shadows": [
+          {
+            "distance": 0.06,
+            "angle": 180,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                0,
+                80,
+                220
+              ]
+            }
+          },
+          {
+            "distance": 0.06,
+            "angle": 0,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                0,
+                230,
+                255,
+                220
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      },
+      "animation": {
+        "loop": {
+          "preset": "tqk2811-clip-animation/jitter",
+          "duration": 0.4
+        }
+      }
+    },
+    {
+      "id": "long-shadow",
+      "name": "Long shadow",
+      "category": "3d",
+      "preview_text": "LONG",
+      "style": {
+        "size": 0.08,
+        "weight": 900,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "shadows": [
+          {
+            "distance": 0.02,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.04,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.06,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.08,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.1,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.12,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.14,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.16,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.18,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.2,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.22,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.24,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.26,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.28,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.3,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.32,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.34,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.36,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.38,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.4,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.42,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.44,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.46,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.48,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                50,
+                90,
+                255
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      }
+    },
+    {
+      "id": "outline-only",
+      "name": "Outline only",
+      "category": "basic",
+      "preview_text": "OUTLINE",
+      "style": {
+        "size": 0.08,
+        "weight": 800,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            255,
+            255,
+            255,
+            0
+          ]
+        },
+        "outlines": [
+          {
+            "width": 0.04,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                255,
+                255,
+                255
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      }
+    },
+    {
+      "id": "pastel-bubble",
+      "name": "Pastel bubble",
+      "category": "cute",
+      "preview_text": "Bubble",
+      "style": {
+        "size": 0.08,
+        "weight": 900,
+        "fill": {
+          "kind": "gradient",
+          "stops": [
+            {
+              "position": 0,
+              "color": [
+                255,
+                214,
+                236,
+                255
+              ]
+            },
+            {
+              "position": 1,
+              "color": [
+                196,
+                210,
+                255,
+                255
+              ]
+            }
+          ],
+          "angle": 90
+        },
+        "outlines": [
+          {
+            "width": 0.1,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                255,
+                255,
+                255
+              ]
+            }
+          },
+          {
+            "width": 0.18,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                160,
+                200,
+                255
+              ]
+            }
+          }
+        ],
+        "inner_shadows": [
+          {
+            "distance": 0.04,
+            "angle": 90,
+            "blur": 0.04,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                255,
+                255,
+                200
+              ]
+            }
+          }
+        ],
+        "shadows": [
+          {
+            "distance": 0.06,
+            "angle": -45,
+            "blur": 0.12,
+            "spread": 0.18,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                150,
+                90,
+                160,
+                120
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Nunito",
+          "Baloo 2",
+          "Segoe UI",
+          "Arial"
+        ]
+      },
+      "animation": {
+        "loop": {
+          "preset": "tqk2811-clip-animation/float",
+          "duration": 2.0
+        }
+      }
+    },
+    {
+      "id": "gold-luxury",
+      "name": "Gold luxury",
+      "category": "luxury",
+      "preview_text": "GOLD",
+      "style": {
+        "size": 0.08,
+        "weight": 800,
+        "fill": {
+          "kind": "gradient",
+          "stops": [
+            {
+              "position": 0,
+              "color": [
+                255,
+                244,
+                180,
+                255
+              ]
+            },
+            {
+              "position": 0.45,
+              "color": [
+                232,
+                182,
+                60,
+                255
+              ]
+            },
+            {
+              "position": 0.55,
+              "color": [
+                176,
+                120,
+                20,
+                255
+              ]
+            },
+            {
+              "position": 1,
+              "color": [
+                255,
+                220,
+                120,
+                255
+              ]
+            }
+          ],
+          "angle": 90
+        },
+        "outlines": [
+          {
+            "width": 0.03,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                70,
+                40,
+                0,
+                255
+              ]
+            }
+          },
+          {
+            "width": 0.07,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                220,
+                180,
+                90,
+                255
+              ]
+            }
+          }
+        ],
+        "shadows": [
+          {
+            "distance": 0.06,
+            "angle": -45,
+            "blur": 0.12,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                0,
+                0,
+                0,
+                170
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Playfair Display",
+          "Georgia",
+          "Times New Roman",
+          "Segoe UI"
+        ]
+      }
+    },
+    {
+      "id": "ice",
+      "name": "Ice",
+      "category": "effect",
+      "preview_text": "ICE",
+      "style": {
+        "size": 0.08,
+        "weight": 900,
+        "fill": {
+          "kind": "gradient",
+          "stops": [
+            {
+              "position": 0,
+              "color": [
+                255,
+                255,
+                255,
+                255
+              ]
+            },
+            {
+              "position": 0.5,
+              "color": [
+                190,
+                235,
+                255,
+                255
+              ]
+            },
+            {
+              "position": 1,
+              "color": [
+                90,
+                170,
+                230,
+                255
+              ]
+            }
+          ],
+          "angle": 90
+        },
+        "outlines": [
+          {
+            "width": 0.03,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                30,
+                90,
+                150,
+                255
+              ]
+            }
+          }
+        ],
+        "inner_shadows": [
+          {
+            "distance": 0.03,
+            "angle": 90,
+            "blur": 0.03,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                255,
+                255,
+                220
+              ]
+            }
+          }
+        ],
+        "glow": {
+          "color": [
+            150,
+            220,
+            255,
+            255
+          ],
+          "outer_color": [
+            60,
+            140,
+            255,
+            0
+          ],
+          "radius": 0.3,
+          "intensity": 1.0,
+          "falloff": 2.0
+        },
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      }
+    },
+    {
+      "id": "toxic-green-glow",
+      "name": "Toxic green glow",
+      "category": "neon",
+      "preview_text": "TOXIC",
+      "style": {
+        "size": 0.08,
+        "weight": 900,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            220,
+            255,
+            120,
+            255
+          ]
+        },
+        "outlines": [
+          {
+            "width": 0.03,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                120,
+                0,
+                255
+              ]
+            }
+          }
+        ],
+        "glow": {
+          "color": [
+            120,
+            255,
+            0,
+            255
+          ],
+          "outer_color": [
+            0,
+            120,
+            40,
+            0
+          ],
+          "radius": 0.5,
+          "intensity": 1.8,
+          "falloff": 1.5
+        },
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      },
+      "animation": {
+        "loop": {
+          "preset": "tqk2811-clip-animation/breathe",
+          "duration": 3.0
+        }
+      }
+    },
+    {
+      "id": "newspaper",
+      "name": "Newspaper",
+      "category": "classic",
+      "preview_text": "Headline",
+      "style": {
+        "size": 0.07,
+        "weight": 700,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            20,
+            20,
+            20,
+            255
+          ]
+        },
+        "background": {
+          "color": [
+            245,
+            240,
+            225,
+            255
+          ],
+          "padding": 0.25,
+          "radius": 0.0
+        },
+        "font_hint": [
+          "Times New Roman",
+          "Georgia",
+          "Cambria",
+          "Segoe UI"
+        ]
+      }
+    },
+    {
+      "id": "handwritten-marker",
+      "name": "Handwritten marker",
+      "category": "handwriting",
+      "preview_text": "Hello!",
+      "style": {
+        "size": 0.08,
+        "weight": 400,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            30,
+            60,
+            200,
+            255
+          ]
+        },
+        "shadows": [
+          {
+            "distance": 0.02,
+            "angle": -30,
+            "blur": 0.05,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                30,
+                60,
+                200,
+                90
+              ]
+            }
+          }
+        ],
+        "letter_spacing": 0.02,
+        "font_hint": [
+          "Segoe Print",
+          "Ink Free",
+          "Comic Sans MS",
+          "Segoe UI"
+        ]
+      }
+    },
+    {
+      "id": "vaporwave",
+      "name": "Vaporwave",
+      "category": "retro",
+      "preview_text": "AESTHETIC",
+      "style": {
+        "size": 0.08,
+        "weight": 900,
+        "italic": true,
+        "letter_spacing": 0.1,
+        "fill": {
+          "kind": "gradient",
+          "stops": [
+            {
+              "position": 0,
+              "color": [
+                255,
+                120,
+                220,
+                255
+              ]
+            },
+            {
+              "position": 0.5,
+              "color": [
+                160,
+                120,
+                255,
+                255
+              ]
+            },
+            {
+              "position": 1,
+              "color": [
+                60,
+                220,
+                255,
+                255
+              ]
+            }
+          ],
+          "angle": 90
+        },
+        "outlines": [
+          {
+            "width": 0.03,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                0,
+                80,
+                255
+              ]
+            }
+          }
+        ],
+        "shadows": [
+          {
+            "distance": 0.05,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                0,
+                255,
+                230,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.1,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                60,
+                200,
+                255
               ]
             }
           }
