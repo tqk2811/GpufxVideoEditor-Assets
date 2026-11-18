@@ -1,0 +1,58 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.pixel-sort",
+  "name": "Pixel Sort",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Pixel sorting look: bright runs of pixels melt into streaks along one direction, as in glitch art.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "threshold",
+      "type": "float",
+      "default": 0.3,
+      "min": 0,
+      "max": 1,
+      "description": "Brightness where streaks start"
+    },
+    {
+      "name": "length",
+      "type": "float",
+      "default": 0.35,
+      "min": 0,
+      "max": 1,
+      "description": "Longest streak, part of the frame"
+    },
+    {
+      "name": "angle",
+      "type": "float",
+      "default": 90,
+      "min": -180,
+      "max": 180,
+      "description": "Direction of the streaks in degrees (90 = down)"
+    },
+    {
+      "name": "amount",
+      "type": "float",
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "description": "Strength of the effect"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/pixel_sort.wgsl"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.fisheye-lens",
+  "name": "Fisheye Lens",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Fisheye lens: the middle bulges out and the edges bend, with an optional dark rim.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "strength",
+      "type": "float",
+      "default": 0.6,
+      "min": -1,
+      "max": 1.5,
+      "description": "Bulge (negative values pinch instead)"
+    },
+    {
+      "name": "center",
+      "type": "vec2",
+      "default": [
+        0.5,
+        0.5
+      ],
+      "min": 0,
+      "max": 1,
+      "description": "Center of the lens, 0..1 of the frame"
+    },
+    {
+      "name": "zoom",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.5,
+      "max": 2,
+      "description": "Zoom to hide the bent edges"
+    },
+    {
+      "name": "rim",
+      "type": "float",
+      "default": 0.3,
+      "min": 0,
+      "max": 1,
+      "description": "Darkening at the edge of the lens"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/fisheye_lens.wgsl"
+        }
+      ]
+    }
+  ]
+}

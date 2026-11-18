@@ -7,7 +7,7 @@ Each package zip carries its own `NOTICE.txt` and `LICENSE.txt` with the full li
 
 ### Licence 1
 
-Packages: `bleach-bypass`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `dust-scratches`, `emboss`, `fill-blur`, `film-grain`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `lens-flare`, `letterbox`, `light-leak`, `night-vision`, `oil-paint`, `old-film`, `posterize`, `rain`, `sketch`, `snow`, `teal-orange`, `thermal`, `vhs`
+Packages: `bleach-bypass`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `dust-scratches`, `emboss`, `fill-blur`, `film-grain`, `fisheye-lens`, `glitch-blocks`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `kaleidoscope`, `lens-flare`, `letterbox`, `light-leak`, `night-vision`, `oil-paint`, `old-film`, `pixel-sort`, `posterize`, `rain`, `sketch`, `snow`, `teal-orange`, `thermal`, `vhs`
 
 ```text
 MIT License
@@ -732,6 +732,28 @@ https://github.com/tqk2811/GpufxVideoEditor-Assets
 Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
+### `fisheye-lens`
+
+```text
+Fisheye Lens
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `glitch-blocks`
+
+```text
+Glitch Blocks
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `glow`
 
 ```text
@@ -842,6 +864,17 @@ This package is a modified work based on the block `iris-reveal` of HyperFrames
 Apache License, Version 2.0, as bundled in AI Video Studio at engine/hf/.
 The original HTML, CSS and GSAP code is not included in this package: the timing and
 the formulas were rewritten in WGSL. Changes were made to the original work.
+```
+
+### `kaleidoscope`
+
+```text
+Kaleidoscope
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
 ### `lens-flare`
@@ -1098,6 +1131,17 @@ Original work, written in WGSL for GpufxVideoEditor. MIT License.
 
 ```text
 Old Film
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `pixel-sort`
+
+```text
+Pixel Sort
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets

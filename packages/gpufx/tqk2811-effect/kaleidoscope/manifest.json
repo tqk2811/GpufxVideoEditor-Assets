@@ -1,0 +1,69 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.kaleidoscope",
+  "name": "Kaleidoscope",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Kaleidoscope: the picture is folded into mirrored slices around a center, and can turn slowly.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "segments",
+      "type": "int",
+      "default": 6,
+      "min": 2,
+      "max": 24,
+      "description": "Number of mirrored slices"
+    },
+    {
+      "name": "center",
+      "type": "vec2",
+      "default": [
+        0.5,
+        0.5
+      ],
+      "min": 0,
+      "max": 1,
+      "description": "Center of the pattern, 0..1 of the frame"
+    },
+    {
+      "name": "rotation",
+      "type": "float",
+      "default": 0,
+      "min": -180,
+      "max": 180,
+      "description": "Turn of the pattern in degrees"
+    },
+    {
+      "name": "spin",
+      "type": "float",
+      "default": 10,
+      "min": -180,
+      "max": 180,
+      "description": "Turning speed, degrees per second"
+    },
+    {
+      "name": "zoom",
+      "type": "float",
+      "default": 1,
+      "min": 0.2,
+      "max": 4,
+      "description": "Zoom into the picture"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/kaleidoscope.wgsl"
+        }
+      ]
+    }
+  ]
+}
