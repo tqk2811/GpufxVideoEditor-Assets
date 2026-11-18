@@ -1,0 +1,17 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.linear-wipe",
+  "name": "Linear Wipe",
+  "used_for": ["gpufx"],
+  "version": "1.0.0",
+  "hidden": true,
+  "description": "Shows the picture behind a straight soft edge that sweeps across it; the rest is transparent. Drive `progress` from 0 (nothing) to 1 (the whole picture).",
+  "inputs": [{ "name": "src" }],
+  "outputs": [{ "name": "out", "pixel_layout": "rgba" }],
+  "params": [
+    { "name": "progress", "type": "float", "default": 1, "min": 0, "max": 1, "description": "0 = hidden, 1 = fully shown" },
+    { "name": "angle", "type": "float", "default": 0, "min": -360, "max": 360, "description": "Direction the edge moves in, degrees: 0 = left to right, 90 = top to bottom" },
+    { "name": "softness", "type": "float", "default": 0.05, "min": 0, "max": 0.5, "description": "Edge width, part of the sweep" }
+  ],
+  "groups": [{ "passes": [{ "shader": "shaders/linear_wipe.wgsl" }] }]
+}

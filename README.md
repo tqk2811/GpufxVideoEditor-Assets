@@ -15,9 +15,9 @@ are rewritten in WGSL from its formulas. `punch`, `zoom-in`, `whip`, `blur-in` a
 | `packages/gpufx/avs-look/` | `look-warm`, `look-cool`, `look-vivid`, `look-bw`, `look-film`, `look-fade`, `look-night`, `look-pop` |
 | `packages/gpufx/avs-transition/` | `chromatic-aberration-wipe`, `curtain-reveal`, `directional-wipe`, `grid-pixelate-wipe`, `halftone-dissolve`, `iris-reveal`, `whip-pan-cut`, `zoom-through-transition` |
 | `packages/gpufx/avs-effect/` | `shake`, `punch`, `zoom-in`, `whip`, `blur-in`, `push` |
-| `packages/gpufx/tqk2811-effect/` | `circle-grow`, `glow`, `old-film`, `vhs`, `crt-scanline`, `halftone`, `posterize`, `cartoon`, `oil-paint`, `sketch`, `emboss`, `light-leak`, `lens-flare`, `god-rays`, `snow`, `rain`, `hearts`, `bubbles`, `confetti`, `letterbox`, `fill-blur`, `teal-orange`, `bleach-bypass`, `cross-process`, `infrared`, `thermal`, `night-vision`, `film-grain`, `dust-scratches`, `glitch-blocks`, `pixel-sort`, `kaleidoscope`, `fisheye-lens`, `tilt-shift`, `bokeh-blur`, `fog`, `rounded-corners`, `fireflies`, `sparkles`, `fireworks`, `smoke`, `pip-frame` |
+| `packages/gpufx/tqk2811-effect/` | `circle-grow`, `linear-wipe`, `glow`, `old-film`, `vhs`, `crt-scanline`, `halftone`, `posterize`, `cartoon`, `oil-paint`, `sketch`, `emboss`, `light-leak`, `lens-flare`, `god-rays`, `snow`, `rain`, `hearts`, `bubbles`, `confetti`, `letterbox`, `fill-blur`, `teal-orange`, `bleach-bypass`, `cross-process`, `infrared`, `thermal`, `night-vision`, `film-grain`, `dust-scratches`, `glitch-blocks`, `pixel-sort`, `kaleidoscope`, `fisheye-lens`, `tilt-shift`, `bokeh-blur`, `fog`, `rounded-corners`, `fireflies`, `sparkles`, `fireworks`, `smoke`, `pip-frame` |
 
-The `tqk2811-effect` packages are original work under the MIT licence of this repository, not derived from AI Video Studio. Each has a `README.md` with its parameters. Effects that move (grain, particles, light leaks) follow the timeline clock (`globals.time_int` and `time_frac`) and keep no state between frames, so seeking gives the same picture again; particles come from an integer hash of their grid cell and layer. `circle-grow` is hidden: it is a building block of a clip animation.
+The `tqk2811-effect` packages are original work under the MIT licence of this repository, not derived from AI Video Studio. Each has a `README.md` with its parameters. Effects that move (grain, particles, light leaks) follow the timeline clock (`globals.time_int` and `time_frac`) and keep no state between frames, so seeking gives the same picture again; particles come from an integer hash of their grid cell and layer. `circle-grow` and `linear-wipe` are hidden: they are building blocks of clip animations.
 
 Masks keep alpha: the area outside the shape is transparent, so they work on a clip placed over another
 one. The `bg` parameter fills it with a color instead.
@@ -123,7 +123,7 @@ reproducible byte for byte.
 | Zip | Items | Licence |
 |-----|-------|---------|
 | `avs-clip-animation` | 7, from AI Video Studio (below) | MIT (AI Video Studio) |
-| `tqk2811-clip-animation` | 25 | MIT (original work) |
+| `tqk2811-clip-animation` | 57 | MIT (original work) |
 
 `tqk2811-clip-animation` is original work. In: `v_drop_circle` (runs the hidden `circle-grow` effect),
 `bounce_in`, `elastic_in`, `flip_in_x`, `flip_in_y`, `rotate_in`, `spin_pop`, `swing_in`, `shrink_in`,
@@ -131,6 +131,15 @@ reproducible byte for byte.
 Out: `bounce_out`, `flip_out_x`, `rotate_out`, `blow_up_out`, `sink_out` and, for text, `char_fall_out`.
 Loop: `pulse`, `heartbeat`, `swing`, `float`, `jitter` and, for text, `wave`. The flips squeeze the width
 or height towards 0, since a curve has no 3D turn. The text-only items use the `per_unit` part of an item.
+
+The second batch adds, in: `slide_in_left_overshoot`, `slide_in_right_overshoot`, `slide_in_top_overshoot`,
+`slide_in_bottom_overshoot`, `zoom_blur_in`, `wipe_reveal_in` and `wipe_reveal_down_in` (run the hidden
+`linear-wipe` effect), `drop_bounce_in`, `roll_in`, `fade_scale_in`; for text, `char_scale_pop`,
+`word_slide_up`, `letter_spin`, `char_center_unfold` and `char_random_fade`. Out: `slide_out_left_anticipate`,
+`slide_out_right_anticipate`, `slide_out_up_anticipate`, `slide_out_down_anticipate`, `zoom_blur_out`,
+`wipe_out` (`linear-wipe` played backwards), `roll_out`, `fade_scale_out` and, for text, `word_zoom_out`.
+Loop: `tada`, `wobble`, `rubber_band`, `shake_x`, `shake_y`, `breathe`, `orbit` and, for text, `char_bounce`.
+A `per_unit` curve cannot blur or recolour a unit, so there is no letter-by-letter blur or colour wave.
 
 `avs-clip-animation` holds the text animations of AI Video Studio (`engine/vertical.js`), written again
 as keyframe data. Its items: `pop`, `fade`, `slide_l`, `slide_r`, `drop`, `blur_zoom` (in) and
@@ -159,7 +168,7 @@ py -I scripts/pack_text_styles.py --check   # validate only
 | `avs-subtitle-style` | `subtitle-style` | 22: the basic, `tiktok` and `slate` captions and the caption style of each pack | MIT (AI Video Studio) |
 | `avs-subtitle-style-ghost` | `subtitle-style` | 16 of the print, broadcast, explain and montage packs | MIT (AI Video Studio, ghost-editor, lemo-opuscar) |
 | `avs-subtitle-style-hf` | `subtitle-style` | 10 of the `hf_*` styles | MIT (AI Video Studio) and Apache-2.0 (HyperFrames) |
-| `tqk2811-text-style` | `text-style` | 10: `neon-pink`, `neon-cyan`, `double-outline`, `gradient-sunset`, `gradient-ocean`, `sticker`, `retro-3d`, `comic`, `fire`, `chrome` | MIT (original work) |
+| `tqk2811-text-style` | `text-style` | 20: `neon-pink`, `neon-cyan`, `double-outline`, `gradient-sunset`, `gradient-ocean`, `sticker`, `retro-3d`, `comic`, `fire`, `chrome`, `glitch-rgb`, `long-shadow`, `outline-only`, `pastel-bubble`, `gold-luxury`, `ice`, `toxic-green-glow`, `newspaper`, `handwritten-marker`, `vaporwave` (fonts are only hints for fonts of the system; none is embedded) | MIT (original work) |
 | `tqk2811-subtitle-style` | `subtitle-style` | 3 karaoke captions: `karaoke-fill`, `karaoke-neon`, `karaoke-box` | MIT (original work) |
 
 Each zip has `manifest.json`, `LICENSE.txt` and `NOTICE.txt`, and is reproducible byte for byte. A pack

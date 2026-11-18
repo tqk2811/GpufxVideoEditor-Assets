@@ -7,7 +7,7 @@ Each package zip carries its own `NOTICE.txt` and `LICENSE.txt` with the full li
 
 ### Licence 1
 
-Packages: `bleach-bypass`, `bokeh-blur`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `dust-scratches`, `emboss`, `fill-blur`, `film-grain`, `fireflies`, `fireworks`, `fisheye-lens`, `fog`, `glitch-blocks`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `kaleidoscope`, `lens-flare`, `letterbox`, `light-leak`, `night-vision`, `oil-paint`, `old-film`, `pip-frame`, `pixel-sort`, `posterize`, `rain`, `rounded-corners`, `sketch`, `smoke`, `snow`, `sparkles`, `teal-orange`, `thermal`, `tilt-shift`, `vhs`, `tqk2811-stickers`, `tqk2811-clip-animation`, `tqk2811-subtitle-style`, `tqk2811-text-style`
+Packages: `bleach-bypass`, `bokeh-blur`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `dust-scratches`, `emboss`, `fill-blur`, `film-grain`, `fireflies`, `fireworks`, `fisheye-lens`, `fog`, `glitch-blocks`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `kaleidoscope`, `lens-flare`, `letterbox`, `light-leak`, `linear-wipe`, `night-vision`, `oil-paint`, `old-film`, `pip-frame`, `pixel-sort`, `posterize`, `rain`, `rounded-corners`, `sketch`, `smoke`, `snow`, `sparkles`, `teal-orange`, `thermal`, `tilt-shift`, `vhs`, `tqk2811-stickers`, `tqk2811-clip-animation`, `tqk2811-subtitle-style`, `tqk2811-text-style`
 
 ```text
 MIT License
@@ -1180,6 +1180,17 @@ https://github.com/tqk2811/GpufxVideoEditor-Assets
 Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
+### `linear-wipe`
+
+```text
+Linear Wipe
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `look-bw`
 
 ```text
@@ -1715,7 +1726,8 @@ Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
 
 Original work: keyframe curves and per-unit text animations written for GpufxVideoEditor.
-v_drop_circle runs the circle-grow effect of packages/gpufx/tqk2811-effect. MIT License.
+v_drop_circle runs the circle-grow effect, and the wipe items the linear-wipe effect, of
+packages/gpufx/tqk2811-effect. MIT License.
 ```
 
 ### `avs-subtitle-style`
@@ -1796,6 +1808,7 @@ Text styles: tqk2811
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
 
-Original work: neon, double outline, gradient, sticker, retro 3D, comic, fire and chrome
+Original work: neon, double outline, gradient, sticker, retro 3D, comic, fire, chrome, glitch RGB,
+long shadow, outline only, pastel bubble, gold, ice, toxic glow, newspaper, marker and vaporwave
 text styles for GpufxVideoEditor. Animations refer to the tqk2811-clip-animation pack. MIT License.
 ```
