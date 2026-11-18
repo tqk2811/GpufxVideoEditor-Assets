@@ -169,7 +169,7 @@ py -I scripts/pack_text_styles.py --check   # validate only
 | `avs-subtitle-style-ghost` | `subtitle-style` | 16 of the print, broadcast, explain and montage packs | MIT (AI Video Studio, ghost-editor, lemo-opuscar) |
 | `avs-subtitle-style-hf` | `subtitle-style` | 10 of the `hf_*` styles | MIT (AI Video Studio) and Apache-2.0 (HyperFrames) |
 | `tqk2811-text-style` | `text-style` | 20: `neon-pink`, `neon-cyan`, `double-outline`, `gradient-sunset`, `gradient-ocean`, `sticker`, `retro-3d`, `comic`, `fire`, `chrome`, `glitch-rgb`, `long-shadow`, `outline-only`, `pastel-bubble`, `gold-luxury`, `ice`, `toxic-green-glow`, `newspaper`, `handwritten-marker`, `vaporwave` (fonts are only hints for fonts of the system; none is embedded) | MIT (original work) |
-| `tqk2811-subtitle-style` | `subtitle-style` | 3 karaoke captions: `karaoke-fill`, `karaoke-neon`, `karaoke-box` | MIT (original work) |
+| `tqk2811-subtitle-style` | `subtitle-style` | 5 karaoke captions: `karaoke-fill`, `karaoke-neon`, `karaoke-box`, and `karaoke-pop` and `karaoke-neon-pop`, which grow the spoken word | MIT (original work) |
 
 Each zip has `manifest.json`, `LICENSE.txt` and `NOTICE.txt`, and is reproducible byte for byte. A pack
 whose styles use layers (`fill` with a gradient, several `outlines`, `shadows`, `inner_shadows`, `bloom`)

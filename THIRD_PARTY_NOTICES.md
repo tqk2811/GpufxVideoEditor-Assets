@@ -1797,7 +1797,7 @@ Subtitle styles: tqk2811
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
 
-Original work: karaoke subtitle styles (word fill, neon, box) for GpufxVideoEditor. MIT License.
+Original work: karaoke subtitle styles (word fill, neon, box, pop, neon pop) for GpufxVideoEditor. MIT License.
 ```
 
 ### `tqk2811-text-style`
