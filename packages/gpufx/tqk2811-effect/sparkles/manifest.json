@@ -1,0 +1,72 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.sparkles",
+  "name": "Sparkles",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Sparkles: four-pointed star glints that twinkle on and off over the video, more on bright parts.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "density",
+      "type": "float",
+      "default": 0.35,
+      "min": 0,
+      "max": 1,
+      "description": "Part of the grid cells that hold a sparkle"
+    },
+    {
+      "name": "size",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.2,
+      "max": 4,
+      "description": "Size of the stars"
+    },
+    {
+      "name": "rate",
+      "type": "float",
+      "default": 1.5,
+      "min": 0,
+      "max": 6,
+      "description": "Twinkles per second"
+    },
+    {
+      "name": "follow",
+      "type": "float",
+      "default": 0.6,
+      "min": 0,
+      "max": 1,
+      "description": "0 = anywhere, 1 = only on bright parts of the picture"
+    },
+    {
+      "name": "color",
+      "type": "color",
+      "default": "#fff6d8",
+      "description": "Sparkle color"
+    },
+    {
+      "name": "seed",
+      "type": "int",
+      "default": 1,
+      "min": 0,
+      "max": 100000,
+      "description": "Changes the pattern"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/sparkles.wgsl"
+        }
+      ]
+    }
+  ]
+}

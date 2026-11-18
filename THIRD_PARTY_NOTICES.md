@@ -7,7 +7,7 @@ Each package zip carries its own `NOTICE.txt` and `LICENSE.txt` with the full li
 
 ### Licence 1
 
-Packages: `bleach-bypass`, `bokeh-blur`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `dust-scratches`, `emboss`, `fill-blur`, `film-grain`, `fisheye-lens`, `fog`, `glitch-blocks`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `kaleidoscope`, `lens-flare`, `letterbox`, `light-leak`, `night-vision`, `oil-paint`, `old-film`, `pixel-sort`, `posterize`, `rain`, `rounded-corners`, `sketch`, `snow`, `teal-orange`, `thermal`, `tilt-shift`, `vhs`
+Packages: `bleach-bypass`, `bokeh-blur`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `dust-scratches`, `emboss`, `fill-blur`, `film-grain`, `fireflies`, `fireworks`, `fisheye-lens`, `fog`, `glitch-blocks`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `kaleidoscope`, `lens-flare`, `letterbox`, `light-leak`, `night-vision`, `oil-paint`, `old-film`, `pixel-sort`, `posterize`, `rain`, `rounded-corners`, `sketch`, `snow`, `sparkles`, `teal-orange`, `thermal`, `tilt-shift`, `vhs`
 
 ```text
 MIT License
@@ -743,6 +743,28 @@ https://github.com/tqk2811/GpufxVideoEditor-Assets
 Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
+### `fireflies`
+
+```text
+Fireflies
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `fireworks`
+
+```text
+Fireworks
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `fisheye-lens`
 
 ```text
@@ -1258,6 +1280,17 @@ Original work, written in WGSL for GpufxVideoEditor. MIT License.
 
 ```text
 Snow
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `sparkles`
+
+```text
+Sparkles
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets

@@ -1,0 +1,72 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.fireflies",
+  "name": "Fireflies",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Fireflies: small glowing dots wander slowly over the video and pulse on and off.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "density",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 1,
+      "description": "Part of the grid cells that hold a firefly"
+    },
+    {
+      "name": "size",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.2,
+      "max": 4,
+      "description": "Size of the glow"
+    },
+    {
+      "name": "speed",
+      "type": "float",
+      "default": 0.5,
+      "min": 0,
+      "max": 3,
+      "description": "How fast they wander"
+    },
+    {
+      "name": "brightness",
+      "type": "float",
+      "default": 1.0,
+      "min": 0,
+      "max": 3,
+      "description": "Brightness of the glow"
+    },
+    {
+      "name": "color",
+      "type": "color",
+      "default": "#d8ff6a",
+      "description": "Glow color"
+    },
+    {
+      "name": "seed",
+      "type": "int",
+      "default": 1,
+      "min": 0,
+      "max": 100000,
+      "description": "Changes the pattern"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/fireflies.wgsl"
+        }
+      ]
+    }
+  ]
+}
