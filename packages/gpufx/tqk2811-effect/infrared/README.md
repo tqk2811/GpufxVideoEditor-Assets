@@ -2,8 +2,6 @@
 
 Infrared film: foliage and greens turn white or pink, skies go dark.
 
-
-
 | Parameter | Default | Meaning |
 |---|---|---|
 | `amount` | 1 | Strength: 0 is the original picture, 1 the full effect |

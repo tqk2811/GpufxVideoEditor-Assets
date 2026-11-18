@@ -1,0 +1,58 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.film-grain",
+  "name": "Film Grain",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Film grain: soft, clumped grain that is strongest in the midtones, with a chosen grain size.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "strength",
+      "type": "float",
+      "default": 0.06,
+      "min": 0,
+      "max": 0.5,
+      "description": "Amount of grain"
+    },
+    {
+      "name": "size",
+      "type": "float",
+      "default": 1.5,
+      "min": 1,
+      "max": 6,
+      "description": "Grain size in pixels"
+    },
+    {
+      "name": "color",
+      "type": "float",
+      "default": 0.2,
+      "min": 0,
+      "max": 1,
+      "description": "0 = gray grain, 1 = separate grain per color channel"
+    },
+    {
+      "name": "fps",
+      "type": "float",
+      "default": 24,
+      "min": 0,
+      "max": 60,
+      "description": "Grain changes per second (0 = still grain)"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/film_grain.wgsl"
+        }
+      ]
+    }
+  ]
+}

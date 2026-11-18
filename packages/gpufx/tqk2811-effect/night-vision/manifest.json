@@ -1,0 +1,64 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.night-vision",
+  "name": "Night Vision",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Night vision goggles: green phosphor, brightened shadows, grain, a round vignette and faint scan lines.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "amount",
+      "type": "float",
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "description": "Strength: 0 is the original picture, 1 the full effect"
+    },
+    {
+      "name": "gain",
+      "type": "float",
+      "default": 1.8,
+      "min": 0.5,
+      "max": 4,
+      "description": "Brightening of the picture"
+    },
+    {
+      "name": "noise",
+      "type": "float",
+      "default": 0.12,
+      "min": 0,
+      "max": 0.5,
+      "description": "Grain, changing every frame"
+    },
+    {
+      "name": "vignette",
+      "type": "float",
+      "default": 0.8,
+      "min": 0,
+      "max": 1,
+      "description": "Darkening outside the round view"
+    },
+    {
+      "name": "tint",
+      "type": "color",
+      "default": "#5cff6a",
+      "description": "Phosphor color"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/night_vision.wgsl"
+        }
+      ]
+    }
+  ]
+}

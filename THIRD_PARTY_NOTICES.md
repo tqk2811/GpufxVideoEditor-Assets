@@ -7,7 +7,7 @@ Each package zip carries its own `NOTICE.txt` and `LICENSE.txt` with the full li
 
 ### Licence 1
 
-Packages: `bleach-bypass`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `emboss`, `fill-blur`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `lens-flare`, `letterbox`, `light-leak`, `oil-paint`, `old-film`, `posterize`, `rain`, `sketch`, `snow`, `teal-orange`, `vhs`
+Packages: `bleach-bypass`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `dust-scratches`, `emboss`, `fill-blur`, `film-grain`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `lens-flare`, `letterbox`, `light-leak`, `night-vision`, `oil-paint`, `old-film`, `posterize`, `rain`, `sketch`, `snow`, `teal-orange`, `thermal`, `vhs`
 
 ```text
 MIT License
@@ -688,6 +688,17 @@ The original HTML, CSS and GSAP code is not included in this package: the timing
 the formulas were rewritten in WGSL. Changes were made to the original work.
 ```
 
+### `dust-scratches`
+
+```text
+Dust & Scratches
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `emboss`
 
 ```text
@@ -703,6 +714,17 @@ Original work, written in WGSL for GpufxVideoEditor. MIT License.
 
 ```text
 Fill Blur
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `film-grain`
+
+```text
+Film Grain
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
@@ -1050,6 +1072,17 @@ Source in AI Video Studio: engine/engine.js (MASK_SHAPES, maskCss); references/k
 Modifications: Rewritten in WGSL from the SVG mask shapes; the Gaussian feather is computed from a signed distance.
 ```
 
+### `night-vision`
+
+```text
+Night Vision
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `oil-paint`
 
 ```text
@@ -1159,6 +1192,17 @@ Original work, written in WGSL for GpufxVideoEditor. MIT License.
 
 ```text
 Teal & Orange
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `thermal`
+
+```text
+Thermal
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets

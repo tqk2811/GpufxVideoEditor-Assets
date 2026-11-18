@@ -1,0 +1,51 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.thermal",
+  "name": "Thermal",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Thermal camera: brightness becomes a heat palette from cold blue through purple, red and yellow to white.",
+  "inputs": [
+    {
+      "name": "src",
+      "mipmaps": true
+    }
+  ],
+  "params": [
+    {
+      "name": "amount",
+      "type": "float",
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "description": "Strength: 0 is the original picture, 1 the full effect"
+    },
+    {
+      "name": "contrast",
+      "type": "float",
+      "default": 1.2,
+      "min": 0.5,
+      "max": 3,
+      "description": "Spread of the palette around middle brightness"
+    },
+    {
+      "name": "blur",
+      "type": "float",
+      "default": 1.5,
+      "min": 0,
+      "max": 4,
+      "description": "Softness, as thermal sensors have few pixels"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/thermal.wgsl"
+        }
+      ]
+    }
+  ]
+}
