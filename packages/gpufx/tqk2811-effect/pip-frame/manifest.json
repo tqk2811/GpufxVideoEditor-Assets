@@ -1,0 +1,93 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.pip-frame",
+  "name": "PiP Frame",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Picture in picture: shrinks the clip into a framed box with rounded corners, a border and a drop shadow, placed anywhere in the frame.",
+  "inputs": [
+    {
+      "name": "src",
+      "mipmaps": true
+    }
+  ],
+  "params": [
+    {
+      "name": "position",
+      "type": "vec2",
+      "default": [
+        0.72,
+        0.28
+      ],
+      "min": 0,
+      "max": 1,
+      "description": "Center of the box, 0..1 of the frame ([0, 0] = top-left)"
+    },
+    {
+      "name": "scale",
+      "type": "float",
+      "default": 0.4,
+      "min": 0.05,
+      "max": 1,
+      "description": "Box size, part of the frame"
+    },
+    {
+      "name": "radius",
+      "type": "float",
+      "default": 0.03,
+      "min": 0,
+      "max": 0.3,
+      "description": "Corner radius, part of the frame height"
+    },
+    {
+      "name": "border",
+      "type": "float",
+      "default": 0.006,
+      "min": 0,
+      "max": 0.05,
+      "description": "Border width, part of the frame height"
+    },
+    {
+      "name": "border_color",
+      "type": "color",
+      "default": "#ffffff",
+      "description": "Border color"
+    },
+    {
+      "name": "shadow",
+      "type": "float",
+      "default": 0.03,
+      "min": 0,
+      "max": 0.2,
+      "description": "Softness of the drop shadow"
+    },
+    {
+      "name": "shadow_offset",
+      "type": "vec2",
+      "default": [
+        0.008,
+        0.012
+      ],
+      "min": -0.1,
+      "max": 0.1,
+      "description": "Shadow offset, part of the frame height"
+    },
+    {
+      "name": "shadow_color",
+      "type": "color",
+      "default": "#000000a0",
+      "description": "Shadow color (alpha sets its strength)"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/pip_frame.wgsl"
+        }
+      ]
+    }
+  ]
+}
