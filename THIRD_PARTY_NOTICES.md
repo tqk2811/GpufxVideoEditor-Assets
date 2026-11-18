@@ -324,7 +324,7 @@ HyperFrames (HeyGen, Inc.)
 
 ### Licence 3
 
-Packages: `circle-grow`, `tqk2811-stickers`, `tqk2811-clip-animation`, `tqk2811-subtitle-style`, `tqk2811-text-style`
+Packages: `circle-grow`, `linear-wipe`, `tqk2811-stickers`, `tqk2811-clip-animation`, `tqk2811-subtitle-style`, `tqk2811-text-style`
 
 ```text
 MIT License
@@ -905,6 +905,17 @@ The original HTML, CSS and GSAP code is not included in this package: the timing
 the formulas were rewritten in WGSL. Changes were made to the original work.
 ```
 
+### `linear-wipe`
+
+```text
+Linear Wipe
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `look-bw`
 
 ```text
@@ -1264,7 +1275,8 @@ Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
 
 Original work: keyframe curves and per-unit text animations written for GpufxVideoEditor.
-v_drop_circle runs the circle-grow effect of packages/gpufx/tqk2811-effect. MIT License.
+v_drop_circle runs the circle-grow effect, and the wipe items the linear-wipe effect, of
+packages/gpufx/tqk2811-effect. MIT License.
 ```
 
 ### `avs-subtitle-style`
@@ -1345,6 +1357,7 @@ Text styles: tqk2811
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
 
-Original work: neon, double outline, gradient, sticker, retro 3D, comic, fire and chrome
+Original work: neon, double outline, gradient, sticker, retro 3D, comic, fire, chrome, glitch RGB,
+long shadow, outline only, pastel bubble, gold, ice, toxic glow, newspaper, marker and vaporwave
 text styles for GpufxVideoEditor. Animations refer to the tqk2811-clip-animation pack. MIT License.
 ```
