@@ -50,7 +50,20 @@ come from the catalogs; FLAC durations are read from the file header, MP3 durati
 The licence and attribution of these packs are the MIT licence of AI Video Studio, listed in
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-## Sticker pack
+## Sticker packs
+
+| Zip | Stickers | Licence | Script |
+|-----|----------|---------|--------|
+| `stickers.zip` | 107 Fluent Emoji (3D) | MIT (Microsoft) | `scripts/pack_stickers.py` |
+| `noto-stickers.zip` | 120 Noto Emoji: 59 emotions, 29 arrows, 32 marks | Apache-2.0 (Google) | `scripts/pack_stickers_noto.py` |
+| `tqk2811-stickers.zip` | 20 drawn here: 12 labels (Subscribe, Like, Share, Follow, Live, New, Sale...) and 8 frames and bubbles | MIT (original work) | `scripts/pack_stickers_drawn.py` |
+
+All three are format 1, type `sticker`, with items `id`, `file`, `name`, `tags` and `category`, and are
+reproducible byte for byte. The LICENSE.txt and NOTICE.txt of the Noto and drawn packs are kept in
+`stickers/<zip name>/`. Stickers are still images: animated stickers (animated WebP) wait for the
+editor to play them.
+
+### Fluent Emoji
 
 107 emoji as 3D PNG images, from [Fluent Emoji](https://github.com/microsoft/fluentui-emoji) by Microsoft
 (MIT). The images are not in this repository. `scripts/pack_stickers.py` builds the zip from a checkout of
@@ -66,20 +79,61 @@ and categories come from the `metadata.json` of each emoji, and the zip is repro
 list of 107 emoji follows the sticker panel of AI Video Studio. Only the files in the checkout are used:
 a sparse checkout of the `LICENSE` and of the 107 `assets/<Name>/` folders is enough.
 
-## Clip animation pack
+### Noto Emoji
 
-The text animations of AI Video Studio (`engine/vertical.js`), written again as keyframe data for the
-editor's `clip-animation` packs. The source is `animations/avs/pack.json`, next to its `LICENSE.txt`
-(the MIT licence of AI Video Studio) and `NOTICE.txt`. `scripts/pack_animations.py` checks it with the
-rules of the editor's reader and builds the zip:
+120 emoji from [Noto Emoji](https://github.com/googlefonts/noto-emoji) by Google, the 512x512 PNG files
+of `2D/png/512/`, under the Apache License 2.0 (the fonts of that repository are OFL and are not used).
+The images are not in this repository; the script reads a checkout at the commit pinned in
+`NOTO_COMMIT` (a sparse checkout of `2D/svg/LICENSE` and `2D/png/512/` is enough):
 
 ```sh
-py -I scripts/pack_animations.py           # -> dist/avs-clip-animation.zip
+py -I scripts/pack_stickers_noto.py --source <noto-emoji> -o dist-stickers
+```
+
+Names, ids and tags come from the Unicode name of each emoji; the categories are `Emotions`, `Arrows`
+and `Marks`.
+
+### Labels and frames
+
+20 stickers drawn by `scripts/pack_stickers_drawn.py` with Pillow (`py -m pip install pillow`): labels
+(`subscribe`, `subscribed`, `like`, `share`, `comment`, `follow`, `live`, `hot`, `click-here`,
+`link-in-bio`, `new`, `sale`) and frames whose middle is transparent (`frame-rounded`, `frame-dashed`,
+`frame-corners`, `frame-circle`, `frame-polaroid`, `frame-film`, `speech-bubble`, `thought-bubble`). The
+words use Aileron Regular, the CC0 font built into Pillow. The zip is the same byte for byte with the
+same Pillow version.
+
+```sh
+py -I scripts/pack_stickers_drawn.py -o dist-stickers [--images <folder to look at the PNG files>]
+```
+
+## Clip animation packs
+
+Keyframe data for the editor's `clip-animation` packs. Each pack has its source in `animations/<pack>/`:
+`pack.json`, `LICENSE.txt` and `NOTICE.txt`. `scripts/pack_animations.py` checks every pack with the
+rules of the editor's reader and builds the zips:
+
+```sh
+py -I scripts/pack_animations.py           # -> dist/<pack id>.zip
 py -I scripts/pack_animations.py --check   # validate only
 ```
 
-The zip has `manifest.json` (format 1, type `clip-animation`), `LICENSE.txt` and `NOTICE.txt`, and is
-reproducible byte for byte. Items: `pop`, `fade`, `slide_l`, `slide_r`, `drop`, `blur_zoom` (in) and
+Each zip has `manifest.json` (format 1, type `clip-animation`), `LICENSE.txt` and `NOTICE.txt`, and is
+reproducible byte for byte.
+
+| Zip | Items | Licence |
+|-----|-------|---------|
+| `avs-clip-animation` | 7, from AI Video Studio (below) | MIT (AI Video Studio) |
+| `tqk2811-clip-animation` | 25 | MIT (original work) |
+
+`tqk2811-clip-animation` is original work. In: `v_drop_circle` (runs the hidden `circle-grow` effect),
+`bounce_in`, `elastic_in`, `flip_in_x`, `flip_in_y`, `rotate_in`, `spin_pop`, `swing_in`, `shrink_in`,
+`rise_in`; for text only, `typewriter`, `char_rise` (letter by letter) and `word_pop` (word by word).
+Out: `bounce_out`, `flip_out_x`, `rotate_out`, `blow_up_out`, `sink_out` and, for text, `char_fall_out`.
+Loop: `pulse`, `heartbeat`, `swing`, `float`, `jitter` and, for text, `wave`. The flips squeeze the width
+or height towards 0, since a curve has no 3D turn. The text-only items use the `per_unit` part of an item.
+
+`avs-clip-animation` holds the text animations of AI Video Studio (`engine/vertical.js`), written again
+as keyframe data. Its items: `pop`, `fade`, `slide_l`, `slide_r`, `drop`, `blur_zoom` (in) and
 `fade_out` (out, the exit all text lines share). Durations, easings, distances and blur amounts are the
 original ones; pixels of the 720x1280 canvas are turned into parts of the frame width (`dx`) and height
 (`dy`, `blur`). The skew of the slides is left out, because a curve has no skew. `fly`, `tumble` and
@@ -87,7 +141,7 @@ original ones; pixels of the 720x1280 canvas are turned into parts of the frame 
 
 ## Text and subtitle style packs
 
-The text looks and caption styles of AI Video Studio, written again as style data for the editor's
+The `avs-*` packs hold the text looks and caption styles of AI Video Studio, written again as style data for the editor's
 `text-style` and `subtitle-style` packs: colours, sizes, outlines, shadows, glows, boxes, weights,
 positions and how the spoken word is marked. Only measured values are kept; no code or font is copied.
 Each pack has its source in `text-styles/<pack>/`: `pack.json` (type, id, name, version, items),
@@ -105,14 +159,17 @@ py -I scripts/pack_text_styles.py --check   # validate only
 | `avs-subtitle-style` | `subtitle-style` | 22: the basic, `tiktok` and `slate` captions and the caption style of each pack | MIT (AI Video Studio) |
 | `avs-subtitle-style-ghost` | `subtitle-style` | 16 of the print, broadcast, explain and montage packs | MIT (AI Video Studio, ghost-editor, lemo-opuscar) |
 | `avs-subtitle-style-hf` | `subtitle-style` | 10 of the `hf_*` styles | MIT (AI Video Studio) and Apache-2.0 (HyperFrames) |
+| `tqk2811-text-style` | `text-style` | 10: `neon-pink`, `neon-cyan`, `double-outline`, `gradient-sunset`, `gradient-ocean`, `sticker`, `retro-3d`, `comic`, `fire`, `chrome` | MIT (original work) |
+| `tqk2811-subtitle-style` | `subtitle-style` | 3 karaoke captions: `karaoke-fill`, `karaoke-neon`, `karaoke-box` | MIT (original work) |
 
-Each zip has `manifest.json` (format 1), `LICENSE.txt` and `NOTICE.txt`, and is reproducible byte for
-byte. Pixels are turned into parts: a size is a part of the frame height, outline widths, shadow offsets
+Each zip has `manifest.json`, `LICENSE.txt` and `NOTICE.txt`, and is reproducible byte for byte. A pack
+whose styles use layers (`fill` with a gradient, several `outlines`, `shadows`, `inner_shadows`, `bloom`)
+is written as format 2, the others as format 1; the `tqk2811` packs are format 2 and use no picture. Pixels are turned into parts: a size is a part of the frame height, outline widths, shadow offsets
 and blurs, box padding and radius and glow radius are parts of the font size, and the layout (`anchor_y`,
 `max_width`) is a part of the frame. The text presets use the 720x1280 canvas; the captions use the
 canvas they are drawn on by default, 1280x720, or 720x1280 for the vertical-only packs. Where CSS stacks
 several shadows, the hard drop shadow is kept and a stack of blurred shadows becomes the glow. Animations
-refer to items of the clip animation pack (`avs-clip-animation/<item>`). The `karaoke` part (active,
+refer to items of the clip animation packs (`avs-clip-animation/<item>`, `tqk2811-clip-animation/<item>`). The `karaoke` part (active,
 spoken, upcoming and emphasised words) is filled in, though the editor does not draw it yet. Fonts are
 only hints; the editor picks the first one installed. Styles that need shaders, particles, textures,
 blending or per-character motion are left out; [docs/Backlog-vi.md](docs/Backlog-vi.md) lists them.

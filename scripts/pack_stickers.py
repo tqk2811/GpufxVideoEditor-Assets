@@ -197,11 +197,13 @@ def validate(items):
         png_size(source.read_bytes(), source.name)
 
 
-def write_zip(target, manifest, items):
+def write_zip(target, manifest, items, license_text=LICENSE_TEXT, notice_text=NOTICE_TEXT):
+    """Writes a sticker zip; each item comes with its image as a path or as bytes. The other sticker
+    scripts (pack_stickers_noto.py, pack_stickers_drawn.py) share this writer."""
     text_files = [
         ("manifest.json", json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"),
-        ("LICENSE.txt", LICENSE_TEXT),
-        ("NOTICE.txt", NOTICE_TEXT),
+        ("LICENSE.txt", license_text.replace("\r\n", "\n")),
+        ("NOTICE.txt", notice_text.replace("\r\n", "\n")),
     ]
     temporary = target.with_suffix(".zip.tmp")
     with zipfile.ZipFile(temporary, "w") as archive:
@@ -215,7 +217,7 @@ def write_zip(target, manifest, items):
         for entry_name, text in text_files:
             add(entry_name, text.encode("utf-8"), zipfile.ZIP_DEFLATED)
         for item, source in sorted(items, key=lambda pair: pair[0]["file"]):
-            add(item["file"], source.read_bytes(), zipfile.ZIP_STORED)
+            add(item["file"], source if isinstance(source, bytes) else source.read_bytes(), zipfile.ZIP_STORED)
     temporary.replace(target)
 
 

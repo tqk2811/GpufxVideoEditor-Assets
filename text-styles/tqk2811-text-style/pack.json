@@ -1,0 +1,766 @@
+{
+  "type": "text-style",
+  "id": "tqk2811-text-style",
+  "name": "Text styles: tqk2811",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "neon-pink",
+      "name": "Neon pink",
+      "category": "neon",
+      "preview_text": "NEON",
+      "style": {
+        "size": 0.07,
+        "weight": 700,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            255,
+            236,
+            250,
+            255
+          ]
+        },
+        "outlines": [
+          {
+            "width": 0.03,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                64,
+                200,
+                255
+              ]
+            }
+          }
+        ],
+        "glow": {
+          "color": [
+            255,
+            40,
+            190,
+            255
+          ],
+          "outer_color": [
+            120,
+            0,
+            255,
+            0
+          ],
+          "radius": 0.45,
+          "intensity": 1.6,
+          "falloff": 1.6
+        },
+        "font_hint": [
+          "Nunito",
+          "Baloo 2",
+          "Segoe UI",
+          "Arial"
+        ]
+      },
+      "animation": {
+        "loop": {
+          "preset": "tqk2811-clip-animation/pulse",
+          "duration": 1.2
+        }
+      }
+    },
+    {
+      "id": "neon-cyan",
+      "name": "Neon cyan",
+      "category": "neon",
+      "preview_text": "NEON",
+      "style": {
+        "size": 0.07,
+        "weight": 700,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            230,
+            255,
+            255,
+            255
+          ]
+        },
+        "outlines": [
+          {
+            "width": 0.03,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                0,
+                220,
+                255,
+                255
+              ]
+            }
+          }
+        ],
+        "glow": {
+          "color": [
+            0,
+            200,
+            255,
+            255
+          ],
+          "outer_color": [
+            0,
+            60,
+            255,
+            0
+          ],
+          "radius": 0.45,
+          "intensity": 1.6,
+          "falloff": 1.6
+        },
+        "font_hint": [
+          "Nunito",
+          "Baloo 2",
+          "Segoe UI",
+          "Arial"
+        ]
+      },
+      "animation": {
+        "loop": {
+          "preset": "tqk2811-clip-animation/pulse",
+          "duration": 1.2
+        }
+      }
+    },
+    {
+      "id": "double-outline",
+      "name": "Double outline",
+      "category": "outline",
+      "preview_text": "DOUBLE",
+      "style": {
+        "size": 0.075,
+        "weight": 900,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "outlines": [
+          {
+            "width": 0.07,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                0,
+                0,
+                0,
+                255
+              ]
+            }
+          },
+          {
+            "width": 0.16,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                214,
+                0,
+                255
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      }
+    },
+    {
+      "id": "gradient-sunset",
+      "name": "Sunset gradient",
+      "category": "gradient",
+      "preview_text": "SUNSET",
+      "style": {
+        "size": 0.08,
+        "weight": 900,
+        "fill": {
+          "kind": "gradient",
+          "stops": [
+            {
+              "position": 0,
+              "color": [
+                255,
+                214,
+                90,
+                255
+              ]
+            },
+            {
+              "position": 0.5,
+              "color": [
+                255,
+                94,
+                98,
+                255
+              ]
+            },
+            {
+              "position": 1,
+              "color": [
+                170,
+                60,
+                220,
+                255
+              ]
+            }
+          ],
+          "angle": 90
+        },
+        "outlines": [
+          {
+            "width": 0.05,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                50,
+                10,
+                60,
+                255
+              ]
+            }
+          }
+        ],
+        "shadows": [
+          {
+            "distance": 0.08,
+            "angle": -45,
+            "blur": 0.1,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                30,
+                0,
+                40,
+                160
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      }
+    },
+    {
+      "id": "gradient-ocean",
+      "name": "Ocean gradient",
+      "category": "gradient",
+      "preview_text": "OCEAN",
+      "style": {
+        "size": 0.08,
+        "weight": 900,
+        "fill": {
+          "kind": "gradient",
+          "stops": [
+            {
+              "position": 0,
+              "color": [
+                0,
+                240,
+                210,
+                255
+              ]
+            },
+            {
+              "position": 1,
+              "color": [
+                40,
+                90,
+                255,
+                255
+              ]
+            }
+          ],
+          "angle": 0
+        },
+        "outlines": [
+          {
+            "width": 0.05,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                255,
+                255,
+                255
+              ]
+            }
+          }
+        ],
+        "shadows": [
+          {
+            "distance": 0.07,
+            "angle": -45,
+            "blur": 0.12,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                0,
+                20,
+                60,
+                170
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      }
+    },
+    {
+      "id": "sticker",
+      "name": "Sticker",
+      "category": "outline",
+      "preview_text": "Sticker",
+      "style": {
+        "size": 0.075,
+        "weight": 900,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            255,
+            82,
+            120,
+            255
+          ]
+        },
+        "outlines": [
+          {
+            "width": 0.2,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                255,
+                255,
+                255
+              ]
+            }
+          }
+        ],
+        "shadows": [
+          {
+            "distance": 0.06,
+            "angle": -45,
+            "blur": 0.15,
+            "spread": 0.2,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                0,
+                0,
+                0,
+                110
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Nunito",
+          "Baloo 2",
+          "Segoe UI",
+          "Arial"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "tqk2811-clip-animation/spin_pop",
+          "duration": 0.6
+        }
+      }
+    },
+    {
+      "id": "retro-3d",
+      "name": "Retro 3D",
+      "category": "3d",
+      "preview_text": "RETRO",
+      "style": {
+        "size": 0.08,
+        "weight": 900,
+        "fill": {
+          "kind": "solid",
+          "color": [
+            255,
+            236,
+            120,
+            255
+          ]
+        },
+        "outlines": [
+          {
+            "width": 0.04,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                90,
+                30,
+                20,
+                255
+              ]
+            }
+          }
+        ],
+        "shadows": [
+          {
+            "distance": 0.03,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                120,
+                60,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.06,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                120,
+                60,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.09,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                120,
+                60,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.12,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                120,
+                60,
+                255
+              ]
+            }
+          },
+          {
+            "distance": 0.15,
+            "angle": -45,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                90,
+                30,
+                20,
+                255
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      }
+    },
+    {
+      "id": "comic",
+      "name": "Comic",
+      "category": "3d",
+      "preview_text": "BOOM!",
+      "style": {
+        "size": 0.085,
+        "weight": 900,
+        "italic": true,
+        "transform": "uppercase",
+        "fill": {
+          "kind": "gradient",
+          "stops": [
+            {
+              "position": 0,
+              "color": [
+                255,
+                245,
+                80,
+                255
+              ]
+            },
+            {
+              "position": 1,
+              "color": [
+                255,
+                170,
+                0,
+                255
+              ]
+            }
+          ],
+          "angle": 90
+        },
+        "outlines": [
+          {
+            "width": 0.08,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                0,
+                0,
+                0,
+                255
+              ]
+            }
+          }
+        ],
+        "shadows": [
+          {
+            "distance": 0.12,
+            "angle": -60,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                0,
+                0,
+                0,
+                255
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Bangers",
+          "Impact",
+          "Segoe UI",
+          "Arial"
+        ]
+      },
+      "animation": {
+        "in": {
+          "preset": "tqk2811-clip-animation/bounce_in",
+          "duration": 0.8
+        }
+      }
+    },
+    {
+      "id": "fire",
+      "name": "Fire",
+      "category": "gradient",
+      "preview_text": "FIRE",
+      "style": {
+        "size": 0.08,
+        "weight": 900,
+        "fill": {
+          "kind": "gradient",
+          "stops": [
+            {
+              "position": 0,
+              "color": [
+                255,
+                250,
+                190,
+                255
+              ]
+            },
+            {
+              "position": 0.45,
+              "color": [
+                255,
+                190,
+                40,
+                255
+              ]
+            },
+            {
+              "position": 1,
+              "color": [
+                230,
+                40,
+                0,
+                255
+              ]
+            }
+          ],
+          "angle": 90,
+          "per_glyph": true
+        },
+        "glow": {
+          "color": [
+            255,
+            110,
+            0,
+            255
+          ],
+          "outer_color": [
+            200,
+            0,
+            0,
+            0
+          ],
+          "radius": 0.35,
+          "intensity": 1.4,
+          "falloff": 1.8
+        },
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      },
+      "animation": {
+        "loop": {
+          "preset": "tqk2811-clip-animation/jitter",
+          "duration": 0.4
+        }
+      }
+    },
+    {
+      "id": "chrome",
+      "name": "Chrome",
+      "category": "3d",
+      "preview_text": "CHROME",
+      "style": {
+        "size": 0.08,
+        "weight": 900,
+        "fill": {
+          "kind": "gradient",
+          "stops": [
+            {
+              "position": 0,
+              "color": [
+                250,
+                252,
+                255,
+                255
+              ]
+            },
+            {
+              "position": 0.48,
+              "color": [
+                150,
+                160,
+                175,
+                255
+              ]
+            },
+            {
+              "position": 0.52,
+              "color": [
+                70,
+                78,
+                92,
+                255
+              ]
+            },
+            {
+              "position": 1,
+              "color": [
+                220,
+                226,
+                235,
+                255
+              ]
+            }
+          ],
+          "angle": 90
+        },
+        "outlines": [
+          {
+            "width": 0.03,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                40,
+                44,
+                52,
+                255
+              ]
+            }
+          },
+          {
+            "width": 0.07,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                200,
+                205,
+                215,
+                255
+              ]
+            }
+          }
+        ],
+        "inner_shadows": [
+          {
+            "distance": 0.03,
+            "angle": 90,
+            "blur": 0.03,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                255,
+                255,
+                255,
+                200
+              ]
+            }
+          }
+        ],
+        "shadows": [
+          {
+            "distance": 0.06,
+            "angle": -45,
+            "blur": 0.1,
+            "paint": {
+              "kind": "solid",
+              "color": [
+                0,
+                0,
+                0,
+                150
+              ]
+            }
+          }
+        ],
+        "font_hint": [
+          "Montserrat",
+          "Be Vietnam Pro",
+          "Segoe UI",
+          "Arial"
+        ]
+      }
+    }
+  ]
+}

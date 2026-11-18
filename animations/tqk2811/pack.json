@@ -1,7 +1,7 @@
 {
   "id": "tqk2811-clip-animation",
   "name": "Clip animations: tqk2811",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "items": [
     {
       "id": "v_drop_circle",
@@ -28,6 +28,465 @@
       "effect": {
         "package": "io.github.tqk2811.circle-grow",
         "params": { "center": [0, 0], "softness": 0.01 }
+      }
+    },
+    {
+      "id": "bounce_in",
+      "name": "Bounce in",
+      "kind": "in",
+      "default_duration": 0.8,
+      "curve": {
+        "tracks": {
+          "dy": [
+            { "t": 0, "value": -0.35, "ease": "bounce" },
+            { "t": 1, "value": 0 }
+          ],
+          "opacity": [
+            { "t": 0, "value": 0 },
+            { "t": 0.15, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "elastic_in",
+      "name": "Elastic in",
+      "kind": "in",
+      "default_duration": 0.9,
+      "curve": {
+        "tracks": {
+          "scale": [
+            { "t": 0, "value": 0.02, "ease": "elastic" },
+            { "t": 1, "value": 1 }
+          ],
+          "opacity": [
+            { "t": 0, "value": 0 },
+            { "t": 0.1, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "flip_in_x",
+      "name": "Flip in (horizontal)",
+      "kind": "in",
+      "default_duration": 0.5,
+      "curve": {
+        "tracks": {
+          "scaleX": [
+            { "t": 0, "value": 0.02, "ease": "outCubic" },
+            { "t": 1, "value": 1 }
+          ],
+          "opacity": [
+            { "t": 0, "value": 0 },
+            { "t": 0.2, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "flip_in_y",
+      "name": "Flip in (vertical)",
+      "kind": "in",
+      "default_duration": 0.5,
+      "curve": {
+        "tracks": {
+          "scaleY": [
+            { "t": 0, "value": 0.02, "ease": "outCubic" },
+            { "t": 1, "value": 1 }
+          ],
+          "opacity": [
+            { "t": 0, "value": 0 },
+            { "t": 0.2, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "rotate_in",
+      "name": "Rotate in",
+      "kind": "in",
+      "default_duration": 0.6,
+      "curve": {
+        "tracks": {
+          "rotation": [
+            { "t": 0, "value": -180, "ease": "outCubic" },
+            { "t": 1, "value": 0 }
+          ],
+          "scale": [
+            { "t": 0, "value": 0.3, "ease": "outCubic" },
+            { "t": 1, "value": 1 }
+          ],
+          "opacity": [
+            { "t": 0, "value": 0 },
+            { "t": 0.3, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "spin_pop",
+      "name": "Spin pop",
+      "kind": "in",
+      "default_duration": 0.7,
+      "curve": {
+        "tracks": {
+          "rotation": [
+            { "t": 0, "value": 360, "ease": "outCubic" },
+            { "t": 1, "value": 0 }
+          ],
+          "scale": [
+            { "t": 0, "value": 0.02, "ease": {"backOut": {"amplitude": 1.70158}} },
+            { "t": 1, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "swing_in",
+      "name": "Swing in",
+      "kind": "in",
+      "default_duration": 0.9,
+      "curve": {
+        "tracks": {
+          "rotation": [
+            { "t": 0, "value": 35, "ease": "inOutSine" },
+            { "t": 0.3, "value": -20, "ease": "inOutSine" },
+            { "t": 0.55, "value": 10, "ease": "inOutSine" },
+            { "t": 0.8, "value": -4, "ease": "inOutSine" },
+            { "t": 1, "value": 0 }
+          ],
+          "opacity": [
+            { "t": 0, "value": 0 },
+            { "t": 0.15, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shrink_in",
+      "name": "Shrink in",
+      "kind": "in",
+      "default_duration": 0.5,
+      "curve": {
+        "tracks": {
+          "scale": [
+            { "t": 0, "value": 2.5, "ease": "outCubic" },
+            { "t": 1, "value": 1 }
+          ],
+          "opacity": [
+            { "t": 0, "value": 0 },
+            { "t": 0.4, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "rise_in",
+      "name": "Rise in",
+      "kind": "in",
+      "default_duration": 0.5,
+      "curve": {
+        "tracks": {
+          "dy": [
+            { "t": 0, "value": 0.25, "ease": {"backOut": {"amplitude": 1.4}} },
+            { "t": 1, "value": 0 }
+          ],
+          "opacity": [
+            { "t": 0, "value": 0 },
+            { "t": 0.3, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "typewriter",
+      "name": "Typewriter",
+      "kind": "in",
+      "default_duration": 1.2,
+      "applies_to": ["text"],
+      "per_unit": {
+        "unit": "char",
+        "stagger": 0.95,
+        "curve": {
+          "tracks": {
+            "opacity": [
+              { "t": 0, "value": 0, "ease": "hold" },
+              { "t": 0.02, "value": 1 }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "char_rise",
+      "name": "Letters rise",
+      "kind": "in",
+      "default_duration": 0.9,
+      "applies_to": ["text"],
+      "per_unit": {
+        "unit": "char",
+        "stagger": 0.6,
+        "curve": {
+          "tracks": {
+            "dy": [
+              { "t": 0, "value": 0.8, "ease": "outCubic" },
+              { "t": 1, "value": 0 }
+            ],
+            "opacity": [
+              { "t": 0, "value": 0 },
+              { "t": 0.5, "value": 1 }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "word_pop",
+      "name": "Words pop",
+      "kind": "in",
+      "default_duration": 0.8,
+      "applies_to": ["text"],
+      "per_unit": {
+        "unit": "word",
+        "stagger": 0.6,
+        "curve": {
+          "tracks": {
+            "scale": [
+              { "t": 0, "value": 0.02, "ease": {"backOut": {"amplitude": 2}} },
+              { "t": 1, "value": 1 }
+            ],
+            "opacity": [
+              { "t": 0, "value": 0 },
+              { "t": 0.3, "value": 1 }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "bounce_out",
+      "name": "Bounce out",
+      "kind": "out",
+      "default_duration": 0.5,
+      "curve": {
+        "tracks": {
+          "scale": [
+            { "t": 0, "value": 1, "ease": "easeOut" },
+            { "t": 0.35, "value": 1.15, "ease": "inCubic" },
+            { "t": 1, "value": 0.02 }
+          ],
+          "opacity": [
+            { "t": 0.7, "value": 1 },
+            { "t": 1, "value": 0 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "flip_out_x",
+      "name": "Flip out (horizontal)",
+      "kind": "out",
+      "default_duration": 0.45,
+      "curve": {
+        "tracks": {
+          "scaleX": [
+            { "t": 0, "value": 1, "ease": "inCubic" },
+            { "t": 1, "value": 0.02 }
+          ],
+          "opacity": [
+            { "t": 0.8, "value": 1 },
+            { "t": 1, "value": 0 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "rotate_out",
+      "name": "Rotate out",
+      "kind": "out",
+      "default_duration": 0.6,
+      "curve": {
+        "tracks": {
+          "rotation": [
+            { "t": 0, "value": 0, "ease": "inCubic" },
+            { "t": 1, "value": 180 }
+          ],
+          "scale": [
+            { "t": 0, "value": 1, "ease": "inCubic" },
+            { "t": 1, "value": 0.3 }
+          ],
+          "opacity": [
+            { "t": 0.7, "value": 1 },
+            { "t": 1, "value": 0 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "blow_up_out",
+      "name": "Blow up out",
+      "kind": "out",
+      "default_duration": 0.45,
+      "curve": {
+        "tracks": {
+          "scale": [
+            { "t": 0, "value": 1, "ease": "inCubic" },
+            { "t": 1, "value": 2.2 }
+          ],
+          "opacity": [
+            { "t": 0.2, "value": 1 },
+            { "t": 1, "value": 0 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sink_out",
+      "name": "Sink out",
+      "kind": "out",
+      "default_duration": 0.5,
+      "curve": {
+        "tracks": {
+          "dy": [
+            { "t": 0, "value": 0, "ease": {"backIn": {"amplitude": 1.4}} },
+            { "t": 1, "value": 0.25 }
+          ],
+          "opacity": [
+            { "t": 0.6, "value": 1 },
+            { "t": 1, "value": 0 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "char_fall_out",
+      "name": "Letters fall",
+      "kind": "out",
+      "default_duration": 0.9,
+      "applies_to": ["text"],
+      "per_unit": {
+        "unit": "char",
+        "stagger": 0.6,
+        "curve": {
+          "tracks": {
+            "dy": [
+              { "t": 0, "value": 0, "ease": "inCubic" },
+              { "t": 1, "value": 0.8 }
+            ],
+            "opacity": [
+              { "t": 0.5, "value": 1 },
+              { "t": 1, "value": 0 }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "pulse",
+      "name": "Pulse",
+      "kind": "loop",
+      "default_duration": 1.0,
+      "curve": {
+        "tracks": {
+          "scale": [
+            { "t": 0, "value": 1, "ease": "inOutSine" },
+            { "t": 0.5, "value": 1.08, "ease": "inOutSine" },
+            { "t": 1, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "heartbeat",
+      "name": "Heartbeat",
+      "kind": "loop",
+      "default_duration": 1.2,
+      "curve": {
+        "tracks": {
+          "scale": [
+            { "t": 0, "value": 1, "ease": "easeOut" },
+            { "t": 0.12, "value": 1.15, "ease": "easeIn" },
+            { "t": 0.24, "value": 1, "ease": "easeOut" },
+            { "t": 0.36, "value": 1.1, "ease": "easeIn" },
+            { "t": 0.5, "value": 1 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "swing",
+      "name": "Swing",
+      "kind": "loop",
+      "default_duration": 1.6,
+      "curve": {
+        "tracks": {
+          "rotation": [
+            { "t": 0, "value": 0, "ease": "inOutSine" },
+            { "t": 0.25, "value": 8, "ease": "inOutSine" },
+            { "t": 0.75, "value": -8, "ease": "inOutSine" },
+            { "t": 1, "value": 0 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "float",
+      "name": "Float",
+      "kind": "loop",
+      "default_duration": 2.0,
+      "curve": {
+        "tracks": {
+          "dy": [
+            { "t": 0, "value": 0, "ease": "inOutSine" },
+            { "t": 0.5, "value": -0.02, "ease": "inOutSine" },
+            { "t": 1, "value": 0 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "jitter",
+      "name": "Jitter",
+      "kind": "loop",
+      "default_duration": 0.4,
+      "curve": {
+        "tracks": {
+          "dx": [
+            { "t": 0, "value": 0, "ease": "hold" },
+            { "t": 0.25, "value": 0.006, "ease": "hold" },
+            { "t": 0.5, "value": -0.004, "ease": "hold" },
+            { "t": 0.75, "value": 0.003, "ease": "hold" },
+            { "t": 1, "value": 0 }
+          ],
+          "dy": [
+            { "t": 0, "value": 0.004, "ease": "hold" },
+            { "t": 0.25, "value": -0.005, "ease": "hold" },
+            { "t": 0.5, "value": 0.002, "ease": "hold" },
+            { "t": 0.75, "value": -0.003, "ease": "hold" },
+            { "t": 1, "value": 0 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "wave",
+      "name": "Wave",
+      "kind": "loop",
+      "default_duration": 1.4,
+      "applies_to": ["text"],
+      "per_unit": {
+        "unit": "char",
+        "stagger": 0.5,
+        "curve": {
+          "tracks": {
+            "dy": [
+              { "t": 0, "value": 0, "ease": "inOutSine" },
+              { "t": 0.5, "value": -0.25, "ease": "inOutSine" },
+              { "t": 1, "value": 0 }
+            ]
+          }
+        }
       }
     }
   ]

@@ -1,0 +1,9 @@
+Noto Emoji by Google
+Copyright 2013 Google, Inc.
+https://github.com/googlefonts/noto-emoji
+Source commit: 99701e07d3d1fe1bdbcdb14964547f0fd592966f
+
+The images are the unmodified 512x512 PNG files of 2D/png/512/ of that repository (emoji_u<code>.png),
+renamed to ASCII file names after the Unicode name of each emoji. They are under the Apache License 2.0
+(2D/svg/LICENSE and the README of that repository); the OFL fonts of that repository are not used.
+Names, tags and categories (Emotions, Arrows, Marks) are chosen for this pack.
