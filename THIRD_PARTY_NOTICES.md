@@ -7,7 +7,7 @@ Each package zip carries its own `NOTICE.txt` and `LICENSE.txt` with the full li
 
 ### Licence 1
 
-Packages: `bleach-bypass`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `dust-scratches`, `emboss`, `fill-blur`, `film-grain`, `fisheye-lens`, `glitch-blocks`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `kaleidoscope`, `lens-flare`, `letterbox`, `light-leak`, `night-vision`, `oil-paint`, `old-film`, `pixel-sort`, `posterize`, `rain`, `sketch`, `snow`, `teal-orange`, `thermal`, `vhs`
+Packages: `bleach-bypass`, `bokeh-blur`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `dust-scratches`, `emboss`, `fill-blur`, `film-grain`, `fisheye-lens`, `fog`, `glitch-blocks`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `kaleidoscope`, `lens-flare`, `letterbox`, `light-leak`, `night-vision`, `oil-paint`, `old-film`, `pixel-sort`, `posterize`, `rain`, `rounded-corners`, `sketch`, `snow`, `teal-orange`, `thermal`, `tilt-shift`, `vhs`
 
 ```text
 MIT License
@@ -565,6 +565,17 @@ Source in AI Video Studio: engine/engine.js (fxWrap, type blur_in)
 Modifications: Rewritten in WGSL from the formula; driven by the clip's own clock.
 ```
 
+### `bokeh-blur`
+
+```text
+Bokeh Blur
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `bubbles`
 
 ```text
@@ -736,6 +747,17 @@ Original work, written in WGSL for GpufxVideoEditor. MIT License.
 
 ```text
 Fisheye Lens
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `fog`
+
+```text
+Fog
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
@@ -1197,6 +1219,17 @@ https://github.com/tqk2811/GpufxVideoEditor-Assets
 Original work, written in WGSL for GpufxVideoEditor. MIT License.
 ```
 
+### `rounded-corners`
+
+```text
+Rounded Corners
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
 ### `shake`
 
 ```text
@@ -1247,6 +1280,17 @@ Original work, written in WGSL for GpufxVideoEditor. MIT License.
 
 ```text
 Thermal
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work, written in WGSL for GpufxVideoEditor. MIT License.
+```
+
+### `tilt-shift`
+
+```text
+Tilt Shift
 
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets

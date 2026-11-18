@@ -1,0 +1,72 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.fog",
+  "name": "Fog",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Drifting fog or mist: soft layered clouds that roll across the frame, thicker at the bottom.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "density",
+      "type": "float",
+      "default": 0.6,
+      "min": 0,
+      "max": 1,
+      "description": "Thickness of the fog"
+    },
+    {
+      "name": "speed",
+      "type": "float",
+      "default": 0.04,
+      "min": -1,
+      "max": 1,
+      "description": "Drift speed, frame widths per second"
+    },
+    {
+      "name": "scale",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.2,
+      "max": 4,
+      "description": "Size of the clouds"
+    },
+    {
+      "name": "height",
+      "type": "float",
+      "default": 0.6,
+      "min": 0,
+      "max": 1,
+      "description": "How high the fog reaches (1 = whole frame evenly)"
+    },
+    {
+      "name": "color",
+      "type": "color",
+      "default": "#d8dde3",
+      "description": "Fog color"
+    },
+    {
+      "name": "seed",
+      "type": "int",
+      "default": 1,
+      "min": 0,
+      "max": 100000,
+      "description": "Changes the clouds"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/fog.wgsl"
+        }
+      ]
+    }
+  ]
+}

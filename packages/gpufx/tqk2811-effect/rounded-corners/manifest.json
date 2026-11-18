@@ -1,0 +1,70 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.rounded-corners",
+  "name": "Rounded Corners",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Rounds the corners of the clip and adds an optional border and a soft glow or shadow around it.",
+  "inputs": [
+    {
+      "name": "src"
+    }
+  ],
+  "params": [
+    {
+      "name": "radius",
+      "type": "float",
+      "default": 0.06,
+      "min": 0,
+      "max": 0.5,
+      "description": "Corner radius, part of the frame height"
+    },
+    {
+      "name": "inset",
+      "type": "float",
+      "default": 0.04,
+      "min": 0,
+      "max": 0.4,
+      "description": "Margin between the frame edge and the clip, part of the frame height"
+    },
+    {
+      "name": "border",
+      "type": "float",
+      "default": 0.006,
+      "min": 0,
+      "max": 0.05,
+      "description": "Border width, part of the frame height"
+    },
+    {
+      "name": "border_color",
+      "type": "color",
+      "default": "#ffffff",
+      "description": "Border color"
+    },
+    {
+      "name": "glow",
+      "type": "float",
+      "default": 0.03,
+      "min": 0,
+      "max": 0.2,
+      "description": "Size of the glow or shadow around the clip"
+    },
+    {
+      "name": "glow_color",
+      "type": "color",
+      "default": "#000000b3",
+      "description": "Glow or shadow color (alpha sets its strength)"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/rounded_corners.wgsl"
+        }
+      ]
+    }
+  ]
+}

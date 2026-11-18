@@ -1,0 +1,51 @@
+{
+  "api": 1,
+  "id": "io.github.tqk2811.bokeh-blur",
+  "name": "Bokeh Blur",
+  "used_for": [
+    "gpufx"
+  ],
+  "version": "1.0.0",
+  "description": "Lens blur with round bokeh: out of focus highlights spread into bright discs.",
+  "inputs": [
+    {
+      "name": "src",
+      "mipmaps": true
+    }
+  ],
+  "params": [
+    {
+      "name": "radius",
+      "type": "float",
+      "default": 0.02,
+      "min": 0,
+      "max": 0.08,
+      "description": "Disc radius, part of the frame height"
+    },
+    {
+      "name": "highlights",
+      "type": "float",
+      "default": 2.0,
+      "min": 0,
+      "max": 6,
+      "description": "Boost of the bright parts, which makes the discs stand out"
+    },
+    {
+      "name": "threshold",
+      "type": "float",
+      "default": 0.7,
+      "min": 0,
+      "max": 1,
+      "description": "Brightness where the boost starts"
+    }
+  ],
+  "groups": [
+    {
+      "passes": [
+        {
+          "shader": "shaders/bokeh_blur.wgsl"
+        }
+      ]
+    }
+  ]
+}
