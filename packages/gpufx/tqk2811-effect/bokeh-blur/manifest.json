@@ -25,9 +25,9 @@
     {
       "name": "highlights",
       "type": "float",
-      "default": 2.0,
+      "default": 3.0,
       "min": 0,
-      "max": 6,
+      "max": 10,
       "description": "Boost of the bright parts, which makes the discs stand out"
     },
     {
