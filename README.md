@@ -58,10 +58,11 @@ The licence and attribution of these packs are the MIT licence of AI Video Studi
 | `noto-stickers.zip` | 120 Noto Emoji: 59 emotions, 29 arrows, 32 marks | Apache-2.0 (Google) | `scripts/pack_stickers_noto.py` |
 | `tqk2811-stickers.zip` | 20 drawn here: 12 labels (Subscribe, Like, Share, Follow, Live, New, Sale...) and 8 frames and bubbles | MIT (original work) | `scripts/pack_stickers_drawn.py` |
 | `noto-animated-stickers.zip` | 46 Animated Noto Emoji (animated WebP, 512x512): 20 emotions, 7 hands, 19 marks | CC BY 4.0 (Google) | `scripts/pack_stickers_noto_animated.py` |
+| `tqk2811-animated-stickers.zip` | 24 animated stickers drawn here (animated WebP, 512x512): labels, marks, arrows, highlights and bubbles | MIT (original work) | `scripts/pack_stickers_drawn_animated.py` |
 
-All four are format 1, type `sticker`, with items `id`, `file`, `name`, `tags` and `category`, and are
-reproducible byte for byte. The LICENSE.txt and NOTICE.txt of the Noto, animated Noto and drawn packs are kept in
-`stickers/<zip name>/`. The animated pack holds animated WebP files, which the editor loops over the
+All five are format 1, type `sticker`, with items `id`, `file`, `name`, `tags` and `category`, and are
+reproducible byte for byte. The LICENSE.txt and NOTICE.txt of the Noto, animated Noto and both drawn packs are kept in
+`stickers/<zip name>/`. The two animated packs hold animated WebP files, which the editor loops over the
 length of the clip; the others are PNG images.
 
 ### Fluent Emoji
@@ -118,6 +119,23 @@ same Pillow version.
 
 ```sh
 py -I scripts/pack_stickers_drawn.py -o dist-stickers [--images <folder to look at the PNG files>]
+```
+
+### Animated labels and marks
+
+24 animated stickers drawn by `scripts/pack_stickers_drawn_animated.py` with Pillow, 512x512 with a
+transparent background, 20 frames a second, each loop 1 to 3 seconds long and seamless (the last frame
+leads back to the first): `subscribe-click` (the button pulses, a cursor clicks it and it turns into
+Subscribed), `bell-ring`, `heart-beat`, `like-pop`, `arrow-right`, `arrow-left`, `arrow-up`,
+`arrow-down`, `finger-point`, `circle-draw` and `underline-draw` (drawn stroke by stroke),
+`sparkle-stars`, `firework`, `question-bounce`, `exclamation-bounce`, `bubble-wow`, `bubble-omg`,
+`countdown-3-2-1`, `loading-spinner`, `live-blink`, `new-shake`, `hot-shake`, `sale-shake` and
+`click-here`. The frames are stored as lossy animated WebP (quality 70, alpha 70, loop forever): 60 to
+290 KB a sticker, about 4 MB for the zip. The words use Aileron Regular, the CC0 font built into Pillow.
+The zip is the same byte for byte with the same Pillow and libwebp.
+
+```sh
+py -I scripts/pack_stickers_drawn_animated.py -o dist-stickers [--images <folder to look at the WebP files>]
 ```
 
 ## Clip animation packs

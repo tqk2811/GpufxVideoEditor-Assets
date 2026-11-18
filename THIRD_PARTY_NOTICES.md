@@ -7,7 +7,7 @@ Each package zip carries its own `NOTICE.txt` and `LICENSE.txt` with the full li
 
 ### Licence 1
 
-Packages: `bleach-bypass`, `bokeh-blur`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `dust-scratches`, `emboss`, `fill-blur`, `film-grain`, `fireflies`, `fireworks`, `fisheye-lens`, `fog`, `glitch-blocks`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `kaleidoscope`, `lens-flare`, `letterbox`, `light-leak`, `linear-wipe`, `night-vision`, `oil-paint`, `old-film`, `pip-frame`, `pixel-sort`, `posterize`, `rain`, `rounded-corners`, `sketch`, `smoke`, `snow`, `sparkles`, `teal-orange`, `thermal`, `tilt-shift`, `vhs`, `tqk2811-stickers`, `tqk2811-clip-animation`, `tqk2811-subtitle-style`, `tqk2811-text-style`
+Packages: `bleach-bypass`, `bokeh-blur`, `bubbles`, `cartoon`, `circle-grow`, `confetti`, `cross-process`, `crt-scanline`, `dust-scratches`, `emboss`, `fill-blur`, `film-grain`, `fireflies`, `fireworks`, `fisheye-lens`, `fog`, `glitch-blocks`, `glow`, `god-rays`, `halftone`, `hearts`, `infrared`, `kaleidoscope`, `lens-flare`, `letterbox`, `light-leak`, `linear-wipe`, `night-vision`, `oil-paint`, `old-film`, `pip-frame`, `pixel-sort`, `posterize`, `rain`, `rounded-corners`, `sketch`, `smoke`, `snow`, `sparkles`, `teal-orange`, `thermal`, `tilt-shift`, `vhs`, `tqk2811-animated-stickers`, `tqk2811-stickers`, `tqk2811-clip-animation`, `tqk2811-subtitle-style`, `tqk2811-text-style`
 
 ```text
 MIT License
@@ -2108,6 +2108,19 @@ The images are the unmodified 512x512 PNG files of 2D/png/512/ of that repositor
 renamed to ASCII file names after the Unicode name of each emoji. They are under the Apache License 2.0
 (2D/svg/LICENSE and the README of that repository); the OFL fonts of that repository are not used.
 Names, tags and categories (Emotions, Arrows, Marks) are chosen for this pack.
+```
+
+### `tqk2811-animated-stickers`
+
+```text
+Stickers: animated labels and marks (tqk2811)
+
+Copyright (c) 2026 tqk2811
+https://github.com/tqk2811/GpufxVideoEditor-Assets
+
+Original work: every frame is drawn by scripts/pack_stickers_drawn_animated.py with Pillow and stored
+as an animated WebP. The words use Aileron Regular by Sora Sagano (dotcolon.net), the font built into
+Pillow, which is public domain (CC0 1.0). MIT License.
 ```
 
 ### `tqk2811-stickers`
