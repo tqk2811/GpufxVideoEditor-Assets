@@ -1,0 +1,1092 @@
+{
+  "name": "Sticker: Noto Emoji",
+  "description": "Bộ 120 sticker emoji Noto của Google: cảm xúc, mũi tên và dấu hiệu.",
+  "tags": [
+    "sticker",
+    "emoji",
+    "cảm xúc",
+    "mũi tên"
+  ],
+  "items": {
+    "grinning-face": {
+      "name": "Mặt cười toe",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười",
+        "vui",
+        "hạnh phúc"
+      ]
+    },
+    "smiling-face-with-open-mouth": {
+      "name": "Cười há miệng",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười",
+        "vui",
+        "há miệng"
+      ]
+    },
+    "smiling-face-with-open-mouth-and-smiling-eyes": {
+      "name": "Cười há miệng mắt cười",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười tươi",
+        "vui",
+        "hạnh phúc"
+      ]
+    },
+    "grinning-face-with-smiling-eyes": {
+      "name": "Cười toe mắt híp",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười toe",
+        "vui vẻ",
+        "mắt híp"
+      ]
+    },
+    "smiling-face-with-open-mouth-and-tightly-closed-eyes": {
+      "name": "Cười híp mắt",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười lớn",
+        "buồn cười",
+        "híp mắt"
+      ]
+    },
+    "smiling-face-with-open-mouth-and-cold-sweat": {
+      "name": "Cười toát mồ hôi lạnh",
+      "category": "Cảm xúc",
+      "tags": [
+        "ngượng",
+        "toát mồ hôi",
+        "hú hồn"
+      ]
+    },
+    "rolling-on-the-floor-laughing": {
+      "name": "Cười lăn lộn",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười lăn",
+        "buồn cười",
+        "haha"
+      ]
+    },
+    "face-with-tears-of-joy": {
+      "name": "Cười ra nước mắt",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười",
+        "buồn cười",
+        "haha"
+      ]
+    },
+    "slightly-smiling-face": {
+      "name": "Cười nhẹ",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười nhẹ",
+        "lịch sự",
+        "bình thường"
+      ]
+    },
+    "winking-face": {
+      "name": "Nháy mắt",
+      "category": "Cảm xúc",
+      "tags": [
+        "nháy mắt",
+        "tinh nghịch",
+        "đùa"
+      ]
+    },
+    "smiling-face-with-smiling-eyes": {
+      "name": "Cười mắt cười",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười",
+        "hài lòng",
+        "dịu dàng"
+      ]
+    },
+    "smiling-face-with-halo": {
+      "name": "Mặt thiên thần",
+      "category": "Cảm xúc",
+      "tags": [
+        "thiên thần",
+        "ngoan",
+        "vô tội"
+      ]
+    },
+    "smiling-face-with-smiling-eyes-and-three-hearts": {
+      "name": "Cười với ba trái tim",
+      "category": "Cảm xúc",
+      "tags": [
+        "yêu",
+        "được yêu",
+        "hạnh phúc"
+      ]
+    },
+    "smiling-face-with-heart-shaped-eyes": {
+      "name": "Mắt trái tim",
+      "category": "Cảm xúc",
+      "tags": [
+        "mê",
+        "yêu",
+        "thích"
+      ]
+    },
+    "grinning-face-with-star-eyes": {
+      "name": "Mắt sao",
+      "category": "Cảm xúc",
+      "tags": [
+        "choáng ngợp",
+        "mắt sao",
+        "wow"
+      ]
+    },
+    "face-throwing-a-kiss": {
+      "name": "Gửi nụ hôn",
+      "category": "Cảm xúc",
+      "tags": [
+        "hôn",
+        "thơm",
+        "yêu"
+      ]
+    },
+    "face-savouring-delicious-food": {
+      "name": "Thèm ăn ngon",
+      "category": "Cảm xúc",
+      "tags": [
+        "ngon",
+        "thèm",
+        "ăn uống"
+      ]
+    },
+    "face-with-stuck-out-tongue-and-winking-eye": {
+      "name": "Lè lưỡi nháy mắt",
+      "category": "Cảm xúc",
+      "tags": [
+        "lè lưỡi",
+        "tinh nghịch",
+        "đùa"
+      ]
+    },
+    "grinning-face-with-one-large-and-one-small-eye": {
+      "name": "Mặt điên điên",
+      "category": "Cảm xúc",
+      "tags": [
+        "khùng",
+        "điên",
+        "hài hước"
+      ]
+    },
+    "money-mouth-face": {
+      "name": "Mặt mê tiền",
+      "category": "Cảm xúc",
+      "tags": [
+        "tiền",
+        "giàu",
+        "kiếm tiền"
+      ]
+    },
+    "hugging-face": {
+      "name": "Mặt ôm",
+      "category": "Cảm xúc",
+      "tags": [
+        "ôm",
+        "thương",
+        "an ủi"
+      ]
+    },
+    "smiling-face-with-smiling-eyes-and-hand-covering-mouth": {
+      "name": "Cười che miệng",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười khúc khích",
+        "che miệng",
+        "ngại"
+      ]
+    },
+    "face-with-finger-covering-closed-lips": {
+      "name": "Suỵt im lặng",
+      "category": "Cảm xúc",
+      "tags": [
+        "suỵt",
+        "im lặng",
+        "bí mật"
+      ]
+    },
+    "thinking-face": {
+      "name": "Mặt đang suy nghĩ",
+      "category": "Cảm xúc",
+      "tags": [
+        "suy nghĩ",
+        "nghĩ ngợi",
+        "băn khoăn"
+      ]
+    },
+    "neutral-face": {
+      "name": "Mặt vô cảm",
+      "category": "Cảm xúc",
+      "tags": [
+        "vô cảm",
+        "bình thản",
+        "chán"
+      ]
+    },
+    "face-with-rolling-eyes": {
+      "name": "Đảo mắt",
+      "category": "Cảm xúc",
+      "tags": [
+        "đảo mắt",
+        "chán",
+        "khó chịu"
+      ]
+    },
+    "smirking-face": {
+      "name": "Cười nhếch mép",
+      "category": "Cảm xúc",
+      "tags": [
+        "nhếch mép",
+        "gian",
+        "đắc ý"
+      ]
+    },
+    "grimacing-face": {
+      "name": "Nhăn nhó",
+      "category": "Cảm xúc",
+      "tags": [
+        "nhăn nhó",
+        "ngượng",
+        "khó xử"
+      ]
+    },
+    "relieved-face": {
+      "name": "Nhẹ nhõm",
+      "category": "Cảm xúc",
+      "tags": [
+        "nhẹ nhõm",
+        "thoải mái",
+        "yên tâm"
+      ]
+    },
+    "pensive-face": {
+      "name": "Mặt trầm tư",
+      "category": "Cảm xúc",
+      "tags": [
+        "trầm tư",
+        "buồn",
+        "nghĩ ngợi"
+      ]
+    },
+    "sleeping-face": {
+      "name": "Mặt đang ngủ",
+      "category": "Cảm xúc",
+      "tags": [
+        "ngủ",
+        "buồn ngủ",
+        "mệt"
+      ]
+    },
+    "face-with-medical-mask": {
+      "name": "Mặt đeo khẩu trang",
+      "category": "Cảm xúc",
+      "tags": [
+        "khẩu trang",
+        "ốm",
+        "bệnh"
+      ]
+    },
+    "nauseated-face": {
+      "name": "Mặt buồn nôn",
+      "category": "Cảm xúc",
+      "tags": [
+        "buồn nôn",
+        "ốm",
+        "ghê"
+      ]
+    },
+    "overheated-face": {
+      "name": "Mặt nóng bừng",
+      "category": "Cảm xúc",
+      "tags": [
+        "nóng",
+        "đỏ mặt",
+        "say nắng"
+      ]
+    },
+    "freezing-face": {
+      "name": "Mặt đóng băng",
+      "category": "Cảm xúc",
+      "tags": [
+        "lạnh",
+        "rét",
+        "đóng băng"
+      ]
+    },
+    "dizzy-face": {
+      "name": "Mặt choáng váng",
+      "category": "Cảm xúc",
+      "tags": [
+        "chóng mặt",
+        "choáng",
+        "xỉu"
+      ]
+    },
+    "shocked-face-with-exploding-head": {
+      "name": "Đầu nổ tung",
+      "category": "Cảm xúc",
+      "tags": [
+        "sốc",
+        "kinh ngạc",
+        "nổ não"
+      ]
+    },
+    "face-with-party-horn-and-party-hat": {
+      "name": "Mặt ăn mừng",
+      "category": "Cảm xúc",
+      "tags": [
+        "tiệc",
+        "ăn mừng",
+        "vui"
+      ]
+    },
+    "smiling-face-with-sunglasses": {
+      "name": "Cười đeo kính râm",
+      "category": "Cảm xúc",
+      "tags": [
+        "ngầu",
+        "kính râm",
+        "chất"
+      ]
+    },
+    "nerd-face": {
+      "name": "Mặt mọt sách",
+      "category": "Cảm xúc",
+      "tags": [
+        "mọt sách",
+        "thông minh",
+        "kính cận"
+      ]
+    },
+    "confused-face": {
+      "name": "Mặt bối rối",
+      "category": "Cảm xúc",
+      "tags": [
+        "bối rối",
+        "khó hiểu",
+        "lúng túng"
+      ]
+    },
+    "face-with-open-mouth": {
+      "name": "Há miệng ngạc nhiên",
+      "category": "Cảm xúc",
+      "tags": [
+        "ngạc nhiên",
+        "ồ",
+        "wow"
+      ]
+    },
+    "flushed-face": {
+      "name": "Mặt đỏ bừng",
+      "category": "Cảm xúc",
+      "tags": [
+        "đỏ mặt",
+        "ngại",
+        "xấu hổ"
+      ]
+    },
+    "face-with-pleading-eyes": {
+      "name": "Mắt van nài",
+      "category": "Cảm xúc",
+      "tags": [
+        "van nài",
+        "cầu xin",
+        "đáng thương"
+      ]
+    },
+    "fearful-face": {
+      "name": "Mặt sợ hãi",
+      "category": "Cảm xúc",
+      "tags": [
+        "sợ",
+        "hoảng",
+        "lo lắng"
+      ]
+    },
+    "crying-face": {
+      "name": "Mặt khóc",
+      "category": "Cảm xúc",
+      "tags": [
+        "khóc",
+        "buồn",
+        "nước mắt"
+      ]
+    },
+    "loudly-crying-face": {
+      "name": "Khóc nức nở",
+      "category": "Cảm xúc",
+      "tags": [
+        "khóc to",
+        "buồn",
+        "nước mắt"
+      ]
+    },
+    "face-screaming-in-fear": {
+      "name": "Hét lên vì sợ",
+      "category": "Cảm xúc",
+      "tags": [
+        "sợ hãi",
+        "hét",
+        "hoảng"
+      ]
+    },
+    "weary-face": {
+      "name": "Mặt kiệt sức",
+      "category": "Cảm xúc",
+      "tags": [
+        "mệt mỏi",
+        "kiệt sức",
+        "chán nản"
+      ]
+    },
+    "yawning-face": {
+      "name": "Mặt ngáp",
+      "category": "Cảm xúc",
+      "tags": [
+        "ngáp",
+        "buồn ngủ",
+        "chán"
+      ]
+    },
+    "face-with-look-of-triumph": {
+      "name": "Mặt hằm hằm",
+      "category": "Cảm xúc",
+      "tags": [
+        "hằm hằm",
+        "tức",
+        "quyết tâm"
+      ]
+    },
+    "pouting-face": {
+      "name": "Mặt giận dỗi",
+      "category": "Cảm xúc",
+      "tags": [
+        "giận",
+        "tức",
+        "bực"
+      ]
+    },
+    "serious-face-with-symbols-covering-mouth": {
+      "name": "Mặt chửi thề",
+      "category": "Cảm xúc",
+      "tags": [
+        "chửi",
+        "tức giận",
+        "bực bội"
+      ]
+    },
+    "smiling-face-with-horns": {
+      "name": "Mặt quỷ cười",
+      "category": "Cảm xúc",
+      "tags": [
+        "quỷ",
+        "ác",
+        "tinh quái"
+      ]
+    },
+    "skull": {
+      "name": "Đầu lâu",
+      "category": "Cảm xúc",
+      "tags": [
+        "đầu lâu",
+        "chết",
+        "ma quái"
+      ]
+    },
+    "clown-face": {
+      "name": "Mặt hề",
+      "category": "Cảm xúc",
+      "tags": [
+        "hề",
+        "tinh nghịch",
+        "xiếc"
+      ]
+    },
+    "ghost": {
+      "name": "Con ma",
+      "category": "Cảm xúc",
+      "tags": [
+        "ma",
+        "ma quái",
+        "Halloween"
+      ]
+    },
+    "extraterrestrial-alien": {
+      "name": "Người ngoài hành tinh",
+      "category": "Cảm xúc",
+      "tags": [
+        "người ngoài hành tinh",
+        "UFO",
+        "alien"
+      ]
+    },
+    "robot-face": {
+      "name": "Mặt rô-bốt",
+      "category": "Cảm xúc",
+      "tags": [
+        "robot",
+        "AI",
+        "công nghệ"
+      ]
+    },
+    "upwards-black-arrow": {
+      "name": "Mũi tên lên",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "lên",
+        "tăng"
+      ]
+    },
+    "north-east-arrow": {
+      "name": "Mũi tên chéo lên phải",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "đông bắc",
+        "chéo"
+      ]
+    },
+    "black-rightwards-arrow": {
+      "name": "Mũi tên sang phải",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "phải",
+        "tiếp theo"
+      ]
+    },
+    "south-east-arrow": {
+      "name": "Mũi tên chéo xuống phải",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "đông nam",
+        "chéo"
+      ]
+    },
+    "downwards-black-arrow": {
+      "name": "Mũi tên xuống",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "xuống",
+        "giảm"
+      ]
+    },
+    "south-west-arrow": {
+      "name": "Mũi tên chéo xuống trái",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "tây nam",
+        "chéo"
+      ]
+    },
+    "leftwards-black-arrow": {
+      "name": "Mũi tên sang trái",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "trái",
+        "quay lại"
+      ]
+    },
+    "north-west-arrow": {
+      "name": "Mũi tên chéo lên trái",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "tây bắc",
+        "chéo"
+      ]
+    },
+    "up-down-arrow": {
+      "name": "Mũi tên lên xuống",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "hai chiều",
+        "dọc"
+      ]
+    },
+    "left-right-arrow": {
+      "name": "Mũi tên trái phải",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "hai chiều",
+        "ngang"
+      ]
+    },
+    "leftwards-arrow-with-hook": {
+      "name": "Mũi tên móc sang trái",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "quay lại",
+        "hoàn tác"
+      ]
+    },
+    "rightwards-arrow-with-hook": {
+      "name": "Mũi tên móc sang phải",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "trả lời",
+        "tiếp tục"
+      ]
+    },
+    "arrow-pointing-rightwards-then-curving-upwards": {
+      "name": "Mũi tên cong lên",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "cong lên",
+        "chuyển hướng"
+      ]
+    },
+    "arrow-pointing-rightwards-then-curving-downwards": {
+      "name": "Mũi tên cong xuống",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "cong xuống",
+        "chuyển hướng"
+      ]
+    },
+    "clockwise-downwards-and-upwards-open-circle-arrows": {
+      "name": "Mũi tên xoay vòng thuận chiều kim đồng hồ",
+      "category": "Mũi tên",
+      "tags": [
+        "làm mới",
+        "xoay vòng",
+        "tải lại"
+      ]
+    },
+    "anticlockwise-downwards-and-upwards-open-circle-arrows": {
+      "name": "Mũi tên xoay vòng ngược chiều kim đồng hồ",
+      "category": "Mũi tên",
+      "tags": [
+        "làm mới",
+        "xoay vòng",
+        "lặp lại"
+      ]
+    },
+    "back-with-leftwards-arrow-above": {
+      "name": "Nút quay lại",
+      "category": "Mũi tên",
+      "tags": [
+        "quay lại",
+        "trở về",
+        "mũi tên"
+      ]
+    },
+    "top-with-upwards-arrow-above": {
+      "name": "Nút lên đầu",
+      "category": "Mũi tên",
+      "tags": [
+        "lên đầu",
+        "đỉnh",
+        "mũi tên"
+      ]
+    },
+    "black-right-pointing-triangle": {
+      "name": "Tam giác chỉ phải (phát)",
+      "category": "Mũi tên",
+      "tags": [
+        "phát",
+        "play",
+        "tam giác"
+      ]
+    },
+    "black-left-pointing-triangle": {
+      "name": "Tam giác chỉ trái (lùi)",
+      "category": "Mũi tên",
+      "tags": [
+        "lùi",
+        "tam giác",
+        "phát ngược"
+      ]
+    },
+    "up-pointing-small-red-triangle": {
+      "name": "Tam giác đỏ nhỏ chỉ lên",
+      "category": "Mũi tên",
+      "tags": [
+        "tam giác",
+        "tăng",
+        "lên"
+      ]
+    },
+    "down-pointing-small-red-triangle": {
+      "name": "Tam giác đỏ nhỏ chỉ xuống",
+      "category": "Mũi tên",
+      "tags": [
+        "tam giác",
+        "giảm",
+        "xuống"
+      ]
+    },
+    "black-right-pointing-double-triangle": {
+      "name": "Tua nhanh tới",
+      "category": "Mũi tên",
+      "tags": [
+        "tua nhanh",
+        "tiến",
+        "bỏ qua"
+      ]
+    },
+    "black-left-pointing-double-triangle": {
+      "name": "Tua nhanh lùi",
+      "category": "Mũi tên",
+      "tags": [
+        "tua lùi",
+        "lùi",
+        "quay lại"
+      ]
+    },
+    "white-up-pointing-index": {
+      "name": "Ngón trỏ chỉ lên",
+      "category": "Mũi tên",
+      "tags": [
+        "chỉ lên",
+        "ngón trỏ",
+        "chú ý"
+      ]
+    },
+    "white-up-pointing-backhand-index": {
+      "name": "Mu bàn tay chỉ lên",
+      "category": "Mũi tên",
+      "tags": [
+        "chỉ lên",
+        "bàn tay",
+        "phía trên"
+      ]
+    },
+    "white-down-pointing-backhand-index": {
+      "name": "Mu bàn tay chỉ xuống",
+      "category": "Mũi tên",
+      "tags": [
+        "chỉ xuống",
+        "bàn tay",
+        "phía dưới"
+      ]
+    },
+    "white-left-pointing-backhand-index": {
+      "name": "Mu bàn tay chỉ sang trái",
+      "category": "Mũi tên",
+      "tags": [
+        "chỉ trái",
+        "bàn tay",
+        "bên trái"
+      ]
+    },
+    "white-right-pointing-backhand-index": {
+      "name": "Mu bàn tay chỉ sang phải",
+      "category": "Mũi tên",
+      "tags": [
+        "chỉ phải",
+        "bàn tay",
+        "bên phải"
+      ]
+    },
+    "white-heavy-check-mark": {
+      "name": "Dấu tích xanh trên nền",
+      "category": "Dấu hiệu",
+      "tags": [
+        "dấu tích",
+        "đúng",
+        "hoàn thành"
+      ]
+    },
+    "heavy-check-mark": {
+      "name": "Dấu tích đậm",
+      "category": "Dấu hiệu",
+      "tags": [
+        "dấu tích",
+        "đúng",
+        "đồng ý"
+      ]
+    },
+    "cross-mark": {
+      "name": "Dấu X",
+      "category": "Dấu hiệu",
+      "tags": [
+        "dấu X",
+        "sai",
+        "từ chối"
+      ]
+    },
+    "heavy-exclamation-mark-symbol": {
+      "name": "Dấu chấm than",
+      "category": "Dấu hiệu",
+      "tags": [
+        "chấm than",
+        "quan trọng",
+        "chú ý"
+      ]
+    },
+    "black-question-mark-ornament": {
+      "name": "Dấu hỏi",
+      "category": "Dấu hiệu",
+      "tags": [
+        "dấu hỏi",
+        "câu hỏi",
+        "thắc mắc"
+      ]
+    },
+    "double-exclamation-mark": {
+      "name": "Hai dấu chấm than",
+      "category": "Dấu hiệu",
+      "tags": [
+        "chấm than đôi",
+        "nhấn mạnh",
+        "chú ý"
+      ]
+    },
+    "exclamation-question-mark": {
+      "name": "Dấu chấm than hỏi",
+      "category": "Dấu hiệu",
+      "tags": [
+        "chấm than hỏi",
+        "bất ngờ",
+        "khó tin"
+      ]
+    },
+    "warning-sign": {
+      "name": "Biển cảnh báo",
+      "category": "Dấu hiệu",
+      "tags": [
+        "cảnh báo",
+        "chú ý",
+        "nguy hiểm"
+      ]
+    },
+    "no-entry-sign": {
+      "name": "Biển cấm",
+      "category": "Dấu hiệu",
+      "tags": [
+        "cấm",
+        "không được",
+        "cấm vào"
+      ]
+    },
+    "no-entry": {
+      "name": "Cấm đi vào",
+      "category": "Dấu hiệu",
+      "tags": [
+        "cấm vào",
+        "cấm",
+        "dừng"
+      ]
+    },
+    "hundred-points-symbol": {
+      "name": "Một trăm điểm",
+      "category": "Dấu hiệu",
+      "tags": [
+        "100 điểm",
+        "tuyệt vời",
+        "hoàn hảo"
+      ]
+    },
+    "fire": {
+      "name": "Lửa",
+      "category": "Dấu hiệu",
+      "tags": [
+        "lửa",
+        "nóng",
+        "hot"
+      ]
+    },
+    "sparkles": {
+      "name": "Lấp lánh",
+      "category": "Dấu hiệu",
+      "tags": [
+        "lấp lánh",
+        "tia sáng",
+        "đẹp"
+      ]
+    },
+    "collision-symbol": {
+      "name": "Va chạm nổ",
+      "category": "Dấu hiệu",
+      "tags": [
+        "nổ",
+        "va chạm",
+        "bùm"
+      ]
+    },
+    "anger-symbol": {
+      "name": "Biểu tượng tức giận",
+      "category": "Dấu hiệu",
+      "tags": [
+        "tức giận",
+        "gân nổi",
+        "bực"
+      ]
+    },
+    "speech-balloon": {
+      "name": "Bong bóng lời thoại",
+      "category": "Dấu hiệu",
+      "tags": [
+        "lời thoại",
+        "trò chuyện",
+        "bình luận"
+      ]
+    },
+    "thought-balloon": {
+      "name": "Bong bóng suy nghĩ",
+      "category": "Dấu hiệu",
+      "tags": [
+        "suy nghĩ",
+        "nghĩ",
+        "mây suy nghĩ"
+      ]
+    },
+    "sleeping-symbol": {
+      "name": "Biểu tượng ngủ",
+      "category": "Dấu hiệu",
+      "tags": [
+        "ngủ",
+        "zzz",
+        "buồn ngủ"
+      ]
+    },
+    "splashing-sweat-symbol": {
+      "name": "Giọt mồ hôi bắn",
+      "category": "Dấu hiệu",
+      "tags": [
+        "mồ hôi",
+        "bắn nước",
+        "vất vả"
+      ]
+    },
+    "dash-symbol": {
+      "name": "Vệt chạy nhanh",
+      "category": "Dấu hiệu",
+      "tags": [
+        "chạy nhanh",
+        "vụt",
+        "tốc độ"
+      ]
+    },
+    "white-medium-star": {
+      "name": "Ngôi sao trắng",
+      "category": "Dấu hiệu",
+      "tags": [
+        "sao",
+        "ngôi sao",
+        "yêu thích"
+      ]
+    },
+    "glowing-star": {
+      "name": "Ngôi sao tỏa sáng",
+      "category": "Dấu hiệu",
+      "tags": [
+        "sao",
+        "tỏa sáng",
+        "nổi bật"
+      ]
+    },
+    "dizzy-symbol": {
+      "name": "Biểu tượng chóng mặt",
+      "category": "Dấu hiệu",
+      "tags": [
+        "chóng mặt",
+        "sao quay",
+        "choáng"
+      ]
+    },
+    "heavy-black-heart": {
+      "name": "Tim đen đậm",
+      "category": "Dấu hiệu",
+      "tags": [
+        "tim",
+        "tình yêu",
+        "yêu thích"
+      ]
+    },
+    "broken-heart": {
+      "name": "Trái tim tan vỡ",
+      "category": "Dấu hiệu",
+      "tags": [
+        "tim vỡ",
+        "buồn",
+        "thất tình"
+      ]
+    },
+    "sparkling-heart": {
+      "name": "Trái tim lấp lánh",
+      "category": "Dấu hiệu",
+      "tags": [
+        "tim",
+        "lấp lánh",
+        "tình yêu"
+      ]
+    },
+    "squared-new": {
+      "name": "Nhãn NEW",
+      "category": "Dấu hiệu",
+      "tags": [
+        "mới",
+        "new",
+        "nhãn"
+      ]
+    },
+    "squared-free": {
+      "name": "Nhãn FREE",
+      "category": "Dấu hiệu",
+      "tags": [
+        "miễn phí",
+        "free",
+        "nhãn"
+      ]
+    },
+    "squared-up-with-exclamation-mark": {
+      "name": "Nhãn UP!",
+      "category": "Dấu hiệu",
+      "tags": [
+        "nâng cấp",
+        "up",
+        "nhãn"
+      ]
+    },
+    "squared-cool": {
+      "name": "Nhãn COOL",
+      "category": "Dấu hiệu",
+      "tags": [
+        "ngầu",
+        "cool",
+        "nhãn"
+      ]
+    },
+    "squared-sos": {
+      "name": "Nhãn SOS",
+      "category": "Dấu hiệu",
+      "tags": [
+        "cầu cứu",
+        "SOS",
+        "khẩn cấp"
+      ]
+    },
+    "squared-ok": {
+      "name": "Nhãn OK",
+      "category": "Dấu hiệu",
+      "tags": [
+        "ổn",
+        "OK",
+        "đồng ý"
+      ]
+    }
+  }
+}

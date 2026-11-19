@@ -1,0 +1,16 @@
+{
+  "name": "Tông phai",
+  "description": "Tông màu: giảm tương phản và độ bão hòa, sáng hơn.",
+  "tags": [
+    "phai",
+    "nhạt",
+    "màu",
+    "bộ lọc"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là toàn bộ tông màu"
+    }
+  }
+}

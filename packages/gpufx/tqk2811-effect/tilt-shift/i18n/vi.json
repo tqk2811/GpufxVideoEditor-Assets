@@ -1,0 +1,36 @@
+{
+  "name": "Tilt Shift (mô hình thu nhỏ)",
+  "description": "Tilt shift mô hình thu nhỏ: một dải nét ngang khung, phía trên và dưới mờ tăng dần, kèm tăng bão hòa.",
+  "tags": [
+    "tilt shift",
+    "thu nhỏ",
+    "mô hình",
+    "xóa phông"
+  ],
+  "params": {
+    "focus": {
+      "label": "Tiêu điểm",
+      "description": "Độ cao của giữa dải nét, 0 = trên cùng, 1 = dưới cùng"
+    },
+    "width": {
+      "label": "Độ rộng",
+      "description": "Nửa chiều cao của dải nét"
+    },
+    "falloff": {
+      "label": "Độ chuyển dần",
+      "description": "Khoảng cách để độ mờ tăng tới mức tối đa"
+    },
+    "blur": {
+      "label": "Độ mờ",
+      "description": "Độ mờ lớn nhất (mức mip)"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Độ nghiêng của dải tính bằng độ"
+    },
+    "saturation": {
+      "label": "Bão hòa",
+      "description": "Độ bão hòa màu, cho vẻ ngoài như đồ chơi"
+    }
+  }
+}

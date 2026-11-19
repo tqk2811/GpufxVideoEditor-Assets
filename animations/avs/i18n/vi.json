@@ -1,0 +1,68 @@
+{
+  "name": "Hoạt ảnh clip: AI Video Studio",
+  "description": "Bộ hoạt ảnh vào và ra cho clip, lấy từ AI Video Studio.",
+  "tags": [
+    "hoạt ảnh",
+    "vào",
+    "ra",
+    "clip"
+  ],
+  "items": {
+    "pop": {
+      "name": "Bật ra",
+      "tags": [
+        "bật",
+        "pop",
+        "xuất hiện"
+      ]
+    },
+    "fade": {
+      "name": "Mờ dần vào",
+      "tags": [
+        "mờ dần",
+        "hiện dần",
+        "fade"
+      ]
+    },
+    "slide_l": {
+      "name": "Trượt từ trái",
+      "tags": [
+        "trượt",
+        "bên trái",
+        "slide"
+      ]
+    },
+    "slide_r": {
+      "name": "Trượt từ phải",
+      "tags": [
+        "trượt",
+        "bên phải",
+        "slide"
+      ]
+    },
+    "drop": {
+      "name": "Thả xuống",
+      "tags": [
+        "rơi",
+        "thả",
+        "drop"
+      ]
+    },
+    "blur_zoom": {
+      "name": "Phóng to và nhòe",
+      "tags": [
+        "nhòe",
+        "phóng to",
+        "zoom"
+      ]
+    },
+    "fade_out": {
+      "name": "Mờ dần ra",
+      "tags": [
+        "mờ dần",
+        "biến mất",
+        "fade"
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Hiệu ứng âm thanh: Đám đông",
+  "description": "Đám đông: vỗ tay, hò reo, ồ lên ngạc nhiên.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "đám đông"
+  ],
+  "items": {
+    "applause_small": {
+      "name": "Vỗ tay nhỏ",
+      "category": "Đám đông",
+      "tags": [
+        "vỗ tay nhỏ",
+        "vỗ tay",
+        "nhỏ"
+      ],
+      "description": "Vài người vỗ tay, cảm ơn"
+    },
+    "applause_big": {
+      "name": "Vỗ tay lớn",
+      "category": "Đám đông",
+      "tags": [
+        "vỗ tay lớn",
+        "khán phòng"
+      ],
+      "description": "Thành tựu lớn, kết thúc ấn tượng"
+    },
+    "cheer_short": {
+      "name": "Hò reo ngắn",
+      "category": "Đám đông",
+      "tags": [
+        "hò reo ngắn",
+        "hò reo",
+        "yeah"
+      ],
+      "description": "Ăn mừng ngắn"
+    },
+    "crowd_ooh": {
+      "name": "Đám đông ồ lên",
+      "category": "Đám đông",
+      "tags": [
+        "đám đông ồ lên",
+        "ồ",
+        "wow",
+        "ngạc nhiên"
+      ],
+      "description": "Khán giả 'ồ' ngạc nhiên"
+    }
+  }
+}

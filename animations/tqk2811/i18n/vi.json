@@ -1,0 +1,469 @@
+{
+  "name": "Hoạt ảnh clip: tqk2811",
+  "description": "Hoạt ảnh vào, ra và lặp cho clip, chữ và sticker.",
+  "tags": [
+    "hoạt ảnh",
+    "vào",
+    "ra",
+    "lặp",
+    "clip"
+  ],
+  "items": {
+    "v_drop_circle": {
+      "name": "Rơi chữ V và mở vòng tròn",
+      "tags": [
+        "rơi",
+        "vòng tròn",
+        "mở ra"
+      ]
+    },
+    "bounce_in": {
+      "name": "Nảy vào",
+      "tags": [
+        "nảy",
+        "bật",
+        "xuất hiện"
+      ]
+    },
+    "elastic_in": {
+      "name": "Đàn hồi vào",
+      "tags": [
+        "đàn hồi",
+        "dẻo",
+        "xuất hiện"
+      ]
+    },
+    "flip_in_x": {
+      "name": "Lật vào (ngang)",
+      "tags": [
+        "lật",
+        "xoay",
+        "ngang"
+      ]
+    },
+    "flip_in_y": {
+      "name": "Lật vào (dọc)",
+      "tags": [
+        "lật",
+        "xoay",
+        "dọc"
+      ]
+    },
+    "rotate_in": {
+      "name": "Xoay vào",
+      "tags": [
+        "xoay",
+        "quay",
+        "xuất hiện"
+      ]
+    },
+    "spin_pop": {
+      "name": "Xoay bật ra",
+      "tags": [
+        "xoay",
+        "bật",
+        "quay tròn"
+      ]
+    },
+    "swing_in": {
+      "name": "Đung đưa vào",
+      "tags": [
+        "đung đưa",
+        "lắc",
+        "xuất hiện"
+      ]
+    },
+    "shrink_in": {
+      "name": "Thu nhỏ vào",
+      "tags": [
+        "thu nhỏ",
+        "co lại",
+        "xuất hiện"
+      ]
+    },
+    "rise_in": {
+      "name": "Trồi lên",
+      "tags": [
+        "trồi lên",
+        "bay lên",
+        "xuất hiện"
+      ]
+    },
+    "typewriter": {
+      "name": "Máy đánh chữ",
+      "tags": [
+        "đánh máy",
+        "gõ chữ",
+        "từng ký tự"
+      ]
+    },
+    "char_rise": {
+      "name": "Chữ trồi lên",
+      "tags": [
+        "chữ",
+        "từng chữ",
+        "trồi lên"
+      ]
+    },
+    "word_pop": {
+      "name": "Từ bật ra",
+      "tags": [
+        "từ",
+        "từng từ",
+        "bật"
+      ]
+    },
+    "bounce_out": {
+      "name": "Nảy ra",
+      "tags": [
+        "nảy",
+        "biến mất",
+        "rời đi"
+      ]
+    },
+    "flip_out_x": {
+      "name": "Lật ra (ngang)",
+      "tags": [
+        "lật",
+        "xoay",
+        "rời đi"
+      ]
+    },
+    "rotate_out": {
+      "name": "Xoay ra",
+      "tags": [
+        "xoay",
+        "quay",
+        "rời đi"
+      ]
+    },
+    "blow_up_out": {
+      "name": "Phồng to rồi biến mất",
+      "tags": [
+        "phồng to",
+        "nổ",
+        "biến mất"
+      ]
+    },
+    "sink_out": {
+      "name": "Chìm xuống",
+      "tags": [
+        "chìm",
+        "tụt xuống",
+        "rời đi"
+      ]
+    },
+    "char_fall_out": {
+      "name": "Chữ rơi xuống",
+      "tags": [
+        "chữ",
+        "rơi",
+        "từng chữ"
+      ]
+    },
+    "pulse": {
+      "name": "Đập nhịp",
+      "tags": [
+        "nhịp đập",
+        "phồng xẹp",
+        "lặp"
+      ]
+    },
+    "heartbeat": {
+      "name": "Nhịp tim",
+      "tags": [
+        "tim đập",
+        "nhịp",
+        "lặp"
+      ]
+    },
+    "swing": {
+      "name": "Đung đưa",
+      "tags": [
+        "đung đưa",
+        "lắc",
+        "lặp"
+      ]
+    },
+    "float": {
+      "name": "Lơ lửng",
+      "tags": [
+        "lơ lửng",
+        "bồng bềnh",
+        "lặp"
+      ]
+    },
+    "jitter": {
+      "name": "Rung giật",
+      "tags": [
+        "rung",
+        "giật",
+        "lặp"
+      ]
+    },
+    "wave": {
+      "name": "Làn sóng",
+      "tags": [
+        "sóng",
+        "lượn",
+        "từng chữ"
+      ]
+    },
+    "slide_in_left_overshoot": {
+      "name": "Trượt vào từ trái (vọt quá)",
+      "tags": [
+        "trượt",
+        "bên trái",
+        "nảy"
+      ]
+    },
+    "slide_in_right_overshoot": {
+      "name": "Trượt vào từ phải (vọt quá)",
+      "tags": [
+        "trượt",
+        "bên phải",
+        "nảy"
+      ]
+    },
+    "slide_in_top_overshoot": {
+      "name": "Trượt vào từ trên (vọt quá)",
+      "tags": [
+        "trượt",
+        "từ trên",
+        "nảy"
+      ]
+    },
+    "slide_in_bottom_overshoot": {
+      "name": "Trượt vào từ dưới (vọt quá)",
+      "tags": [
+        "trượt",
+        "từ dưới",
+        "nảy"
+      ]
+    },
+    "slide_out_left_anticipate": {
+      "name": "Trượt ra bên trái (lấy đà)",
+      "tags": [
+        "trượt",
+        "bên trái",
+        "rời đi"
+      ]
+    },
+    "slide_out_right_anticipate": {
+      "name": "Trượt ra bên phải (lấy đà)",
+      "tags": [
+        "trượt",
+        "bên phải",
+        "rời đi"
+      ]
+    },
+    "slide_out_up_anticipate": {
+      "name": "Trượt ra phía trên (lấy đà)",
+      "tags": [
+        "trượt",
+        "lên trên",
+        "rời đi"
+      ]
+    },
+    "slide_out_down_anticipate": {
+      "name": "Trượt ra phía dưới (lấy đà)",
+      "tags": [
+        "trượt",
+        "xuống dưới",
+        "rời đi"
+      ]
+    },
+    "zoom_blur_in": {
+      "name": "Phóng to nhòe vào",
+      "tags": [
+        "phóng to",
+        "nhòe",
+        "xuất hiện"
+      ]
+    },
+    "zoom_blur_out": {
+      "name": "Phóng to nhòe ra",
+      "tags": [
+        "phóng to",
+        "nhòe",
+        "rời đi"
+      ]
+    },
+    "wipe_reveal_in": {
+      "name": "Quét hiện (trái sang phải)",
+      "tags": [
+        "quét",
+        "hiện ra",
+        "trái sang phải"
+      ]
+    },
+    "wipe_reveal_down_in": {
+      "name": "Quét hiện (trên xuống dưới)",
+      "tags": [
+        "quét",
+        "hiện ra",
+        "trên xuống dưới"
+      ]
+    },
+    "wipe_out": {
+      "name": "Quét ẩn (phải sang trái)",
+      "tags": [
+        "quét",
+        "ẩn đi",
+        "phải sang trái"
+      ]
+    },
+    "drop_bounce_in": {
+      "name": "Rơi và bẹp xuống",
+      "tags": [
+        "rơi",
+        "bẹp",
+        "nảy"
+      ]
+    },
+    "roll_in": {
+      "name": "Lăn vào",
+      "tags": [
+        "lăn",
+        "cuộn",
+        "xuất hiện"
+      ]
+    },
+    "roll_out": {
+      "name": "Lăn ra",
+      "tags": [
+        "lăn",
+        "cuộn",
+        "rời đi"
+      ]
+    },
+    "fade_scale_in": {
+      "name": "Mờ dần và phóng to vào",
+      "tags": [
+        "mờ dần",
+        "phóng to",
+        "xuất hiện"
+      ]
+    },
+    "fade_scale_out": {
+      "name": "Mờ dần và thu nhỏ ra",
+      "tags": [
+        "mờ dần",
+        "thu nhỏ",
+        "rời đi"
+      ]
+    },
+    "tada": {
+      "name": "Tada",
+      "tags": [
+        "tada",
+        "lắc",
+        "gây chú ý"
+      ]
+    },
+    "wobble": {
+      "name": "Lắc lư",
+      "tags": [
+        "lắc lư",
+        "chao đảo",
+        "lặp"
+      ]
+    },
+    "rubber_band": {
+      "name": "Dây chun",
+      "tags": [
+        "dây chun",
+        "co giãn",
+        "lặp"
+      ]
+    },
+    "shake_x": {
+      "name": "Rung (ngang)",
+      "tags": [
+        "rung",
+        "lắc",
+        "ngang"
+      ]
+    },
+    "shake_y": {
+      "name": "Rung (dọc)",
+      "tags": [
+        "rung",
+        "lắc",
+        "dọc"
+      ]
+    },
+    "breathe": {
+      "name": "Thở",
+      "tags": [
+        "thở",
+        "phồng xẹp",
+        "lặp"
+      ]
+    },
+    "orbit": {
+      "name": "Quỹ đạo nhỏ",
+      "tags": [
+        "quỹ đạo",
+        "xoay vòng",
+        "lặp"
+      ]
+    },
+    "char_scale_pop": {
+      "name": "Chữ bật to",
+      "tags": [
+        "chữ",
+        "bật",
+        "phóng to"
+      ]
+    },
+    "word_slide_up": {
+      "name": "Từ trượt lên",
+      "tags": [
+        "từ",
+        "trượt lên",
+        "từng từ"
+      ]
+    },
+    "letter_spin": {
+      "name": "Chữ xoay vào",
+      "tags": [
+        "chữ",
+        "xoay",
+        "từng chữ"
+      ]
+    },
+    "char_center_unfold": {
+      "name": "Chữ bung ra từ giữa",
+      "tags": [
+        "chữ",
+        "bung ra",
+        "từ giữa"
+      ]
+    },
+    "char_random_fade": {
+      "name": "Chữ hiện ngẫu nhiên",
+      "tags": [
+        "chữ",
+        "ngẫu nhiên",
+        "mờ dần"
+      ]
+    },
+    "word_zoom_out": {
+      "name": "Từ phóng ra xa",
+      "tags": [
+        "từ",
+        "phóng to",
+        "rời đi"
+      ]
+    },
+    "char_bounce": {
+      "name": "Chữ nảy",
+      "tags": [
+        "chữ",
+        "nảy",
+        "lặp"
+      ]
+    }
+  }
+}

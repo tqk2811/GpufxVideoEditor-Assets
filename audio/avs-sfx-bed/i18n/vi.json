@@ -1,0 +1,155 @@
+{
+  "name": "Hiệu ứng âm thanh: Âm nền",
+  "description": "Âm nền lặp liền: mưa, thành phố, quán cà phê, biển, rừng.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "âm nền"
+  ],
+  "items": {
+    "bed_rain_light": {
+      "name": "Nền mưa nhẹ",
+      "category": "Âm nền",
+      "tags": [
+        "nền mưa nhẹ",
+        "nền",
+        "ambience",
+        "loop",
+        "rain"
+      ],
+      "description": "Mưa nhẹ: buồn, hoài niệm, thư giãn (12s, loop liền)"
+    },
+    "bed_rain_heavy": {
+      "name": "Nền mưa to",
+      "category": "Âm nền",
+      "tags": [
+        "nền mưa to",
+        "nền",
+        "ambience",
+        "loop",
+        "rain"
+      ],
+      "description": "Mưa to: kịch tính, khó khăn (12s, loop liền)"
+    },
+    "bed_room_tone": {
+      "name": "Nền không khí phòng",
+      "category": "Âm nền",
+      "tags": [
+        "nền không khí phòng",
+        "nền",
+        "ambience",
+        "loop",
+        "room"
+      ],
+      "description": "Room tone: lấp khoảng lặng giữa các câu (10s, loop liền)"
+    },
+    "bed_city": {
+      "name": "Nền thành phố",
+      "category": "Âm nền",
+      "tags": [
+        "nền thành phố",
+        "nền",
+        "ambience",
+        "loop",
+        "city"
+      ],
+      "description": "Thành phố, giao thông: đô thị, BĐS (14s, loop liền)"
+    },
+    "bed_cafe": {
+      "name": "Nền quán cà phê",
+      "category": "Âm nền",
+      "tags": [
+        "nền quán cà phê",
+        "nền",
+        "ambience",
+        "loop",
+        "cafe"
+      ],
+      "description": "Quán cà phê: trò chuyện, chia sẻ, review đồ uống (14s, loop liền)"
+    },
+    "bed_office": {
+      "name": "Nền văn phòng",
+      "category": "Âm nền",
+      "tags": [
+        "nền văn phòng",
+        "nền",
+        "ambience",
+        "loop",
+        "office"
+      ],
+      "description": "Văn phòng: làm việc, công sở (12s, loop liền)"
+    },
+    "bed_night": {
+      "name": "Nền đêm",
+      "category": "Âm nền",
+      "tags": [
+        "nền đêm",
+        "nền",
+        "ambience",
+        "loop",
+        "night"
+      ],
+      "description": "Đêm, dế kêu: yên tĩnh, kể chuyện (14s, loop liền)"
+    },
+    "bed_ocean": {
+      "name": "Nền sóng biển",
+      "category": "Âm nền",
+      "tags": [
+        "nền sóng biển",
+        "nền",
+        "ambience",
+        "loop",
+        "ocean"
+      ],
+      "description": "Sóng biển: du lịch, thư giãn, nghỉ dưỡng (16s, loop liền)"
+    },
+    "bed_wind_soft": {
+      "name": "Nền gió nhẹ",
+      "category": "Âm nền",
+      "tags": [
+        "nền gió nhẹ",
+        "nền",
+        "ambience",
+        "loop",
+        "wind"
+      ],
+      "description": "Gió nhẹ: trống trải, suy tư (12s, loop liền)"
+    },
+    "bed_fire": {
+      "name": "Nền lửa bập bùng",
+      "category": "Âm nền",
+      "tags": [
+        "nền lửa bập bùng",
+        "nền",
+        "ambience",
+        "loop",
+        "fire"
+      ],
+      "description": "Lửa bập bùng: ấm cúng, kể chuyện (12s, loop liền)"
+    },
+    "bed_forest": {
+      "name": "Nền rừng",
+      "category": "Âm nền",
+      "tags": [
+        "nền rừng",
+        "nền",
+        "ambience",
+        "loop",
+        "forest"
+      ],
+      "description": "Rừng, chim hót: thiên nhiên, sức khoẻ (14s, loop liền)"
+    },
+    "bed_tech_hum": {
+      "name": "Nền máy chủ rì rì",
+      "category": "Âm nền",
+      "tags": [
+        "nền máy chủ rì rì",
+        "nền",
+        "ambience",
+        "loop",
+        "tech"
+      ],
+      "description": "Máy chủ rì rì + bíp: công nghệ, AI (10s, loop liền)"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Hiệu ứng âm thanh: Dâng cảm xúc",
+  "description": "Âm dâng êm: pad dâng cảm xúc, chuyển đoạn.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "dâng cảm xúc"
+  ],
+  "items": {
+    "swell_soft": {
+      "name": "Dâng nhẹ",
+      "category": "Dâng cảm xúc",
+      "tags": [
+        "dâng nhẹ",
+        "swell",
+        "pad",
+        "nhẹ"
+      ],
+      "description": "Dâng nhẹ cảm xúc, chuyển đoạn êm"
+    },
+    "swell_bright": {
+      "name": "Dâng sáng",
+      "category": "Dâng cảm xúc",
+      "tags": [
+        "dâng sáng",
+        "swell",
+        "sáng",
+        "lạc quan"
+      ],
+      "description": "Giải pháp, kết quả tốt"
+    },
+    "swell_dark": {
+      "name": "Dâng tối",
+      "category": "Dâng cảm xúc",
+      "tags": [
+        "dâng tối",
+        "swell",
+        "tối",
+        "căng"
+      ],
+      "description": "Vấn đề, rủi ro"
+    },
+    "swell_pad_2s": {
+      "name": "Nền pad dâng 2 giây",
+      "category": "Dâng cảm xúc",
+      "tags": [
+        "nền pad dâng 2 giây",
+        "pad",
+        "swell"
+      ],
+      "description": "Nền chuyển đoạn 2s"
+    },
+    "swell_pad_3s": {
+      "name": "Nền pad dâng 3 giây",
+      "category": "Dâng cảm xúc",
+      "tags": [
+        "nền pad dâng 3 giây",
+        "pad",
+        "swell"
+      ],
+      "description": "Nền chuyển đoạn 3s"
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "name": "Sticker động: tqk2811",
+  "description": "Bộ 24 sticker động tự vẽ: nút đăng ký, chuông, mũi tên, nhấn mạnh và nhãn nhấp nháy.",
+  "tags": [
+    "sticker động",
+    "hoạt hình",
+    "nút kêu gọi",
+    "mũi tên"
+  ],
+  "items": {
+    "subscribe-click": {
+      "name": "Bấm đăng ký",
+      "category": "Nhãn",
+      "tags": [
+        "đăng ký",
+        "bấm",
+        "con trỏ chuột"
+      ]
+    },
+    "bell-ring": {
+      "name": "Chuông rung",
+      "category": "Dấu hiệu",
+      "tags": [
+        "chuông",
+        "thông báo",
+        "rung"
+      ]
+    },
+    "heart-beat": {
+      "name": "Tim đập",
+      "category": "Dấu hiệu",
+      "tags": [
+        "tim",
+        "tình yêu",
+        "đập"
+      ]
+    },
+    "like-pop": {
+      "name": "Thích bật lên",
+      "category": "Dấu hiệu",
+      "tags": [
+        "thích",
+        "ngón cái",
+        "bật lên"
+      ]
+    },
+    "arrow-right": {
+      "name": "Mũi tên chạy sang phải",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "phải",
+        "tiếp theo"
+      ]
+    },
+    "arrow-left": {
+      "name": "Mũi tên chạy sang trái",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "trái",
+        "quay lại"
+      ]
+    },
+    "arrow-up": {
+      "name": "Mũi tên chạy lên",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "lên",
+        "phía trên"
+      ]
+    },
+    "arrow-down": {
+      "name": "Mũi tên chạy xuống",
+      "category": "Mũi tên",
+      "tags": [
+        "mũi tên",
+        "xuống",
+        "phía dưới"
+      ]
+    },
+    "finger-point": {
+      "name": "Ngón tay chỉ",
+      "category": "Mũi tên",
+      "tags": [
+        "ngón tay",
+        "chỉ",
+        "nhìn đây"
+      ]
+    },
+    "circle-draw": {
+      "name": "Vẽ vòng tròn",
+      "category": "Nhấn mạnh",
+      "tags": [
+        "vòng tròn",
+        "khoanh",
+        "chú ý"
+      ]
+    },
+    "underline-draw": {
+      "name": "Gạch chân",
+      "category": "Nhấn mạnh",
+      "tags": [
+        "gạch chân",
+        "đường kẻ",
+        "nhấn mạnh"
+      ]
+    },
+    "sparkle-stars": {
+      "name": "Sao lấp lánh",
+      "category": "Nhấn mạnh",
+      "tags": [
+        "lấp lánh",
+        "ngôi sao",
+        "tỏa sáng"
+      ]
+    },
+    "firework": {
+      "name": "Pháo hoa",
+      "category": "Nhấn mạnh",
+      "tags": [
+        "pháo hoa",
+        "ăn mừng",
+        "bùng nổ"
+      ]
+    },
+    "question-bounce": {
+      "name": "Dấu hỏi nảy",
+      "category": "Dấu hiệu",
+      "tags": [
+        "dấu hỏi",
+        "câu hỏi",
+        "nảy"
+      ]
+    },
+    "exclamation-bounce": {
+      "name": "Dấu chấm than nảy",
+      "category": "Dấu hiệu",
+      "tags": [
+        "chấm than",
+        "chú ý",
+        "nảy"
+      ]
+    },
+    "bubble-wow": {
+      "name": "Bong bóng WOW",
+      "category": "Bong bóng thoại",
+      "tags": [
+        "wow",
+        "ngạc nhiên",
+        "bong bóng"
+      ]
+    },
+    "bubble-omg": {
+      "name": "Bong bóng OMG",
+      "category": "Bong bóng thoại",
+      "tags": [
+        "omg",
+        "trời ơi",
+        "bong bóng"
+      ]
+    },
+    "countdown-3-2-1": {
+      "name": "Đếm ngược 3 2 1",
+      "category": "Dấu hiệu",
+      "tags": [
+        "đếm ngược",
+        "hẹn giờ",
+        "ba hai một"
+      ]
+    },
+    "loading-spinner": {
+      "name": "Vòng xoay đang tải",
+      "category": "Dấu hiệu",
+      "tags": [
+        "đang tải",
+        "loading",
+        "chờ"
+      ]
+    },
+    "live-blink": {
+      "name": "Nhãn LIVE nhấp nháy",
+      "category": "Nhãn",
+      "tags": [
+        "trực tiếp",
+        "live",
+        "nhấp nháy"
+      ]
+    },
+    "new-shake": {
+      "name": "Nhãn MỚI rung",
+      "category": "Nhãn",
+      "tags": [
+        "mới",
+        "new",
+        "rung"
+      ]
+    },
+    "hot-shake": {
+      "name": "Nhãn HOT rung",
+      "category": "Nhãn",
+      "tags": [
+        "hot",
+        "nóng",
+        "rung"
+      ]
+    },
+    "sale-shake": {
+      "name": "Nhãn SALE rung",
+      "category": "Nhãn",
+      "tags": [
+        "giảm giá",
+        "sale",
+        "rung"
+      ]
+    },
+    "click-here": {
+      "name": "Bấm vào đây",
+      "category": "Nhãn",
+      "tags": [
+        "bấm vào đây",
+        "click",
+        "con trỏ chuột"
+      ]
+    }
+  }
+}

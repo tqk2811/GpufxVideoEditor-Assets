@@ -1,0 +1,40 @@
+{
+  "name": "Mặt nạ giọt nước",
+  "description": "Giữ phần ảnh nằm trong hình giọt nước, phần còn lại trong suốt.",
+  "tags": [
+    "mặt nạ",
+    "cắt hình",
+    "giọt nước",
+    "hữu cơ"
+  ],
+  "params": {
+    "x": {
+      "label": "Tâm X",
+      "description": "Tâm theo chiều ngang, phần trăm khung hình"
+    },
+    "y": {
+      "label": "Tâm Y",
+      "description": "Tâm theo chiều dọc, phần trăm khung hình"
+    },
+    "w": {
+      "label": "Rộng",
+      "description": "Chiều rộng, phần trăm khung hình"
+    },
+    "h": {
+      "label": "Cao",
+      "description": "Chiều cao, phần trăm khung hình"
+    },
+    "feather": {
+      "label": "Làm mềm cạnh",
+      "description": "Độ mềm của cạnh, phần trăm khung hình"
+    },
+    "invert": {
+      "label": "Đảo vùng",
+      "description": "Giữ phần bên ngoài hình"
+    },
+    "bg": {
+      "label": "Màu nền",
+      "description": "Màu nền dưới phần bị che (mặc định trong suốt)"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Vòng tròn lớn dần",
+  "description": "Hiện ảnh trong một vòng tròn lớn dần từ một điểm; phần còn lại trong suốt. Điều khiển progress từ 0 (không có gì) đến 1 (toàn bộ ảnh).",
+  "tags": [
+    "vòng tròn",
+    "mở ra",
+    "quét",
+    "hiện dần"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = ẩn, 1 = hiện toàn bộ"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm vòng tròn, 0..1 của ảnh ([0, 0] = góc trên trái)"
+    },
+    "softness": {
+      "label": "Độ mềm",
+      "description": "Độ rộng cạnh, tính theo chiều cao ảnh"
+    }
+  }
+}

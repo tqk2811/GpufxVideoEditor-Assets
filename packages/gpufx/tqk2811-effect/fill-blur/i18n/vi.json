@@ -1,0 +1,32 @@
+{
+  "name": "Nền mờ lấp đầy",
+  "description": "Lấp phần trống hai bên video có tỷ lệ khác bằng bản sao phóng to và làm mờ của chính nó, như video điện thoại dọc đặt trong khung ngang.",
+  "tags": [
+    "nền mờ",
+    "video dọc",
+    "lấp khung",
+    "tỷ lệ"
+  ],
+  "params": {
+    "aspect": {
+      "label": "Tỷ lệ khung",
+      "description": "Rộng / cao của đầu ra (16:9 = 1.778); 0 giữ kích thước clip và thu nhỏ ảnh theo `scale`"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Kích thước ảnh nét bên trong khung"
+    },
+    "blur": {
+      "label": "Độ mờ",
+      "description": "Độ mờ của nền, theo mức mip (mỗi bậc gấp đôi)"
+    },
+    "dim": {
+      "label": "Làm tối",
+      "description": "Làm tối nền"
+    },
+    "zoom": {
+      "label": "Thu phóng",
+      "description": "Phóng to thêm phần nền"
+    }
+  }
+}

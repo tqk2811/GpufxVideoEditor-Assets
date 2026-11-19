@@ -1,0 +1,27 @@
+{
+  "name": "Đẩy vào",
+  "description": "Đẩy gần chậm, giữ một lúc rồi nhẹ nhàng trở về khung hình gốc.",
+  "tags": [
+    "đẩy gần",
+    "zoom chậm",
+    "tiến vào"
+  ],
+  "params": {
+    "amp": {
+      "label": "Biên độ",
+      "description": "Độ phóng to thêm ở đỉnh của cú đẩy"
+    },
+    "duration": {
+      "label": "Thời lượng",
+      "description": "Thời lượng chuyển động tính bằng giây, tự rút ngắn theo clip nếu clip ngắn hơn"
+    },
+    "clip_time": {
+      "label": "Thời gian clip",
+      "description": "Số giây từ đầu clip, do trình chỉnh sửa tự điền"
+    },
+    "clip_duration": {
+      "label": "Độ dài clip",
+      "description": "Độ dài clip trên timeline tính bằng giây, do trình chỉnh sửa tự điền"
+    }
+  }
+}

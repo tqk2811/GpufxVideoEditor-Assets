@@ -1,0 +1,24 @@
+{
+  "name": "Quét lệch màu",
+  "description": "Quét đẩy kèm hiệu ứng nháy đỏ/lục lam, chỉnh được cường độ.",
+  "tags": [
+    "chuyển cảnh",
+    "lệch màu",
+    "quét",
+    "glitch"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Cạnh bắt đầu quét: trái, phải, lên (cạnh dưới) hoặc xuống (cạnh trên)"
+    },
+    "aberration": {
+      "label": "Lệch màu",
+      "description": "Cường độ và độ lệch của nháy đỏ/lục lam"
+    }
+  }
+}

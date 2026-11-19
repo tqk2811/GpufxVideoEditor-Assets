@@ -1,0 +1,24 @@
+{
+  "name": "Lia máy nhanh",
+  "description": "Hai clip nằm cạnh nhau và lia ngang qua khung hình kèm nhòe chuyển động.",
+  "tags": [
+    "chuyển cảnh",
+    "lia máy",
+    "quất",
+    "nhanh"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng lia máy"
+    },
+    "accent": {
+      "label": "Màu nhấn",
+      "description": "Màu đường nối giữa hai clip"
+    }
+  }
+}

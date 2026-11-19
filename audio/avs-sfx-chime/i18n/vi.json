@@ -1,0 +1,397 @@
+{
+  "name": "Hiệu ứng âm thanh: Chuông và thông báo",
+  "description": "Chuông, thông báo, thành công, sai, tiền xu và báo thức.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "chuông và thông báo"
+  ],
+  "items": {
+    "ding": {
+      "name": "Chuông ding",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "chuông ding",
+        "ding",
+        "chuông",
+        "kết luận"
+      ],
+      "description": "Kết luận, đáp án, check ✅"
+    },
+    "ding_2": {
+      "name": "Chuông ding 2",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "chuông ding 2",
+        "ding",
+        "chuông",
+        "kết luận"
+      ],
+      "description": "Kết luận, đáp án, check ✅"
+    },
+    "ding_3": {
+      "name": "Chuông ding 3",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "chuông ding 3",
+        "ding",
+        "chuông",
+        "kết luận"
+      ],
+      "description": "Kết luận, đáp án, check ✅"
+    },
+    "ding_4": {
+      "name": "Chuông ding 4",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "chuông ding 4",
+        "ding",
+        "chuông",
+        "kết luận"
+      ],
+      "description": "Kết luận, đáp án, check ✅"
+    },
+    "success": {
+      "name": "Thành công",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "thành công",
+        "success",
+        "hoàn thành"
+      ],
+      "description": "Hoàn tất, kết quả tốt"
+    },
+    "success_2": {
+      "name": "Thành công 2",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "thành công 2",
+        "thành công",
+        "level up"
+      ],
+      "description": "Đạt mục tiêu"
+    },
+    "success_3": {
+      "name": "Thành công 3",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "thành công 3",
+        "hoàn thành nhẹ"
+      ],
+      "description": "Check mục cuối checklist"
+    },
+    "level_up": {
+      "name": "Lên cấp",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "lên cấp",
+        "game"
+      ],
+      "description": "Nâng cấp, mở khoá"
+    },
+    "notification": {
+      "name": "Thông báo",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "thông báo",
+        "notification",
+        "tin nhắn",
+        "đơn hàng"
+      ],
+      "description": "Thông báo đẩy, tin nhắn mới, đơn hàng"
+    },
+    "notification_2": {
+      "name": "Thông báo 2",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "thông báo 2",
+        "thông báo",
+        "notification",
+        "tin nhắn",
+        "đơn hàng"
+      ],
+      "description": "Thông báo đẩy, tin nhắn mới, đơn hàng"
+    },
+    "notification_3": {
+      "name": "Thông báo 3",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "thông báo 3",
+        "thông báo",
+        "notification",
+        "tin nhắn",
+        "đơn hàng"
+      ],
+      "description": "Thông báo đẩy, tin nhắn mới, đơn hàng"
+    },
+    "notification_4": {
+      "name": "Thông báo 4",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "thông báo 4",
+        "thông báo",
+        "notification",
+        "tin nhắn",
+        "đơn hàng"
+      ],
+      "description": "Thông báo đẩy, tin nhắn mới, đơn hàng"
+    },
+    "notification_5": {
+      "name": "Thông báo 5",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "thông báo 5",
+        "thông báo",
+        "notification",
+        "tin nhắn",
+        "đơn hàng"
+      ],
+      "description": "Thông báo đẩy, tin nhắn mới, đơn hàng"
+    },
+    "message_sent": {
+      "name": "Đã gửi tin nhắn",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "đã gửi tin nhắn",
+        "gửi tin",
+        "send"
+      ],
+      "description": "Gửi tin nhắn, gửi prompt"
+    },
+    "error": {
+      "name": "Lỗi",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "lỗi",
+        "sai",
+        "error",
+        "buzz"
+      ],
+      "description": "Sai lầm, ❌, cách cũ"
+    },
+    "error_2": {
+      "name": "Lỗi 2",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "lỗi 2",
+        "lỗi",
+        "từ chối"
+      ],
+      "description": "Sai lầm nhẹ"
+    },
+    "wrong_buzzer": {
+      "name": "Còi sai",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "còi sai",
+        "sai",
+        "buzzer",
+        "gameshow"
+      ],
+      "description": "Câu trả lời sai kiểu gameshow"
+    },
+    "correct": {
+      "name": "Đúng rồi",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "đúng rồi",
+        "đúng",
+        "chính xác",
+        "gameshow"
+      ],
+      "description": "Đáp án đúng"
+    },
+    "coin": {
+      "name": "Đồng xu",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "đồng xu",
+        "xu",
+        "tiền",
+        "coin"
+      ],
+      "description": "Tiền, doanh thu, giá"
+    },
+    "coin_2": {
+      "name": "Đồng xu 2",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "đồng xu 2",
+        "tiền rơi",
+        "xu"
+      ],
+      "description": "Tiền rơi, nhận thưởng"
+    },
+    "cash_register": {
+      "name": "Máy tính tiền",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "máy tính tiền",
+        "ka-ching",
+        "bán hàng",
+        "doanh thu",
+        "tiền"
+      ],
+      "description": "Chốt đơn, doanh thu tăng"
+    },
+    "money_count": {
+      "name": "Đếm tiền",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "đếm tiền",
+        "tiền"
+      ],
+      "description": "Tiền, lương, thu nhập"
+    },
+    "alarm": {
+      "name": "Báo thức",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "báo thức",
+        "cảnh báo"
+      ],
+      "description": "Cảnh báo, deadline"
+    },
+    "phone_vibrate": {
+      "name": "Điện thoại rung",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "điện thoại rung",
+        "rung điện thoại",
+        "vibrate"
+      ],
+      "description": "Điện thoại rung, có cuộc gọi"
+    },
+    "phone_ring": {
+      "name": "Chuông điện thoại",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "chuông điện thoại"
+      ],
+      "description": "Cuộc gọi"
+    },
+    "coin_drop": {
+      "name": "Đồng xu rơi",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "đồng xu rơi",
+        "tiền"
+      ],
+      "description": "Đồng xu rơi nảy, tiết kiệm"
+    },
+    "coin_multi": {
+      "name": "Nhiều đồng xu",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "nhiều đồng xu",
+        "nhiều xu",
+        "tiền"
+      ],
+      "description": "Nhận nhiều tiền, thưởng"
+    },
+    "coins_pour": {
+      "name": "Đổ tiền xu",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "đổ tiền xu",
+        "đổ tiền",
+        "tiền xu"
+      ],
+      "description": "Tiền về ào ào (1.6s)"
+    },
+    "cash_ching": {
+      "name": "Ka-ching thu tiền",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "ka-ching thu tiền",
+        "ka-ching",
+        "doanh thu",
+        "tiền"
+      ],
+      "description": "Ra tiền, chốt đơn (ngắn)"
+    },
+    "cash_ching_2": {
+      "name": "Ka-ching thu tiền 2",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "ka-ching thu tiền 2",
+        "ka-ching",
+        "giá"
+      ],
+      "description": "Giá, khuyến mãi"
+    },
+    "money_bag": {
+      "name": "Túi tiền",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "túi tiền",
+        "tiền"
+      ],
+      "description": "Đặt túi tiền, thu nhập lớn"
+    },
+    "price_tag": {
+      "name": "Nhãn giá",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "nhãn giá",
+        "giá"
+      ],
+      "description": "Hiện giá tiền, con số"
+    },
+    "purchase_success": {
+      "name": "Mua hàng thành công",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "mua hàng thành công",
+        "mua thành công",
+        "đơn hàng"
+      ],
+      "description": "Chốt đơn thành công"
+    },
+    "notif_soft": {
+      "name": "Thông báo nhẹ",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "thông báo nhẹ"
+      ],
+      "description": "Thông báo dưới giọng nói"
+    },
+    "notif_pop": {
+      "name": "Thông báo bật lên",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "thông báo bật lên",
+        "thông báo",
+        "pop"
+      ],
+      "description": "Thông báo bật lên trên điện thoại"
+    },
+    "message_in": {
+      "name": "Tin nhắn đến",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "tin nhắn đến"
+      ],
+      "description": "Tin nhắn mới trong chat"
+    },
+    "message_in_2": {
+      "name": "Tin nhắn đến 2",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "tin nhắn đến 2",
+        "tin nhắn đến"
+      ],
+      "description": "Tin nhắn mới (biến thể)"
+    },
+    "like_pop": {
+      "name": "Thả tim bật lên",
+      "category": "Chuông và thông báo",
+      "tags": [
+        "thả tim bật lên",
+        "thả tim",
+        "like"
+      ],
+      "description": "Tim/like bật lên"
+    }
+  }
+}

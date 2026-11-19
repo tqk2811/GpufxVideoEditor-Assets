@@ -1,0 +1,24 @@
+{
+  "name": "Poster hóa",
+  "description": "Poster hóa: mỗi kênh màu bị cắt còn vài bậc phẳng, như in lụa.",
+  "tags": [
+    "poster",
+    "giảm màu",
+    "in lụa",
+    "phẳng"
+  ],
+  "params": {
+    "levels": {
+      "label": "Số bậc",
+      "description": "Số bậc mỗi kênh màu"
+    },
+    "gamma": {
+      "label": "Gamma",
+      "description": "Dịch các bậc về phía vùng tối (trên 1) hoặc vùng sáng (dưới 1)"
+    },
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là hiệu ứng đầy đủ"
+    }
+  }
+}

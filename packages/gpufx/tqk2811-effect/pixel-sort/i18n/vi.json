@@ -1,0 +1,28 @@
+{
+  "name": "Sắp xếp điểm ảnh",
+  "description": "Kiểu sắp xếp điểm ảnh: các dải điểm ảnh sáng chảy thành vệt theo một hướng, như nghệ thuật glitch.",
+  "tags": [
+    "sắp xếp pixel",
+    "glitch",
+    "vệt",
+    "nghệ thuật"
+  ],
+  "params": {
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Độ sáng mà từ đó bắt đầu có vệt"
+    },
+    "length": {
+      "label": "Độ dài",
+      "description": "Vệt dài nhất, tính theo khung hình"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Hướng của các vệt tính bằng độ (90 = xuống)"
+    },
+    "amount": {
+      "label": "Mức độ",
+      "description": "Cường độ hiệu ứng"
+    }
+  }
+}

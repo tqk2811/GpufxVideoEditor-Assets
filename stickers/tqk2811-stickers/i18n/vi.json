@@ -1,0 +1,193 @@
+{
+  "name": "Sticker: tqk2811",
+  "description": "Bộ 20 sticker tự vẽ: nhãn kêu gọi (Đăng ký, Thích, Chia sẻ...) và khung, bong bóng thoại.",
+  "tags": [
+    "sticker",
+    "nhãn",
+    "khung",
+    "kêu gọi hành động"
+  ],
+  "items": {
+    "subscribe": {
+      "name": "Đăng ký kênh",
+      "category": "Nhãn",
+      "tags": [
+        "đăng ký",
+        "subscribe",
+        "kênh",
+        "chuông"
+      ]
+    },
+    "subscribed": {
+      "name": "Đã đăng ký",
+      "category": "Nhãn",
+      "tags": [
+        "đã đăng ký",
+        "subscribed",
+        "kênh"
+      ]
+    },
+    "like": {
+      "name": "Thích",
+      "category": "Nhãn",
+      "tags": [
+        "thích",
+        "like",
+        "tim"
+      ]
+    },
+    "share": {
+      "name": "Chia sẻ",
+      "category": "Nhãn",
+      "tags": [
+        "chia sẻ",
+        "share",
+        "gửi"
+      ]
+    },
+    "comment": {
+      "name": "Bình luận",
+      "category": "Nhãn",
+      "tags": [
+        "bình luận",
+        "comment",
+        "trò chuyện"
+      ]
+    },
+    "follow": {
+      "name": "Theo dõi",
+      "category": "Nhãn",
+      "tags": [
+        "theo dõi",
+        "follow",
+        "kết bạn"
+      ]
+    },
+    "live": {
+      "name": "Phát trực tiếp",
+      "category": "Nhãn",
+      "tags": [
+        "trực tiếp",
+        "live",
+        "livestream"
+      ]
+    },
+    "hot": {
+      "name": "Nóng",
+      "category": "Nhãn",
+      "tags": [
+        "hot",
+        "nóng",
+        "xu hướng"
+      ]
+    },
+    "click-here": {
+      "name": "Bấm vào đây",
+      "category": "Nhãn",
+      "tags": [
+        "bấm vào đây",
+        "click",
+        "nút bấm"
+      ]
+    },
+    "link-in-bio": {
+      "name": "Link ở tiểu sử",
+      "category": "Nhãn",
+      "tags": [
+        "link",
+        "tiểu sử",
+        "bio"
+      ]
+    },
+    "new": {
+      "name": "Mới",
+      "category": "Nhãn",
+      "tags": [
+        "mới",
+        "new",
+        "ra mắt"
+      ]
+    },
+    "sale": {
+      "name": "Giảm giá",
+      "category": "Nhãn",
+      "tags": [
+        "giảm giá",
+        "sale",
+        "khuyến mãi"
+      ]
+    },
+    "frame-rounded": {
+      "name": "Khung bo góc",
+      "category": "Khung",
+      "tags": [
+        "khung",
+        "viền",
+        "bo góc"
+      ]
+    },
+    "frame-dashed": {
+      "name": "Khung nét đứt",
+      "category": "Khung",
+      "tags": [
+        "khung",
+        "viền",
+        "nét đứt"
+      ]
+    },
+    "frame-corners": {
+      "name": "Khung bốn góc",
+      "category": "Khung",
+      "tags": [
+        "khung",
+        "góc",
+        "ống ngắm"
+      ]
+    },
+    "frame-circle": {
+      "name": "Khung tròn",
+      "category": "Khung",
+      "tags": [
+        "khung",
+        "hình tròn",
+        "vòng"
+      ]
+    },
+    "frame-polaroid": {
+      "name": "Khung ảnh polaroid",
+      "category": "Khung",
+      "tags": [
+        "khung ảnh",
+        "polaroid",
+        "ảnh"
+      ]
+    },
+    "frame-film": {
+      "name": "Khung phim",
+      "category": "Khung",
+      "tags": [
+        "khung",
+        "cuộn phim",
+        "phim"
+      ]
+    },
+    "speech-bubble": {
+      "name": "Bong bóng lời thoại",
+      "category": "Khung",
+      "tags": [
+        "lời thoại",
+        "nói",
+        "bong bóng"
+      ]
+    },
+    "thought-bubble": {
+      "name": "Bong bóng suy nghĩ",
+      "category": "Khung",
+      "tags": [
+        "suy nghĩ",
+        "mây",
+        "bong bóng"
+      ]
+    }
+  }
+}

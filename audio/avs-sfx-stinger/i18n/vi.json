@@ -1,0 +1,77 @@
+{
+  "name": "Hiệu ứng âm thanh: Nhạc ngắn",
+  "description": "Nhạc ngắn kết câu: vui, buồn, hùng tráng, bí ẩn, chiến thắng, căng thẳng.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "nhạc ngắn"
+  ],
+  "items": {
+    "stinger_happy": {
+      "name": "Nhạc ngắn vui",
+      "category": "Nhạc ngắn",
+      "tags": [
+        "nhạc ngắn vui",
+        "stinger",
+        "nhạc ngắn",
+        "happy"
+      ],
+      "description": "Kết câu vui"
+    },
+    "stinger_sad": {
+      "name": "Nhạc ngắn buồn",
+      "category": "Nhạc ngắn",
+      "tags": [
+        "nhạc ngắn buồn",
+        "stinger",
+        "nhạc ngắn",
+        "sad"
+      ],
+      "description": "Câu buồn, thất bại"
+    },
+    "stinger_epic": {
+      "name": "Nhạc ngắn hùng tráng",
+      "category": "Nhạc ngắn",
+      "tags": [
+        "nhạc ngắn hùng tráng",
+        "stinger",
+        "nhạc ngắn",
+        "epic"
+      ],
+      "description": "Tuyên bố lớn"
+    },
+    "stinger_mystery": {
+      "name": "Nhạc ngắn bí ẩn",
+      "category": "Nhạc ngắn",
+      "tags": [
+        "nhạc ngắn bí ẩn",
+        "stinger",
+        "nhạc ngắn",
+        "mystery"
+      ],
+      "description": "Bí mật, hé lộ"
+    },
+    "stinger_win": {
+      "name": "Nhạc ngắn chiến thắng",
+      "category": "Nhạc ngắn",
+      "tags": [
+        "nhạc ngắn chiến thắng",
+        "stinger",
+        "nhạc ngắn",
+        "win"
+      ],
+      "description": "Chiến thắng"
+    },
+    "stinger_tension": {
+      "name": "Nhạc ngắn căng thẳng",
+      "category": "Nhạc ngắn",
+      "tags": [
+        "nhạc ngắn căng thẳng",
+        "stinger",
+        "nhạc ngắn",
+        "tension"
+      ],
+      "description": "Căng thẳng, rủi ro"
+    }
+  }
+}

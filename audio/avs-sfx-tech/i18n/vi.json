@@ -1,0 +1,361 @@
+{
+  "name": "Hiệu ứng âm thanh: Công nghệ",
+  "description": "Âm thanh công nghệ: glitch, quét, dữ liệu, khởi động và robot.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "công nghệ"
+  ],
+  "items": {
+    "glitch": {
+      "name": "Glitch",
+      "category": "Công nghệ",
+      "tags": [
+        "glitch",
+        "nhiễu",
+        "lỗi số",
+        "AI"
+      ],
+      "description": "Glitch cut, chữ RGB split, AI"
+    },
+    "glitch_2": {
+      "name": "Glitch 2",
+      "category": "Công nghệ",
+      "tags": [
+        "glitch 2",
+        "glitch",
+        "nhiễu",
+        "lỗi số",
+        "AI"
+      ],
+      "description": "Glitch cut, chữ RGB split, AI"
+    },
+    "glitch_3": {
+      "name": "Glitch 3",
+      "category": "Công nghệ",
+      "tags": [
+        "glitch 3",
+        "glitch",
+        "nhiễu",
+        "lỗi số",
+        "AI"
+      ],
+      "description": "Glitch cut, chữ RGB split, AI"
+    },
+    "glitch_4": {
+      "name": "Glitch 4",
+      "category": "Công nghệ",
+      "tags": [
+        "glitch 4",
+        "glitch",
+        "nhiễu",
+        "lỗi số",
+        "AI"
+      ],
+      "description": "Glitch cut, chữ RGB split, AI"
+    },
+    "glitch_5": {
+      "name": "Glitch 5",
+      "category": "Công nghệ",
+      "tags": [
+        "glitch 5",
+        "glitch",
+        "nhiễu",
+        "lỗi số",
+        "AI"
+      ],
+      "description": "Glitch cut, chữ RGB split, AI"
+    },
+    "glitch_6": {
+      "name": "Glitch 6",
+      "category": "Công nghệ",
+      "tags": [
+        "glitch 6",
+        "glitch",
+        "nhiễu",
+        "lỗi số",
+        "AI"
+      ],
+      "description": "Glitch cut, chữ RGB split, AI"
+    },
+    "static": {
+      "name": "Nhiễu TV",
+      "category": "Công nghệ",
+      "tags": [
+        "nhiễu tv",
+        "nhiễu TV",
+        "static"
+      ],
+      "description": "TV nhiễu, mất tín hiệu"
+    },
+    "static_burst": {
+      "name": "Nhiễu ngắn",
+      "category": "Công nghệ",
+      "tags": [
+        "nhiễu ngắn"
+      ],
+      "description": "Cắt glitch"
+    },
+    "data_burst": {
+      "name": "Dữ liệu chạy",
+      "category": "Công nghệ",
+      "tags": [
+        "dữ liệu chạy",
+        "dữ liệu",
+        "data",
+        "xử lý",
+        "computer"
+      ],
+      "description": "Dashboard, số liệu chạy, AI xử lý"
+    },
+    "data_burst_2": {
+      "name": "Dữ liệu chạy 2",
+      "category": "Công nghệ",
+      "tags": [
+        "dữ liệu chạy 2",
+        "dữ liệu",
+        "data",
+        "xử lý",
+        "computer"
+      ],
+      "description": "Dashboard, số liệu chạy, AI xử lý"
+    },
+    "data_burst_3": {
+      "name": "Dữ liệu chạy 3",
+      "category": "Công nghệ",
+      "tags": [
+        "dữ liệu chạy 3",
+        "dữ liệu",
+        "data",
+        "xử lý",
+        "computer"
+      ],
+      "description": "Dashboard, số liệu chạy, AI xử lý"
+    },
+    "scan": {
+      "name": "Quét",
+      "category": "Công nghệ",
+      "tags": [
+        "quét",
+        "scan",
+        "nhận diện"
+      ],
+      "description": "HUD quét mặt, AI phân tích"
+    },
+    "scan_2": {
+      "name": "Quét 2",
+      "category": "Công nghệ",
+      "tags": [
+        "quét 2",
+        "quét nhanh"
+      ],
+      "description": "Quét ngắn"
+    },
+    "hud_lock": {
+      "name": "Khóa mục tiêu HUD",
+      "category": "Công nghệ",
+      "tags": [
+        "khóa mục tiêu hud",
+        "khoá mục tiêu",
+        "lock",
+        "HUD"
+      ],
+      "description": "HUD khoá mặt xong"
+    },
+    "hud_lock_2": {
+      "name": "Khóa mục tiêu HUD 2",
+      "category": "Công nghệ",
+      "tags": [
+        "khóa mục tiêu hud 2",
+        "lock on"
+      ],
+      "description": "Khoá mục tiêu"
+    },
+    "ui_open": {
+      "name": "Mở cửa sổ",
+      "category": "Công nghệ",
+      "tags": [
+        "mở cửa sổ",
+        "mở UI",
+        "đóng UI",
+        "cửa sổ"
+      ],
+      "description": "Mở/đóng cửa sổ, panel"
+    },
+    "ui_close": {
+      "name": "Đóng cửa sổ",
+      "category": "Công nghệ",
+      "tags": [
+        "đóng cửa sổ",
+        "mở UI",
+        "đóng UI",
+        "cửa sổ"
+      ],
+      "description": "Mở/đóng cửa sổ, panel"
+    },
+    "beep_computer": {
+      "name": "Tiếng bíp máy tính",
+      "category": "Công nghệ",
+      "tags": [
+        "tiếng bíp máy tính",
+        "beep",
+        "máy tính",
+        "robot"
+      ],
+      "description": "AI/robot trả lời"
+    },
+    "beep_computer_2": {
+      "name": "Tiếng bíp máy tính 2",
+      "category": "Công nghệ",
+      "tags": [
+        "tiếng bíp máy tính 2",
+        "beep",
+        "máy tính",
+        "robot"
+      ],
+      "description": "AI/robot trả lời"
+    },
+    "beep_computer_3": {
+      "name": "Tiếng bíp máy tính 3",
+      "category": "Công nghệ",
+      "tags": [
+        "tiếng bíp máy tính 3",
+        "beep",
+        "máy tính",
+        "robot"
+      ],
+      "description": "AI/robot trả lời"
+    },
+    "beep_computer_4": {
+      "name": "Tiếng bíp máy tính 4",
+      "category": "Công nghệ",
+      "tags": [
+        "tiếng bíp máy tính 4",
+        "beep",
+        "máy tính",
+        "robot"
+      ],
+      "description": "AI/robot trả lời"
+    },
+    "power_up": {
+      "name": "Khởi động",
+      "category": "Công nghệ",
+      "tags": [
+        "khởi động",
+        "power up",
+        "sạc"
+      ],
+      "description": "Bật lên, kích hoạt AI"
+    },
+    "power_down": {
+      "name": "Tắt nguồn",
+      "category": "Công nghệ",
+      "tags": [
+        "tắt nguồn",
+        "tắt",
+        "power down"
+      ],
+      "description": "Tắt, thất bại, hết pin"
+    },
+    "laser": {
+      "name": "Tia laser",
+      "category": "Công nghệ",
+      "tags": [
+        "tia laser",
+        "laser",
+        "bắn"
+      ],
+      "description": "Tia sáng, chữ bắn ra"
+    },
+    "teleport": {
+      "name": "Dịch chuyển",
+      "category": "Công nghệ",
+      "tags": [
+        "dịch chuyển",
+        "xuất hiện"
+      ],
+      "description": "Đối tượng xuất hiện thần kỳ"
+    },
+    "hologram": {
+      "name": "Hologram",
+      "category": "Công nghệ",
+      "tags": [
+        "hologram",
+        "ảo"
+      ],
+      "description": "UI nổi, hologram"
+    },
+    "drone_tech": {
+      "name": "Nền drone công nghệ",
+      "category": "Công nghệ",
+      "tags": [
+        "nền drone công nghệ",
+        "drone",
+        "nền căng",
+        "công nghệ"
+      ],
+      "description": "Nền căng dưới cảnh tech (3s)"
+    },
+    "glitch_digital": {
+      "name": "Glitch số hóa",
+      "category": "Công nghệ",
+      "tags": [
+        "glitch số hóa",
+        "glitch",
+        "số"
+      ],
+      "description": "Glitch ngắn số hoá"
+    },
+    "glitch_digital_2": {
+      "name": "Glitch số hóa 2",
+      "category": "Công nghệ",
+      "tags": [
+        "glitch số hóa 2",
+        "glitch",
+        "số"
+      ],
+      "description": "Glitch dài hơn"
+    },
+    "glitch_short": {
+      "name": "Glitch cực ngắn",
+      "category": "Công nghệ",
+      "tags": [
+        "glitch cực ngắn",
+        "glitch",
+        "cực ngắn"
+      ],
+      "description": "Nháy glitch 1 frame"
+    },
+    "glitch_stutter": {
+      "name": "Glitch giật lặp",
+      "category": "Công nghệ",
+      "tags": [
+        "glitch giật lặp",
+        "stutter",
+        "giật",
+        "lặp"
+      ],
+      "description": "Chữ/hình giật lặp"
+    },
+    "glitch_bitcrush": {
+      "name": "Glitch bitcrush",
+      "category": "Công nghệ",
+      "tags": [
+        "glitch bitcrush",
+        "bitcrush",
+        "8-bit"
+      ],
+      "description": "Lỗi số, AI hỏng"
+    },
+    "glitch_tape": {
+      "name": "Glitch băng từ",
+      "category": "Công nghệ",
+      "tags": [
+        "glitch băng từ",
+        "băng từ",
+        "tape"
+      ],
+      "description": "Tua nhầm, khựng lại"
+    }
+  }
+}

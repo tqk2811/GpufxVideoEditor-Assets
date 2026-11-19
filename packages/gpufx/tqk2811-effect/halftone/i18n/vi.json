@@ -1,0 +1,36 @@
+{
+  "name": "Chấm bán sắc",
+  "description": "Bán sắc in ấn: ảnh thành lưới chấm mực trên giấy.",
+  "tags": [
+    "bán sắc",
+    "chấm bi",
+    "in ấn",
+    "halftone"
+  ],
+  "params": {
+    "size": {
+      "label": "Kích thước",
+      "description": "Khoảng cách giữa các chấm tính bằng pixel"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Góc của lưới chấm tính bằng độ"
+    },
+    "ink": {
+      "label": "Màu mực",
+      "description": "Màu mực"
+    },
+    "paper": {
+      "label": "Màu giấy",
+      "description": "Màu giấy"
+    },
+    "colored": {
+      "label": "Giữ màu",
+      "description": "Vẽ mỗi chấm bằng màu của ảnh thay vì màu mực"
+    },
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là hiệu ứng đầy đủ"
+    }
+  }
+}

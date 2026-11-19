@@ -1,0 +1,24 @@
+{
+  "name": "Hồng ngoại",
+  "description": "Phim hồng ngoại: cây cối và màu xanh lục chuyển trắng hoặc hồng, bầu trời tối lại.",
+  "tags": [
+    "hồng ngoại",
+    "infrared",
+    "màu lạ",
+    "thiên nhiên"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là hiệu ứng đầy đủ"
+    },
+    "glow": {
+      "label": "Phát sáng",
+      "description": "Quầng sáng mềm quanh vùng sáng"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "0 = đen trắng, 1 = màu giả (tán lá hồng)"
+    }
+  }
+}

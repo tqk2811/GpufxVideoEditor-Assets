@@ -1,0 +1,426 @@
+{
+  "name": "Sticker động: Noto Emoji",
+  "description": "Bộ 46 sticker emoji Noto động (WebP) của Google: cảm xúc, bàn tay và dấu hiệu.",
+  "tags": [
+    "sticker động",
+    "emoji động",
+    "cảm xúc",
+    "hoạt hình"
+  ],
+  "items": {
+    "grinning-face": {
+      "name": "Mặt cười toe",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười",
+        "vui",
+        "hạnh phúc"
+      ]
+    },
+    "face-with-tears-of-joy": {
+      "name": "Cười ra nước mắt",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười",
+        "buồn cười",
+        "haha"
+      ]
+    },
+    "rolling-on-the-floor-laughing": {
+      "name": "Cười lăn lộn",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười lăn",
+        "buồn cười",
+        "haha"
+      ]
+    },
+    "smiling-face-with-smiling-eyes": {
+      "name": "Cười mắt cười",
+      "category": "Cảm xúc",
+      "tags": [
+        "cười",
+        "hài lòng",
+        "dịu dàng"
+      ]
+    },
+    "smiling-face-with-heart-shaped-eyes": {
+      "name": "Mắt trái tim",
+      "category": "Cảm xúc",
+      "tags": [
+        "mê",
+        "yêu",
+        "thích"
+      ]
+    },
+    "smiling-face-with-smiling-eyes-and-three-hearts": {
+      "name": "Cười với ba trái tim",
+      "category": "Cảm xúc",
+      "tags": [
+        "yêu",
+        "được yêu",
+        "hạnh phúc"
+      ]
+    },
+    "face-throwing-a-kiss": {
+      "name": "Gửi nụ hôn",
+      "category": "Cảm xúc",
+      "tags": [
+        "hôn",
+        "thơm",
+        "yêu"
+      ]
+    },
+    "smiling-face-with-sunglasses": {
+      "name": "Cười đeo kính râm",
+      "category": "Cảm xúc",
+      "tags": [
+        "ngầu",
+        "kính râm",
+        "chất"
+      ]
+    },
+    "grinning-face-with-star-eyes": {
+      "name": "Mắt sao",
+      "category": "Cảm xúc",
+      "tags": [
+        "choáng ngợp",
+        "mắt sao",
+        "wow"
+      ]
+    },
+    "face-with-party-horn-and-party-hat": {
+      "name": "Mặt ăn mừng",
+      "category": "Cảm xúc",
+      "tags": [
+        "tiệc",
+        "ăn mừng",
+        "vui"
+      ]
+    },
+    "thinking-face": {
+      "name": "Mặt đang suy nghĩ",
+      "category": "Cảm xúc",
+      "tags": [
+        "suy nghĩ",
+        "nghĩ ngợi",
+        "băn khoăn"
+      ]
+    },
+    "face-with-finger-covering-closed-lips": {
+      "name": "Suỵt im lặng",
+      "category": "Cảm xúc",
+      "tags": [
+        "suỵt",
+        "im lặng",
+        "bí mật"
+      ]
+    },
+    "face-with-rolling-eyes": {
+      "name": "Đảo mắt",
+      "category": "Cảm xúc",
+      "tags": [
+        "đảo mắt",
+        "chán",
+        "khó chịu"
+      ]
+    },
+    "loudly-crying-face": {
+      "name": "Khóc nức nở",
+      "category": "Cảm xúc",
+      "tags": [
+        "khóc to",
+        "buồn",
+        "nước mắt"
+      ]
+    },
+    "face-screaming-in-fear": {
+      "name": "Hét lên vì sợ",
+      "category": "Cảm xúc",
+      "tags": [
+        "sợ hãi",
+        "hét",
+        "hoảng"
+      ]
+    },
+    "pouting-face": {
+      "name": "Mặt giận dỗi",
+      "category": "Cảm xúc",
+      "tags": [
+        "giận",
+        "tức",
+        "bực"
+      ]
+    },
+    "shocked-face-with-exploding-head": {
+      "name": "Đầu nổ tung",
+      "category": "Cảm xúc",
+      "tags": [
+        "sốc",
+        "kinh ngạc",
+        "nổ não"
+      ]
+    },
+    "sleeping-face": {
+      "name": "Mặt đang ngủ",
+      "category": "Cảm xúc",
+      "tags": [
+        "ngủ",
+        "buồn ngủ",
+        "mệt"
+      ]
+    },
+    "smiling-face-with-horns": {
+      "name": "Mặt quỷ cười",
+      "category": "Cảm xúc",
+      "tags": [
+        "quỷ",
+        "ác",
+        "tinh quái"
+      ]
+    },
+    "eyes": {
+      "name": "Đôi mắt",
+      "category": "Cảm xúc",
+      "tags": [
+        "mắt",
+        "nhìn",
+        "xem"
+      ]
+    },
+    "thumbs-up-sign": {
+      "name": "Ngón cái giơ lên",
+      "category": "Bàn tay",
+      "tags": [
+        "thích",
+        "tuyệt",
+        "đồng ý"
+      ]
+    },
+    "clapping-hands-sign": {
+      "name": "Vỗ tay",
+      "category": "Bàn tay",
+      "tags": [
+        "vỗ tay",
+        "khen",
+        "tán thưởng"
+      ]
+    },
+    "person-raising-both-hands-in-celebration": {
+      "name": "Giơ hai tay ăn mừng",
+      "category": "Bàn tay",
+      "tags": [
+        "ăn mừng",
+        "hoan hô",
+        "vui sướng"
+      ]
+    },
+    "person-with-folded-hands": {
+      "name": "Chắp tay",
+      "category": "Bàn tay",
+      "tags": [
+        "chắp tay",
+        "cảm ơn",
+        "cầu xin"
+      ]
+    },
+    "waving-hand-sign": {
+      "name": "Vẫy tay",
+      "category": "Bàn tay",
+      "tags": [
+        "vẫy tay",
+        "chào",
+        "tạm biệt"
+      ]
+    },
+    "victory-hand": {
+      "name": "Tay chữ V",
+      "category": "Bàn tay",
+      "tags": [
+        "chữ V",
+        "chiến thắng",
+        "hòa bình"
+      ]
+    },
+    "flexed-biceps": {
+      "name": "Khoe bắp tay",
+      "category": "Bàn tay",
+      "tags": [
+        "mạnh mẽ",
+        "cơ bắp",
+        "cố lên"
+      ]
+    },
+    "heavy-black-heart": {
+      "name": "Tim đen đậm",
+      "category": "Dấu hiệu",
+      "tags": [
+        "tim",
+        "tình yêu",
+        "yêu thích"
+      ]
+    },
+    "broken-heart": {
+      "name": "Trái tim tan vỡ",
+      "category": "Dấu hiệu",
+      "tags": [
+        "tim vỡ",
+        "buồn",
+        "thất tình"
+      ]
+    },
+    "sparkling-heart": {
+      "name": "Trái tim lấp lánh",
+      "category": "Dấu hiệu",
+      "tags": [
+        "tim",
+        "lấp lánh",
+        "tình yêu"
+      ]
+    },
+    "fire": {
+      "name": "Lửa",
+      "category": "Dấu hiệu",
+      "tags": [
+        "lửa",
+        "nóng",
+        "hot"
+      ]
+    },
+    "sparkles": {
+      "name": "Lấp lánh",
+      "category": "Dấu hiệu",
+      "tags": [
+        "lấp lánh",
+        "tia sáng",
+        "đẹp"
+      ]
+    },
+    "collision-symbol": {
+      "name": "Va chạm nổ",
+      "category": "Dấu hiệu",
+      "tags": [
+        "nổ",
+        "va chạm",
+        "bùm"
+      ]
+    },
+    "hundred-points-symbol": {
+      "name": "Một trăm điểm",
+      "category": "Dấu hiệu",
+      "tags": [
+        "100 điểm",
+        "tuyệt vời",
+        "hoàn hảo"
+      ]
+    },
+    "white-medium-star": {
+      "name": "Ngôi sao trắng",
+      "category": "Dấu hiệu",
+      "tags": [
+        "sao",
+        "ngôi sao",
+        "yêu thích"
+      ]
+    },
+    "glowing-star": {
+      "name": "Ngôi sao tỏa sáng",
+      "category": "Dấu hiệu",
+      "tags": [
+        "sao",
+        "tỏa sáng",
+        "nổi bật"
+      ]
+    },
+    "party-popper": {
+      "name": "Pháo giấy bắn",
+      "category": "Dấu hiệu",
+      "tags": [
+        "ăn mừng",
+        "tiệc",
+        "chúc mừng"
+      ]
+    },
+    "confetti-ball": {
+      "name": "Quả cầu hoa giấy",
+      "category": "Dấu hiệu",
+      "tags": [
+        "pháo giấy",
+        "ăn mừng",
+        "tiệc"
+      ]
+    },
+    "wrapped-present": {
+      "name": "Hộp quà",
+      "category": "Dấu hiệu",
+      "tags": [
+        "quà",
+        "tặng",
+        "sinh nhật"
+      ]
+    },
+    "birthday-cake": {
+      "name": "Bánh sinh nhật",
+      "category": "Dấu hiệu",
+      "tags": [
+        "bánh sinh nhật",
+        "sinh nhật",
+        "tiệc"
+      ]
+    },
+    "rocket": {
+      "name": "Tên lửa",
+      "category": "Dấu hiệu",
+      "tags": [
+        "tên lửa",
+        "phóng",
+        "tăng trưởng"
+      ]
+    },
+    "electric-light-bulb": {
+      "name": "Bóng đèn",
+      "category": "Dấu hiệu",
+      "tags": [
+        "bóng đèn",
+        "ý tưởng",
+        "sáng kiến"
+      ]
+    },
+    "bell": {
+      "name": "Chuông",
+      "category": "Dấu hiệu",
+      "tags": [
+        "chuông",
+        "thông báo",
+        "nhắc nhở"
+      ]
+    },
+    "white-heavy-check-mark": {
+      "name": "Dấu tích xanh trên nền",
+      "category": "Dấu hiệu",
+      "tags": [
+        "dấu tích",
+        "đúng",
+        "hoàn thành"
+      ]
+    },
+    "cross-mark": {
+      "name": "Dấu X",
+      "category": "Dấu hiệu",
+      "tags": [
+        "dấu X",
+        "sai",
+        "từ chối"
+      ]
+    },
+    "money-with-wings": {
+      "name": "Tiền bay đi",
+      "category": "Dấu hiệu",
+      "tags": [
+        "tiêu tiền",
+        "mất tiền",
+        "tiền bay"
+      ]
+    }
+  }
+}

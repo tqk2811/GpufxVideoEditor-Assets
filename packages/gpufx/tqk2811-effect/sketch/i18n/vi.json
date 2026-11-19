@@ -1,0 +1,40 @@
+{
+  "name": "Phác thảo bút chì",
+  "description": "Phác thảo bút chì: cạnh đậm và nét đan chéo trên giấy.",
+  "tags": [
+    "phác thảo",
+    "bút chì",
+    "vẽ tay",
+    "đan chéo"
+  ],
+  "params": {
+    "strength": {
+      "label": "Cường độ",
+      "description": "Độ đậm của nét bút chì"
+    },
+    "hatching": {
+      "label": "Nét đan chéo",
+      "description": "Cường độ nét đan chéo ở vùng tối"
+    },
+    "spacing": {
+      "label": "Khoảng cách nét",
+      "description": "Khoảng cách giữa các nét đan chéo tính bằng pixel"
+    },
+    "ink": {
+      "label": "Màu mực",
+      "description": "Màu bút chì"
+    },
+    "paper": {
+      "label": "Màu giấy",
+      "description": "Màu giấy"
+    },
+    "colored": {
+      "label": "Giữ màu",
+      "description": "Giữ lại một phần màu của ảnh"
+    },
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là hiệu ứng đầy đủ"
+    }
+  }
+}

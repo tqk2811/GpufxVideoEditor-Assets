@@ -1,0 +1,56 @@
+{
+  "name": "Kiểu phụ đề: tqk2811",
+  "description": "Bộ phụ đề karaoke tô màu, neon, hộp nền và bật chữ.",
+  "tags": [
+    "phụ đề",
+    "karaoke",
+    "kiểu phụ đề"
+  ],
+  "items": {
+    "karaoke-fill": {
+      "name": "Karaoke tô màu",
+      "category": "Karaoke",
+      "tags": [
+        "karaoke",
+        "tô màu",
+        "chạy chữ"
+      ]
+    },
+    "karaoke-neon": {
+      "name": "Karaoke neon",
+      "category": "Karaoke",
+      "tags": [
+        "karaoke",
+        "neon",
+        "phát sáng"
+      ]
+    },
+    "karaoke-box": {
+      "name": "Karaoke hộp nền",
+      "category": "Karaoke",
+      "tags": [
+        "karaoke",
+        "hộp nền",
+        "khung"
+      ]
+    },
+    "karaoke-pop": {
+      "name": "Karaoke bật chữ",
+      "category": "Karaoke",
+      "tags": [
+        "karaoke",
+        "bật chữ",
+        "phóng to"
+      ]
+    },
+    "karaoke-neon-pop": {
+      "name": "Karaoke neon bật chữ",
+      "category": "Karaoke",
+      "tags": [
+        "karaoke",
+        "neon",
+        "bật chữ"
+      ]
+    }
+  }
+}

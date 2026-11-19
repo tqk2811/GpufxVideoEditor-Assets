@@ -1,0 +1,31 @@
+{
+  "name": "Phóng to dần",
+  "description": "Phóng to theo đường cong mượt; mặc định khung hình trở lại bình thường khi hết chuyển động, giống bản gốc.",
+  "tags": [
+    "phóng to",
+    "zoom",
+    "kéo gần"
+  ],
+  "params": {
+    "amp": {
+      "label": "Biên độ",
+      "description": "Độ phóng to thêm khi kết thúc chuyển động"
+    },
+    "duration": {
+      "label": "Thời lượng",
+      "description": "Thời lượng chuyển động tính bằng giây, tự rút ngắn theo clip nếu clip ngắn hơn"
+    },
+    "hold": {
+      "label": "Giữ nguyên",
+      "description": "Giữ nguyên mức phóng to sau khi hết chuyển động thay vì bật về bình thường"
+    },
+    "clip_time": {
+      "label": "Thời gian clip",
+      "description": "Số giây từ đầu clip, do trình chỉnh sửa tự điền"
+    },
+    "clip_duration": {
+      "label": "Độ dài clip",
+      "description": "Độ dài clip trên timeline tính bằng giây, do trình chỉnh sửa tự điền"
+    }
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "name": "Hiệu ứng âm thanh: Âm thanh đời thường",
+  "description": "Âm thanh đời thường: máy ảnh, giấy, đóng dấu, nhịp tim, vỗ tay.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "âm thanh đời thường"
+  ],
+  "items": {
+    "camera_shutter": {
+      "name": "Màn trập máy ảnh",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "màn trập máy ảnh",
+        "chụp ảnh",
+        "camera",
+        "shutter"
+      ],
+      "description": "Ảnh chụp màn hình xuất hiện, flash"
+    },
+    "camera_shutter_2": {
+      "name": "Màn trập máy ảnh 2",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "màn trập máy ảnh 2",
+        "chụp liên tiếp"
+      ],
+      "description": "Nhiều ảnh xuất hiện"
+    },
+    "flash_pop": {
+      "name": "Chớp đèn flash",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "chớp đèn flash",
+        "flash",
+        "chớp sáng"
+      ],
+      "description": "Flash trắng"
+    },
+    "paper": {
+      "name": "Giấy lật",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "giấy lật",
+        "giấy",
+        "lật trang"
+      ],
+      "description": "Lật trang, tài liệu"
+    },
+    "paper_2": {
+      "name": "Giấy lật 2",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "giấy lật 2",
+        "vò giấy"
+      ],
+      "description": "Bỏ đi, gạch bỏ"
+    },
+    "stamp": {
+      "name": "Đóng dấu",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "đóng dấu",
+        "stamp",
+        "duyệt"
+      ],
+      "description": "Stamp ĐÃ DUYỆT/100%"
+    },
+    "stamp_2": {
+      "name": "Đóng dấu 2",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "đóng dấu 2",
+        "đóng dấu",
+        "stamp",
+        "duyệt"
+      ],
+      "description": "Stamp ĐÃ DUYỆT/100%"
+    },
+    "pen_scribble": {
+      "name": "Viết nguệch ngoạc",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "viết nguệch ngoạc",
+        "viết",
+        "gạch"
+      ],
+      "description": "Gạch bỏ chữ, viết tay"
+    },
+    "zipper": {
+      "name": "Kéo khóa",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "kéo khóa",
+        "kéo khoá",
+        "mở"
+      ],
+      "description": "Mở ra, tiết lộ"
+    },
+    "heartbeat": {
+      "name": "Nhịp tim",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "nhịp tim",
+        "hồi hộp"
+      ],
+      "description": "Hồi hộp, căng thẳng (2 nhịp)"
+    },
+    "heartbeat_loop": {
+      "name": "Nhịp tim lặp",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "nhịp tim lặp",
+        "nhịp tim",
+        "loop"
+      ],
+      "description": "Nền hồi hộp 4s"
+    },
+    "door_knock": {
+      "name": "Gõ cửa",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "gõ cửa"
+      ],
+      "description": "Có người đến, cơ hội"
+    },
+    "footsteps": {
+      "name": "Bước chân",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "bước chân"
+      ],
+      "description": "Bước tiếp, hành trình"
+    },
+    "water_drop": {
+      "name": "Giọt nước",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "giọt nước",
+        "drop"
+      ],
+      "description": "Nhẹ nhàng, tinh tế"
+    },
+    "rubber_band": {
+      "name": "Dây chun bật",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "dây chun bật",
+        "bật dây",
+        "boing"
+      ],
+      "description": "Hài hước, bật lại"
+    },
+    "cartoon_slip": {
+      "name": "Trượt chân hài",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "trượt chân hài",
+        "trượt",
+        "hài"
+      ],
+      "description": "Fail hài hước"
+    },
+    "balloon_pop": {
+      "name": "Nổ bóng bay",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "nổ bóng bay",
+        "nổ bóng"
+      ],
+      "description": "Phá vỡ niềm tin sai"
+    },
+    "crowd_cheer": {
+      "name": "Đám đông cổ vũ",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "đám đông cổ vũ",
+        "vỗ tay",
+        "cổ vũ",
+        "đám đông"
+      ],
+      "description": "Thành tựu, ăn mừng (tổng hợp)"
+    },
+    "applause": {
+      "name": "Vỗ tay",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "vỗ tay",
+        "applause"
+      ],
+      "description": "Kết thúc, chúc mừng"
+    },
+    "heartbeat_single": {
+      "name": "Một nhịp tim",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "một nhịp tim",
+        "nhịp tim",
+        "1 nhịp"
+      ],
+      "description": "Khựng lại một nhịp"
+    },
+    "heartbeat_slow": {
+      "name": "Nhịp tim chậm",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "nhịp tim chậm",
+        "hồi hộp"
+      ],
+      "description": "Chờ đợi, căng thẳng (chậm)"
+    },
+    "heartbeat_fast": {
+      "name": "Nhịp tim nhanh",
+      "category": "Âm thanh đời thường",
+      "tags": [
+        "nhịp tim nhanh",
+        "sợ"
+      ],
+      "description": "Lo sợ, gấp gáp"
+    }
+  }
+}

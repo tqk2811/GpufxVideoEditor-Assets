@@ -1,0 +1,170 @@
+{
+  "name": "Hiệu ứng âm thanh: Phép màu",
+  "description": "Âm thanh phép màu: lấp lánh, lung linh, biến hóa.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "phép màu"
+  ],
+  "items": {
+    "sparkle": {
+      "name": "Lấp lánh",
+      "category": "Phép màu",
+      "tags": [
+        "lấp lánh",
+        "sparkle",
+        "phép màu",
+        "✨"
+      ],
+      "description": "✨ xuất hiện, highlight, đẹp"
+    },
+    "sparkle_2": {
+      "name": "Lấp lánh 2",
+      "category": "Phép màu",
+      "tags": [
+        "lấp lánh 2",
+        "lấp lánh",
+        "sparkle",
+        "phép màu",
+        "✨"
+      ],
+      "description": "✨ xuất hiện, highlight, đẹp"
+    },
+    "sparkle_3": {
+      "name": "Lấp lánh 3",
+      "category": "Phép màu",
+      "tags": [
+        "lấp lánh 3",
+        "lấp lánh",
+        "sparkle",
+        "phép màu",
+        "✨"
+      ],
+      "description": "✨ xuất hiện, highlight, đẹp"
+    },
+    "sparkle_4": {
+      "name": "Lấp lánh 4",
+      "category": "Phép màu",
+      "tags": [
+        "lấp lánh 4",
+        "lấp lánh",
+        "sparkle",
+        "phép màu",
+        "✨"
+      ],
+      "description": "✨ xuất hiện, highlight, đẹp"
+    },
+    "shimmer": {
+      "name": "Lung linh",
+      "category": "Phép màu",
+      "tags": [
+        "lung linh",
+        "shimmer",
+        "ánh sáng"
+      ],
+      "description": "Light leak, mood happy, end card"
+    },
+    "shimmer_2": {
+      "name": "Lung linh 2",
+      "category": "Phép màu",
+      "tags": [
+        "lung linh 2",
+        "shimmer",
+        "lung linh",
+        "ánh sáng"
+      ],
+      "description": "Light leak, mood happy, end card"
+    },
+    "shimmer_3": {
+      "name": "Lung linh 3",
+      "category": "Phép màu",
+      "tags": [
+        "lung linh 3",
+        "shimmer",
+        "lung linh",
+        "ánh sáng"
+      ],
+      "description": "Light leak, mood happy, end card"
+    },
+    "magic": {
+      "name": "Phép thuật",
+      "category": "Phép màu",
+      "tags": [
+        "phép thuật",
+        "magic",
+        "biến hoá",
+        "🪄"
+      ],
+      "description": "Biến hoá, trước→sau, AI làm phép"
+    },
+    "magic_2": {
+      "name": "Phép thuật 2",
+      "category": "Phép màu",
+      "tags": [
+        "phép thuật 2",
+        "phép thuật",
+        "magic",
+        "biến hoá",
+        "🪄"
+      ],
+      "description": "Biến hoá, trước→sau, AI làm phép"
+    },
+    "magic_3": {
+      "name": "Phép thuật 3",
+      "category": "Phép màu",
+      "tags": [
+        "phép thuật 3",
+        "phép thuật",
+        "magic",
+        "biến hoá",
+        "🪄"
+      ],
+      "description": "Biến hoá, trước→sau, AI làm phép"
+    },
+    "fairy_dust": {
+      "name": "Bụi tiên",
+      "category": "Phép màu",
+      "tags": [
+        "bụi tiên",
+        "nhẹ nhàng"
+      ],
+      "description": "Mood mellow, chuyển nhẹ"
+    },
+    "sparkle_soft": {
+      "name": "Lấp lánh nhẹ",
+      "category": "Phép màu",
+      "tags": [
+        "lấp lánh nhẹ"
+      ],
+      "description": "Emoji/sticker xuất hiện dưới giọng"
+    },
+    "twinkle": {
+      "name": "Chuông lấp lánh",
+      "category": "Phép màu",
+      "tags": [
+        "chuông lấp lánh",
+        "lấp lánh",
+        "chuông nhỏ"
+      ],
+      "description": "Đẹp, mới, sạch"
+    },
+    "chime_soft": {
+      "name": "Chuông nhẹ",
+      "category": "Phép màu",
+      "tags": [
+        "chuông nhẹ"
+      ],
+      "description": "Ý hay, mẹo"
+    },
+    "magic_rise": {
+      "name": "Phép màu dâng lên",
+      "category": "Phép màu",
+      "tags": [
+        "phép màu dâng lên",
+        "phép màu",
+        "dâng"
+      ],
+      "description": "Biến hoá, trước → sau"
+    }
+  }
+}

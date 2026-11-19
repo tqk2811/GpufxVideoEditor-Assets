@@ -1,0 +1,36 @@
+{
+  "name": "Hoạt hình",
+  "description": "Hoạt hình: các dải màu phẳng với nét viền mực đậm.",
+  "tags": [
+    "hoạt hình",
+    "cartoon",
+    "nét viền",
+    "vẽ tay"
+  ],
+  "params": {
+    "levels": {
+      "label": "Số bậc",
+      "description": "Số dải độ sáng"
+    },
+    "saturation": {
+      "label": "Bão hòa",
+      "description": "Độ bão hòa màu"
+    },
+    "edge": {
+      "label": "Ngưỡng cạnh",
+      "description": "Ngưỡng cạnh: càng thấp càng vẽ nhiều nét"
+    },
+    "edge_width": {
+      "label": "Độ dày nét",
+      "description": "Độ dày nét tính bằng pixel"
+    },
+    "edge_color": {
+      "label": "Màu nét",
+      "description": "Màu nét"
+    },
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là hiệu ứng đầy đủ"
+    }
+  }
+}

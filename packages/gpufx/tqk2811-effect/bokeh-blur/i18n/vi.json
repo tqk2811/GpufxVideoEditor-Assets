@@ -1,0 +1,24 @@
+{
+  "name": "Mờ bokeh",
+  "description": "Mờ ống kính với bokeh tròn: các điểm sáng mất nét tỏa thành đĩa sáng.",
+  "tags": [
+    "bokeh",
+    "mờ",
+    "xóa phông",
+    "ống kính"
+  ],
+  "params": {
+    "radius": {
+      "label": "Bán kính",
+      "description": "Bán kính đĩa sáng, tính theo chiều cao khung hình"
+    },
+    "highlights": {
+      "label": "Vùng sáng",
+      "description": "Độ tăng cường vùng sáng, giúp các đĩa nổi bật"
+    },
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Độ sáng mà từ đó bắt đầu tăng cường"
+    }
+  }
+}

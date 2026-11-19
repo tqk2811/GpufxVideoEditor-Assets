@@ -1,0 +1,277 @@
+{
+  "name": "Hiệu ứng âm thanh: Dồn nhịp",
+  "description": "Âm thanh dồn nhịp: riser, hút ngược và hạ xuống trước hoặc sau cú đập.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "dồn nhịp"
+  ],
+  "items": {
+    "riser": {
+      "name": "Dâng căng 0,5 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng căng 0,5 giây",
+        "riser",
+        "dâng lên",
+        "build up",
+        "căng dần"
+      ],
+      "description": "Dồn trước khoảnh khắc lớn 0.5s (kết thúc đúng frame đập)"
+    },
+    "riser_1s": {
+      "name": "Dâng căng 1 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng căng 1 giây",
+        "riser",
+        "dâng lên",
+        "build up",
+        "căng dần"
+      ],
+      "description": "Dồn trước khoảnh khắc lớn 1s (kết thúc đúng frame đập)"
+    },
+    "riser_2s": {
+      "name": "Dâng căng 2 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng căng 2 giây",
+        "riser",
+        "dâng lên",
+        "build up",
+        "căng dần"
+      ],
+      "description": "Dồn trước khoảnh khắc lớn 2s (kết thúc đúng frame đập)"
+    },
+    "riser_3s": {
+      "name": "Dâng căng 3 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng căng 3 giây",
+        "riser",
+        "dâng lên",
+        "build up",
+        "căng dần"
+      ],
+      "description": "Dồn trước khoảnh khắc lớn 3s (kết thúc đúng frame đập)"
+    },
+    "riser_4s": {
+      "name": "Dâng căng 4 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng căng 4 giây",
+        "riser",
+        "dâng lên",
+        "build up",
+        "căng dần"
+      ],
+      "description": "Dồn trước khoảnh khắc lớn 4s (kết thúc đúng frame đập)"
+    },
+    "downlifter": {
+      "name": "Hạ xuống",
+      "category": "Dồn nhịp",
+      "tags": [
+        "hạ xuống",
+        "downlifter",
+        "xả"
+      ],
+      "description": "Sau cú đập, rời cảnh căng"
+    },
+    "downlifter_2": {
+      "name": "Hạ xuống 2",
+      "category": "Dồn nhịp",
+      "tags": [
+        "hạ xuống 2",
+        "downlifter",
+        "hạ xuống",
+        "xả"
+      ],
+      "description": "Sau cú đập, rời cảnh căng"
+    },
+    "downlifter_3": {
+      "name": "Hạ xuống 3",
+      "category": "Dồn nhịp",
+      "tags": [
+        "hạ xuống 3",
+        "downlifter",
+        "hạ xuống",
+        "xả"
+      ],
+      "description": "Sau cú đập, rời cảnh căng"
+    },
+    "reverse_cymbal": {
+      "name": "Chập chõa ngược",
+      "category": "Dồn nhịp",
+      "tags": [
+        "chập chõa ngược",
+        "reverse cymbal",
+        "hút ngược",
+        "dồn"
+      ],
+      "description": "Đặt sao cho kết thúc đúng lúc chữ xuất hiện"
+    },
+    "reverse_cymbal_2": {
+      "name": "Chập chõa ngược 2",
+      "category": "Dồn nhịp",
+      "tags": [
+        "chập chõa ngược 2",
+        "reverse cymbal",
+        "hút ngược",
+        "dồn"
+      ],
+      "description": "Đặt sao cho kết thúc đúng lúc chữ xuất hiện"
+    },
+    "reverse_cymbal_3": {
+      "name": "Chập chõa ngược 3",
+      "category": "Dồn nhịp",
+      "tags": [
+        "chập chõa ngược 3",
+        "reverse cymbal",
+        "hút ngược",
+        "dồn"
+      ],
+      "description": "Đặt sao cho kết thúc đúng lúc chữ xuất hiện"
+    },
+    "riser_0_6s": {
+      "name": "Dâng căng 0,6 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng căng 0,6 giây",
+        "riser",
+        "dâng lên",
+        "build up"
+      ],
+      "description": "Dồn trước khoảnh khắc lớn 0.6s"
+    },
+    "riser_1_5s": {
+      "name": "Dâng căng 1,5 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng căng 1,5 giây",
+        "riser",
+        "dâng lên",
+        "build up"
+      ],
+      "description": "Dồn trước khoảnh khắc lớn 1.5s"
+    },
+    "riser_noise_0_6s": {
+      "name": "Dâng nhiễu trắng 0,6 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng nhiễu trắng 0,6 giây",
+        "riser",
+        "noise",
+        "hút lên"
+      ],
+      "description": "Riser nhiễu trắng 0.6s trước cú đập"
+    },
+    "riser_noise_1s": {
+      "name": "Dâng nhiễu trắng 1 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng nhiễu trắng 1 giây",
+        "riser",
+        "noise",
+        "hút lên"
+      ],
+      "description": "Riser nhiễu trắng 1s trước cú đập"
+    },
+    "riser_noise_2s": {
+      "name": "Dâng nhiễu trắng 2 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng nhiễu trắng 2 giây",
+        "riser",
+        "noise",
+        "hút lên"
+      ],
+      "description": "Riser nhiễu trắng 2s trước cú đập"
+    },
+    "riser_tension_1s": {
+      "name": "Dâng căng thẳng 1 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng căng thẳng 1 giây",
+        "riser",
+        "căng",
+        "trailer"
+      ],
+      "description": "Dồn căng kiểu trailer 1s"
+    },
+    "riser_tension_2s": {
+      "name": "Dâng căng thẳng 2 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng căng thẳng 2 giây",
+        "riser",
+        "căng",
+        "trailer"
+      ],
+      "description": "Dồn căng kiểu trailer 2s"
+    },
+    "riser_tension_3s": {
+      "name": "Dâng căng thẳng 3 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng căng thẳng 3 giây",
+        "riser",
+        "căng",
+        "trailer"
+      ],
+      "description": "Dồn căng kiểu trailer 3s"
+    },
+    "riser_pitch_1s": {
+      "name": "Dâng cao độ 1 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng cao độ 1 giây",
+        "riser",
+        "lên cao",
+        "tremolo"
+      ],
+      "description": "Tông lên + rung nhanh dần 1s"
+    },
+    "riser_pitch_2s": {
+      "name": "Dâng cao độ 2 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "dâng cao độ 2 giây",
+        "riser",
+        "lên cao",
+        "tremolo"
+      ],
+      "description": "Tông lên + rung nhanh dần 2s"
+    },
+    "reverse_cymbal_0_6s": {
+      "name": "Chập chõa ngược 0,6 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "chập chõa ngược 0,6 giây",
+        "reverse cymbal",
+        "hút ngược"
+      ],
+      "description": "Kết thúc đúng frame chữ lớn (0.6s)"
+    },
+    "reverse_swell_1s": {
+      "name": "Hút vào dâng 1 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "hút vào dâng 1 giây",
+        "reverse",
+        "swell",
+        "hút vào"
+      ],
+      "description": "Hút vào mềm trước tiêu đề (1s)"
+    },
+    "reverse_swell_2s": {
+      "name": "Hút vào dâng 2 giây",
+      "category": "Dồn nhịp",
+      "tags": [
+        "hút vào dâng 2 giây",
+        "reverse",
+        "swell"
+      ],
+      "description": "Hút vào dài trước tiêu đề (2s)"
+    }
+  }
+}

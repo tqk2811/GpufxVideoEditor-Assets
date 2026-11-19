@@ -1,0 +1,364 @@
+{
+  "name": "Nhạc nền: AI Video Studio",
+  "description": "Bộ nhạc nền cho video với nhiều tâm trạng: sôi động, buồn, vui, điện ảnh, doanh nghiệp, lofi.",
+  "tags": [
+    "nhạc nền",
+    "nhạc",
+    "âm nhạc",
+    "bản nhạc"
+  ],
+  "items": {
+    "hype": {
+      "name": "Sôi động",
+      "description": "Năng lượng cao, EDM 128bpm — hook, tuyên bố, recap, chốt",
+      "category": "Sôi động",
+      "tags": [
+        "sôi động",
+        "nhạc nền",
+        "hook",
+        "tuyên bố",
+        "recap",
+        "chốt"
+      ]
+    },
+    "hype_2": {
+      "name": "Sôi động 2",
+      "description": "Năng lượng cao, EDM 128bpm — hook, tuyên bố, recap, chốt",
+      "category": "Sôi động",
+      "tags": [
+        "sôi động",
+        "nhạc nền",
+        "hook",
+        "tuyên bố",
+        "recap",
+        "chốt"
+      ]
+    },
+    "tech": {
+      "name": "Công nghệ",
+      "description": "Arp điện tử 110bpm — hậu trường, công cụ, AI, dashboard",
+      "category": "Công nghệ",
+      "tags": [
+        "công nghệ",
+        "nhạc nền",
+        "hậu trường",
+        "công cụ",
+        "AI",
+        "dashboard"
+      ]
+    },
+    "tech_2": {
+      "name": "Công nghệ 2",
+      "description": "Arp điện tử 110bpm — hậu trường, công cụ, AI, dashboard",
+      "category": "Công nghệ",
+      "tags": [
+        "công nghệ",
+        "nhạc nền",
+        "hậu trường",
+        "công cụ",
+        "AI",
+        "dashboard"
+      ]
+    },
+    "sad": {
+      "name": "Buồn",
+      "description": "Piano buồn 70bpm — nỗi đau, quá khứ, thất bại",
+      "category": "Buồn",
+      "tags": [
+        "buồn",
+        "nhạc nền",
+        "nỗi đau",
+        "quá khứ",
+        "thất bại"
+      ]
+    },
+    "sad_2": {
+      "name": "Buồn 2",
+      "description": "Piano buồn 70bpm — nỗi đau, quá khứ, thất bại",
+      "category": "Buồn",
+      "tags": [
+        "buồn",
+        "nhạc nền",
+        "nỗi đau",
+        "quá khứ",
+        "thất bại"
+      ]
+    },
+    "happy": {
+      "name": "Vui vẻ",
+      "description": "Ukulele + clap 118bpm — vui, kết quả tốt, đời thường",
+      "category": "Vui vẻ",
+      "tags": [
+        "vui vẻ",
+        "nhạc nền",
+        "vui",
+        "kết quả tốt",
+        "đời thường"
+      ]
+    },
+    "happy_2": {
+      "name": "Vui vẻ 2",
+      "description": "Ukulele + clap 118bpm — vui, kết quả tốt, đời thường",
+      "category": "Vui vẻ",
+      "tags": [
+        "vui vẻ",
+        "nhạc nền",
+        "vui",
+        "kết quả tốt",
+        "đời thường"
+      ]
+    },
+    "mellow": {
+      "name": "Du dương",
+      "description": "Lofi electric piano 80bpm — du dương, thư giãn, kể chuyện",
+      "category": "Du dương",
+      "tags": [
+        "du dương",
+        "nhạc nền",
+        "thư giãn",
+        "kể chuyện"
+      ]
+    },
+    "mellow_2": {
+      "name": "Du dương 2",
+      "description": "Lofi electric piano 80bpm — du dương, thư giãn, kể chuyện",
+      "category": "Du dương",
+      "tags": [
+        "du dương",
+        "nhạc nền",
+        "thư giãn",
+        "kể chuyện"
+      ]
+    },
+    "lofi": {
+      "name": "Lofi",
+      "description": "Lofi biến thể — hoài niệm, chill",
+      "category": "Lofi",
+      "tags": [
+        "lofi",
+        "nhạc nền",
+        "hoài niệm",
+        "chill"
+      ]
+    },
+    "lofi_2": {
+      "name": "Lofi 2",
+      "description": "Lofi biến thể — hoài niệm, chill",
+      "category": "Lofi",
+      "tags": [
+        "lofi",
+        "nhạc nền",
+        "hoài niệm",
+        "chill"
+      ]
+    },
+    "epic": {
+      "name": "Hùng tráng",
+      "description": "Dây + trống trận 90bpm — tầm nhìn, tuyên bố lớn",
+      "category": "Hùng tráng",
+      "tags": [
+        "hùng tráng",
+        "nhạc nền",
+        "tầm nhìn",
+        "tuyên bố lớn"
+      ]
+    },
+    "epic_2": {
+      "name": "Hùng tráng 2",
+      "description": "Dây + trống trận 90bpm — tầm nhìn, tuyên bố lớn",
+      "category": "Hùng tráng",
+      "tags": [
+        "hùng tráng",
+        "nhạc nền",
+        "tầm nhìn",
+        "tuyên bố lớn"
+      ]
+    },
+    "suspense": {
+      "name": "Hồi hộp",
+      "description": "Ostinato căng 100bpm — vấn đề, rủi ro, bí mật",
+      "category": "Hồi hộp",
+      "tags": [
+        "hồi hộp",
+        "nhạc nền",
+        "vấn đề",
+        "rủi ro",
+        "bí mật"
+      ]
+    },
+    "suspense_2": {
+      "name": "Hồi hộp 2",
+      "description": "Ostinato căng 100bpm — vấn đề, rủi ro, bí mật",
+      "category": "Hồi hộp",
+      "tags": [
+        "hồi hộp",
+        "nhạc nền",
+        "vấn đề",
+        "rủi ro",
+        "bí mật"
+      ]
+    },
+    "corporate": {
+      "name": "Doanh nghiệp",
+      "description": "Piano + guitar sáng 112bpm — doanh nghiệp, giới thiệu, hướng dẫn",
+      "category": "Doanh nghiệp",
+      "tags": [
+        "doanh nghiệp",
+        "nhạc nền",
+        "giới thiệu",
+        "hướng dẫn"
+      ]
+    },
+    "corporate_2": {
+      "name": "Doanh nghiệp 2",
+      "description": "Piano + guitar sáng 112bpm — doanh nghiệp, giới thiệu, hướng dẫn",
+      "category": "Doanh nghiệp",
+      "tags": [
+        "doanh nghiệp",
+        "nhạc nền",
+        "giới thiệu",
+        "hướng dẫn"
+      ]
+    },
+    "inspire": {
+      "name": "Truyền cảm hứng",
+      "description": "Piano + strings 96bpm — truyền cảm hứng, câu chuyện vượt khó",
+      "category": "Truyền cảm hứng",
+      "tags": [
+        "truyền cảm hứng",
+        "nhạc nền",
+        "câu chuyện vượt khó"
+      ]
+    },
+    "inspire_2": {
+      "name": "Truyền cảm hứng 2",
+      "description": "Piano + strings 96bpm — truyền cảm hứng, câu chuyện vượt khó",
+      "category": "Truyền cảm hứng",
+      "tags": [
+        "truyền cảm hứng",
+        "nhạc nền",
+        "câu chuyện vượt khó"
+      ]
+    },
+    "lofi_hiphop": {
+      "name": "Lofi hip-hop",
+      "description": "Lofi hip-hop 84bpm, trống boom-bap + vinyl — chill, học tập, vlog đời thường",
+      "category": "Lofi hip-hop",
+      "tags": [
+        "lofi hip-hop",
+        "nhạc nền",
+        "chill",
+        "học tập",
+        "vlog đời thường"
+      ]
+    },
+    "cinematic_epic": {
+      "name": "Điện ảnh hùng tráng",
+      "description": "Dây + kèn + trống taiko 80bpm — tuyên bố lớn, hành trình, trailer",
+      "category": "Điện ảnh hùng tráng",
+      "tags": [
+        "điện ảnh hùng tráng",
+        "nhạc nền",
+        "tuyên bố lớn",
+        "hành trình",
+        "trailer"
+      ]
+    },
+    "corporate_upbeat": {
+      "name": "Doanh nghiệp tươi vui",
+      "description": "Pop doanh nghiệp tươi 120bpm — giới thiệu công ty, sản phẩm, khoá học",
+      "category": "Doanh nghiệp tươi vui",
+      "tags": [
+        "doanh nghiệp tươi vui",
+        "nhạc nền",
+        "giới thiệu công ty",
+        "sản phẩm",
+        "khoá học"
+      ]
+    },
+    "real_estate_luxury": {
+      "name": "Bất động sản sang trọng",
+      "description": "Deep house sang trọng 100bpm — bất động sản, nội thất, khách sạn",
+      "category": "Bất động sản sang trọng",
+      "tags": [
+        "bất động sản sang trọng",
+        "nhạc nền",
+        "bất động sản",
+        "nội thất",
+        "khách sạn"
+      ]
+    },
+    "tiktok_trap": {
+      "name": "Trap TikTok",
+      "description": "Trap 140bpm, 808 + hi-hat roll — TikTok, hook nhanh, giới trẻ",
+      "category": "Trap TikTok",
+      "tags": [
+        "trap tiktok",
+        "nhạc nền",
+        "TikTok",
+        "hook nhanh",
+        "giới trẻ"
+      ]
+    },
+    "acoustic_warm": {
+      "name": "Mộc ấm áp",
+      "description": "Guitar mộc ấm 100bpm — câu chuyện, gia đình, ẩm thực",
+      "category": "Mộc ấm áp",
+      "tags": [
+        "mộc ấm áp",
+        "nhạc nền",
+        "câu chuyện",
+        "gia đình",
+        "ẩm thực"
+      ]
+    },
+    "ambient_calm": {
+      "name": "Ambient êm dịu",
+      "description": "Ambient pad + chuông 60bpm, không trống — thiền, sức khoẻ, spa",
+      "category": "Ambient êm dịu",
+      "tags": [
+        "ambient êm dịu",
+        "nhạc nền",
+        "thiền",
+        "sức khoẻ",
+        "spa"
+      ]
+    },
+    "news_bg": {
+      "name": "Nền bản tin",
+      "description": "Nền bản tin 120bpm, nhịp xung + timpani — tin tức, cập nhật, phân tích",
+      "category": "Nền bản tin",
+      "tags": [
+        "nền bản tin",
+        "nhạc nền",
+        "tin tức",
+        "cập nhật",
+        "phân tích"
+      ]
+    },
+    "kids_playful": {
+      "name": "Vui nhộn cho trẻ em",
+      "description": "Pizzicato + glockenspiel 126bpm — vui nhộn, trẻ em, mẹo hay",
+      "category": "Vui nhộn cho trẻ em",
+      "tags": [
+        "vui nhộn cho trẻ em",
+        "nhạc nền",
+        "vui nhộn",
+        "trẻ em",
+        "mẹo hay"
+      ]
+    },
+    "piano_minimal": {
+      "name": "Piano tối giản",
+      "description": "Piano tối giản 90bpm — tâm sự, cảm xúc, chiêm nghiệm",
+      "category": "Piano tối giản",
+      "tags": [
+        "piano tối giản",
+        "nhạc nền",
+        "tâm sự",
+        "cảm xúc",
+        "chiêm nghiệm"
+      ]
+    }
+  }
+}

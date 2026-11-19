@@ -1,0 +1,36 @@
+{
+  "name": "Đom đóm",
+  "description": "Đom đóm: những chấm sáng nhỏ lang thang chậm rãi trên video và nhấp nháy.",
+  "tags": [
+    "đom đóm",
+    "ánh sáng",
+    "đêm",
+    "huyền ảo"
+  ],
+  "params": {
+    "density": {
+      "label": "Mật độ",
+      "description": "Tỷ lệ ô lưới có chứa đom đóm"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Kích thước quầng sáng"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ lang thang"
+    },
+    "brightness": {
+      "label": "Độ sáng",
+      "description": "Độ sáng của quầng sáng"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu quầng sáng"
+    },
+    "seed": {
+      "label": "Hạt giống ngẫu nhiên",
+      "description": "Thay đổi hoa văn"
+    }
+  }
+}

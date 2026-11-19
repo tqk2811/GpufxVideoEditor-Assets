@@ -1,0 +1,48 @@
+{
+  "name": "Mưa",
+  "description": "Mưa: những vệt mảnh nghiêng rơi nhanh trên ảnh hơi tối đi.",
+  "tags": [
+    "mưa",
+    "thời tiết",
+    "rơi",
+    "buồn"
+  ],
+  "params": {
+    "density": {
+      "label": "Mật độ",
+      "description": "Tỷ lệ ô lưới có chứa hạt"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ, số chiều cao khung hình mỗi giây"
+    },
+    "wind": {
+      "label": "Gió",
+      "description": "Độ trôi ngang, số chiều cao khung hình mỗi giây (âm thì thổi sang trái)"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Kích thước hạt; hạt càng lớn thì càng ít"
+    },
+    "opacity": {
+      "label": "Độ mờ đục",
+      "description": "Độ mờ đục của các hạt"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Độ nghiêng của mưa tính bằng độ (dương thì rơi sang phải)"
+    },
+    "dim": {
+      "label": "Làm tối",
+      "description": "Làm tối ảnh bên dưới mưa"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu mưa"
+    },
+    "seed": {
+      "label": "Hạt giống ngẫu nhiên",
+      "description": "Thay đổi vị trí các hạt"
+    }
+  }
+}

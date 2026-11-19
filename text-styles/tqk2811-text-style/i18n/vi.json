@@ -1,0 +1,192 @@
+{
+  "name": "Kiểu chữ: tqk2811",
+  "description": "Bộ kiểu chữ neon, chuyển sắc, viền, 3D và hoài cổ.",
+  "tags": [
+    "kiểu chữ",
+    "chữ đẹp",
+    "neon",
+    "3D"
+  ],
+  "items": {
+    "neon-pink": {
+      "name": "Neon hồng",
+      "category": "Neon",
+      "tags": [
+        "neon",
+        "hồng",
+        "phát sáng"
+      ]
+    },
+    "neon-cyan": {
+      "name": "Neon xanh lơ",
+      "category": "Neon",
+      "tags": [
+        "neon",
+        "xanh lơ",
+        "phát sáng"
+      ]
+    },
+    "double-outline": {
+      "name": "Viền đôi",
+      "category": "Viền chữ",
+      "tags": [
+        "viền",
+        "viền đôi",
+        "đường viền"
+      ]
+    },
+    "gradient-sunset": {
+      "name": "Chuyển sắc hoàng hôn",
+      "category": "Chuyển sắc",
+      "tags": [
+        "hoàng hôn",
+        "chuyển sắc",
+        "gradient"
+      ]
+    },
+    "gradient-ocean": {
+      "name": "Chuyển sắc đại dương",
+      "category": "Chuyển sắc",
+      "tags": [
+        "đại dương",
+        "chuyển sắc",
+        "xanh biển"
+      ]
+    },
+    "sticker": {
+      "name": "Nhãn dán",
+      "category": "Viền chữ",
+      "tags": [
+        "nhãn dán",
+        "sticker",
+        "viền trắng"
+      ]
+    },
+    "retro-3d": {
+      "name": "3D hoài cổ",
+      "category": "3D",
+      "tags": [
+        "3D",
+        "retro",
+        "hoài cổ"
+      ]
+    },
+    "comic": {
+      "name": "Truyện tranh",
+      "category": "3D",
+      "tags": [
+        "truyện tranh",
+        "comic",
+        "hoạt hình"
+      ]
+    },
+    "fire": {
+      "name": "Lửa",
+      "category": "Chuyển sắc",
+      "tags": [
+        "lửa",
+        "nóng",
+        "cháy"
+      ]
+    },
+    "chrome": {
+      "name": "Chrome kim loại",
+      "category": "3D",
+      "tags": [
+        "chrome",
+        "kim loại",
+        "bóng loáng"
+      ]
+    },
+    "glitch-rgb": {
+      "name": "Lỗi RGB",
+      "category": "Hiệu ứng",
+      "tags": [
+        "glitch",
+        "RGB",
+        "lỗi"
+      ]
+    },
+    "long-shadow": {
+      "name": "Bóng dài",
+      "category": "3D",
+      "tags": [
+        "bóng dài",
+        "đổ bóng",
+        "phẳng"
+      ]
+    },
+    "outline-only": {
+      "name": "Chỉ có viền",
+      "category": "Cơ bản",
+      "tags": [
+        "chữ rỗng",
+        "viền",
+        "đường viền"
+      ]
+    },
+    "pastel-bubble": {
+      "name": "Bong bóng pastel",
+      "category": "Dễ thương",
+      "tags": [
+        "pastel",
+        "bong bóng",
+        "dễ thương"
+      ]
+    },
+    "gold-luxury": {
+      "name": "Vàng sang trọng",
+      "category": "Sang trọng",
+      "tags": [
+        "vàng",
+        "sang trọng",
+        "kim loại"
+      ]
+    },
+    "ice": {
+      "name": "Băng",
+      "category": "Hiệu ứng",
+      "tags": [
+        "băng",
+        "lạnh",
+        "tuyết"
+      ]
+    },
+    "toxic-green-glow": {
+      "name": "Xanh độc phát sáng",
+      "category": "Neon",
+      "tags": [
+        "xanh độc",
+        "phát sáng",
+        "neon"
+      ]
+    },
+    "newspaper": {
+      "name": "Báo giấy",
+      "category": "Cổ điển",
+      "tags": [
+        "báo",
+        "cổ điển",
+        "in ấn"
+      ]
+    },
+    "handwritten-marker": {
+      "name": "Bút lông viết tay",
+      "category": "Chữ viết tay",
+      "tags": [
+        "bút lông",
+        "viết tay",
+        "marker"
+      ]
+    },
+    "vaporwave": {
+      "name": "Vaporwave",
+      "category": "Retro",
+      "tags": [
+        "vaporwave",
+        "retro",
+        "tím hồng"
+      ]
+    }
+  }
+}

@@ -1,0 +1,619 @@
+{
+  "name": "Hiệu ứng âm thanh: Giao diện",
+  "description": "Âm thanh giao diện: bấm, chạm, gõ phím, đếm giờ, vuốt và bật nhanh.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "giao diện"
+  ],
+  "items": {
+    "swipe": {
+      "name": "Vuốt",
+      "category": "Giao diện",
+      "tags": [
+        "vuốt",
+        "swipe",
+        "lướt"
+      ],
+      "description": "Vuốt màn hình điện thoại, lật thẻ"
+    },
+    "swipe_2": {
+      "name": "Vuốt 2",
+      "category": "Giao diện",
+      "tags": [
+        "vuốt 2",
+        "vuốt",
+        "swipe",
+        "lướt"
+      ],
+      "description": "Vuốt màn hình điện thoại, lật thẻ"
+    },
+    "swipe_3": {
+      "name": "Vuốt 3",
+      "category": "Giao diện",
+      "tags": [
+        "vuốt 3",
+        "vuốt",
+        "swipe",
+        "lướt"
+      ],
+      "description": "Vuốt màn hình điện thoại, lật thẻ"
+    },
+    "swipe_4": {
+      "name": "Vuốt 4",
+      "category": "Giao diện",
+      "tags": [
+        "vuốt 4",
+        "vuốt",
+        "swipe",
+        "lướt"
+      ],
+      "description": "Vuốt màn hình điện thoại, lật thẻ"
+    },
+    "slide": {
+      "name": "Trượt",
+      "category": "Giao diện",
+      "tags": [
+        "trượt",
+        "slide",
+        "panel"
+      ],
+      "description": "Panel/thẻ trượt vào"
+    },
+    "slide_2": {
+      "name": "Trượt 2",
+      "category": "Giao diện",
+      "tags": [
+        "trượt 2",
+        "trượt",
+        "slide",
+        "panel"
+      ],
+      "description": "Panel/thẻ trượt vào"
+    },
+    "pop": {
+      "name": "Bật ra",
+      "category": "Giao diện",
+      "tags": [
+        "bật ra",
+        "pop",
+        "bật",
+        "emoji",
+        "tag"
+      ],
+      "description": "Emoji/pill/tag/chip bật ra"
+    },
+    "pop_2": {
+      "name": "Bật ra 2",
+      "category": "Giao diện",
+      "tags": [
+        "bật ra 2",
+        "pop",
+        "bật",
+        "emoji",
+        "tag"
+      ],
+      "description": "Emoji/pill/tag/chip bật ra"
+    },
+    "pop_3": {
+      "name": "Bật ra 3",
+      "category": "Giao diện",
+      "tags": [
+        "bật ra 3",
+        "pop",
+        "bật",
+        "emoji",
+        "tag"
+      ],
+      "description": "Emoji/pill/tag/chip bật ra"
+    },
+    "pop_4": {
+      "name": "Bật ra 4",
+      "category": "Giao diện",
+      "tags": [
+        "bật ra 4",
+        "pop",
+        "bật",
+        "emoji",
+        "tag"
+      ],
+      "description": "Emoji/pill/tag/chip bật ra"
+    },
+    "pop_5": {
+      "name": "Bật ra 5",
+      "category": "Giao diện",
+      "tags": [
+        "bật ra 5",
+        "pop",
+        "bật",
+        "emoji",
+        "tag"
+      ],
+      "description": "Emoji/pill/tag/chip bật ra"
+    },
+    "pop_6": {
+      "name": "Bật ra 6",
+      "category": "Giao diện",
+      "tags": [
+        "bật ra 6",
+        "pop",
+        "bật",
+        "emoji",
+        "tag"
+      ],
+      "description": "Emoji/pill/tag/chip bật ra"
+    },
+    "bubble": {
+      "name": "Bong bóng",
+      "category": "Giao diện",
+      "tags": [
+        "bong bóng",
+        "bubble",
+        "vui"
+      ],
+      "description": "Sticker vui, chat bubble"
+    },
+    "bubble_2": {
+      "name": "Bong bóng 2",
+      "category": "Giao diện",
+      "tags": [
+        "bong bóng 2",
+        "bong bóng",
+        "bubble",
+        "vui"
+      ],
+      "description": "Sticker vui, chat bubble"
+    },
+    "bubble_3": {
+      "name": "Bong bóng 3",
+      "category": "Giao diện",
+      "tags": [
+        "bong bóng 3",
+        "bong bóng",
+        "bubble",
+        "vui"
+      ],
+      "description": "Sticker vui, chat bubble"
+    },
+    "blip": {
+      "name": "Bíp ngắn",
+      "category": "Giao diện",
+      "tags": [
+        "bíp ngắn",
+        "blip",
+        "bíp",
+        "số",
+        "HUD"
+      ],
+      "description": "HUD/số nhảy/icon nhỏ"
+    },
+    "blip_2": {
+      "name": "Bíp ngắn 2",
+      "category": "Giao diện",
+      "tags": [
+        "bíp ngắn 2",
+        "blip",
+        "bíp",
+        "số",
+        "HUD"
+      ],
+      "description": "HUD/số nhảy/icon nhỏ"
+    },
+    "blip_3": {
+      "name": "Bíp ngắn 3",
+      "category": "Giao diện",
+      "tags": [
+        "bíp ngắn 3",
+        "blip",
+        "bíp",
+        "số",
+        "HUD"
+      ],
+      "description": "HUD/số nhảy/icon nhỏ"
+    },
+    "blip_4": {
+      "name": "Bíp ngắn 4",
+      "category": "Giao diện",
+      "tags": [
+        "bíp ngắn 4",
+        "blip",
+        "bíp",
+        "số",
+        "HUD"
+      ],
+      "description": "HUD/số nhảy/icon nhỏ"
+    },
+    "blip_5": {
+      "name": "Bíp ngắn 5",
+      "category": "Giao diện",
+      "tags": [
+        "bíp ngắn 5",
+        "blip",
+        "bíp",
+        "số",
+        "HUD"
+      ],
+      "description": "HUD/số nhảy/icon nhỏ"
+    },
+    "tick": {
+      "name": "Tích",
+      "category": "Giao diện",
+      "tags": [
+        "tích",
+        "tick",
+        "đồng hồ",
+        "đếm"
+      ],
+      "description": "Counter mỗi bước, kim đồng hồ"
+    },
+    "tick_2": {
+      "name": "Tích 2",
+      "category": "Giao diện",
+      "tags": [
+        "tích 2",
+        "tick",
+        "đồng hồ",
+        "đếm"
+      ],
+      "description": "Counter mỗi bước, kim đồng hồ"
+    },
+    "tick_3": {
+      "name": "Tích 3",
+      "category": "Giao diện",
+      "tags": [
+        "tích 3",
+        "tick",
+        "đồng hồ",
+        "đếm"
+      ],
+      "description": "Counter mỗi bước, kim đồng hồ"
+    },
+    "clock_ticking": {
+      "name": "Đồng hồ tích tắc",
+      "category": "Giao diện",
+      "tags": [
+        "đồng hồ tích tắc",
+        "tích tắc",
+        "đồng hồ chạy",
+        "thời gian"
+      ],
+      "description": "Nói về thời gian, deadline (4s loop)"
+    },
+    "clock_ticking_fast": {
+      "name": "Đồng hồ tích tắc nhanh",
+      "category": "Giao diện",
+      "tags": [
+        "đồng hồ tích tắc nhanh",
+        "tích tắc nhanh",
+        "gấp"
+      ],
+      "description": "Áp lực thời gian"
+    },
+    "countdown_321": {
+      "name": "Đếm ngược 321",
+      "category": "Giao diện",
+      "tags": [
+        "đếm ngược 321",
+        "đếm ngược",
+        "3 2 1"
+      ],
+      "description": "Đếm ngược 3-2-1 (beep cuối ở 3.0s)"
+    },
+    "click": {
+      "name": "Bấm",
+      "category": "Giao diện",
+      "tags": [
+        "bấm",
+        "click",
+        "chuột"
+      ],
+      "description": "Bấm nút, chọn mục"
+    },
+    "click_2": {
+      "name": "Bấm 2",
+      "category": "Giao diện",
+      "tags": [
+        "bấm 2",
+        "click",
+        "bấm",
+        "chuột"
+      ],
+      "description": "Bấm nút, chọn mục"
+    },
+    "click_3": {
+      "name": "Bấm 3",
+      "category": "Giao diện",
+      "tags": [
+        "bấm 3",
+        "click",
+        "bấm",
+        "chuột"
+      ],
+      "description": "Bấm nút, chọn mục"
+    },
+    "click_4": {
+      "name": "Bấm 4",
+      "category": "Giao diện",
+      "tags": [
+        "bấm 4",
+        "click",
+        "bấm",
+        "chuột"
+      ],
+      "description": "Bấm nút, chọn mục"
+    },
+    "click_5": {
+      "name": "Bấm 5",
+      "category": "Giao diện",
+      "tags": [
+        "bấm 5",
+        "click",
+        "bấm",
+        "chuột"
+      ],
+      "description": "Bấm nút, chọn mục"
+    },
+    "mouse_click": {
+      "name": "Bấm chuột",
+      "category": "Giao diện",
+      "tags": [
+        "bấm chuột",
+        "chuột",
+        "click đôi"
+      ],
+      "description": "Bấm chuột trên UI showcase"
+    },
+    "typing_1s": {
+      "name": "Gõ phím 1 giây",
+      "category": "Giao diện",
+      "tags": [
+        "gõ phím 1 giây",
+        "gõ phím",
+        "typing",
+        "bàn phím"
+      ],
+      "description": "Prompt_box gõ chữ, search bar"
+    },
+    "typing_2s": {
+      "name": "Gõ phím 2 giây",
+      "category": "Giao diện",
+      "tags": [
+        "gõ phím 2 giây",
+        "gõ phím",
+        "typing",
+        "bàn phím"
+      ],
+      "description": "Prompt_box gõ chữ, search bar"
+    },
+    "typing_4s": {
+      "name": "Gõ phím 4 giây",
+      "category": "Giao diện",
+      "tags": [
+        "gõ phím 4 giây",
+        "gõ phím",
+        "typing",
+        "bàn phím"
+      ],
+      "description": "Prompt_box gõ chữ, search bar"
+    },
+    "keyboard_enter": {
+      "name": "Bấm Enter",
+      "category": "Giao diện",
+      "tags": [
+        "bấm enter",
+        "enter",
+        "gửi lệnh"
+      ],
+      "description": "Gõ xong bấm Enter"
+    },
+    "ui_click_soft": {
+      "name": "Bấm nhẹ giao diện",
+      "category": "Giao diện",
+      "tags": [
+        "bấm nhẹ giao diện",
+        "click mềm",
+        "bấm nhẹ"
+      ],
+      "description": "Bấm UI nhẹ nhàng, không gắt"
+    },
+    "ui_click_soft_2": {
+      "name": "Bấm nhẹ giao diện 2",
+      "category": "Giao diện",
+      "tags": [
+        "bấm nhẹ giao diện 2",
+        "click mềm",
+        "bấm nhẹ"
+      ],
+      "description": "Bấm UI nhẹ nhàng, không gắt"
+    },
+    "ui_tap": {
+      "name": "Chạm giao diện",
+      "category": "Giao diện",
+      "tags": [
+        "chạm giao diện",
+        "chạm",
+        "tap"
+      ],
+      "description": "Chạm màn hình, chọn thẻ"
+    },
+    "ui_tap_2": {
+      "name": "Chạm giao diện 2",
+      "category": "Giao diện",
+      "tags": [
+        "chạm giao diện 2",
+        "chạm",
+        "tap"
+      ],
+      "description": "Chạm màn hình, chọn thẻ"
+    },
+    "ui_toggle_on": {
+      "name": "Bật công tắc",
+      "category": "Giao diện",
+      "tags": [
+        "bật công tắc",
+        "bật",
+        "toggle"
+      ],
+      "description": "Bật công tắc, chọn"
+    },
+    "ui_toggle_off": {
+      "name": "Tắt công tắc",
+      "category": "Giao diện",
+      "tags": [
+        "tắt công tắc",
+        "tắt",
+        "toggle"
+      ],
+      "description": "Tắt công tắc, bỏ chọn"
+    },
+    "ui_hover": {
+      "name": "Rê chuột",
+      "category": "Giao diện",
+      "tags": [
+        "rê chuột",
+        "hover"
+      ],
+      "description": "Rê qua mục, highlight rất nhẹ"
+    },
+    "ui_select": {
+      "name": "Chọn mục",
+      "category": "Giao diện",
+      "tags": [
+        "chọn mục",
+        "chọn",
+        "select"
+      ],
+      "description": "Chọn mục trong danh sách"
+    },
+    "ui_confirm": {
+      "name": "Xác nhận",
+      "category": "Giao diện",
+      "tags": [
+        "xác nhận",
+        "ok"
+      ],
+      "description": "Xác nhận, lưu xong"
+    },
+    "ui_back": {
+      "name": "Quay lại",
+      "category": "Giao diện",
+      "tags": [
+        "quay lại",
+        "back"
+      ],
+      "description": "Quay lại, đóng"
+    },
+    "ui_swipe_soft": {
+      "name": "Vuốt nhẹ",
+      "category": "Giao diện",
+      "tags": [
+        "vuốt nhẹ",
+        "swipe"
+      ],
+      "description": "Vuốt thẻ nhẹ"
+    },
+    "ui_type_key": {
+      "name": "Một phím gõ",
+      "category": "Giao diện",
+      "tags": [
+        "một phím gõ",
+        "phím",
+        "key"
+      ],
+      "description": "Một phím gõ"
+    },
+    "pop_soft": {
+      "name": "Bật ra nhẹ",
+      "category": "Giao diện",
+      "tags": [
+        "bật ra nhẹ",
+        "pop mềm"
+      ],
+      "description": "Emoji/chữ nhỏ dưới giọng nói"
+    },
+    "pop_soft_2": {
+      "name": "Bật ra nhẹ 2",
+      "category": "Giao diện",
+      "tags": [
+        "bật ra nhẹ 2",
+        "pop mềm"
+      ],
+      "description": "Chữ nhỏ bật nhẹ"
+    },
+    "pop_bright": {
+      "name": "Bật ra sáng",
+      "category": "Giao diện",
+      "tags": [
+        "bật ra sáng",
+        "pop sáng"
+      ],
+      "description": "Tag/sticker bật rõ"
+    },
+    "pop_bubble": {
+      "name": "Bật ra bong bóng",
+      "category": "Giao diện",
+      "tags": [
+        "bật ra bong bóng",
+        "pop bong bóng"
+      ],
+      "description": "Bong bóng chat, sticker"
+    },
+    "pop_cork": {
+      "name": "Bật nút chai",
+      "category": "Giao diện",
+      "tags": [
+        "bật nút chai",
+        "ăn mừng"
+      ],
+      "description": "Khui, ăn mừng"
+    },
+    "typing_3s": {
+      "name": "Gõ phím 3 giây",
+      "category": "Giao diện",
+      "tags": [
+        "gõ phím 3 giây",
+        "gõ phím",
+        "typing"
+      ],
+      "description": "Gõ prompt/tìm kiếm 3s"
+    },
+    "typing_soft_2s": {
+      "name": "Gõ phím nhẹ 2 giây",
+      "category": "Giao diện",
+      "tags": [
+        "gõ phím nhẹ 2 giây",
+        "gõ phím nhẹ"
+      ],
+      "description": "Gõ chữ dưới giọng nói"
+    },
+    "keyboard_enter_2": {
+      "name": "Bấm Enter 2",
+      "category": "Giao diện",
+      "tags": [
+        "bấm enter 2",
+        "enter"
+      ],
+      "description": "Bấm Enter gửi"
+    },
+    "typewriter_ding": {
+      "name": "Chuông máy đánh chữ",
+      "category": "Giao diện",
+      "tags": [
+        "chuông máy đánh chữ",
+        "máy đánh chữ",
+        "ding"
+      ],
+      "description": "Hết dòng máy đánh chữ"
+    },
+    "typewriter_keys_2s": {
+      "name": "Gõ máy đánh chữ 2 giây",
+      "category": "Giao diện",
+      "tags": [
+        "gõ máy đánh chữ 2 giây",
+        "máy đánh chữ",
+        "gõ"
+      ],
+      "description": "Chữ hiện từng ký tự kiểu máy chữ"
+    }
+  }
+}

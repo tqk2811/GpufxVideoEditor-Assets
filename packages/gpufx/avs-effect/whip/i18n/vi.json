@@ -1,0 +1,32 @@
+{
+  "name": "Quất ngang",
+  "description": "Cú quất ngang rất nhanh rồi trở về khung hình gốc.",
+  "tags": [
+    "quất",
+    "lướt nhanh",
+    "chuyển động",
+    "vụt"
+  ],
+  "params": {
+    "distance": {
+      "label": "Khoảng cách",
+      "description": "Quãng di chuyển tính bằng pixel thiết kế trên cạnh dài 1280"
+    },
+    "blur": {
+      "label": "Độ mờ",
+      "description": "Độ mờ cực đại (độ lệch chuẩn) tính bằng pixel thiết kế"
+    },
+    "duration": {
+      "label": "Thời lượng",
+      "description": "Thời lượng chuyển động tính bằng giây, tự rút ngắn theo clip nếu clip ngắn hơn"
+    },
+    "clip_time": {
+      "label": "Thời gian clip",
+      "description": "Số giây từ đầu clip, do trình chỉnh sửa tự điền"
+    },
+    "clip_duration": {
+      "label": "Độ dài clip",
+      "description": "Độ dài clip trên timeline tính bằng giây, do trình chỉnh sửa tự điền"
+    }
+  }
+}

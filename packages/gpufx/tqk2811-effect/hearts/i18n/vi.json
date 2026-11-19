@@ -1,0 +1,48 @@
+{
+  "name": "Trái tim bay",
+  "description": "Trái tim bay lên trên video, đung đưa và nghiêng.",
+  "tags": [
+    "trái tim",
+    "tim",
+    "tình yêu",
+    "bay lên"
+  ],
+  "params": {
+    "density": {
+      "label": "Mật độ",
+      "description": "Tỷ lệ ô lưới có chứa hạt"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ, số chiều cao khung hình mỗi giây"
+    },
+    "wind": {
+      "label": "Gió",
+      "description": "Độ trôi ngang, số chiều cao khung hình mỗi giây (âm thì thổi sang trái)"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Kích thước hạt; hạt càng lớn thì càng ít"
+    },
+    "opacity": {
+      "label": "Độ mờ đục",
+      "description": "Độ mờ đục của các hạt"
+    },
+    "rise": {
+      "label": "Bay lên",
+      "description": "Tim bay lên; tắt thì tim rơi xuống"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu trái tim thứ nhất"
+    },
+    "color2": {
+      "label": "Màu thứ hai",
+      "description": "Màu trái tim thứ hai"
+    },
+    "seed": {
+      "label": "Hạt giống ngẫu nhiên",
+      "description": "Thay đổi vị trí các hạt"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "name": "Hiệu ứng âm thanh: Hoạt hình",
+  "description": "Âm thanh hoạt hình: nảy, lò xo, sáo trượt, bonk.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "hoạt hình"
+  ],
+  "items": {
+    "boing": {
+      "name": "Tiếng boing",
+      "category": "Hoạt hình",
+      "tags": [
+        "tiếng boing",
+        "boing",
+        "lò xo",
+        "hài"
+      ],
+      "description": "Hài hước, nảy lên, bất ngờ vui"
+    },
+    "boing_2": {
+      "name": "Tiếng boing 2",
+      "category": "Hoạt hình",
+      "tags": [
+        "tiếng boing 2",
+        "boing",
+        "lò xo",
+        "hài"
+      ],
+      "description": "Hài hước, nảy lên, bất ngờ vui"
+    },
+    "boing_3": {
+      "name": "Tiếng boing 3",
+      "category": "Hoạt hình",
+      "tags": [
+        "tiếng boing 3",
+        "boing",
+        "lò xo",
+        "hài"
+      ],
+      "description": "Hài hước, nảy lên, bất ngờ vui"
+    },
+    "cartoon_pop": {
+      "name": "Bật ra hoạt hình",
+      "category": "Hoạt hình",
+      "tags": [
+        "bật ra hoạt hình",
+        "pop hoạt hình",
+        "bật"
+      ],
+      "description": "Emoji/sticker bật vui nhộn"
+    },
+    "slide_whistle_up": {
+      "name": "Sáo trượt lên",
+      "category": "Hoạt hình",
+      "tags": [
+        "sáo trượt lên",
+        "sáo trượt",
+        "hài",
+        "lên"
+      ],
+      "description": "Tăng vọt vui nhộn"
+    },
+    "slide_whistle_down": {
+      "name": "Sáo trượt xuống",
+      "category": "Hoạt hình",
+      "tags": [
+        "sáo trượt xuống",
+        "sáo trượt",
+        "hài",
+        "xuống"
+      ],
+      "description": "Tụt dốc, thất bại hài"
+    },
+    "cartoon_spring": {
+      "name": "Lò xo hoạt hình",
+      "category": "Hoạt hình",
+      "tags": [
+        "lò xo hoạt hình",
+        "lò xo",
+        "kim loại"
+      ],
+      "description": "Bật lò xo, nhảy ra"
+    },
+    "cartoon_bonk": {
+      "name": "Cú gõ đầu bonk",
+      "category": "Hoạt hình",
+      "tags": [
+        "cú gõ đầu bonk",
+        "bonk",
+        "gõ đầu",
+        "hài"
+      ],
+      "description": "Gõ đầu, nhận ra sai"
+    },
+    "cartoon_zip": {
+      "name": "Vụt chạy mất",
+      "category": "Hoạt hình",
+      "tags": [
+        "vụt chạy mất",
+        "vụt",
+        "zip",
+        "chạy mất"
+      ],
+      "description": "Biến mất nhanh, chạy đi"
+    }
+  }
+}

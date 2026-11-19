@@ -1,0 +1,28 @@
+{
+  "name": "Ống kính mắt cá",
+  "description": "Ống kính mắt cá: giữa phồng ra, rìa cong lại, có thể thêm viền tối.",
+  "tags": [
+    "mắt cá",
+    "fisheye",
+    "méo",
+    "ống kính"
+  ],
+  "params": {
+    "strength": {
+      "label": "Cường độ",
+      "description": "Độ phồng (giá trị âm thì thắt lại)"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm ống kính, 0..1 của khung hình"
+    },
+    "zoom": {
+      "label": "Thu phóng",
+      "description": "Phóng to để che các cạnh bị cong"
+    },
+    "rim": {
+      "label": "Viền kính",
+      "description": "Độ tối ở rìa ống kính"
+    }
+  }
+}

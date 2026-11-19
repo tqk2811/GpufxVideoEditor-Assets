@@ -1,0 +1,36 @@
+{
+  "name": "Lấp lánh",
+  "description": "Lấp lánh: những tia sao bốn cánh nhấp nháy trên video, nhiều hơn ở vùng sáng.",
+  "tags": [
+    "lấp lánh",
+    "ngôi sao",
+    "kim tuyến",
+    "nhấp nháy"
+  ],
+  "params": {
+    "density": {
+      "label": "Mật độ",
+      "description": "Tỷ lệ ô lưới có chứa tia lấp lánh"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Kích thước các ngôi sao"
+    },
+    "rate": {
+      "label": "Tần suất",
+      "description": "Số lần nhấp nháy mỗi giây"
+    },
+    "follow": {
+      "label": "Bám vùng sáng",
+      "description": "0 = ở bất kỳ đâu, 1 = chỉ ở vùng sáng của ảnh"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu tia lấp lánh"
+    },
+    "seed": {
+      "label": "Hạt giống ngẫu nhiên",
+      "description": "Thay đổi hoa văn"
+    }
+  }
+}

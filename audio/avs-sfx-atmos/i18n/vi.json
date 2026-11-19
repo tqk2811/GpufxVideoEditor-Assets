@@ -1,0 +1,81 @@
+{
+  "name": "Hiệu ứng âm thanh: Không khí",
+  "description": "Không khí ngắn: gió, mưa, văn phòng, đám đông.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "không khí"
+  ],
+  "items": {
+    "tension_drone": {
+      "name": "Drone căng thẳng",
+      "category": "Không khí",
+      "tags": [
+        "drone căng thẳng",
+        "căng thẳng",
+        "drone",
+        "suspense"
+      ],
+      "description": "Nền căng dưới con số đau (4s)"
+    },
+    "tension_drone_2": {
+      "name": "Drone căng thẳng 2",
+      "category": "Không khí",
+      "tags": [
+        "drone căng thẳng 2",
+        "căng",
+        "rủi ro"
+      ],
+      "description": "Nền căng (6s)"
+    },
+    "wind": {
+      "name": "Gió",
+      "category": "Không khí",
+      "tags": [
+        "gió",
+        "trống trải"
+      ],
+      "description": "Cô đơn, trống rỗng (4s)"
+    },
+    "vinyl_crackle": {
+      "name": "Tiếng xào xạc đĩa than",
+      "category": "Không khí",
+      "tags": [
+        "tiếng xào xạc đĩa than",
+        "vinyl",
+        "lofi",
+        "hoài niệm"
+      ],
+      "description": "Mood mellow/hoài niệm (5s loop)"
+    },
+    "rain": {
+      "name": "Mưa",
+      "category": "Không khí",
+      "tags": [
+        "mưa",
+        "buồn"
+      ],
+      "description": "Mood sad (5s)"
+    },
+    "office_room": {
+      "name": "Phòng văn phòng",
+      "category": "Không khí",
+      "tags": [
+        "phòng văn phòng",
+        "văn phòng",
+        "room tone"
+      ],
+      "description": "Cảnh làm việc (5s)"
+    },
+    "crowd_murmur": {
+      "name": "Đám đông xì xào",
+      "category": "Không khí",
+      "tags": [
+        "đám đông xì xào",
+        "đám đông",
+        "ồn ào"
+      ],
+      "description": "Sự kiện, đông người (4s)"
+    }
+  }
+}

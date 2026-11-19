@@ -1,0 +1,155 @@
+{
+  "name": "Kiểu phụ đề: AI Video Studio (ghost-editor, lemo-opuscar)",
+  "description": "Phụ đề theo phong cách in ấn, bản tin, giải thích và dựng nhanh.",
+  "tags": [
+    "phụ đề",
+    "kiểu phụ đề",
+    "tin tức",
+    "giải thích"
+  ],
+  "items": {
+    "print_swiss": {
+      "name": "Lưới Thụy Sĩ",
+      "category": "In ấn",
+      "tags": [
+        "in ấn",
+        "tối giản",
+        "phong cách Thụy Sĩ"
+      ]
+    },
+    "print_dossier": {
+      "name": "Hồ sơ chấm bán sắc",
+      "category": "In ấn",
+      "tags": [
+        "in ấn",
+        "hồ sơ",
+        "bán sắc"
+      ]
+    },
+    "print_paper": {
+      "name": "Giấy cảm giác thật",
+      "category": "In ấn",
+      "tags": [
+        "giấy",
+        "in ấn",
+        "thủ công"
+      ]
+    },
+    "print_kdoc": {
+      "name": "Tài liệu động",
+      "category": "In ấn",
+      "tags": [
+        "tài liệu",
+        "chữ động",
+        "in ấn"
+      ]
+    },
+    "print_data": {
+      "name": "Câu chuyện số liệu",
+      "category": "In ấn",
+      "tags": [
+        "dữ liệu",
+        "số liệu",
+        "báo cáo"
+      ]
+    },
+    "bc_capnews": {
+      "name": "Phụ đề bản tin",
+      "category": "Bản tin",
+      "tags": [
+        "bản tin",
+        "tin tức",
+        "truyền hình"
+      ]
+    },
+    "bc_tele": {
+      "name": "Bút vẽ truyền hình",
+      "category": "Bản tin",
+      "tags": [
+        "bản tin",
+        "vẽ",
+        "phân tích"
+      ]
+    },
+    "ex_os": {
+      "name": "Giao diện hệ điều hành gọn",
+      "category": "Giải thích",
+      "tags": [
+        "giải thích",
+        "giao diện",
+        "hướng dẫn"
+      ]
+    },
+    "ex_pp": {
+      "name": "Trang sản phẩm",
+      "category": "Giải thích",
+      "tags": [
+        "sản phẩm",
+        "giới thiệu",
+        "giải thích"
+      ]
+    },
+    "ex_stan": {
+      "name": "Stan",
+      "category": "Giải thích",
+      "tags": [
+        "giải thích",
+        "hiện đại"
+      ]
+    },
+    "ex_deck": {
+      "name": "Bộ bước hướng dẫn",
+      "category": "Giải thích",
+      "tags": [
+        "các bước",
+        "hướng dẫn",
+        "slide"
+      ]
+    },
+    "ex_board": {
+      "name": "Viên thuốc bảng trắng",
+      "category": "Giải thích",
+      "tags": [
+        "bảng trắng",
+        "giải thích",
+        "viên thuốc"
+      ]
+    },
+    "mt_seoul": {
+      "name": "Seoul",
+      "category": "Dựng nhanh",
+      "tags": [
+        "Hàn Quốc",
+        "dựng nhanh",
+        "thời thượng"
+      ]
+    },
+    "mt_result": {
+      "name": "Thẻ kết quả",
+      "category": "Dựng nhanh",
+      "tags": [
+        "kết quả",
+        "thẻ",
+        "dựng nhanh"
+      ]
+    },
+    "mt_pov": {
+      "name": "POV xanh chanh",
+      "category": "Dựng nhanh",
+      "tags": [
+        "POV",
+        "xanh chanh",
+        "trẻ trung"
+      ]
+    },
+    "mt_vec": {
+      "name": "Đồ họa vector",
+      "category": "Dựng nhanh",
+      "tags": [
+        "vector",
+        "đồ họa",
+        "dựng nhanh"
+      ]
+    }
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "name": "Hiệu ứng âm thanh: Chuyển cảnh",
+  "description": "Âm thanh chuyển cảnh: vút, quất, va đập chuyển cảnh.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "chuyển cảnh"
+  ],
+  "items": {
+    "whoosh": {
+      "name": "Tiếng vút",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút",
+        "whoosh",
+        "vút",
+        "chuyển cảnh",
+        "chữ bay vào"
+      ],
+      "description": "Chữ hero/mega vào, đổi cảnh, card trượt"
+    },
+    "whoosh_2": {
+      "name": "Tiếng vút 2",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút 2",
+        "whoosh",
+        "vút",
+        "chuyển cảnh",
+        "chữ bay vào"
+      ],
+      "description": "Chữ hero/mega vào, đổi cảnh, card trượt"
+    },
+    "whoosh_3": {
+      "name": "Tiếng vút 3",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút 3",
+        "whoosh",
+        "vút",
+        "chuyển cảnh",
+        "chữ bay vào"
+      ],
+      "description": "Chữ hero/mega vào, đổi cảnh, card trượt"
+    },
+    "whoosh_4": {
+      "name": "Tiếng vút 4",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút 4",
+        "whoosh",
+        "vút",
+        "chuyển cảnh",
+        "chữ bay vào"
+      ],
+      "description": "Chữ hero/mega vào, đổi cảnh, card trượt"
+    },
+    "whoosh_5": {
+      "name": "Tiếng vút 5",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút 5",
+        "whoosh",
+        "vút",
+        "chuyển cảnh",
+        "chữ bay vào"
+      ],
+      "description": "Chữ hero/mega vào, đổi cảnh, card trượt"
+    },
+    "whoosh_6": {
+      "name": "Tiếng vút 6",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút 6",
+        "whoosh",
+        "vút",
+        "chuyển cảnh",
+        "chữ bay vào"
+      ],
+      "description": "Chữ hero/mega vào, đổi cảnh, card trượt"
+    },
+    "whoosh_7": {
+      "name": "Tiếng vút 7",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút 7",
+        "whoosh",
+        "vút",
+        "chuyển cảnh",
+        "chữ bay vào"
+      ],
+      "description": "Chữ hero/mega vào, đổi cảnh, card trượt"
+    },
+    "whoosh_8": {
+      "name": "Tiếng vút 8",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút 8",
+        "whoosh",
+        "vút",
+        "chuyển cảnh",
+        "chữ bay vào"
+      ],
+      "description": "Chữ hero/mega vào, đổi cảnh, card trượt"
+    },
+    "whoosh_fast": {
+      "name": "Tiếng vút nhanh",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút nhanh",
+        "whoosh",
+        "nhanh",
+        "cut"
+      ],
+      "description": "Jump cut nhanh, pill bật"
+    },
+    "whoosh_slow": {
+      "name": "Tiếng vút chậm",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút chậm",
+        "whoosh",
+        "chậm",
+        "fade"
+      ],
+      "description": "Light leak, chuyển mood chậm"
+    },
+    "whoosh_deep": {
+      "name": "Tiếng vút trầm",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút trầm",
+        "whoosh",
+        "trầm"
+      ],
+      "description": "Iris tối mở ra, vào panel"
+    },
+    "whoosh_reverse": {
+      "name": "Tiếng vút ngược",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút ngược",
+        "reverse",
+        "hút vào"
+      ],
+      "description": "Trước khi chữ lớn đập vào (đặt kết thúc đúng frame)"
+    },
+    "swoosh_up": {
+      "name": "Vụt lên",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "vụt lên",
+        "swoosh",
+        "lên",
+        "bay lên"
+      ],
+      "description": "Chữ/thẻ bay lên, số tăng"
+    },
+    "swoosh_down": {
+      "name": "Vụt xuống",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "vụt xuống",
+        "swoosh",
+        "xuống",
+        "rơi"
+      ],
+      "description": "Chữ rơi xuống, rời cảnh"
+    },
+    "swoosh_up_2": {
+      "name": "Vụt lên 2",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "vụt lên 2",
+        "swoosh",
+        "lên",
+        "bay lên"
+      ],
+      "description": "Chữ/thẻ bay lên, số tăng"
+    },
+    "swoosh_down_2": {
+      "name": "Vụt xuống 2",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "vụt xuống 2",
+        "swoosh",
+        "xuống",
+        "rơi"
+      ],
+      "description": "Chữ rơi xuống, rời cảnh"
+    },
+    "transition_hit": {
+      "name": "Chuyển cảnh kèm đập",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "chuyển cảnh kèm đập",
+        "whoosh+impact",
+        "chuyển cảnh mạnh"
+      ],
+      "description": "Đổi cảnh lớn có đập"
+    },
+    "transition_hit_2": {
+      "name": "Chuyển cảnh kèm đập 2",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "chuyển cảnh kèm đập 2",
+        "whoosh+boom"
+      ],
+      "description": "Đổi cảnh lớn có boom"
+    },
+    "transition_hit_3": {
+      "name": "Chuyển cảnh kèm đập 3",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "chuyển cảnh kèm đập 3",
+        "riser+impact"
+      ],
+      "description": "Build up ngắn rồi đập"
+    },
+    "transition_hit_4": {
+      "name": "Chuyển cảnh kèm đập 4",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "chuyển cảnh kèm đập 4",
+        "swoosh+pop"
+      ],
+      "description": "Chuyển nhẹ vui"
+    },
+    "whoosh_soft": {
+      "name": "Tiếng vút nhẹ",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút nhẹ",
+        "whoosh mềm",
+        "nhẹ"
+      ],
+      "description": "Chuyển nhẹ dưới giọng nói"
+    },
+    "whoosh_soft_2": {
+      "name": "Tiếng vút nhẹ 2",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút nhẹ 2",
+        "whoosh mềm"
+      ],
+      "description": "Chữ trượt nhẹ"
+    },
+    "whoosh_air": {
+      "name": "Tiếng vút như gió",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút như gió",
+        "gió",
+        "air"
+      ],
+      "description": "Thoáng, chuyển sáng"
+    },
+    "whoosh_heavy": {
+      "name": "Tiếng vút nặng",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "tiếng vút nặng",
+        "whoosh nặng",
+        "trầm"
+      ],
+      "description": "Khối lớn bay vào, b-roll full"
+    },
+    "swoosh_out": {
+      "name": "Vụt ra khỏi khung",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "vụt ra khỏi khung",
+        "swoosh ra",
+        "rời cảnh"
+      ],
+      "description": "B-roll/thẻ rời khỏi khung"
+    },
+    "swoosh_out_2": {
+      "name": "Vụt ra khỏi khung 2",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "vụt ra khỏi khung 2",
+        "swoosh ra"
+      ],
+      "description": "Rời cảnh chậm hơn"
+    },
+    "whip": {
+      "name": "Quất",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "quất",
+        "whip"
+      ],
+      "description": "Whip pan, chuyển cực nhanh"
+    },
+    "whip_2": {
+      "name": "Quất 2",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "quất 2",
+        "whip"
+      ],
+      "description": "Whip pan ngắn"
+    },
+    "transition_soft": {
+      "name": "Chuyển cảnh nhẹ",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "chuyển cảnh nhẹ",
+        "chuyển nhẹ",
+        "shimmer"
+      ],
+      "description": "Chuyển clip nhẹ nhàng"
+    },
+    "transition_glitch": {
+      "name": "Chuyển cảnh glitch",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "chuyển cảnh glitch",
+        "chuyển glitch"
+      ],
+      "description": "Chuyển clip kiểu glitch"
+    },
+    "transition_whip_hit": {
+      "name": "Quất kèm đập",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "quất kèm đập",
+        "whip + đập"
+      ],
+      "description": "Whip pan đập mạnh"
+    },
+    "transition_riser_hit": {
+      "name": "Dồn nhịp rồi đập",
+      "category": "Chuyển cảnh",
+      "tags": [
+        "dồn nhịp rồi đập",
+        "riser + đập"
+      ],
+      "description": "Dồn ngắn rồi đập (đập ở 0.6s)"
+    }
+  }
+}

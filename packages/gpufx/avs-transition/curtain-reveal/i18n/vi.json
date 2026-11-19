@@ -1,0 +1,28 @@
+{
+  "name": "Mở màn sân khấu",
+  "description": "Rèm sân khấu khép lại trên clip đầu rồi mở ra clip thứ hai.",
+  "tags": [
+    "chuyển cảnh",
+    "rèm",
+    "sân khấu",
+    "mở màn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "tone": {
+      "label": "Màu rèm",
+      "description": "Màu rèm"
+    },
+    "pelmet": {
+      "label": "Dải trang trí",
+      "description": "Vẽ dải trang trí phía trên"
+    },
+    "spotlight": {
+      "label": "Đèn rọi",
+      "description": "Ánh sáng ấm rọi lên clip thứ hai khi rèm mở"
+    }
+  }
+}

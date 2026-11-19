@@ -1,0 +1,15 @@
+{
+  "name": "Tông sống động",
+  "description": "Tông màu: tăng bão hòa và tương phản.",
+  "tags": [
+    "sống động",
+    "đậm màu",
+    "bộ lọc"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là toàn bộ tông màu"
+    }
+  }
+}

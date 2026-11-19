@@ -1,0 +1,40 @@
+{
+  "name": "Khói",
+  "description": "Khói: những làn mềm bốc lên từ đáy khung, cuộn và mỏng dần khi lên cao.",
+  "tags": [
+    "khói",
+    "làn khói",
+    "huyền bí",
+    "bốc lên"
+  ],
+  "params": {
+    "density": {
+      "label": "Mật độ",
+      "description": "Độ dày của khói"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ bốc lên, số chiều cao khung hình mỗi giây"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Kích thước các làn khói"
+    },
+    "height": {
+      "label": "Chiều cao",
+      "description": "Khói bay lên cao tới đâu trước khi tan"
+    },
+    "curl": {
+      "label": "Độ xoắn",
+      "description": "Mức xoắn của các làn khói"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu khói"
+    },
+    "seed": {
+      "label": "Hạt giống ngẫu nhiên",
+      "description": "Thay đổi các làn khói"
+    }
+  }
+}

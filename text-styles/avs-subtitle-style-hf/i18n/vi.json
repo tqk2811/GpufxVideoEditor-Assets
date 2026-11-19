@@ -1,0 +1,102 @@
+{
+  "name": "Kiểu phụ đề: AI Video Studio (ý tưởng HyperFrames)",
+  "description": "Phụ đề karaoke, chữ động, phát sáng và hiệu ứng hiện chữ.",
+  "tags": [
+    "phụ đề",
+    "karaoke",
+    "chữ động",
+    "phát sáng"
+  ],
+  "items": {
+    "hf_pill_karaoke": {
+      "name": "Karaoke viên thuốc",
+      "category": "Karaoke",
+      "tags": [
+        "karaoke",
+        "viên thuốc",
+        "nền bo tròn"
+      ]
+    },
+    "hf_kinetic_slam": {
+      "name": "Chữ động giáng mạnh",
+      "category": "Chữ động",
+      "tags": [
+        "chữ động",
+        "giáng mạnh",
+        "nhấn mạnh"
+      ]
+    },
+    "hf_neon_glow": {
+      "name": "Neon phát sáng",
+      "category": "Phát sáng",
+      "tags": [
+        "neon",
+        "phát sáng",
+        "đêm"
+      ]
+    },
+    "hf_neon_accent": {
+      "name": "Neon nhấn màu",
+      "category": "Karaoke",
+      "tags": [
+        "neon",
+        "karaoke",
+        "nhấn màu"
+      ]
+    },
+    "hf_gradient_fill": {
+      "name": "Tô màu chuyển sắc",
+      "category": "Màu sắc",
+      "tags": [
+        "chuyển sắc",
+        "gradient",
+        "nhiều màu"
+      ]
+    },
+    "hf_emoji_pop": {
+      "name": "Emoji bật ra",
+      "category": "Sticker",
+      "tags": [
+        "emoji",
+        "bật ra",
+        "biểu tượng"
+      ]
+    },
+    "hf_highlight_sweep": {
+      "name": "Quét tô sáng",
+      "category": "Karaoke",
+      "tags": [
+        "tô sáng",
+        "quét",
+        "karaoke"
+      ]
+    },
+    "hf_clip_wipe": {
+      "name": "Quét hiện chữ",
+      "category": "Hiện chữ",
+      "tags": [
+        "quét",
+        "hiện chữ",
+        "mở ra"
+      ]
+    },
+    "hf_editorial_emphasis": {
+      "name": "Nhấn mạnh kiểu tạp chí",
+      "category": "Thanh lịch",
+      "tags": [
+        "tạp chí",
+        "nhấn mạnh",
+        "thanh lịch"
+      ]
+    },
+    "hf_weight_shift": {
+      "name": "Đổi độ đậm chữ",
+      "category": "Karaoke",
+      "tags": [
+        "độ đậm",
+        "karaoke",
+        "chữ đậm"
+      ]
+    }
+  }
+}

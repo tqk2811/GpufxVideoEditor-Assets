@@ -1,0 +1,44 @@
+{
+  "name": "Khung hình trong hình",
+  "description": "Hình trong hình: thu clip vào một khung có góc bo, viền và đổ bóng, đặt ở bất kỳ đâu trong khung.",
+  "tags": [
+    "hình trong hình",
+    "PiP",
+    "khung",
+    "thu nhỏ"
+  ],
+  "params": {
+    "position": {
+      "label": "Vị trí",
+      "description": "Tâm của khung, 0..1 của khung hình ([0, 0] = góc trên trái)"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Kích thước khung, tính theo khung hình"
+    },
+    "radius": {
+      "label": "Bán kính",
+      "description": "Bán kính bo góc, tính theo chiều cao khung hình"
+    },
+    "border": {
+      "label": "Viền",
+      "description": "Độ dày viền, tính theo chiều cao khung hình"
+    },
+    "border_color": {
+      "label": "Màu viền",
+      "description": "Màu viền"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ mềm của bóng đổ"
+    },
+    "shadow_offset": {
+      "label": "Độ lệch bóng",
+      "description": "Độ lệch bóng, tính theo chiều cao khung hình"
+    },
+    "shadow_color": {
+      "label": "Màu bóng",
+      "description": "Màu bóng (alpha quyết định cường độ)"
+    }
+  }
+}

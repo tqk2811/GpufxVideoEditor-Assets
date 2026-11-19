@@ -1,0 +1,975 @@
+{
+  "name": "Sticker: Fluent Emoji",
+  "description": "Bộ 107 sticker emoji 3D của Microsoft Fluent Emoji, dùng cho các cảnh phổ biến.",
+  "tags": [
+    "sticker",
+    "emoji",
+    "biểu tượng cảm xúc",
+    "3D"
+  ],
+  "items": {
+    "fire": {
+      "name": "Lửa",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "lửa",
+        "nóng",
+        "hot"
+      ]
+    },
+    "hundred-points": {
+      "name": "Một trăm điểm",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "100 điểm",
+        "tuyệt vời",
+        "hoàn hảo"
+      ]
+    },
+    "rocket": {
+      "name": "Tên lửa",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "tên lửa",
+        "phóng",
+        "tăng trưởng"
+      ]
+    },
+    "sparkles": {
+      "name": "Lấp lánh",
+      "category": "Hoạt động",
+      "tags": [
+        "lấp lánh",
+        "tia sáng",
+        "đẹp"
+      ]
+    },
+    "star": {
+      "name": "Ngôi sao",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "sao",
+        "ngôi sao",
+        "yêu thích"
+      ]
+    },
+    "glowing-star": {
+      "name": "Ngôi sao tỏa sáng",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "sao",
+        "tỏa sáng",
+        "nổi bật"
+      ]
+    },
+    "light-bulb": {
+      "name": "Bóng đèn",
+      "category": "Đồ vật",
+      "tags": [
+        "bóng đèn",
+        "ý tưởng",
+        "sáng kiến"
+      ]
+    },
+    "red-heart": {
+      "name": "Tim đỏ",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "tim",
+        "tình yêu",
+        "yêu thích"
+      ]
+    },
+    "orange-heart": {
+      "name": "Tim cam",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "tim",
+        "màu cam",
+        "tình cảm"
+      ]
+    },
+    "blue-heart": {
+      "name": "Tim xanh dương",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "tim",
+        "màu xanh",
+        "tình cảm"
+      ]
+    },
+    "green-heart": {
+      "name": "Tim xanh lá",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "tim",
+        "xanh lá",
+        "thiên nhiên"
+      ]
+    },
+    "purple-heart": {
+      "name": "Tim tím",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "tim",
+        "màu tím",
+        "tình cảm"
+      ]
+    },
+    "face-with-tears-of-joy": {
+      "name": "Cười ra nước mắt",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "cười",
+        "buồn cười",
+        "haha"
+      ]
+    },
+    "rolling-on-the-floor-laughing": {
+      "name": "Cười lăn lộn",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "cười lăn",
+        "buồn cười",
+        "haha"
+      ]
+    },
+    "smiling-face-with-heart-eyes": {
+      "name": "Mắt trái tim",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "mê",
+        "yêu",
+        "thích"
+      ]
+    },
+    "smiling-face-with-hearts": {
+      "name": "Mặt cười với những trái tim",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "yêu",
+        "được yêu",
+        "hạnh phúc"
+      ]
+    },
+    "star-struck": {
+      "name": "Mắt sao",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "choáng ngợp",
+        "mắt sao",
+        "wow"
+      ]
+    },
+    "exploding-head": {
+      "name": "Đầu nổ tung",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "sốc",
+        "kinh ngạc",
+        "nổ não"
+      ]
+    },
+    "face-screaming-in-fear": {
+      "name": "Hét lên vì sợ",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "sợ hãi",
+        "hét",
+        "hoảng"
+      ]
+    },
+    "smiling-face-with-sunglasses": {
+      "name": "Cười đeo kính râm",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "ngầu",
+        "kính râm",
+        "chất"
+      ]
+    },
+    "thinking-face": {
+      "name": "Mặt đang suy nghĩ",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "suy nghĩ",
+        "nghĩ ngợi",
+        "băn khoăn"
+      ]
+    },
+    "face-with-peeking-eye": {
+      "name": "Mặt lén nhìn",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "lén nhìn",
+        "tò mò",
+        "nhìn trộm"
+      ]
+    },
+    "grinning-face-with-sweat": {
+      "name": "Cười toát mồ hôi",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "ngượng",
+        "toát mồ hôi",
+        "hú hồn"
+      ]
+    },
+    "partying-face": {
+      "name": "Mặt ăn mừng",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "tiệc",
+        "ăn mừng",
+        "vui"
+      ]
+    },
+    "loudly-crying-face": {
+      "name": "Khóc nức nở",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "khóc",
+        "buồn",
+        "nước mắt"
+      ]
+    },
+    "pouting-face": {
+      "name": "Mặt giận dỗi",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "giận",
+        "tức",
+        "bực"
+      ]
+    },
+    "sleeping-face": {
+      "name": "Mặt đang ngủ",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "ngủ",
+        "buồn ngủ",
+        "mệt"
+      ]
+    },
+    "money-mouth-face": {
+      "name": "Mặt mê tiền",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "tiền",
+        "giàu",
+        "kiếm tiền"
+      ]
+    },
+    "clapping-hands": {
+      "name": "Vỗ tay",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "vỗ tay",
+        "khen",
+        "tán thưởng"
+      ]
+    },
+    "thumbs-up": {
+      "name": "Ngón cái giơ lên",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "thích",
+        "tuyệt",
+        "đồng ý"
+      ]
+    },
+    "thumbs-down": {
+      "name": "Ngón cái chúc xuống",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "không thích",
+        "tệ",
+        "phản đối"
+      ]
+    },
+    "folded-hands": {
+      "name": "Chắp tay",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "chắp tay",
+        "cảm ơn",
+        "cầu xin"
+      ]
+    },
+    "flexed-biceps": {
+      "name": "Khoe bắp tay",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "mạnh mẽ",
+        "cơ bắp",
+        "cố lên"
+      ]
+    },
+    "handshake": {
+      "name": "Bắt tay",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "bắt tay",
+        "thỏa thuận",
+        "hợp tác"
+      ]
+    },
+    "backhand-index-pointing-right": {
+      "name": "Ngón trỏ chỉ sang phải",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "chỉ tay",
+        "bên phải",
+        "xem đây"
+      ]
+    },
+    "eyes": {
+      "name": "Đôi mắt",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "mắt",
+        "nhìn",
+        "xem"
+      ]
+    },
+    "heart-hands": {
+      "name": "Tay làm hình tim",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "tay tim",
+        "yêu thương",
+        "cảm ơn"
+      ]
+    },
+    "crown": {
+      "name": "Vương miện",
+      "category": "Đồ vật",
+      "tags": [
+        "vương miện",
+        "vua",
+        "hoàng gia"
+      ]
+    },
+    "gem-stone": {
+      "name": "Viên đá quý",
+      "category": "Đồ vật",
+      "tags": [
+        "kim cương",
+        "đá quý",
+        "quý giá"
+      ]
+    },
+    "party-popper": {
+      "name": "Pháo giấy bắn",
+      "category": "Hoạt động",
+      "tags": [
+        "ăn mừng",
+        "tiệc",
+        "chúc mừng"
+      ]
+    },
+    "bullseye": {
+      "name": "Hồng tâm",
+      "category": "Hoạt động",
+      "tags": [
+        "mục tiêu",
+        "bia",
+        "trúng đích"
+      ]
+    },
+    "trophy": {
+      "name": "Cúp",
+      "category": "Hoạt động",
+      "tags": [
+        "cúp",
+        "chiến thắng",
+        "giải thưởng"
+      ]
+    },
+    "1st-place-medal": {
+      "name": "Huy chương vàng hạng nhất",
+      "category": "Hoạt động",
+      "tags": [
+        "huy chương",
+        "hạng nhất",
+        "vô địch"
+      ]
+    },
+    "chart-increasing": {
+      "name": "Biểu đồ tăng",
+      "category": "Đồ vật",
+      "tags": [
+        "tăng trưởng",
+        "biểu đồ",
+        "đi lên"
+      ]
+    },
+    "chart-decreasing": {
+      "name": "Biểu đồ giảm",
+      "category": "Đồ vật",
+      "tags": [
+        "giảm",
+        "biểu đồ",
+        "đi xuống"
+      ]
+    },
+    "money-bag": {
+      "name": "Túi tiền",
+      "category": "Đồ vật",
+      "tags": [
+        "tiền",
+        "túi tiền",
+        "giàu có"
+      ]
+    },
+    "money-with-wings": {
+      "name": "Tiền bay đi",
+      "category": "Đồ vật",
+      "tags": [
+        "tiêu tiền",
+        "mất tiền",
+        "tiền bay"
+      ]
+    },
+    "coin": {
+      "name": "Đồng xu",
+      "category": "Đồ vật",
+      "tags": [
+        "xu",
+        "tiền",
+        "tiền xu"
+      ]
+    },
+    "house": {
+      "name": "Ngôi nhà",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "nhà",
+        "bất động sản",
+        "gia đình"
+      ]
+    },
+    "house-with-garden": {
+      "name": "Nhà có vườn",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "nhà vườn",
+        "nhà",
+        "bất động sản"
+      ]
+    },
+    "office-building": {
+      "name": "Tòa nhà văn phòng",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "văn phòng",
+        "công ty",
+        "tòa nhà"
+      ]
+    },
+    "key": {
+      "name": "Chìa khóa",
+      "category": "Đồ vật",
+      "tags": [
+        "chìa khóa",
+        "mở khóa",
+        "bí quyết"
+      ]
+    },
+    "round-pushpin": {
+      "name": "Ghim tròn",
+      "category": "Đồ vật",
+      "tags": [
+        "ghim",
+        "vị trí",
+        "địa điểm"
+      ]
+    },
+    "world-map": {
+      "name": "Bản đồ thế giới",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "bản đồ",
+        "thế giới",
+        "du lịch"
+      ]
+    },
+    "shopping-cart": {
+      "name": "Giỏ hàng",
+      "category": "Đồ vật",
+      "tags": [
+        "giỏ hàng",
+        "mua sắm",
+        "bán hàng"
+      ]
+    },
+    "shopping-bags": {
+      "name": "Túi mua sắm",
+      "category": "Đồ vật",
+      "tags": [
+        "mua sắm",
+        "túi",
+        "khuyến mãi"
+      ]
+    },
+    "wrapped-gift": {
+      "name": "Hộp quà",
+      "category": "Hoạt động",
+      "tags": [
+        "quà",
+        "tặng",
+        "sinh nhật"
+      ]
+    },
+    "package": {
+      "name": "Gói hàng",
+      "category": "Đồ vật",
+      "tags": [
+        "gói hàng",
+        "giao hàng",
+        "bưu kiện"
+      ]
+    },
+    "label": {
+      "name": "Nhãn giá",
+      "category": "Đồ vật",
+      "tags": [
+        "nhãn",
+        "giá",
+        "thẻ giá"
+      ]
+    },
+    "mobile-phone": {
+      "name": "Điện thoại di động",
+      "category": "Đồ vật",
+      "tags": [
+        "điện thoại",
+        "di động",
+        "gọi"
+      ]
+    },
+    "laptop": {
+      "name": "Máy tính xách tay",
+      "category": "Đồ vật",
+      "tags": [
+        "laptop",
+        "máy tính",
+        "làm việc"
+      ]
+    },
+    "desktop-computer": {
+      "name": "Máy tính để bàn",
+      "category": "Đồ vật",
+      "tags": [
+        "máy tính",
+        "PC",
+        "làm việc"
+      ]
+    },
+    "robot": {
+      "name": "Rô-bốt",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "robot",
+        "AI",
+        "công nghệ"
+      ]
+    },
+    "brain": {
+      "name": "Bộ não",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "não",
+        "thông minh",
+        "suy nghĩ"
+      ]
+    },
+    "high-voltage": {
+      "name": "Tia điện",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "điện",
+        "sét",
+        "năng lượng"
+      ]
+    },
+    "check-mark-button": {
+      "name": "Nút dấu tích",
+      "category": "Biểu tượng",
+      "tags": [
+        "dấu tích",
+        "đúng",
+        "hoàn thành"
+      ]
+    },
+    "cross-mark": {
+      "name": "Dấu X",
+      "category": "Biểu tượng",
+      "tags": [
+        "dấu X",
+        "sai",
+        "từ chối"
+      ]
+    },
+    "warning": {
+      "name": "Cảnh báo",
+      "category": "Biểu tượng",
+      "tags": [
+        "cảnh báo",
+        "chú ý",
+        "nguy hiểm"
+      ]
+    },
+    "red-question-mark": {
+      "name": "Dấu hỏi đỏ",
+      "category": "Biểu tượng",
+      "tags": [
+        "dấu hỏi",
+        "câu hỏi",
+        "thắc mắc"
+      ]
+    },
+    "red-exclamation-mark": {
+      "name": "Dấu chấm than đỏ",
+      "category": "Biểu tượng",
+      "tags": [
+        "chấm than",
+        "quan trọng",
+        "chú ý"
+      ]
+    },
+    "speech-balloon": {
+      "name": "Bong bóng lời thoại",
+      "category": "Mặt cười và cảm xúc",
+      "tags": [
+        "lời thoại",
+        "trò chuyện",
+        "bình luận"
+      ]
+    },
+    "speaking-head": {
+      "name": "Đầu đang nói",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "nói",
+        "phát biểu",
+        "thông báo"
+      ]
+    },
+    "megaphone": {
+      "name": "Loa phóng thanh",
+      "category": "Đồ vật",
+      "tags": [
+        "loa",
+        "thông báo",
+        "quảng cáo"
+      ]
+    },
+    "bell": {
+      "name": "Chuông",
+      "category": "Đồ vật",
+      "tags": [
+        "chuông",
+        "thông báo",
+        "nhắc nhở"
+      ]
+    },
+    "clapper-board": {
+      "name": "Bảng clapper",
+      "category": "Đồ vật",
+      "tags": [
+        "làm phim",
+        "clapper",
+        "quay phim"
+      ]
+    },
+    "musical-note": {
+      "name": "Nốt nhạc",
+      "category": "Đồ vật",
+      "tags": [
+        "nhạc",
+        "nốt nhạc",
+        "âm nhạc"
+      ]
+    },
+    "microphone": {
+      "name": "Micro",
+      "category": "Đồ vật",
+      "tags": [
+        "micro",
+        "thu âm",
+        "hát"
+      ]
+    },
+    "camera-with-flash": {
+      "name": "Máy ảnh có đèn flash",
+      "category": "Đồ vật",
+      "tags": [
+        "máy ảnh",
+        "chụp ảnh",
+        "flash"
+      ]
+    },
+    "alarm-clock": {
+      "name": "Đồng hồ báo thức",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "báo thức",
+        "đồng hồ",
+        "thời gian"
+      ]
+    },
+    "calendar": {
+      "name": "Lịch",
+      "category": "Đồ vật",
+      "tags": [
+        "lịch",
+        "ngày",
+        "lịch hẹn"
+      ]
+    },
+    "memo": {
+      "name": "Ghi chú",
+      "category": "Đồ vật",
+      "tags": [
+        "ghi chú",
+        "giấy nhớ",
+        "viết"
+      ]
+    },
+    "books": {
+      "name": "Chồng sách",
+      "category": "Đồ vật",
+      "tags": [
+        "sách",
+        "học tập",
+        "đọc"
+      ]
+    },
+    "graduation-cap": {
+      "name": "Mũ tốt nghiệp",
+      "category": "Đồ vật",
+      "tags": [
+        "tốt nghiệp",
+        "học tập",
+        "giáo dục"
+      ]
+    },
+    "writing-hand": {
+      "name": "Bàn tay đang viết",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "viết",
+        "ký",
+        "ghi chép"
+      ]
+    },
+    "pushpin": {
+      "name": "Ghim bấm",
+      "category": "Đồ vật",
+      "tags": [
+        "ghim",
+        "đánh dấu",
+        "quan trọng"
+      ]
+    },
+    "magnifying-glass-tilted-left": {
+      "name": "Kính lúp nghiêng trái",
+      "category": "Đồ vật",
+      "tags": [
+        "kính lúp",
+        "tìm kiếm",
+        "phóng to"
+      ]
+    },
+    "locked": {
+      "name": "Khóa",
+      "category": "Đồ vật",
+      "tags": [
+        "khóa",
+        "bảo mật",
+        "riêng tư"
+      ]
+    },
+    "puzzle-piece": {
+      "name": "Mảnh ghép",
+      "category": "Hoạt động",
+      "tags": [
+        "ghép hình",
+        "mảnh ghép",
+        "giải đố"
+      ]
+    },
+    "video-game": {
+      "name": "Tay cầm chơi game",
+      "category": "Hoạt động",
+      "tags": [
+        "game",
+        "trò chơi",
+        "tay cầm"
+      ]
+    },
+    "sun": {
+      "name": "Mặt trời",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "mặt trời",
+        "nắng",
+        "trời sáng"
+      ]
+    },
+    "crescent-moon": {
+      "name": "Trăng lưỡi liềm",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "mặt trăng",
+        "đêm",
+        "trăng"
+      ]
+    },
+    "rainbow": {
+      "name": "Cầu vồng",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "cầu vồng",
+        "nhiều màu",
+        "mưa"
+      ]
+    },
+    "hot-beverage": {
+      "name": "Đồ uống nóng",
+      "category": "Đồ ăn và thức uống",
+      "tags": [
+        "cà phê",
+        "trà",
+        "đồ uống nóng"
+      ]
+    },
+    "four-leaf-clover": {
+      "name": "Cỏ bốn lá",
+      "category": "Động vật và thiên nhiên",
+      "tags": [
+        "may mắn",
+        "cỏ ba lá",
+        "cỏ bốn lá"
+      ]
+    },
+    "cherry-blossom": {
+      "name": "Hoa anh đào",
+      "category": "Động vật và thiên nhiên",
+      "tags": [
+        "hoa đào",
+        "hoa anh đào",
+        "mùa xuân"
+      ]
+    },
+    "pizza": {
+      "name": "Bánh pizza",
+      "category": "Đồ ăn và thức uống",
+      "tags": [
+        "pizza",
+        "đồ ăn",
+        "ăn uống"
+      ]
+    },
+    "hamburger": {
+      "name": "Bánh hamburger",
+      "category": "Đồ ăn và thức uống",
+      "tags": [
+        "hamburger",
+        "đồ ăn nhanh",
+        "ăn uống"
+      ]
+    },
+    "bubble-tea": {
+      "name": "Trà sữa trân châu",
+      "category": "Đồ ăn và thức uống",
+      "tags": [
+        "trà sữa",
+        "trân châu",
+        "đồ uống"
+      ]
+    },
+    "airplane": {
+      "name": "Máy bay",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "máy bay",
+        "du lịch",
+        "chuyến bay"
+      ]
+    },
+    "automobile": {
+      "name": "Ô tô",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "ô tô",
+        "xe hơi",
+        "lái xe"
+      ]
+    },
+    "beach-with-umbrella": {
+      "name": "Bãi biển có dù",
+      "category": "Du lịch và địa điểm",
+      "tags": [
+        "biển",
+        "bãi biển",
+        "nghỉ dưỡng"
+      ]
+    },
+    "lipstick": {
+      "name": "Son môi",
+      "category": "Đồ vật",
+      "tags": [
+        "son",
+        "làm đẹp",
+        "trang điểm"
+      ]
+    },
+    "dress": {
+      "name": "Váy",
+      "category": "Đồ vật",
+      "tags": [
+        "váy",
+        "thời trang",
+        "quần áo"
+      ]
+    },
+    "person-lifting-weights": {
+      "name": "Người nâng tạ",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "tập tạ",
+        "gym",
+        "thể hình"
+      ]
+    },
+    "person-in-lotus-position": {
+      "name": "Người ngồi thiền",
+      "category": "Con người và cơ thể",
+      "tags": [
+        "thiền",
+        "yoga",
+        "thư giãn"
+      ]
+    },
+    "dog-face": {
+      "name": "Mặt chó",
+      "category": "Động vật và thiên nhiên",
+      "tags": [
+        "chó",
+        "cún",
+        "thú cưng"
+      ]
+    },
+    "cat-face": {
+      "name": "Mặt mèo",
+      "category": "Động vật và thiên nhiên",
+      "tags": [
+        "mèo",
+        "mèo con",
+        "thú cưng"
+      ]
+    }
+  }
+}

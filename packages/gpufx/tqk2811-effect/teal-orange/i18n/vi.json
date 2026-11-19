@@ -1,0 +1,32 @@
+{
+  "name": "Xanh ngọc và cam",
+  "description": "Chỉnh màu xanh ngọc và cam: vùng tối ngả xanh ngọc, màu da và vùng sáng ngả cam.",
+  "tags": [
+    "xanh ngọc",
+    "cam",
+    "điện ảnh",
+    "chỉnh màu"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là hiệu ứng đầy đủ"
+    },
+    "strength": {
+      "label": "Cường độ",
+      "description": "Mức đẩy màu"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Màu mà vùng tối ngả theo"
+    },
+    "highlight": {
+      "label": "Màu vùng sáng",
+      "description": "Màu mà vùng sáng ngả theo"
+    },
+    "contrast": {
+      "label": "Tương phản",
+      "description": "Tương phản quanh xám trung bình"
+    }
+  }
+}

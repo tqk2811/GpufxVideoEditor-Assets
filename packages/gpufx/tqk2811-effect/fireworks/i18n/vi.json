@@ -1,0 +1,32 @@
+{
+  "name": "Pháo hoa",
+  "description": "Pháo hoa: tên lửa nổ thành vòng tia lửa rơi và mờ dần trên bầu trời.",
+  "tags": [
+    "pháo hoa",
+    "ăn mừng",
+    "tia lửa",
+    "lễ hội"
+  ],
+  "params": {
+    "rate": {
+      "label": "Tần suất",
+      "description": "Số lần nổ mỗi giây"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Bán kính vụ nổ, tính theo chiều cao khung hình"
+    },
+    "brightness": {
+      "label": "Độ sáng",
+      "description": "Độ sáng của tia lửa"
+    },
+    "height": {
+      "label": "Chiều cao",
+      "description": "Vị trí nổ thấp nhất, 0 = trên cùng, 1 = dưới cùng"
+    },
+    "seed": {
+      "label": "Hạt giống ngẫu nhiên",
+      "description": "Thay đổi các vụ nổ và màu sắc"
+    }
+  }
+}

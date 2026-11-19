@@ -1,0 +1,32 @@
+{
+  "name": "Kính vạn hoa",
+  "description": "Kính vạn hoa: ảnh gập thành các múi đối xứng quanh một tâm, có thể xoay chậm.",
+  "tags": [
+    "kính vạn hoa",
+    "đối xứng",
+    "xoay",
+    "hoa văn"
+  ],
+  "params": {
+    "segments": {
+      "label": "Số múi",
+      "description": "Số múi đối xứng"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm hoa văn, 0..1 của khung hình"
+    },
+    "rotation": {
+      "label": "Xoay",
+      "description": "Độ xoay của hoa văn tính bằng độ"
+    },
+    "spin": {
+      "label": "Tốc độ xoay",
+      "description": "Tốc độ xoay, độ mỗi giây"
+    },
+    "zoom": {
+      "label": "Thu phóng",
+      "description": "Phóng to vào ảnh"
+    }
+  }
+}

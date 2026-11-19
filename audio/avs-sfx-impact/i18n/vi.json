@@ -1,0 +1,371 @@
+{
+  "name": "Hiệu ứng âm thanh: Va đập",
+  "description": "Âm thanh va đập: đập, nổ trầm, điện ảnh, kim loại, thủy tinh.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "va đập"
+  ],
+  "items": {
+    "impact": {
+      "name": "Cú đập",
+      "category": "Va đập",
+      "tags": [
+        "cú đập",
+        "impact",
+        "đập",
+        "hit",
+        "dấu"
+      ],
+      "description": "Stamp, chữ mega đập, 100%, kết luận"
+    },
+    "impact_2": {
+      "name": "Cú đập 2",
+      "category": "Va đập",
+      "tags": [
+        "cú đập 2",
+        "impact",
+        "đập",
+        "hit",
+        "dấu"
+      ],
+      "description": "Stamp, chữ mega đập, 100%, kết luận"
+    },
+    "impact_3": {
+      "name": "Cú đập 3",
+      "category": "Va đập",
+      "tags": [
+        "cú đập 3",
+        "impact",
+        "đập",
+        "hit",
+        "dấu"
+      ],
+      "description": "Stamp, chữ mega đập, 100%, kết luận"
+    },
+    "impact_4": {
+      "name": "Cú đập 4",
+      "category": "Va đập",
+      "tags": [
+        "cú đập 4",
+        "impact",
+        "đập",
+        "hit",
+        "dấu"
+      ],
+      "description": "Stamp, chữ mega đập, 100%, kết luận"
+    },
+    "impact_5": {
+      "name": "Cú đập 5",
+      "category": "Va đập",
+      "tags": [
+        "cú đập 5",
+        "impact",
+        "đập",
+        "hit",
+        "dấu"
+      ],
+      "description": "Stamp, chữ mega đập, 100%, kết luận"
+    },
+    "impact_6": {
+      "name": "Cú đập 6",
+      "category": "Va đập",
+      "tags": [
+        "cú đập 6",
+        "impact",
+        "đập",
+        "hit",
+        "dấu"
+      ],
+      "description": "Stamp, chữ mega đập, 100%, kết luận"
+    },
+    "boom": {
+      "name": "Nổ trầm",
+      "category": "Va đập",
+      "tags": [
+        "nổ trầm",
+        "boom",
+        "bass"
+      ],
+      "description": "Slam_bg hook, mở màn, con số lớn"
+    },
+    "boom_2": {
+      "name": "Nổ trầm 2",
+      "category": "Va đập",
+      "tags": [
+        "nổ trầm 2",
+        "boom",
+        "nổ trầm",
+        "bass"
+      ],
+      "description": "Slam_bg hook, mở màn, con số lớn"
+    },
+    "boom_3": {
+      "name": "Nổ trầm 3",
+      "category": "Va đập",
+      "tags": [
+        "nổ trầm 3",
+        "boom",
+        "nổ trầm",
+        "bass"
+      ],
+      "description": "Slam_bg hook, mở màn, con số lớn"
+    },
+    "boom_4": {
+      "name": "Nổ trầm 4",
+      "category": "Va đập",
+      "tags": [
+        "nổ trầm 4",
+        "boom",
+        "nổ trầm",
+        "bass"
+      ],
+      "description": "Slam_bg hook, mở màn, con số lớn"
+    },
+    "sub_drop": {
+      "name": "Rơi bass",
+      "category": "Va đập",
+      "tags": [
+        "rơi bass",
+        "sub drop",
+        "bass drop",
+        "rơi"
+      ],
+      "description": "Ngay sau riser, cảnh chuyển lớn"
+    },
+    "sub_drop_2": {
+      "name": "Rơi bass 2",
+      "category": "Va đập",
+      "tags": [
+        "rơi bass 2",
+        "sub drop",
+        "bass drop",
+        "rơi"
+      ],
+      "description": "Ngay sau riser, cảnh chuyển lớn"
+    },
+    "sub_drop_3": {
+      "name": "Rơi bass 3",
+      "category": "Va đập",
+      "tags": [
+        "rơi bass 3",
+        "sub drop",
+        "bass drop",
+        "rơi"
+      ],
+      "description": "Ngay sau riser, cảnh chuyển lớn"
+    },
+    "cinematic_hit": {
+      "name": "Cú đập điện ảnh",
+      "category": "Va đập",
+      "tags": [
+        "cú đập điện ảnh",
+        "cinematic",
+        "điện ảnh",
+        "trailer"
+      ],
+      "description": "Câu chốt, tiết lộ, title lớn"
+    },
+    "cinematic_hit_2": {
+      "name": "Cú đập điện ảnh 2",
+      "category": "Va đập",
+      "tags": [
+        "cú đập điện ảnh 2",
+        "cinematic",
+        "điện ảnh",
+        "trailer"
+      ],
+      "description": "Câu chốt, tiết lộ, title lớn"
+    },
+    "cinematic_hit_3": {
+      "name": "Cú đập điện ảnh 3",
+      "category": "Va đập",
+      "tags": [
+        "cú đập điện ảnh 3",
+        "cinematic",
+        "điện ảnh",
+        "trailer"
+      ],
+      "description": "Câu chốt, tiết lộ, title lớn"
+    },
+    "braam": {
+      "name": "Kèn đồng căng thẳng",
+      "category": "Va đập",
+      "tags": [
+        "kèn đồng căng thẳng",
+        "braam",
+        "kèn đồng",
+        "trailer",
+        "căng"
+      ],
+      "description": "Tuyên bố lớn kiểu trailer"
+    },
+    "braam_2": {
+      "name": "Kèn đồng căng thẳng 2",
+      "category": "Va đập",
+      "tags": [
+        "kèn đồng căng thẳng 2",
+        "braam",
+        "trầm"
+      ],
+      "description": "Tuyên bố lớn kiểu trailer"
+    },
+    "hit_punch": {
+      "name": "Cú đấm",
+      "category": "Va đập",
+      "tags": [
+        "cú đấm",
+        "hit",
+        "punch",
+        "đấm"
+      ],
+      "description": "Nhấn chữ/b-roll vào mạnh, gọn"
+    },
+    "hit_punch_2": {
+      "name": "Cú đấm 2",
+      "category": "Va đập",
+      "tags": [
+        "cú đấm 2",
+        "hit",
+        "punch",
+        "đấm"
+      ],
+      "description": "Nhấn chữ/b-roll vào mạnh, gọn"
+    },
+    "hit_punch_3": {
+      "name": "Cú đấm 3",
+      "category": "Va đập",
+      "tags": [
+        "cú đấm 3",
+        "hit",
+        "punch",
+        "đấm"
+      ],
+      "description": "Nhấn chữ/b-roll vào mạnh, gọn"
+    },
+    "hit_metal": {
+      "name": "Đập kim loại",
+      "category": "Va đập",
+      "tags": [
+        "đập kim loại",
+        "kim loại",
+        "metal",
+        "keng"
+      ],
+      "description": "Đập kim loại, con số lớn"
+    },
+    "hit_metal_2": {
+      "name": "Đập kim loại 2",
+      "category": "Va đập",
+      "tags": [
+        "đập kim loại 2",
+        "kim loại",
+        "metal",
+        "keng"
+      ],
+      "description": "Đập kim loại, con số lớn"
+    },
+    "hit_deep": {
+      "name": "Cú đập trầm",
+      "category": "Va đập",
+      "tags": [
+        "cú đập trầm",
+        "trầm",
+        "deep hit",
+        "bass"
+      ],
+      "description": "Cú đập trầm, tiết lộ"
+    },
+    "hit_deep_2": {
+      "name": "Cú đập trầm 2",
+      "category": "Va đập",
+      "tags": [
+        "cú đập trầm 2",
+        "trầm",
+        "deep hit",
+        "bass"
+      ],
+      "description": "Cú đập trầm, tiết lộ"
+    },
+    "hit_snap": {
+      "name": "Cú bật tách",
+      "category": "Va đập",
+      "tags": [
+        "cú bật tách",
+        "snap",
+        "tách"
+      ],
+      "description": "Cắt gọn, chữ bật"
+    },
+    "hit_glass": {
+      "name": "Đập thủy tinh",
+      "category": "Va đập",
+      "tags": [
+        "đập thủy tinh",
+        "thuỷ tinh",
+        "sáng"
+      ],
+      "description": "Chữ sáng, đẹp, cao cấp"
+    },
+    "hit_cinematic_short": {
+      "name": "Đập điện ảnh ngắn",
+      "category": "Va đập",
+      "tags": [
+        "đập điện ảnh ngắn",
+        "cinematic",
+        "ngắn"
+      ],
+      "description": "Title lớn, không quá dài"
+    },
+    "hit_trailer": {
+      "name": "Đập kiểu trailer",
+      "category": "Va đập",
+      "tags": [
+        "đập kiểu trailer",
+        "trailer",
+        "braam ngắn"
+      ],
+      "description": "Tuyên bố, chương mới"
+    },
+    "intro_hit": {
+      "name": "Cú đập mở màn",
+      "category": "Va đập",
+      "tags": [
+        "cú đập mở màn",
+        "mở màn",
+        "intro"
+      ],
+      "description": "Đầu video: hút ngược rồi đập (đập ở 0.8s)"
+    },
+    "outro_hit": {
+      "name": "Cú đập kết thúc",
+      "category": "Va đập",
+      "tags": [
+        "cú đập kết thúc",
+        "kết",
+        "outro",
+        "end card"
+      ],
+      "description": "Thẻ kết, câu chốt cuối"
+    },
+    "sub_drop_short": {
+      "name": "Rơi bass ngắn",
+      "category": "Va đập",
+      "tags": [
+        "rơi bass ngắn",
+        "sub drop",
+        "ngắn"
+      ],
+      "description": "Rơi bass ngắn sau hook"
+    },
+    "sub_boom_soft": {
+      "name": "Nổ trầm nhẹ",
+      "category": "Va đập",
+      "tags": [
+        "nổ trầm nhẹ",
+        "boom mềm"
+      ],
+      "description": "Nhấn trầm nhẹ dưới giọng"
+    }
+  }
+}

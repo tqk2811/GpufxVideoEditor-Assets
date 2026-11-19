@@ -1,0 +1,119 @@
+{
+  "name": "Kiểu chữ: AI Video Studio",
+  "description": "Bộ kiểu chữ tiêu đề, phát sáng, tối giản và viết tay.",
+  "tags": [
+    "kiểu chữ",
+    "tiêu đề",
+    "chữ đẹp"
+  ],
+  "items": {
+    "yellow-title": {
+      "name": "Tiêu đề vàng",
+      "category": "Tiêu đề",
+      "tags": [
+        "vàng",
+        "tiêu đề",
+        "nổi bật"
+      ]
+    },
+    "white-bold": {
+      "name": "Trắng đậm",
+      "category": "Tiêu đề",
+      "tags": [
+        "trắng",
+        "đậm",
+        "tiêu đề"
+      ]
+    },
+    "ink-yellow": {
+      "name": "Vàng viền mực",
+      "category": "Tiêu đề",
+      "tags": [
+        "vàng",
+        "viền đen",
+        "tiêu đề"
+      ]
+    },
+    "fire": {
+      "name": "Lửa",
+      "category": "Tiêu đề",
+      "tags": [
+        "lửa",
+        "nóng",
+        "cháy"
+      ]
+    },
+    "glow": {
+      "name": "Phát sáng",
+      "category": "Phát sáng",
+      "tags": [
+        "phát sáng",
+        "ánh sáng",
+        "tỏa sáng"
+      ]
+    },
+    "neon-green": {
+      "name": "Neon xanh lá",
+      "category": "Phát sáng",
+      "tags": [
+        "neon",
+        "xanh lá",
+        "phát sáng"
+      ]
+    },
+    "minimal": {
+      "name": "Tối giản",
+      "category": "Tối giản",
+      "tags": [
+        "tối giản",
+        "đơn giản",
+        "gọn"
+      ]
+    },
+    "luxury": {
+      "name": "Sang trọng",
+      "category": "Thanh lịch",
+      "tags": [
+        "sang trọng",
+        "cao cấp",
+        "thanh lịch"
+      ]
+    },
+    "bungee": {
+      "name": "Bungee",
+      "category": "Tiêu đề",
+      "tags": [
+        "chữ dày",
+        "biển hiệu",
+        "tiêu đề"
+      ]
+    },
+    "handwritten": {
+      "name": "Viết tay",
+      "category": "Chữ viết tay",
+      "tags": [
+        "viết tay",
+        "thư pháp",
+        "tự nhiên"
+      ]
+    },
+    "dark-note": {
+      "name": "Ghi chú nền tối",
+      "category": "Ghi chú",
+      "tags": [
+        "ghi chú",
+        "nền tối",
+        "chú thích"
+      ]
+    },
+    "oswald": {
+      "name": "Oswald",
+      "category": "Tiêu đề",
+      "tags": [
+        "chữ hẹp",
+        "tiêu đề",
+        "báo chí"
+      ]
+    }
+  }
+}

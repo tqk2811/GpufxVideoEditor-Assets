@@ -1,0 +1,209 @@
+{
+  "name": "Kiểu phụ đề: AI Video Studio",
+  "description": "Bộ kiểu phụ đề thông dụng: karaoke, hộp nền, từ khóa và thanh lịch.",
+  "tags": [
+    "phụ đề",
+    "kiểu phụ đề",
+    "karaoke"
+  ],
+  "items": {
+    "basic": {
+      "name": "Karaoke cơ bản",
+      "category": "Karaoke",
+      "tags": [
+        "karaoke",
+        "cơ bản",
+        "đơn giản"
+      ]
+    },
+    "tiktok": {
+      "name": "TikTok",
+      "category": "Karaoke",
+      "tags": [
+        "TikTok",
+        "video ngắn",
+        "karaoke"
+      ]
+    },
+    "slate": {
+      "name": "Từ khóa xám đá",
+      "category": "Từ khóa",
+      "tags": [
+        "từ khóa",
+        "xám",
+        "nhấn mạnh"
+      ]
+    },
+    "beatslide": {
+      "name": "Trượt theo nhịp",
+      "category": "Karaoke",
+      "tags": [
+        "nhịp",
+        "trượt",
+        "nhạc"
+      ]
+    },
+    "cinema": {
+      "name": "Điện ảnh",
+      "category": "Thuần chữ",
+      "tags": [
+        "điện ảnh",
+        "phim",
+        "đơn giản"
+      ]
+    },
+    "course": {
+      "name": "Nhãn bài học",
+      "category": "Hộp nền",
+      "tags": [
+        "khóa học",
+        "nhãn",
+        "giáo dục"
+      ]
+    },
+    "glow": {
+      "name": "Phát sáng mềm",
+      "category": "Phát sáng",
+      "tags": [
+        "phát sáng",
+        "mềm",
+        "ánh sáng"
+      ]
+    },
+    "greenscreen": {
+      "name": "Phông xanh",
+      "category": "Karaoke",
+      "tags": [
+        "phông xanh",
+        "green screen",
+        "karaoke"
+      ]
+    },
+    "keynote": {
+      "name": "Keynote",
+      "category": "Hộp nền",
+      "tags": [
+        "thuyết trình",
+        "keynote",
+        "hội nghị"
+      ]
+    },
+    "kinetic": {
+      "name": "Chữ động",
+      "category": "Từ khóa",
+      "tags": [
+        "chữ động",
+        "chuyển động",
+        "từ khóa"
+      ]
+    },
+    "luxury": {
+      "name": "Sang trọng",
+      "category": "Thanh lịch",
+      "tags": [
+        "sang trọng",
+        "cao cấp",
+        "thanh lịch"
+      ]
+    },
+    "neon": {
+      "name": "Từ khóa neon",
+      "category": "Phát sáng",
+      "tags": [
+        "neon",
+        "từ khóa",
+        "phát sáng"
+      ]
+    },
+    "news": {
+      "name": "Thanh tin tức",
+      "category": "Hộp nền",
+      "tags": [
+        "tin tức",
+        "thanh tin",
+        "bản tin"
+      ]
+    },
+    "podcast": {
+      "name": "Podcast",
+      "category": "Hộp nền",
+      "tags": [
+        "podcast",
+        "đối thoại",
+        "phỏng vấn"
+      ]
+    },
+    "qa": {
+      "name": "Hỏi và đáp",
+      "category": "Hộp nền",
+      "tags": [
+        "hỏi đáp",
+        "Q&A",
+        "phỏng vấn"
+      ]
+    },
+    "realestate": {
+      "name": "Bất động sản",
+      "category": "Thanh lịch",
+      "tags": [
+        "bất động sản",
+        "nhà đất",
+        "thanh lịch"
+      ]
+    },
+    "review": {
+      "name": "Đánh giá",
+      "category": "Karaoke",
+      "tags": [
+        "đánh giá",
+        "review",
+        "karaoke"
+      ]
+    },
+    "screencast": {
+      "name": "Quay màn hình",
+      "category": "Hộp nền",
+      "tags": [
+        "quay màn hình",
+        "hướng dẫn",
+        "screencast"
+      ]
+    },
+    "share": {
+      "name": "Chia sẻ",
+      "category": "Thanh lịch",
+      "tags": [
+        "chia sẻ",
+        "tâm sự",
+        "thanh lịch"
+      ]
+    },
+    "split": {
+      "name": "Thanh kính chia đôi",
+      "category": "Hộp nền",
+      "tags": [
+        "kính mờ",
+        "thanh chia",
+        "hiện đại"
+      ]
+    },
+    "topn": {
+      "name": "Danh sách xếp hạng",
+      "category": "Karaoke",
+      "tags": [
+        "xếp hạng",
+        "top",
+        "danh sách"
+      ]
+    },
+    "transform": {
+      "name": "Trước và sau",
+      "category": "Karaoke",
+      "tags": [
+        "trước sau",
+        "biến đổi",
+        "so sánh"
+      ]
+    }
+  }
+}

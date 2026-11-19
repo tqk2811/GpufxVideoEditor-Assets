@@ -1,0 +1,119 @@
+{
+  "name": "Hiệu ứng âm thanh: Trống",
+  "description": "Trống và nhịp: kick, snare, trống dồn, chập chõa, dừng băng.",
+  "tags": [
+    "hiệu ứng âm thanh",
+    "âm thanh",
+    "trống"
+  ],
+  "items": {
+    "kick": {
+      "name": "Trống kick",
+      "category": "Trống",
+      "tags": [
+        "trống kick",
+        "kick",
+        "trống",
+        "nhịp"
+      ],
+      "description": "Nhấn nhịp từ khoá"
+    },
+    "kick_2": {
+      "name": "Trống kick 2",
+      "category": "Trống",
+      "tags": [
+        "trống kick 2",
+        "kick",
+        "trống"
+      ],
+      "description": "Nhấn nhịp"
+    },
+    "snare": {
+      "name": "Trống snare",
+      "category": "Trống",
+      "tags": [
+        "trống snare",
+        "snare",
+        "trống"
+      ],
+      "description": "Nhấn chữ"
+    },
+    "clap": {
+      "name": "Vỗ tay đơn",
+      "category": "Trống",
+      "tags": [
+        "vỗ tay đơn",
+        "clap"
+      ],
+      "description": "Pop hero vui"
+    },
+    "clap_2": {
+      "name": "Vỗ tay đơn 2",
+      "category": "Trống",
+      "tags": [
+        "vỗ tay đơn 2",
+        "clap"
+      ],
+      "description": "Pop hero vui"
+    },
+    "drum_roll": {
+      "name": "Trống dồn",
+      "category": "Trống",
+      "tags": [
+        "trống dồn",
+        "drum roll",
+        "hồi hộp"
+      ],
+      "description": "Chuẩn bị công bố (2s)"
+    },
+    "tom_hits": {
+      "name": "Trống trận",
+      "category": "Trống",
+      "tags": [
+        "trống trận",
+        "epic"
+      ],
+      "description": "Epic, tuyên bố"
+    },
+    "cymbal_crash": {
+      "name": "Chập chõa",
+      "category": "Trống",
+      "tags": [
+        "chập chõa",
+        "crash"
+      ],
+      "description": "Mở đầu đoạn mới"
+    },
+    "tape_stop": {
+      "name": "Dừng băng",
+      "category": "Trống",
+      "tags": [
+        "dừng băng",
+        "tape stop",
+        "khựng"
+      ],
+      "description": "Khựng lại, 'nhưng mà…'"
+    },
+    "record_scratch": {
+      "name": "Kéo đĩa",
+      "category": "Trống",
+      "tags": [
+        "kéo đĩa",
+        "scratch",
+        "cắt ngang",
+        "khoan đã"
+      ],
+      "description": "Phủ định bất ngờ, 'khoan đã'"
+    },
+    "vinyl_rewind": {
+      "name": "Tua đĩa than",
+      "category": "Trống",
+      "tags": [
+        "tua đĩa than",
+        "tua lại",
+        "rewind"
+      ],
+      "description": "Quay về quá khứ, 'trước đây'"
+    }
+  }
+}
