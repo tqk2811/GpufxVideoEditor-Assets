@@ -332,7 +332,10 @@ def animation_presets():
     presets = {}
     for path in sorted(ANIMATIONS.glob("*/pack.json")):
         source = json.loads(path.read_text(encoding="utf-8"))
-        presets.update({f"{source['id']}/{item['id']}": item["kind"] for item in source["items"]})
+        # pack.json lists the item ids; the kind of each one is in items/<id>.json
+        for item_id in source["items"]:
+            item = json.loads((path.parent / "items" / f"{item_id}.json").read_text(encoding="utf-8"))
+            presets[f"{source['id']}/{item_id}"] = item["kind"]
     return presets
 
 
