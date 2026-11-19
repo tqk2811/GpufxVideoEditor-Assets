@@ -25,6 +25,10 @@ import sys
 import zipfile
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pack_i18n import i18n_entries  # noqa: E402
+
+ROOT = Path(__file__).resolve().parent.parent
 FIXED_TIME = (1980, 1, 1, 0, 0, 0)
 BUNDLE_NAME = "audio-packs.zip"
 ID_PATTERN = re.compile(r"^[a-z0-9._-]+$")
@@ -221,6 +225,8 @@ def write_zip(target, manifest, items):
         ("LICENSE.txt", LICENSE_TEXT),
         ("NOTICE.txt", NOTICE_TEXT),
     ]
+    # i18n/<language>.json from audio/<pack id>/i18n/, keyed by item id (see scripts/pack_i18n.py).
+    text_files += sorted(i18n_entries(ROOT / "audio" / manifest["id"], item_ids={item["id"] for item, _ in items}).items())
     temporary = target.with_suffix(".zip.tmp")
     with zipfile.ZipFile(temporary, "w") as archive:
         def add(entry_name, data, compress):

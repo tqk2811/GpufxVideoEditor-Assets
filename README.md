@@ -219,6 +219,28 @@ spoken, upcoming and emphasised words) is filled in, though the editor does not 
 only hints; the editor picks the first one installed. Styles that need shaders, particles, textures,
 blending or per-character motion are left out; [docs/Backlog-vi.md](docs/Backlog-vi.md) lists them.
 
+## Translations
+
+A pack can carry translations in `i18n/<language>.json` at its root, next to `manifest.json` or `pack.json`;
+the Vietnamese ones are `i18n/vi.json`. The files never change the original manifests or item files, and
+every field is optional:
+
+```json
+{
+  "name": "...", "description": "...", "tags": ["..."],
+  "params": { "<param name>": { "label": "...", "description": "..." } },
+  "items": { "<item id>": { "name": "...", "description": "...", "category": "...", "tags": ["..."] } }
+}
+```
+
+`params` is for the effect packs (the names of the manifest `params`). `items` is for the packs with
+several items, keyed by the id the pack gives each item: the file name of `animations/<pack>/items/<id>.json`
+for the clip animations, the `id` of the item in `pack.json` for the text and subtitle styles, the `id` of
+the sticker (`stickers/<pack>/i18n/`; the Fluent Emoji pack, built by `scripts/pack_stickers.py`, keeps its
+file in `stickers/avs-stickers/i18n/`) and the `name` of the entry in the AI Video Studio catalog for the
+sounds and music (`audio/<pack id>/i18n/`, for example `audio/avs-sfx-ui/i18n/vi.json`). The pack scripts
+copy each file into the zip as `i18n/<language>.json` and check it with `scripts/pack_i18n.py`.
+
 ## License
 
 The repository is [MIT](LICENSE). Each package carries `LICENSE.txt` with the full text of every licence

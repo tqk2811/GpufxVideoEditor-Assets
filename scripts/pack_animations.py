@@ -28,6 +28,9 @@ import sys
 import zipfile
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pack_i18n import i18n_entries  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "animations"
 SPDX = {
@@ -301,6 +304,8 @@ def write_zip(target, folder, manifest, items):
     for item in items:
         shipped = {name: value for name, value in item.items() if name != "description"}
         entries[f"items/{item['id']}.json"] = json.dumps(shipped, ensure_ascii=False, indent=2) + "\n"
+    # i18n/<language>.json next to pack.json: translations keyed by item id, shipped as they are.
+    entries.update(i18n_entries(folder, item_ids=set(manifest["items"])))
     target.parent.mkdir(parents=True, exist_ok=True)
     temporary = target.with_suffix(".zip.tmp")
     with zipfile.ZipFile(temporary, "w") as archive:

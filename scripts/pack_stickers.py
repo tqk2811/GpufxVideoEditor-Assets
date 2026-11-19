@@ -28,6 +28,9 @@ import sys
 import zipfile
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pack_i18n import i18n_entries  # noqa: E402
+
 FIXED_TIME = (1980, 1, 1, 0, 0, 0)
 ID_PATTERN = re.compile(r"^[a-z0-9._-]+$")
 FORMAT = 1  # same value as the audio packs written by pack_audio.py
@@ -197,14 +200,17 @@ def validate(items):
         png_size(source.read_bytes(), source.name)
 
 
-def write_zip(target, manifest, items, license_text=LICENSE_TEXT, notice_text=NOTICE_TEXT):
+def write_zip(target, manifest, items, license_text=LICENSE_TEXT, notice_text=NOTICE_TEXT, i18n_folder=None):
     """Writes a sticker zip; each item comes with its image as a path or as bytes. The other sticker
-    scripts (stickers/noto-stickers/generate.py, stickers/tqk2811-stickers/generate.py) share this writer."""
+    scripts (stickers/noto-stickers/generate.py, stickers/tqk2811-stickers/generate.py) share this writer.
+    i18n_folder holds i18n/<language>.json (default stickers/<pack id>/), shipped as i18n/<language>.json."""
     text_files = [
         ("manifest.json", json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"),
         ("LICENSE.txt", license_text.replace("\r\n", "\n")),
         ("NOTICE.txt", notice_text.replace("\r\n", "\n")),
     ]
+    folder = i18n_folder or Path(__file__).resolve().parent.parent / "stickers" / manifest["id"]
+    text_files += sorted(i18n_entries(folder, item_ids={item["id"] for item, _ in items}).items())
     temporary = target.with_suffix(".zip.tmp")
     with zipfile.ZipFile(temporary, "w") as archive:
         def add(entry_name, data, compress):
