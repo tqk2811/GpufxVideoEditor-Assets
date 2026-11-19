@@ -1,0 +1,15 @@
+{
+  "id": "float",
+  "name": "Float",
+  "kind": "loop",
+  "default_duration": 2.0,
+  "curve": {
+    "tracks": {
+      "dy": [
+        { "t": 0, "value": 0, "ease": "inOutSine" },
+        { "t": 0.5, "value": -0.02, "ease": "inOutSine" },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

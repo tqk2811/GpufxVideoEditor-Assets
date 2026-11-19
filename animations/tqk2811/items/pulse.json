@@ -1,0 +1,15 @@
+{
+  "id": "pulse",
+  "name": "Pulse",
+  "kind": "loop",
+  "default_duration": 1.0,
+  "curve": {
+    "tracks": {
+      "scale": [
+        { "t": 0, "value": 1, "ease": "inOutSine" },
+        { "t": 0.5, "value": 1.08, "ease": "inOutSine" },
+        { "t": 1, "value": 1 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "char_fall_out",
+  "name": "Letters fall",
+  "kind": "out",
+  "default_duration": 0.9,
+  "applies_to": ["text"],
+  "per_unit": {
+    "unit": "char",
+    "stagger": 0.6,
+    "curve": {
+      "tracks": {
+        "dy": [
+          { "t": 0, "value": 0, "ease": "inCubic" },
+          { "t": 1, "value": 0.8 }
+        ],
+        "opacity": [
+          { "t": 0.5, "value": 1 },
+          { "t": 1, "value": 0 }
+        ]
+      }
+    }
+  }
+}

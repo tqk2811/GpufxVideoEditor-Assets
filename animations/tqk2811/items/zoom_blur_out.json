@@ -1,0 +1,22 @@
+{
+  "id": "zoom_blur_out",
+  "name": "Zoom blur out",
+  "kind": "out",
+  "default_duration": 0.6,
+  "curve": {
+    "tracks": {
+      "scale": [
+        { "t": 0, "value": 1, "ease": "inCubic" },
+        { "t": 1, "value": 1.8 }
+      ],
+      "blur": [
+        { "t": 0, "value": 0, "ease": "inCubic" },
+        { "t": 1, "value": 0.02 }
+      ],
+      "opacity": [
+        { "t": 0.6, "value": 1 },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

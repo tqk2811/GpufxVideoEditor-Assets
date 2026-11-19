@@ -1,0 +1,22 @@
+{
+  "id": "blur_zoom",
+  "name": "Blur zoom",
+  "kind": "in",
+  "default_duration": 0.35,
+  "curve": {
+    "tracks": {
+      "scale": [
+        { "t": 0, "value": 1.7, "ease": "outCubic" },
+        { "t": 1, "value": 1 }
+      ],
+      "blur": [
+        { "t": 0, "value": 0.0125, "ease": "outCubic" },
+        { "t": 1, "value": 0 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 0 },
+        { "t": 0.285714, "value": 1 }
+      ]
+    }
+  }
+}

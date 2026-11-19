@@ -1,0 +1,13 @@
+{
+  "id": "wipe_reveal_in",
+  "name": "Wipe reveal (left to right)",
+  "kind": "in",
+  "default_duration": 0.8,
+  "effect": {
+    "package": "io.github.tqk2811.linear-wipe",
+    "params": {
+      "angle": 0,
+      "softness": 0.08
+    }
+  }
+}

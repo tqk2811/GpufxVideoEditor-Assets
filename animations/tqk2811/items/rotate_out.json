@@ -1,0 +1,22 @@
+{
+  "id": "rotate_out",
+  "name": "Rotate out",
+  "kind": "out",
+  "default_duration": 0.6,
+  "curve": {
+    "tracks": {
+      "rotation": [
+        { "t": 0, "value": 0, "ease": "inCubic" },
+        { "t": 1, "value": 180 }
+      ],
+      "scale": [
+        { "t": 0, "value": 1, "ease": "inCubic" },
+        { "t": 1, "value": 0.3 }
+      ],
+      "opacity": [
+        { "t": 0.7, "value": 1 },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

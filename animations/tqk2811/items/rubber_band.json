@@ -1,0 +1,28 @@
+{
+  "id": "rubber_band",
+  "name": "Rubber band",
+  "kind": "loop",
+  "default_duration": 1.0,
+  "curve": {
+    "tracks": {
+      "scaleX": [
+        { "t": 0, "value": 1, "ease": "easeOut" },
+        { "t": 0.3, "value": 1.25, "ease": "easeOut" },
+        { "t": 0.4, "value": 0.75, "ease": "easeOut" },
+        { "t": 0.5, "value": 1.15, "ease": "easeOut" },
+        { "t": 0.65, "value": 0.95, "ease": "easeOut" },
+        { "t": 0.75, "value": 1.05, "ease": "easeOut" },
+        { "t": 1, "value": 1 }
+      ],
+      "scaleY": [
+        { "t": 0, "value": 1, "ease": "easeOut" },
+        { "t": 0.3, "value": 0.75, "ease": "easeOut" },
+        { "t": 0.4, "value": 1.25, "ease": "easeOut" },
+        { "t": 0.5, "value": 0.85, "ease": "easeOut" },
+        { "t": 0.65, "value": 1.05, "ease": "easeOut" },
+        { "t": 0.75, "value": 0.95, "ease": "easeOut" },
+        { "t": 1, "value": 1 }
+      ]
+    }
+  }
+}

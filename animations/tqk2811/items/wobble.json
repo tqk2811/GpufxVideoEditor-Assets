@@ -1,0 +1,28 @@
+{
+  "id": "wobble",
+  "name": "Wobble",
+  "kind": "loop",
+  "default_duration": 1.2,
+  "curve": {
+    "tracks": {
+      "dx": [
+        { "t": 0, "value": 0, "ease": "inOutSine" },
+        { "t": 0.15, "value": -0.05, "ease": "inOutSine" },
+        { "t": 0.3, "value": 0.04, "ease": "inOutSine" },
+        { "t": 0.45, "value": -0.03, "ease": "inOutSine" },
+        { "t": 0.6, "value": 0.02, "ease": "inOutSine" },
+        { "t": 0.75, "value": -0.01, "ease": "inOutSine" },
+        { "t": 1, "value": 0 }
+      ],
+      "rotation": [
+        { "t": 0, "value": 0, "ease": "inOutSine" },
+        { "t": 0.15, "value": -5, "ease": "inOutSine" },
+        { "t": 0.3, "value": 3, "ease": "inOutSine" },
+        { "t": 0.45, "value": -3, "ease": "inOutSine" },
+        { "t": 0.6, "value": 2, "ease": "inOutSine" },
+        { "t": 0.75, "value": -1, "ease": "inOutSine" },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

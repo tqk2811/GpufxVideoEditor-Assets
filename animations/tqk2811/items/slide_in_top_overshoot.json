@@ -1,0 +1,18 @@
+{
+  "id": "slide_in_top_overshoot",
+  "name": "Slide in from the top (overshoot)",
+  "kind": "in",
+  "default_duration": 0.7,
+  "curve": {
+    "tracks": {
+      "dy": [
+        { "t": 0, "value": -0.6, "ease": {"backOut": {"amplitude": 1.6}} },
+        { "t": 1, "value": 0 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 0 },
+        { "t": 0.25, "value": 1 }
+      ]
+    }
+  }
+}

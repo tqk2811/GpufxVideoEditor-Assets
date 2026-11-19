@@ -1,0 +1,19 @@
+{
+  "id": "typewriter",
+  "name": "Typewriter",
+  "kind": "in",
+  "default_duration": 1.2,
+  "applies_to": ["text"],
+  "per_unit": {
+    "unit": "char",
+    "stagger": 0.95,
+    "curve": {
+      "tracks": {
+        "opacity": [
+          { "t": 0, "value": 0, "ease": "hold" },
+          { "t": 0.02, "value": 1 }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "jitter",
+  "name": "Jitter",
+  "kind": "loop",
+  "default_duration": 0.4,
+  "curve": {
+    "tracks": {
+      "dx": [
+        { "t": 0, "value": 0, "ease": "hold" },
+        { "t": 0.25, "value": 0.006, "ease": "hold" },
+        { "t": 0.5, "value": -0.004, "ease": "hold" },
+        { "t": 0.75, "value": 0.003, "ease": "hold" },
+        { "t": 1, "value": 0 }
+      ],
+      "dy": [
+        { "t": 0, "value": 0.004, "ease": "hold" },
+        { "t": 0.25, "value": -0.005, "ease": "hold" },
+        { "t": 0.5, "value": 0.002, "ease": "hold" },
+        { "t": 0.75, "value": -0.003, "ease": "hold" },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

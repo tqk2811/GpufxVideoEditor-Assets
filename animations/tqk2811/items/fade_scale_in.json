@@ -1,0 +1,18 @@
+{
+  "id": "fade_scale_in",
+  "name": "Fade and scale in",
+  "kind": "in",
+  "default_duration": 0.5,
+  "curve": {
+    "tracks": {
+      "scale": [
+        { "t": 0, "value": 0.85, "ease": "outCubic" },
+        { "t": 1, "value": 1 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 0, "ease": "outSine" },
+        { "t": 1, "value": 1 }
+      ]
+    }
+  }
+}

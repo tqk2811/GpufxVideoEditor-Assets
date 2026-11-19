@@ -1,0 +1,23 @@
+{
+  "id": "word_zoom_out",
+  "name": "Words zoom away",
+  "kind": "out",
+  "default_duration": 0.8,
+  "applies_to": ["text"],
+  "per_unit": {
+    "unit": "word",
+    "stagger": 0.5,
+    "curve": {
+      "tracks": {
+        "scale": [
+          { "t": 0, "value": 1, "ease": "inCubic" },
+          { "t": 1, "value": 1.8 }
+        ],
+        "opacity": [
+          { "t": 0.4, "value": 1 },
+          { "t": 1, "value": 0 }
+        ]
+      }
+    }
+  }
+}

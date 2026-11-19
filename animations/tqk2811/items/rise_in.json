@@ -1,0 +1,18 @@
+{
+  "id": "rise_in",
+  "name": "Rise in",
+  "kind": "in",
+  "default_duration": 0.5,
+  "curve": {
+    "tracks": {
+      "dy": [
+        { "t": 0, "value": 0.25, "ease": {"backOut": {"amplitude": 1.4}} },
+        { "t": 1, "value": 0 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 0 },
+        { "t": 0.3, "value": 1 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "shake_y",
+  "name": "Shake (vertical)",
+  "kind": "loop",
+  "default_duration": 0.6,
+  "curve": {
+    "tracks": {
+      "dy": [
+        { "t": 0, "value": 0, "ease": "inOutSine" },
+        { "t": 0.125, "value": -0.02, "ease": "inOutSine" },
+        { "t": 0.375, "value": 0.02, "ease": "inOutSine" },
+        { "t": 0.625, "value": -0.02, "ease": "inOutSine" },
+        { "t": 0.875, "value": 0.02, "ease": "inOutSine" },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

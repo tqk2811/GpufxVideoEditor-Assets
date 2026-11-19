@@ -1,0 +1,23 @@
+{
+  "id": "word_pop",
+  "name": "Words pop",
+  "kind": "in",
+  "default_duration": 0.8,
+  "applies_to": ["text"],
+  "per_unit": {
+    "unit": "word",
+    "stagger": 0.6,
+    "curve": {
+      "tracks": {
+        "scale": [
+          { "t": 0, "value": 0.02, "ease": {"backOut": {"amplitude": 2}} },
+          { "t": 1, "value": 1 }
+        ],
+        "opacity": [
+          { "t": 0, "value": 0 },
+          { "t": 0.3, "value": 1 }
+        ]
+      }
+    }
+  }
+}

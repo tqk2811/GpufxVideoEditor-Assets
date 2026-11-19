@@ -1,0 +1,20 @@
+{
+  "id": "breathe",
+  "name": "Breathe",
+  "kind": "loop",
+  "default_duration": 3.0,
+  "curve": {
+    "tracks": {
+      "scale": [
+        { "t": 0, "value": 1, "ease": "inOutSine" },
+        { "t": 0.5, "value": 1.04, "ease": "inOutSine" },
+        { "t": 1, "value": 1 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 1, "ease": "inOutSine" },
+        { "t": 0.5, "value": 0.85, "ease": "inOutSine" },
+        { "t": 1, "value": 1 }
+      ]
+    }
+  }
+}

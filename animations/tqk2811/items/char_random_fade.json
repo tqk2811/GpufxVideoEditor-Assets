@@ -1,0 +1,24 @@
+{
+  "id": "char_random_fade",
+  "name": "Letters fade in at random",
+  "kind": "in",
+  "default_duration": 1.0,
+  "applies_to": ["text"],
+  "per_unit": {
+    "unit": "char",
+    "order": "random",
+    "stagger": 0.7,
+    "curve": {
+      "tracks": {
+        "opacity": [
+          { "t": 0, "value": 0, "ease": "outSine" },
+          { "t": 1, "value": 1 }
+        ],
+        "dy": [
+          { "t": 0, "value": -0.15, "ease": "outCubic" },
+          { "t": 1, "value": 0 }
+        ]
+      }
+    }
+  }
+}

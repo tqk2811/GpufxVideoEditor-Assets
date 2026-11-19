@@ -1,0 +1,22 @@
+{
+  "id": "roll_in",
+  "name": "Roll in",
+  "kind": "in",
+  "default_duration": 0.8,
+  "curve": {
+    "tracks": {
+      "dx": [
+        { "t": 0, "value": -0.6, "ease": "outCubic" },
+        { "t": 1, "value": 0 }
+      ],
+      "rotation": [
+        { "t": 0, "value": -360, "ease": "outCubic" },
+        { "t": 1, "value": 0 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 0 },
+        { "t": 0.25, "value": 1 }
+      ]
+    }
+  }
+}

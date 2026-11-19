@@ -1,0 +1,18 @@
+{
+  "id": "elastic_in",
+  "name": "Elastic in",
+  "kind": "in",
+  "default_duration": 0.9,
+  "curve": {
+    "tracks": {
+      "scale": [
+        { "t": 0, "value": 0.02, "ease": "elastic" },
+        { "t": 1, "value": 1 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 0 },
+        { "t": 0.1, "value": 1 }
+      ]
+    }
+  }
+}

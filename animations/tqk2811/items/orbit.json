@@ -1,0 +1,24 @@
+{
+  "id": "orbit",
+  "name": "Small orbit",
+  "kind": "loop",
+  "default_duration": 2.0,
+  "curve": {
+    "tracks": {
+      "dx": [
+        { "t": 0, "value": 0.015, "ease": "outSine" },
+        { "t": 0.25, "value": 0, "ease": "inSine" },
+        { "t": 0.5, "value": -0.015, "ease": "outSine" },
+        { "t": 0.75, "value": 0, "ease": "inSine" },
+        { "t": 1, "value": 0.015 }
+      ],
+      "dy": [
+        { "t": 0, "value": 0, "ease": "inSine" },
+        { "t": 0.25, "value": 0.015, "ease": "outSine" },
+        { "t": 0.5, "value": 0, "ease": "inSine" },
+        { "t": 0.75, "value": -0.015, "ease": "outSine" },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

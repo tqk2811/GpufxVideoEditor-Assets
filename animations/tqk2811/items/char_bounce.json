@@ -1,0 +1,28 @@
+{
+  "id": "char_bounce",
+  "name": "Letters bounce",
+  "kind": "loop",
+  "default_duration": 1.2,
+  "applies_to": ["text"],
+  "per_unit": {
+    "unit": "char",
+    "stagger": 0.5,
+    "curve": {
+      "tracks": {
+        "dy": [
+          { "t": 0, "value": 0, "ease": "outCubic" },
+          { "t": 0.25, "value": -0.35, "ease": "inCubic" },
+          { "t": 0.5, "value": 0 },
+          { "t": 1, "value": 0 }
+        ],
+        "scaleY": [
+          { "t": 0, "value": 1 },
+          { "t": 0.45, "value": 1, "ease": "outCubic" },
+          { "t": 0.5, "value": 0.85, "ease": "outCubic" },
+          { "t": 0.6, "value": 1 },
+          { "t": 1, "value": 1 }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "heartbeat",
+  "name": "Heartbeat",
+  "kind": "loop",
+  "default_duration": 1.2,
+  "curve": {
+    "tracks": {
+      "scale": [
+        { "t": 0, "value": 1, "ease": "easeOut" },
+        { "t": 0.12, "value": 1.15, "ease": "easeIn" },
+        { "t": 0.24, "value": 1, "ease": "easeOut" },
+        { "t": 0.36, "value": 1.1, "ease": "easeIn" },
+        { "t": 0.5, "value": 1 }
+      ]
+    }
+  }
+}

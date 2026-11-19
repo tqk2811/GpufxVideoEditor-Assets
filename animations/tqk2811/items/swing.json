@@ -1,0 +1,16 @@
+{
+  "id": "swing",
+  "name": "Swing",
+  "kind": "loop",
+  "default_duration": 1.6,
+  "curve": {
+    "tracks": {
+      "rotation": [
+        { "t": 0, "value": 0, "ease": "inOutSine" },
+        { "t": 0.25, "value": 8, "ease": "inOutSine" },
+        { "t": 0.75, "value": -8, "ease": "inOutSine" },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

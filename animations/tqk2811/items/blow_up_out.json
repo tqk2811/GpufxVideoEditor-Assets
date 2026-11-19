@@ -1,0 +1,18 @@
+{
+  "id": "blow_up_out",
+  "name": "Blow up out",
+  "kind": "out",
+  "default_duration": 0.45,
+  "curve": {
+    "tracks": {
+      "scale": [
+        { "t": 0, "value": 1, "ease": "inCubic" },
+        { "t": 1, "value": 2.2 }
+      ],
+      "opacity": [
+        { "t": 0.2, "value": 1 },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

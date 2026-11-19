@@ -1,0 +1,18 @@
+{
+  "id": "sink_out",
+  "name": "Sink out",
+  "kind": "out",
+  "default_duration": 0.5,
+  "curve": {
+    "tracks": {
+      "dy": [
+        { "t": 0, "value": 0, "ease": {"backIn": {"amplitude": 1.4}} },
+        { "t": 1, "value": 0.25 }
+      ],
+      "opacity": [
+        { "t": 0.6, "value": 1 },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

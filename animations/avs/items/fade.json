@@ -1,0 +1,14 @@
+{
+  "id": "fade",
+  "name": "Fade",
+  "kind": "in",
+  "default_duration": 0.25,
+  "curve": {
+    "tracks": {
+      "opacity": [
+        { "t": 0, "value": 0, "ease": "outCubic" },
+        { "t": 1, "value": 1 }
+      ]
+    }
+  }
+}

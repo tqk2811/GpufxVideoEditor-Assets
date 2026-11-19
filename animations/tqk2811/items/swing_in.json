@@ -1,0 +1,21 @@
+{
+  "id": "swing_in",
+  "name": "Swing in",
+  "kind": "in",
+  "default_duration": 0.9,
+  "curve": {
+    "tracks": {
+      "rotation": [
+        { "t": 0, "value": 35, "ease": "inOutSine" },
+        { "t": 0.3, "value": -20, "ease": "inOutSine" },
+        { "t": 0.55, "value": 10, "ease": "inOutSine" },
+        { "t": 0.8, "value": -4, "ease": "inOutSine" },
+        { "t": 1, "value": 0 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 0 },
+        { "t": 0.15, "value": 1 }
+      ]
+    }
+  }
+}

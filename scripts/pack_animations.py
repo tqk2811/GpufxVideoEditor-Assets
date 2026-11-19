@@ -5,14 +5,18 @@
     py -I scripts/pack_animations.py -o out     # into out/
     py -I scripts/pack_animations.py --check    # only validate the sources
 
-Source: animations/<pack>/pack.json (id, name, version, items), LICENSE.txt and NOTICE.txt. Each zip
-has, at its root, manifest.json (format 1, type "clip-animation"), LICENSE.txt and NOTICE.txt. It is
-reproducible byte for byte (sorted entries, fixed timestamps). Standard library only.
+Source: animations/<pack>/pack.json (id, name, version, items: the item ids in order), one
+animations/<pack>/items/<id>.json per item, LICENSE.txt and NOTICE.txt. An item may carry a
+"description", which stays in the source and is left out of the zip. Each zip has, at its root,
+manifest.json (format 1, type "clip-animation", items = the ids), items/<id>.json, LICENSE.txt and
+NOTICE.txt. It is reproducible byte for byte (sorted entries, fixed timestamps). Standard library only.
 
 Before writing, the manifest is checked with the rules of the editor's strict reader
 (crates/d3d12-backend/src/clip_animation_pack.rs and engine::check_curve): known fields only, safe
 ids, kinds in/out/loop, 0 < default_duration <= 60, applies_to kinds, curve tracks with keyframes in
-rising t within 0..1 and finite values, known easings, an effect's package id and static parameters,
+rising t within 0..1 and finite values, known easings (with the ranges of power, elastic, bounce,
+steps and wave), the item files matching pack.json (id = file name, none missing, none unlisted,
+no duplicate), an effect's package id and static parameters,
 and per_unit (engine::per_unit::check_per_unit: only on text items, stagger or selector, no blur).
 """
 
@@ -41,6 +45,8 @@ PROPERTIES = ("dx", "dy", "scale", "scaleX", "scaleY", "rotation", "opacity", "b
 UNIT_EASES = ("linear", "hold", "easeIn", "easeOut", "easeInOut", "inCubic", "outCubic", "inSine",
               "outSine", "inOutSine", "outExpo", "elastic", "bounce")
 MAX_DEFAULT_DURATION = 60.0
+POWER_MODES = ("in", "out", "inOut")
+STEP_POSITIONS = ("start", "end", "both", "none")
 
 
 def fail(message):
@@ -62,6 +68,11 @@ def check_fields(where, obj, required, optional=()):
             fail(f"{where} has the unknown field '{name}'")
 
 
+def check_whole(where, name, value, low, high):
+    if not (isinstance(value, int) and not isinstance(value, bool) and low <= value <= high):
+        fail(f"{where}: {name} must be a whole number in {low}..{high}")
+
+
 def check_ease(where, ease):
     if isinstance(ease, str):
         if ease not in UNIT_EASES:
@@ -77,6 +88,43 @@ def check_ease(where, ease):
     elif name == "cubicBezier":
         if not (isinstance(value, list) and len(value) == 4 and all(finite(v) for v in value)):
             fail(f"{where}: cubicBezier needs 4 finite numbers")
+    elif name == "power":
+        # exponent > 0 (default 3), mode in / out / inOut (default in)
+        check_fields(f"{where} power", value, (), ("exponent", "mode"))
+        if "exponent" in value and not (finite(value["exponent"]) and value["exponent"] > 0):
+            fail(f"{where}: power exponent must be finite and > 0")
+        if value.get("mode", "in") not in POWER_MODES:
+            fail(f"{where}: power mode must be in, out or inOut")
+    elif name == "elastic":
+        # amplitude >= 1 (default 1), period > 0 (default 0.3); the bare string "elastic" takes the defaults
+        check_fields(f"{where} elastic", value, (), ("amplitude", "period"))
+        if "amplitude" in value and not (finite(value["amplitude"]) and value["amplitude"] >= 1):
+            fail(f"{where}: elastic amplitude must be finite and >= 1")
+        if "period" in value and not (finite(value["period"]) and value["period"] > 0):
+            fail(f"{where}: elastic period must be finite and > 0")
+    elif name == "bounce":
+        # bounces 1..20 (default 4), decay in (0, 1) (default 0.5); the bare string "bounce" takes the defaults
+        check_fields(f"{where} bounce", value, (), ("bounces", "decay"))
+        if "bounces" in value:
+            check_whole(where, "bounce bounces", value["bounces"], 1, 20)
+        if "decay" in value and not (finite(value["decay"]) and 0 < value["decay"] < 1):
+            fail(f"{where}: bounce decay must be finite and in (0, 1)")
+    elif name == "steps":
+        # count 1..1000 (default 4), position start / end / both / none (default end)
+        check_fields(f"{where} steps", value, (), ("count", "position"))
+        if "count" in value:
+            check_whole(where, "steps count", value["count"], 1, 1000)
+        if value.get("position", "end") not in STEP_POSITIONS:
+            fail(f"{where}: steps position must be start, end, both or none")
+    elif name == "wave":
+        # amplitude finite (default 0.1), cycles > 0 finite (default 2), decay >= 0 finite (default 0)
+        check_fields(f"{where} wave", value, (), ("amplitude", "cycles", "decay"))
+        if "amplitude" in value and not finite(value["amplitude"]):
+            fail(f"{where}: wave amplitude is not finite")
+        if "cycles" in value and not (finite(value["cycles"]) and value["cycles"] > 0):
+            fail(f"{where}: wave cycles must be finite and > 0")
+        if "decay" in value and not (finite(value["decay"]) and value["decay"] >= 0):
+            fail(f"{where}: wave decay must be finite and >= 0")
     else:
         fail(f"{where}: unknown ease '{name}'")
 
@@ -149,12 +197,14 @@ def check_per_unit(where, per_unit):
 
 
 def check_item(item):
-    check_fields("an item", item, ("id", "name", "kind", "default_duration"), ("curve", "applies_to", "effect", "per_unit"))
+    check_fields("an item", item, ("id", "name", "kind", "default_duration"), ("description", "curve", "applies_to", "effect", "per_unit"))
     where = f"item '{item['id']}'"
     if not isinstance(item["id"], str) or not SAFE_ID.match(item["id"]) or item["id"] in (".", ".."):
         fail(f"{where}: unsafe id")
     if not isinstance(item["name"], str) or not item["name"].strip():
         fail(f"{where}: empty name")
+    if "description" in item and not isinstance(item["description"], str):
+        fail(f"{where}: description must be a string")
     if item["kind"] not in KINDS:
         fail(f"{where}: kind '{item['kind']}' is not in, out or loop")
     duration = item["default_duration"]
@@ -176,42 +226,65 @@ def check_item(item):
         fail(f"{where}: an item without an effect or per_unit needs a curve")
 
 
-def check_manifest(manifest):
+def check_manifest(manifest, items):
     check_fields("the manifest", manifest, ("format", "type", "id", "name", "version", "license", "items"))
     if manifest["format"] != 1 or manifest["type"] != "clip-animation":
         fail("format must be 1 and type 'clip-animation'")
     if not SAFE_ID.match(manifest["id"]):
         fail("unsafe pack id")
     for name in ("name", "version"):
-        if not manifest[name].strip():
+        if not isinstance(manifest[name], str) or not manifest[name].strip():
             fail(f"empty {name}")
     check_fields("license", manifest["license"], ("spdx", "files"))
     if not manifest["license"]["spdx"].strip() or not manifest["license"]["files"]:
         fail("license.spdx and license.files must not be empty")
-    items = manifest["items"]
-    if not items:
-        fail("items is empty")
-    ids = [str(item.get("id", "")).lower() for item in items]
-    if len(set(ids)) != len(ids):
-        fail("an item id is used twice")
+    if not items or [item["id"] for item in items] != manifest["items"]:
+        fail("the items do not match the manifest ids")
     for item in items:
         check_item(item)
 
 
-def build_manifest(folder):
+def read_pack(folder):
+    """Read animations/<pack>/pack.json and items/<id>.json; return (manifest, items) with the strict layout checks."""
+    where = f"{folder.name}/pack.json"
     source = json.loads((folder / "pack.json").read_text(encoding="utf-8"))
-    check_fields(f"{folder.name}/pack.json", source, ("id", "name", "version", "items"))
+    check_fields(where, source, ("id", "name", "version", "items"))
     if source["id"] not in SPDX:
         fail(f"{folder.name}: no licence is known for the pack '{source['id']}'")
-    return {
+    ids = source["items"]
+    if not isinstance(ids, list) or not ids:
+        fail(f"{where}: items must be a non-empty array of item ids")
+    for item_id in ids:
+        if not isinstance(item_id, str) or not SAFE_ID.match(item_id) or item_id in (".", ".."):
+            fail(f"{where}: {item_id!r} is not a safe item id")
+    if len({item_id.lower() for item_id in ids}) != len(ids):
+        fail(f"{where}: an item id is listed twice")
+    items_dir = folder / "items"
+    if not items_dir.is_dir():
+        fail(f"{folder.name}: missing the items folder")
+    for entry in items_dir.iterdir():
+        if not entry.is_file() or entry.suffix != ".json" or entry.stem not in ids:
+            fail(f"{folder.name}/items/{entry.name} is not listed in pack.json (or is not an <id>.json file)")
+    items = []
+    for item_id in ids:
+        file = items_dir / f"{item_id}.json"
+        if not file.is_file():
+            fail(f"{folder.name}: item '{item_id}' has no items/{item_id}.json")
+        item = json.loads(file.read_text(encoding="utf-8"))
+        if not isinstance(item, dict) or item.get("id") != item_id:
+            fail(f"{folder.name}/items/{item_id}.json: the id field must equal the file name")
+        items.append(item)
+
+    manifest = {
         "format": 1,
         "type": "clip-animation",
         "id": source["id"],
         "name": source["name"],
         "version": source["version"],
         "license": {"spdx": SPDX[source["id"]], "files": ["LICENSE.txt", "NOTICE.txt"]},
-        "items": source["items"],
+        "items": ids,
     }
+    return manifest, items
 
 
 def pack_folders():
@@ -219,12 +292,15 @@ def pack_folders():
     return sorted(p.parent for p in SOURCE.glob("*/pack.json"))
 
 
-def write_zip(target, folder, manifest):
+def write_zip(target, folder, manifest, items):
     entries = {
         "manifest.json": json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         "LICENSE.txt": (folder / "LICENSE.txt").read_text(encoding="utf-8"),
         "NOTICE.txt": (folder / "NOTICE.txt").read_text(encoding="utf-8"),
     }
+    for item in items:
+        shipped = {name: value for name, value in item.items() if name != "description"}
+        entries[f"items/{item['id']}.json"] = json.dumps(shipped, ensure_ascii=False, indent=2) + "\n"
     target.parent.mkdir(parents=True, exist_ok=True)
     temporary = target.with_suffix(".zip.tmp")
     with zipfile.ZipFile(temporary, "w") as archive:
@@ -250,8 +326,8 @@ def main():
         for name in ("LICENSE.txt", "NOTICE.txt"):
             if not (folder / name).is_file():
                 fail(f"{folder.name}: missing {name}")
-        manifest = build_manifest(folder)
-        check_manifest(manifest)
+        manifest, items = read_pack(folder)
+        check_manifest(manifest, items)
         if manifest["id"].lower() in ids:
             fail(f"the pack id '{manifest['id']}' is used twice")
         ids.add(manifest["id"].lower())
@@ -259,7 +335,7 @@ def main():
             print(f"{manifest['id']}: {len(manifest['items'])} items ok")
             continue
         target = args.output / f"{manifest['id']}.zip"
-        write_zip(target, folder, manifest)
+        write_zip(target, folder, manifest, items)
         print(f"wrote {target} ({len(manifest['items'])} items)")
 
 

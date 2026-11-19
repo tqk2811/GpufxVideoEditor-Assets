@@ -1,0 +1,13 @@
+{
+  "id": "wipe_reveal_down_in",
+  "name": "Wipe reveal (top to bottom)",
+  "kind": "in",
+  "default_duration": 0.8,
+  "effect": {
+    "package": "io.github.tqk2811.linear-wipe",
+    "params": {
+      "angle": 90,
+      "softness": 0.08
+    }
+  }
+}

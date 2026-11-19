@@ -1,0 +1,19 @@
+{
+  "id": "bounce_out",
+  "name": "Bounce out",
+  "kind": "out",
+  "default_duration": 0.5,
+  "curve": {
+    "tracks": {
+      "scale": [
+        { "t": 0, "value": 1, "ease": "easeOut" },
+        { "t": 0.35, "value": 1.15, "ease": "inCubic" },
+        { "t": 1, "value": 0.02 }
+      ],
+      "opacity": [
+        { "t": 0.7, "value": 1 },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

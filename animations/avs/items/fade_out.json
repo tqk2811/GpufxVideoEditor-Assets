@@ -1,0 +1,14 @@
+{
+  "id": "fade_out",
+  "name": "Fade out",
+  "kind": "out",
+  "default_duration": 0.12,
+  "curve": {
+    "tracks": {
+      "opacity": [
+        { "t": 0, "value": 1, "ease": "inCubic" },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

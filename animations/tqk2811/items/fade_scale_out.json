@@ -1,0 +1,18 @@
+{
+  "id": "fade_scale_out",
+  "name": "Fade and scale out",
+  "kind": "out",
+  "default_duration": 0.5,
+  "curve": {
+    "tracks": {
+      "scale": [
+        { "t": 0, "value": 1, "ease": "inCubic" },
+        { "t": 1, "value": 0.85 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 1, "ease": "inSine" },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

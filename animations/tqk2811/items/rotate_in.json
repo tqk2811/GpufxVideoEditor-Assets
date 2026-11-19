@@ -1,0 +1,22 @@
+{
+  "id": "rotate_in",
+  "name": "Rotate in",
+  "kind": "in",
+  "default_duration": 0.6,
+  "curve": {
+    "tracks": {
+      "rotation": [
+        { "t": 0, "value": -180, "ease": "outCubic" },
+        { "t": 1, "value": 0 }
+      ],
+      "scale": [
+        { "t": 0, "value": 0.3, "ease": "outCubic" },
+        { "t": 1, "value": 1 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 0 },
+        { "t": 0.3, "value": 1 }
+      ]
+    }
+  }
+}

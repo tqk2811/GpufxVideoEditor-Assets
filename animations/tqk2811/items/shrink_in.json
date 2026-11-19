@@ -1,0 +1,18 @@
+{
+  "id": "shrink_in",
+  "name": "Shrink in",
+  "kind": "in",
+  "default_duration": 0.5,
+  "curve": {
+    "tracks": {
+      "scale": [
+        { "t": 0, "value": 2.5, "ease": "outCubic" },
+        { "t": 1, "value": 1 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 0 },
+        { "t": 0.4, "value": 1 }
+      ]
+    }
+  }
+}

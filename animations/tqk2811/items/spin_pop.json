@@ -1,0 +1,18 @@
+{
+  "id": "spin_pop",
+  "name": "Spin pop",
+  "kind": "in",
+  "default_duration": 0.7,
+  "curve": {
+    "tracks": {
+      "rotation": [
+        { "t": 0, "value": 360, "ease": "outCubic" },
+        { "t": 1, "value": 0 }
+      ],
+      "scale": [
+        { "t": 0, "value": 0.02, "ease": {"backOut": {"amplitude": 1.70158}} },
+        { "t": 1, "value": 1 }
+      ]
+    }
+  }
+}

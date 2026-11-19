@@ -141,16 +141,20 @@ py -I scripts/pack_stickers_drawn_animated.py -o dist-stickers [--images <folder
 ## Clip animation packs
 
 Keyframe data for the editor's `clip-animation` packs. Each pack has its source in `animations/<pack>/`:
-`pack.json`, `LICENSE.txt` and `NOTICE.txt`. `scripts/pack_animations.py` checks every pack with the
-rules of the editor's reader and builds the zips:
+`pack.json` (id, name, version and `items`, the item ids in order), one `items/<id>.json` per item,
+`LICENSE.txt` and `NOTICE.txt`. The id of an item is its file name; a listed id without a file, a file
+that is not listed and a duplicate id are errors. `scripts/pack_animations.py` checks every pack with the
+rules of the editor's reader (including the ease forms `power`, `elastic`, `bounce`, `steps` and `wave`
+with their parameter ranges) and builds the zips:
 
 ```sh
 py -I scripts/pack_animations.py           # -> dist/<pack id>.zip
 py -I scripts/pack_animations.py --check   # validate only
 ```
 
-Each zip has `manifest.json` (format 1, type `clip-animation`), `LICENSE.txt` and `NOTICE.txt`, and is
-reproducible byte for byte.
+Each zip has `manifest.json` (format 1, type `clip-animation`, `items` = the item ids), `items/<id>.json`,
+`LICENSE.txt` and `NOTICE.txt`, and is reproducible byte for byte. An item may carry a `description` in
+the source; it is left out of the zip.
 
 | Zip | Items | Licence |
 |-----|-------|---------|

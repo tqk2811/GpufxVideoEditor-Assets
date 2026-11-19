@@ -1,0 +1,22 @@
+{
+  "id": "roll_out",
+  "name": "Roll out",
+  "kind": "out",
+  "default_duration": 0.8,
+  "curve": {
+    "tracks": {
+      "dx": [
+        { "t": 0, "value": 0, "ease": "inCubic" },
+        { "t": 1, "value": 0.6 }
+      ],
+      "rotation": [
+        { "t": 0, "value": 0, "ease": "inCubic" },
+        { "t": 1, "value": 360 }
+      ],
+      "opacity": [
+        { "t": 0.7, "value": 1 },
+        { "t": 1, "value": 0 }
+      ]
+    }
+  }
+}

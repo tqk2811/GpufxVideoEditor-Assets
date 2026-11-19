@@ -1,0 +1,40 @@
+{
+  "id": "drop_bounce_in",
+  "name": "Drop and squash",
+  "kind": "in",
+  "default_duration": 1.0,
+  "curve": {
+    "tracks": {
+      "dy": [
+        { "t": 0, "value": -0.6, "ease": "inCubic" },
+        { "t": 0.45, "value": 0, "ease": "outCubic" },
+        { "t": 0.62, "value": -0.08, "ease": "inCubic" },
+        { "t": 0.8, "value": 0, "ease": "outCubic" },
+        { "t": 0.9, "value": -0.02, "ease": "inCubic" },
+        { "t": 1, "value": 0 }
+      ],
+      "scaleY": [
+        { "t": 0, "value": 1.1 },
+        { "t": 0.43, "value": 1.1, "ease": "outCubic" },
+        { "t": 0.5, "value": 0.8, "ease": "outCubic" },
+        { "t": 0.62, "value": 1.05, "ease": "inOutSine" },
+        { "t": 0.8, "value": 1, "ease": "outCubic" },
+        { "t": 0.84, "value": 0.93, "ease": "outCubic" },
+        { "t": 1, "value": 1 }
+      ],
+      "scaleX": [
+        { "t": 0, "value": 0.92 },
+        { "t": 0.43, "value": 0.92, "ease": "outCubic" },
+        { "t": 0.5, "value": 1.15, "ease": "outCubic" },
+        { "t": 0.62, "value": 0.97, "ease": "inOutSine" },
+        { "t": 0.8, "value": 1, "ease": "outCubic" },
+        { "t": 0.84, "value": 1.05, "ease": "outCubic" },
+        { "t": 1, "value": 1 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 0 },
+        { "t": 0.1, "value": 1 }
+      ]
+    }
+  }
+}

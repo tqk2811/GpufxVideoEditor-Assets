@@ -1,0 +1,18 @@
+{
+  "id": "flip_in_x",
+  "name": "Flip in (horizontal)",
+  "kind": "in",
+  "default_duration": 0.5,
+  "curve": {
+    "tracks": {
+      "scaleX": [
+        { "t": 0, "value": 0.02, "ease": "outCubic" },
+        { "t": 1, "value": 1 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 0 },
+        { "t": 0.2, "value": 1 }
+      ]
+    }
+  }
+}

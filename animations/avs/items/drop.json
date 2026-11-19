@@ -1,0 +1,18 @@
+{
+  "id": "drop",
+  "name": "Drop",
+  "kind": "in",
+  "default_duration": 0.3,
+  "curve": {
+    "tracks": {
+      "dy": [
+        { "t": 0, "value": -0.0703125, "ease": { "backOut": { "amplitude": 1.6 } } },
+        { "t": 1, "value": 0 }
+      ],
+      "opacity": [
+        { "t": 0, "value": 0 },
+        { "t": 0.333333, "value": 1 }
+      ]
+    }
+  }
+}

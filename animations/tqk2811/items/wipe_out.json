@@ -1,0 +1,13 @@
+{
+  "id": "wipe_out",
+  "name": "Wipe out (right to left)",
+  "kind": "out",
+  "default_duration": 0.8,
+  "effect": {
+    "package": "io.github.tqk2811.linear-wipe",
+    "params": {
+      "angle": 0,
+      "softness": 0.08
+    }
+  }
+}
