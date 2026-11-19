@@ -6,5 +6,5 @@ https://creativecommons.org/licenses/by/4.0/legalcode
 
 The images are the unmodified 512x512 animated WebP files of
 https://fonts.gstatic.com/s/e/notoemoji/latest/<code>/512.webp, renamed to ASCII file names after the
-Unicode name of each emoji; scripts/pack_stickers_noto_animated.py pins each one by its SHA-256. Names, tags and
+Unicode name of each emoji; stickers/noto-animated-stickers/generate.py pins each one by its SHA-256. Names, tags and
 categories (Emotions, Hands, Marks) are chosen for this pack. No endorsement by Google is implied.

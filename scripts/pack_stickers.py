@@ -199,7 +199,7 @@ def validate(items):
 
 def write_zip(target, manifest, items, license_text=LICENSE_TEXT, notice_text=NOTICE_TEXT):
     """Writes a sticker zip; each item comes with its image as a path or as bytes. The other sticker
-    scripts (pack_stickers_noto.py, pack_stickers_drawn.py) share this writer."""
+    scripts (stickers/noto-stickers/generate.py, stickers/tqk2811-stickers/generate.py) share this writer."""
     text_files = [
         ("manifest.json", json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"),
         ("LICENSE.txt", license_text.replace("\r\n", "\n")),

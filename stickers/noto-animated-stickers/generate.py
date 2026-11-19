@@ -1,7 +1,7 @@
 """Build the Animated Noto Emoji sticker pack (animated WebP) from the files Google publishes.
 
-    py -I scripts/pack_stickers_noto_animated.py --source <folder> --download   fetch the originals once
-    py -I scripts/pack_stickers_noto_animated.py --source <folder> -o dist-stickers
+    py -I stickers/noto-animated-stickers/generate.py --source <folder> --download   fetch the originals once
+    py -I stickers/noto-animated-stickers/generate.py --source <folder> -o dist-stickers
 
 Binary images are never committed to this repository. Animated Noto Emoji
 (https://googlefonts.github.io/noto-emoji-animation/) is licensed under CC BY 4.0: the FAQ of that page
@@ -27,11 +27,11 @@ import unicodedata
 import urllib.request
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts"))
 from pack_stickers import FORMAT, ID_PATTERN, fail, slugify, write_zip  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent.parent
-SOURCE_DIR = ROOT / "stickers" / "noto-animated-stickers"
+ROOT = Path(__file__).resolve().parents[2]
+SOURCE_DIR = Path(__file__).resolve().parent
 VERSION = "1.0.0"
 PACK_ID = "noto-animated-stickers"
 PACK_NAME = "Stickers: Animated Noto Emoji"

@@ -1,6 +1,6 @@
 """Build the Noto Emoji sticker pack (emotions, arrows and marks) from a checkout of googlefonts/noto-emoji.
 
-    py -I scripts/pack_stickers_noto.py --source <noto-emoji checkout> -o dist-stickers
+    py -I stickers/noto-stickers/generate.py --source <noto-emoji checkout> -o dist-stickers
 
 Binary images are never committed to this repository. This script reads `2D/png/512/emoji_u<code>.png`
 of a checkout of https://github.com/googlefonts/noto-emoji and writes `noto-stickers.zip`. The images
@@ -25,11 +25,11 @@ import sys
 import unicodedata
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts"))
 from pack_stickers import FORMAT, ID_PATTERN, fail, png_size, slugify, write_zip  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent.parent
-SOURCE_DIR = ROOT / "stickers" / "noto-stickers"
+ROOT = Path(__file__).resolve().parents[2]
+SOURCE_DIR = Path(__file__).resolve().parent
 VERSION = "1.0.0"
 PACK_ID = "noto-stickers"
 PACK_NAME = "Stickers: Noto Emoji"

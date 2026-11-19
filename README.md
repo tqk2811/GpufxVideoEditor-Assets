@@ -55,10 +55,10 @@ The licence and attribution of these packs are the MIT licence of AI Video Studi
 | Zip | Stickers | Licence | Script |
 |-----|----------|---------|--------|
 | `stickers.zip` | 107 Fluent Emoji (3D) | MIT (Microsoft) | `scripts/pack_stickers.py` |
-| `noto-stickers.zip` | 120 Noto Emoji: 59 emotions, 29 arrows, 32 marks | Apache-2.0 (Google) | `scripts/pack_stickers_noto.py` |
-| `tqk2811-stickers.zip` | 20 drawn here: 12 labels (Subscribe, Like, Share, Follow, Live, New, Sale...) and 8 frames and bubbles | MIT (original work) | `scripts/pack_stickers_drawn.py` |
-| `noto-animated-stickers.zip` | 46 Animated Noto Emoji (animated WebP, 512x512): 20 emotions, 7 hands, 19 marks | CC BY 4.0 (Google) | `scripts/pack_stickers_noto_animated.py` |
-| `tqk2811-animated-stickers.zip` | 24 animated stickers drawn here (animated WebP, 512x512): labels, marks, arrows, highlights and bubbles | MIT (original work) | `scripts/pack_stickers_drawn_animated.py` |
+| `noto-stickers.zip` | 120 Noto Emoji: 59 emotions, 29 arrows, 32 marks | Apache-2.0 (Google) | `stickers/noto-stickers/generate.py` |
+| `tqk2811-stickers.zip` | 20 drawn here: 12 labels (Subscribe, Like, Share, Follow, Live, New, Sale...) and 8 frames and bubbles | MIT (original work) | `stickers/tqk2811-stickers/generate.py` |
+| `noto-animated-stickers.zip` | 46 Animated Noto Emoji (animated WebP, 512x512): 20 emotions, 7 hands, 19 marks | CC BY 4.0 (Google) | `stickers/noto-animated-stickers/generate.py` |
+| `tqk2811-animated-stickers.zip` | 24 animated stickers drawn here (animated WebP, 512x512): labels, marks, arrows, highlights and bubbles | MIT (original work) | `stickers/tqk2811-animated-stickers/generate.py` |
 
 All five are format 1, type `sticker`, with items `id`, `file`, `name`, `tags` and `category`, and are
 reproducible byte for byte. The LICENSE.txt and NOTICE.txt of the Noto, animated Noto and both drawn packs are kept in
@@ -89,7 +89,7 @@ The images are not in this repository; the script reads a checkout at the commit
 `NOTO_COMMIT` (a sparse checkout of `2D/svg/LICENSE` and `2D/png/512/` is enough):
 
 ```sh
-py -I scripts/pack_stickers_noto.py --source <noto-emoji> -o dist-stickers
+py -I stickers/noto-stickers/generate.py --source <noto-emoji> -o dist-stickers
 ```
 
 Names, ids and tags come from the Unicode name of each emoji; the categories are `Emotions`, `Arrows`
@@ -104,13 +104,13 @@ unmodified 512x512 animated WebP files of `https://fonts.gstatic.com/s/e/notoemo
 its SHA-256 and stops on a mismatch. Standard library only; the zip is reproducible byte for byte.
 
 ```sh
-py -I scripts/pack_stickers_noto_animated.py --source <folder> --download   # once, fetches the originals
-py -I scripts/pack_stickers_noto_animated.py --source <folder> -o dist-stickers
+py -I stickers/noto-animated-stickers/generate.py --source <folder> --download   # once, fetches the originals
+py -I stickers/noto-animated-stickers/generate.py --source <folder> -o dist-stickers
 ```
 
 ### Labels and frames
 
-20 stickers drawn by `scripts/pack_stickers_drawn.py` with Pillow (`py -m pip install pillow`): labels
+20 stickers drawn by `stickers/tqk2811-stickers/generate.py` with Pillow (`py -m pip install pillow`): labels
 (`subscribe`, `subscribed`, `like`, `share`, `comment`, `follow`, `live`, `hot`, `click-here`,
 `link-in-bio`, `new`, `sale`) and frames whose middle is transparent (`frame-rounded`, `frame-dashed`,
 `frame-corners`, `frame-circle`, `frame-polaroid`, `frame-film`, `speech-bubble`, `thought-bubble`). The
@@ -118,12 +118,12 @@ words use Aileron Regular, the CC0 font built into Pillow. The zip is the same b
 same Pillow version.
 
 ```sh
-py -I scripts/pack_stickers_drawn.py -o dist-stickers [--images <folder to look at the PNG files>]
+py -I stickers/tqk2811-stickers/generate.py -o dist-stickers [--images <folder to look at the PNG files>]
 ```
 
 ### Animated labels and marks
 
-24 animated stickers drawn by `scripts/pack_stickers_drawn_animated.py` with Pillow, 512x512 with a
+24 animated stickers drawn by `stickers/tqk2811-animated-stickers/generate.py` with Pillow, 512x512 with a
 transparent background, 20 frames a second, each loop 1 to 3 seconds long and seamless (the last frame
 leads back to the first): `subscribe-click` (the button pulses, a cursor clicks it and it turns into
 Subscribed), `bell-ring`, `heart-beat`, `like-pop`, `arrow-right`, `arrow-left`, `arrow-up`,
@@ -135,7 +135,7 @@ Subscribed), `bell-ring`, `heart-beat`, `like-pop`, `arrow-right`, `arrow-left`,
 The zip is the same byte for byte with the same Pillow and libwebp.
 
 ```sh
-py -I scripts/pack_stickers_drawn_animated.py -o dist-stickers [--images <folder to look at the WebP files>]
+py -I stickers/tqk2811-animated-stickers/generate.py -o dist-stickers [--images <folder to look at the WebP files>]
 ```
 
 ## Clip animation packs

@@ -2092,7 +2092,7 @@ https://creativecommons.org/licenses/by/4.0/legalcode
 
 The images are the unmodified 512x512 animated WebP files of
 https://fonts.gstatic.com/s/e/notoemoji/latest/<code>/512.webp, renamed to ASCII file names after the
-Unicode name of each emoji; scripts/pack_stickers_noto_animated.py pins each one by its SHA-256. Names, tags and
+Unicode name of each emoji; stickers/noto-animated-stickers/generate.py pins each one by its SHA-256. Names, tags and
 categories (Emotions, Hands, Marks) are chosen for this pack. No endorsement by Google is implied.
 ```
 
@@ -2118,7 +2118,7 @@ Stickers: animated labels and marks (tqk2811)
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
 
-Original work: every frame is drawn by scripts/pack_stickers_drawn_animated.py with Pillow and stored
+Original work: every frame is drawn by stickers/tqk2811-animated-stickers/generate.py with Pillow and stored
 as an animated WebP. The words use Aileron Regular by Sora Sagano (dotcolon.net), the font built into
 Pillow, which is public domain (CC0 1.0). MIT License.
 ```
@@ -2131,7 +2131,7 @@ Stickers: labels and frames (tqk2811)
 Copyright (c) 2026 tqk2811
 https://github.com/tqk2811/GpufxVideoEditor-Assets
 
-Original work: every image is drawn by scripts/pack_stickers_drawn.py with Pillow. The words use
+Original work: every image is drawn by stickers/tqk2811-stickers/generate.py with Pillow. The words use
 Aileron Regular by Sora Sagano (dotcolon.net), the font built into Pillow, which is public domain
 (CC0 1.0). MIT License.
 ```

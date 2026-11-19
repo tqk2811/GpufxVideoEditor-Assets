@@ -1,6 +1,6 @@
 """Draw the tqk2811 sticker pack (labels such as Subscribe and Like, and frames) and zip it.
 
-    py -I scripts/pack_stickers_drawn.py -o dist-stickers
+    py -I stickers/tqk2811-stickers/generate.py -o dist-stickers
 
 Every image is drawn by this script with Pillow (pip install pillow): rounded boxes, simple icons and
 the words in Aileron Regular, the font built into Pillow (ImageFont.load_default, CC0), made bold with
@@ -21,11 +21,11 @@ try:
 except ImportError:
     sys.exit("error: Pillow is needed: py -m pip install pillow")
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts"))
 from pack_stickers import FORMAT, write_zip  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent.parent
-SOURCE_DIR = ROOT / "stickers" / "tqk2811-stickers"
+ROOT = Path(__file__).resolve().parents[2]
+SOURCE_DIR = Path(__file__).resolve().parent
 VERSION = "1.0.0"
 PACK_ID = "tqk2811-stickers"
 PACK_NAME = "Stickers: labels and frames"
