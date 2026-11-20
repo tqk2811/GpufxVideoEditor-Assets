@@ -73,6 +73,31 @@ def fail(message):
     sys.exit(f"error: {message}")
 
 
+# English description of a music track, by its mood; the catalog has none.
+MUSIC_DESCRIPTIONS = {
+    "acoustic_warm": "Warm acoustic guitar, 100 bpm: stories, family, food",
+    "ambient_calm": "Ambient pads and bells, 60 bpm, no drums: meditation, wellness, spa",
+    "cinematic_epic": "Strings, brass and taiko drums, 80 bpm: big statements, journeys, trailers",
+    "corporate": "Bright piano and guitar, 112 bpm: business, introductions, tutorials",
+    "corporate_upbeat": "Fresh corporate pop, 120 bpm: company, product and course intros",
+    "epic": "Strings and war drums, 90 bpm: vision, big statements",
+    "happy": "Ukulele and claps, 118 bpm: fun, good results, everyday life",
+    "hype": "High-energy EDM, 128 bpm: hooks, statements, recaps, closers",
+    "inspire": "Piano and strings, 96 bpm: inspiration, overcoming the odds",
+    "kids_playful": "Pizzicato and glockenspiel, 126 bpm: playful, kids, handy tips",
+    "lofi": "Lofi variation: nostalgia, chill",
+    "lofi_hiphop": "Lofi hip-hop, 84 bpm, boom-bap drums and vinyl: chill, study, daily vlogs",
+    "mellow": "Lofi electric piano, 80 bpm: mellow, relaxing, storytelling",
+    "news_bg": "News bed, 120 bpm, pulses and timpani: news, updates, analysis",
+    "piano_minimal": "Minimal piano, 90 bpm: confessions, emotion, reflection",
+    "real_estate_luxury": "Luxury deep house, 100 bpm: real estate, interiors, hotels",
+    "sad": "Sad piano, 70 bpm: pain, the past, failure",
+    "suspense": "Tense ostinato, 100 bpm: problems, risks, secrets",
+    "tech": "Electronic arpeggios, 110 bpm: behind the scenes, tools, AI, dashboards",
+    "tiktok_trap": "Trap, 140 bpm, 808s and hi-hat rolls: TikTok, quick hooks, youth",
+}
+
+
 def display_name(slug):
     return slug.replace("_", " ").replace("-", " ").strip().title()
 
@@ -180,6 +205,7 @@ def music_items(music_dir, stats):
             "id": slug,
             "file": f"audio/{source.name}",
             "name": display_name(slug),
+            **({"description": MUSIC_DESCRIPTIONS[mood]} if mood in MUSIC_DESCRIPTIONS else {}),
             "duration": duration,
             "tags": [mood] if mood else ["music"],
             "category": mood or "music",
