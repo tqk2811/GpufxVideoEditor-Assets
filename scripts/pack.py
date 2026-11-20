@@ -13,7 +13,8 @@ a fixed timestamp.
 --wrappers builds the editor wrapper zips of the gpufx effect packages. <inner zips root> holds the
 inner packages as produced by `gpufx pack`, laid out <root>/<group>/<name>.zip. A wrapper zip holds
 manifest.json, i18n/<code>.json and the inner zip as <name>.zip; it fails if the inner zip is missing
-or its manifest id differs from the wrapper id. Standard library only; run it with the `py` launcher on Windows.
+or its manifest id differs from the wrapper id
+(ignoring case), and checks the wrapper manifest and file names exactly as the editor does. Standard library only; run it with the `py` launcher on Windows.
 """
 
 import argparse
@@ -88,22 +89,86 @@ def read_text_lf(path):
     return path.read_bytes().replace(b"\r\n", b"\n")
 
 
+WRAPPER_KEYS = {"format", "type", "id", "version", "package", "tags"}
+WRAPPER_REQUIRED = WRAPPER_KEYS - {"tags"}
+MAX_ID_LENGTH = 128
+DEVICE_NAMES = {"CON", "PRN", "AUX", "NUL", "CONIN$", "CONOUT$"}
+
+
+def is_safe_id(text):
+    # As is_safe_id in crates/d3d12-backend/src/paths.rs of the editor.
+    if not text or len(text) > MAX_ID_LENGTH or text in (".", "..") or text.endswith("."):
+        return False
+    if not all(c.isascii() and (c.isalnum() or c in ".-_") for c in text):
+        return False
+    stem = text.split(".")[0].upper()
+    numbered = any(stem.startswith(prefix) and stem[3:] in tuple("123456789") + ("0",) for prefix in ("COM", "LPT"))
+    return stem not in DEVICE_NAMES and not numbered
+
+
+def language_code(file_name):
+    # As language_file_code in crates/gpufx-editor/src/i18n/pack.rs: <code>.json, the extension in
+    # any case, the code 1 to 32 ASCII letters, digits, '-' or '_'.
+    if len(file_name) < 5 or file_name[-5:].lower() != ".json":
+        return None
+    code = file_name[:-5]
+    ok = 0 < len(code) <= 32 and all(c.isascii() and (c.isalnum() or c in "-_") for c in code)
+    return code if ok else None
+
+
+def check_wrapper_manifest(where, manifest):
+    """Checks a wrapper manifest exactly as parse_wrapper_manifest of the editor does."""
+    if not isinstance(manifest, dict):
+        sys.exit(f"{where}: the manifest is not a JSON object")
+    keys = set(manifest)
+    if keys - WRAPPER_KEYS:
+        sys.exit(f"{where}: unknown field(s) {', '.join(sorted(keys - WRAPPER_KEYS))}")
+    if WRAPPER_REQUIRED - keys:
+        sys.exit(f"{where}: missing field(s) {', '.join(sorted(WRAPPER_REQUIRED - keys))}")
+    if type(manifest["format"]) is not int or manifest["format"] != 1:
+        sys.exit(f"{where}: format must be 1")
+    for key in ("type", "id", "version", "package"):
+        if not isinstance(manifest[key], str):
+            sys.exit(f"{where}: {key} must be a string")
+    if manifest["type"] != "gpufx":
+        sys.exit(f"{where}: type must be \"gpufx\"")
+    if not manifest["id"].strip():
+        sys.exit(f"{where}: the id is empty")
+    tags = manifest.get("tags", [])
+    if not isinstance(tags, list) or not all(isinstance(tag, str) for tag in tags):
+        sys.exit(f"{where}: tags must be a list of strings")
+    package = manifest["package"]
+    if not package.lower().endswith(".zip") or not is_safe_id(package[:-4]):
+        sys.exit(f"{where}: \"{package}\" is not the file name of a .zip beside the manifest")
+
+
 def pack_wrapper(group, name, folder, inner_root, target):
-    manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
+    where = f"{group}/{name}"
+    manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8-sig"))
+    check_wrapper_manifest(where, manifest)
+    if manifest["package"] != f"{name}.zip":
+        sys.exit(f"{where}: package must be {name}.zip")
+    languages = []
+    for path in sorted(p for p in folder.rglob("*") if p.is_file()):
+        relative = path.relative_to(folder).as_posix()
+        if relative == "manifest.json":
+            continue
+        file_name = relative[len("i18n/"):] if relative.startswith("i18n/") else None
+        if file_name is None or "/" in file_name or language_code(file_name) is None:
+            sys.exit(f"{where}: stray file {relative}: a wrapper holds only manifest.json and i18n/<code>.json")
+        languages.append(path)
     inner = inner_root / group / f"{name}.zip"
     if not inner.is_file():
-        sys.exit(f"{group}/{name}: missing inner zip {inner}")
+        sys.exit(f"{where}: missing inner zip {inner}")
     with zipfile.ZipFile(inner) as archive:
         try:
-            inner_id = json.loads(archive.read("manifest.json").decode("utf-8-sig"))["id"]
+            inner_id = json.loads(archive.read("manifest.json").decode("utf-8-sig")).get("id")
         except KeyError:
-            sys.exit(f"{group}/{name}: {inner} has no manifest.json")
-    if inner_id != manifest["id"]:
-        sys.exit(f"{group}/{name}: wrapper id {manifest['id']} differs from inner id {inner_id}")
-    if manifest.get("package") != f"{name}.zip":
-        sys.exit(f"{group}/{name}: package must be {name}.zip")
+            sys.exit(f"{where}: {inner} has no manifest.json")
+    if not isinstance(inner_id, str) or inner_id.lower() != manifest["id"].lower():
+        sys.exit(f"{where}: wrapper id {manifest['id']} differs from inner id {inner_id}")
     entries = [("manifest.json", read_text_lf(folder / "manifest.json"), zipfile.ZIP_DEFLATED)]
-    for file in sorted((folder / "i18n").glob("*.json")) if (folder / "i18n").is_dir() else []:
+    for file in languages:
         entries.append((f"i18n/{file.name}", read_text_lf(file), zipfile.ZIP_DEFLATED))
     entries.append((f"{name}.zip", inner.read_bytes(), zipfile.ZIP_STORED))
     target.parent.mkdir(parents=True, exist_ok=True)
