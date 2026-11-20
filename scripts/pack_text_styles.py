@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """Build the text style and subtitle style packs of AI Video Studio.
 
-    py -I scripts/pack_text_styles.py            # -> dist/<pack id>.zip for every pack
+    py -I scripts/pack_text_styles.py            # -> dist/text-style-packs/<pack id>-<item id>.zip
+                                                 #    and dist/text-style-packs.zip
     py -I scripts/pack_text_styles.py -o out     # into out/
     py -I scripts/pack_text_styles.py --check    # only validate the sources
 
-Source: text-styles/<pack>/pack.json (type, id, name, version, items), LICENSE.txt and NOTICE.txt. Each
-zip has, at its root, manifest.json (format 1, type "text-style" or "subtitle-style"), LICENSE.txt and
-NOTICE.txt. It is reproducible byte for byte (sorted entries, fixed timestamps). Standard library only.
-A pack whose styles use a layer field (fill, outlines, shadows, inner_shadows, bloom) is written as
+Source: text-styles/<pack>/pack.json (type, id, name, version, items), LICENSE.txt and NOTICE.txt. Every
+style is its own pack (see item_packs.py): each zip has, at its root, manifest.json (type "text-style"
+or "subtitle-style", items = [the style], collection and collection_name = the pack.json id and name),
+LICENSE.txt, NOTICE.txt and i18n/<code>.json; text-style-packs.zip bundles them all, text and subtitle
+styles alike. It is reproducible byte for byte (sorted entries, fixed timestamps). Standard library only.
+A pack whose style uses a layer field (fill, outlines, shadows, inner_shadows, bloom) is written as
 format 2, the others as format 1. Textures and covers are not supported here (no pack ships pictures).
 
 Before writing, every manifest is checked with the rules of the editor's strict reader
@@ -31,12 +34,13 @@ import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from pack_i18n import i18n_entries  # noqa: E402
+from item_packs import item_i18n_entries, item_manifest, remove_collection, type_folder, write_bundle  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "text-styles"
 ANIMATIONS = ROOT / "animations"
 FIXED_TIME = (1980, 1, 1, 0, 0, 0)
+KIND = "text-style"  # -> text-style-packs/ and text-style-packs.zip
 SAFE_ID = re.compile(r"^[A-Za-z0-9._-]+$")
 MAX_ID_LENGTH = 128
 MAX_ITEMS = 16_384
@@ -288,7 +292,8 @@ def check_karaoke(where, karaoke):
 
 
 def check_manifest(manifest, presets):
-    check_fields("the manifest", manifest, ("format", "type", "id", "name", "version", "license", "items"))
+    check_fields("the manifest", manifest, ("format", "type", "id", "name", "version", "license", "items",
+                                            "collection", "collection_name"), ("category",))
     kind = manifest["type"]
     if manifest["format"] not in (1, 2) or kind not in TYPES:
         fail(f"format must be 1 or 2 and type one of {TYPES}")
@@ -297,15 +302,17 @@ def check_manifest(manifest, presets):
         fail("a pack whose styles use fill, outlines, shadows, inner_shadows or bloom must be format 2, others format 1")
     if not safe_id(manifest["id"]):
         fail("unsafe pack id")
-    for name in ("name", "version"):
+    for name in ("name", "version", "collection", "collection_name"):
         if not isinstance(manifest[name], str) or not manifest[name].strip():
             fail(f"empty {name}")
     check_fields("license", manifest["license"], ("spdx", "files"))
     if not manifest["license"]["spdx"].strip() or not manifest["license"]["files"]:
         fail("license.spdx and license.files must not be empty")
     items = manifest["items"]
-    if not items or len(items) > MAX_ITEMS:
-        fail(f"items must hold 1 to {MAX_ITEMS} styles")
+    if len(items) != 1:
+        fail("a pack holds exactly one style")
+    if not safe_id(manifest["collection"]) or manifest["id"] != f"{manifest['collection']}-{items[0].get('id')}":
+        fail(f"pack id '{manifest['id']}' is not '<collection>-<item id>'")
     seen = set()
     subtitle = kind == "subtitle-style"
     for item in items:
@@ -342,16 +349,20 @@ def animation_presets():
     return presets
 
 
-def build_manifest(folder):
+def build_collection(folder):
+    """The pack.json of a folder as a manifest of the whole collection; build_packs splits it."""
     source = json.loads((folder / "pack.json").read_text(encoding="utf-8"))
     check_fields(f"{folder.name}/pack.json", source, ("type", "id", "name", "version", "items"))
     if source["id"] != folder.name:
         fail(f"{folder.name}/pack.json: the id '{source['id']}' is not the folder name")
     if source["id"] not in SPDX:
         fail(f"{folder.name}: no licence is known for this pack")
-    layered = any(name in item.get("style", {}) for item in source["items"] for name in LAYERS)
+    if not isinstance(source["items"], list) or not 0 < len(source["items"]) <= MAX_ITEMS:
+        fail(f"{folder.name}/pack.json: items must hold 1 to {MAX_ITEMS} styles")
+    if len({str(item.get("id", "")).lower() for item in source["items"]}) != len(source["items"]):
+        fail(f"{folder.name}/pack.json: an item id is used twice")
     return {
-        "format": 2 if layered else 1,
+        "format": 1,
         "type": source["type"],
         "id": source["id"],
         "name": source["name"],
@@ -361,14 +372,24 @@ def build_manifest(folder):
     }
 
 
-def write_zip(target, folder, manifest):
+def build_packs(collection):
+    """One manifest per style: format 2 when that style uses a layer field, else format 1."""
+    packs = []
+    for item in collection["items"]:
+        manifest = item_manifest(collection, item)
+        manifest["format"] = 2 if any(name in item.get("style", {}) for name in LAYERS) else 1
+        packs.append(manifest)
+    return packs
+
+
+def write_zip(target, folder, manifest, collection_ids):
     entries = {
         "manifest.json": json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         "LICENSE.txt": (folder / "LICENSE.txt").read_text(encoding="utf-8"),
         "NOTICE.txt": (folder / "NOTICE.txt").read_text(encoding="utf-8"),
     }
-    # i18n/<language>.json next to pack.json: translations keyed by item id, shipped as they are.
-    entries.update(i18n_entries(folder, item_ids={item["id"] for item in manifest["items"]}))
+    # i18n/<language>.json next to pack.json, cut down to this pack's one style.
+    entries.update(item_i18n_entries(folder, manifest["items"][0]["id"], collection_ids))
     target.parent.mkdir(parents=True, exist_ok=True)
     temporary = target.with_suffix(".zip.tmp")
     with zipfile.ZipFile(temporary, "w") as archive:
@@ -390,19 +411,26 @@ def main():
     folders = sorted(p.parent for p in SOURCE.glob("*/pack.json"))
     if not folders:
         fail(f"no pack.json below {SOURCE}")
+    output = type_folder(args.output, KIND)
     for folder in folders:
-        manifest = build_manifest(folder)
-        check_manifest(manifest, presets)
+        collection = build_collection(folder)
+        packs = build_packs(collection)
+        for manifest in packs:
+            check_manifest(manifest, presets)
         for name in LICENSE_FILES:
             if not (folder / name).is_file():
                 fail(f"{folder.name}: missing {name}")
         if args.check:
-            print(f"{manifest['id']}: {len(manifest['items'])} {manifest['type']} items ok")
+            print(f"{collection['id']}: {len(packs)} {collection['type']} packs ok")
             continue
-        target = args.output / f"{manifest['id']}.zip"
-        write_zip(target, folder, manifest)
-        print(f"wrote {target} ({len(manifest['items'])} items)")
-
+        output.mkdir(parents=True, exist_ok=True)
+        remove_collection(output, collection["id"])
+        ids = {item["id"] for item in collection["items"]}
+        for manifest in packs:
+            write_zip(output / f"{manifest['id']}.zip", folder, manifest, ids)
+        print(f"{collection['id']}: wrote {len(packs)} packs into {output}")
+    if not args.check:
+        write_bundle(args.output, KIND)
 
 if __name__ == "__main__":
     main()

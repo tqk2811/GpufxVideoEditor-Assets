@@ -9,7 +9,7 @@ edges. Each sticker is 512x512 with a transparent background, 20 frames a second
 after the last one is the first one again. The frames are stored as a lossy animated WebP (quality 70, alpha 70) with
 loop 0 (forever); the editor loops it over the length of the clip.
 
-The zip, `tqk2811-animated-stickers.zip`, has `manifest.json` (format 1, type "sticker", items
+Each sticker becomes its own pack, `sticker-packs/tqk2811-animated-stickers-<id>.zip`, which has `manifest.json` (format 1, type "sticker", items
 `{id, file, name, tags, category}`), `LICENSE.txt` and `NOTICE.txt` (stickers/tqk2811-animated-stickers/)
 and `images/<id>.webp`. With the same Pillow and libwebp it is reproducible byte for byte.
 --images also writes the WebP files to a folder, to look at them.
@@ -27,14 +27,13 @@ except ImportError:
     sys.exit("error: Pillow is needed: py -m pip install pillow")
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts"))
-from pack_stickers import FORMAT, write_zip  # noqa: E402
+from pack_stickers import FORMAT, write_packs  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE_DIR = Path(__file__).resolve().parent
 VERSION = "1.0.0"
 PACK_ID = "tqk2811-animated-stickers"
 PACK_NAME = "Stickers: animated labels and marks"
-ZIP_NAME = "tqk2811-animated-stickers.zip"
 SIZE = 512
 SS = 2  # supersampling
 C = SIZE * SS // 2  # centre of the canvas, at canvas scale
@@ -671,10 +670,7 @@ def main():
         "license": {"spdx": "MIT", "files": ["LICENSE.txt", "NOTICE.txt"]},
         "items": [item for item, _ in items],
     }
-    args.output.mkdir(parents=True, exist_ok=True)
-    target = args.output / ZIP_NAME
-    write_zip(target, manifest, items, read_text("LICENSE.txt"), read_text("NOTICE.txt"))
-    print(f"{ZIP_NAME}\t{len(items)} items\t{target.stat().st_size} bytes")
+    write_packs(args.output, manifest, items, read_text("LICENSE.txt"), read_text("NOTICE.txt"))
 
 
 if __name__ == "__main__":

@@ -3,7 +3,7 @@
     py -I stickers/noto-stickers/generate.py --source <noto-emoji checkout> -o dist-stickers
 
 Binary images are never committed to this repository. This script reads `2D/png/512/emoji_u<code>.png`
-of a checkout of https://github.com/googlefonts/noto-emoji and writes `noto-stickers.zip`. The images
+of a checkout of https://github.com/googlefonts/noto-emoji and writes one pack per sticker, `sticker-packs/noto-stickers-<id>.zip`. The images
 are under the Apache License 2.0 (README of that repository: "Tools and most image resources are under
 the Apache license, version 2.0"; `2D/svg/LICENSE`, the licence of the drawings the PNG files are
 rendered from). The fonts of that repository are under the OFL and are not used. The checkout must be
@@ -11,7 +11,7 @@ at the commit pinned in NOTO_COMMIT and its `2D/svg/LICENSE` must be the Apache 
 stickers/noto-stickers/LICENSE.txt; otherwise the script stops. A sparse checkout of `2D/svg/LICENSE` and
 `2D/png/512/` is enough.
 
-The zip has, at its root, `manifest.json` (format 1, type "sticker", items `{id, file, name, tags,
+Each zip has, at its root, `manifest.json` (format 1, type "sticker", items `{id, file, name, tags,
 category}`), `LICENSE.txt` and `NOTICE.txt` (the files of stickers/noto-stickers/) and `images/<id>.png`.
 Names and ids come from the Unicode name of the emoji (Python's unicodedata), tags from the name's
 words. It is reproducible byte for byte (sorted entries, fixed timestamps, PNG stored as is). Standard
@@ -26,14 +26,13 @@ import unicodedata
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts"))
-from pack_stickers import FORMAT, ID_PATTERN, fail, png_size, slugify, write_zip  # noqa: E402
+from pack_stickers import FORMAT, ID_PATTERN, fail, png_size, slugify, write_packs  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE_DIR = Path(__file__).resolve().parent
 VERSION = "1.0.0"
 PACK_ID = "noto-stickers"
 PACK_NAME = "Stickers: Noto Emoji"
-ZIP_NAME = "noto-stickers.zip"
 NOTO_COMMIT = "99701e07d3d1fe1bdbcdb14964547f0fd592966f"
 
 # Code points (one emoji each), by category, in the order the panel shows them.
@@ -132,10 +131,7 @@ def main():
         "license": {"spdx": "Apache-2.0", "files": ["LICENSE.txt", "NOTICE.txt"]},
         "items": [item for item, _ in items],
     }
-    args.output.mkdir(parents=True, exist_ok=True)
-    target = args.output / ZIP_NAME
-    write_zip(target, manifest, items, read_text("LICENSE.txt"), read_text("NOTICE.txt"))
-    print(f"{ZIP_NAME}\t{len(items)} items\t{target.stat().st_size} bytes")
+    write_packs(args.output, manifest, items, read_text("LICENSE.txt"), read_text("NOTICE.txt"))
     for category, codes in STICKERS.items():
         print(f"  {category}\t{len(codes)}")
 

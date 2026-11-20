@@ -3,9 +3,11 @@
     py -I scripts/pack_stickers.py --source <fluentui-emoji checkout> -o dist-stickers
 
 Binary images are never committed to this repository. This script reads the `assets/<Name>/` folders
-of a checkout of https://github.com/microsoft/fluentui-emoji (MIT) and writes `stickers.zip`. The
+of a checkout of https://github.com/microsoft/fluentui-emoji (MIT). The
 checkout must be at the commit pinned in FLUENT_COMMIT, and its LICENSE must be the text in
-LICENSE_TEXT; otherwise the script stops. The zip has, at its root, `manifest.json`, `LICENSE.txt`,
+LICENSE_TEXT; otherwise the script stops. Every sticker is its own pack,
+`sticker-packs/avs-stickers-<id>.zip` (see item_packs.py), and `sticker-packs.zip` bundles every zip of
+that folder (the other sticker scripts add theirs to it). Each zip has, at its root, `manifest.json`, `LICENSE.txt`,
 `NOTICE.txt` and `images/<id>.png`. It is reproducible byte for byte (sorted entries, fixed
 timestamps); PNG is stored without recompression. Standard library only; run it with the `py`
 launcher on Windows. Run it with `py -I`: the checkout is data, the script only reads it.
@@ -29,7 +31,7 @@ import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from pack_i18n import i18n_entries  # noqa: E402
+from item_packs import item_i18n_entries, item_manifest, remove_collection, type_folder, write_bundle  # noqa: E402
 
 FIXED_TIME = (1980, 1, 1, 0, 0, 0)
 ID_PATTERN = re.compile(r"^[a-z0-9._-]+$")
@@ -37,7 +39,7 @@ FORMAT = 1  # same value as the audio packs written by pack_audio.py
 VERSION = "1.0.0"
 PACK_ID = "avs-stickers"
 PACK_NAME = "Stickers: Fluent Emoji"
-ZIP_NAME = "stickers.zip"
+KIND = "sticker"  # -> sticker-packs/ and sticker-packs.zip
 FLUENT_REPO = "https://github.com/microsoft/fluentui-emoji"
 FLUENT_COMMIT = "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc"
 
@@ -200,17 +202,13 @@ def validate(items):
         png_size(source.read_bytes(), source.name)
 
 
-def write_zip(target, manifest, items, license_text=LICENSE_TEXT, notice_text=NOTICE_TEXT, i18n_folder=None):
-    """Writes a sticker zip; each item comes with its image as a path or as bytes. The other sticker
-    scripts (stickers/noto-stickers/generate.py, stickers/tqk2811-stickers/generate.py) share this writer.
-    i18n_folder holds i18n/<language>.json (default stickers/<pack id>/), shipped as i18n/<language>.json."""
+def write_zip(target, manifest, items, license_text, notice_text, i18n_entries):
     text_files = [
         ("manifest.json", json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"),
         ("LICENSE.txt", license_text.replace("\r\n", "\n")),
         ("NOTICE.txt", notice_text.replace("\r\n", "\n")),
     ]
-    folder = i18n_folder or Path(__file__).resolve().parent.parent / "stickers" / manifest["id"]
-    text_files += sorted(i18n_entries(folder, item_ids={item["id"] for item, _ in items}).items())
+    text_files += sorted(i18n_entries.items())
     temporary = target.with_suffix(".zip.tmp")
     with zipfile.ZipFile(temporary, "w") as archive:
         def add(entry_name, data, compress):
@@ -225,6 +223,27 @@ def write_zip(target, manifest, items, license_text=LICENSE_TEXT, notice_text=NO
         for item, source in sorted(items, key=lambda pair: pair[0]["file"]):
             add(item["file"], source if isinstance(source, bytes) else source.read_bytes(), zipfile.ZIP_STORED)
     temporary.replace(target)
+
+
+def write_packs(output, manifest, items, license_text=LICENSE_TEXT, notice_text=NOTICE_TEXT, i18n_folder=None):
+    """Splits a sticker collection into one pack per sticker in <output>/sticker-packs/ and rebuilds
+    <output>/sticker-packs.zip. Each item comes with its image as a path or as bytes. The other sticker
+    scripts (stickers/<pack>/generate.py) share this writer. i18n_folder holds i18n/<language>.json of
+    the collection (default stickers/<collection id>/). Returns the number of packs written."""
+    folder = type_folder(output, KIND)
+    folder.mkdir(parents=True, exist_ok=True)
+    remove_collection(folder, manifest["id"])
+    i18n_folder = i18n_folder or Path(__file__).resolve().parent.parent / "stickers" / manifest["id"]
+    ids = {item["id"] for item, _ in items}
+    for item, source in items:
+        pack = item_manifest(manifest, item)
+        if not ID_PATTERN.match(pack["id"]):
+            fail(f"pack id '{pack['id']}' does not match [a-z0-9._-]+")
+        write_zip(folder / f"{pack['id']}.zip", pack, [(item, source)], license_text, notice_text,
+                  item_i18n_entries(i18n_folder, item["id"], ids))
+    print(f"{manifest['id']}\t{len(items)} pack(s)")
+    write_bundle(output, KIND)
+    return len(items)
 
 
 def main():

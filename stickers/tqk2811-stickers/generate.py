@@ -5,7 +5,7 @@
 Every image is drawn by this script with Pillow (pip install pillow): rounded boxes, simple icons and
 the words in Aileron Regular, the font built into Pillow (ImageFont.load_default, CC0), made bold with
 a stroke. Nothing is copied from another project. Shapes are drawn at twice the size and scaled down
-for smooth edges. The zip, `tqk2811-stickers.zip`, has `manifest.json` (format 1, type "sticker",
+for smooth edges. Each sticker becomes its own pack, `sticker-packs/tqk2811-stickers-<id>.zip`, which has `manifest.json` (format 1, type "sticker",
 items `{id, file, name, tags, category}`), `LICENSE.txt` and `NOTICE.txt` (stickers/tqk2811-stickers/) and
 `images/<id>.png`. With the same Pillow version it is reproducible byte for byte.
 """
@@ -22,14 +22,13 @@ except ImportError:
     sys.exit("error: Pillow is needed: py -m pip install pillow")
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts"))
-from pack_stickers import FORMAT, write_zip  # noqa: E402
+from pack_stickers import FORMAT, write_packs  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE_DIR = Path(__file__).resolve().parent
 VERSION = "1.0.0"
 PACK_ID = "tqk2811-stickers"
 PACK_NAME = "Stickers: labels and frames"
-ZIP_NAME = "tqk2811-stickers.zip"
 SS = 2  # supersampling
 
 WHITE = (255, 255, 255, 255)
@@ -318,10 +317,7 @@ def main():
         "items": [item for item, _ in items],
     }
     read = lambda name: (SOURCE_DIR / name).read_text(encoding="utf-8")
-    args.output.mkdir(parents=True, exist_ok=True)
-    target = args.output / ZIP_NAME
-    write_zip(target, manifest, items, read("LICENSE.txt"), read("NOTICE.txt"))
-    print(f"{ZIP_NAME}\t{len(items)} items\t{target.stat().st_size} bytes")
+    write_packs(args.output, manifest, items, read("LICENSE.txt"), read("NOTICE.txt"))
 
 
 if __name__ == "__main__":

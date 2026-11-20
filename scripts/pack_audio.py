@@ -3,12 +3,14 @@
     py scripts/pack_audio.py --source <ai-video-studio>/assets -o dist-audio
 
 Binary audio is never committed to this repository. This script reads the `sfx/` and `music/`
-folders of AI Video Studio's `assets` directory and writes 16 zips: one `sfx-<category>.zip` per
-category of `sfx/catalog.json`, and `music.zip`, plus `audio-packs.zip`, a plain zip holding all 16 for
-a single download. Each pack zip has, at its root, `manifest.json`,
-`LICENSE.txt`, `NOTICE.txt` and `audio/<file>`. Zips are byte for byte reproducible (sorted entries,
-fixed timestamps), and audio is stored without recompression. Standard library only; run it with the
-`py` launcher on Windows. Run it with `py -I` when the source is not trusted: it only reads data.
+folders of AI Video Studio's `assets` directory and writes one zip per sound: the collections are the
+categories of `sfx/catalog.json` (`avs-sfx-<category>`) and `avs-music`, and each of their items becomes
+its own pack `<collection>-<item id>.zip` in `audio-packs/` (see item_packs.py), plus `audio-packs.zip`,
+a plain zip holding all of them for a single download. Each pack zip has, at its root, `manifest.json`,
+`LICENSE.txt`, `NOTICE.txt`, `i18n/<code>.json` and `audio/<file>`. Zips are byte for byte reproducible
+(sorted entries, fixed timestamps), and audio is stored without recompression. Standard library only;
+run it with the `py` launcher on Windows. Run it with `py -I` when the source is not trusted: it only
+reads data.
 
 Manifest fields: names, tags and loop come from the catalog when present. Where the catalog has no
 value they are derived (see derive_* below). Durations of FLAC files are read from the STREAMINFO
@@ -26,11 +28,11 @@ import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from pack_i18n import i18n_entries  # noqa: E402
+from item_packs import item_i18n_entries, item_manifest, remove_collection, type_folder, write_bundle  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXED_TIME = (1980, 1, 1, 0, 0, 0)
-BUNDLE_NAME = "audio-packs.zip"
+KIND = "audio"  # -> audio-packs/ and audio-packs.zip
 ID_PATTERN = re.compile(r"^[a-z0-9._-]+$")
 VERSION = "1.0.0"
 # Categories whose sounds are meant to run under other audio and repeat: the catalog has no loop flag.
@@ -230,6 +232,7 @@ def build_manifest(kind, pack_id, name, items):
 
 
 def validate(zip_name, manifest, items):
+    """Checks a whole collection before it is split into one pack per item."""
     seen = set()
     for item, source in items:
         if not ID_PATTERN.match(item["id"]):
@@ -245,14 +248,15 @@ def validate(zip_name, manifest, items):
         fail(f"{zip_name}: pack id '{manifest['id']}' does not match [a-z0-9._-]+")
 
 
-def write_zip(target, manifest, items):
+def write_zip(target, manifest, items, collection_id, collection_ids):
     text_files = [
         ("manifest.json", json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"),
         ("LICENSE.txt", LICENSE_TEXT),
         ("NOTICE.txt", NOTICE_TEXT),
     ]
     # i18n/<language>.json from audio/<pack id>/i18n/, keyed by item id (see scripts/pack_i18n.py).
-    text_files += sorted(i18n_entries(ROOT / "audio" / manifest["id"], item_ids={item["id"] for item, _ in items}).items())
+    # Each pack carries only its own item (see scripts/item_packs.py).
+    text_files += sorted(item_i18n_entries(ROOT / "audio" / collection_id, items[0][0]["id"], collection_ids).items())
     temporary = target.with_suffix(".zip.tmp")
     with zipfile.ZipFile(temporary, "w") as archive:
         def add(entry_name, data, compress):
@@ -293,27 +297,22 @@ def main():
     for zip_name, manifest, pack_items in packs:
         validate(zip_name, manifest, pack_items)
 
-    args.output.mkdir(parents=True, exist_ok=True)
+    folder = type_folder(args.output, KIND)
+    folder.mkdir(parents=True, exist_ok=True)
     total = 0
-    for zip_name, manifest, pack_items in packs:
-        target = args.output / zip_name
-        write_zip(target, manifest, pack_items)
+    for _, collection, pack_items in packs:
+        remove_collection(folder, collection["id"])
+        ids = {item["id"] for item, _ in pack_items}
+        for item, source in pack_items:
+            manifest = item_manifest(collection, item)
+            if not ID_PATTERN.match(manifest["id"]):
+                fail(f"pack id '{manifest['id']}' does not match [a-z0-9._-]+")
+            write_zip(folder / f"{manifest['id']}.zip", manifest, [(item, source)], collection["id"], ids)
         total += len(pack_items)
-        print(f"{zip_name}\t{len(pack_items)} items\t{target.stat().st_size} bytes")
-    print(f"packed {len(packs)} zip(s), {total} audio item(s)")
-    # One plain zip holding every pack zip, so the release has a single download. The editor installs
-    # the inner zips, so it is unpacked first; pack zips are already compressed, hence stored.
-    bundle = args.output / BUNDLE_NAME
-    temporary = bundle.with_suffix(".zip.tmp")
-    with zipfile.ZipFile(temporary, "w") as archive:
-        for zip_name, _, _ in sorted(packs, key=lambda pack: pack[0]):
-            info = zipfile.ZipInfo(zip_name, FIXED_TIME)
-            info.create_system = 3
-            info.external_attr = 0o644 << 16
-            info.compress_type = zipfile.ZIP_STORED
-            archive.writestr(info, (args.output / zip_name).read_bytes())
-    temporary.replace(bundle)
-    print(f"{BUNDLE_NAME}\t{len(packs)} zips\t{bundle.stat().st_size} bytes")
+        print(f"{collection['id']}\t{len(pack_items)} pack(s)")
+    print(f"packed {total} audio pack(s) from {len(packs)} collection(s)")
+    # The editor installs the inner zips, so the bundle is unpacked first.
+    write_bundle(args.output, KIND)
     print(f"max |FLAC header - catalog dur| = {stats.get('flac_vs_catalog_max_diff', 0.0):.3f} s; "
           f"mp3 durations: {stats.get('mp3_catalog', 0)} from catalog, {stats.get('mp3_ffprobe', 0)} from ffprobe")
 

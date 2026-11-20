@@ -13,7 +13,7 @@ any mismatch: re-download, look at the new files and update the hashes on purpos
 
 The files go into the zip unmodified (512x512, already small: libwebp keeps only what changes between
 frames, and scaling them down and encoding again saved almost nothing), renamed after the Unicode name
-of each emoji. The zip, `noto-animated-stickers.zip`, has `manifest.json` (format 1, type "sticker",
+of each emoji. Each sticker becomes its own pack, `sticker-packs/noto-animated-stickers-<id>.zip`, which has `manifest.json` (format 1, type "sticker",
 items `{id, file, name, tags, category}`), `LICENSE.txt` and `NOTICE.txt` (stickers/noto-animated-stickers/)
 and `images/<id>.webp`. It is reproducible byte for byte (sorted entries, fixed timestamps, WebP stored
 as is). Standard library only; run it with `py -I`: the downloaded files are data.
@@ -28,14 +28,13 @@ import urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts"))
-from pack_stickers import FORMAT, ID_PATTERN, fail, slugify, write_zip  # noqa: E402
+from pack_stickers import FORMAT, ID_PATTERN, fail, slugify, write_packs  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE_DIR = Path(__file__).resolve().parent
 VERSION = "1.0.0"
 PACK_ID = "noto-animated-stickers"
 PACK_NAME = "Stickers: Animated Noto Emoji"
-ZIP_NAME = "noto-animated-stickers.zip"
 URL = "https://fonts.gstatic.com/s/e/notoemoji/latest/{code}/512.webp"
 SIZE = 512
 
@@ -187,10 +186,7 @@ def main():
         "license": {"spdx": "CC-BY-4.0", "files": ["LICENSE.txt", "NOTICE.txt"]},
         "items": [item for item, _ in items],
     }
-    args.output.mkdir(parents=True, exist_ok=True)
-    target = args.output / ZIP_NAME
-    write_zip(target, manifest, items, read_text("LICENSE.txt"), read_text("NOTICE.txt"))
-    print(f"{ZIP_NAME}\t{len(items)} items\t{target.stat().st_size} bytes")
+    write_packs(args.output, manifest, items, read_text("LICENSE.txt"), read_text("NOTICE.txt"))
     for category, codes in SOURCES.items():
         print(f"  {category}\t{len(codes)}")
 

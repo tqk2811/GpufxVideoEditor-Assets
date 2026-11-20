@@ -11,7 +11,10 @@ the original manifest or item files. Every field is optional:
     }
 
 `items` is keyed by the same id as the pack's own items (the file name of items/<id>.json for clip
-animations, the `id` of an item in pack.json or manifest.json for the other kinds). Standard library only.
+animations, the `id` of an item in pack.json or manifest.json for the other kinds). Every pack zip holds one
+item (see item_packs.py), so its file has the item's `name`, `description`, `tags` and `category` at the
+top, `collection_name` (the translated name of the source collection) and `items` with that one item.
+Standard library only.
 """
 
 import json
@@ -20,7 +23,7 @@ import sys
 from pathlib import Path
 
 LANGUAGE = re.compile(r"^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$")
-TEXT_FIELDS = ("name", "description", "category", "label")
+TEXT_FIELDS = ("name", "description", "category", "label", "collection_name")
 
 
 def fail(message):
@@ -42,7 +45,7 @@ def check_texts(where, obj, allowed):
 
 
 def check_translation(where, data, item_ids=None, param_names=None):
-    check_texts(where, {k: v for k, v in data.items() if k not in ("params", "items")}, ("name", "description", "tags"))
+    check_texts(where, {k: v for k, v in data.items() if k not in ("params", "items")}, ("name", "description", "tags", "category", "collection_name"))
     for section, allowed_keys, fields in (
         ("params", param_names, ("label", "description")),
         ("items", item_ids, ("name", "description", "category", "tags")),

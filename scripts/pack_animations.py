@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 """Build the clip animation packs: AI Video Studio's text animations and the tqk2811 animations.
 
-    py -I scripts/pack_animations.py            # -> dist/<pack id>.zip for every pack
+    py -I scripts/pack_animations.py            # -> dist/clip-animation-packs/<pack id>-<item id>.zip
+                                                #    and dist/clip-animation-packs.zip
     py -I scripts/pack_animations.py -o out     # into out/
     py -I scripts/pack_animations.py --check    # only validate the sources
 
 Source: animations/<pack>/pack.json (id, name, version, items: the item ids in order), one
 animations/<pack>/items/<id>.json per item, LICENSE.txt and NOTICE.txt. An item may carry a
-"description", which stays in the source and is left out of the zip. Each zip has, at its root,
-manifest.json (format 1, type "clip-animation", items = the ids), items/<id>.json, LICENSE.txt and
-NOTICE.txt. It is reproducible byte for byte (sorted entries, fixed timestamps). Standard library only.
+"description", which stays in the source and is left out of the item file. Every item is its own pack
+(see item_packs.py): each zip has, at its root, manifest.json (format 1, type "clip-animation", items =
+[the item id], collection and collection_name = the pack.json id and name, name and description of the
+item), items/<id>.json, LICENSE.txt, NOTICE.txt and i18n/<code>.json; clip-animation-packs.zip bundles
+them all. It is reproducible byte for byte (sorted entries, fixed timestamps). Standard library only.
 
 Before writing, the manifest is checked with the rules of the editor's strict reader
 (crates/d3d12-backend/src/clip_animation_pack.rs and engine::check_curve): known fields only, safe
@@ -29,7 +32,7 @@ import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from pack_i18n import i18n_entries  # noqa: E402
+from item_packs import item_i18n_entries, item_manifest, remove_collection, type_folder, write_bundle  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "animations"
@@ -41,6 +44,7 @@ UNITS = ("char", "word", "line")
 ORDERS = ("forward", "backward", "center", "random")
 SHAPES = ("square", "ramp_up", "ramp_down", "triangle", "round", "smooth")
 FIXED_TIME = (1980, 1, 1, 0, 0, 0)
+KIND = "clip-animation"  # -> clip-animation-packs/ and clip-animation-packs.zip
 SAFE_ID = re.compile(r"^[A-Za-z0-9._-]+$")
 KINDS = ("in", "out", "loop")
 CLIP_KINDS = ("text", "image", "video", "sticker")
@@ -230,19 +234,22 @@ def check_item(item):
 
 
 def check_manifest(manifest, items):
-    check_fields("the manifest", manifest, ("format", "type", "id", "name", "version", "license", "items"))
+    check_fields("the manifest", manifest, ("format", "type", "id", "name", "version", "license", "items",
+                                            "collection", "collection_name"), ("description",))
     if manifest["format"] != 1 or manifest["type"] != "clip-animation":
         fail("format must be 1 and type 'clip-animation'")
     if not SAFE_ID.match(manifest["id"]):
         fail("unsafe pack id")
-    for name in ("name", "version"):
+    for name in ("name", "version", "collection", "collection_name"):
         if not isinstance(manifest[name], str) or not manifest[name].strip():
             fail(f"empty {name}")
     check_fields("license", manifest["license"], ("spdx", "files"))
     if not manifest["license"]["spdx"].strip() or not manifest["license"]["files"]:
         fail("license.spdx and license.files must not be empty")
-    if not items or [item["id"] for item in items] != manifest["items"]:
-        fail("the items do not match the manifest ids")
+    if len(items) != 1 or [item["id"] for item in items] != manifest["items"]:
+        fail("a pack holds exactly one item, matching the manifest")
+    if not SAFE_ID.match(manifest["collection"]) or manifest["id"] != f"{manifest['collection']}-{manifest['items'][0]}":
+        fail(f"pack id '{manifest['id']}' is not '<collection>-<item id>'")
     for item in items:
         check_item(item)
 
@@ -295,7 +302,7 @@ def pack_folders():
     return sorted(p.parent for p in SOURCE.glob("*/pack.json"))
 
 
-def write_zip(target, folder, manifest, items):
+def write_zip(target, folder, manifest, items, collection_ids):
     entries = {
         "manifest.json": json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         "LICENSE.txt": (folder / "LICENSE.txt").read_text(encoding="utf-8"),
@@ -304,8 +311,8 @@ def write_zip(target, folder, manifest, items):
     for item in items:
         shipped = {name: value for name, value in item.items() if name != "description"}
         entries[f"items/{item['id']}.json"] = json.dumps(shipped, ensure_ascii=False, indent=2) + "\n"
-    # i18n/<language>.json next to pack.json: translations keyed by item id, shipped as they are.
-    entries.update(i18n_entries(folder, item_ids=set(manifest["items"])))
+    # i18n/<language>.json next to pack.json, cut down to this pack's one item.
+    entries.update(item_i18n_entries(folder, manifest["items"][0], collection_ids))
     target.parent.mkdir(parents=True, exist_ok=True)
     temporary = target.with_suffix(".zip.tmp")
     with zipfile.ZipFile(temporary, "w") as archive:
@@ -327,22 +334,28 @@ def main():
     if not folders:
         fail(f"no pack.json below {SOURCE}")
     ids = set()
+    output = type_folder(args.output, KIND)
     for folder in folders:
         for name in ("LICENSE.txt", "NOTICE.txt"):
             if not (folder / name).is_file():
                 fail(f"{folder.name}: missing {name}")
-        manifest, items = read_pack(folder)
-        check_manifest(manifest, items)
-        if manifest["id"].lower() in ids:
-            fail(f"the pack id '{manifest['id']}' is used twice")
-        ids.add(manifest["id"].lower())
+        collection, items = read_pack(folder)
+        packs = [(item_manifest(collection, item, item["id"]), item) for item in items]
+        for manifest, item in packs:
+            check_manifest(manifest, [item])
+            if manifest["id"].lower() in ids:
+                fail(f"the pack id '{manifest['id']}' is used twice")
+            ids.add(manifest["id"].lower())
         if args.check:
-            print(f"{manifest['id']}: {len(manifest['items'])} items ok")
+            print(f"{collection['id']}: {len(packs)} packs ok")
             continue
-        target = args.output / f"{manifest['id']}.zip"
-        write_zip(target, folder, manifest, items)
-        print(f"wrote {target} ({len(manifest['items'])} items)")
-
+        output.mkdir(parents=True, exist_ok=True)
+        remove_collection(output, collection["id"])
+        for manifest, item in packs:
+            write_zip(output / f"{manifest['id']}.zip", folder, manifest, [item], set(collection["items"]))
+        print(f"{collection['id']}: wrote {len(packs)} packs into {output}")
+    if not args.check:
+        write_bundle(args.output, KIND)
 
 if __name__ == "__main__":
     main()
