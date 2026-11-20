@@ -4,10 +4,16 @@
     py scripts/pack.py -o out a b       only the packages a and b, into out/
     py scripts/pack.py --notices        rewrite THIRD_PARTY_NOTICES.md
     py scripts/pack.py --check-notices  fail if THIRD_PARTY_NOTICES.md is out of date
+    py scripts/pack.py --wrappers <inner zips root> [-o out] [names]
+                                        gpufx/<group>/<name>/ -> out/gpufx/<group>/<name>.zip
 
 A package is a folder below packages/ with a manifest.json; its folder name is the slug. Zips hold
 manifest.json at the root and are byte for byte reproducible: entries are sorted, deflated, and use
-a fixed timestamp. Standard library only; run it with the `py` launcher on Windows.
+a fixed timestamp. 
+--wrappers builds the editor wrapper zips of the gpufx effect packages. <inner zips root> holds the
+inner packages as produced by `gpufx pack`, laid out <root>/<group>/<name>.zip. A wrapper zip holds
+manifest.json, i18n/<code>.json and the inner zip as <name>.zip; it fails if the inner zip is missing
+or its manifest id differs from the wrapper id. Standard library only; run it with the `py` launcher on Windows.
 """
 
 import argparse
@@ -26,6 +32,7 @@ NOTICES = ROOT / "THIRD_PARTY_NOTICES.md"
 ANIMATION_DIR = ROOT / "animations"
 TEXT_STYLE_DIR = ROOT / "text-styles"
 STICKER_DIR = ROOT / "stickers"
+WRAPPERS = ROOT / "gpufx"
 FIXED_TIME = (1980, 1, 1, 0, 0, 0)
 REQUIRED = ("manifest.json", "LICENSE.txt", "NOTICE.txt")
 
@@ -65,6 +72,64 @@ def pack(folder, target):
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = 0o644 << 16
             archive.writestr(info, path.read_bytes())
+
+
+def wrapper_sources():
+    """gpufx/<group>/<name>/ folders: (group, name, folder), sorted."""
+    found = []
+    for manifest in sorted(WRAPPERS.rglob("manifest.json")):
+        folder = manifest.parent
+        found.append((folder.parent.relative_to(WRAPPERS).as_posix(), folder.name, folder))
+    return found
+
+
+def read_text_lf(path):
+    # Line endings follow the checkout; the zip always holds LF so it stays reproducible.
+    return path.read_bytes().replace(b"\r\n", b"\n")
+
+
+def pack_wrapper(group, name, folder, inner_root, target):
+    manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
+    inner = inner_root / group / f"{name}.zip"
+    if not inner.is_file():
+        sys.exit(f"{group}/{name}: missing inner zip {inner}")
+    with zipfile.ZipFile(inner) as archive:
+        try:
+            inner_id = json.loads(archive.read("manifest.json").decode("utf-8-sig"))["id"]
+        except KeyError:
+            sys.exit(f"{group}/{name}: {inner} has no manifest.json")
+    if inner_id != manifest["id"]:
+        sys.exit(f"{group}/{name}: wrapper id {manifest['id']} differs from inner id {inner_id}")
+    if manifest.get("package") != f"{name}.zip":
+        sys.exit(f"{group}/{name}: package must be {name}.zip")
+    entries = [("manifest.json", read_text_lf(folder / "manifest.json"), zipfile.ZIP_DEFLATED)]
+    for file in sorted((folder / "i18n").glob("*.json")) if (folder / "i18n").is_dir() else []:
+        entries.append((f"i18n/{file.name}", read_text_lf(file), zipfile.ZIP_DEFLATED))
+    entries.append((f"{name}.zip", inner.read_bytes(), zipfile.ZIP_STORED))
+    target.parent.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+        for entry, data, method in entries:
+            info = zipfile.ZipInfo(entry, FIXED_TIME)
+            info.compress_type = method
+            info.external_attr = 0o644 << 16
+            archive.writestr(info, data)
+
+
+def build_wrappers(inner_root, output, names):
+    sources = wrapper_sources()
+    if not sources:
+        sys.exit(f"no wrapper sources in {WRAPPERS}")
+    unknown = set(names) - {name for _, name, _ in sources}
+    if unknown:
+        sys.exit("unknown wrapper(s): " + ", ".join(sorted(unknown)))
+    count = 0
+    for group, name, folder in sources:
+        if names and name not in names:
+            continue
+        target = output / "gpufx" / group / f"{name}.zip"
+        pack_wrapper(group, name, folder, inner_root, target)
+        count += 1
+    print(f"packed {count} wrapper(s) into {output / 'gpufx'}")
 
 
 def notices_text(packages):
@@ -121,8 +186,13 @@ def main():
     parser.add_argument("-o", "--output", type=Path, default=ROOT / "dist", help="output directory (default: dist)")
     parser.add_argument("--notices", action="store_true", help="rewrite THIRD_PARTY_NOTICES.md")
     parser.add_argument("--check-notices", action="store_true", help="fail if THIRD_PARTY_NOTICES.md is out of date")
+    parser.add_argument("--wrappers", type=Path, metavar="INNER_ROOT", help="build gpufx wrapper zips from inner zips laid out <root>/<group>/<name>.zip")
     parser.add_argument("slugs", nargs="*", help="package names (default: all)")
     args = parser.parse_args()
+
+    if args.wrappers:
+        build_wrappers(args.wrappers, args.output, set(args.slugs))
+        return
 
     packages = discover()
     if not packages:
