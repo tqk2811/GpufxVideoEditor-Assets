@@ -5,13 +5,14 @@
     py scripts/pack.py --notices        rewrite THIRD_PARTY_NOTICES.md
     py scripts/pack.py --check-notices  fail if THIRD_PARTY_NOTICES.md is out of date
     py scripts/pack.py --wrappers <inner zips root> [-o out] [names]
-                                        gpufx/<group>/<name>/ -> out/gpufx/<group>/<name>.zip
+                                        gpufx/<group>/<name>/ -> out/gpufx/<group>/<name>.zip.gpufxpack
 
 A package is a folder below packages/ with a manifest.json; its folder name is the slug. Zips hold
 manifest.json at the root and are byte for byte reproducible: entries are sorted, deflated, and use
 a fixed timestamp. 
 --wrappers builds the editor wrapper zips of the gpufx effect packages. <inner zips root> holds the
-inner packages as produced by `gpufx pack`, laid out <root>/<group>/<name>.zip. A wrapper zip holds
+inner packages as produced by `gpufx pack`, laid out <root>/<group>/<name>.zip. A wrapper pack is a zip
+named <name>.zip.gpufxpack (the editor tells it by its content, not its name) holding
 manifest.json, i18n/<code>.json and the inner zip as <name>.zip; it fails if the inner zip is missing
 or its manifest id differs from the wrapper id
 (ignoring case), and checks the wrapper manifest and file names exactly as the editor does. Standard library only; run it with the `py` launcher on Windows.
@@ -89,6 +90,7 @@ def read_text_lf(path):
     return path.read_bytes().replace(b"\r\n", b"\n")
 
 
+WRAPPER_EXTENSION = ".zip.gpufxpack"
 WRAPPER_KEYS = {"format", "type", "id", "version", "package", "tags"}
 WRAPPER_REQUIRED = WRAPPER_KEYS - {"tags"}
 MAX_ID_LENGTH = 128
@@ -191,7 +193,7 @@ def build_wrappers(inner_root, output, names):
     for group, name, folder in sources:
         if names and name not in names:
             continue
-        target = output / "gpufx" / group / f"{name}.zip"
+        target = output / "gpufx" / group / f"{name}{WRAPPER_EXTENSION}"
         pack_wrapper(group, name, folder, inner_root, target)
         count += 1
     print(f"packed {count} wrapper(s) into {output / 'gpufx'}")

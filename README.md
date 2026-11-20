@@ -35,7 +35,8 @@ reproducible byte for byte (sorted entries, fixed timestamps). Zips are build ou
 
 ## gpufx wrapper sources
 
-The editor installs every gpufx effect package through a wrapper zip. `gpufx/<group>/<name>/` holds the
+The editor installs every gpufx effect package through a wrapper pack, a zip named
+`<name>.zip.gpufxpack` (the editor decides by its content, never by the extension). `gpufx/<group>/<name>/` holds the
 wrapper source: `manifest.json` (`format` 1, `type` `gpufx`, the `id` and `version` of the inner
 package, `package` naming the inner zip, English search `tags`) and `i18n/<code>.json`, the translations
 of the package. The inner package zip (as built by `gpufx pack`) is not committed; the wrapper zip
@@ -44,7 +45,7 @@ carries it unchanged next to the manifest. Groups mirror the inner package folde
 
 ```sh
 py scripts/migrate_gpufx_wrappers.py --ffmpeg-gpu-filter <FFmpegGpuFilter>/packages/gpufx --assets packages/gpufx --capcut <capcut repo>/src   # regenerate the sources
-py scripts/pack.py --wrappers <inner zips root> [-o out] [names]   # <root>/<group>/<name>.zip -> out/gpufx/<group>/<name>.zip
+py scripts/pack.py --wrappers <inner zips root> [-o out] [names]   # <root>/<group>/<name>.zip -> out/gpufx/<group>/<name>.zip.gpufxpack
 ```
 
 The build fails when an inner zip is missing or its manifest `id` differs from the wrapper `id`.
