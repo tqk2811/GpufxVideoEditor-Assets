@@ -50,6 +50,38 @@ py scripts/pack.py --wrappers <inner zips root> [-o out] [names]   # <root>/<gro
 
 The build fails when an inner zip is missing or its manifest `id` differs from the wrapper `id`.
 
+## One item per pack
+
+Every content pack (sound, music track, sticker, clip animation, text or subtitle style) holds exactly
+one item. The sources stay grouped in collections (an AI Video Studio category, a `pack.json`, a sticker
+script), and the scripts split them with `scripts/item_packs.py`:
+
+| Field | Value |
+|-------|-------|
+| `id` | `<collection id>-<item id>`, for example `avs-sfx-ui-blip_2` |
+| `items` | the one item, its id unchanged |
+| `collection` | the collection id, for example `avs-sfx-ui` |
+| `collection_name` | the collection's display name, for example `SFX: Ui` |
+| `name`, `description`, `tags`, `category` | from the item |
+
+`i18n/<language>.json` of a pack has the item's translated `name`, `description`, `tags` and
+`category`, `collection_name` (the collection's translated name) and `items` with that one item. Every
+pack carries the `LICENSE.txt`, `NOTICE.txt` and `license` block of its collection.
+
+The pack zips of a type are written to `<output>/<type>-packs/`, and `<output>/<type>-packs.zip` is a
+plain zip (stored) holding every zip of that folder, for a single download: `audio-packs.zip`,
+`sticker-packs.zip`, `clip-animation-packs.zip` and `text-style-packs.zip`. Unpack it, then install each
+inner zip. A script removes the zips of its own collections from the folder before writing them again,
+and rebuilds the bundle from the whole folder, so the five sticker scripts fill one `sticker-packs.zip`
+when they share an output folder.
+
+| Bundle | Packs |
+|--------|-------|
+| `audio-packs.zip` | 339: 309 sounds in 15 categories, 30 music tracks |
+| `sticker-packs.zip` | 317: Fluent Emoji 107, Noto 120, tqk2811 20, animated Noto 46, animated tqk2811 24 |
+| `clip-animation-packs.zip` | 64: `avs-clip-animation` 7, `tqk2811-clip-animation` 57 |
+| `text-style-packs.zip` | 85: text styles 32, subtitle styles 53 |
+
 ## Audio packs
 
 Sound effects and music from AI Video Studio are shipped as release zips, but the audio is not in this
@@ -59,9 +91,9 @@ repository. `scripts/pack_audio.py` builds them from a checkout of that project:
 py scripts/pack_audio.py --source <ai-video-studio>/assets -o dist-audio
 ```
 
-It writes `sfx-<category>.zip` for every category of `sfx/catalog.json` and `music.zip` (16 zips, 339
-audio files), plus `audio-packs.zip`, a plain zip holding those 16 for a single download (unpack it,
-then install each inner zip). Each pack zip has `manifest.json` (format 1), `LICENSE.txt`, `NOTICE.txt` and `audio/<file>`;
+The collections are `avs-sfx-<category>` for every category of `sfx/catalog.json` and `avs-music`; each
+of their 339 audio files becomes its own pack in `audio-packs/`, and `audio-packs.zip` holds them all
+(see [One item per pack](#one-item-per-pack)). Each pack zip has `manifest.json` (format 1), `LICENSE.txt`, `NOTICE.txt` and `audio/<file>`;
 audio is stored without recompression and the zips are reproducible byte for byte. Names, tags and loop
 come from the catalogs; FLAC durations are read from the file header, MP3 durations from the catalog.
 The licence and attribution of these packs are the MIT licence of AI Video Studio, listed in
@@ -69,17 +101,19 @@ The licence and attribution of these packs are the MIT licence of AI Video Studi
 
 ## Sticker packs
 
-| Zip | Stickers | Licence | Script |
+| Collection | Stickers | Licence | Script |
 |-----|----------|---------|--------|
-| `stickers.zip` | 107 Fluent Emoji (3D) | MIT (Microsoft) | `scripts/pack_stickers.py` |
-| `noto-stickers.zip` | 120 Noto Emoji: 59 emotions, 29 arrows, 32 marks | Apache-2.0 (Google) | `stickers/noto-stickers/generate.py` |
-| `tqk2811-stickers.zip` | 20 drawn here: 12 labels (Subscribe, Like, Share, Follow, Live, New, Sale...) and 8 frames and bubbles | MIT (original work) | `stickers/tqk2811-stickers/generate.py` |
-| `noto-animated-stickers.zip` | 46 Animated Noto Emoji (animated WebP, 512x512): 20 emotions, 7 hands, 19 marks | CC BY 4.0 (Google) | `stickers/noto-animated-stickers/generate.py` |
-| `tqk2811-animated-stickers.zip` | 24 animated stickers drawn here (animated WebP, 512x512): labels, marks, arrows, highlights and bubbles | MIT (original work) | `stickers/tqk2811-animated-stickers/generate.py` |
+| `avs-stickers` | 107 Fluent Emoji (3D) | MIT (Microsoft) | `scripts/pack_stickers.py` |
+| `noto-stickers` | 120 Noto Emoji: 59 emotions, 29 arrows, 32 marks | Apache-2.0 (Google) | `stickers/noto-stickers/generate.py` |
+| `tqk2811-stickers` | 20 drawn here: 12 labels (Subscribe, Like, Share, Follow, Live, New, Sale...) and 8 frames and bubbles | MIT (original work) | `stickers/tqk2811-stickers/generate.py` |
+| `noto-animated-stickers` | 46 Animated Noto Emoji (animated WebP, 512x512): 20 emotions, 7 hands, 19 marks | CC BY 4.0 (Google) | `stickers/noto-animated-stickers/generate.py` |
+| `tqk2811-animated-stickers` | 24 animated stickers drawn here (animated WebP, 512x512): labels, marks, arrows, highlights and bubbles | MIT (original work) | `stickers/tqk2811-animated-stickers/generate.py` |
 
-All five are format 1, type `sticker`, with items `id`, `file`, `name`, `tags` and `category`, and are
+Each sticker is its own pack, `sticker-packs/<collection>-<id>.zip`, and `sticker-packs.zip` holds the
+packs of every script run into the same output folder (see [One item per pack](#one-item-per-pack)). All
+are format 1, type `sticker`, with items `id`, `file`, `name`, `tags` and `category`, and are
 reproducible byte for byte. The LICENSE.txt and NOTICE.txt of the Noto, animated Noto and both drawn packs are kept in
-`stickers/<zip name>/`. The two animated packs hold animated WebP files, which the editor loops over the
+`stickers/<collection>/`. The two animated packs hold animated WebP files, which the editor loops over the
 length of the clip; the others are PNG images.
 
 ### Fluent Emoji
@@ -92,7 +126,7 @@ that project, which must be at the commit pinned in the script (`FLUENT_COMMIT`)
 py -I scripts/pack_stickers.py --source <fluentui-emoji> -o dist-stickers
 ```
 
-It writes `stickers.zip` with `manifest.json` (format 1, type `sticker`; items have `id`, `file`, `name`,
+It writes one pack per emoji, `sticker-packs/avs-stickers-<id>.zip`, with `manifest.json` (format 1, type `sticker`; items have `id`, `file`, `name`,
 `tags`, `category`), `LICENSE.txt` (the Microsoft licence), `NOTICE.txt` and `images/<id>.png`. Names, tags
 and categories come from the `metadata.json` of each emoji, and the zip is reproducible byte for byte. The
 list of 107 emoji follows the sticker panel of AI Video Studio. Only the files in the checkout are used:
@@ -165,15 +199,16 @@ rules of the editor's reader (including the ease forms `power`, `elastic`, `boun
 with their parameter ranges) and builds the zips:
 
 ```sh
-py -I scripts/pack_animations.py           # -> dist/<pack id>.zip
+py -I scripts/pack_animations.py           # -> dist/clip-animation-packs/<pack id>-<item id>.zip, dist/clip-animation-packs.zip
 py -I scripts/pack_animations.py --check   # validate only
 ```
 
-Each zip has `manifest.json` (format 1, type `clip-animation`, `items` = the item ids), `items/<id>.json`,
-`LICENSE.txt` and `NOTICE.txt`, and is reproducible byte for byte. An item may carry a `description` in
-the source; it is left out of the zip.
+Each item is its own pack. Its zip has `manifest.json` (format 1, type `clip-animation`, `items` = the
+item id, `collection` and `collection_name`), `items/<id>.json`, `LICENSE.txt`, `NOTICE.txt` and
+`i18n/<language>.json`, and is reproducible byte for byte. An item may carry a `description` in the
+source; it goes into the manifest and is left out of `items/<id>.json`.
 
-| Zip | Items | Licence |
+| Collection | Items | Licence |
 |-----|-------|---------|
 | `avs-clip-animation` | 7, from AI Video Studio (below) | MIT (AI Video Studio) |
 | `tqk2811-clip-animation` | 57 | MIT (original work) |
@@ -211,11 +246,11 @@ Each pack has its source in `text-styles/<pack>/`: `pack.json` (type, id, name, 
 editor's strict reader and builds the zips:
 
 ```sh
-py -I scripts/pack_text_styles.py           # -> dist/<pack>.zip
+py -I scripts/pack_text_styles.py           # -> dist/text-style-packs/<pack>-<item id>.zip, dist/text-style-packs.zip
 py -I scripts/pack_text_styles.py --check   # validate only
 ```
 
-| Zip | Type | Styles | Licence |
+| Collection | Type | Styles | Licence |
 |-----|------|--------|---------|
 | `avs-text-style` | `text-style` | 12 text presets of `studio/library.js` | MIT (AI Video Studio) |
 | `avs-subtitle-style` | `subtitle-style` | 22: the basic, `tiktok` and `slate` captions and the caption style of each pack | MIT (AI Video Studio) |
@@ -224,9 +259,10 @@ py -I scripts/pack_text_styles.py --check   # validate only
 | `tqk2811-text-style` | `text-style` | 20: `neon-pink`, `neon-cyan`, `double-outline`, `gradient-sunset`, `gradient-ocean`, `sticker`, `retro-3d`, `comic`, `fire`, `chrome`, `glitch-rgb`, `long-shadow`, `outline-only`, `pastel-bubble`, `gold-luxury`, `ice`, `toxic-green-glow`, `newspaper`, `handwritten-marker`, `vaporwave` (fonts are only hints for fonts of the system; none is embedded) | MIT (original work) |
 | `tqk2811-subtitle-style` | `subtitle-style` | 5 karaoke captions: `karaoke-fill`, `karaoke-neon`, `karaoke-box`, and `karaoke-pop` and `karaoke-neon-pop`, which grow the spoken word | MIT (original work) |
 
-Each zip has `manifest.json`, `LICENSE.txt` and `NOTICE.txt`, and is reproducible byte for byte. A pack
-whose styles use layers (`fill` with a gradient, several `outlines`, `shadows`, `inner_shadows`, `bloom`)
-is written as format 2, the others as format 1; the `tqk2811` packs are format 2 and use no picture. Pixels are turned into parts: a size is a part of the frame height, outline widths, shadow offsets
+Each style is its own pack; text and subtitle styles share `text-style-packs.zip`. Each zip has
+`manifest.json`, `LICENSE.txt`, `NOTICE.txt` and `i18n/<language>.json`, and is reproducible byte for
+byte. A pack whose style uses layers (`fill` with a gradient, several `outlines`, `shadows`, `inner_shadows`, `bloom`)
+is written as format 2, the others as format 1; no style uses a picture, so no texture or cover is shipped. Pixels are turned into parts: a size is a part of the frame height, outline widths, shadow offsets
 and blurs, box padding and radius and glow radius are parts of the font size, and the layout (`anchor_y`,
 `max_width`) is a part of the frame. The text presets use the 720x1280 canvas; the captions use the
 canvas they are drawn on by default, 1280x720, or 720x1280 for the vertical-only packs. Where CSS stacks
@@ -255,8 +291,10 @@ several items, keyed by the id the pack gives each item: the file name of `anima
 for the clip animations, the `id` of the item in `pack.json` for the text and subtitle styles, the `id` of
 the sticker (`stickers/<pack>/i18n/`; the Fluent Emoji pack, built by `scripts/pack_stickers.py`, keeps its
 file in `stickers/avs-stickers/i18n/`) and the `name` of the entry in the AI Video Studio catalog for the
-sounds and music (`audio/<pack id>/i18n/`, for example `audio/avs-sfx-ui/i18n/vi.json`). The pack scripts
-copy each file into the zip as `i18n/<language>.json` and check it with `scripts/pack_i18n.py`.
+sounds and music (`audio/<collection id>/i18n/`, for example `audio/avs-sfx-ui/i18n/vi.json`). These source
+files are per collection; the pack scripts check them with `scripts/pack_i18n.py` and write into each
+one-item pack an `i18n/<language>.json` cut down to its item, with `collection_name` (see
+[One item per pack](#one-item-per-pack)). The gpufx wrapper packs ship their `i18n/<code>.json` as they are.
 
 ## License
 
