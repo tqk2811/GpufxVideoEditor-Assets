@@ -1,0 +1,30 @@
+{
+  "name": "Quét xen kẽ (Interlace Wipe)",
+  "description": "Clip thứ hai tải lên clip đầu như ảnh interlace trên đường truyền chậm: lượt đầu quét xuống vẽ nó thành các hàng khối to, rồi mỗi lượt mới quét xuống lại với chi tiết gấp đôi đến khi hình nét. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tải ảnh",
+    "xen kẽ",
+    "interlace",
+    "kết nối chậm",
+    "tải dần",
+    "quét"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "rows": {
+      "label": "Số hàng",
+      "description": "Số hàng điểm ảnh của hình đang tải, trước khi lượt cuối vẽ nó ở độ chi tiết đầy đủ"
+    },
+    "passes": {
+      "label": "Số lượt",
+      "description": "Số lượt, lượt đầu vẽ các khối cao 2^(passes - 1) hàng"
+    },
+    "glow": {
+      "label": "Quầng sáng",
+      "description": "Độ sáng của các hàng mới vẽ phía sau mỗi lượt quét"
+    }
+  }
+}

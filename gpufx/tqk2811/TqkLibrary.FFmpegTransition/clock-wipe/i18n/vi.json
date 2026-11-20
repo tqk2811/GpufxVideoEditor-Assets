@@ -1,0 +1,31 @@
+{
+  "name": "Quét đồng hồ (Clock Wipe)",
+  "description": "Kim đồng hồ quét từ vị trí 12 giờ: clip thứ hai hiện ra phía sau kim. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "đồng hồ",
+    "quét",
+    "kim đồng hồ",
+    "clock wipe",
+    "radial",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "reverse": {
+      "label": "Quét ngược",
+      "description": "Quét ngược chiều kim đồng hồ"
+    },
+    "center": {
+      "label": "Tâm kim",
+      "description": "Trục xoay của kim (0..1)"
+    },
+    "softness": {
+      "label": "Độ mềm viền",
+      "description": "Độ rộng viền, tính theo vòng"
+    }
+  }
+}

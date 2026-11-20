@@ -1,0 +1,18 @@
+{
+  "name": "TV mất tín hiệu (TV Lost Signal)",
+  "description": "Hòa trộn chéo với các đường dò kênh trôi và xé hình, như TV mất tín hiệu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "mất tín hiệu",
+    "tv",
+    "nhiễu",
+    "tivi",
+    "xé hình",
+    "đường dò kênh"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

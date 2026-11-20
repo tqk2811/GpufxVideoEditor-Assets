@@ -1,0 +1,46 @@
+{
+  "name": "Thác gạch nhỏ (Micro Brick Cascade)",
+  "description": "Clip đầu vỡ thành bức tường dày các ô vuông nhỏ xíu; một thác chéo thả các ô theo từng đợt so le, để chúng rơi và trôi sang bên trong khi clip thứ hai hiện ra bên dưới. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "gạch nhỏ",
+    "ô vuông",
+    "thác",
+    "rơi",
+    "mảnh vỡ",
+    "pixel"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "tile_size": {
+      "label": "Kích thước ô",
+      "description": "Kích thước mỗi ô vuông, so với chiều cao khung hình"
+    },
+    "fall": {
+      "label": "Độ rơi",
+      "description": "Độ mạnh rơi xuống của các ô được thả"
+    },
+    "drift": {
+      "label": "Độ trôi",
+      "description": "Độ trôi sang bên khi các ô rơi"
+    },
+    "diagonal": {
+      "label": "Độ chéo",
+      "description": "Mức độ chéo của đợt sóng thả"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ lệch ngẫu nhiên giữa các ô lân cận"
+    },
+    "softness": {
+      "label": "Độ mềm",
+      "description": "Độ mềm khi các ô biến mất"
+    },
+    "glow": {
+      "label": "Quầng sáng",
+      "description": "Độ sáng của điểm sáng ở mép các ô đang chuyển động"
+    }
+  }
+}

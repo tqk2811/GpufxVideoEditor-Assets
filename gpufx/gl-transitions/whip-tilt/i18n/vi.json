@@ -1,0 +1,34 @@
+{
+  "name": "Hất máy nhanh (Whip Tilt)",
+  "description": "Máy quay hất nhanh từ clip đầu sang clip thứ hai, đặt mép chạm mép theo một góc phía trên nó, làm cả hai nhòe theo phối cảnh với nhòe chuyển động dọc. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "hất máy",
+    "tilt",
+    "nhòe dọc",
+    "lia dọc",
+    "whip tilt",
+    "máy quay"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "down": {
+      "label": "Hướng xuống",
+      "description": "Hất máy xuống tới clip thứ hai bên dưới thay vì phía trên"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Độ dài nhòe chuyển động dọc theo hướng hất"
+    },
+    "chroma": {
+      "label": "Tách màu RGB",
+      "description": "Mức các kênh màu tách rời khi hất nhanh dần"
+    },
+    "perspective": {
+      "label": "Phối cảnh",
+      "description": "Độ mạnh của phối cảnh (trường nhìn của máy quay)"
+    }
+  }
+}

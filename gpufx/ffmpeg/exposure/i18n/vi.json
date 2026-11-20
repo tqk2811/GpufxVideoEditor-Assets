@@ -1,0 +1,25 @@
+{
+  "name": "Phơi sáng (Exposure)",
+  "description": "Chỉnh độ phơi sáng và mức đen.",
+  "tags": [
+    "phơi sáng",
+    "exposure",
+    "độ sáng",
+    "mức đen",
+    "chỉnh sáng"
+  ],
+  "params": {
+    "exposure": {
+      "label": "Phơi sáng",
+      "description": "Độ phơi sáng tính bằng stop; giá trị dương làm sáng"
+    },
+    "black": {
+      "label": "Mức đen",
+      "description": "Hiệu chỉnh mức đen"
+    },
+    "linear": {
+      "label": "Ánh sáng tuyến tính",
+      "description": "Áp dụng trên ánh sáng tuyến tính: ảnh được đổi từ sRGB sang ánh sáng tuyến tính rồi đổi lại"
+    }
+  }
+}

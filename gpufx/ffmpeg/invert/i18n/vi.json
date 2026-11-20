@@ -1,0 +1,17 @@
+{
+  "name": "Đảo màu (Invert)",
+  "description": "Ảnh âm bản.",
+  "tags": [
+    "đảo màu",
+    "âm bản",
+    "negative",
+    "invert",
+    "đảo ngược"
+  ],
+  "params": {
+    "amount": {
+      "label": "Độ trộn",
+      "description": "Trộn với ảnh gốc"
+    }
+  }
+}

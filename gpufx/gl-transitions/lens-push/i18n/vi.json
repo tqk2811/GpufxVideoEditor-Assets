@@ -1,0 +1,34 @@
+{
+  "name": "Đẩy ống kính (Lens Push)",
+  "description": "Clip thứ hai đẩy clip đầu ra khỏi khung như nhìn qua ống kính góc rộng: khung phồng lên và bẻ cong đường nối khi các clip lướt qua, có nhòe chuyển động, viền màu về phía mép và vignette nhẹ, rồi phẳng lại khi cú đẩy kết thúc. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ống kính",
+    "đẩy",
+    "góc rộng",
+    "phồng",
+    "nhòe chuyển động",
+    "trượt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng các clip di chuyển, căn về một trong 8 hướng ngang, dọc và chéo gần nhất (x sang phải, y lên trên)"
+    },
+    "strength": {
+      "label": "Độ phồng ống kính",
+      "description": "Độ mạnh của độ phồng ống kính ở đỉnh"
+    },
+    "fringe": {
+      "label": "Viền màu",
+      "description": "Mức lan của viền màu về phía mép"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Độ dài nhòe chuyển động ở tốc độ tối đa"
+    }
+  }
+}

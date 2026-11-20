@@ -1,0 +1,29 @@
+{
+  "name": "Nhuộm màu (Colorize)",
+  "description": "Phủ một màu HSL đặc: lấy sắc độ của màu đặt lên luma của ảnh.",
+  "tags": [
+    "nhuộm màu",
+    "phủ màu",
+    "tô màu",
+    "colorize",
+    "tint"
+  ],
+  "params": {
+    "hue": {
+      "label": "Sắc độ (Hue)",
+      "description": "Sắc độ, tính bằng độ"
+    },
+    "saturation": {
+      "label": "Bão hòa",
+      "description": "Độ bão hòa"
+    },
+    "lightness": {
+      "label": "Độ sáng",
+      "description": "Độ sáng (lightness)"
+    },
+    "mix": {
+      "label": "Độ trộn",
+      "description": "Mức trộn độ sáng nguồn (1 = giữ luma của ảnh, 0 = luma riêng của màu)"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Lọt sáng",
+  "description": "Lọt sáng: ánh sáng màu ấm trôi vào từ các cạnh, như máy ảnh bị hở sáng.",
+  "tags": [
+    "lọt sáng",
+    "light leak",
+    "ánh sáng",
+    "phim"
+  ],
+  "params": {
+    "intensity": {
+      "label": "Cường độ sáng",
+      "description": "Cường độ ánh sáng"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ ánh sáng trôi"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Kích thước các vệt sáng, tính theo chiều cao khung hình"
+    },
+    "color1": {
+      "label": "Màu thứ nhất",
+      "description": "Màu ánh sáng thứ nhất"
+    },
+    "color2": {
+      "label": "Màu thứ hai",
+      "description": "Màu ánh sáng thứ hai"
+    },
+    "seed": {
+      "label": "Hạt giống ngẫu nhiên",
+      "description": "Thay đổi nơi ánh sáng đi vào"
+    }
+  }
+}

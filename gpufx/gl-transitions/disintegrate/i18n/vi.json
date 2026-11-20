@@ -1,0 +1,31 @@
+{
+  "name": "Tan thành bụi (Disintegrate)",
+  "description": "Clip đầu vỡ vụn thành bụi mịn từ một phía, các hạt bị gió thổi bay và mờ dần, để lộ clip thứ hai bên dưới. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "bụi",
+    "tan biến",
+    "vỡ vụn",
+    "gió",
+    "tro bụi",
+    "biến mất",
+    "thanos"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "particle_size": {
+      "label": "Cỡ hạt bụi",
+      "description": "Kích thước hạt bụi, tính theo chiều cao khung hình"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng gió thổi bụi (x sang phải, y lên trên)"
+    },
+    "spread": {
+      "label": "Độ lan",
+      "description": "Khoảng bụi bay và tản ra trước khi mờ hẳn"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Cháy lượn sóng (Undulating Burn Out)",
+  "description": "Một vòng tròn với cạnh cháy lượn sóng lớn dần từ một điểm để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "cháy",
+    "lượn sóng",
+    "vòng tròn",
+    "lửa",
+    "cạnh cháy",
+    "mở rộng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của cạnh"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm của vòng tròn (0..1, y hướng xuống)"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu của cạnh cháy"
+    }
+  }
+}

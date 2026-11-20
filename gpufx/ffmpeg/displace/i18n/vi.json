@@ -1,0 +1,16 @@
+{
+  "name": "Dịch chuyển điểm ảnh (Displace)",
+  "description": "Dịch đầu vào thứ nhất theo độ sáng của hai đầu vào bản đồ (x và y).",
+  "tags": [
+    "displace",
+    "bản đồ dịch chuyển",
+    "méo hình",
+    "biến dạng"
+  ],
+  "params": {
+    "edge": {
+      "label": "Xử lý biên",
+      "description": "Việc xảy ra khi vượt khỏi biên: 0 = blank (đen), 1 = smear (lặp biên), 2 = wrap (cuộn vòng), 3 = mirror (đối xứng)"
+    }
+  }
+}

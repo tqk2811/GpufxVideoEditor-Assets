@@ -1,0 +1,25 @@
+{
+  "name": "Thác đĩa (Disc Cascade)",
+  "description": "Một đĩa cắt từ giữa clip đầu xoay nửa vòng, rồi bốn đĩa nội tiếp trong các góc phần tư khung hình, rồi mười sáu đĩa nhỏ hơn; những đĩa nhỏ nhất xoay trọn vòng trong khi hình chuyển sang clip thứ hai, các đĩa lớn hơn của nó lần lượt xoay lại từng cỡ cho đến khi hình hoàn chỉnh. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "đĩa",
+    "thác",
+    "hình tròn",
+    "xoay",
+    "vòng tròn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "levels": {
+      "label": "Số cấp",
+      "description": "Số cỡ đĩa: 1, 4, 16 rồi 64 đĩa"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ mạnh của bóng các đĩa đang xoay đổ xuống"
+    }
+  }
+}

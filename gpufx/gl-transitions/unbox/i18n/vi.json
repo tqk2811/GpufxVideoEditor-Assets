@@ -1,0 +1,34 @@
+{
+  "name": "Mở hộp (Unbox)",
+  "description": "Clip thứ hai được ném vào gập thành hộp bìa mở, đáp xuống với cú nảy, rồi các thành hộp đổ ra phẳng đến khi phủ kín khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "mở hộp",
+    "hộp giấy",
+    "bìa carton",
+    "unboxing",
+    "gói quà",
+    "hộp"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "depth": {
+      "label": "Độ sâu",
+      "description": "Chiều cao các thành hộp, theo phần cạnh ngắn"
+    },
+    "perspective": {
+      "label": "Phối cảnh",
+      "description": "Độ mạnh của phối cảnh"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Mức các mặt tối đi, và bóng của chúng"
+    },
+    "paper": {
+      "label": "Màu giấy",
+      "description": "Màu mặt sau của tấm bìa"
+    }
+  }
+}

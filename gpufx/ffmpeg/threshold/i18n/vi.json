@@ -1,0 +1,17 @@
+{
+  "name": "Ngưỡng (Threshold)",
+  "description": "Bản port của bộ lọc threshold FFmpeg: theo từng kênh, xuất clip min nơi đầu vào bằng hoặc thấp hơn clip ngưỡng, nếu không thì xuất clip max.",
+  "tags": [
+    "ngưỡng",
+    "threshold",
+    "nhị phân",
+    "trắng đen",
+    "tương phản cao"
+  ],
+  "params": {
+    "planes": {
+      "label": "Kênh",
+      "description": "Mặt nạ bit các kênh cần lọc (1 = R, 2 = G, 4 = B, 8 = A); các kênh còn lại được chép từ đầu vào thứ nhất"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Lật gương (Mirror)",
+  "description": "Lật theo chiều ngang, chiều dọc hoặc cả hai.",
+  "tags": [
+    "lật",
+    "gương",
+    "đối xứng",
+    "mirror",
+    "flip",
+    "lật ngang",
+    "lật dọc"
+  ],
+  "params": {
+    "mode": {
+      "label": "Chế độ",
+      "description": "0 = ngang, 1 = dọc, 2 = cả hai"
+    }
+  }
+}

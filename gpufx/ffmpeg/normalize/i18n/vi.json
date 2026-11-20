@@ -1,0 +1,30 @@
+{
+  "name": "Chuẩn hóa (Normalize)",
+  "description": "Kéo giãn dải R, G và B của từng khung hình để giá trị tối nhất và sáng nhất chạm tới điểm đen và điểm trắng.",
+  "tags": [
+    "chuẩn hóa",
+    "tự động",
+    "tương phản",
+    "normalize",
+    "auto contrast",
+    "tự cân bằng"
+  ],
+  "params": {
+    "blackpt": {
+      "label": "Điểm đen",
+      "description": "Màu đầu ra mà giá trị đầu vào tối nhất của mỗi kênh được ánh xạ tới"
+    },
+    "whitept": {
+      "label": "Điểm trắng",
+      "description": "Màu đầu ra mà giá trị đầu vào sáng nhất của mỗi kênh được ánh xạ tới"
+    },
+    "independence": {
+      "label": "Độc lập kênh",
+      "description": "Tỉ lệ chuẩn hóa riêng từng kênh so với chuẩn hóa liên kết: 0 kéo giãn ba kênh cùng nhau, 1 mỗi kênh riêng"
+    },
+    "strength": {
+      "label": "Cường độ",
+      "description": "Cường độ, từ không đổi (0) tới chuẩn hóa đầy đủ (1)"
+    }
+  }
+}

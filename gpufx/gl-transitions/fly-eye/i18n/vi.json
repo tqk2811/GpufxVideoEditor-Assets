@@ -1,0 +1,30 @@
+{
+  "name": "Mắt ruồi (Fly Eye)",
+  "description": "Hình ảnh vỡ thành lưới thấu kính mắt ruồi với tách màu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "mắt ruồi",
+    "thấu kính",
+    "lưới",
+    "kính lúp",
+    "tách màu",
+    "côn trùng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "size": {
+      "label": "Độ mạnh thấu kính",
+      "description": "Độ mạnh của mỗi thấu kính"
+    },
+    "zoom": {
+      "label": "Số thấu kính",
+      "description": "Số thấu kính"
+    },
+    "color_separation": {
+      "label": "Tách màu",
+      "description": "Mức tách kênh đỏ và xanh dương"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Quét in lụa (Screen Print Wipe)",
+  "description": "Cây gạt mực quét qua lại khung hình bốn lần, đẩy một vệt mực trước lưỡi và in clip thứ hai từng loại mực bán sắc một, vàng, hồng sẫm, lục lam rồi đen, hơi lệch khít và có vệt, đến khi các lớp khít lại và các chấm tan vào toàn bộ hình ảnh. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "in lụa",
+    "in ấn",
+    "gạt mực",
+    "bán sắc",
+    "cmyk",
+    "chấm"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "dots": {
+      "label": "Số chấm",
+      "description": "Số chấm bán sắc trên chiều cao khung hình: nhiều hơn cho lưới mịn hơn, có thể lấp lánh ở kích thước nhỏ"
+    },
+    "misregistration": {
+      "label": "Độ lệch khít",
+      "description": "Mức các lớp mực in lệch khít, tính theo chiều cao khung hình"
+    },
+    "grit": {
+      "label": "Độ nhám mực",
+      "description": "Mức kết cấu mực: vệt cây gạt và đốm thiếu mực"
+    }
+  }
+}

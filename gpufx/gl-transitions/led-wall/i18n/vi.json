@@ -1,0 +1,46 @@
+{
+  "name": "Tường LED (LED Wall)",
+  "description": "Hình ảnh phóng vào một màn hình LED khổng lồ gồm các điốt tròn phát sáng trên tấm nền tối; một đợt sóng làm tươi quét qua, mỗi điốt nháy sáng khi chuyển sang clip thứ hai, rồi các điốt tan lại vào hình ảnh liền. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "led",
+    "màn hình led",
+    "điốt",
+    "pixel",
+    "màn hình",
+    "bóng đèn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "cells": {
+      "label": "Số ô",
+      "description": "Số điốt theo cạnh ngắn"
+    },
+    "glow": {
+      "label": "Quầng sáng",
+      "description": "Độ mạnh quầng sáng lan từ các điốt vào tấm nền tối"
+    },
+    "flash": {
+      "label": "Chớp sáng",
+      "description": "Độ sáng của lần nháy mỗi điốt khi chuyển"
+    },
+    "zoom": {
+      "label": "Độ phóng to",
+      "description": "Mức hình ảnh phóng to khi là màn hình"
+    },
+    "triads": {
+      "label": "Điốt con RGB",
+      "description": "Mỗi điốt gồm các điốt con đỏ, xanh lá và xanh dương"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng sóng làm tươi quét qua màn hình (x sang phải, y lên trên)"
+    },
+    "panel": {
+      "label": "Màu tấm nền",
+      "description": "Màu của tấm nền giữa các điốt"
+    }
+  }
+}

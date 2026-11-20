@@ -1,0 +1,21 @@
+{
+  "name": "Cháy (Burn)",
+  "description": "Clip đầu cháy rụi thành các mảng nhiễu phát sáng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "cháy",
+    "lửa",
+    "đốt",
+    "bỏng",
+    "cháy xém"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "burn_color": {
+      "label": "Màu cháy",
+      "description": "Màu của các mép đang cháy"
+    }
+  }
+}

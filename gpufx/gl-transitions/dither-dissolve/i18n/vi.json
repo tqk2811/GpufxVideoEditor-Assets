@@ -1,0 +1,22 @@
+{
+  "name": "Tan rung màu (Dither Dissolve)",
+  "description": "Clip thứ hai hiện ra qua mẫu dither có thứ tự 8x8, như màn hình máy tính cổ. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "dither",
+    "rung màu",
+    "retro",
+    "cổ điển",
+    "pixel",
+    "8 bit"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "dot_size": {
+      "label": "Cỡ chấm",
+      "description": "Kích thước một chấm dither, so với chiều cao"
+    }
+  }
+}

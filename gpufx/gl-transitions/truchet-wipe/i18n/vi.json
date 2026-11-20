@@ -1,0 +1,30 @@
+{
+  "name": "Quét Truchet (Truchet Wipe)",
+  "description": "Lưới các ô vuông, mỗi ô chứa hai cung phần tư đường tròn, nối thành các đường dài uốn lượn; bắt đầu từ giữa và lan ra ngoài, các đường được vẽ thành nét mảnh của clip thứ hai, rồi dày lên thành dải có viền tối và bóng mềm đến khi hòa vào nhau trên toàn khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "truchet",
+    "mê cung",
+    "đường cong",
+    "cung tròn",
+    "lưới",
+    "họa tiết"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "cells": {
+      "label": "Số ô",
+      "description": "Số ô theo chiều cao khung hình"
+    },
+    "outline": {
+      "label": "Viền tối",
+      "description": "Độ mạnh của viền tối và của bóng dọc các dải"
+    },
+    "spread": {
+      "label": "Độ lan",
+      "description": "Mức các đường được so le từ giữa ra ngoài: 0 vẽ tất cả cùng lúc"
+    }
+  }
+}

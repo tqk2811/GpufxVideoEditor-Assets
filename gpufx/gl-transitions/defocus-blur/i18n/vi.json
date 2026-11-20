@@ -1,0 +1,21 @@
+{
+  "name": "Nhòe mất nét (Defocus Blur)",
+  "description": "Hòa trộn chéo qua nhòe mất nét. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "mất nét",
+    "nhòe",
+    "làm mờ",
+    "hòa trộn",
+    "blur"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "blur_size": {
+      "label": "Mức nhòe",
+      "description": "Mức nhòe"
+    }
+  }
+}

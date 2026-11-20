@@ -1,0 +1,33 @@
+{
+  "name": "Đường cong tham số (Crazy Parametric Fun)",
+  "description": "Clip đầu bị kéo dọc theo một đường cong tham số thành xoáy ảo giác. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tham số",
+    "đường cong",
+    "xoáy",
+    "ảo giác",
+    "méo"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "a": {
+      "label": "Tham số A",
+      "description": "Tham số thứ nhất của đường cong"
+    },
+    "b": {
+      "label": "Tham số B",
+      "description": "Tham số thứ hai của đường cong"
+    },
+    "amplitude": {
+      "label": "Biên độ",
+      "description": "Độ mạnh của biến dạng"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mượt của biến dạng (càng nhỏ hình ảnh càng bị đẩy xa)"
+    }
+  }
+}

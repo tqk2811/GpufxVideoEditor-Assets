@@ -1,0 +1,38 @@
+{
+  "name": "Tốc độ ánh sáng (Warp Speed)",
+  "description": "Máy quay nhảy sang tốc độ ánh sáng: các vệt sao bắn ra trong khi clip đầu bị kéo thành vệt nhòe xuyên tâm, rồi sau một chớp sáng, clip thứ hai hiện ra. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tốc độ ánh sáng",
+    "warp",
+    "vệt sao",
+    "không gian",
+    "vũ trụ",
+    "siêu tốc"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm máy quay bay tới (0..1, y hướng xuống)"
+    },
+    "streaks": {
+      "label": "Số vệt sao",
+      "description": "Số vệt sao"
+    },
+    "streak_color": {
+      "label": "Màu vệt",
+      "description": "Màu của các vệt và chớp sáng"
+    },
+    "strength": {
+      "label": "Độ mạnh",
+      "description": "Độ dài các vệt và vệt nhòe"
+    },
+    "flash": {
+      "label": "Chớp sáng",
+      "description": "Độ sáng chớp sáng ở đỉnh"
+    }
+  }
+}

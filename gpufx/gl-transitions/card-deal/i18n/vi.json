@@ -1,0 +1,37 @@
+{
+  "name": "Chia bài (Card Deal)",
+  "description": "Clip thứ hai được chia lên khung hình như ván bài: hết ô này đến ô khác được búng từ phía dưới khung hình, xoay trong không khí với bóng nâng lên, và trượt dừng đúng chỗ cho đến khi hình ảnh hoàn chỉnh. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "bài",
+    "chia bài",
+    "thẻ",
+    "lá bài",
+    "ô"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "columns": {
+      "label": "Số cột",
+      "description": "Số cột thẻ bài"
+    },
+    "rows": {
+      "label": "Số hàng",
+      "description": "Số hàng thẻ bài"
+    },
+    "deck": {
+      "label": "Điểm chia bài",
+      "description": "Điểm chia bài, có thể nằm ngoài khung hình (0..1, y hướng xuống)"
+    },
+    "spin": {
+      "label": "Độ xoay",
+      "description": "Số vòng một lá bài xoay trên đường đi trước khi nằm thẳng"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng các lá bài đổ xuống"
+    }
+  }
+}

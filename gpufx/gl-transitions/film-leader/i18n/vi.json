@@ -1,0 +1,34 @@
+{
+  "name": "Đếm ngược phim (Film Leader)",
+  "description": "Kim đồng hồ quét clip đầu đi để lộ đoạn đếm ngược phim xước, với các vòng tròn chữ thập và số lớn đếm ngược, mỗi lượt quét xóa vào số kế tiếp, và lượt quét cuối để lộ clip thứ hai phía sau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "đếm ngược",
+    "phim",
+    "số đếm",
+    "kim đồng hồ",
+    "countdown",
+    "cổ điển"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "count": {
+      "label": "Số lượng",
+      "description": "Số lượng số đếm ngược trước khi tới clip thứ hai"
+    },
+    "wear": {
+      "label": "Độ hao mòn",
+      "description": "Mức độ hao mòn phim trên đoạn đếm ngược: hạt, vết xước, bụi và nhấp nháy"
+    },
+    "leader_color": {
+      "label": "Màu phim đếm ngược",
+      "description": "Màu của phim đếm ngược"
+    },
+    "ink_color": {
+      "label": "Màu mực",
+      "description": "Màu của các số, vòng tròn, chữ thập và kim đồng hồ"
+    }
+  }
+}

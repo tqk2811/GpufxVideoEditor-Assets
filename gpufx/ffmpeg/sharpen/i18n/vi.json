@@ -1,0 +1,17 @@
+{
+  "name": "Làm nét (Sharpen)",
+  "description": "Unsharp mask trên vùng lân cận 3x3.",
+  "tags": [
+    "làm nét",
+    "sắc nét",
+    "sharpen",
+    "unsharp",
+    "tăng chi tiết"
+  ],
+  "params": {
+    "amount": {
+      "label": "Cường độ",
+      "description": "Cường độ làm nét"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Hiệu chỉnh màu vùng tối/sáng",
+  "description": "Dịch sắc độ của vùng tối và vùng sáng về phía xanh dương/đỏ và co giãn độ bão hòa.",
+  "tags": [
+    "hiệu chỉnh màu",
+    "color correct",
+    "vùng tối",
+    "vùng sáng",
+    "bão hòa",
+    "chỉnh màu"
+  ],
+  "params": {
+    "rl": {
+      "label": "Đỏ vùng tối",
+      "description": "Dịch đỏ ở vùng tối"
+    },
+    "bl": {
+      "label": "Xanh dương vùng tối",
+      "description": "Dịch xanh dương ở vùng tối"
+    },
+    "rh": {
+      "label": "Đỏ vùng sáng",
+      "description": "Dịch đỏ ở vùng sáng"
+    },
+    "bh": {
+      "label": "Xanh dương vùng sáng",
+      "description": "Dịch xanh dương ở vùng sáng"
+    },
+    "saturation": {
+      "label": "Bão hòa",
+      "description": "Độ bão hòa (hệ số chroma)"
+    }
+  }
+}

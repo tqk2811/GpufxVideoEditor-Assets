@@ -1,0 +1,34 @@
+{
+  "name": "Tan chảy chói sáng (Bloom Dissolve)",
+  "description": "Vùng sáng của clip đầu cháy bừng thành quầng sáng mềm, rộng tràn ngập khung hình; bên dưới clip thứ hai thế chỗ, rồi quầng sáng lắng xuống vào vùng sáng của nó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "bloom",
+    "chói sáng",
+    "quầng sáng",
+    "phát sáng",
+    "tan",
+    "mờ dần"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "spread": {
+      "label": "Độ lan",
+      "description": "Tầm lan của quầng sáng ở đỉnh, tính theo chiều cao khung hình"
+    },
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Độ sáng mà trên đó hình ảnh phát sáng (toàn khung hình phát sáng ở đỉnh)"
+    },
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Độ sáng của quầng sáng"
+    },
+    "tint": {
+      "label": "Sắc thái",
+      "description": "Sắc thái của quầng sáng, hướng về phía rìa"
+    }
+  }
+}

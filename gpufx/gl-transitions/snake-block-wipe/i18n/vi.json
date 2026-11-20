@@ -1,0 +1,34 @@
+{
+  "name": "Quét khối rắn (Snake Block Wipe)",
+  "description": "Các khối chuyển sang clip thứ hai từng khối một, hàng nối hàng từ trên xuống, mỗi hàng chạy ngược chiều hàng trước, như con rắn uốn qua khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "con rắn",
+    "khối",
+    "quét",
+    "ô vuông",
+    "zigzag",
+    "uốn lượn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "columns": {
+      "label": "Số cột",
+      "description": "Số cột khối"
+    },
+    "rows": {
+      "label": "Số hàng",
+      "description": "Số hàng khối"
+    },
+    "vertical": {
+      "label": "Theo chiều dọc",
+      "description": "Uốn xuống theo các cột từ bên trái thay vì dọc theo các hàng"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Thời gian mỗi khối hiện dần, tính theo lượt của một khối (0 là chuyển ngay)"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Quét nhiễu (Static Wipe)",
+  "description": "Một cú quét dọc với dải nhiễu TV ở mép. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "nhiễu tv",
+    "quét dọc",
+    "nhiễu",
+    "tuyết",
+    "tivi"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "top_to_bottom": {
+      "label": "Từ trên xuống",
+      "description": "Quét từ trên xuống dưới (tắt: từ dưới lên trên)"
+    },
+    "max_static_span": {
+      "label": "Chiều cao dải nhiễu",
+      "description": "Chiều cao tối đa của dải nhiễu"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Rung máy quay",
+  "description": "Rung máy quay liên tục; chạy theo đồng hồ timeline, không cần thời gian của clip.",
+  "tags": [
+    "rung",
+    "lắc",
+    "động đất",
+    "rung lắc"
+  ],
+  "params": {
+    "amp": {
+      "label": "Biên độ",
+      "description": "Biên độ tính bằng pixel thiết kế trên cạnh dài 1280"
+    },
+    "rate": {
+      "label": "Tần suất",
+      "description": "Số lần rung mỗi giây"
+    }
+  }
+}

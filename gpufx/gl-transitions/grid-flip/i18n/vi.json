@@ -1,0 +1,37 @@
+{
+  "name": "Lật lưới (Grid Flip)",
+  "description": "Hình ảnh tách thành lưới các thẻ nhấc rời ra và lật theo phối cảnh lần lượt, để lộ clip thứ hai ở mặt sau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lưới",
+    "lật",
+    "thẻ",
+    "ô vuông",
+    "lật thẻ"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "size": {
+      "label": "Số ô",
+      "description": "Số ô (cột, hàng)"
+    },
+    "pause": {
+      "label": "Đoạn dừng hai đầu",
+      "description": "Phần chuyển cảnh ở mỗi đầu mà các khe mở ra và khép lại"
+    },
+    "divider_width": {
+      "label": "Độ rộng khe",
+      "description": "Độ rộng các khe, theo phần cạnh ngắn của ô"
+    },
+    "bg_color": {
+      "label": "Màu nền",
+      "description": "Màu phía sau các ô"
+    },
+    "randomness": {
+      "label": "Độ ngẫu nhiên",
+      "description": "Mức thứ tự lật bị xáo trộn"
+    }
+  }
+}

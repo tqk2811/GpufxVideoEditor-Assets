@@ -1,0 +1,12 @@
+{
+  "name": "Trộn theo mặt nạ",
+  "description": "Bản port của bộ lọc maskedmerge FFmpeg: trộn clip nền và clip phủ thông qua một mặt nạ.",
+  "tags": [
+    "mặt nạ",
+    "trộn",
+    "mask",
+    "masked merge",
+    "ghép lớp",
+    "matte"
+  ]
+}

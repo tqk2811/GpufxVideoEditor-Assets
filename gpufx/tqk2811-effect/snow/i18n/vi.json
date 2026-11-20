@@ -1,0 +1,40 @@
+{
+  "name": "Tuyết rơi",
+  "description": "Bông tuyết trôi xuống trên video theo bốn lớp chiều sâu.",
+  "tags": [
+    "tuyết",
+    "mùa đông",
+    "giáng sinh",
+    "rơi"
+  ],
+  "params": {
+    "density": {
+      "label": "Mật độ",
+      "description": "Tỷ lệ ô lưới có chứa hạt"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ, số chiều cao khung hình mỗi giây"
+    },
+    "wind": {
+      "label": "Gió",
+      "description": "Độ trôi ngang, số chiều cao khung hình mỗi giây (âm thì thổi sang trái)"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Kích thước hạt; hạt càng lớn thì càng ít"
+    },
+    "opacity": {
+      "label": "Độ mờ đục",
+      "description": "Độ mờ đục của các hạt"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu tuyết"
+    },
+    "seed": {
+      "label": "Hạt giống ngẫu nhiên",
+      "description": "Thay đổi vị trí các hạt"
+    }
+  }
+}

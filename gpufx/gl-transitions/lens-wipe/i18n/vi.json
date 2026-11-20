@@ -1,0 +1,30 @@
+{
+  "name": "Quét thấu kính (Lens Wipe)",
+  "description": "Một thấu kính thủy tinh tròn lớn dần từ một điểm trên clip đầu, đổ bóng mềm, và hiện clip thứ hai được phóng đại qua nó với viền vát sáng; khi lấp đầy khung hình thì độ phóng đại giảm dần. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "thấu kính",
+    "kính lúp",
+    "phóng đại",
+    "tròn",
+    "quét",
+    "ống kính"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm thấu kính lớn lên từ đó (0..1, y hướng xuống)"
+    },
+    "strength": {
+      "label": "Độ phóng đại",
+      "description": "Mức thấu kính phóng đại phần giữa clip thứ hai ở lúc bắt đầu"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ mạnh của ánh sáng và bóng ở viền và của bóng thấu kính (0 cho cắt gọn)"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Chẻ (Cleave)",
+  "description": "Clip thứ hai bị đóng vào clip đầu như cái nêm vào khúc gỗ: một vết nứt chạy trước mũi nêm, hai nửa bị đẩy sang bên và dồn lại sát hai bên nêm, rồi rơi ra khỏi khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chẻ",
+    "nêm",
+    "tách đôi",
+    "bổ",
+    "khúc gỗ"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng đóng nêm, căn về một trong bốn hướng từ mép này sang mép kia (x sang phải, y lên trên)"
+    },
+    "opening": {
+      "label": "Nửa góc nêm",
+      "description": "Nửa góc của nêm, tính bằng độ"
+    },
+    "squash": {
+      "label": "Độ dồn ép",
+      "description": "Mức hai nửa dồn lại sát nêm thay vì trượt đi cứng nhắc"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ mạnh của đổ bóng gờ và bóng dọc vết tách"
+    }
+  }
+}

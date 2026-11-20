@@ -1,0 +1,34 @@
+{
+  "name": "ASCII",
+  "description": "Hình ảnh biến thành ký tự kiểu văn bản, dày hơn ở chỗ sáng hơn, các ký tự xáo trộn thành ký tự của clip thứ hai rồi hiện rõ lại thành clip đó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ký tự",
+    "chữ",
+    "văn bản",
+    "mã",
+    "terminal",
+    "ascii art"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "cell_size": {
+      "label": "Kích thước ký tự",
+      "description": "Chiều cao một ký tự, tính theo chiều cao khung hình"
+    },
+    "colored": {
+      "label": "Tô màu theo hình",
+      "description": "Tô màu ký tự theo hình ảnh (nếu tắt thì dùng màu mực)"
+    },
+    "ink": {
+      "label": "Màu mực",
+      "description": "Màu của ký tự khi không tô theo hình ảnh"
+    },
+    "background": {
+      "label": "Màu nền",
+      "description": "Màu phía sau các ký tự"
+    }
+  }
+}

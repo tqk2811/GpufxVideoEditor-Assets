@@ -1,0 +1,35 @@
+{
+  "name": "Dò băng VHS (VHS Tracking)",
+  "description": "Các dải tuyết trắng dò băng cuộn xuống khung hình, xé các dòng quanh chúng, với màu nhòe, đường lượn sóng, dải rung ở đáy và cú nháy mất tín hiệu, khi clip thứ hai được ghi đè lên clip đầu dưới dải dày nhất. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "vhs",
+    "băng từ",
+    "băng video",
+    "dò băng",
+    "cổ điển",
+    "retro",
+    "nhiễu"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "bands": {
+      "label": "Số dải",
+      "description": "Số dải nhiễu cuộn xuống (dải đầu mang cú chuyển)"
+    },
+    "noise": {
+      "label": "Nhiễu",
+      "description": "Mức tuyết và xé hình trong các dải"
+    },
+    "bleed": {
+      "label": "Độ nhòe màu",
+      "description": "Mức màu nhòe sang bên phải của hình ảnh"
+    },
+    "wobble": {
+      "label": "Độ lượn",
+      "description": "Mức các dòng lượn sang bên"
+    }
+  }
+}

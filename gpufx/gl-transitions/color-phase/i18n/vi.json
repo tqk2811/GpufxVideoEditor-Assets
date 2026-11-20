@@ -1,0 +1,24 @@
+{
+  "name": "Pha màu (Color Phase)",
+  "description": "Hòa trộn chéo trong đó mỗi kênh màu thay đổi vào một thời điểm khác nhau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "pha màu",
+    "kênh màu",
+    "hòa trộn",
+    "rgb"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "from_step": {
+      "label": "Bắt đầu thay đổi",
+      "description": "Thời điểm mỗi kênh (r, g, b, a) bắt đầu thay đổi, từ 0 đến 1"
+    },
+    "to_step": {
+      "label": "Kết thúc thay đổi",
+      "description": "Thời điểm mỗi kênh (r, g, b, a) kết thúc thay đổi, từ 0 đến 1 (lớn hơn `from_step`)"
+    }
+  }
+}

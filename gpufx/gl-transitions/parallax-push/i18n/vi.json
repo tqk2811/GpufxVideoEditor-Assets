@@ -1,0 +1,38 @@
+{
+  "name": "Đẩy thị sai (Parallax Push)",
+  "description": "Máy quay lia ngang qua một cột tối, mất nét đứng sát ống kính: cột lao ngang khung hình trong khi các clip ở xa phía sau trôi chậm cùng hướng với chút tiến vào, và cú chuyển sang clip thứ hai xảy ra ẩn sau nó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "thị sai",
+    "parallax",
+    "cột",
+    "lia máy",
+    "chiều sâu",
+    "lướt qua"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng mọi thứ di chuyển, căn theo trục chính (x sang phải, y lên trên)"
+    },
+    "parallax": {
+      "label": "Độ thị sai",
+      "description": "Mức mỗi clip trôi phía sau cột, theo phần khung hình"
+    },
+    "width": {
+      "label": "Độ rộng",
+      "description": "Độ rộng của cột, theo phần cạnh ngắn của khung hình"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Độ mất nét của cột, và mức nó nhòe khi lao qua"
+    },
+    "pillar": {
+      "label": "Màu cột",
+      "description": "Màu của cột, được chiếu sáng từ phía nó di chuyển tới"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Gấp mống mắt (Iris Fold)",
+  "description": "Các dải giấy gấp của clip thứ hai trượt vào lần lượt quanh một lỗ đa giác đang thu nhỏ, mỗi dải xoay nhẹ so với dải trước để cạnh nếp gấp xoắn vào trong, đến khi lỗ khép lại ở tâm. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "mống mắt",
+    "iris",
+    "gấp giấy",
+    "đa giác",
+    "xoắn ốc",
+    "origami"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "sides": {
+      "label": "Số cạnh",
+      "description": "Số cạnh của lỗ"
+    },
+    "rounds": {
+      "label": "Số vòng dải",
+      "description": "Số vòng dải quanh lỗ"
+    },
+    "twist": {
+      "label": "Độ xoắn",
+      "description": "Mức mỗi dải xoay so với dải trước, tính bằng radian"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ mạnh của điểm sáng ở nếp gấp và của bóng các dải"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Tan lấp lánh (Glint Dissolve)",
+  "description": "Các điểm sáng của clip đầu lấp lánh thành các tia sao bốn cánh sắc nét phình to và nhấp nháy đến lúc chuyển, rồi co lại vào vùng sáng của clip thứ hai, vẫn nét. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lấp lánh",
+    "ngôi sao",
+    "tia sáng",
+    "lóe sáng",
+    "tia sao",
+    "lung linh"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Độ dài tia dài nhất của ánh lóe ở đỉnh, tính theo chiều cao khung hình"
+    },
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Độ sáng mà trên đó hình ảnh lấp lánh"
+    },
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Độ sáng của các ánh lóe"
+    },
+    "diagonals": {
+      "label": "Tia chéo",
+      "description": "Thêm một cặp tia chéo ngắn hơn, mềm hơn vào mỗi ánh lóe"
+    },
+    "rotation": {
+      "label": "Góc xoay",
+      "description": "Góc của hình chữ thập, tính bằng độ"
+    },
+    "rainbow": {
+      "label": "Viền cầu vồng",
+      "description": "Viền cầu vồng dọc các tia"
+    },
+    "tint": {
+      "label": "Sắc thái",
+      "description": "Sắc thái của ánh lóe, cộng vào như ánh sáng"
+    }
+  }
+}

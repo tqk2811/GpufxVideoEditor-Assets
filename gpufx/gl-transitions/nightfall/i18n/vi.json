@@ -1,0 +1,46 @@
+{
+  "name": "Màn đêm buông (Nightfall)",
+  "description": "Đêm đi qua khung hình như đường bóng của quả địa cầu đang xoay: hoàng hôn ấm làm clip đầu tối thành ánh trăng xanh, rồi bình minh hồng mang ánh sáng ban ngày lên clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ban đêm",
+    "hoàng hôn",
+    "bình minh",
+    "mặt trăng",
+    "trời tối",
+    "ngày đêm"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng màn đêm di chuyển tới (x sang phải, y lên trên)"
+    },
+    "night": {
+      "label": "Độ rộng đêm",
+      "description": "Độ rộng màn đêm giữa hoàng hôn và bình minh, tính theo chiều cao khung hình"
+    },
+    "darkness": {
+      "label": "Độ tối",
+      "description": "Độ tối của đêm"
+    },
+    "bow": {
+      "label": "Độ cong",
+      "description": "Độ cong của đường hoàng hôn và bình minh"
+    },
+    "dusk": {
+      "label": "Hoàng hôn",
+      "description": "Ánh sáng mặt trời lặn dọc đường hoàng hôn"
+    },
+    "dawn": {
+      "label": "Bình minh",
+      "description": "Ánh sáng mặt trời mọc dọc đường bình minh"
+    },
+    "moon": {
+      "label": "Màu trăng",
+      "description": "Sắc thái ánh trăng trong đêm"
+    }
+  }
+}

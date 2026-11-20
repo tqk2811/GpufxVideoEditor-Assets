@@ -1,0 +1,44 @@
+{
+  "name": "Bộ sưu tập ảnh (Photo Collection)",
+  "description": "Clip thứ hai bay vào như một tấm ảnh, vừa xoay vừa đáp nghiêng lên trên clip đầu: nối chuỗi để xếp chồng các tấm ảnh. Ở `progress` 1 tấm ảnh nằm trên clip đầu, nên kết quả không chỉ có clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "ảnh",
+    "bộ sưu tập",
+    "photo",
+    "xếp chồng",
+    "polaroid",
+    "slideshow",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = tấm ảnh đã đáp lên clip đầu"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng tấm ảnh bay tới: 0 trái, 1 phải, 2 trên, 3 dưới"
+    },
+    "angle": {
+      "label": "Góc nghiêng",
+      "description": "Độ nghiêng của tấm ảnh sau khi đáp, tính bằng độ"
+    },
+    "spins": {
+      "label": "Số vòng xoay",
+      "description": "Số vòng xoay khi bay (âm: xoay ngược lại)"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Kích thước tấm ảnh, tính cả viền: nó nằm gọn trong phần này của khung"
+    },
+    "border": {
+      "label": "Viền",
+      "description": "Viền tấm ảnh, so với chiều cao khung"
+    },
+    "border_color": {
+      "label": "Màu viền",
+      "description": "Màu viền"
+    }
+  }
+}

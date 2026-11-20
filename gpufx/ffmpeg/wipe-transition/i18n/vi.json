@@ -1,0 +1,26 @@
+{
+  "name": "Quét mềm (Soft Wipe)",
+  "description": "Chuyển từ đầu vào thứ nhất sang đầu vào thứ hai với một cạnh mềm di chuyển. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "quét",
+    "wipe",
+    "soft wipe",
+    "lau",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Hướng quét tính bằng độ"
+    },
+    "softness": {
+      "label": "Độ mềm viền",
+      "description": "Độ rộng của viền"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Khử nhiễu sắc độ",
+  "description": "Bản port của bộ lọc chromanr FFmpeg: giảm nhiễu sắc độ bằng cách lấy trung bình chroma của các điểm lân cận giống nhau.",
+  "tags": [
+    "khử nhiễu",
+    "nhiễu màu",
+    "giảm nhiễu",
+    "chroma noise",
+    "denoise"
+  ],
+  "params": {
+    "thres": {
+      "label": "Ngưỡng",
+      "description": "Ngưỡng cho khoảng cách Y+U+V, thang 0..255"
+    },
+    "sizew": {
+      "label": "Bán kính vùng ngang",
+      "description": "Bán kính vùng so sánh theo chiều ngang, tính bằng pixel (FFmpeg cho phép tới 100)"
+    },
+    "sizeh": {
+      "label": "Bán kính vùng dọc",
+      "description": "Bán kính vùng so sánh theo chiều dọc, tính bằng pixel (FFmpeg cho phép tới 100)"
+    },
+    "stepw": {
+      "label": "Bước ngang",
+      "description": "Bước ngang giữa các điểm được so sánh (FFmpeg cho phép tới 50)"
+    },
+    "steph": {
+      "label": "Bước dọc",
+      "description": "Bước dọc giữa các điểm được so sánh (FFmpeg cho phép tới 50)"
+    },
+    "threy": {
+      "label": "Ngưỡng Y",
+      "description": "Ngưỡng cho độ chênh Y, thang 0..255"
+    },
+    "threu": {
+      "label": "Ngưỡng U",
+      "description": "Ngưỡng cho độ chênh U, thang 0..255"
+    },
+    "threv": {
+      "label": "Ngưỡng V",
+      "description": "Ngưỡng cho độ chênh V, thang 0..255"
+    },
+    "distance": {
+      "label": "Kiểu khoảng cách",
+      "description": "Kiểu khoảng cách: 0 = manhattan, 1 = euclidean"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Lưới bố cục (Layout Grid)",
+  "description": "Khung hình tách thành lưới tạp chí bất đối xứng khi các rãnh giấy mở ra giữa các ô; ô này đến ô khác theo thứ tự đọc, clip thứ hai đẩy clip đầu ra khỏi ô của nó từ một phía khác, với dải nhấn màu giữa chúng, rồi các rãnh khép lại trên toàn bộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lưới bố cục",
+    "tạp chí",
+    "layout",
+    "ô",
+    "bố cục",
+    "dải nhấn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "gutter": {
+      "label": "Độ rộng rãnh",
+      "description": "Độ rộng rãnh ở lúc rộng nhất, theo phần cạnh ngắn của khung hình"
+    },
+    "overlap": {
+      "label": "Độ chồng",
+      "description": "Mức các cú đẩy của ô chồng lên nhau theo thời gian (0: nghiêm ngặt lần lượt)"
+    },
+    "band": {
+      "label": "Độ dài dải",
+      "description": "Độ dài dải nhấn giữa hai clip, theo phần độ dài ô dọc hướng đẩy của nó"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng mềm các ô đổ lên giấy và lên dải"
+    },
+    "paper": {
+      "label": "Màu giấy",
+      "description": "Màu giấy thấy được trong các rãnh"
+    },
+    "accent": {
+      "label": "Màu nhấn",
+      "description": "Màu của dải nhấn giữa hai clip"
+    }
+  }
+}

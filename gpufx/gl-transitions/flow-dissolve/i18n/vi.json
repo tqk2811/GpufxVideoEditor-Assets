@@ -1,0 +1,33 @@
+{
+  "name": "Tan theo dòng (Flow Dissolve)",
+  "description": "Cả hai clip đi trên một dòng chảy đầy xoáy nước: mép đầu sắc nét quét qua nó và bị cuộn thành xoắn bởi mỗi xoáy nó đi qua, clip đầu bị cuốn xuôi dòng phía trước trong khi clip thứ hai đổ vào phía sau, đến khi clip thứ hai nét lại. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "dòng chảy",
+    "xoáy nước",
+    "tan",
+    "chất lỏng",
+    "cuốn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng dòng chảy (x sang phải, y lên trên)"
+    },
+    "travel": {
+      "label": "Quãng cuốn đi",
+      "description": "Khoảng dòng chảy cuốn các clip đi (1: nửa cạnh ngắn của khung hình)"
+    },
+    "swirl": {
+      "label": "Độ xoáy",
+      "description": "Độ mạnh của các xoáy so với độ trôi (0: mép thẳng và trôi thẳng)"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Hạt giống ngẫu nhiên: giá trị khác cho xoáy khác"
+    }
+  }
+}

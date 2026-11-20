@@ -1,0 +1,33 @@
+{
+  "name": "Rủ vải (Drape)",
+  "description": "Clip đầu treo như tấm vải được thả ở phía trên: nó sụp xuống thành các nếp mềm không đều che khuất lẫn nhau khi vải dồn lại và trượt xuống khỏi khung hình, để lộ clip thứ hai phía sau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "rủ vải",
+    "vải",
+    "nếp gấp",
+    "rèm",
+    "rơi xuống"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "folds": {
+      "label": "Số nếp gấp",
+      "description": "Số nếp gấp trên tấm vải (ít hơn ở khung dọc)"
+    },
+    "depth": {
+      "label": "Độ sâu",
+      "description": "Độ sâu của các nếp gấp và đổ bóng của chúng"
+    },
+    "sway": {
+      "label": "Độ đung đưa",
+      "description": "Mức tấm vải đung đưa sang bên khi rơi"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ mạnh của bóng mềm tấm vải đổ lên clip thứ hai"
+    }
+  }
+}

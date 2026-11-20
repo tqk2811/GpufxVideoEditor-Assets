@@ -1,0 +1,28 @@
+{
+  "name": "Khóa luma (Luma Key)",
+  "description": "Biến các điểm ảnh trong một khoảng độ sáng đã chọn thành trong suốt. Cần dùng định dạng có alpha phía sau, hoặc chồng nó lên clip khác.",
+  "tags": [
+    "xóa nền",
+    "khóa độ sáng",
+    "luma key",
+    "tách nền",
+    "trong suốt",
+    "key",
+    "xóa đen",
+    "xóa trắng"
+  ],
+  "params": {
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Tâm của khoảng luma bị làm trong suốt"
+    },
+    "tolerance": {
+      "label": "Dung sai",
+      "description": "Nửa độ rộng của khoảng bị làm trong suốt hoàn toàn"
+    },
+    "softness": {
+      "label": "Độ mềm",
+      "description": "Độ rộng của viền mềm ở hai phía của khoảng"
+    }
+  }
+}

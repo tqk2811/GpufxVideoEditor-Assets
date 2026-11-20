@@ -1,0 +1,18 @@
+{
+  "name": "Hald CLUT",
+  "description": "Đổi màu đầu vào thứ nhất qua bảng tra 3D dưới dạng ảnh Hald CLUT ở đầu vào thứ hai.",
+  "tags": [
+    "LUT",
+    "hald clut",
+    "bảng tra màu",
+    "preset màu",
+    "filter màu",
+    "chỉnh màu"
+  ],
+  "params": {
+    "interp": {
+      "label": "Nội suy",
+      "description": "Phép nội suy giữa các mục của bảng"
+    }
+  }
+}

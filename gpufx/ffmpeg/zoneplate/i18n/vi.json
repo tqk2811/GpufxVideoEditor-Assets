@@ -1,0 +1,86 @@
+{
+  "name": "Zone Plate",
+  "description": "Mẫu kiểm tra zone plate (bộ tạo hình): các vòng sin và dải quét từ một đa thức pha theo x, y và thời gian.",
+  "tags": [
+    "zone plate",
+    "mẫu thử",
+    "test",
+    "bộ tạo",
+    "vòng sin",
+    "moire"
+  ],
+  "params": {
+    "lut_precision": {
+      "label": "Độ chính xác LUT",
+      "description": "Số bit của bảng tra sin: 2^lut_precision mục mỗi chu kỳ (precision của FFmpeg; tên đó bị WGSL giữ chỗ)"
+    },
+    "xo": {
+      "label": "Lệch X",
+      "description": "Độ lệch trục X của tâm, tính bằng pixel"
+    },
+    "yo": {
+      "label": "Lệch Y",
+      "description": "Độ lệch trục Y của tâm, tính bằng pixel"
+    },
+    "to": {
+      "label": "Lệch T",
+      "description": "Độ lệch trục T, tính bằng khung hình"
+    },
+    "k0": {
+      "label": "k0",
+      "description": "Pha bậc 0"
+    },
+    "kx": {
+      "label": "kx",
+      "description": "Pha bậc 1 trục X"
+    },
+    "ky": {
+      "label": "ky",
+      "description": "Pha bậc 1 trục Y"
+    },
+    "kt": {
+      "label": "kt",
+      "description": "Pha bậc 1 trục T"
+    },
+    "kxt": {
+      "label": "kxt",
+      "description": "Pha tích trục X * trục T"
+    },
+    "kyt": {
+      "label": "kyt",
+      "description": "Pha tích trục Y * trục T"
+    },
+    "kxy": {
+      "label": "kxy",
+      "description": "Pha tích trục X * trục Y"
+    },
+    "kx2": {
+      "label": "kx2",
+      "description": "Pha bậc 2 trục X"
+    },
+    "ky2": {
+      "label": "ky2",
+      "description": "Pha bậc 2 trục Y"
+    },
+    "kt2": {
+      "label": "kt2",
+      "description": "Pha bậc 2 trục T"
+    },
+    "ku": {
+      "label": "ku",
+      "description": "Pha bậc 0 của màu U"
+    },
+    "kv": {
+      "label": "kv",
+      "description": "Pha bậc 0 của màu V"
+    },
+    "rate": {
+      "label": "Tốc độ khung",
+      "description": "Tốc độ khung đổi thời gian thành số khung hình t của FFmpeg (tùy chọn rate của nguồn)"
+    },
+    "opacity": {
+      "label": "Độ mờ lớp phủ",
+      "description": "Trộn lên ảnh đầu vào: 1 = chỉ ảnh được tạo, 0 = giữ nguyên ảnh đầu vào"
+    }
+  }
+}

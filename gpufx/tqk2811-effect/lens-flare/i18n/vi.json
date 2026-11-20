@@ -1,0 +1,32 @@
+{
+  "name": "Lóa ống kính",
+  "description": "Lóa ống kính: nguồn sáng mạnh với quầng, vệt sáng, tia và bóng ma màu trải qua khung hình.",
+  "tags": [
+    "lóa sáng",
+    "lens flare",
+    "ánh sáng",
+    "ống kính"
+  ],
+  "params": {
+    "center": {
+      "label": "Tâm",
+      "description": "Vị trí nguồn sáng, 0..1 của khung hình ([0, 0] = góc trên trái)"
+    },
+    "intensity": {
+      "label": "Cường độ sáng",
+      "description": "Độ sáng của vệt lóa"
+    },
+    "ghosts": {
+      "label": "Bóng ma",
+      "description": "Cường độ các bóng ma màu"
+    },
+    "streak": {
+      "label": "Vệt sáng",
+      "description": "Cường độ vệt sáng ngang"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu của ánh sáng"
+    }
+  }
+}

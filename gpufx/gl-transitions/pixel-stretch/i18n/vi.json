@@ -1,0 +1,38 @@
+{
+  "name": "Kéo giãn điểm ảnh (Pixel Stretch)",
+  "description": "Một đường quét qua khung hình và kéo các điểm ảnh của clip đầu phía sau nó thành các vệt dài, ngắn dần khi đi và để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "kéo giãn",
+    "vệt",
+    "pixel",
+    "điểm ảnh",
+    "kéo dài",
+    "quét"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng đường quét qua (x sang phải, y lên trên)"
+    },
+    "stretch": {
+      "label": "Độ kéo giãn",
+      "description": "Độ dài các vệt ở giữa lượt quét, theo phần khung hình"
+    },
+    "chroma": {
+      "label": "Tách màu RGB",
+      "description": "Mức tách RGB dọc các vệt"
+    },
+    "softness": {
+      "label": "Độ mềm",
+      "description": "Độ mềm của đường quét và đầu các vệt"
+    },
+    "jitter": {
+      "label": "Độ rung",
+      "description": "Mức các vệt rung, mỗi hàng một độ dài riêng"
+    }
+  }
+}

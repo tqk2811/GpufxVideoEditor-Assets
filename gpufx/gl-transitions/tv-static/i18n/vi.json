@@ -1,0 +1,21 @@
+{
+  "name": "Nhiễu TV (TV Static)",
+  "description": "Chuyển sang nhiễu TV toàn khung hình, rồi sang clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "nhiễu tv",
+    "tuyết",
+    "nhiễu",
+    "tivi",
+    "hạt nhiễu"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "offset": {
+      "label": "Độ lệch",
+      "description": "Phần chuyển cảnh ở mỗi đầu hiện một clip thay vì nhiễu"
+    }
+  }
+}

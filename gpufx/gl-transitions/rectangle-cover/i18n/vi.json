@@ -1,0 +1,21 @@
+{
+  "name": "Phủ hình chữ nhật (Rectangle Cover)",
+  "description": "Một hình chữ nhật màu lớn dần từ giữa để phủ clip đầu, rồi thu lại để hiện clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "hình chữ nhật",
+    "phủ màu",
+    "hộp",
+    "màu đặc",
+    "mở rộng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu của hình chữ nhật"
+    }
+  }
+}

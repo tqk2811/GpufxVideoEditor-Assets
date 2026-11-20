@@ -1,0 +1,24 @@
+{
+  "name": "Camera nhiệt",
+  "description": "Camera nhiệt: độ sáng thành bảng màu nhiệt từ xanh lạnh qua tím, đỏ, vàng đến trắng.",
+  "tags": [
+    "nhiệt",
+    "thermal",
+    "hồng ngoại",
+    "bảng màu"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là hiệu ứng đầy đủ"
+    },
+    "contrast": {
+      "label": "Tương phản",
+      "description": "Độ trải của bảng màu quanh độ sáng trung bình"
+    },
+    "blur": {
+      "label": "Độ mờ",
+      "description": "Độ mềm, vì cảm biến nhiệt có ít điểm ảnh"
+    }
+  }
+}

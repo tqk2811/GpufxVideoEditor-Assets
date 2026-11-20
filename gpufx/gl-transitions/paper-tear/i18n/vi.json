@@ -1,0 +1,37 @@
+{
+  "name": "Xé giấy (Paper Tear)",
+  "description": "Clip đầu bị xé làm đôi dọc một đường lởm chởm, và hai nửa bị kéo rời để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xé giấy",
+    "rách",
+    "giấy",
+    "xé đôi",
+    "lởm chởm"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "roughness": {
+      "label": "Độ thô ráp",
+      "description": "Mức vết xé lệch khỏi giữa, so với chiều cao khung hình"
+    },
+    "tilt": {
+      "label": "Độ nghiêng",
+      "description": "Mức đỉnh mỗi nửa nghiêng ra trước, để vết xé mở từ phía trên"
+    },
+    "rim": {
+      "label": "Viền",
+      "description": "Độ rộng mép xé trắng, so với chiều cao khung hình"
+    },
+    "paper": {
+      "label": "Màu giấy",
+      "description": "Màu sợi giấy ở mép xé"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Màu bóng đổ lên clip thứ hai (alpha: độ mạnh)"
+    }
+  }
+}

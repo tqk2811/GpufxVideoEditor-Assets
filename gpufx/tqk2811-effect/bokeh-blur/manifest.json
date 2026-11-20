@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "type": "gpufx",
+  "id": "io.github.tqk2811.bokeh-blur",
+  "version": "1.0.0",
+  "package": "bokeh-blur.zip",
+  "tags": []
+}

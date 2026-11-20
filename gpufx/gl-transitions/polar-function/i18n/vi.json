@@ -1,0 +1,21 @@
+{
+  "name": "Hàm cực (Polar Function)",
+  "description": "Hình bông hoa nhiều cánh lớn dần từ giữa để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "bông hoa",
+    "cánh hoa",
+    "hàm cực",
+    "hoa",
+    "hình hoa"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "segments": {
+      "label": "Số đoạn",
+      "description": "Số cánh hoa"
+    }
+  }
+}

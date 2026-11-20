@@ -1,0 +1,22 @@
+{
+  "name": "Sâu đo (Inchworm)",
+  "description": "Clip đầu bò ra khỏi khung hình như sâu đo: mép sau nhích tới và hình ảnh gù lên thành vòm cao đổ bóng, rồi mép trước vươn lên phía trước và vòm phẳng ra, hai bước, để lộ clip thứ hai phía sau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "sâu đo",
+    "bò",
+    "vòm",
+    "gù",
+    "sâu bướm",
+    "bò trườn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "arch": {
+      "label": "Độ cao vòm",
+      "description": "Độ cao vòm gù lên về phía người xem"
+    }
+  }
+}

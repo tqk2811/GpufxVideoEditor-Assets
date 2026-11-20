@@ -1,0 +1,20 @@
+{
+  "name": "Xuyên qua chiều sâu",
+  "description": "Quét đẩy xuyên chiều sâu: thị sai và độ nhòe tăng theo độ sâu.",
+  "tags": [
+    "chuyển cảnh",
+    "xuyên qua",
+    "zoom",
+    "chiều sâu"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "depth": {
+      "label": "Độ sâu",
+      "description": "gần (close), chuẩn (standard) hoặc xa (far) (thị sai và độ nhòe)"
+    }
+  }
+}

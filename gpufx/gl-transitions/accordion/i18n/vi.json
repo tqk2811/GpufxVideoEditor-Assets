@@ -1,0 +1,37 @@
+{
+  "name": "Xếp nếp (Accordion)",
+  "description": "Clip đầu gấp lại như tờ giấy xếp nếp về một phía trong khi clip thứ hai bung ra từ phía kia, dạng 3D với các nếp gấp sáng tối. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xếp nếp",
+    "gấp giấy",
+    "đàn accordion",
+    "gấp",
+    "3d"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "pleats": {
+      "label": "Số nếp gấp",
+      "description": "Số nếp gấp trên mỗi clip"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng di chuyển của các clip, được căn theo trục chính (x sang phải, y lên trên)"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ tương phản giữa các tấm sáng và tấm tối"
+    },
+    "perspective": {
+      "label": "Phối cảnh",
+      "description": "Mức độ phối cảnh"
+    },
+    "back_color": {
+      "label": "Màu nền phía sau",
+      "description": "Màu xung quanh các clip đang gấp"
+    }
+  }
+}

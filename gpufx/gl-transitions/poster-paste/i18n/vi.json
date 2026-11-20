@@ -1,0 +1,26 @@
+{
+  "name": "Dán áp phích (Poster Paste)",
+  "description": "Clip thứ hai được dán lên clip đầu như áp phích, tờ này đến tờ khác: mỗi tờ ướt thả xuống tường treo lỏng từ mép trên với bóng mềm, rồi chổi miết từ trên xuống dưới, để lại nếp nhăn và bọt khí xẹp dần và các đường nối mờ đi khi keo khô. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "áp phích",
+    "dán",
+    "poster",
+    "tường",
+    "giấy dán",
+    "quảng cáo"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "sheets": {
+      "label": "Số tờ",
+      "description": "Số tờ áp phích dán cạnh nhau, từ trái sang phải"
+    },
+    "wrinkles": {
+      "label": "Độ nhăn",
+      "description": "Mức giấy ướt nhăn, phồng rộp và bồng bềnh trước khi chổi miết phẳng"
+    }
+  }
+}

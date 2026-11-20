@@ -1,0 +1,21 @@
+{
+  "name": "Mắt cá (Fisheye)",
+  "description": "Clip đầu phồng lên qua ống kính mắt cá mạnh, rồi clip thứ hai phẳng lại vào chỗ. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "mắt cá",
+    "fisheye",
+    "méo ống kính",
+    "phồng",
+    "góc rộng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "strength": {
+      "label": "Độ mạnh",
+      "description": "Độ mạnh của ống kính ở đỉnh"
+    }
+  }
+}

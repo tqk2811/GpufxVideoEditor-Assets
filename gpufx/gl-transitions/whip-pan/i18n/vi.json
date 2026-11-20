@@ -1,0 +1,26 @@
+{
+  "name": "Lia nhanh (Whip Pan)",
+  "description": "Cú lia máy nhanh làm cả hai clip nhòe chuyển động thành vệt, clip thứ hai đến từ phía đối diện. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lia nhanh",
+    "whip pan",
+    "nhòe chuyển động",
+    "lướt",
+    "máy quay",
+    "vệt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng các clip di chuyển (x sang phải, y lên trên)"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Độ dài nhòe chuyển động ở tốc độ tối đa"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Tan vân đá (Marbling Dissolve)",
+  "description": "Clip thứ hai trôi lên clip đầu thành các dải mực mỏng mà cái cào kéo thành zigzag và cái lược mịn kéo thành lông vũ, như giấy vân đá; các dải rộng ra đến khi phủ kín khung hình và các lược rút ra, để lại clip thứ hai sạch. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "vân đá",
+    "mực",
+    "giấy vân",
+    "marble",
+    "dải mực",
+    "cào"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "tines": {
+      "label": "Số răng cào",
+      "description": "Số răng của cái cào kéo lên xuống, theo cạnh dài của khung hình"
+    },
+    "pull": {
+      "label": "Độ kéo",
+      "description": "Mức răng cào kéo hình ảnh, tính theo chiều cao khung hình (lược mịn kéo xa 0,6 lần)"
+    },
+    "bands": {
+      "label": "Số dải",
+      "description": "Số dải mực trên khung hình"
+    },
+    "veins": {
+      "label": "Đường mực",
+      "description": "Độ sẫm của các đường mực mỏng giữa hai clip"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Dây phơi (Clothesline)",
+  "description": "Máy quay lùi ra để thấy clip đầu là một bức ảnh in treo bằng hai cái kẹp trên dây phơi trước bức tường, dây bị kéo sang bên mang nó đi trong khi bức ảnh thứ hai trượt vào, cả hai đung đưa và nghiêng như giấy treo, rồi máy quay tiến lại gần bức ảnh thứ hai đến khi nó lấp đầy khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "dây phơi",
+    "kẹp",
+    "ảnh treo",
+    "treo",
+    "phơi đồ"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "reverse": {
+      "label": "Đảo ngược",
+      "description": "Đưa bức ảnh thứ hai vào từ bên trái thay vì bên phải"
+    },
+    "sway": {
+      "label": "Độ đung đưa",
+      "description": "Mức các bức ảnh đung đưa và nghiêng khi dây di chuyển"
+    },
+    "size": {
+      "label": "Kích thước ảnh",
+      "description": "Kích thước các bức ảnh khi máy quay ở xa nhất, theo phần khung hình"
+    },
+    "background": {
+      "label": "Màu nền",
+      "description": "Màu của bức tường phía sau dây"
+    },
+    "line_color": {
+      "label": "Màu dây",
+      "description": "Màu của dây"
+    },
+    "pin_color": {
+      "label": "Màu kẹp",
+      "description": "Màu của các cái kẹp"
+    }
+  }
+}

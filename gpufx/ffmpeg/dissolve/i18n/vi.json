@@ -1,0 +1,25 @@
+{
+  "name": "Tan biến (Dissolve)",
+  "description": "Các điểm ảnh (hoặc khối) ngẫu nhiên chuyển từ clip đầu sang clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "tan biến",
+    "dissolve",
+    "ngẫu nhiên",
+    "pixel"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "block": {
+      "label": "Kích thước khối",
+      "description": "Kích thước các khối chuyển đổi tính bằng pixel"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Đổi mẫu ngẫu nhiên"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Khảm pixel (Pixelate)",
+  "description": "Khảm các khối vuông.",
+  "tags": [
+    "pixel",
+    "mosaic",
+    "khảm",
+    "làm mờ",
+    "che",
+    "pixelate",
+    "ô vuông",
+    "kiểm duyệt"
+  ],
+  "params": {
+    "block": {
+      "label": "Kích thước khối",
+      "description": "Kích thước khối tính bằng pixel"
+    }
+  }
+}

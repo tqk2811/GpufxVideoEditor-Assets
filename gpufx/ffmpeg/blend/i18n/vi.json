@@ -1,0 +1,23 @@
+{
+  "name": "Hòa trộn (Blend)",
+  "description": "Bản port của bộ lọc blend FFmpeg: kết hợp clip trên và clip dưới bằng một trong 40 chế độ hòa trộn kèm độ mờ.",
+  "tags": [
+    "hòa trộn",
+    "chế độ trộn",
+    "blend mode",
+    "chồng lớp",
+    "overlay",
+    "multiply",
+    "screen"
+  ],
+  "params": {
+    "mode": {
+      "label": "Chế độ",
+      "description": "Chế độ hòa trộn, theo số thứ tự của FFmpeg: 0 normal, 1 addition, 2 and, 3 average, 4 burn, 5 darken, 6 difference, 7 grainextract, 8 divide, 9 dodge, 10 exclusion, 11 hardlight, 12 lighten, 13 multiply, 14 negation, 15 or, 16 overlay, 17 phoenix, 18 pinlight, 19 reflect, 20 screen, 21 softlight, 22 subtract, 23 vividlight, 24 xor, 25 hardmix, 26 linearlight, 27 glow, 28 grainmerge, 29 multiply128, 30 heat, 31 freeze, 32 extremity, 33 softdifference, 34 geometric, 35 harmonic, 36 bleach, 37 stain, 38 interpolate, 39 hardoverlay"
+    },
+    "opacity": {
+      "label": "Độ mờ",
+      "description": "Cường độ hiệu ứng. Các chế độ khác normal: 0 = clip trên, 1 = trộn hoàn toàn. Normal: 0 = clip dưới, 1 = clip trên"
+    }
+  }
+}

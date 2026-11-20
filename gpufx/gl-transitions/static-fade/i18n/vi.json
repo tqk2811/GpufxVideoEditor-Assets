@@ -1,0 +1,26 @@
+{
+  "name": "Mờ nhiễu (Static Fade)",
+  "description": "Chuyển sang clip thứ hai ở giữa chừng, ẩn sau một đợt nhiễu TV. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "nhiễu tv",
+    "nhiễu",
+    "tuyết",
+    "mờ dần",
+    "hạt nhiễu",
+    "tivi"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "noise_pixels": {
+      "label": "Số điểm nhiễu",
+      "description": "Số điểm ảnh nhiễu trên khung hình"
+    },
+    "luminosity": {
+      "label": "Độ sáng nhiễu",
+      "description": "Độ sáng của nhiễu"
+    }
+  }
+}

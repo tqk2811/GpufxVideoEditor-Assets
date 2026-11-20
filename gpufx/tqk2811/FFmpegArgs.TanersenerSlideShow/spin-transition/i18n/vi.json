@@ -1,0 +1,36 @@
+{
+  "name": "Xoay (Spin)",
+  "description": "Clip đầu vừa xoay vừa thu nhỏ rồi biến mất, sau đó clip thứ hai xoay vào và lớn dần, kèm mờ chuyển động. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "xoay",
+    "quay",
+    "spin",
+    "mờ chuyển động",
+    "zoom",
+    "slideshow",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "turns": {
+      "label": "Số vòng",
+      "description": "Số vòng mỗi clip xoay trong nửa thời gian chuyển cảnh của nó, làm tròn đến nửa vòng gần nhất (dưới 0.25 làm tròn về 0: không xoay)"
+    },
+    "zoom": {
+      "label": "Mức thu nhỏ",
+      "description": "Mức các clip thu nhỏ ở giữa: 1 = thu về không, 0 = không thu nhỏ"
+    },
+    "blur": {
+      "label": "Mẫu mờ",
+      "description": "Số mẫu mờ chuyển động dọc theo chuyển động xoay (1 = không mờ)"
+    },
+    "color": {
+      "label": "Màu nền",
+      "description": "Màu nền xung quanh clip đang xoay"
+    }
+  }
+}

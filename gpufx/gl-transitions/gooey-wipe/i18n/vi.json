@@ -1,0 +1,34 @@
+{
+  "name": "Quét chất nhờn (Gooey Wipe)",
+  "description": "Các khối chất lỏng mềm, bóng nổi lên trên clip đầu, phồng to và tan vào nhau, để lộ clip thứ hai đến khi chúng phủ kín khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chất nhờn",
+    "giọt",
+    "chất lỏng",
+    "bong bóng",
+    "dính",
+    "nhớt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "blobs": {
+      "label": "Số giọt",
+      "description": "Số giọt trên khung hình"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mượt các giọt lân cận tan vào nhau"
+    },
+    "highlight": {
+      "label": "Điểm sáng",
+      "description": "Màu điểm sáng bóng trên viền các giọt (alpha: độ mạnh)"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Màu bóng mềm các giọt đổ lên clip đầu (alpha: độ mạnh)"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Cửa đôi (Doorway)",
+  "description": "Clip đầu mở như cửa đôi về phía người xem trong khi clip thứ hai tiến lên từ phía sau, có phản chiếu sàn. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "cửa",
+    "cánh cửa",
+    "mở cửa",
+    "cửa đôi",
+    "lối vào"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "reflection": {
+      "label": "Phản chiếu",
+      "description": "Độ mạnh của phản chiếu sàn dưới clip thứ hai"
+    },
+    "perspective": {
+      "label": "Phối cảnh",
+      "description": "Mức phối cảnh của các cánh cửa"
+    },
+    "depth": {
+      "label": "Độ sâu",
+      "description": "Mức clip thứ hai bắt đầu lùi xa phía sau (1: không có khoảng cách)"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Chia nhỏ (Subdivide)",
+  "description": "Clip đầu bị cắt nhanh theo nhịp như tờ giấy dưới máy chém, mỗi mảnh lại bị cắt qua cạnh dài tại điểm không đều riêng của nó và đẩy rời thành các thẻ nổi, rồi các thẻ lật lần lượt sang clip thứ hai và các vết cắt khép lại theo thứ tự ngược. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chia nhỏ",
+    "cắt",
+    "thẻ",
+    "máy chém",
+    "phân chia",
+    "mảnh"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "gap": {
+      "label": "Khoảng cách",
+      "description": "Độ rộng khe của nhát cắt đầu, tính theo chiều cao khung hình (mỗi nhát sau mở khe hẹp hơn)"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng các thẻ đổ xuống"
+    },
+    "background": {
+      "label": "Màu nền",
+      "description": "Màu thấy được giữa các thẻ"
+    }
+  }
+}

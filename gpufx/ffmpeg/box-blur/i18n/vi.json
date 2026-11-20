@@ -1,0 +1,24 @@
+{
+  "name": "Làm mờ hộp (Box Blur)",
+  "description": "Làm mờ hộp với bán kính ngang và dọc riêng, áp dụng từ một đến ba lần.",
+  "tags": [
+    "làm mờ",
+    "mờ",
+    "box blur",
+    "blur"
+  ],
+  "params": {
+    "radius": {
+      "label": "Bán kính ngang",
+      "description": "Bán kính ngang tính bằng pixel: hộp rộng 2 * radius + 1 (`lr` của boxblur, `sizeX` của avgblur)"
+    },
+    "radius_v": {
+      "label": "Bán kính dọc",
+      "description": "Bán kính dọc; -1 = bằng `radius` (`sizeY` của avgblur)"
+    },
+    "power": {
+      "label": "Số lần",
+      "description": "Số lần áp dụng làm mờ hộp (`lp` của boxblur; 1 cho kết quả như avgblur)"
+    }
+  }
+}

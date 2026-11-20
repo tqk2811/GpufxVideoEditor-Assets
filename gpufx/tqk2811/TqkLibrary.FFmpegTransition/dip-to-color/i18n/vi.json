@@ -1,0 +1,23 @@
+{
+  "name": "Mờ qua màu (Dip to Color)",
+  "description": "Clip đầu mờ dần sang một màu, rồi clip thứ hai hiện dần từ màu đó (mặc định là đen: mờ qua đen). Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "mờ qua đen",
+    "mờ qua màu",
+    "dip to black",
+    "dip to color",
+    "fade through",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "color": {
+      "label": "Màu giữa",
+      "description": "Màu ở giữa quá trình chuyển cảnh"
+    }
+  }
+}

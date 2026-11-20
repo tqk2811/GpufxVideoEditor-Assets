@@ -1,0 +1,20 @@
+{
+  "name": "Khoảng cách màu (Color Distance)",
+  "description": "Các điểm ảnh chuyển sang clip thứ hai theo thứ tự độ gần của màu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "khoảng cách màu",
+    "màu sắc",
+    "tan",
+    "chuyển theo màu"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "power": {
+      "label": "Hệ số",
+      "description": "Độ muộn mà các điểm ảnh còn lại mờ dần qua"
+    }
+  }
+}

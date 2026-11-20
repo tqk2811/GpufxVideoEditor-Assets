@@ -1,0 +1,30 @@
+{
+  "name": "Nhào bột (Knead)",
+  "description": "Clip đầu được nhào như bột: hai nửa ép và trượt qua nhau thành hai hàng, hết lần này đến lần khác, đến khi hình được kéo thành các lớp mỏng; các lớp của clip thứ hai được ép vào giữa chúng, rồi clip thứ hai được gỡ nhào trở lại thành một hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "nhào bột",
+    "bột",
+    "ép",
+    "lớp",
+    "gấp lớp",
+    "nhào"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "kneads": {
+      "label": "Số lần nhào",
+      "description": "Số lần nhào mỗi bên (mỗi lần xếp hình thành số lớp gấp đôi)"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ sâu đổ bóng trên các lớp và của bóng nửa đang trượt đổ ra"
+    },
+    "back_color": {
+      "label": "Màu nền phía sau",
+      "description": "Màu thấy được ở các góc mà hai nửa để lộ khi trượt"
+    }
+  }
+}

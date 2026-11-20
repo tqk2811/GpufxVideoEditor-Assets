@@ -1,0 +1,22 @@
+{
+  "name": "Mờ dần (Fade)",
+  "description": "Mờ dần sang hoặc từ một màu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "mờ dần",
+    "fade",
+    "chuyển cảnh",
+    "fade to black",
+    "ẩn hiện",
+    "đen"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = video, 1 = màu"
+    },
+    "color": {
+      "label": "Màu đích",
+      "description": "Màu đích"
+    }
+  }
+}

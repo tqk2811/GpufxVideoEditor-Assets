@@ -1,0 +1,30 @@
+{
+  "name": "Quét hình nêm (Wedge Wipe)",
+  "description": "Hai kim quét rời nhau quanh một điểm, mở ra hình nêm rộng dần để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "hình nêm",
+    "kim đồng hồ",
+    "quét",
+    "quạt",
+    "góc",
+    "hình quạt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Hướng nêm mở ra từ đó, tính bằng độ theo chiều kim đồng hồ từ vị trí 12 giờ"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của mép các kim"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm các kim xoay quanh (0..1, y hướng xuống)"
+    }
+  }
+}

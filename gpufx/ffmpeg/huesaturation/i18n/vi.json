@@ -1,0 +1,51 @@
+{
+  "name": "Sắc độ và bão hòa",
+  "description": "Dịch sắc độ, độ bão hòa và cường độ, cho mọi màu hoặc chỉ một số màu.",
+  "tags": [
+    "hue",
+    "saturation",
+    "sắc độ",
+    "bão hòa",
+    "đổi màu",
+    "chỉnh màu",
+    "từng màu"
+  ],
+  "params": {
+    "hue": {
+      "label": "Sắc độ",
+      "description": "Độ dịch sắc độ tính bằng độ"
+    },
+    "saturation": {
+      "label": "Bão hòa",
+      "description": "Độ dịch bão hòa"
+    },
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Độ dịch cường độ"
+    },
+    "colors": {
+      "label": "Màu áp dụng",
+      "description": "Các màu cần đổi, theo mặt nạ bit: 1 = đỏ, 2 = vàng, 4 = xanh lá, 8 = cyan, 16 = xanh dương, 32 = magenta, 63 = tất cả"
+    },
+    "strength": {
+      "label": "Cường độ lọc",
+      "description": "Cường độ của việc lọc đối với các màu đã chọn"
+    },
+    "rw": {
+      "label": "Trọng số đỏ",
+      "description": "Trọng số đỏ"
+    },
+    "gw": {
+      "label": "Trọng số xanh lá",
+      "description": "Trọng số xanh lá"
+    },
+    "bw": {
+      "label": "Trọng số xanh dương",
+      "description": "Trọng số xanh dương"
+    },
+    "lightness": {
+      "label": "Giữ độ sáng",
+      "description": "Giữ nguyên độ sáng"
+    }
+  }
+}

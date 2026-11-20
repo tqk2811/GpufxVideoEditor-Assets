@@ -1,0 +1,18 @@
+{
+  "name": "Dịch chuyển lỗi (Glitch Displace)",
+  "description": "Các khối của hình ảnh bị dịch chuyển trong một cú glitch chớp sang clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "glitch",
+    "nhiễu",
+    "lỗi",
+    "dịch chuyển",
+    "khối",
+    "hỏng hình"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

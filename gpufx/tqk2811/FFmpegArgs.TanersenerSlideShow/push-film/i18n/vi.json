@@ -1,0 +1,44 @@
+{
+  "name": "Đẩy phim (Push Film)",
+  "description": "Cả hai clip chạy qua một dải phim: clip thứ hai đẩy clip đầu ra khỏi khung như phim chạy qua máy chiếu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "phim",
+    "dải phim",
+    "film",
+    "đẩy",
+    "máy chiếu",
+    "slideshow",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng các clip di chuyển: 0 trái, 1 phải, 2 lên, 3 xuống"
+    },
+    "strip": {
+      "label": "Độ rộng dải",
+      "description": "Độ rộng dải đục lỗ ở mỗi bên, so với khung"
+    },
+    "gap": {
+      "label": "Khoảng cách",
+      "description": "Khoảng cách giữa hai ảnh của dải phim, so với khung"
+    },
+    "holes": {
+      "label": "Số lỗ",
+      "description": "Số lỗ đục trên mỗi ảnh ở mỗi bên"
+    },
+    "film_color": {
+      "label": "Màu phim",
+      "description": "Màu của phim"
+    },
+    "hole_color": {
+      "label": "Màu lỗ",
+      "description": "Màu nhìn thấy qua các lỗ đục"
+    }
+  }
+}

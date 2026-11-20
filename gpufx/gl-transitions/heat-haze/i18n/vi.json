@@ -1,0 +1,30 @@
+{
+  "name": "Hơi nóng (Heat Haze)",
+  "description": "Sóng nhiệt lung linh bốc lên qua khung hình, mạnh nhất ở đáy, làm clip đầu rung rung như không khí trên mặt nhựa nóng; clip thứ hai hiện qua màn hơi nóng và ổn định khi nó lặng xuống. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "hơi nóng",
+    "sóng nhiệt",
+    "ảo ảnh",
+    "nóng",
+    "gợn",
+    "sa mạc"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "strength": {
+      "label": "Độ mạnh",
+      "description": "Mức màn hơi bẻ cong hình ảnh, tính theo chiều cao khung hình (sóng mạnh nhất bẻ xa khoảng 1,5 lần)"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Kích thước sóng nhiệt: giá trị lớn hơn cho nhiều sóng nhỏ hơn"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ sóng nhiệt bốc lên"
+    }
+  }
+}

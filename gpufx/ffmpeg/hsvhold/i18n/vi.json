@@ -1,0 +1,33 @@
+{
+  "name": "Giữ màu HSV",
+  "description": "Xóa màu của mọi điểm ảnh trừ những điểm gần một bộ sắc độ/bão hòa/giá trị, những điểm này vẫn giữ màu.",
+  "tags": [
+    "giữ màu",
+    "chỉ giữ một màu",
+    "color splash",
+    "hsv",
+    "trắng đen một màu"
+  ],
+  "params": {
+    "hue": {
+      "label": "Sắc độ",
+      "description": "Sắc độ khóa tính bằng độ; giá trị âm bỏ qua sắc độ"
+    },
+    "sat": {
+      "label": "Bão hòa",
+      "description": "Độ bão hòa khóa; giá trị âm bỏ qua độ bão hòa"
+    },
+    "val": {
+      "label": "Giá trị",
+      "description": "Giá trị (độ sáng) khóa; giá trị âm bỏ qua giá trị"
+    },
+    "similarity": {
+      "label": "Độ tương đồng",
+      "description": "Khoảng cách tới khóa mà vẫn giữ màu"
+    },
+    "blend": {
+      "label": "Độ mềm viền",
+      "description": "Độ rộng của viền mềm phía trên ngưỡng tương đồng; 0 = cắt cứng"
+    }
+  }
+}

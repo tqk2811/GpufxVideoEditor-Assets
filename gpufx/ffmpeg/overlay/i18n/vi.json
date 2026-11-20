@@ -1,0 +1,44 @@
+{
+  "name": "Hình trong hình (Picture in Picture)",
+  "description": "Vẽ đầu vào thứ hai lên đầu vào thứ nhất, có co giãn và định vị, tôn trọng alpha của nó.",
+  "tags": [
+    "hình trong hình",
+    "pip",
+    "picture in picture",
+    "chồng ảnh",
+    "overlay",
+    "logo",
+    "watermark",
+    "chèn ảnh"
+  ],
+  "params": {
+    "x": {
+      "label": "Vị trí X",
+      "description": "Cạnh trái của lớp phủ, 0..1 theo chiều rộng khung"
+    },
+    "y": {
+      "label": "Vị trí Y",
+      "description": "Cạnh trên của lớp phủ, 0..1 theo chiều cao khung"
+    },
+    "scale": {
+      "label": "Tỉ lệ",
+      "description": "Chiều rộng lớp phủ so với chiều rộng khung"
+    },
+    "height": {
+      "label": "Chiều cao",
+      "description": "Chiều cao lớp phủ so với chiều cao khung; 0 giữ tỉ lệ khung hình của lớp phủ"
+    },
+    "opacity": {
+      "label": "Độ mờ",
+      "description": "Độ mờ của lớp phủ"
+    },
+    "border": {
+      "label": "Viền",
+      "description": "Độ rộng viền tính bằng pixel"
+    },
+    "border_color": {
+      "label": "Màu viền",
+      "description": "Màu viền"
+    }
+  }
+}

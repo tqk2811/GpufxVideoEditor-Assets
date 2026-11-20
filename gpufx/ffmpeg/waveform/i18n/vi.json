@@ -1,0 +1,38 @@
+{
+  "name": "Biểu đồ dạng sóng (Waveform)",
+  "description": "Màn hình waveform của luma hoặc R, G, B, theo cột hoặc theo hàng (scope).",
+  "tags": [
+    "waveform",
+    "dạng sóng",
+    "scope",
+    "đo sáng",
+    "biểu đồ",
+    "bộ đo"
+  ],
+  "params": {
+    "mode": {
+      "label": "Chế độ",
+      "description": "0 column (các mức đi lên theo ảnh, một cột sóng cho mỗi cột đầu vào), 1 row (các mức đi ngang, một hàng vết cho mỗi hàng đầu vào)"
+    },
+    "components": {
+      "label": "Thành phần",
+      "description": "0 luma (BT.709) màu trắng, 1 đỏ, xanh lá và xanh dương bằng màu của chúng"
+    },
+    "display": {
+      "label": "Hiển thị",
+      "description": "Khi `components`=1: 0 overlay (chồng), 1 parade (ba thành phần cạnh nhau hoặc xếp chồng)"
+    },
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Độ sáng cộng thêm bởi một điểm ảnh trên thang 256 mức (như FFmpeg), nên khoảng 25 điểm ảnh bằng nhau đạt tới trắng"
+    },
+    "max_samples": {
+      "label": "Số mẫu tối đa",
+      "description": "Số mẫu mỗi dòng đầu vào; các dòng dài hơn mức này được lấy mẫu theo bước đều, giúp giới hạn khối lượng tính của mỗi điểm ảnh đầu ra"
+    },
+    "opacity": {
+      "label": "Độ mờ lớp phủ",
+      "description": "Trộn lên ảnh đầu vào: 1 = chỉ ảnh được tạo, 0 = giữ nguyên ảnh đầu vào"
+    }
+  }
+}

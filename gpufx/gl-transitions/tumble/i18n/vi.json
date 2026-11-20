@@ -1,0 +1,38 @@
+{
+  "name": "Lộn nhào (Tumble)",
+  "description": "Clip đầu bị ném đi như tấm thẻ cứng, lộn nhào từng vòng với chút xoay khi bay ra xa theo phối cảnh, mặt sau tối hơn hiện ở mỗi lần lật và bóng mềm của nó thu nhỏ trên clip thứ hai phía sau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lộn nhào",
+    "ném",
+    "lật vòng",
+    "xoay tròn",
+    "bay xa",
+    "tấm thẻ"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "flips": {
+      "label": "Số vòng lộn",
+      "description": "Số vòng lộn đầu đuôi, số âm để lộn theo chiều ngược lại"
+    },
+    "spin": {
+      "label": "Độ xoay",
+      "description": "Số vòng xoay phụ quanh đường nhìn"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Nơi tấm thẻ bay tới trên màn hình, tính theo chiều cao khung hình từ tâm (x sang phải, y lên trên)"
+    },
+    "perspective": {
+      "label": "Phối cảnh",
+      "description": "Độ mạnh của phối cảnh"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Đổ bóng của tấm thẻ khi xoay, độ tối của mặt sau và của bóng nó"
+    }
+  }
+}

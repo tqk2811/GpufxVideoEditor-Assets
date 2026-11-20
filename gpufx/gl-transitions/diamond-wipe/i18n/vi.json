@@ -1,0 +1,24 @@
+{
+  "name": "Quét kim cương (Diamond Wipe)",
+  "description": "Một hình thoi cạnh mềm lớn dần từ một điểm để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "kim cương",
+    "hình thoi",
+    "quét",
+    "hình quả trám"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm của hình thoi (0..1, y hướng xuống)"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của cạnh"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Tắt TV (TV Turn Off)",
+  "description": "Clip đầu co lại thành một vạch sáng rồi một chấm, như TV cũ bị tắt, rồi clip thứ hai bật lên từ chấm. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tắt tv",
+    "tắt màn hình",
+    "tivi cũ",
+    "crt",
+    "chấm sáng",
+    "tắt nguồn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu màn hình khi tắt (bản gốc là đen; xám đậm trông giống màn hình hơn)"
+    },
+    "glow": {
+      "label": "Quầng sáng",
+      "description": "Độ mạnh quầng sáng quanh vạch và chấm"
+    }
+  }
+}

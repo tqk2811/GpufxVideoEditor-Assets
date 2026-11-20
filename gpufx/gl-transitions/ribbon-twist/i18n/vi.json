@@ -1,0 +1,37 @@
+{
+  "name": "Xoắn ruy băng (Ribbon Twist)",
+  "description": "Hình ảnh xoắn như dải ruy băng quanh đường giữa của nó, độ xoắn lan qua nó, clip đầu ở mặt trước và clip thứ hai ở mặt sau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ruy băng",
+    "xoắn",
+    "dải băng",
+    "vặn",
+    "3d"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "spread": {
+      "label": "Độ lan",
+      "description": "Độ dài đoạn bị xoắn, theo phần khung hình"
+    },
+    "perspective": {
+      "label": "Phối cảnh",
+      "description": "Mức độ phối cảnh"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Mức dải ruy băng tối đi khi xoay"
+    },
+    "vertical": {
+      "label": "Theo chiều dọc",
+      "description": "Xoắn quanh đường giữa dọc, lan từ trên xuống"
+    },
+    "back_color": {
+      "label": "Màu nền phía sau",
+      "description": "Màu ở chỗ dải ruy băng để hở khung hình"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Unsharp",
+  "description": "Làm nét hoặc làm mờ bằng mặt nạ unsharp hình hộp, với kích thước và cường độ riêng cho luma và chroma.",
+  "tags": [
+    "làm nét",
+    "làm mờ",
+    "unsharp",
+    "sắc nét",
+    "sharpen",
+    "blur"
+  ],
+  "params": {
+    "luma_msize_x": {
+      "label": "Luma - rộng",
+      "description": "Kích thước ngang của ma trận luma (`lx`); cửa sổ rộng 2 * (size / 2) + 1"
+    },
+    "luma_msize_y": {
+      "label": "Luma - cao",
+      "description": "Kích thước dọc của ma trận luma (`ly`)"
+    },
+    "luma_amount": {
+      "label": "Luma - cường độ",
+      "description": "Cường độ hiệu ứng luma (`la`): âm làm mờ, dương làm nét"
+    },
+    "chroma_msize_x": {
+      "label": "Chroma - rộng",
+      "description": "Kích thước ngang của ma trận chroma (`cx`)"
+    },
+    "chroma_msize_y": {
+      "label": "Chroma - cao",
+      "description": "Kích thước dọc của ma trận chroma (`cy`)"
+    },
+    "chroma_amount": {
+      "label": "Chroma - cường độ",
+      "description": "Cường độ hiệu ứng chroma (`ca`)"
+    }
+  }
+}

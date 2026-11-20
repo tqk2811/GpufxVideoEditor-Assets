@@ -1,0 +1,33 @@
+{
+  "name": "Quét cọ (Brush Wipe)",
+  "description": "Vài nét cọ lớn lần lượt quét qua khung hình, đi qua đi lại, vẽ clip thứ hai vào với mép lông cọ có vệt và đầu nét khô, rách. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "cọ",
+    "nét vẽ",
+    "sơn",
+    "quét",
+    "vẽ"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "strokes": {
+      "label": "Số nét cọ",
+      "description": "Số nét cọ cần để phủ kín khung hình"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Góc của các nét cọ, tính bằng độ"
+    },
+    "roughness": {
+      "label": "Độ thô ráp",
+      "description": "Độ thô ráp mà lông cọ tạo ra ở mép và đầu nét"
+    },
+    "waviness": {
+      "label": "Độ uốn lượn",
+      "description": "Mức các nét cọ uốn lượn trên đường đi"
+    }
+  }
+}

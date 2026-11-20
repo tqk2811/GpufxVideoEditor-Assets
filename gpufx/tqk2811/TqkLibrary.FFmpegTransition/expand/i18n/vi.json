@@ -1,0 +1,26 @@
+{
+  "name": "Mở rộng (Expand)",
+  "description": "Clip thứ hai lớn dần từ tâm lên trên clip đầu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "mở rộng",
+    "phóng to",
+    "expand",
+    "mở",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "mode": {
+      "label": "Kiểu",
+      "description": "0 = ngang (đóng/mở từ mép trái và phải), 1 = dọc (mép trên và dưới), 2 = cả hai (hộp), 3 = hình tròn"
+    },
+    "softness": {
+      "label": "Độ mềm viền",
+      "description": "Độ rộng viền"
+    }
+  }
+}

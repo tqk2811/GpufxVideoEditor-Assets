@@ -1,0 +1,32 @@
+{
+  "name": "Nhìn đêm",
+  "description": "Kính nhìn đêm: phosphor xanh lục, vùng tối được làm sáng, nhiễu hạt, vignette tròn và đường quét mờ.",
+  "tags": [
+    "nhìn đêm",
+    "xanh lục",
+    "quân sự",
+    "night vision"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là hiệu ứng đầy đủ"
+    },
+    "gain": {
+      "label": "Độ khuếch đại",
+      "description": "Độ làm sáng của ảnh"
+    },
+    "noise": {
+      "label": "Nhiễu",
+      "description": "Nhiễu hạt, đổi ở mỗi khung hình"
+    },
+    "vignette": {
+      "label": "Tối góc",
+      "description": "Độ tối bên ngoài vùng nhìn tròn"
+    },
+    "tint": {
+      "label": "Sắc thái",
+      "description": "Màu phosphor"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Trượt đi sang phải (Slide Away Right)",
+  "description": "Clip đầu trượt đi sang phải, để lộ một cú hòa trộn chéo sang clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "trượt",
+    "sang phải",
+    "đẩy",
+    "hòa trộn",
+    "ngang"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

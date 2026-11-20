@@ -1,0 +1,42 @@
+{
+  "name": "Ô Lissajous (Lissajous Tiles)",
+  "description": "Hình ảnh vỡ thành các ô xoáy dọc theo đường cong Lissajous và lật lần lượt sang clip thứ hai trước khi lắng về chỗ. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lissajous",
+    "ô",
+    "đường cong",
+    "xoáy",
+    "lật",
+    "toán học"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ các ô dọc theo đường cong"
+    },
+    "freq": {
+      "label": "Số vòng lặp",
+      "description": "Số vòng của đường cong, theo chiều ngang và chiều dọc"
+    },
+    "offset": {
+      "label": "Độ lệch",
+      "description": "Tốc độ dọc thêm, làm cong đường cong"
+    },
+    "zoom": {
+      "label": "Kích thước đường cong",
+      "description": "Kích thước đường cong, so với khung hình"
+    },
+    "fade": {
+      "label": "Làm mờ",
+      "description": "Độ dàn trải của việc chuyển từng ô một"
+    },
+    "back_color": {
+      "label": "Màu nền phía sau",
+      "description": "Màu giữa các ô (`#00000000` để trong suốt, như bản gốc)"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Hình thái học (Morpho)",
+  "description": "Co, giãn, mở, đóng, gradient, top-hat và black-hat với phần tử cấu trúc cho dưới dạng ảnh.",
+  "tags": [
+    "hình thái học",
+    "morphology",
+    "erosion",
+    "dilation",
+    "co",
+    "giãn",
+    "mở",
+    "đóng"
+  ],
+  "params": {
+    "mode": {
+      "label": "Phép biến đổi",
+      "description": "Phép biến đổi hình thái học"
+    },
+    "planes": {
+      "label": "Kênh lọc",
+      "description": "Các kênh cần lọc, theo bit của FFmpeg trên gbrp: 1 xanh lá, 2 xanh dương, 4 đỏ"
+    }
+  }
+}

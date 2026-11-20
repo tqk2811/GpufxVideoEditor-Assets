@@ -1,0 +1,16 @@
+{
+  "name": "Tông đêm",
+  "description": "Tông màu: tối hơn, xanh lam đêm, tương phản cao.",
+  "tags": [
+    "đêm",
+    "tối",
+    "xanh",
+    "bộ lọc"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là toàn bộ tông màu"
+    }
+  }
+}

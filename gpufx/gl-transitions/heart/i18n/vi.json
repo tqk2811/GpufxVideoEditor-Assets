@@ -1,0 +1,37 @@
+{
+  "name": "Trái tim (Heart)",
+  "description": "Một trái tim lớn dần từ giữa với nhịp đập nhẹ để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "trái tim",
+    "tim",
+    "tình yêu",
+    "valentine",
+    "hình tim"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm của trái tim (0..1, y hướng xuống)"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của cạnh trái tim"
+    },
+    "pulse": {
+      "label": "Nhịp tim",
+      "description": "Độ mạnh của nhịp tim khi trái tim lớn dần"
+    },
+    "glow_color": {
+      "label": "Màu quầng sáng",
+      "description": "Màu ánh sáng dọc cạnh trái tim"
+    },
+    "glow": {
+      "label": "Quầng sáng",
+      "description": "Độ mạnh của quầng sáng (0 cho cạnh sắc gọn)"
+    }
+  }
+}

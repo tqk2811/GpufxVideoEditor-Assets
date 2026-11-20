@@ -1,0 +1,34 @@
+{
+  "name": "Lắp ráp lại (Reassemble)",
+  "description": "Clip đầu nứt thành các mảnh vỡ bất quy tắc bung ra về phía người xem, mỗi mảnh lật 3D vào lúc riêng, rồi bay trở lại cùng nhau và khớp vào chỗ như clip thứ hai mang trên lưng chúng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lắp ráp",
+    "mảnh vỡ",
+    "vỡ",
+    "ghép lại",
+    "bung ra",
+    "mảnh"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "rows": {
+      "label": "Số hàng",
+      "description": "Số hàng mảnh vỡ"
+    },
+    "depth": {
+      "label": "Độ sâu",
+      "description": "Mức các mảnh vỡ tiến về phía người xem"
+    },
+    "spread": {
+      "label": "Độ lan",
+      "description": "Mức các mảnh vỡ tản ra xa nhau, theo phần khoảng cách tới tâm"
+    },
+    "back_color": {
+      "label": "Màu nền phía sau",
+      "description": "Màu thấy được giữa các mảnh vỡ"
+    }
+  }
+}

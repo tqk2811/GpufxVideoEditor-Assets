@@ -1,0 +1,29 @@
+{
+  "name": "Cổ chai (Bottleneck)",
+  "description": "Một cái cổ hẹp di chuyển xuống khung hình, thắt clip đầu thành hình đồng hồ cát và ép nó qua, clip thứ hai phình trở lại phía trên. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "cổ chai",
+    "đồng hồ cát",
+    "thắt",
+    "ép",
+    "bóp"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "depth": {
+      "label": "Độ sâu",
+      "description": "Độ hẹp của cổ, tính theo chiều rộng khung hình"
+    },
+    "neck": {
+      "label": "Cổ thắt",
+      "description": "Chiều cao vùng bị thắt, tính theo chiều cao khung hình"
+    },
+    "background": {
+      "label": "Màu nền",
+      "description": "Màu bên cạnh cổ"
+    }
+  }
+}

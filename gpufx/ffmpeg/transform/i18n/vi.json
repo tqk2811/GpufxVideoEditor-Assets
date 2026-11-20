@@ -1,0 +1,31 @@
+{
+  "name": "Biến đổi (Transform)",
+  "description": "Phóng, xoay và dịch (kiểu Ken Burns khi điều khiển bằng biểu thức).",
+  "tags": [
+    "biến đổi",
+    "transform",
+    "zoom",
+    "phóng to",
+    "xoay",
+    "ken burns",
+    "dịch chuyển"
+  ],
+  "params": {
+    "zoom": {
+      "label": "Phóng",
+      "description": "1 = không đổi, 2 = lớn gấp đôi"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Góc xoay tính bằng độ, theo chiều kim đồng hồ"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm của nguồn hiển thị ở giữa khung (0..1)"
+    },
+    "background": {
+      "label": "Nền",
+      "description": "Phần lấp bên ngoài nguồn"
+    }
+  }
+}

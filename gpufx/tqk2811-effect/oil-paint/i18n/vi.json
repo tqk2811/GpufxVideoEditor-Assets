@@ -1,0 +1,20 @@
+{
+  "name": "Tranh sơn dầu",
+  "description": "Tranh sơn dầu: bộ lọc Kuwahara làm phẳng ảnh thành các mảng như nét cọ nhưng giữ được cạnh.",
+  "tags": [
+    "sơn dầu",
+    "tranh vẽ",
+    "nét cọ",
+    "nghệ thuật"
+  ],
+  "params": {
+    "radius": {
+      "label": "Bán kính",
+      "description": "Cỡ cọ tính bằng pixel; càng lớn càng chậm"
+    },
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là hiệu ứng đầy đủ"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Thêm nền (Pad)",
+  "description": "Đặt ảnh lên một khung nền lớn hơn có một màu; đầu ra có kích thước của khung nền.",
+  "tags": [
+    "thêm viền",
+    "pad",
+    "nền",
+    "letterbox",
+    "khung",
+    "viền đen",
+    "canvas"
+  ],
+  "params": {
+    "w": {
+      "label": "Rộng",
+      "description": "Chiều rộng khung nền tính bằng pixel; 0 = bằng chiều rộng đầu vào"
+    },
+    "h": {
+      "label": "Cao",
+      "description": "Chiều cao khung nền tính bằng pixel; 0 = bằng chiều cao đầu vào"
+    },
+    "x": {
+      "label": "Cạnh trái",
+      "description": "Cạnh trái của ảnh trên khung nền; -1 = căn giữa"
+    },
+    "y": {
+      "label": "Cạnh trên",
+      "description": "Cạnh trên của ảnh trên khung nền; -1 = căn giữa"
+    },
+    "color": {
+      "label": "Màu nền",
+      "description": "Màu của khung nền (kèm alpha)"
+    }
+  }
+}

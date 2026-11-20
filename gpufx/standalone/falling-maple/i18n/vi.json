@@ -1,0 +1,72 @@
+{
+  "name": "Lá phong rơi",
+  "description": "Lá phong đỏ rơi trên video, xoay xuống theo gió.",
+  "tags": [
+    "lá rơi",
+    "lá phong",
+    "maple",
+    "mùa thu",
+    "lá đỏ",
+    "hiệu ứng rơi",
+    "falling leaves",
+    "autumn"
+  ],
+  "params": {
+    "mode": {
+      "label": "Kiểu chuyển động",
+      "description": "Chuyển động: 0 tumble (xoay tròn, bị gió cuốn), 1 đung đưa như con lắc, 2 xoắn ốc, 3 không đung đưa (gió vẫn thổi trôi), 4 đường đi tùy chỉnh từ path_x, path_y và angle"
+    },
+    "count": {
+      "label": "Số lá",
+      "description": "Số chỗ cho lá; gió mạnh cuốn một phần lá ra ngoài khung"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Đổi chỗ rơi của các lá"
+    },
+    "speed": {
+      "label": "Tốc độ rơi",
+      "description": "Tốc độ rơi, tính theo chiều cao khung mỗi giây"
+    },
+    "wind": {
+      "label": "Gió",
+      "description": "Độ trôi ngang, tính theo chiều cao khung mỗi giây (âm là gió thổi sang trái)"
+    },
+    "sway": {
+      "label": "Độ đung đưa",
+      "description": "Độ đung đưa qua lại, tính theo chiều cao khung"
+    },
+    "spin": {
+      "label": "Tốc độ xoay",
+      "description": "Tốc độ xoay, radian mỗi giây"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Lá nhỏ nhất và lớn nhất, tính theo chiều cao khung"
+    },
+    "opacity": {
+      "label": "Độ mờ",
+      "description": "Độ mờ của lá"
+    },
+    "offset": {
+      "label": "Độ lệch thời gian",
+      "description": "Số giây cộng thêm vào thời gian (ví dụ để giữ nguyên vị trí lá sau -ss)"
+    },
+    "life": {
+      "label": "Vòng đời",
+      "description": "Kiểu 4: số giây một chiếc lá tồn tại trước khi xuất hiện lại"
+    },
+    "path_x": {
+      "label": "Đường đi X",
+      "description": "Kiểu 4: x của tâm lá tính theo chiều cao khung (0 trái, w phải). t thời gian, u số giây kể từ khi lá xuất hiện, p = u/life, i chỗ của lá, r0..r3 ngẫu nhiên theo từng lá, x0 ngẫu nhiên trong 0..w, w chiều rộng khung và h chiều cao khung (1) tính theo chiều cao khung"
+    },
+    "path_y": {
+      "label": "Đường đi Y",
+      "description": "Kiểu 4: y của tâm lá tính theo chiều cao khung (0 trên, 1 dưới); cùng các biến như path_x"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Kiểu 4: góc xoay tính bằng độ; cùng các biến như path_x"
+    }
+  }
+}

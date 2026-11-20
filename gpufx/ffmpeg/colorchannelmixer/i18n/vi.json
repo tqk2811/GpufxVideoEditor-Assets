@@ -1,0 +1,85 @@
+{
+  "name": "Trộn kênh màu",
+  "description": "Trộn các kênh đỏ, xanh lá, xanh dương và alpha bằng ma trận 4x4.",
+  "tags": [
+    "trộn kênh",
+    "channel mixer",
+    "ma trận màu",
+    "đổi kênh màu",
+    "chỉnh màu"
+  ],
+  "params": {
+    "rr": {
+      "label": "Đỏ <- Đỏ",
+      "description": "Độ lợi của kênh đỏ trong kênh đỏ"
+    },
+    "rg": {
+      "label": "Đỏ <- Xanh lá",
+      "description": "Độ lợi của kênh xanh lá trong kênh đỏ"
+    },
+    "rb": {
+      "label": "Đỏ <- Xanh dương",
+      "description": "Độ lợi của kênh xanh dương trong kênh đỏ"
+    },
+    "ra": {
+      "label": "Đỏ <- Alpha",
+      "description": "Độ lợi của kênh alpha trong kênh đỏ"
+    },
+    "gr": {
+      "label": "Xanh lá <- Đỏ",
+      "description": "Độ lợi của kênh đỏ trong kênh xanh lá"
+    },
+    "gg": {
+      "label": "Xanh lá <- Xanh lá",
+      "description": "Độ lợi của kênh xanh lá trong kênh xanh lá"
+    },
+    "gb": {
+      "label": "Xanh lá <- Xanh dương",
+      "description": "Độ lợi của kênh xanh dương trong kênh xanh lá"
+    },
+    "ga": {
+      "label": "Xanh lá <- Alpha",
+      "description": "Độ lợi của kênh alpha trong kênh xanh lá"
+    },
+    "br": {
+      "label": "Xanh dương <- Đỏ",
+      "description": "Độ lợi của kênh đỏ trong kênh xanh dương"
+    },
+    "bg": {
+      "label": "Xanh dương <- Xanh lá",
+      "description": "Độ lợi của kênh xanh lá trong kênh xanh dương"
+    },
+    "bb": {
+      "label": "Xanh dương <- Xanh dương",
+      "description": "Độ lợi của kênh xanh dương trong kênh xanh dương"
+    },
+    "ba": {
+      "label": "Xanh dương <- Alpha",
+      "description": "Độ lợi của kênh alpha trong kênh xanh dương"
+    },
+    "ar": {
+      "label": "Alpha <- Đỏ",
+      "description": "Độ lợi của kênh đỏ trong kênh alpha"
+    },
+    "ag": {
+      "label": "Alpha <- Xanh lá",
+      "description": "Độ lợi của kênh xanh lá trong kênh alpha"
+    },
+    "ab": {
+      "label": "Alpha <- Xanh dương",
+      "description": "Độ lợi của kênh xanh dương trong kênh alpha"
+    },
+    "aa": {
+      "label": "Alpha <- Alpha",
+      "description": "Độ lợi của kênh alpha trong kênh alpha"
+    },
+    "pc": {
+      "label": "Chế độ giữ màu",
+      "description": "Chế độ giữ màu: 0 = không, 1 = lum, 2 = max, 3 = avg, 4 = sum, 5 = nrm, 6 = pwr"
+    },
+    "pa": {
+      "label": "Mức giữ màu",
+      "description": "Mức độ giữ màu"
+    }
+  }
+}

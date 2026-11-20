@@ -1,0 +1,17 @@
+{
+  "name": "Gấp (Fold)",
+  "description": "Clip thứ hai bung ra từ bên trái trong khi clip đầu gấp đi về bên phải. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "gấp",
+    "xếp",
+    "bung ra",
+    "mở ra",
+    "gập"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

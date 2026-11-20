@@ -1,0 +1,29 @@
+{
+  "name": "Đồng xu dừng (Coin Settle)",
+  "description": "Clip thứ hai đáp xuống clip đầu như đồng xu xoay đang dừng lại: ban đầu đứng trên cạnh, rồi nghiêng xuống trong khi phía được nâng lên xoay nhanh dần với bóng quét, lắc trên các góc với tiếng lạch cạch dồn dập, đến khi rơi phẳng và đứng yên trên khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "đồng xu",
+    "xoay",
+    "quay tròn",
+    "tiền xu",
+    "lắc"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "whirls": {
+      "label": "Số vòng xoay",
+      "description": "Số vòng xoay của phía được nâng lên"
+    },
+    "twist": {
+      "label": "Độ xoắn",
+      "description": "Độ xoay trong mặt phẳng của hình ảnh khi dựng lên, được hoàn lại khi dừng"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ đổ bóng của đồng xu và độ tối của bóng nó"
+    }
+  }
+}

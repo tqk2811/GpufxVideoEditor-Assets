@@ -1,0 +1,27 @@
+{
+  "name": "Xếp lưới (Grid Stack)",
+  "description": "Đặt các đầu vào vào một lưới, từng hàng một, mỗi đầu vào được co vào một ô theo khung của đầu vào thứ nhất, như bố cục lưới xstack của FFmpeg.",
+  "tags": [
+    "xếp lưới",
+    "ghép ảnh",
+    "lưới",
+    "xstack",
+    "collage",
+    "chia màn hình",
+    "grid"
+  ],
+  "params": {
+    "columns": {
+      "label": "Số cột",
+      "description": "Số cột của lưới; số hàng suy ra từ số đầu vào. 0 = căn bậc hai của số đầu vào, làm tròn lên"
+    },
+    "fit": {
+      "label": "Vừa khung",
+      "description": "Giữ tỉ lệ khung hình của mỗi đầu vào bên trong ô (có dải màu `fill`) thay vì kéo giãn cho đầy ô"
+    },
+    "fill": {
+      "label": "Màu lấp",
+      "description": "Màu lấp cho các ô không dùng và cho các dải của chế độ fit"
+    }
+  }
+}

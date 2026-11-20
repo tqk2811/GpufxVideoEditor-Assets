@@ -1,0 +1,21 @@
+{
+  "name": "Lật đơn giản (Simple Flip)",
+  "description": "Clip đầu lật quanh trục dọc sang clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lật",
+    "quay",
+    "trục dọc",
+    "lật 3d",
+    "đơn giản"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "back_color": {
+      "label": "Màu nền phía sau",
+      "description": "Màu bên cạnh clip đang lật (`#00000000` để trong suốt, như bản gốc)"
+    }
+  }
+}

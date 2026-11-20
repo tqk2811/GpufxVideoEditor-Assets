@@ -1,0 +1,31 @@
+{
+  "name": "Đẩy hộp (Push Box)",
+  "description": "Clip đầu thu nhỏ thành một hộp, hộp bị một hộp của clip thứ hai đẩy ra, rồi hộp này lớn dần cho kín khung. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "hộp",
+    "đẩy",
+    "push",
+    "box",
+    "slideshow",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng các clip di chuyển: 0 trái, 1 phải, 2 lên, 3 xuống"
+    },
+    "box": {
+      "label": "Kích thước hộp",
+      "description": "Kích thước hộp so với khung"
+    },
+    "color": {
+      "label": "Màu nền",
+      "description": "Màu nền xung quanh các hộp"
+    }
+  }
+}

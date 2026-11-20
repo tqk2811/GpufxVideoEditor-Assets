@@ -1,0 +1,32 @@
+{
+  "name": "Quét luma: Méo hình (OpenShot)",
+  "description": "Hiệu ứng quét theo độ sáng của một trong 42 ảnh luma thang xám của OpenShot (méo hình và biến dạng): vùng tối chuyển sang clip thứ hai trước. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "quét luma",
+    "luma wipe",
+    "openshot",
+    "transition",
+    "méo",
+    "biến dạng",
+    "distortion"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "pattern": {
+      "label": "Mẫu luma",
+      "description": "Ảnh luma (tên tệp của bản gốc OpenShot)"
+    },
+    "softness": {
+      "label": "Độ mềm viền",
+      "description": "Độ rộng của viền mềm, tính theo bậc luma"
+    },
+    "invert": {
+      "label": "Đảo ngược",
+      "description": "Vùng sáng chuyển trước"
+    }
+  }
+}

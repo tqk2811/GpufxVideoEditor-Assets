@@ -1,0 +1,17 @@
+{
+  "name": "Làm nét thích ứng (CAS)",
+  "description": "Làm nét thích ứng theo độ tương phản của AMD FidelityFX: làm nét mạnh hơn ở nơi độ tương phản cục bộ thấp.",
+  "tags": [
+    "làm nét",
+    "sắc nét",
+    "sharpen",
+    "CAS",
+    "tăng chi tiết"
+  ],
+  "params": {
+    "strength": {
+      "label": "Cường độ",
+      "description": "Cường độ làm nét"
+    }
+  }
+}

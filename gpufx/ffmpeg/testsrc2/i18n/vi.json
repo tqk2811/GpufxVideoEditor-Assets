@@ -1,0 +1,22 @@
+{
+  "name": "Ảnh kiểm tra 2 (Test Source 2)",
+  "description": "Mẫu kiểm tra testsrc2 của FFmpeg: các dải, thanh gradient, kim đồng hồ, hình chữ nhật, nhiễu, hình vuông nảy (bộ tạo hình).",
+  "tags": [
+    "ảnh kiểm tra",
+    "test",
+    "testsrc2",
+    "mẫu thử",
+    "bộ tạo",
+    "đồng hồ"
+  ],
+  "params": {
+    "rate": {
+      "label": "Tốc độ khung",
+      "description": "Số khung hình mỗi giây mà bộ đếm khung `pts` của nhiễu bám theo (chuyển động dùng thời gian `t`)"
+    },
+    "opacity": {
+      "label": "Độ mờ lớp phủ",
+      "description": "Trộn lên ảnh đầu vào: 1 = chỉ ảnh được tạo, 0 = giữ nguyên ảnh đầu vào"
+    }
+  }
+}

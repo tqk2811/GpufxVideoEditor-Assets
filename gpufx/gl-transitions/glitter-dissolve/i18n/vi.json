@@ -1,0 +1,42 @@
+{
+  "name": "Tan kim tuyến (Glitter Dissolve)",
+  "description": "Hình ảnh thành một cánh đồng lấp lánh các sequin hình thoi nhỏ lật 3D vào những lúc ngẫu nhiên, mỗi cái nâng lên và nghiêng theo trục riêng và lóe một tia sáng, rồi đáp lên clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "kim tuyến",
+    "kim sa",
+    "lấp lánh",
+    "sequin",
+    "lật",
+    "hạt lấp lánh"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "tiles": {
+      "label": "Số ô",
+      "description": "Số ô xếp theo chiều cao khung hình"
+    },
+    "hexagons": {
+      "label": "Ô lục giác",
+      "description": "Dùng ô lục giác thay vì hình thoi"
+    },
+    "sparkle": {
+      "label": "Độ lấp lánh",
+      "description": "Độ mạnh của ánh lóe các ô bắt được khi xoay"
+    },
+    "glint": {
+      "label": "Màu ánh lóe",
+      "description": "Màu của ánh lóe, cộng vào như ánh sáng"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Thay đổi thứ tự và trục của các lần lật (số nguyên)"
+    },
+    "back_color": {
+      "label": "Màu nền phía sau",
+      "description": "Màu thấy được phía sau ô khi nó đứng nghiêng cạnh"
+    }
+  }
+}

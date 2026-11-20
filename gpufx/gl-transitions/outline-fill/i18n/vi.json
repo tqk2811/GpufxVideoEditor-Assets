@@ -1,0 +1,26 @@
+{
+  "name": "Tô theo đường viền (Outline Fill)",
+  "description": "Clip thứ hai được tô màu từ chính đường viền của nó: đầu tiên chúng hiện thành các nét mảnh trên clip đầu, rồi màu lan ra từ mọi đường viền với mép ướt sẫm mềm, và các vùng phẳng rộng nhất được tô sau cùng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tô màu",
+    "đường viền",
+    "nét vẽ",
+    "phác thảo",
+    "màu lan",
+    "tô"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "reach": {
+      "label": "Tầm với",
+      "description": "Mức màu lan ra từ các đường viền, tính theo chiều cao khung hình; vùng xa đường viền nhất được tô vào cuối"
+    },
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Độ tương phản cần quanh một điểm ảnh trước khi màu chạm tới: thấp hơn thì cũng lan từ các cạnh mờ"
+    }
+  }
+}

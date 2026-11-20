@@ -1,0 +1,17 @@
+{
+  "name": "Zoom vòng tròn (Zoom In Circles)",
+  "description": "Các vòng của clip đầu zoom với tốc độ khác nhau trước khi clip thứ hai hiện ra. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "zoom",
+    "vòng tròn",
+    "đồng tâm",
+    "phóng to",
+    "tốc độ khác nhau"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

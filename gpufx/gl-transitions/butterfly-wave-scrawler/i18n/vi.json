@@ -1,0 +1,29 @@
+{
+  "name": "Sóng bướm (Butterfly Wave Scrawler)",
+  "description": "Các gợn sóng lượn tách màu làm clip đầu xáo trộn thành clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "sóng",
+    "bướm",
+    "gợn sóng",
+    "tách màu",
+    "xáo trộn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "amplitude": {
+      "label": "Biên độ",
+      "description": "Độ mạnh của sóng"
+    },
+    "waves": {
+      "label": "Số sóng",
+      "description": "Số sóng"
+    },
+    "color_separation": {
+      "label": "Tách màu",
+      "description": "Mức tách kênh đỏ và xanh dương"
+    }
+  }
+}

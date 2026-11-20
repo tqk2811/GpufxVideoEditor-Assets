@@ -1,0 +1,22 @@
+{
+  "name": "Ép dẹt (Squeeze)",
+  "description": "Clip đầu bị ép thành một đường với tách màu, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ép",
+    "bóp",
+    "thu hẹp",
+    "tách màu",
+    "đường thẳng",
+    "dẹt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "color_separation": {
+      "label": "Tách màu",
+      "description": "Mức tách màu"
+    }
+  }
+}

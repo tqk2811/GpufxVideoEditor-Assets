@@ -1,0 +1,18 @@
+{
+  "name": "Nhòe chuyển động tiếp tuyến (Tangent Motion Blur)",
+  "description": "Clip đầu bị ném đi dọc một đường cong với nhòe chuyển động, và clip thứ hai xoay vào. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "nhòe chuyển động",
+    "tiếp tuyến",
+    "đường cong",
+    "ném",
+    "vung",
+    "quét"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

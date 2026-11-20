@@ -1,0 +1,34 @@
+{
+  "name": "Máy chiếu slide (Slide Projector)",
+  "description": "Máy chiếu slide đổi slide: hình đầu bị giật lên khỏi khung hình, nhòe khi rời mặt phẳng tiêu, bóng đèn trần nhấp nháy trên màn hình một thoáng, rồi hình thứ hai rơi xuống từ phía trên, nảy và dò lấy nét trước khi nét lại. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "máy chiếu slide",
+    "slide",
+    "cổ điển",
+    "đổi slide",
+    "chiếu",
+    "retro"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "bounce": {
+      "label": "Độ nảy",
+      "description": "Độ cao slide thứ hai nảy khi rơi vào khe máy"
+    },
+    "defocus": {
+      "label": "Độ mất nét",
+      "description": "Mức các slide mất nét khi di chuyển"
+    },
+    "flicker": {
+      "label": "Nhấp nháy",
+      "description": "Mức đèn nhấp nháy trong lúc đổi"
+    },
+    "lamp_color": {
+      "label": "Màu đèn",
+      "description": "Màu ánh đèn trên màn hình khi khe máy trống"
+    }
+  }
+}

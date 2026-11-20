@@ -1,0 +1,26 @@
+{
+  "name": "Khử hạt (Remove Grain)",
+  "description": "Bộ khử nhiễu/làm nét không gian với 25 chế độ trên vùng lân cận 3x3 (kẹp theo lân cận, trung vị, làm mờ, trung bình theo hướng cạnh).",
+  "tags": [
+    "khử nhiễu",
+    "khử hạt",
+    "removegrain",
+    "denoise",
+    "làm mịn",
+    "làm nét"
+  ],
+  "params": {
+    "m0": {
+      "label": "Chế độ đỏ",
+      "description": "Chế độ cho kênh đỏ (0 = không đổi)"
+    },
+    "m1": {
+      "label": "Chế độ xanh lá",
+      "description": "Chế độ cho kênh xanh lá (0 = không đổi)"
+    },
+    "m2": {
+      "label": "Chế độ xanh dương",
+      "description": "Chế độ cho kênh xanh dương (0 = không đổi)"
+    }
+  }
+}

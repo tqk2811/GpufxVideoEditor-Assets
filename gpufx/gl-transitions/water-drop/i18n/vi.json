@@ -1,0 +1,38 @@
+{
+  "name": "Giọt nước (Water Drop)",
+  "description": "Một giọt rơi vào hình ảnh như vào mặt nước phẳng lặng: các gợn tròn lan ra, bẻ cong hình ảnh với các tia sáng, clip thứ hai hiện trong gợn đầu và nước lặng lại. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "giọt nước",
+    "gợn sóng",
+    "nước",
+    "mặt nước",
+    "nhỏ giọt",
+    "sóng nước"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "amplitude": {
+      "label": "Biên độ",
+      "description": "Tần số các gợn (cao hơn: sát nhau hơn)"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ các gợn qua các vòng đang lan ra"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Nơi giọt rơi (0..1, y hướng xuống)"
+    },
+    "refraction": {
+      "label": "Khúc xạ",
+      "description": "Mức các gợn bẻ cong hình ảnh, tính theo chiều cao khung hình"
+    },
+    "highlight": {
+      "label": "Điểm sáng",
+      "description": "Độ sáng của các tia lóe"
+    }
+  }
+}

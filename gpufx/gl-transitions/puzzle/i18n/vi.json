@@ -1,0 +1,25 @@
+{
+  "name": "Xếp hình (Puzzle)",
+  "description": "Clip đầu được cắt thành các mảnh ghép nhấc lên lần lượt và rơi đi, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xếp hình",
+    "ghép hình",
+    "jigsaw",
+    "mảnh ghép",
+    "puzzle"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "pieces": {
+      "label": "Số mảnh",
+      "description": "Số mảnh theo cạnh ngắn"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng các mảnh được nhấc lên"
+    }
+  }
+}

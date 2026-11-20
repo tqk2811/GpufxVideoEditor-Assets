@@ -1,0 +1,26 @@
+{
+  "name": "Mở vòng tròn",
+  "description": "Chuyển cảnh kiểu mống mắt: clip thứ hai hiện ra trong một vòng tròn lớn dần. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "vòng tròn",
+    "iris",
+    "mở rộng",
+    "lộ ra",
+    "circle"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm vòng tròn",
+      "description": "Tâm vòng tròn (0..1)"
+    },
+    "softness": {
+      "label": "Độ mềm viền",
+      "description": "Độ rộng của viền"
+    }
+  }
+}

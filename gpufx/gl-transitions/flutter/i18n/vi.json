@@ -1,0 +1,30 @@
+{
+  "name": "Rơi bay phấp phới (Flutter)",
+  "description": "Clip đầu được thả và rơi như tờ giấy: nghiêng ngửa ra sau và chìm xuống trong khi lượn từ bên này sang bên kia, mép dẫn đầu chúi xuống và nhổm lên ở cuối mỗi lần lượn, đến khi rơi ra khỏi đáy khung hình, đổ bóng lên clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "rơi",
+    "tờ giấy",
+    "lượn",
+    "phấp phới",
+    "lá rơi",
+    "bay"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "swings": {
+      "label": "Số lần lượn",
+      "description": "Số lần lượn qua lại"
+    },
+    "sway": {
+      "label": "Độ đung đưa",
+      "description": "Độ rộng mỗi lần lượn, tính theo chiều cao khung hình"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ đổ bóng của tờ giấy và độ tối của bóng nó"
+    }
+  }
+}

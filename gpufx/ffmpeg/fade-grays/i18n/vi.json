@@ -1,0 +1,18 @@
+{
+  "name": "Mờ qua xám",
+  "description": "Clip đầu mất màu, hòa trộn ở dạng xám sang clip thứ hai, clip này dần lấy lại màu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "mờ dần",
+    "xám",
+    "trắng đen",
+    "fade",
+    "crossfade"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Trượt vào ra tách đôi dọc (Split Slide In Out Vertical)",
+  "description": "Các nửa của cả hai clip, trái và phải, trượt dọc ngược chiều nhau: clip đầu trượt ra khi clip thứ hai trượt vào phía sau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tách đôi",
+    "trượt vào ra",
+    "dọc",
+    "hai nửa",
+    "đẩy"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "reverse": {
+      "label": "Đảo ngược",
+      "description": "Đổi hướng của hai nửa"
+    }
+  }
+}

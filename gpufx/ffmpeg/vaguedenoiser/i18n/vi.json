@@ -1,0 +1,38 @@
+{
+  "name": "Khử nhiễu wavelet",
+  "description": "Bộ khử nhiễu wavelet trên từng khung hình: co các hệ số wavelet nhỏ của mỗi kênh.",
+  "tags": [
+    "khử nhiễu",
+    "giảm nhiễu",
+    "wavelet",
+    "vaguedenoiser",
+    "denoise",
+    "nhiễu hạt"
+  ],
+  "params": {
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Cường độ lọc: các hệ số có độ lớn tới mức này sẽ bị co"
+    },
+    "method": {
+      "label": "Phương pháp",
+      "description": "Cách co các hệ số trên ngưỡng: giữ nguyên, dịch về 0 theo ngưỡng, hoặc non-negative garrote"
+    },
+    "nsteps": {
+      "label": "Số bước",
+      "description": "Số bước phân rã wavelet (giảm xuống với ảnh nhỏ như FFmpeg làm)"
+    },
+    "percent": {
+      "label": "Phần trăm",
+      "description": "Phần trăm khử nhiễu đầy đủ của các hệ số dưới ngưỡng"
+    },
+    "planes": {
+      "label": "Kênh lọc",
+      "description": "Các kênh cần lọc, theo bit của FFmpeg trên gbrp: 1 xanh lá, 2 xanh dương, 4 đỏ"
+    },
+    "threshold_type": {
+      "label": "Loại ngưỡng",
+      "description": "Ngưỡng: dùng chung cho cả ảnh (VisuShrink), hoặc mỗi băng con một ngưỡng theo năng lượng của nó (BayesShrink)"
+    }
+  }
+}

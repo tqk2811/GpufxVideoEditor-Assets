@@ -1,0 +1,12 @@
+{
+  "name": "Cân bằng trắng Gray World",
+  "description": "Cân bằng trắng tự động theo giả định gray world, trong không gian màu LMS logarit.",
+  "tags": [
+    "cân bằng trắng",
+    "tự động",
+    "gray world",
+    "white balance",
+    "ám màu",
+    "khử ám màu"
+  ]
+}

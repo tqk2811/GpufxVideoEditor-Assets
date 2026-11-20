@@ -1,0 +1,41 @@
+{
+  "name": "Phòng trưng bày (Gallery)",
+  "description": "Máy quay lùi ra khỏi clip đầu để thấy nó là một slide treo thành hàng trên tường theo phối cảnh, hàng trượt đi khi mỗi slide quay ra khỏi giữa, và máy quay tiến lại slide thứ hai đến khi nó lấp đầy khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "phòng trưng bày",
+    "triển lãm",
+    "tranh treo tường",
+    "slide",
+    "bảo tàng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "reverse": {
+      "label": "Đảo ngược",
+      "description": "Đưa slide thứ hai vào từ bên trái thay vì bên phải"
+    },
+    "tilt": {
+      "label": "Độ nghiêng",
+      "description": "Mức các slide xoay khi rời khỏi giữa"
+    },
+    "gap": {
+      "label": "Khoảng cách",
+      "description": "Khoảng cách giữa hai slide, tính theo độ rộng slide"
+    },
+    "zoom": {
+      "label": "Độ lùi máy quay",
+      "description": "Mức máy quay lùi ra"
+    },
+    "reflection": {
+      "label": "Phản chiếu",
+      "description": "Độ mạnh phản chiếu của các slide trên sàn"
+    },
+    "background": {
+      "label": "Màu nền",
+      "description": "Màu của tường và sàn quanh các slide"
+    }
+  }
+}

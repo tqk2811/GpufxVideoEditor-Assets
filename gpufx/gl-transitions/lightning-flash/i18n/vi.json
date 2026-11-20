@@ -1,0 +1,42 @@
+{
+  "name": "Sét (Lightning Flash)",
+  "description": "Tia sét phân nhánh nứt xuống từ đỉnh khung hình, màn hình chớp trắng vài lần giật cục, và clip thứ hai hiện ra dưới ánh những nhấp nháy cuối cùng mờ dần. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "sét",
+    "tia chớp",
+    "bão",
+    "sấm",
+    "chớp sáng",
+    "sấm sét"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "bolts": {
+      "label": "Số tia sét",
+      "description": "Số tia sét: tia chính đánh xuống đất, các tia khác phân nhánh ở cao hơn trên trời"
+    },
+    "strike": {
+      "label": "Điểm đánh xuống",
+      "description": "Nơi tia chính đánh xuống, từ trái (0) sang phải (1) khung hình"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Thay đổi hình dạng các tia sét"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu ánh sáng, cộng vào các clip"
+    },
+    "glow": {
+      "label": "Quầng sáng",
+      "description": "Kích thước và độ sáng quầng sáng quanh các tia sét"
+    },
+    "flashes": {
+      "label": "Số lần nháy",
+      "description": "Số lần nháy; các clip chuyển trong lần sáng nhất"
+    }
+  }
+}

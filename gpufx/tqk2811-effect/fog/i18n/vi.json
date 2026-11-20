@@ -1,0 +1,36 @@
+{
+  "name": "Sương mù",
+  "description": "Sương mù trôi: những đám mây mềm nhiều lớp cuộn qua khung hình, dày hơn ở phía dưới.",
+  "tags": [
+    "sương mù",
+    "mây",
+    "huyền bí",
+    "khói sương"
+  ],
+  "params": {
+    "density": {
+      "label": "Mật độ",
+      "description": "Độ dày của sương"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ trôi, số chiều rộng khung hình mỗi giây"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Kích thước đám mây"
+    },
+    "height": {
+      "label": "Chiều cao",
+      "description": "Sương lên cao tới đâu (1 = phủ đều cả khung hình)"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu sương"
+    },
+    "seed": {
+      "label": "Hạt giống ngẫu nhiên",
+      "description": "Thay đổi các đám mây"
+    }
+  }
+}

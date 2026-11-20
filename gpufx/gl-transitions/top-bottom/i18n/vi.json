@@ -1,0 +1,17 @@
+{
+  "name": "Trên dưới (Top Bottom)",
+  "description": "Clip đầu thu nhỏ và tối đi trong khi clip thứ hai trượt vào từ phía dưới đè lên. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "trên dưới",
+    "trượt",
+    "thu nhỏ",
+    "đẩy",
+    "dọc"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

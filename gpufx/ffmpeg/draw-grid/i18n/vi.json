@@ -1,0 +1,46 @@
+{
+  "name": "Vẽ lưới (Draw Grid)",
+  "description": "Vẽ lưới các đường kẻ màu lên ảnh.",
+  "tags": [
+    "vẽ lưới",
+    "lưới",
+    "ô lưới",
+    "draw grid",
+    "đường kẻ",
+    "grid"
+  ],
+  "params": {
+    "x": {
+      "label": "Lệch X",
+      "description": "Độ lệch ngang của lưới, tính bằng pixel"
+    },
+    "y": {
+      "label": "Lệch Y",
+      "description": "Độ lệch dọc của lưới, tính bằng pixel"
+    },
+    "width": {
+      "label": "Rộng ô",
+      "description": "Chiều rộng một ô tính bằng pixel; 0 = bằng chiều rộng ảnh"
+    },
+    "height": {
+      "label": "Cao ô",
+      "description": "Chiều cao một ô tính bằng pixel; 0 = bằng chiều cao ảnh"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu các đường kẻ; alpha là độ mờ"
+    },
+    "thickness": {
+      "label": "Độ dày",
+      "description": "Độ dày đường kẻ tính bằng pixel"
+    },
+    "replace": {
+      "label": "Thay thế",
+      "description": "Thay màu và alpha của điểm ảnh thay vì trộn"
+    },
+    "invert": {
+      "label": "Đảo màu",
+      "description": "Đảo màu các điểm ảnh trên đường kẻ thay vì vẽ `color` (FFmpeg: color `invert`)"
+    }
+  }
+}

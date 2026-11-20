@@ -1,0 +1,30 @@
+{
+  "name": "Ô vuông bản lề (Hinged Squares)",
+  "description": "Hình ảnh được cắt thành các ô vuông xoay ngược chiều nhau trong khi vẫn nối bản lề ở các góc, nên tấm hình mở ra thành bàn cờ các hình thoi hiện clip thứ hai; các hình thoi đó rồi xoay về chỗ cũ và khép tấm hình lại. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ô vuông",
+    "bản lề",
+    "bàn cờ",
+    "hình thoi",
+    "xoay",
+    "lưới"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "cells": {
+      "label": "Số ô",
+      "description": "Số ô vuông theo chiều cao khung hình"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ mạnh của vát cạnh trên các ô vuông đang xoay và của bóng mềm chúng đổ vào các khe"
+    },
+    "zoom": {
+      "label": "Độ thu nhỏ góc nhìn",
+      "description": "Mức góc nhìn thu nhỏ để giữ tấm hình đang mở trong khung (0: tấm hình lớn vượt mép khung)"
+    }
+  }
+}

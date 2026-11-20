@@ -1,0 +1,30 @@
+{
+  "name": "Ghim góc (Corner Pin)",
+  "description": "Clip thứ hai hiện lên như một tấm thẻ nhỏ giữa khung hình, rồi các góc của nó được ghim ra bốn góc khung hình lần lượt, mỗi góc bật vào chỗ với độ nảy đàn hồi làm méo tấm thẻ theo phối cảnh, đến khi nó phẳng phủ toàn khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ghim góc",
+    "góc",
+    "thẻ",
+    "phối cảnh",
+    "đàn hồi",
+    "mở rộng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "start": {
+      "label": "Kích thước ban đầu",
+      "description": "Kích thước tấm thẻ trước khi các góc được kéo ra, so với khung hình"
+    },
+    "overshoot": {
+      "label": "Độ vọt quá",
+      "description": "Độ vọt quá của mỗi góc khi bật vào chỗ"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng tấm thẻ đổ lên clip đầu"
+    }
+  }
+}

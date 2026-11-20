@@ -1,0 +1,34 @@
+{
+  "name": "Tan sơn vẽ (Paint Dissolve)",
+  "description": "Clip thứ hai được vẽ lên clip đầu thành từng lớp nét cọ, trước hết là các nét phẳng rộng của màu sắc nó, rồi nhỏ dần, đến khi những nét mịn cuối cùng vẽ đủ chi tiết. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "sơn",
+    "vẽ tranh",
+    "nét cọ",
+    "tranh sơn dầu",
+    "tan",
+    "nghệ thuật"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "brush_size": {
+      "label": "Cỡ cọ",
+      "description": "Độ dài các nét cọ rộng nhất, tính theo chiều cao khung hình"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Hướng chính của các nét cọ, tính bằng độ"
+    },
+    "crossing": {
+      "label": "Độ đổi hướng",
+      "description": "Mức hướng nét cọ thay đổi từ lớp này sang lớp sau"
+    },
+    "impasto": {
+      "label": "Độ dày sơn",
+      "description": "Độ dày của lớp sơn: độ nổi và độ bóng của nét cọ khi còn ướt"
+    }
+  }
+}

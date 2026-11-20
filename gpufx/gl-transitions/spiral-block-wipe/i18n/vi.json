@@ -1,0 +1,37 @@
+{
+  "name": "Quét khối xoắn ốc (Spiral Block Wipe)",
+  "description": "Các khối vuông chuyển sang clip thứ hai lần lượt dọc theo xoắn ốc chữ nhật, từ viền vào trong hoặc từ tâm ra ngoài. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xoắn ốc",
+    "khối",
+    "ô vuông",
+    "quét",
+    "hình xoắn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "columns": {
+      "label": "Số cột",
+      "description": "Số cột khối"
+    },
+    "rows": {
+      "label": "Số hàng",
+      "description": "Số hàng khối"
+    },
+    "inward": {
+      "label": "Xoắn vào trong",
+      "description": "Xoắn ốc từ góc trên trái vào trong; tắt thì xoắn từ tâm ra ngoài, kết thúc ở góc trên trái"
+    },
+    "clockwise": {
+      "label": "Theo chiều kim đồng hồ",
+      "description": "Xoay theo chiều kim đồng hồ; tắt thì ngược chiều"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Thời gian hiện dần của mỗi khối, theo phần của chuyển cảnh"
+    }
+  }
+}

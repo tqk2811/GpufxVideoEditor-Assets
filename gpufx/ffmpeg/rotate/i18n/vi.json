@@ -1,0 +1,37 @@
+{
+  "name": "Xoay (Rotate)",
+  "description": "Xoay ảnh một góc bất kỳ quanh tâm, lấp phần không được phủ bằng một màu.",
+  "tags": [
+    "xoay",
+    "rotate",
+    "góc",
+    "nghiêng",
+    "quay"
+  ],
+  "params": {
+    "angle": {
+      "label": "Góc",
+      "description": "Góc xoay theo chiều kim đồng hồ, tính bằng radian (`a`)"
+    },
+    "ow": {
+      "label": "Rộng đầu ra",
+      "description": "Chiều rộng đầu ra; 0 = bằng chiều rộng đầu vào, -1 = đủ rộng cho ảnh xoay theo góc ban đầu (`rotw(a)`)"
+    },
+    "oh": {
+      "label": "Cao đầu ra",
+      "description": "Chiều cao đầu ra; 0 = bằng chiều cao đầu vào, -1 = đủ cao cho ảnh xoay theo góc ban đầu (`roth(a)`)"
+    },
+    "fillcolor": {
+      "label": "Màu lấp",
+      "description": "Màu của vùng ảnh không phủ tới (kèm alpha)"
+    },
+    "nofill": {
+      "label": "Không lấp",
+      "description": "`fillcolor=none` của FFmpeg: để trống vùng không phủ tới thay vì lấp bằng `fillcolor`"
+    },
+    "bilinear": {
+      "label": "Nội suy bilinear",
+      "description": "Nội suy bilinear; 0 = điểm ảnh gần nhất"
+    }
+  }
+}

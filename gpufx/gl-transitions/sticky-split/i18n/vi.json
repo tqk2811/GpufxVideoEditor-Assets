@@ -1,0 +1,34 @@
+{
+  "name": "Tách dính (Sticky Split)",
+  "description": "Clip đầu bị kéo tách dọc giữa như phô mai tan chảy: hai nửa tách chậm trong khi hình ảnh giữa chúng kéo thành mạng nhớt, mở ra thành các sợi bóng mỏng dần, võng xuống và đứt từng sợi, đến khi hai nửa trượt đi và để lại clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "dính",
+    "phô mai",
+    "kéo dãn",
+    "tan chảy",
+    "sợi",
+    "nhớt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "strings": {
+      "label": "Số sợi",
+      "description": "Số sợi trên chiều cao khung hình"
+    },
+    "sag": {
+      "label": "Độ võng",
+      "description": "Mức các sợi võng xuống dưới sức nặng"
+    },
+    "gloss": {
+      "label": "Độ bóng",
+      "description": "Độ mạnh của đổ bóng, điểm sáng bóng và bóng của các sợi"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Hạt giống ngẫu nhiên: giá trị khác cho sợi khác"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Máy đánh bạc (Slot Reels)",
+  "description": "Khung hình được cắt thành các cuộn dọc quay xuống như trống, nhòe chuyển động theo tốc độ, mang clip đầu rồi clip thứ hai, và dừng lần lượt từ trái sang phải với cú nảy cơ học nhỏ. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "máy đánh bạc",
+    "slot",
+    "cuộn quay",
+    "sòng bạc",
+    "may mắn",
+    "trống quay"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "reels": {
+      "label": "Số cuộn",
+      "description": "Số cuộn"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Mức nhòe chuyển động dọc khi các cuộn quay nhanh"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ trễ giữa lúc dừng của cuộn đầu và cuộn cuối, theo phần của chuyển cảnh"
+    },
+    "bounce": {
+      "label": "Độ nảy",
+      "description": "Kích thước cú nảy khi một cuộn dừng"
+    },
+    "separator": {
+      "label": "Màu vách ngăn",
+      "description": "Màu của các vách ngăn giữa các cuộn"
+    }
+  }
+}

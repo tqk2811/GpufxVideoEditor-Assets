@@ -1,0 +1,12 @@
+{
+  "name": "Xếp ngang",
+  "description": "Đặt các đầu vào cạnh nhau, từ trái sang phải, giống hstack của FFmpeg.",
+  "tags": [
+    "xếp ngang",
+    "ghép ảnh",
+    "cạnh nhau",
+    "hstack",
+    "chia đôi màn hình",
+    "split screen"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Làm mờ thông minh (Smart Blur)",
+  "description": "Làm mờ gaussian giữ cạnh: một ngưỡng quyết định những chênh lệch nào được làm mịn.",
+  "tags": [
+    "làm mờ",
+    "giữ cạnh",
+    "smart blur",
+    "làm mịn",
+    "mịn da",
+    "blur"
+  ],
+  "params": {
+    "luma_radius": {
+      "label": "Bán kính luma",
+      "description": "Bán kính gaussian của luma (sigma) (`lr`)"
+    },
+    "luma_strength": {
+      "label": "Cường độ luma",
+      "description": "Cường độ làm mờ luma (`ls`): 1 = mờ hoàn toàn, âm = làm nét"
+    },
+    "luma_threshold": {
+      "label": "Ngưỡng luma",
+      "description": "Ngưỡng luma (`lt`) theo mức 8-bit: dương chỉ làm mịn các chênh lệch nhỏ, âm chỉ làm mịn các chênh lệch lớn, 0 = mọi nơi"
+    },
+    "chroma_radius": {
+      "label": "Bán kính chroma",
+      "description": "Bán kính chroma (`cr`); dưới 0.1 (mặc định -1) = bằng luma"
+    },
+    "chroma_strength": {
+      "label": "Cường độ chroma",
+      "description": "Cường độ chroma (`cs`); dưới -1 (mặc định -2) = bằng luma"
+    },
+    "chroma_threshold": {
+      "label": "Ngưỡng chroma",
+      "description": "Ngưỡng chroma (`ct`); dưới -30 (mặc định -31) = bằng luma"
+    }
+  }
+}

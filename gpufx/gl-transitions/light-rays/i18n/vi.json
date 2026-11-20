@@ -1,0 +1,42 @@
+{
+  "name": "Tia sáng (Light Rays)",
+  "description": "Các chùm sáng bung ra từ vùng sáng của clip đầu và tỏa ra từ một tâm trôi chậm; ở đỉnh, clip thứ hai thế chỗ và các tia riêng của nó co lại vào vùng sáng của nó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tia sáng",
+    "chùm sáng",
+    "tỏa sáng",
+    "god rays",
+    "nắng",
+    "ánh sáng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm các tia tỏa ra, ở giữa chuyển cảnh (0..1, y hướng xuống)"
+    },
+    "drift": {
+      "label": "Độ trôi",
+      "description": "Mức tâm trôi trong suốt chuyển cảnh, từ trái sang phải"
+    },
+    "reach": {
+      "label": "Tầm với",
+      "description": "Độ dài các tia ở đỉnh, theo phần khoảng cách tới tâm"
+    },
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Độ sáng mà trên đó hình ảnh phát ra tia"
+    },
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Độ sáng của các tia"
+    },
+    "tint": {
+      "label": "Sắc thái",
+      "description": "Sắc thái của tia, hướng về đầu tia"
+    }
+  }
+}

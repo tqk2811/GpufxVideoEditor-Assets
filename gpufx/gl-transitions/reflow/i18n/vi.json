@@ -1,0 +1,26 @@
+{
+  "name": "Chảy lại văn bản (Reflow)",
+  "description": "Clip đầu hoạt động như đoạn văn trong hộp văn bản thu hẹp từ bên phải: các khe mỏng mở ra giữa các dòng và mỗi hàng ngắt phần cuối xuống dòng kế, trong khi bên cạnh clip thứ hai mọc từ các mảnh của những hàng đầu của chính nó và gỡ ngắt lại thành một hình khi hộp của nó rộng ra toàn khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "văn bản",
+    "đoạn văn",
+    "xuống dòng",
+    "hộp văn bản",
+    "dòng chữ",
+    "reflow"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "lines": {
+      "label": "Số dòng",
+      "description": "Số dòng"
+    },
+    "paper": {
+      "label": "Màu giấy",
+      "description": "Màu giấy thấy được giữa các dòng và các hộp"
+    }
+  }
+}

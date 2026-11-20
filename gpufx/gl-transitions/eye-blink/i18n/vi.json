@@ -1,0 +1,33 @@
+{
+  "name": "Chớp mắt (Eye Blink)",
+  "description": "Mí mắt cong khép lại trên clip đầu, hình nhòe và tối đi, rồi mở ra ở clip thứ hai khi nó nét lại. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chớp mắt",
+    "mí mắt",
+    "nhắm mắt",
+    "mở mắt",
+    "mắt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Mức hình ảnh nhòe và tối đi khi mắt nhắm"
+    },
+    "softness": {
+      "label": "Độ mềm",
+      "description": "Độ rộng bóng mềm dọc mép mí mắt"
+    },
+    "blinks": {
+      "label": "Số lần chớp",
+      "description": "Số lần chớp: 1, hoặc 2 cho chớp đôi nhanh"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu của mí mắt"
+    }
+  }
+}

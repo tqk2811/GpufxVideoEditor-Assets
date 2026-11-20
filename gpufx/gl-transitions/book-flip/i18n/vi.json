@@ -1,0 +1,29 @@
+{
+  "name": "Lật sách (Book Flip)",
+  "description": "Nửa phải của clip đầu lật qua như trang sách trên gáy sách ở giữa, cong lên gần mép tự do, mặt sau của nó đưa nửa trái của clip thứ hai ra. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "sách",
+    "lật trang",
+    "giấy",
+    "cuốn sách",
+    "trang"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "perspective": {
+      "label": "Phối cảnh",
+      "description": "Độ mạnh của phối cảnh"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Mức trang tối đi khi lật và bóng đổ của nó"
+    },
+    "curl": {
+      "label": "Độ cuộn",
+      "description": "Mức trang cong gần mép tự do"
+    }
+  }
+}

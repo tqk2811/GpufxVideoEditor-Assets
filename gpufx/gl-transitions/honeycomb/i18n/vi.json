@@ -1,0 +1,21 @@
+{
+  "name": "Tổ ong (Honeycomb)",
+  "description": "Clip đầu tách thành các hình lục giác xoay và thu nhỏ đi thành một đợt sóng từ tâm. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tổ ong",
+    "lục giác",
+    "xoay",
+    "thu nhỏ",
+    "hình sáu cạnh"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "size": {
+      "label": "Số lục giác",
+      "description": "Số lục giác theo cạnh ngắn"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Máy xem ảnh nổi (Stereo Viewer)",
+  "description": "Cả hai clip thu nhỏ thành các thẻ bo góc đổi chỗ như cuộn phim của đồ chơi xem ảnh nổi: thẻ đầu tách thành hai nửa xoay lên xuống ra khỏi khung hình, rồi hai mặt nạ xoay vào lại để lộ thẻ thứ hai, zoom lại toàn khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xem ảnh nổi",
+    "view master",
+    "thẻ",
+    "đồ chơi",
+    "cổ điển",
+    "stereo"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "zoom": {
+      "label": "Thu phóng",
+      "description": "Mức các clip thu nhỏ thành thẻ"
+    },
+    "corner_radius": {
+      "label": "Bán kính góc",
+      "description": "Bán kính góc của các thẻ, theo phần chiều cao khung hình"
+    }
+  }
+}

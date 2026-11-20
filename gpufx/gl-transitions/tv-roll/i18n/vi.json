@@ -1,0 +1,30 @@
+{
+  "name": "TV cuộn hình (TV Roll)",
+  "description": "Hình ảnh cuộn nhanh dần như TV cũ mất đồng bộ dọc, rồi chậm lại và khớp vào clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tv cuộn",
+    "mất đồng bộ dọc",
+    "tivi cũ",
+    "cuộn hình",
+    "crt",
+    "cổ điển"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "rolls": {
+      "label": "Số khung cuộn",
+      "description": "Số khung hình cuộn qua"
+    },
+    "bar_height": {
+      "label": "Chiều cao thanh",
+      "description": "Chiều cao thanh giữa các khung hình"
+    },
+    "bar_color": {
+      "label": "Màu thanh",
+      "description": "Màu thanh giữa các khung hình"
+    }
+  }
+}

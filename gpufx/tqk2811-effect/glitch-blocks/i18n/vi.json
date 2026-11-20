@@ -1,0 +1,36 @@
+{
+  "name": "Lỗi khối kỹ thuật số",
+  "description": "Lỗi kỹ thuật số: các khối ảnh nhảy ngang, tách màu hoặc đóng băng thành màu phẳng trong vài khung hình.",
+  "tags": [
+    "glitch",
+    "lỗi",
+    "kỹ thuật số",
+    "nhiễu"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Số khối bị lỗi"
+    },
+    "shift": {
+      "label": "Độ lệch ngang",
+      "description": "Độ nhảy ngang lớn nhất, tính theo chiều rộng khung hình"
+    },
+    "block": {
+      "label": "Cỡ khối",
+      "description": "Chiều cao khối, tính theo chiều cao khung hình"
+    },
+    "rate": {
+      "label": "Tần suất",
+      "description": "Số lần lỗi đổi mỗi giây"
+    },
+    "bursts": {
+      "label": "Tần suất nổ",
+      "description": "Tỷ lệ thời gian xuất hiện lỗi (0 = không bao giờ, 1 = luôn luôn)"
+    },
+    "seed": {
+      "label": "Hạt giống ngẫu nhiên",
+      "description": "Thay đổi hoa văn"
+    }
+  }
+}

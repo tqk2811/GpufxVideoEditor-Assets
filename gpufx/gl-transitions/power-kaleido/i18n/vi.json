@@ -1,0 +1,29 @@
+{
+  "name": "Kính vạn hoa mạnh (Power Kaleido)",
+  "description": "Hình ảnh gấp thành kính vạn hoa động trước khi để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "kính vạn hoa",
+    "gương",
+    "đối xứng",
+    "hoa văn",
+    "xoay"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Kích thước các ô gương"
+    },
+    "z": {
+      "label": "Thu phóng",
+      "description": "Thu phóng"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ xoay"
+    }
+  }
+}

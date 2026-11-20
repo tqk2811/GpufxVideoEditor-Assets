@@ -1,0 +1,16 @@
+{
+  "name": "Tông đen trắng",
+  "description": "Tông màu: thang xám, tăng tương phản.",
+  "tags": [
+    "đen trắng",
+    "xám",
+    "màu",
+    "bộ lọc"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là toàn bộ tông màu"
+    }
+  }
+}

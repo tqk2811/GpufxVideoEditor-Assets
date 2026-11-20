@@ -1,0 +1,26 @@
+{
+  "name": "Sắc độ (Hue)",
+  "description": "Xoay sắc độ và co giãn độ bão hòa của chroma, đồng thời dịch độ sáng, như bộ lọc hue của FFmpeg.",
+  "tags": [
+    "hue",
+    "sắc độ",
+    "đổi màu",
+    "bão hòa",
+    "độ sáng",
+    "chỉnh màu"
+  ],
+  "params": {
+    "h": {
+      "label": "Góc hue",
+      "description": "Góc sắc độ tính bằng độ"
+    },
+    "s": {
+      "label": "Bão hòa",
+      "description": "Độ bão hòa (0 = xám, âm còn đảo cả sắc độ)"
+    },
+    "b": {
+      "label": "Độ sáng",
+      "description": "Độ sáng: mỗi đơn vị cộng thêm 25.6 mức luma"
+    }
+  }
+}

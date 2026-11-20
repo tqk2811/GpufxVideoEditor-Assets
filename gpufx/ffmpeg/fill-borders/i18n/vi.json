@@ -1,0 +1,37 @@
+{
+  "name": "Tô viền (Fill Borders)",
+  "description": "Tô các viền của ảnh bằng cách kéo giãn, đối xứng, phản chiếu, cuộn vòng, mờ dần hoặc dùng một màu cố định.",
+  "tags": [
+    "tô viền",
+    "viền",
+    "fill borders",
+    "lấp viền",
+    "biên"
+  ],
+  "params": {
+    "left": {
+      "label": "Viền trái",
+      "description": "Độ rộng viền trái tính bằng pixel"
+    },
+    "right": {
+      "label": "Viền phải",
+      "description": "Độ rộng viền phải tính bằng pixel"
+    },
+    "top": {
+      "label": "Viền trên",
+      "description": "Độ cao viền trên tính bằng pixel"
+    },
+    "bottom": {
+      "label": "Viền dưới",
+      "description": "Độ cao viền dưới tính bằng pixel"
+    },
+    "mode": {
+      "label": "Chế độ",
+      "description": "0 = smear, 1 = mirror, 2 = fixed, 3 = reflect, 4 = wrap, 5 = fade"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu cho chế độ fixed và fade"
+    }
+  }
+}

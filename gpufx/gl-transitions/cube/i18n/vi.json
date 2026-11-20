@@ -1,0 +1,38 @@
+{
+  "name": "Khối lập phương (Cube)",
+  "description": "Hai clip là các mặt của một chiếc hộp xoay một phần tư vòng theo phối cảnh trên sàn phản chiếu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "khối lập phương",
+    "hộp",
+    "xoay 3d",
+    "hình khối",
+    "3d",
+    "cube"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "persp": {
+      "label": "Phối cảnh",
+      "description": "Mức độ phối cảnh"
+    },
+    "unzoom": {
+      "label": "Độ lùi máy quay",
+      "description": "Mức máy quay lùi ra giữa lúc xoay, theo phần khung hình"
+    },
+    "reflection": {
+      "label": "Phản chiếu",
+      "description": "Độ mạnh của phản chiếu"
+    },
+    "floating": {
+      "label": "Khoảng cách nổi",
+      "description": "Khoảng cách giữa hộp và hình phản chiếu, tính theo phần trăm chiều cao khung hình"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Mức các mặt tối đi khi xoay đi và bóng trên sàn"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Chỉnh màu",
+  "description": "Độ sáng, tương phản, bão hòa, gamma, sắc độ (hue) và cân bằng trắng trong một lượt xử lý.",
+  "tags": [
+    "chỉnh màu",
+    "độ sáng",
+    "tương phản",
+    "bão hòa",
+    "gamma",
+    "cân bằng trắng",
+    "color correction",
+    "hiệu chỉnh"
+  ],
+  "params": {
+    "brightness": {
+      "label": "Độ sáng",
+      "description": "Cộng thêm vào mọi kênh"
+    },
+    "contrast": {
+      "label": "Tương phản",
+      "description": "1 = không đổi"
+    },
+    "saturation": {
+      "label": "Bão hòa",
+      "description": "0 = xám, 1 = không đổi"
+    },
+    "gamma": {
+      "label": "Gamma",
+      "description": "Giá trị lớn hơn 1 làm sáng vùng trung tính"
+    },
+    "hue": {
+      "label": "Sắc độ (Hue)",
+      "description": "Xoay sắc độ, tính bằng độ"
+    },
+    "temperature": {
+      "label": "Nhiệt độ màu",
+      "description": "Âm = lạnh hơn (xanh dương), dương = ấm hơn (cam)"
+    },
+    "tint": {
+      "label": "Sắc thái",
+      "description": "Âm = xanh lá, dương = magenta"
+    }
+  }
+}

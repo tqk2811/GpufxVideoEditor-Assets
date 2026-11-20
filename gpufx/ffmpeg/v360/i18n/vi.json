@@ -1,0 +1,101 @@
+{
+  "name": "Video 360 (V360)",
+  "description": "Chuyển video 360 độ giữa các phép chiếu (equirect, cubemap, eac, fisheye, flat...) kèm xoay, như v360 của FFmpeg.",
+  "tags": [
+    "360",
+    "video 360",
+    "vr",
+    "equirectangular",
+    "cubemap",
+    "fisheye",
+    "phép chiếu",
+    "toàn cảnh",
+    "panorama"
+  ],
+  "params": {
+    "input": {
+      "label": "Phép chiếu vào",
+      "description": "Phép chiếu đầu vào: 0 equirect, 1 cube3x2, 2 cube6x1, 3 cube1x6, 4 eac, 5 flat, 6 dfisheye, 7 fisheye, 8 stereographic, 9 mercator, 10 ball, 11 hammer, 12 sinusoidal, 13 pannini, 14 cylindrical, 15 cylindricalea, 16 equisolid, 17 orthographic, 18 octahedron, 19 hequirect"
+    },
+    "output": {
+      "label": "Phép chiếu ra",
+      "description": "Phép chiếu đầu ra, đánh số như đầu vào"
+    },
+    "interp": {
+      "label": "Nội suy",
+      "description": "Nội suy: 0 nearest, 1 linear, 2 cubic"
+    },
+    "yaw": {
+      "label": "Yaw",
+      "description": "Xoay yaw tính bằng độ"
+    },
+    "pitch": {
+      "label": "Pitch",
+      "description": "Xoay pitch tính bằng độ"
+    },
+    "roll": {
+      "label": "Roll",
+      "description": "Xoay roll tính bằng độ"
+    },
+    "rorder": {
+      "label": "Thứ tự xoay",
+      "description": "Thứ tự xoay: 0 ypr, 1 yrp, 2 pyr, 3 pry, 4 ryp, 5 rpy"
+    },
+    "h_fov": {
+      "label": "FOV ngang ra",
+      "description": "Góc nhìn ngang của đầu ra tính bằng độ, 0 = mặc định của phép chiếu (flat và cylindrical 90, fisheye như 180, các loại khác 360). Với pannini đây là hệ số `d` của phép chiếu, không phải độ (mặc định 360, như FFmpeg)"
+    },
+    "v_fov": {
+      "label": "FOV dọc ra",
+      "description": "Góc nhìn dọc của đầu ra tính bằng độ, 0 = mặc định của phép chiếu (flat và cylindrical 45, fisheye như 180, các loại khác 180)"
+    },
+    "d_fov": {
+      "label": "FOV chéo ra",
+      "description": "Góc nhìn chéo của đầu ra tính bằng độ; khi lớn hơn 0 nó thay h_fov và v_fov dựa trên kích thước khung"
+    },
+    "ih_fov": {
+      "label": "FOV ngang vào",
+      "description": "Góc nhìn ngang của đầu vào tính bằng độ, 0 = mặc định của phép chiếu; với pannini là hệ số `d`, không phải độ"
+    },
+    "iv_fov": {
+      "label": "FOV dọc vào",
+      "description": "Góc nhìn dọc của đầu vào tính bằng độ, 0 = mặc định của phép chiếu"
+    },
+    "id_fov": {
+      "label": "FOV chéo vào",
+      "description": "Góc nhìn chéo của đầu vào tính bằng độ; khi lớn hơn 0 nó thay ih_fov và iv_fov"
+    },
+    "h_flip": {
+      "label": "Lật ngang ra",
+      "description": "Lật đầu ra theo chiều ngang"
+    },
+    "v_flip": {
+      "label": "Lật dọc ra",
+      "description": "Lật đầu ra theo chiều dọc"
+    },
+    "d_flip": {
+      "label": "Lật chiều sâu ra",
+      "description": "Lật đầu ra theo chiều sâu"
+    },
+    "ih_flip": {
+      "label": "Lật ngang vào",
+      "description": "Lật đầu vào theo chiều ngang"
+    },
+    "iv_flip": {
+      "label": "Lật dọc vào",
+      "description": "Lật đầu vào theo chiều dọc"
+    },
+    "h_offset": {
+      "label": "Lệch ngang ra",
+      "description": "Độ lệch ngang ngoài trục của đầu ra"
+    },
+    "v_offset": {
+      "label": "Lệch dọc ra",
+      "description": "Độ lệch dọc ngoài trục của đầu ra"
+    },
+    "background": {
+      "label": "Màu nền",
+      "description": "Phần lấp cho các điểm ảnh mà phép chiếu đầu ra hoặc đầu vào không phủ tới"
+    }
+  }
+}

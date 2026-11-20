@@ -1,0 +1,25 @@
+{
+  "name": "Quét dấu cộng (Plus Wipe)",
+  "description": "Một hình chữ thập dấu cộng lớn dần từ giữa và rộng ra đến khi clip thứ hai lấp đầy khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "dấu cộng",
+    "chữ thập",
+    "cộng",
+    "thập tự",
+    "quét"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của cạnh"
+    },
+    "reverse": {
+      "label": "Đảo ngược",
+      "description": "Thay vào đó khép bốn hình chữ nhật ở góc vào giữa"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Màu chọn lọc (Selective Color)",
+  "description": "Màu chọn lọc kiểu Photoshop: hiệu chỉnh CMYK giới hạn trong một dải màu.",
+  "tags": [
+    "màu chọn lọc",
+    "selective color",
+    "cmyk",
+    "photoshop",
+    "chỉnh màu",
+    "từng màu"
+  ],
+  "params": {
+    "correction_method": {
+      "label": "Phương pháp",
+      "description": "Phương pháp hiệu chỉnh: 0 = absolute (tuyệt đối), 1 = relative (tương đối)"
+    },
+    "reds": {
+      "label": "Vùng đỏ",
+      "description": "Điều chỉnh các vùng đỏ: cyan, magenta, vàng, đen"
+    },
+    "yellows": {
+      "label": "Vùng vàng",
+      "description": "Điều chỉnh các vùng vàng: cyan, magenta, vàng, đen"
+    },
+    "greens": {
+      "label": "Vùng xanh lá",
+      "description": "Điều chỉnh các vùng xanh lá: cyan, magenta, vàng, đen"
+    },
+    "cyans": {
+      "label": "Vùng cyan",
+      "description": "Điều chỉnh các vùng cyan: cyan, magenta, vàng, đen"
+    },
+    "blues": {
+      "label": "Vùng xanh dương",
+      "description": "Điều chỉnh các vùng xanh dương: cyan, magenta, vàng, đen"
+    },
+    "magentas": {
+      "label": "Vùng magenta",
+      "description": "Điều chỉnh các vùng magenta: cyan, magenta, vàng, đen"
+    },
+    "whites": {
+      "label": "Vùng trắng",
+      "description": "Điều chỉnh các vùng trắng: cyan, magenta, vàng, đen"
+    },
+    "neutrals": {
+      "label": "Vùng trung tính",
+      "description": "Điều chỉnh các vùng trung tính: cyan, magenta, vàng, đen"
+    },
+    "blacks": {
+      "label": "Vùng đen",
+      "description": "Điều chỉnh các vùng đen: cyan, magenta, vàng, đen"
+    }
+  }
+}

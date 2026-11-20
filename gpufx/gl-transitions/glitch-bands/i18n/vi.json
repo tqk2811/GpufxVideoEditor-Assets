@@ -1,0 +1,26 @@
+{
+  "name": "Dải lỗi (Glitch Bands)",
+  "description": "Hòa trộn chéo với các dải nhiễu lỗi và dịch chuyển màu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "glitch",
+    "nhiễu",
+    "lỗi",
+    "dải",
+    "dịch màu",
+    "hỏng hình"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "ampx": {
+      "label": "Biên độ ngang",
+      "description": "Biên độ ngang của glitch"
+    },
+    "ampy": {
+      "label": "Biên độ dọc",
+      "description": "Biên độ dọc của glitch"
+    }
+  }
+}

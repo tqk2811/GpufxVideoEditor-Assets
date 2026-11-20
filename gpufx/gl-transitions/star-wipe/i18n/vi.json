@@ -1,0 +1,33 @@
+{
+  "name": "Quét ngôi sao (Star Wipe)",
+  "description": "Một ngôi sao lớn dần có viền màu để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ngôi sao",
+    "sao",
+    "hình sao",
+    "quét",
+    "viền màu"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "border_thickness": {
+      "label": "Độ dày viền",
+      "description": "Độ dày viền"
+    },
+    "star_rotation": {
+      "label": "Góc xoay sao",
+      "description": "Góc xoay của ngôi sao, tính theo một phần năm vòng"
+    },
+    "border_color": {
+      "label": "Màu viền",
+      "description": "Màu viền"
+    },
+    "star_center": {
+      "label": "Tâm sao",
+      "description": "Tâm của ngôi sao (0..1, y hướng xuống)"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Dò cạnh (Edge Detect)",
+  "description": "Dò cạnh Sobel, có thể vẽ chồng lên ảnh gốc.",
+  "tags": [
+    "dò cạnh",
+    "nét vẽ",
+    "viền",
+    "edge",
+    "sobel",
+    "phác thảo"
+  ],
+  "params": {
+    "strength": {
+      "label": "Cường độ",
+      "description": "Độ lợi của cạnh"
+    },
+    "blend": {
+      "label": "Độ trộn",
+      "description": "0 = ảnh gốc, 1 = chỉ có cạnh"
+    },
+    "color": {
+      "label": "Màu cạnh",
+      "description": "Màu của cạnh"
+    }
+  }
+}

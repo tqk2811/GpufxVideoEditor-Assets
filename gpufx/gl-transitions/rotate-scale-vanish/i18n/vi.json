@@ -1,0 +1,29 @@
+{
+  "name": "Xoay thu nhỏ biến mất (Rotate Scale Vanish)",
+  "description": "Clip đầu xoay và thu nhỏ biến đi trên clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xoay",
+    "thu nhỏ",
+    "biến mất",
+    "quay",
+    "co lại"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "fade_in_second": {
+      "label": "Hiện dần clip hai",
+      "description": "Làm clip thứ hai hiện dần"
+    },
+    "reverse_effect": {
+      "label": "Đảo ngược hiệu ứng",
+      "description": "Chạy hiệu ứng ngược lại"
+    },
+    "reverse_rotation": {
+      "label": "Đảo chiều xoay",
+      "description": "Xoay theo chiều ngược lại"
+    }
+  }
+}

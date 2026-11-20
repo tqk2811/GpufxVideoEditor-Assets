@@ -1,0 +1,34 @@
+{
+  "name": "Lớp giấy (Paper Layers)",
+  "description": "Clip thứ hai được dựng lại thành chồng các tờ giấy cắt, mỗi tờ một dải độ sáng: từ tối nhất đến sáng nhất, mỗi tờ trượt vào nâng cao trên chồng, thả xuống đúng chỗ với bóng mềm trên các tờ bên dưới, rồi giấy phẳng ra thành bức ảnh. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lớp giấy",
+    "giấy cắt",
+    "papercut",
+    "chồng giấy",
+    "lớp",
+    "thủ công"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "layers": {
+      "label": "Số lớp",
+      "description": "Số tờ giấy, mỗi tờ một dải độ sáng của clip thứ hai"
+    },
+    "colorful": {
+      "label": "Độ nhiều màu",
+      "description": "Mức giấy lấy màu của clip thứ hai (0: giấy trơn với các sắc độ của màu giấy)"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng các tờ đổ lên các tờ bên dưới"
+    },
+    "paper": {
+      "label": "Màu giấy",
+      "description": "Màu tờ giấy sáng nhất; các tờ tối hơn là các sắc độ của nó"
+    }
+  }
+}

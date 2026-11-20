@@ -1,0 +1,54 @@
+{
+  "name": "Mandelbrot",
+  "description": "Tập Mandelbrot phóng to dần theo thời gian (bộ tạo hình). Tính bằng f32: ảnh bị vỡ khối sau khoảng 60 giây ở tốc độ zoom mặc định (FFmpeg dùng double).",
+  "tags": [
+    "mandelbrot",
+    "fractal",
+    "phân dạng",
+    "nền",
+    "bộ tạo",
+    "toán học"
+  ],
+  "params": {
+    "start_x": {
+      "label": "Tâm zoom X",
+      "description": "Phần thực của tâm zoom"
+    },
+    "start_y": {
+      "label": "Tâm zoom Y",
+      "description": "Phần ảo của tâm zoom"
+    },
+    "start_scale": {
+      "label": "Thang đầu",
+      "description": "Chiều cao khung nhìn trong mặt phẳng phức tại thời điểm 0"
+    },
+    "end_scale": {
+      "label": "Thang cuối",
+      "description": "Chiều cao khung nhìn trong mặt phẳng phức tại `end_time`"
+    },
+    "end_time": {
+      "label": "Thời gian cuối",
+      "description": "Số giây để đi từ `start_scale` đến `end_scale` (theo hàm mũ; vẫn tiếp tục sau mốc này)"
+    },
+    "maxiter": {
+      "label": "Số vòng lặp tối đa",
+      "description": "Giới hạn số vòng lặp mỗi điểm ảnh (tối đa 2000)"
+    },
+    "bailout": {
+      "label": "Bán kính thoát",
+      "description": "Bán kính thoát"
+    },
+    "inner_mode": {
+      "label": "Chế độ bên trong",
+      "description": "Điểm bên trong tập: 0 đen, 1 trắng, 2 tô màu theo z cuối"
+    },
+    "outer_mode": {
+      "label": "Chế độ bên ngoài",
+      "description": "Điểm bên ngoài: 0 số vòng lặp, 1 số vòng lặp mượt, 2 trắng, 3 tô màu theo z lúc thoát"
+    },
+    "opacity": {
+      "label": "Độ mờ lớp phủ",
+      "description": "Trộn lên ảnh đầu vào: 1 = chỉ ảnh được tạo, 0 = giữ nguyên ảnh đầu vào"
+    }
+  }
+}

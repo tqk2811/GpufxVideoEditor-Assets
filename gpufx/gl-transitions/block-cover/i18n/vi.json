@@ -1,0 +1,33 @@
+{
+  "name": "Phủ khối (Block Cover)",
+  "description": "Các khối màu đặc hiện ra ngẫu nhiên trên clip đầu đến khi phủ kín khung hình, rồi biến mất theo thứ tự ngẫu nhiên khác để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "khối",
+    "ô vuông",
+    "phủ",
+    "màu đặc",
+    "pixel"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "blocks": {
+      "label": "Số khối",
+      "description": "Số khối theo cạnh dài của khung hình (các khối vẫn gần như vuông)"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu của các khối"
+    },
+    "pop": {
+      "label": "Độ bật",
+      "description": "Mức khối vọt ra ngoài ô của nó khi hiện lên"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của cạnh các khối, tính theo khối"
+    }
+  }
+}

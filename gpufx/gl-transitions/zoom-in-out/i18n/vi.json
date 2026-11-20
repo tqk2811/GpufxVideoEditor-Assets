@@ -1,0 +1,17 @@
+{
+  "name": "Zoom vào ra (Zoom In Out)",
+  "description": "Zoom sâu vào clip đầu, rồi zoom ra khỏi clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "zoom vào",
+    "zoom ra",
+    "phóng to",
+    "thu nhỏ",
+    "zoom sâu"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Rèm cửa (Blinds)",
+  "description": "Rèm venetian: các sọc của clip thứ hai rộng dần cho đến khi phủ kín clip đầu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "rèm",
+    "rèm cửa",
+    "blinds",
+    "sọc",
+    "venetian",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "count": {
+      "label": "Số sọc",
+      "description": "Số lượng sọc"
+    },
+    "vertical": {
+      "label": "Sọc dọc",
+      "description": "Dùng sọc dọc thay vì sọc ngang"
+    },
+    "softness": {
+      "label": "Độ mềm viền",
+      "description": "Độ rộng viền, so với một sọc"
+    },
+    "origin": {
+      "label": "Điểm mở",
+      "description": "0 = mỗi sọc mở từ một mép, 1 = từ tâm sọc ra hai mép"
+    }
+  }
+}

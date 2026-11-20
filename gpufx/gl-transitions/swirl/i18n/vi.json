@@ -1,0 +1,29 @@
+{
+  "name": "Xoáy (Swirl)",
+  "description": "Hình ảnh xoắn thành xoáy đạt đỉnh ở giữa chừng, nơi clip đầu tan vào clip thứ hai, rồi gỡ xoắn. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xoáy",
+    "xoắn",
+    "vòng xoáy",
+    "xoay tròn",
+    "lốc xoáy"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "strength": {
+      "label": "Độ mạnh",
+      "description": "Số vòng xoáy ở tâm tại đỉnh (số âm xoay theo chiều kim đồng hồ)"
+    },
+    "radius": {
+      "label": "Bán kính",
+      "description": "Bán kính của xoáy, tính theo chiều cao khung hình"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm của xoáy (0..1, y hướng xuống)"
+    }
+  }
+}

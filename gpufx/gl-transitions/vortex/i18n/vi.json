@@ -1,0 +1,34 @@
+{
+  "name": "Lốc xoáy (Vortex)",
+  "description": "Clip đầu vỡ thành các ô vuông nhỏ mà cơn lốc cuốn đi dọc theo đường xoắn ốc, từ mắt bão ra ngoài, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lốc xoáy",
+    "bão",
+    "vòi rồng",
+    "xoắn ốc",
+    "cuốn đi",
+    "vortex"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "grid": {
+      "label": "Số hàng lưới",
+      "description": "Số hàng ô vuông"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm của lốc xoáy (0..1, y hướng xuống)"
+    },
+    "spin": {
+      "label": "Độ xoay",
+      "description": "Số vòng mỗi ô vuông xoay khi bay đi (số âm: theo chiều kim đồng hồ)"
+    },
+    "randomness": {
+      "label": "Độ ngẫu nhiên",
+      "description": "Mức ngẫu nhiên khi các ô rời đi"
+    }
+  }
+}

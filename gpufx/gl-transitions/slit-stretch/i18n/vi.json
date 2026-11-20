@@ -1,0 +1,38 @@
+{
+  "name": "Kéo giãn khe (Slit Stretch)",
+  "description": "Clip đầu là tấm được cắt các hàng khe so le bị kéo từ hai đầu: nó dài ra, các khe mở thành hình thoi và các sợi giữa chúng xoắn lại và mảnh đi như lưới kim loại giãn đến khi chỉ còn clip thứ hai ở lại phía sau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "kéo giãn",
+    "khe",
+    "lưới kim loại",
+    "hình thoi",
+    "xoắn",
+    "lưới"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "size": {
+      "label": "Kích thước khe",
+      "description": "Độ dài một khe và cầu nối của nó, so với chiều cao khung hình"
+    },
+    "stretch": {
+      "label": "Độ kéo giãn",
+      "description": "Mức tấm dài ra khi bị kéo"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ mạnh của đổ bóng các sợi đang xoắn và của bóng chúng"
+    },
+    "neck": {
+      "label": "Cổ thắt",
+      "description": "Mức tấm thắt lại ở eo khi bị kéo"
+    },
+    "horizontal": {
+      "label": "Theo chiều ngang",
+      "description": "Kéo tấm sang ngang thay vì dọc, với các khe dọc"
+    }
+  }
+}

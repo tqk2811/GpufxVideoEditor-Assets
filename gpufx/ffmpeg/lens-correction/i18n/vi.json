@@ -1,0 +1,39 @@
+{
+  "name": "Sửa méo ống kính",
+  "description": "Sửa hoặc thêm méo xuyên tâm của ống kính (méo thùng/méo gối) quanh một điểm tâm.",
+  "tags": [
+    "méo ống kính",
+    "lens",
+    "sửa méo",
+    "fisheye",
+    "barrel",
+    "pincushion",
+    "biến dạng"
+  ],
+  "params": {
+    "cx": {
+      "label": "Tâm X",
+      "description": "Tọa độ x tương đối của tâm méo, 0..1 theo chiều rộng"
+    },
+    "cy": {
+      "label": "Tâm Y",
+      "description": "Tọa độ y tương đối của tâm méo, 0..1 theo chiều cao"
+    },
+    "k1": {
+      "label": "Hệ số k1",
+      "description": "Hệ số méo bậc hai"
+    },
+    "k2": {
+      "label": "Hệ số k2",
+      "description": "Hệ số méo bậc hai kép"
+    },
+    "i": {
+      "label": "Nội suy",
+      "description": "Nội suy: 0 = nearest, 1 = bilinear"
+    },
+    "fc": {
+      "label": "Màu vùng trống",
+      "description": "Màu của các điểm ảnh ánh xạ ra ngoài ảnh nguồn"
+    }
+  }
+}

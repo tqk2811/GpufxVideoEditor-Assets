@@ -1,0 +1,28 @@
+{
+  "name": "Tan chấm bán sắc",
+  "description": "Các chấm của clip thứ hai lớn dần phủ lên clip đầu, dẫn đầu bởi mực màu nhấn.",
+  "tags": [
+    "chuyển cảnh",
+    "chấm bi",
+    "bán sắc",
+    "tan biến"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Cách sắp xếp các chấm"
+    },
+    "dot_size": {
+      "label": "Cỡ chấm",
+      "description": "Kích thước các chấm"
+    },
+    "accent": {
+      "label": "Màu nhấn",
+      "description": "Màu mực"
+    }
+  }
+}

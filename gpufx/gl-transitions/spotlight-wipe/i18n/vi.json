@@ -1,0 +1,34 @@
+{
+  "name": "Quét đèn sân khấu (Spotlight Wipe)",
+  "description": "Đèn sân khấu tắt trên clip đầu và một vệt đèn rọi hình bầu dục dò khắp nó, dừng lại và chiếu sáng clip thứ hai bên trong, rồi rộng ra đến khi đèn sáng lại. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "đèn sân khấu",
+    "đèn rọi",
+    "spotlight",
+    "sân khấu",
+    "ánh sáng",
+    "tiêu điểm"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm đèn rọi dừng lại và mở ra từ đó (0..1, y hướng xuống)"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Độ rộng đèn rọi khi dò tìm, tính theo chiều cao khung hình"
+    },
+    "darkness": {
+      "label": "Độ tối",
+      "description": "Độ tối của sân khấu quanh đèn rọi"
+    },
+    "warmth": {
+      "label": "Độ ấm",
+      "description": "Sắc thái của đèn rọi"
+    }
+  }
+}

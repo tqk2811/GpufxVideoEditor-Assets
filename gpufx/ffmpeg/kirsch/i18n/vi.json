@@ -1,0 +1,25 @@
+{
+  "name": "Kirsch",
+  "description": "Bộ dò cạnh la bàn Kirsch: đáp ứng mạnh nhất trong tám nhân 3x3 đã xoay.",
+  "tags": [
+    "dò cạnh",
+    "kirsch",
+    "edge",
+    "viền",
+    "phác thảo"
+  ],
+  "params": {
+    "scale": {
+      "label": "Độ lợi",
+      "description": "Độ lợi áp lên đáp ứng"
+    },
+    "delta": {
+      "label": "Độ lệch",
+      "description": "Giá trị cộng vào kết quả, tính theo mức 8-bit"
+    },
+    "luma": {
+      "label": "Chỉ luma",
+      "description": "1 = chỉ lấy cạnh của luma, ghi vào cả ba kênh"
+    }
+  }
+}

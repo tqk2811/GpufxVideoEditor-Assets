@@ -1,0 +1,34 @@
+{
+  "name": "Quét màn trập (Shutter Wipe)",
+  "description": "Màn trập mặt phẳng tiêu của máy ảnh bắn qua khung hình nhìn qua cửa sổ máy: các lá kim loại xòe xuống đến khi phủ kín khung hình, rồi chạy tiếp và xếp chồng bên dưới, để lộ clip thứ hai từ phía trên. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "màn trập",
+    "shutter",
+    "máy ảnh",
+    "lá kim loại",
+    "chụp ảnh",
+    "quét"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "blades": {
+      "label": "Số lá",
+      "description": "Số lá kim loại"
+    },
+    "tilt": {
+      "label": "Độ nghiêng",
+      "description": "Mức các lá nghiêng trên cánh tay của chúng khi di chuyển"
+    },
+    "gate": {
+      "label": "Độ rộng cửa sổ",
+      "description": "Độ rộng cửa sổ máy ảnh lấy khung hình khi màn trập bắn, tính theo chiều cao khung hình"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu của các lá kim loại"
+    }
+  }
+}

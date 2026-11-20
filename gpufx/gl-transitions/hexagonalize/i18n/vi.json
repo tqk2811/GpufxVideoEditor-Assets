@@ -1,0 +1,25 @@
+{
+  "name": "Lục giác hóa (Hexagonalize)",
+  "description": "Cả hai clip biến thành các hình lục giác, hòa trộn chéo, rồi nét lại. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lục giác",
+    "tổ ong",
+    "hình sáu cạnh",
+    "pixel hóa",
+    "mosaic"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "steps": {
+      "label": "Số bước",
+      "description": "Số cỡ lục giác mà nó đi qua (0: mượt)"
+    },
+    "horizontal_hexagons": {
+      "label": "Số lục giác ngang",
+      "description": "Số lục giác theo chiều ngang ở mức thô nhất"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Tan phác thảo (Sketch Dissolve)",
+  "description": "Clip đầu mờ về tờ giấy trắng trong khi clip thứ hai được vẽ lên bằng bút chì, đường viền trước rồi nét gạch bóng ở vùng tối, trước khi sắc độ và màu sắc tô đầy đến khi hình hoàn chỉnh. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "phác thảo",
+    "bút chì",
+    "vẽ tay",
+    "nét vẽ",
+    "tranh vẽ",
+    "tan"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "line_width": {
+      "label": "Độ rộng đường",
+      "description": "Độ dày nét viền bút chì, tính theo phần nghìn chiều cao khung hình"
+    },
+    "edges": {
+      "label": "Số đường viền",
+      "description": "Số đường viền được vẽ: cao hơn thì cũng vẽ các cạnh mờ hơn của hình ảnh"
+    },
+    "hatching": {
+      "label": "Nét gạch bóng",
+      "description": "Mức nét gạch chéo bóng vẽ ở vùng tối"
+    },
+    "paper": {
+      "label": "Màu giấy",
+      "description": "Màu giấy"
+    },
+    "ink": {
+      "label": "Màu mực",
+      "description": "Màu bút chì"
+    }
+  }
+}

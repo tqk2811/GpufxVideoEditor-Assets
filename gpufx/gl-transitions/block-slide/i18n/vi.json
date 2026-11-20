@@ -1,0 +1,41 @@
+{
+  "name": "Trượt khối (Block Slide)",
+  "description": "Khung hình được cắt thành lưới khối trượt ra lần lượt theo hiệu ứng thác, một số khối co nhỏ lại khi đi, trong khi các khối của clip thứ hai trượt vào sau để thế chỗ. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "khối",
+    "lưới",
+    "trượt",
+    "ô vuông",
+    "mosaic"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "columns": {
+      "label": "Số cột",
+      "description": "Số cột khối (tối đa 40 theo hướng trượt)"
+    },
+    "rows": {
+      "label": "Số hàng",
+      "description": "Số hàng khối (tối đa 40 theo hướng trượt)"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng các khối trượt tới, làm tròn về trục gần nhất (x sang phải, y lên trên)"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Phần của chuyển cảnh mà các khối lần lượt xuất phát (0: cùng lúc)"
+    },
+    "zoom": {
+      "label": "Thu phóng",
+      "description": "Mức các khối thu phóng co lại trên đường đi, theo tỷ lệ kích thước của chúng"
+    },
+    "background": {
+      "label": "Màu nền",
+      "description": "Màu thấy được trong khe giữa các khối"
+    }
+  }
+}

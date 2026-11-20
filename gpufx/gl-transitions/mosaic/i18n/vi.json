@@ -1,0 +1,25 @@
+{
+  "name": "Khảm (Mosaic)",
+  "description": "Góc nhìn lướt qua tấm khảm các ô xoay của cả hai clip và dừng ở clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "khảm",
+    "mosaic",
+    "ô xoay",
+    "lướt",
+    "ghép ảnh"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "endx": {
+      "label": "Cột kết thúc",
+      "description": "Cột ô mà góc nhìn kết thúc"
+    },
+    "endy": {
+      "label": "Hàng kết thúc",
+      "description": "Hàng ô mà góc nhìn kết thúc (đếm từ dưới lên)"
+    }
+  }
+}

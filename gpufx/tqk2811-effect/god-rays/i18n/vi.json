@@ -1,0 +1,40 @@
+{
+  "name": "Tia sáng thần thánh",
+  "description": "God rays: các chùm sáng tỏa ra từ một điểm xuyên qua vùng sáng của ảnh.",
+  "tags": [
+    "tia sáng",
+    "chùm sáng",
+    "god rays",
+    "nắng"
+  ],
+  "params": {
+    "center": {
+      "label": "Tâm",
+      "description": "Nơi các tia sáng xuất phát, 0..1 của khung hình ([0, 0] = góc trên trái)"
+    },
+    "intensity": {
+      "label": "Cường độ sáng",
+      "description": "Độ sáng của các tia"
+    },
+    "length": {
+      "label": "Độ dài",
+      "description": "Độ dài các tia, tính theo quãng đường tới nguồn sáng"
+    },
+    "decay": {
+      "label": "Độ tắt dần",
+      "description": "Tốc độ các tia mờ dần dọc theo chiều dài"
+    },
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Độ sáng (0..1) mà điểm ảnh cần đạt để tạo tia"
+    },
+    "samples": {
+      "label": "Số mẫu",
+      "description": "Số mẫu dọc mỗi tia; nhiều hơn thì mượt hơn nhưng chậm hơn"
+    },
+    "tint": {
+      "label": "Sắc thái",
+      "description": "Màu của các tia"
+    }
+  }
+}

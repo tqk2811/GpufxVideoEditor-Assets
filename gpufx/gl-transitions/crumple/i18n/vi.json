@@ -1,0 +1,37 @@
+{
+  "name": "Vò nhàu (Crumple)",
+  "description": "Clip đầu bị vò thành quả bóng giấy nhàu có đổ bóng dọc các nếp gấp, rồi bị ném đi để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "vò nhàu",
+    "giấy",
+    "nhàu",
+    "ném",
+    "quả bóng giấy"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "creases": {
+      "label": "Số nếp nhàu",
+      "description": "Số nếp gấp làm nhàu tờ giấy"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Bán kính quả bóng giấy, so với chiều cao khung hình"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng quả bóng bị ném tới (x sang phải, y lên trên)"
+    },
+    "paper": {
+      "label": "Màu giấy",
+      "description": "Màu giấy trần lộ ra qua lớp mực dọc các nếp nhàu sắc nhất"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Màu của bóng đổ lên clip thứ hai (alpha: độ mạnh)"
+    }
+  }
+}

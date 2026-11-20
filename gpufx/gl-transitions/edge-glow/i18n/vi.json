@@ -1,0 +1,25 @@
+{
+  "name": "Phát sáng viền (Edge Glow)",
+  "description": "Clip đầu mờ vào các đường viền phát sáng của chính nó trên nền đen, rồi chúng biến thành viền của clip thứ hai và tô đầy lại. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "viền",
+    "phát sáng",
+    "đường viền",
+    "neon",
+    "tách biên"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "thickness": {
+      "label": "Độ dày",
+      "description": "Khoảng cách giữa các mẫu dò tìm viền, tính bằng pixel"
+    },
+    "brightness": {
+      "label": "Độ sáng",
+      "description": "Độ sáng của các đường viền"
+    }
+  }
+}

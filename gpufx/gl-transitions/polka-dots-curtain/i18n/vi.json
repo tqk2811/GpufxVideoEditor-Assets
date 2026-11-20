@@ -1,0 +1,26 @@
+{
+  "name": "Rèm chấm bi (Polka Dots Curtain)",
+  "description": "Clip thứ hai hiện ra qua các chấm bi lớn dần ra từ một điểm. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chấm bi",
+    "chấm tròn",
+    "polka",
+    "hạt",
+    "rèm",
+    "hình tròn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "dots": {
+      "label": "Số chấm",
+      "description": "Số chấm trên khung hình"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm các chấm lớn dần từ đó (0..1, y hướng xuống)"
+    }
+  }
+}

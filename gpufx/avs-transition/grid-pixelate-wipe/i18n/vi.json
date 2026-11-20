@@ -1,0 +1,28 @@
+{
+  "name": "Quét lưới điểm ảnh",
+  "description": "Một lưới ô phủ lên clip đầu rồi mở ra clip thứ hai.",
+  "tags": [
+    "chuyển cảnh",
+    "lưới",
+    "pixel",
+    "ô vuông"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "cols": {
+      "label": "Số cột",
+      "description": "Số cột"
+    },
+    "rows": {
+      "label": "Số hàng",
+      "description": "Số hàng"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu ô"
+    }
+  }
+}

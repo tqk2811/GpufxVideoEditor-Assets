@@ -1,0 +1,31 @@
+{
+  "name": "Xóa phông màu (Chroma Key)",
+  "description": "Xóa một màu khóa (phông xanh) thành alpha. Cần dùng định dạng có alpha phía sau, hoặc chồng nó lên clip khác.",
+  "tags": [
+    "xóa phông",
+    "tách nền",
+    "phông xanh",
+    "green screen",
+    "chroma key",
+    "khóa màu",
+    "key"
+  ],
+  "params": {
+    "key": {
+      "label": "Màu khóa",
+      "description": "Màu cần xóa"
+    },
+    "similarity": {
+      "label": "Độ tương đồng",
+      "description": "Một màu phải gần màu khóa đến mức nào thì trở nên trong suốt"
+    },
+    "smoothness": {
+      "label": "Độ mềm",
+      "description": "Độ rộng của viền mềm"
+    },
+    "spill": {
+      "label": "Khử ám màu",
+      "description": "Loại bỏ ám màu khóa khỏi các cạnh còn lại"
+    }
+  }
+}

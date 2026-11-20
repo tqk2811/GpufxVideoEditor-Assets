@@ -1,0 +1,30 @@
+{
+  "name": "Đảo kênh (Shuffle Planes)",
+  "description": "Bản port của bộ lọc shuffleplanes FFmpeg: sắp xếp lại hoặc nhân đôi các kênh màu (R, G, B, A).",
+  "tags": [
+    "đảo kênh",
+    "đổi kênh",
+    "shuffle planes",
+    "kênh màu",
+    "hoán đổi",
+    "channel swap"
+  ],
+  "params": {
+    "map0": {
+      "label": "Kênh R ra",
+      "description": "Kênh nguồn (0 = R, 1 = G, 2 = B, 3 = A) của kênh R đầu ra"
+    },
+    "map1": {
+      "label": "Kênh G ra",
+      "description": "Kênh nguồn của kênh G đầu ra"
+    },
+    "map2": {
+      "label": "Kênh B ra",
+      "description": "Kênh nguồn của kênh B đầu ra"
+    },
+    "map3": {
+      "label": "Kênh A ra",
+      "description": "Kênh nguồn của kênh A đầu ra"
+    }
+  }
+}

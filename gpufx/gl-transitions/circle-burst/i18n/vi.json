@@ -1,0 +1,37 @@
+{
+  "name": "Bung vòng tròn (Circle Burst)",
+  "description": "Các đĩa ba màu đặc bung ra từ một điểm lần lượt, rồi một lỗ mở ra ở đĩa cuối để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "vòng tròn",
+    "đĩa",
+    "bung",
+    "nổ",
+    "hình tròn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm các đĩa bung ra (0..1, y hướng xuống)"
+    },
+    "color1": {
+      "label": "Màu 1",
+      "description": "Màu của đĩa thứ nhất"
+    },
+    "color2": {
+      "label": "Màu 2",
+      "description": "Màu của đĩa thứ hai"
+    },
+    "color3": {
+      "label": "Màu 3",
+      "description": "Màu của đĩa thứ ba"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ trễ giữa các đĩa (0: một hình tròn duy nhất)"
+    }
+  }
+}

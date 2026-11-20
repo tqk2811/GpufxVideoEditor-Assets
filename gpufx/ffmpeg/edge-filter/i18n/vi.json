@@ -1,0 +1,31 @@
+{
+  "name": "Bộ lọc cạnh",
+  "description": "Các bộ dò cạnh theo gradient trong một hiệu ứng: Sobel, Prewitt, Roberts cross và Scharr.",
+  "tags": [
+    "dò cạnh",
+    "bộ lọc cạnh",
+    "sobel",
+    "prewitt",
+    "roberts",
+    "scharr",
+    "gradient"
+  ],
+  "params": {
+    "kind": {
+      "label": "Toán tử",
+      "description": "Toán tử dò cạnh: 0 = sobel, 1 = prewitt, 2 = roberts, 3 = scharr"
+    },
+    "scale": {
+      "label": "Độ lợi",
+      "description": "Độ lợi áp lên độ lớn gradient"
+    },
+    "delta": {
+      "label": "Độ lệch",
+      "description": "Giá trị cộng vào kết quả, tính theo mức 8-bit"
+    },
+    "luma": {
+      "label": "Chỉ luma",
+      "description": "1 = chỉ lấy cạnh của luma, ghi vào cả ba kênh"
+    }
+  }
+}

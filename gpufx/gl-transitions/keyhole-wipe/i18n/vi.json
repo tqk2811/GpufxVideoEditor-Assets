@@ -1,0 +1,29 @@
+{
+  "name": "Quét lỗ khóa (Keyhole Wipe)",
+  "description": "Một lỗ khóa với viền vát lớn dần từ một điểm đến khi clip thứ hai lấp đầy khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lỗ khóa",
+    "khóa",
+    "hình lỗ khóa",
+    "quét",
+    "mở rộng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm của lỗ khóa (0..1, y hướng xuống)"
+    },
+    "rim": {
+      "label": "Viền",
+      "description": "Độ mạnh của viền vát và bóng bên trong (0: cắt gọn)"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của cạnh"
+    }
+  }
+}

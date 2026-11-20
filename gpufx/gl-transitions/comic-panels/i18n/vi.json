@@ -1,0 +1,33 @@
+{
+  "name": "Khung truyện tranh (Comic Panels)",
+  "description": "Khung hình tách thành các ô truyện tranh xiên có rãnh và viền mực; lần lượt theo thứ tự đọc, mỗi ô nhấc khỏi trang với cú zoom và bóng đổ rồi đấm sang clip thứ hai, sau đó các rãnh khép lại trên toàn bộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "truyện tranh",
+    "comic",
+    "khung",
+    "ô",
+    "manga"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "gutter": {
+      "label": "Độ rộng rãnh",
+      "description": "Độ rộng rãnh giữa các ô, theo phần chiều cao khung hình"
+    },
+    "gutter_color": {
+      "label": "Màu rãnh",
+      "description": "Màu của các rãnh và lề trang"
+    },
+    "border_color": {
+      "label": "Màu viền",
+      "description": "Màu viền mực quanh các ô"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Thay đổi bố cục các ô"
+    }
+  }
+}

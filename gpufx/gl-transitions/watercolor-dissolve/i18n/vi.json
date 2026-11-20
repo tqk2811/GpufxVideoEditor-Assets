@@ -1,0 +1,34 @@
+{
+  "name": "Tan màu nước (Watercolor Dissolve)",
+  "description": "Clip đầu bị rửa trôi thành tờ giấy ướt, rồi clip thứ hai được vẽ bằng màu nước: các lớp lót nhạt lan ra trước, nở hoa ở chỗ màu còn ướt và khô với mép sẫm hơn và sắc tố lấm tấm, rồi các lớp phủ đậm hơn được thêm vào, tông tối nhất trước, đến khi hình hoàn chỉnh. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "màu nước",
+    "tranh màu nước",
+    "vẽ tranh",
+    "giấy ướt",
+    "nghệ thuật",
+    "tan"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "edges": {
+      "label": "Số đường viền",
+      "description": "Độ sẫm mép các lớp màu khi khô, nơi sắc tố dồn lại"
+    },
+    "blooms": {
+      "label": "Vết nở",
+      "description": "Lượng vết nở: những bông hoa màu nhạt hơn với mép sẫm răng cưa, nơi nước chảy ngược vào lớp màu ướt"
+    },
+    "granulation": {
+      "label": "Độ lấm tấm",
+      "description": "Mức sắc tố lắng vào vân giấy"
+    },
+    "paper": {
+      "label": "Màu giấy",
+      "description": "Màu giấy"
+    }
+  }
+}

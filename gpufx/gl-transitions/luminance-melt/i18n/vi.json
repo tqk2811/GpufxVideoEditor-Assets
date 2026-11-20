@@ -1,0 +1,30 @@
+{
+  "name": "Tan theo độ sáng (Luminance Melt)",
+  "description": "Clip đầu tan chảy thành các vệt dọc nhiễu, tùy theo độ sáng của nó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "độ sáng",
+    "tan chảy",
+    "vệt dọc",
+    "luminance",
+    "nhiễu",
+    "chảy xuống"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "down": {
+      "label": "Hướng xuống",
+      "description": "Tan chảy xuống dưới (tắt: lên trên)"
+    },
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Ngưỡng độ sáng"
+    },
+    "above": {
+      "label": "Phía trên ngưỡng",
+      "description": "Tan chảy các phần trên ngưỡng thay vì dưới ngưỡng"
+    }
+  }
+}

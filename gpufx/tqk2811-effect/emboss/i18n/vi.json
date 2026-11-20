@@ -1,0 +1,32 @@
+{
+  "name": "Chạm nổi",
+  "description": "Chạm nổi: ảnh trông như được dập vào kim loại hoặc giấy, chiếu sáng từ một phía.",
+  "tags": [
+    "chạm nổi",
+    "emboss",
+    "kim loại",
+    "nổi khối"
+  ],
+  "params": {
+    "strength": {
+      "label": "Cường độ",
+      "description": "Độ sâu của chạm nổi"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Hướng ánh sáng tính bằng độ"
+    },
+    "distance": {
+      "label": "Khoảng cách",
+      "description": "Độ rộng cạnh nổi tính bằng pixel"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "0 là chạm nổi xám, 1 giữ nguyên màu"
+    },
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là hiệu ứng đầy đủ"
+    }
+  }
+}

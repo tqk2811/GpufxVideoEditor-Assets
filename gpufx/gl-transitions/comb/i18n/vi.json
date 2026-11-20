@@ -1,0 +1,25 @@
+{
+  "name": "Lược (Comb)",
+  "description": "Khung hình được cắt thành các dải đan xen trượt ngược chiều nhau, đẩy clip đầu ra và clip thứ hai vào. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lược",
+    "dải",
+    "đan xen",
+    "sọc",
+    "trượt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "strips": {
+      "label": "Số dải",
+      "description": "Số dải"
+    },
+    "vertical": {
+      "label": "Theo chiều dọc",
+      "description": "Cắt thành các cột trượt lên xuống"
+    }
+  }
+}

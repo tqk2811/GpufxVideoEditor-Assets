@@ -1,0 +1,34 @@
+{
+  "name": "Vectorscope",
+  "description": "Vectorscope chroma: biểu đồ mật độ Cb/Cr (scope).",
+  "tags": [
+    "vectorscope",
+    "scope",
+    "chroma",
+    "biểu đồ màu",
+    "đo màu",
+    "bộ đo"
+  ],
+  "params": {
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Độ sáng cộng thêm bởi một điểm ảnh (trên 1), như `intensity` của FFmpeg; 250 điểm ảnh trong một ô đạt tới trắng"
+    },
+    "samples": {
+      "label": "Số mẫu",
+      "description": "Biểu đồ lấy từ lưới samples x samples điểm ảnh đầu vào (chi phí cố định; 64 cho 4096 mẫu mỗi ô; chi phí khoảng ô x samples^2 lần đọc mỗi khung hình)"
+    },
+    "color_mode": {
+      "label": "Tô màu",
+      "description": "Tô biểu đồ bằng màu chroma của vị trí đó (false: trắng)"
+    },
+    "graticule": {
+      "label": "Lưới ngắm",
+      "description": "Vẽ chữ thập và một vòng tròn"
+    },
+    "opacity": {
+      "label": "Độ mờ lớp phủ",
+      "description": "Trộn lên ảnh đầu vào: 1 = chỉ ảnh được tạo, 0 = giữ nguyên ảnh đầu vào"
+    }
+  }
+}

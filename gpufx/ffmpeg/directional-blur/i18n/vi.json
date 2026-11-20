@@ -1,0 +1,21 @@
+{
+  "name": "Mờ theo hướng",
+  "description": "Làm mờ gaussian dọc theo một đường thẳng ở góc cho trước.",
+  "tags": [
+    "mờ chuyển động",
+    "motion blur",
+    "làm mờ theo hướng",
+    "mờ hướng",
+    "blur"
+  ],
+  "params": {
+    "angle": {
+      "label": "Góc",
+      "description": "Hướng làm mờ tính bằng độ (0 = theo +x, 90 = xuống dưới ảnh)"
+    },
+    "radius": {
+      "label": "Bán kính",
+      "description": "Bán kính làm mờ tính bằng pixel (sigma của gaussian)"
+    }
+  }
+}

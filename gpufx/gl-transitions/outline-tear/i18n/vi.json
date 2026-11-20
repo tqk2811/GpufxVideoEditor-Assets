@@ -1,0 +1,34 @@
+{
+  "name": "Xé theo đường viền (Outline Tear)",
+  "description": "Clip đầu bị xé ngang dọc theo đường viền mạnh nhất của chính nó, như đường chân trời, để lộ sợi giấy trắng; nửa trên bị xé kéo lên và nửa dưới rơi xuống, đổ bóng mềm lên clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xé",
+    "đường viền",
+    "giấy",
+    "xé giấy",
+    "đường chân trời",
+    "rách"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "rim": {
+      "label": "Viền",
+      "description": "Độ rộng mép xé trắng, so với chiều cao khung hình"
+    },
+    "roughness": {
+      "label": "Độ thô ráp",
+      "description": "Độ lởm chởm của vết xé quanh đường viền, so với chiều cao khung hình"
+    },
+    "paper": {
+      "label": "Màu giấy",
+      "description": "Màu sợi giấy ở mép xé"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Màu bóng đổ lên clip thứ hai (alpha: độ mạnh)"
+    }
+  }
+}

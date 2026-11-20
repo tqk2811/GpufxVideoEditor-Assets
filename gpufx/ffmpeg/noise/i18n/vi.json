@@ -1,0 +1,39 @@
+{
+  "name": "Nhiễu hạt (Noise)",
+  "description": "Thêm nhiễu gaussian hoặc đều, cố định hoặc đổi theo từng khung hình.",
+  "tags": [
+    "nhiễu",
+    "hạt",
+    "film grain",
+    "noise",
+    "nhiễu hạt",
+    "grain",
+    "phim cũ"
+  ],
+  "params": {
+    "strength": {
+      "label": "Cường độ",
+      "description": "Cường độ nhiễu theo mức 8-bit (`alls`); mặc định của FFmpeg là 0 (không nhiễu)"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Hạt giống của nhiễu (`all_seed`)"
+    },
+    "temporal": {
+      "label": "Đổi theo thời gian",
+      "description": "1 = nhiễu đổi theo từng khung hình (cờ `t`), 0 = cùng một nhiễu trên mọi khung hình"
+    },
+    "uniform": {
+      "label": "Nhiễu đều",
+      "description": "1 = nhiễu đều (cờ `u`), 0 = gaussian"
+    },
+    "pattern": {
+      "label": "Mẫu",
+      "description": "1 = trộn thêm một mẫu (bán) đều đặn (cờ `p`)"
+    },
+    "mono": {
+      "label": "Đơn sắc",
+      "description": "1 = cùng một nhiễu trên R, G và B (hạt xám), 0 = độc lập theo từng kênh"
+    }
+  }
+}

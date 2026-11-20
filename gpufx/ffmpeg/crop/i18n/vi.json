@@ -1,0 +1,29 @@
+{
+  "name": "Cắt khung (Crop)",
+  "description": "Cắt một hình chữ nhật ra khỏi ảnh; đầu ra có kích thước bằng hình chữ nhật đó.",
+  "tags": [
+    "cắt",
+    "crop",
+    "cắt khung",
+    "cắt ảnh",
+    "xén"
+  ],
+  "params": {
+    "w": {
+      "label": "Rộng",
+      "description": "Chiều rộng hình chữ nhật tính bằng pixel; 0 = bằng chiều rộng đầu vào (`out_w`)"
+    },
+    "h": {
+      "label": "Cao",
+      "description": "Chiều cao hình chữ nhật tính bằng pixel; 0 = bằng chiều cao đầu vào (`out_h`)"
+    },
+    "x": {
+      "label": "Cạnh trái",
+      "description": "Cạnh trái của hình chữ nhật; -1 = căn giữa"
+    },
+    "y": {
+      "label": "Cạnh trên",
+      "description": "Cạnh trên của hình chữ nhật; -1 = căn giữa"
+    }
+  }
+}

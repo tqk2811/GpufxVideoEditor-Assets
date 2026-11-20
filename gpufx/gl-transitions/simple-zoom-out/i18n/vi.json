@@ -1,0 +1,25 @@
+{
+  "name": "Zoom ra đơn giản (Simple Zoom Out)",
+  "description": "Clip thứ hai zoom ra vào đúng chỗ từ cận cảnh trong khi mờ hiện lên trên clip đầu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "zoom ra",
+    "thu nhỏ",
+    "cận cảnh",
+    "mờ dần",
+    "đơn giản"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "zoom_quickness": {
+      "label": "Tốc độ zoom",
+      "description": "Phần chuyển cảnh dành cho việc zoom"
+    },
+    "fade": {
+      "label": "Làm mờ",
+      "description": "Làm clip thứ hai hiện dần thay vì cắt thẳng sang"
+    }
+  }
+}

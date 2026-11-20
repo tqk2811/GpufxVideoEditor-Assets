@@ -1,0 +1,42 @@
+{
+  "name": "Nhấp nháy lỗi (Glitch Flicker)",
+  "description": "Cú glitch nhấp nháy với lệch RGB, bóng mờ và đường quét, chớp ngược về clip đầu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "glitch",
+    "nhấp nháy",
+    "rgb",
+    "đường quét",
+    "bóng ma",
+    "lỗi"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "frame_rate": {
+      "label": "Tốc độ khung",
+      "description": "Tốc độ glitch bước qua các khung hình, trên mỗi đơn vị progress"
+    },
+    "rgb_offset": {
+      "label": "Lệch RGB",
+      "description": "Khoảng cách giữa kênh đỏ và xanh dương, theo phần chiều rộng khung hình"
+    },
+    "block_amount": {
+      "label": "Mức khối",
+      "description": "Mức các khối phá vỡ phần hé lộ"
+    },
+    "ghost_amount": {
+      "label": "Độ mạnh bóng mờ",
+      "description": "Độ mạnh của các cú chớp ngược về clip đầu"
+    },
+    "red_cyan": {
+      "label": "Bóng đỏ lục lam",
+      "description": "Độ mạnh của lớp bóng mờ đỏ và lục lam"
+    },
+    "scanline": {
+      "label": "Đường quét",
+      "description": "Độ mạnh của đường quét"
+    }
+  }
+}

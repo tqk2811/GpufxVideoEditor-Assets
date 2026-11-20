@@ -1,0 +1,38 @@
+{
+  "name": "Đường tốc độ (Speed Lines)",
+  "description": "Các đường tốc độ kiểu truyện tranh bắn vào từ mép khung hình về điểm tiêu điểm khi clip đầu lao vào; ở đỉnh nó cắt sang clip thứ hai, lắng lại khi các đường rút về mép. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "đường tốc độ",
+    "truyện tranh",
+    "tốc độ",
+    "manga",
+    "anime",
+    "lao tới"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm các đường hội tụ về (0..1, y hướng xuống)"
+    },
+    "line_color": {
+      "label": "Màu dây",
+      "description": "Màu của các đường"
+    },
+    "density": {
+      "label": "Mật độ",
+      "description": "Số đường quanh điểm tiêu điểm"
+    },
+    "focus": {
+      "label": "Vùng tiêu điểm",
+      "description": "Kích thước vùng trống quanh điểm tiêu điểm ở đỉnh, từ gần như không đến toàn khung hình"
+    },
+    "zoom": {
+      "label": "Thu phóng",
+      "description": "Mức các clip lao vào về phía điểm tiêu điểm"
+    }
+  }
+}

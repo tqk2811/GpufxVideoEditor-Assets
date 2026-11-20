@@ -1,0 +1,25 @@
+{
+  "name": "Kẹp theo mặt nạ",
+  "description": "Bản port của bộ lọc maskedclamp FFmpeg: kẹp clip nền giữa clip tối và clip sáng.",
+  "tags": [
+    "mặt nạ",
+    "kẹp",
+    "clamp",
+    "masked clamp",
+    "giới hạn"
+  ],
+  "params": {
+    "undershoot": {
+      "label": "Vượt dưới",
+      "description": "Mức đầu ra được phép thấp hơn clip tối, trên thang 0..255 (8-bit)"
+    },
+    "overshoot": {
+      "label": "Vượt trên",
+      "description": "Mức đầu ra được phép cao hơn clip sáng, trên thang 0..255"
+    },
+    "planes": {
+      "label": "Kênh",
+      "description": "Mặt nạ bit các kênh cần lọc (1 = R, 2 = G, 4 = B, 8 = A); các kênh còn lại được chép từ đầu vào thứ nhất"
+    }
+  }
+}

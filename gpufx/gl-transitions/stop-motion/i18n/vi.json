@@ -1,0 +1,38 @@
+{
+  "name": "Stop motion (Stop Motion)",
+  "description": "Clip đầu là hình giấy cắt giật ra khỏi khung hình theo các bước stop-motion rời rạc, mỗi bước có độ nghiêng và lệch nhỏ mới cùng bóng đổ, trong khi hình giấy cắt thứ hai giật vào theo cùng cách rồi đáp xuống. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "stop motion",
+    "hoạt hình",
+    "giấy cắt",
+    "giật",
+    "từng khung hình",
+    "thủ công"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "steps": {
+      "label": "Số bước",
+      "description": "Số tư thế giữ trong suốt chuyển cảnh: ít hơn thì giật hơn"
+    },
+    "jitter": {
+      "label": "Độ rung",
+      "description": "Kích thước độ nghiêng và lệch ngẫu nhiên nhỏ áp cho các hình cắt ở mỗi bước"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng các hình cắt đổ xuống"
+    },
+    "back_color": {
+      "label": "Màu nền phía sau",
+      "description": "Màu nền phía sau các hình cắt"
+    },
+    "rim_color": {
+      "label": "Màu viền giấy",
+      "description": "Màu viền giấy quanh các hình cắt"
+    }
+  }
+}

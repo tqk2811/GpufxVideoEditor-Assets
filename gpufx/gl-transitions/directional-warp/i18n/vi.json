@@ -1,0 +1,25 @@
+{
+  "name": "Quét méo theo hướng (Directional Warp)",
+  "description": "Quét chéo với cạnh bị méo và nhòe lem. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "quét chéo",
+    "méo",
+    "nhòe",
+    "lem",
+    "hướng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của cạnh"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng quét (tọa độ gl-transitions: x sang phải, y lên trên)"
+    }
+  }
+}

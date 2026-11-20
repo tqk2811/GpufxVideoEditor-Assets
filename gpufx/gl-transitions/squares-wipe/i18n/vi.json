@@ -1,0 +1,29 @@
+{
+  "name": "Quét ô vuông (Squares Wipe)",
+  "description": "Các ô vuông lớn dần theo một đường quét chéo để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ô vuông",
+    "quét chéo",
+    "lưới",
+    "khối",
+    "hình vuông"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "squares": {
+      "label": "Số ô vuông",
+      "description": "Số ô vuông (cột, hàng)"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng quét (tọa độ gl-transitions: x sang phải, y lên trên)"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của đường quét"
+    }
+  }
+}

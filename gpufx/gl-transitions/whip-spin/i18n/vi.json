@@ -1,0 +1,34 @@
+{
+  "name": "Xoay nhanh (Whip Spin)",
+  "description": "Máy quay xoay nhanh dần trong nhòe xoáy, rồi clip thứ hai thế chỗ giữa lúc xoay và chậm lại đến khi dừng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xoay nhanh",
+    "nhòe xoay",
+    "quay tròn",
+    "xoáy",
+    "whip spin",
+    "máy quay"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "turns": {
+      "label": "Số vòng",
+      "description": "Tổng góc xoay, tính theo vòng (số âm: theo chiều kim đồng hồ)"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Độ dài nhòe chuyển động"
+    },
+    "chroma": {
+      "label": "Tách màu RGB",
+      "description": "Mức các kênh màu tách ra khi xoay nhanh dần"
+    },
+    "zoom": {
+      "label": "Thu phóng",
+      "description": "Mức zoom ở điểm nhanh nhất"
+    }
+  }
+}

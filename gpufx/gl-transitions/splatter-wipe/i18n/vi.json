@@ -1,0 +1,42 @@
+{
+  "name": "Quét vết sơn bắn (Splatter Wipe)",
+  "description": "Các vết sơn bắn đáp xuống lần lượt, mỗi vết bật ra với đường viền gai, giọt văng và vài vệt chảy xuống, để lộ clip thứ hai đến khi chúng phủ kín khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "sơn bắn",
+    "vết sơn",
+    "văng",
+    "giọt sơn",
+    "vẩy",
+    "graffiti"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "splats": {
+      "label": "Số vết sơn",
+      "description": "Số vết sơn bắn trên khung hình"
+    },
+    "spikiness": {
+      "label": "Độ gai",
+      "description": "Độ dài các gai quanh mỗi vết sơn"
+    },
+    "droplets": {
+      "label": "Giọt văng",
+      "description": "Số giọt văng quanh mỗi vết sơn"
+    },
+    "drips": {
+      "label": "Vệt chảy",
+      "description": "Mức các vệt sơn chảy xuống"
+    },
+    "rim": {
+      "label": "Viền",
+      "description": "Độ sẫm và bóng của viền các vết sơn"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Hạt giống ngẫu nhiên cho các vết sơn"
+    }
+  }
+}

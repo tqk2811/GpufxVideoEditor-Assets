@@ -1,0 +1,33 @@
+{
+  "name": "Quét cong (Curved Wipe)",
+  "description": "Clip đầu bị kéo đi từ giữa: cạnh quét phồng thành đường cong mượt dẫn đầu, rồi phẳng lại khi tới phía xa. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "cong",
+    "đường cong",
+    "quét",
+    "vòng cung",
+    "cạnh cong"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng cạnh di chuyển tới (x sang phải, y lên trên)"
+    },
+    "curvature": {
+      "label": "Độ cong",
+      "description": "Mức giữa cạnh dẫn trước hai bên"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của cạnh"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Màu bóng mềm do cạnh nhấc lên đổ lên clip thứ hai (alpha: độ mạnh, 0 là không có)"
+    }
+  }
+}

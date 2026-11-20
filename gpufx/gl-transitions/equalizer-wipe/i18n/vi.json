@@ -1,0 +1,34 @@
+{
+  "name": "Quét equalizer (Equalizer Wipe)",
+  "description": "Clip thứ hai trồi lên từ đáy thành các thanh dọc nảy như bộ cân bằng âm thanh, sáng từng đoạn và phủ các nắp đỉnh rơi xuống, đến khi lấp đầy khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "equalizer",
+    "thanh âm thanh",
+    "nhạc",
+    "cân bằng",
+    "phổ âm thanh",
+    "thanh dọc"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "bars": {
+      "label": "Số thanh",
+      "description": "Số thanh trên khung hình"
+    },
+    "bounce": {
+      "label": "Độ nảy",
+      "description": "Mức các thanh nảy lên xuống quanh mức trung bình, tính theo chiều cao khung hình"
+    },
+    "segments": {
+      "label": "Số đoạn",
+      "description": "Số đoạn sáng trong một thanh cao bằng khung hình (0 cho thanh đặc)"
+    },
+    "cap_color": {
+      "label": "Màu nắp đỉnh",
+      "description": "Màu của các nắp đỉnh (alpha: độ đục)"
+    }
+  }
+}

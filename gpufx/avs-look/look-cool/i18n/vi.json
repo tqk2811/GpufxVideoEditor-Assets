@@ -1,0 +1,16 @@
+{
+  "name": "Tông lạnh",
+  "description": "Tông màu: hơi xanh lạnh, sáng nhẹ.",
+  "tags": [
+    "lạnh",
+    "xanh",
+    "màu",
+    "bộ lọc"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là toàn bộ tông màu"
+    }
+  }
+}

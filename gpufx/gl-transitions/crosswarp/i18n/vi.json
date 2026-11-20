@@ -1,0 +1,17 @@
+{
+  "name": "Biến dạng chéo (Cross Warp)",
+  "description": "Clip đầu phóng to trong khi clip thứ hai thu nhỏ vào đúng chỗ, quét từ phải sang trái. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "biến dạng chéo",
+    "zoom",
+    "phóng to",
+    "thu nhỏ",
+    "quét"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

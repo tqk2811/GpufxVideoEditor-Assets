@@ -1,0 +1,36 @@
+{
+  "name": "Bo góc",
+  "description": "Bo góc clip và thêm viền tùy chọn cùng quầng sáng hoặc bóng mềm xung quanh.",
+  "tags": [
+    "bo góc",
+    "viền",
+    "đổ bóng",
+    "khung"
+  ],
+  "params": {
+    "radius": {
+      "label": "Bán kính",
+      "description": "Bán kính bo góc, tính theo chiều cao khung hình"
+    },
+    "inset": {
+      "label": "Thụt vào",
+      "description": "Khoảng cách giữa mép khung và clip, tính theo chiều cao khung hình"
+    },
+    "border": {
+      "label": "Viền",
+      "description": "Độ dày viền, tính theo chiều cao khung hình"
+    },
+    "border_color": {
+      "label": "Màu viền",
+      "description": "Màu viền"
+    },
+    "glow": {
+      "label": "Phát sáng",
+      "description": "Kích thước quầng sáng hoặc bóng quanh clip"
+    },
+    "glow_color": {
+      "label": "Màu quầng sáng",
+      "description": "Màu quầng sáng hoặc bóng (alpha quyết định cường độ)"
+    }
+  }
+}

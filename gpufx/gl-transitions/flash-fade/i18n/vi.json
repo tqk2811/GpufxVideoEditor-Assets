@@ -1,0 +1,21 @@
+{
+  "name": "Chớp sáng (Flash Fade)",
+  "description": "Hòa trộn chéo sáng dần về một màu ở giữa. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chớp sáng",
+    "flash",
+    "mờ dần",
+    "hòa trộn",
+    "màu"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu thêm vào các clip, mạnh nhất ở giữa"
+    }
+  }
+}

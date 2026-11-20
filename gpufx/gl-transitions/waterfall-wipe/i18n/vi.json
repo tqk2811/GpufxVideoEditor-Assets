@@ -1,0 +1,38 @@
+{
+  "name": "Quét thác nước (Waterfall Wipe)",
+  "description": "Các khối của clip thứ hai đổ xuống từ phía trên khung hình, hết cột này đến cột khác, như thác nước: trong mỗi cột chúng rơi nối đuôi nhau, đáp xuống với cú nảy nhỏ và xếp chồng từ đáy lên, đổ bóng mềm lên clip đầu đến khi chồng lấp đầy khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "thác nước",
+    "khối",
+    "đổ xuống",
+    "xếp chồng",
+    "rơi",
+    "cột"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "columns": {
+      "label": "Số cột",
+      "description": "Số cột (các khối vẫn gần như vuông, tối đa 48 hàng)"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Phần chuyển cảnh mà các cột bắt đầu lần lượt (0 đổ tất cả cùng lúc)"
+    },
+    "bounce": {
+      "label": "Độ nảy",
+      "description": "Độ cao các khối nảy khi đáp xuống"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng và của cạnh các khối đang rơi"
+    },
+    "reverse": {
+      "label": "Đảo ngược",
+      "description": "Các cột đổ từ phải sang trái thay vì từ trái sang phải"
+    }
+  }
+}

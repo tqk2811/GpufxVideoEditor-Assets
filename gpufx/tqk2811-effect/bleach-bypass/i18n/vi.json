@@ -1,0 +1,24 @@
+{
+  "name": "Bleach Bypass (phim tẩy bạc)",
+  "description": "Bleach bypass: màu nhạt, tương phản cao, vùng sáng ánh bạc, như khi phim bỏ qua bước tẩy.",
+  "tags": [
+    "phim",
+    "tẩy bạc",
+    "điện ảnh",
+    "tương phản"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là hiệu ứng đầy đủ"
+    },
+    "contrast": {
+      "label": "Tương phản",
+      "description": "Tương phản của lớp bạc"
+    },
+    "saturation": {
+      "label": "Bão hòa",
+      "description": "Lượng màu còn lại trong ảnh"
+    }
+  }
+}

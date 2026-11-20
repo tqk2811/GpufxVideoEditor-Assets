@@ -1,0 +1,16 @@
+{
+  "name": "Nơ ngang (Bow Tie Horizontal)",
+  "description": "Hai tam giác mọc từ mép trái và phải thành hình chiếc nơ để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "nơ",
+    "nơ ngang",
+    "tam giác",
+    "cà vạt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

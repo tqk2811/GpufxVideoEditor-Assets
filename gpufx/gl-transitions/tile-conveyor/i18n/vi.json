@@ -1,0 +1,38 @@
+{
+  "name": "Băng chuyền ô vuông (Tile Conveyor)",
+  "description": "Các khe mở ra giữa các ô của clip đầu trên một đường ray uốn qua mọi ô; các ô lướt dọc theo nó như đoàn tàu, ô của clip đầu rời đi ở dưới phải trong khi ô của clip thứ hai vào ở dưới trái và uốn qua khung hình đến khi vào đúng chỗ. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "băng chuyền",
+    "ô vuông",
+    "đường ray",
+    "tàu hỏa",
+    "lưới",
+    "dây chuyền"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "order": {
+      "label": "Cấp đường ray",
+      "description": "Kích thước đường ray: 2 lũy thừa order ô trên mỗi cạnh"
+    },
+    "gap": {
+      "label": "Khoảng cách",
+      "description": "Độ rộng khe giữa các ô, theo phần của một ô"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ mạnh của vát cạnh và của bóng các ô đổ lên đường ray"
+    },
+    "tray": {
+      "label": "Màu khay",
+      "description": "Màu khay dưới các ô"
+    },
+    "track": {
+      "label": "Màu đường ray",
+      "description": "Màu đường ray"
+    }
+  }
+}

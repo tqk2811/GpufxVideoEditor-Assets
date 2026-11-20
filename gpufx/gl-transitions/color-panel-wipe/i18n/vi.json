@@ -1,0 +1,45 @@
+{
+  "name": "Quét tấm màu (Color Panel Wipe)",
+  "description": "Các tấm màu đặc, so le nhẹ, quét ngang phủ kín khung hình, rồi quét ra phía đối diện để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tấm màu",
+    "màu đặc",
+    "quét",
+    "bảng màu",
+    "phủ màu"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng các tấm quét tới (x sang phải, y lên trên)"
+    },
+    "panels": {
+      "label": "Số tấm",
+      "description": "Số tấm"
+    },
+    "color1": {
+      "label": "Màu 1",
+      "description": "Màu của tấm thứ nhất"
+    },
+    "color2": {
+      "label": "Màu 2",
+      "description": "Màu của tấm thứ hai"
+    },
+    "color3": {
+      "label": "Màu 3",
+      "description": "Màu của tấm thứ ba"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ trễ giữa các tấm, so với lượt quét của một tấm (ở 0, chúng di chuyển như một và chỉ thấy tấm cuối)"
+    },
+    "skew": {
+      "label": "Độ xiên cạnh",
+      "description": "Độ xiên của cạnh các tấm"
+    }
+  }
+}

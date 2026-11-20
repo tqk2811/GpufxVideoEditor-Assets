@@ -1,0 +1,42 @@
+{
+  "name": "Rót chất lỏng (Liquid Fill)",
+  "description": "Clip thứ hai dâng lên trên clip đầu như chất lỏng rót đầy ly, mặt nước sóng sánh, được chiếu sáng bởi đường khum sáng, bẻ cong hình ngay bên dưới, với vài bọt khí nổi lên qua đó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chất lỏng",
+    "nước",
+    "rót",
+    "đổ đầy",
+    "bọt khí",
+    "ly nước"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng chất lỏng dâng lên (x sang phải, y lên trên)"
+    },
+    "amplitude": {
+      "label": "Biên độ",
+      "description": "Chiều cao sóng trên mặt, tính theo chiều cao khung hình"
+    },
+    "waves": {
+      "label": "Số sóng",
+      "description": "Số sóng trên khung hình"
+    },
+    "highlight": {
+      "label": "Điểm sáng",
+      "description": "Màu đường sáng dọc mặt nước và viền các bọt khí (alpha: độ mạnh)"
+    },
+    "refraction": {
+      "label": "Khúc xạ",
+      "description": "Mức clip thứ hai bị bẻ cong ngay dưới mặt nước"
+    },
+    "bubbles": {
+      "label": "Bọt khí",
+      "description": "Số bọt khí nổi lên qua chất lỏng"
+    }
+  }
+}

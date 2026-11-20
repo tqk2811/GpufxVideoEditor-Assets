@@ -1,0 +1,54 @@
+{
+  "name": "Bảng lật chữ (Split Flap)",
+  "description": "Khung hình thành bảng lật chữ: trong mỗi ô nửa trên của clip đầu lật xuống trên bản lề ngang giữa, ô này đến ô khác, mặt sau của nó đưa nửa dưới của clip thứ hai ra. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "bảng lật",
+    "lật chữ",
+    "bảng nhà ga",
+    "ô",
+    "cơ học",
+    "split flap"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "columns": {
+      "label": "Số cột",
+      "description": "Số cột ô"
+    },
+    "rows": {
+      "label": "Số hàng",
+      "description": "Số hàng ô"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ trễ cú lật của ô cuối, theo phần của chuyển cảnh"
+    },
+    "randomness": {
+      "label": "Độ ngẫu nhiên",
+      "description": "Mức thứ tự các ô bị xáo trộn, từ một đợt sóng qua bảng đến ngẫu nhiên"
+    },
+    "flaps": {
+      "label": "Số lá lật",
+      "description": "Số lá lật rơi trong mỗi ô, các lá trước lá cuối hiện những phần khác của clip thứ hai"
+    },
+    "gap": {
+      "label": "Khoảng cách",
+      "description": "Độ rộng khe giữa các ô, theo phần cạnh ngắn của khung hình"
+    },
+    "perspective": {
+      "label": "Phối cảnh",
+      "description": "Mức độ phối cảnh: các lá đang rơi lớn lên khi tiến về phía người xem"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Mức các lá tối đi khi xoay khỏi ánh sáng, và bóng của chúng"
+    },
+    "background": {
+      "label": "Màu nền",
+      "description": "Màu thấy được trong khe giữa các ô"
+    }
+  }
+}

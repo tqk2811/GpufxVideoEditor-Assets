@@ -1,0 +1,30 @@
+{
+  "name": "Gỡ chồng (Unstack)",
+  "description": "Clip đầu là chồng các dải ngang với clip thứ hai xếp chồng phía trên nó, ngoài khung hình: các dải bị giật ra bên cạnh từng dải một theo thứ tự xáo trộn, và mỗi lần mọi thứ phía trên rơi vào khe với cú nảy nhỏ, nên clip thứ hai hạ xuống khung hình theo nhịp. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "gỡ chồng",
+    "dải ngang",
+    "rút ra",
+    "xếp chồng",
+    "rơi",
+    "nhịp"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "bands": {
+      "label": "Số dải",
+      "description": "Số dải trong clip đầu"
+    },
+    "bounce": {
+      "label": "Độ nảy",
+      "description": "Độ cao cú nảy sau mỗi lần rơi"
+    },
+    "slot": {
+      "label": "Màu khe trống",
+      "description": "Màu khe trống do dải bị kéo ra để lại"
+    }
+  }
+}

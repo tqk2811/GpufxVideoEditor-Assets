@@ -1,0 +1,38 @@
+{
+  "name": "Nhấc véo (Pinch Lift)",
+  "description": "Clip đầu bị véo tại một điểm như chiếc khăn tay: hai bên rũ xuống và đưa vào dưới chỗ véo, dồn thành các nếp treo, rồi được thả ra và rơi xuống khỏi khung hình, để lộ clip thứ hai sau bóng của nó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "véo",
+    "nhấc",
+    "khăn tay",
+    "vải",
+    "nếp treo",
+    "rơi"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm tấm vải bị véo (0..1, y hướng xuống)"
+    },
+    "pleats": {
+      "label": "Số nếp gấp",
+      "description": "Số nếp treo từ chỗ véo"
+    },
+    "depth": {
+      "label": "Độ sâu",
+      "description": "Độ sâu của các nếp và đổ bóng của chúng"
+    },
+    "swing": {
+      "label": "Độ quẫy",
+      "description": "Mức tấm vải treo đung đưa trước khi yên lại"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng mềm đổ lên clip thứ hai"
+    }
+  }
+}

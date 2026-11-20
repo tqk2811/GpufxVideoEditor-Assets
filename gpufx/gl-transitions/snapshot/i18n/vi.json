@@ -1,0 +1,38 @@
+{
+  "name": "Chụp ảnh (Snapshot)",
+  "description": "Đèn flash máy ảnh đóng băng clip đầu thành tấm ảnh in có viền trắng, thu nhỏ, nghiêng và rơi khỏi khung hình, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chụp ảnh",
+    "flash",
+    "ảnh in",
+    "polaroid",
+    "máy ảnh",
+    "tấm ảnh"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "tilt": {
+      "label": "Độ nghiêng",
+      "description": "Mức tấm ảnh xoay khi rơi"
+    },
+    "border": {
+      "label": "Viền",
+      "description": "Độ rộng viền ảnh, so với chiều cao khung hình"
+    },
+    "flash": {
+      "label": "Chớp sáng",
+      "description": "Độ mạnh của đèn flash máy ảnh"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng mềm tấm ảnh đổ lên clip thứ hai"
+    },
+    "border_color": {
+      "label": "Màu viền",
+      "description": "Màu viền ảnh"
+    }
+  }
+}

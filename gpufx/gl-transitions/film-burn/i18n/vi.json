@@ -1,0 +1,21 @@
+{
+  "name": "Cháy phim (Film Burn)",
+  "description": "Ánh sáng rò rỉ kiểu cháy phim phát sáng tràn qua hình ảnh và để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "cháy phim",
+    "rò sáng",
+    "light leak",
+    "phim nhựa",
+    "retro"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Hạt giống ngẫu nhiên"
+    }
+  }
+}

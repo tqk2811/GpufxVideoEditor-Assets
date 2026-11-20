@@ -1,0 +1,34 @@
+{
+  "name": "Nổ ô vuông (Tile Blast)",
+  "description": "Clip đầu vỡ thành các ô vuông nổ về phía người xem từ một điểm, lăn và lớn dần khi bay ra, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "nổ",
+    "ô vuông",
+    "bay tới",
+    "mảnh vỡ",
+    "3d",
+    "bung ra"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "rows": {
+      "label": "Số hàng",
+      "description": "Số hàng ô"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm các ô nổ ra từ đó (0..1, y hướng xuống)"
+    },
+    "spin": {
+      "label": "Độ xoay",
+      "description": "Mức các ô xoay và lăn"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Mức các ô tối đi khi xoay, và bóng của chúng"
+    }
+  }
+}

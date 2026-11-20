@@ -1,0 +1,25 @@
+{
+  "name": "Dò cạnh Canny",
+  "description": "Bộ dò cạnh Canny: làm mờ gaussian, gradient Sobel, loại điểm không cực đại và ngưỡng kép.",
+  "tags": [
+    "dò cạnh",
+    "canny",
+    "edge detect",
+    "phác thảo",
+    "viền"
+  ],
+  "params": {
+    "high": {
+      "label": "Ngưỡng cao",
+      "description": "Ngưỡng cao (mặc định 50/255)"
+    },
+    "low": {
+      "label": "Ngưỡng thấp",
+      "description": "Ngưỡng thấp (mặc định 20/255)"
+    },
+    "mode": {
+      "label": "Chế độ",
+      "description": "0 = wires (nét xám trên nền đen, lấy từ luma), 1 = colormix (cạnh của R, G, B lấy trung bình với ảnh nguồn), 2 = canny (cạnh của R, G, B trên nền đen)"
+    }
+  }
+}

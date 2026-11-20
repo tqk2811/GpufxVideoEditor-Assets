@@ -1,0 +1,28 @@
+{
+  "name": "Hạt phim",
+  "description": "Hạt phim: hạt mềm, vón cục, mạnh nhất ở vùng sáng trung bình, chọn được kích thước hạt.",
+  "tags": [
+    "hạt phim",
+    "nhiễu hạt",
+    "phim",
+    "grain"
+  ],
+  "params": {
+    "strength": {
+      "label": "Cường độ",
+      "description": "Lượng hạt"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Kích thước hạt tính bằng pixel"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "0 = hạt xám, 1 = hạt riêng cho từng kênh màu"
+    },
+    "fps": {
+      "label": "Tần số",
+      "description": "Số lần hạt đổi mỗi giây (0 = hạt đứng yên)"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Lệch kênh RGBA",
+  "description": "Dịch độc lập các kênh đỏ, xanh lá, xanh dương và alpha của ảnh (kiểu glitch / quang sai màu).",
+  "tags": [
+    "glitch",
+    "lệch màu",
+    "chromatic aberration",
+    "tách kênh",
+    "rgb shift",
+    "quang sai màu",
+    "nhiễu"
+  ],
+  "params": {
+    "rh": {
+      "label": "Đỏ ngang",
+      "description": "Dịch kênh đỏ theo chiều ngang, tính bằng pixel"
+    },
+    "rv": {
+      "label": "Đỏ dọc",
+      "description": "Dịch kênh đỏ theo chiều dọc, tính bằng pixel"
+    },
+    "gh": {
+      "label": "Xanh lá ngang",
+      "description": "Dịch kênh xanh lá theo chiều ngang, tính bằng pixel"
+    },
+    "gv": {
+      "label": "Xanh lá dọc",
+      "description": "Dịch kênh xanh lá theo chiều dọc, tính bằng pixel"
+    },
+    "bh": {
+      "label": "Xanh dương ngang",
+      "description": "Dịch kênh xanh dương theo chiều ngang, tính bằng pixel"
+    },
+    "bv": {
+      "label": "Xanh dương dọc",
+      "description": "Dịch kênh xanh dương theo chiều dọc, tính bằng pixel"
+    },
+    "ah": {
+      "label": "Alpha ngang",
+      "description": "Dịch kênh alpha theo chiều ngang, tính bằng pixel"
+    },
+    "av": {
+      "label": "Alpha dọc",
+      "description": "Dịch kênh alpha theo chiều dọc, tính bằng pixel"
+    },
+    "edge": {
+      "label": "Xử lý biên",
+      "description": "Cách xử lý biên: 0 = smear (lặp lại biên), 1 = wrap (cuộn vòng)"
+    }
+  }
+}

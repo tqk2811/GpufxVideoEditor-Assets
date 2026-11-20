@@ -1,0 +1,34 @@
+{
+  "name": "Máy hủy giấy (Shred)",
+  "description": "Clip đầu bị cắt thành các dải giấy rơi đi với tốc độ không đều, nghiêng khi rơi. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "hủy giấy",
+    "dải giấy",
+    "cắt",
+    "rơi",
+    "vụn giấy",
+    "shredder"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "strips": {
+      "label": "Số dải",
+      "description": "Số dải"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ dàn trải thời điểm bắt đầu, theo phần của chuyển cảnh"
+    },
+    "tilt": {
+      "label": "Độ nghiêng",
+      "description": "Độ nghiêng lớn nhất của một dải đang rơi, tính bằng radian"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của cạnh cắt và bóng"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Cân bằng trắng Grey Edge",
+  "description": "Cân bằng trắng tự động, ước lượng màu ánh sáng từ các cạnh của ảnh (giả định grey edge).",
+  "tags": [
+    "cân bằng trắng",
+    "tự động",
+    "grey edge",
+    "white balance",
+    "ám màu",
+    "khử ám màu"
+  ],
+  "params": {
+    "difford": {
+      "label": "Bậc đạo hàm",
+      "description": "Bậc đạo hàm Gaussian: 0 dùng ảnh đã làm mịn (grey world, hoặc max-RGB khi minknorm là 0), 1 dùng gradient, 2 dùng đạo hàm bậc hai"
+    },
+    "minknorm": {
+      "label": "Chuẩn Minkowski",
+      "description": "Chuẩn Minkowski của ước lượng: 0 lấy giá trị lớn nhất (max-RGB), 1 lấy trung bình, giá trị cao hơn nghiêng về giá trị lớn nhất"
+    },
+    "sigma": {
+      "label": "Sigma",
+      "description": "Độ lệch chuẩn của Gaussian tính bằng pixel; phải ít nhất 1/6 khi difford lớn hơn 0, nếu không ảnh được giữ nguyên"
+    }
+  }
+}

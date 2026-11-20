@@ -1,0 +1,25 @@
+{
+  "name": "Tách xen kẽ (Deinterleave)",
+  "description": "Clip đầu tách rời như các dòng dữ liệu xen kẽ: hàng chẵn trượt lên và hàng lẻ trượt xuống thành hai bản sao nửa chiều cao, mỗi bản lại tách thành bốn, rồi tám; các bản lật sang clip thứ hai, các hàng của nó đan xen trở lại thành một hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tách xen kẽ",
+    "interlace",
+    "hàng chẵn lẻ",
+    "dữ liệu",
+    "tách đôi"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "stages": {
+      "label": "Số vòng tách",
+      "description": "Số vòng tách: hình ảnh kết thúc thành 2, 4, 8 hoặc 16 bản sao"
+    },
+    "gap": {
+      "label": "Khoảng cách",
+      "description": "Màu thấy được giữa các hàng khi chúng tách ra"
+    }
+  }
+}

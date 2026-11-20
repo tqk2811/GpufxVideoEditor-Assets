@@ -1,0 +1,32 @@
+{
+  "name": "Mờ dần vào",
+  "description": "Bắt đầu mờ và sáng rồi rõ dần về khung hình gốc.",
+  "tags": [
+    "mờ",
+    "làm nét",
+    "xuất hiện",
+    "mở đầu"
+  ],
+  "params": {
+    "blur": {
+      "label": "Độ mờ",
+      "description": "Độ mờ (độ lệch chuẩn) ở khung đầu tiên, tính bằng pixel thiết kế"
+    },
+    "brightness": {
+      "label": "Độ sáng",
+      "description": "Độ sáng thêm ở khung đầu tiên"
+    },
+    "duration": {
+      "label": "Thời lượng",
+      "description": "Thời lượng chuyển động tính bằng giây, tự rút ngắn theo clip nếu clip ngắn hơn"
+    },
+    "clip_time": {
+      "label": "Thời gian clip",
+      "description": "Số giây từ đầu clip, do trình chỉnh sửa tự điền"
+    },
+    "clip_duration": {
+      "label": "Độ dài clip",
+      "description": "Độ dài clip trên timeline tính bằng giây, do trình chỉnh sửa tự điền"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Bụi và xước phim",
+  "description": "Hạt bụi, sợi tóc và vệt xước dọc nhảy khác nhau ở mỗi khung hình, như một cuộn phim cũ.",
+  "tags": [
+    "bụi",
+    "xước",
+    "phim cũ",
+    "cổ điển"
+  ],
+  "params": {
+    "dust": {
+      "label": "Bụi",
+      "description": "Lượng hạt bụi"
+    },
+    "scratches": {
+      "label": "Vết xước",
+      "description": "Lượng vệt xước dọc"
+    },
+    "opacity": {
+      "label": "Độ mờ đục",
+      "description": "Độ rõ của các vết"
+    },
+    "fps": {
+      "label": "Tần số",
+      "description": "Tần suất các vết nhảy"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu của các vết (màu sáng cho bụi trắng)"
+    },
+    "seed": {
+      "label": "Hạt giống ngẫu nhiên",
+      "description": "Thay đổi hoa văn"
+    }
+  }
+}

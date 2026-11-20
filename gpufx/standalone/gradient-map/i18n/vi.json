@@ -1,0 +1,20 @@
+{
+  "name": "Teal & Orange",
+  "description": "Chỉnh màu qua một gradient map đi kèm dưới dạng ảnh PNG trong gói.",
+  "tags": [
+    "teal orange",
+    "chỉnh màu",
+    "gradient map",
+    "điện ảnh",
+    "cinematic",
+    "lut",
+    "filter màu",
+    "xanh cam"
+  ],
+  "params": {
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Trộn với ảnh gốc"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Ngưỡng theo mặt nạ",
+  "description": "Bản port của bộ lọc maskedthreshold FFmpeg: chọn điểm ảnh nguồn hoặc tham chiếu bằng cách so sánh độ chênh của chúng với một ngưỡng.",
+  "tags": [
+    "mặt nạ",
+    "ngưỡng",
+    "threshold",
+    "masked threshold",
+    "so sánh"
+  ],
+  "params": {
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Ngưỡng trên thang 0..255 (8-bit)"
+    },
+    "planes": {
+      "label": "Kênh",
+      "description": "Mặt nạ bit các kênh cần lọc (1 = R, 2 = G, 4 = B, 8 = A); các kênh còn lại được chép từ đầu vào thứ nhất"
+    },
+    "mode": {
+      "label": "Chế độ",
+      "description": "0 = abs (|nguồn - tham chiếu| <= ngưỡng thì giữ nguồn, nếu không lấy tham chiếu), 1 = diff (tham chiếu - nguồn <= ngưỡng thì cho max(tham chiếu - ngưỡng, 0), nếu không lấy nguồn)"
+    }
+  }
+}

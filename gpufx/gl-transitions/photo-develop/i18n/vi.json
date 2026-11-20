@@ -1,0 +1,29 @@
+{
+  "name": "Tráng ảnh (Photo Develop)",
+  "description": "Clip đầu bạc màu thành tấm thẻ trống, rồi clip thứ hai hiện lên trên đó như ảnh chụp lấy liền. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tráng ảnh",
+    "ảnh lấy liền",
+    "polaroid",
+    "hiện ảnh",
+    "ảnh chụp"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "card": {
+      "label": "Màu thẻ trống",
+      "description": "Màu của tấm thẻ trống"
+    },
+    "wash": {
+      "label": "Thời gian bạc màu",
+      "description": "Thời gian clip đầu bạc màu đi"
+    },
+    "tint": {
+      "label": "Sắc thái",
+      "description": "Độ mạnh của màu ám khi hình đang hiện"
+    }
+  }
+}

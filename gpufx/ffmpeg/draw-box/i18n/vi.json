@@ -1,0 +1,50 @@
+{
+  "name": "Vẽ khung (Draw Box)",
+  "description": "Vẽ một khung màu (viền hoặc đặc) lên ảnh.",
+  "tags": [
+    "vẽ khung",
+    "hộp",
+    "chữ nhật",
+    "draw box",
+    "viền",
+    "ô vuông"
+  ],
+  "params": {
+    "x": {
+      "label": "X",
+      "description": "Cạnh trái của khung, tính bằng pixel"
+    },
+    "y": {
+      "label": "Y",
+      "description": "Cạnh trên của khung, tính bằng pixel"
+    },
+    "width": {
+      "label": "Rộng",
+      "description": "Chiều rộng khung tính bằng pixel; 0 = bằng chiều rộng ảnh"
+    },
+    "height": {
+      "label": "Cao",
+      "description": "Chiều cao khung tính bằng pixel; 0 = bằng chiều cao ảnh"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu khung; alpha là độ mờ"
+    },
+    "thickness": {
+      "label": "Độ dày",
+      "description": "Độ dày viền tính bằng pixel"
+    },
+    "fill": {
+      "label": "Tô đầy",
+      "description": "Tô kín cả khung (FFmpeg: thickness `fill`)"
+    },
+    "replace": {
+      "label": "Thay thế",
+      "description": "Thay màu và alpha của điểm ảnh thay vì trộn"
+    },
+    "invert": {
+      "label": "Đảo màu",
+      "description": "Đảo màu các điểm ảnh của khung thay vì vẽ `color` (FFmpeg: color `invert`)"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Đổi kích thước (Scale)",
+  "description": "Đổi kích thước ảnh bằng lấy mẫu bilinear, theo quy tắc rộng và cao của scale trong FFmpeg.",
+  "tags": [
+    "đổi kích thước",
+    "scale",
+    "resize",
+    "phóng to",
+    "thu nhỏ",
+    "độ phân giải"
+  ],
+  "params": {
+    "w": {
+      "label": "Rộng",
+      "description": "Chiều rộng đầu ra; 0 = bằng đầu vào, -n = tính từ chiều cao giữ tỉ lệ khung hình, là bội số của n"
+    },
+    "h": {
+      "label": "Cao",
+      "description": "Chiều cao đầu ra; 0 = bằng đầu vào, -n = tính từ chiều rộng giữ tỉ lệ khung hình, là bội số của n"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Cross Process (rửa phim chéo)",
+  "description": "Rửa chéo: phim slide tráng như phim âm bản, vùng sáng vàng lục, vùng tối xanh lam, tương phản mạnh.",
+  "tags": [
+    "rửa phim chéo",
+    "phim",
+    "màu lạ",
+    "cổ điển"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là hiệu ứng đầy đủ"
+    },
+    "strength": {
+      "label": "Cường độ",
+      "description": "Mức uốn của các đường cong màu"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Khối quadtree (Quadtree Blocks)",
+  "description": "Clip đầu vỡ thành cây tứ phân các khối màu phẳng, nhỏ ở chỗ nhiều chi tiết và lớn ở chỗ trơn; các khối hợp lại thành vài ô vuông lớn đổi màu lần lượt, rồi tách lại, ngày càng mịn, thành clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "quadtree",
+    "khối",
+    "cây tứ phân",
+    "pixel",
+    "ô vuông",
+    "nén ảnh"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "tolerance": {
+      "label": "Dung sai màu",
+      "description": "Mức màu trong một khối được khác nhau trước khi nó tách (lớn hơn cho khối to hơn)"
+    },
+    "seams": {
+      "label": "Đường nối",
+      "description": "Độ sẫm của các đường nối mảnh giữa các khối"
+    }
+  }
+}

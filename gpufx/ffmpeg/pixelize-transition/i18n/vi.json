@@ -1,0 +1,22 @@
+{
+  "name": "Chuyển cảnh pixel",
+  "description": "Các pixel lớn dần, các clip hòa trộn ở điểm thô nhất, rồi pixel nhỏ lại. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "pixel",
+    "pixelize",
+    "khảm",
+    "mosaic",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "max_size": {
+      "label": "Kích thước tối đa",
+      "description": "Kích thước pixel ở giữa quá trình chuyển cảnh"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Matte luma",
+  "description": "Khóa luma với hai đầu ra: video với khoảng bị khóa trong suốt (color) và khóa dưới dạng ảnh xám (matte).",
+  "tags": [
+    "matte",
+    "mặt nạ",
+    "khóa luma",
+    "luma key",
+    "tách nền",
+    "trong suốt"
+  ],
+  "params": {
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Tâm của khoảng luma bị làm trong suốt"
+    },
+    "tolerance": {
+      "label": "Dung sai",
+      "description": "Nửa độ rộng của khoảng bị làm trong suốt hoàn toàn"
+    },
+    "softness": {
+      "label": "Độ mềm",
+      "description": "Độ rộng của viền mềm ở hai phía của khoảng"
+    }
+  }
+}

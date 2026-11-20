@@ -1,0 +1,30 @@
+{
+  "name": "Trượt kéo giãn (Stretch Slide)",
+  "description": "Clip đầu kéo dài ra khi bắn về một phía, kéo theo clip thứ hai bị ép dẹt phía sau, vọt quá rồi bật lại hình dạng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "kéo giãn",
+    "trượt",
+    "dẻo",
+    "bắn đi",
+    "co giãn",
+    "đàn hồi"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng các clip trượt (x sang phải, y lên trên)"
+    },
+    "stretch": {
+      "label": "Độ kéo giãn",
+      "description": "Mức clip đầu kéo dài và mức clip thứ hai bị ép phồng lên"
+    },
+    "bounce": {
+      "label": "Độ nảy",
+      "description": "Mức clip thứ hai vọt quá trước khi bật lại hình dạng"
+    }
+  }
+}

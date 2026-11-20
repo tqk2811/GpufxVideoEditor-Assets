@@ -1,0 +1,20 @@
+{
+  "name": "Chong chóng (Pinwheel)",
+  "description": "Một chiếc chong chóng xoay để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chong chóng",
+    "xoay",
+    "quay",
+    "cánh quạt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ xoay"
+    }
+  }
+}

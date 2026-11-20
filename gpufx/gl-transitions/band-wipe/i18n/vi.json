@@ -1,0 +1,33 @@
+{
+  "name": "Quét dải (Band Wipe)",
+  "description": "Các dải xen kẽ quét vào từ hai phía đối diện cùng lúc và đan xen như các ngón tay, trong khi cả hai clip đứng yên. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "dải",
+    "sọc",
+    "quét",
+    "đan xen",
+    "thanh"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "bands": {
+      "label": "Số dải",
+      "description": "Số dải"
+    },
+    "vertical": {
+      "label": "Theo chiều dọc",
+      "description": "Cắt khung hình thành các cột quét lên xuống thay vì các hàng quét ngang"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của cạnh dẫn đầu mỗi dải"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ trễ giữa dải đầu và dải cuối để chúng nối nhau từ trên xuống (hoặc từ trái sang)"
+    }
+  }
+}

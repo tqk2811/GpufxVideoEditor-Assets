@@ -1,0 +1,44 @@
+{
+  "name": "Phim cũ",
+  "description": "Cuộn phim cũ: tông nâu sepia, hạt, nhấp nháy, vết xước, bụi và rung khung.",
+  "tags": [
+    "phim cũ",
+    "sepia",
+    "cổ điển",
+    "xước"
+  ],
+  "params": {
+    "sepia": {
+      "label": "Sepia",
+      "description": "Tông sepia: 0 giữ nguyên màu"
+    },
+    "grain": {
+      "label": "Hạt",
+      "description": "Hạt phim"
+    },
+    "flicker": {
+      "label": "Nhấp nháy",
+      "description": "Độ sáng nhấp nháy giữa các khung hình"
+    },
+    "scratches": {
+      "label": "Vết xước",
+      "description": "Tần suất xuất hiện vệt xước dọc"
+    },
+    "dust": {
+      "label": "Bụi",
+      "description": "Số hạt bụi xuất hiện"
+    },
+    "vignette": {
+      "label": "Tối góc",
+      "description": "Độ tối của các góc"
+    },
+    "weave": {
+      "label": "Rung khung",
+      "description": "Khung hình rung lên xuống trong cửa phim"
+    },
+    "fps": {
+      "label": "Tần số",
+      "description": "Số lần mỗi giây hạt, bụi và vết xước thay đổi"
+    }
+  }
+}

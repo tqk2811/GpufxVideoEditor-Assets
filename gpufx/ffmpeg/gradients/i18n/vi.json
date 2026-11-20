@@ -1,0 +1,74 @@
+{
+  "name": "Dải màu (Gradients)",
+  "description": "Các dải màu nhiều màu xoay vòng: tuyến tính, tỏa tròn, vòng tròn, xoắn ốc, vuông (bộ tạo hình).",
+  "tags": [
+    "gradient",
+    "dải màu",
+    "chuyển sắc",
+    "nền",
+    "màu",
+    "bộ tạo"
+  ],
+  "params": {
+    "nb_colors": {
+      "label": "Số màu",
+      "description": "Số màu dùng trong `c0`..`c7`"
+    },
+    "kind": {
+      "label": "Kiểu",
+      "description": "Kiểu gradient: 0 linear, 1 radial, 2 circular, 3 spiral, 4 square"
+    },
+    "p0": {
+      "label": "Điểm đầu",
+      "description": "Điểm đầu của đường gradient, theo tỉ lệ kích thước ảnh"
+    },
+    "p1": {
+      "label": "Điểm cuối",
+      "description": "Điểm cuối của đường gradient, theo tỉ lệ kích thước ảnh"
+    },
+    "speed": {
+      "label": "Tốc độ xoay",
+      "description": "Xoay đường gradient quanh tâm ảnh, radian mỗi khung hình ở `rate` khung hình/giây"
+    },
+    "rate": {
+      "label": "Tốc độ khung",
+      "description": "Tốc độ khung mà `speed` dựa vào"
+    },
+    "c0": {
+      "label": "Màu 1",
+      "description": "Màu thứ 1"
+    },
+    "c1": {
+      "label": "Màu 2",
+      "description": "Màu thứ 2"
+    },
+    "c2": {
+      "label": "Màu 3",
+      "description": "Màu thứ 3"
+    },
+    "c3": {
+      "label": "Màu 4",
+      "description": "Màu thứ 4"
+    },
+    "c4": {
+      "label": "Màu 5",
+      "description": "Màu thứ 5"
+    },
+    "c5": {
+      "label": "Màu 6",
+      "description": "Màu thứ 6"
+    },
+    "c6": {
+      "label": "Màu 7",
+      "description": "Màu thứ 7"
+    },
+    "c7": {
+      "label": "Màu 8",
+      "description": "Màu thứ 8"
+    },
+    "opacity": {
+      "label": "Độ mờ lớp phủ",
+      "description": "Trộn lên ảnh đầu vào: 1 = chỉ ảnh được tạo, 0 = giữ nguyên ảnh đầu vào"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Khử sọc màu (Deband)",
+  "description": "Loại bỏ hiện tượng sọc màu (banding) bằng cách lấy trung bình bốn điểm lân cận ngẫu nhiên khi chúng gần với điểm ảnh.",
+  "tags": [
+    "khử banding",
+    "sọc màu",
+    "deband",
+    "làm mịn gradient",
+    "chuyển màu"
+  ],
+  "params": {
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Độ chênh (0..1 của toàn dải) mà dưới đó điểm ảnh bị coi là banding (`1thr`..`3thr`)"
+    },
+    "range": {
+      "label": "Khoảng cách",
+      "description": "Khoảng cách tính bằng pixel của các điểm tham chiếu (`r`); giá trị dương là tối đa (ngẫu nhiên theo điểm ảnh), giá trị âm là khoảng cách chính xác"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng của các điểm tham chiếu tính bằng radian (`d`); giá trị dương là tối đa (ngẫu nhiên theo điểm ảnh), giá trị âm là góc chính xác"
+    },
+    "blur": {
+      "label": "So sánh trung bình",
+      "description": "1 = so sánh giá trị trung bình của bốn điểm với điểm ảnh, 0 = so sánh từng điểm (`b`)"
+    },
+    "coupling": {
+      "label": "Liên kết kênh",
+      "description": "1 = cả R, G, B đều phải đạt thì điểm ảnh mới đổi (`c`)"
+    }
+  }
+}

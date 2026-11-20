@@ -1,0 +1,26 @@
+{
+  "name": "Vignette",
+  "description": "Làm tối (hoặc nhuộm màu) các cạnh khung hình.",
+  "tags": [
+    "vignette",
+    "tối góc",
+    "viền tối",
+    "làm tối viền",
+    "tối rìa",
+    "điện ảnh"
+  ],
+  "params": {
+    "strength": {
+      "label": "Cường độ",
+      "description": "Độ mạnh của vignette"
+    },
+    "radius": {
+      "label": "Bán kính",
+      "description": "Nơi bắt đầu làm tối"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu của vignette"
+    }
+  }
+}

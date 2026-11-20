@@ -1,0 +1,35 @@
+{
+  "name": "Thanh trượt (Sliding Bars)",
+  "description": "Các thanh của clip thứ hai lần lượt trượt vào phủ lên clip đầu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "thanh trượt",
+    "thanh",
+    "sliding bars",
+    "trượt",
+    "slideshow",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "count": {
+      "label": "Số thanh",
+      "description": "Số lượng thanh"
+    },
+    "vertical": {
+      "label": "Thanh dọc",
+      "description": "Thanh dọc trượt xuống/lên thay vì thanh ngang trượt phải/trái"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "0 = thanh đi vào từ bên trái (từ trên khi thanh dọc), 1 = từ bên phải (từ dưới)"
+    },
+    "stagger": {
+      "label": "Lần lượt",
+      "description": "1 = mỗi thanh bắt đầu khi thanh trước đã đáp xong, 0 = mọi thanh di chuyển cùng lúc"
+    }
+  }
+}

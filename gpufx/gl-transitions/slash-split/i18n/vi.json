@@ -1,0 +1,34 @@
+{
+  "name": "Chém đôi (Slash Split)",
+  "description": "Một nhát lưỡi dao sáng chém chéo qua clip đầu với chớp sáng, rồi hai nửa bị cắt trượt dọc vết cắt ngược chiều nhau và bay khỏi khung hình, đổ bóng mềm lên clip thứ hai bên dưới. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chém",
+    "kiếm",
+    "dao",
+    "cắt đôi",
+    "nhát chém",
+    "tách đôi"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Góc vết cắt so với phương ngang, tính bằng độ (ngược chiều kim đồng hồ)"
+    },
+    "separation": {
+      "label": "Độ tách rời",
+      "description": "Mức hai nửa tách ra qua vết cắt khi trượt, so với chiều cao khung hình"
+    },
+    "flash": {
+      "label": "Chớp sáng",
+      "description": "Màu nhát chém và chớp sáng của nó (alpha: cường độ)"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Màu bóng đổ lên clip thứ hai (alpha: độ mạnh)"
+    }
+  }
+}

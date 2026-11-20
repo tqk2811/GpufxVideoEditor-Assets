@@ -1,0 +1,21 @@
+{
+  "name": "Trượt vào tách đôi dọc (Split Slide In Vertical)",
+  "description": "Clip thứ hai trượt vào trên clip đầu thành hai nửa, trái và phải, di chuyển dọc ngược chiều nhau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tách đôi",
+    "trượt vào",
+    "dọc",
+    "hai nửa",
+    "đẩy"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "reverse": {
+      "label": "Đảo ngược",
+      "description": "Đổi hướng của hai nửa"
+    }
+  }
+}

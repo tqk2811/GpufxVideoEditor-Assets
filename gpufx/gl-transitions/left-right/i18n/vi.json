@@ -1,0 +1,17 @@
+{
+  "name": "Trái phải (Left Right)",
+  "description": "Clip đầu thu nhỏ và tối đi trong khi clip thứ hai trượt vào từ bên phải đè lên. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "trái phải",
+    "trượt",
+    "thu nhỏ",
+    "đẩy",
+    "ngang"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

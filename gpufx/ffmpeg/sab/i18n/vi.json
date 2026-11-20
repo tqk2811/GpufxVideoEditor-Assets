@@ -1,0 +1,26 @@
+{
+  "name": "Làm mờ theo hình dạng (SAB)",
+  "description": "Làm mờ giữ cạnh: các điểm lân cận được đánh trọng số theo khoảng cách và theo độ chênh sau khi lọc trước bằng gaussian.",
+  "tags": [
+    "làm mờ",
+    "giữ cạnh",
+    "sab",
+    "shape adaptive blur",
+    "làm mịn",
+    "mịn da"
+  ],
+  "params": {
+    "luma_radius": {
+      "label": "Bán kính",
+      "description": "Bán kính làm mờ (`lr`)"
+    },
+    "luma_pre_filter_radius": {
+      "label": "Bán kính lọc trước",
+      "description": "Bán kính bộ lọc trước, quyết định các điểm lân cận nào trông giống nhau (`lpfr`)"
+    },
+    "luma_strength": {
+      "label": "Dung sai",
+      "description": "Dung sai với độ chênh giá trị, tính theo mức 8-bit: thấp giữ cạnh, cao làm mờ xuyên qua cạnh (`ls`)"
+    }
+  }
+}

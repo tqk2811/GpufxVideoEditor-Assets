@@ -1,0 +1,28 @@
+{
+  "name": "Tách RGB + hạt phim",
+  "description": "Quang sai màu kèm hạt phim động, viết bằng GLSL.",
+  "tags": [
+    "rgb split",
+    "tách rgb",
+    "glitch",
+    "chromatic aberration",
+    "hạt phim",
+    "film grain",
+    "quang sai màu",
+    "nhiễu"
+  ],
+  "params": {
+    "amount": {
+      "label": "Độ lệch",
+      "description": "Độ lệch kênh tính bằng pixel"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Hướng lệch tính bằng độ"
+    },
+    "grain": {
+      "label": "Hạt phim",
+      "description": "Cường độ hạt phim"
+    }
+  }
+}

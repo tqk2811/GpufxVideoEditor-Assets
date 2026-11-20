@@ -1,0 +1,34 @@
+{
+  "name": "Mưa mã (Code Rain)",
+  "description": "Clip đầu tối đi thành lưới các ký tự mã nhấp nháy nhuốm màu của nó, rồi các dòng ký tự phát sáng rơi xuống theo cột với tốc độ riêng, mỗi dòng có đầu sáng và đuôi mờ dần, để lại clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "mưa mã",
+    "ma trận",
+    "matrix",
+    "ký tự rơi",
+    "hacker",
+    "code"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "cell_size": {
+      "label": "Kích thước ký tự",
+      "description": "Chiều cao một ký tự, tính theo chiều cao khung hình"
+    },
+    "trail": {
+      "label": "Độ dài vệt",
+      "description": "Độ dài trung bình đuôi mờ dần của các dòng, tính theo chiều cao khung hình"
+    },
+    "tint": {
+      "label": "Sắc thái",
+      "description": "Mức ký tự của clip đầu lấy màu của nó, thay vì màu phát sáng"
+    },
+    "glow": {
+      "label": "Quầng sáng",
+      "description": "Màu của các dòng đang rơi và ánh sáng của chúng"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Hòa trộn nhân (Multiply Blend)",
+  "description": "Hòa trộn chéo qua chế độ hòa trộn nhân của cả hai clip. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "nhân",
+    "multiply",
+    "hòa trộn",
+    "chế độ hòa trộn",
+    "blend"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

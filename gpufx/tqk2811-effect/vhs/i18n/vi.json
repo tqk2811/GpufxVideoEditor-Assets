@@ -1,0 +1,36 @@
+{
+  "name": "Băng VHS",
+  "description": "Băng VHS: viền màu, đường lượn sóng, dải theo dõi cuộn, nhiễu và đường quét.",
+  "tags": [
+    "VHS",
+    "băng từ",
+    "retro",
+    "nhiễu"
+  ],
+  "params": {
+    "wobble": {
+      "label": "Lượn sóng",
+      "description": "Độ lượn sóng ngang của các đường"
+    },
+    "chroma": {
+      "label": "Viền màu",
+      "description": "Độ lệch viền đỏ/xanh, tính theo chiều rộng khung hình"
+    },
+    "tracking": {
+      "label": "Dải theo dõi",
+      "description": "Cường độ dải theo dõi cuộn"
+    },
+    "noise": {
+      "label": "Nhiễu",
+      "description": "Nhiễu tĩnh"
+    },
+    "scanlines": {
+      "label": "Đường quét",
+      "description": "Độ tối của mỗi đường xen kẽ"
+    },
+    "saturation": {
+      "label": "Bão hòa",
+      "description": "Độ bão hòa màu"
+    }
+  }
+}

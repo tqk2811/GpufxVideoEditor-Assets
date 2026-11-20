@@ -1,0 +1,38 @@
+{
+  "name": "Quét khung lồng (Inset Wipe)",
+  "description": "Một hình chữ nhật neo ở góc, ở mép hoặc ở giữa lớn dần đến khi clip thứ hai lấp đầy khung hình, hé lộ nó tại chỗ mà không co giãn; khi đảo ngược, clip đầu co lại vào hình chữ nhật. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "khung lồng",
+    "hình chữ nhật",
+    "picture in picture",
+    "pip",
+    "mở rộng",
+    "thu nhỏ"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "anchor": {
+      "label": "Điểm neo",
+      "description": "Nơi hình chữ nhật lớn lên: (0, 0) trên trái, (1, 1) dưới phải, (0.5, 0.5) giữa (0..1, y hướng xuống)"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của cạnh hình chữ nhật"
+    },
+    "border_width": {
+      "label": "Độ rộng viền",
+      "description": "Độ rộng viền vẽ quanh hình chữ nhật, tính theo chiều cao khung hình (0: không viền)"
+    },
+    "border_color": {
+      "label": "Màu viền",
+      "description": "Màu của viền"
+    },
+    "reverse": {
+      "label": "Đảo ngược",
+      "description": "Thay vào đó clip đầu co lại vào hình chữ nhật, về phía điểm neo"
+    }
+  }
+}

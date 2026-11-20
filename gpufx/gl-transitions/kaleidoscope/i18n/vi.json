@@ -1,0 +1,29 @@
+{
+  "name": "Kính vạn hoa (Kaleidoscope)",
+  "description": "Hòa trộn chéo qua kính vạn hoa đang xoay. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "kính vạn hoa",
+    "xoay",
+    "đối xứng",
+    "hoa văn",
+    "hòa trộn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ xoay"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Góc cộng thêm ở mỗi nếp gấp, tính bằng radian"
+    },
+    "power": {
+      "label": "Hệ số",
+      "description": "Hệ số làm mượt của chuyển động xoay"
+    }
+  }
+}

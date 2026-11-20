@@ -1,0 +1,28 @@
+{
+  "name": "Lân cận (Neighbor)",
+  "description": "Co, giãn, deflate và inflate trên vùng lân cận 3x3, bị giới hạn bởi một ngưỡng.",
+  "tags": [
+    "co",
+    "giãn",
+    "erosion",
+    "dilation",
+    "deflate",
+    "inflate",
+    "lân cận",
+    "hình thái học"
+  ],
+  "params": {
+    "mode": {
+      "label": "Chế độ",
+      "description": "0 = erosion (co), 1 = dilation (giãn), 2 = deflate, 3 = inflate"
+    },
+    "coordinates": {
+      "label": "Điểm lân cận",
+      "description": "Chỉ cho erosion và dilation: mặt nạ bit các điểm lân cận được dùng; bit 0 = trên trái, 1 = trên, 2 = trên phải, 3 = trái, 4 = phải, 5 = dưới trái, 6 = dưới, 7 = dưới phải"
+    },
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Mức thay đổi lớn nhất của một giá trị, tính theo mức 8-bit; 0 = không đổi (`threshold0`)"
+    }
+  }
+}

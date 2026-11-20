@@ -1,0 +1,34 @@
+{
+  "name": "Quét băng giá (Frost Wipe)",
+  "description": "Tinh thể băng mọc vào từ các mép khung hình với mép đầu phân nhánh như lông vũ, phủ băng trắng và nhòe lên clip đầu đến khi phủ kín, rồi tan ra về phía mép trên clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "băng giá",
+    "sương giá",
+    "tinh thể băng",
+    "đóng băng",
+    "lạnh",
+    "mùa đông"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "spread": {
+      "label": "Độ lan",
+      "description": "Mức các ngón tinh thể vươn ra trước lớp băng giá"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Kích thước tinh thể: giá trị lớn hơn cho nhiều tinh thể nhỏ hơn"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Mức băng giá làm nhòe hình ảnh bên dưới"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu của băng giá"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "format": 1,
+  "type": "gpufx",
+  "id": "io.github.tqk2811.gl-transitions.camera-shake",
+  "version": "1.0.0",
+  "package": "camera-shake.zip",
+  "tags": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Gợn sóng (Ripple)",
+  "description": "Các gợn sóng lan ra từ tâm trong khi các clip hòa trộn chéo. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "gợn sóng",
+    "sóng nước",
+    "nước",
+    "lan tỏa",
+    "sóng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "amplitude": {
+      "label": "Biên độ",
+      "description": "Tần số các gợn sóng"
+    },
+    "speed": {
+      "label": "Tốc độ",
+      "description": "Tốc độ các gợn sóng"
+    }
+  }
+}

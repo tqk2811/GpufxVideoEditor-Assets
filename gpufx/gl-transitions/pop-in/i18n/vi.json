@@ -1,0 +1,34 @@
+{
+  "name": "Bật vào (Pop In)",
+  "description": "Clip thứ hai bật vào như tấm thẻ bo góc trên clip đầu, với độ vọt đàn hồi: hơi to, rồi hơi nhỏ, rồi ổn định ở toàn khung hình khi các góc vuông lại. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "bật vào",
+    "nảy",
+    "đàn hồi",
+    "thẻ bo góc",
+    "xuất hiện",
+    "pop"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm trên khung hình mà clip thứ hai bật ra (0..1, y hướng xuống)"
+    },
+    "bounce": {
+      "label": "Độ nảy",
+      "description": "Mức tấm thẻ vọt quá (quá to, rồi hơi nhỏ) trước khi ổn định"
+    },
+    "corner": {
+      "label": "Góc bo",
+      "description": "Bán kính góc của tấm thẻ khi bật ra, so với cạnh ngắn của nó"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng tấm thẻ đổ lên clip đầu"
+    }
+  }
+}

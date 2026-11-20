@@ -1,0 +1,21 @@
+{
+  "name": "Bilateral",
+  "description": "Làm mịn giữ cạnh: các điểm lân cận được đánh trọng số theo khoảng cách và theo độ chênh luma.",
+  "tags": [
+    "làm mịn",
+    "giữ cạnh",
+    "khử nhiễu",
+    "mịn da",
+    "làm mờ"
+  ],
+  "params": {
+    "sigmaS": {
+      "label": "Sigma không gian",
+      "description": "Sigma không gian tính bằng pixel; cửa sổ trải rộng 2 * sigmaS pixel"
+    },
+    "sigmaR": {
+      "label": "Sigma dải",
+      "description": "Sigma dải: độ chênh luma (0..1) vẫn được coi là cùng một bề mặt"
+    }
+  }
+}

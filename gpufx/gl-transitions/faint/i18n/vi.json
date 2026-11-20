@@ -1,0 +1,30 @@
+{
+  "name": "Ngất xỉu (Faint)",
+  "description": "Người xem ngất đi: clip đầu tách thành hai bản sao đung đưa của chính nó và nhòe đi trong khi rìa tầm nhìn tối lại và khép vào, theo hai nhịp đập tim, đến một chấm sáng cuối cùng; clip thứ hai quay lại nhòe và đúp hình qua một đường hầm hẹp, rồi nới rộng dần theo nhịp khi hai bản sao trôi lại gần và khớp vào nhau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ngất",
+    "choáng",
+    "chóng mặt",
+    "xỉu",
+    "mờ mắt",
+    "tim đập"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "separation": {
+      "label": "Độ tách rời",
+      "description": "Khoảng hai bản sao trôi xa nhau ở đỉnh, tính theo chiều cao khung hình"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Mức tầm nhìn bị mất nét"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu tầm nhìn mờ dần về"
+    }
+  }
+}

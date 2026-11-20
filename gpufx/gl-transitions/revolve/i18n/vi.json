@@ -1,0 +1,58 @@
+{
+  "name": "Xoáy tròn (Revolve)",
+  "description": "Hình ảnh xoáy và zoom với nhòe chuyển động vào clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xoáy",
+    "xoay vòng",
+    "zoom",
+    "nhòe chuyển động",
+    "xoắn",
+    "quay"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm của xoáy (0..1, y hướng xuống)"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Chiều xoay (1 hoặc -1)"
+    },
+    "max_rotation": {
+      "label": "Góc xoay tối đa",
+      "description": "Góc xoay của các mép ở đỉnh, tính bằng radian"
+    },
+    "peak_zoom": {
+      "label": "Zoom ở đỉnh",
+      "description": "Mức zoom ở đỉnh"
+    },
+    "swirl": {
+      "label": "Độ xoáy",
+      "description": "Góc xoay thêm ở tâm, tính bằng radian"
+    },
+    "barrel": {
+      "label": "Méo thùng",
+      "description": "Méo thùng ở đỉnh"
+    },
+    "motion_blur": {
+      "label": "Nhòe chuyển động",
+      "description": "Mức nhòe chuyển động"
+    },
+    "switch_start": {
+      "label": "Bắt đầu chuyển",
+      "description": "Giá trị progress mà tại đó việc chuyển sang clip thứ hai bắt đầu"
+    },
+    "switch_end": {
+      "label": "Kết thúc chuyển",
+      "description": "Giá trị progress mà tại đó việc chuyển kết thúc"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Mức tối đi ở các mép tại đỉnh"
+    }
+  }
+}

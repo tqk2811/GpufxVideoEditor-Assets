@@ -1,0 +1,23 @@
+{
+  "name": "Stereo3D",
+  "description": "Chuyển đổi giữa các bố cục 3D lập thể (cạnh nhau, trên dưới, xen kẽ) và đầu ra anaglyph hoặc checkerboard ở cùng kích thước khung, như stereo3d của FFmpeg.",
+  "tags": [
+    "3d",
+    "lập thể",
+    "stereo",
+    "anaglyph",
+    "side by side",
+    "kính 3d",
+    "vr"
+  ],
+  "params": {
+    "input": {
+      "label": "Bố cục vào",
+      "description": "Bố cục đầu vào: 0 sbsl (cạnh nhau, mắt trái trước), 1 sbsr, 2 abl (trên dưới, mắt trái trước), 3 abr, 4 irl (xen kẽ hàng, mắt trái ở hàng chẵn), 5 irr, 6 icl (xen kẽ cột), 7 icr"
+    },
+    "output": {
+      "label": "Bố cục ra",
+      "description": "Bố cục đầu ra: 0 arcg, 1 arch, 2 arcc, 3 arcd, 4 agmg, 5 agmh, 6 agmc, 7 agmd, 8 aybg, 9 aybh, 10 aybc, 11 aybd, 12 arbg, 13 argg (anaglyph, tên theo FFmpeg), 14 ml, 15 mr, 16 irl, 17 irr, 18 sbsl, 19 sbsr, 20 abl, 21 abr, 22 chl, 23 chr, 24 icl, 25 icr"
+    }
+  }
+}

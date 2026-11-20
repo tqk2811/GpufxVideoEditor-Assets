@@ -1,0 +1,33 @@
+{
+  "name": "Lọc dẫn hướng (Guided)",
+  "description": "Làm mịn giữ cạnh bằng bộ lọc tự dẫn hướng (trung bình hộp của một mô hình tuyến tính cục bộ).",
+  "tags": [
+    "làm mịn",
+    "giữ cạnh",
+    "guided filter",
+    "khử nhiễu",
+    "làm mờ"
+  ],
+  "params": {
+    "radius": {
+      "label": "Bán kính",
+      "description": "Bán kính hộp tính bằng pixel: hộp rộng 2 * radius + 1"
+    },
+    "eps": {
+      "label": "Eps",
+      "description": "Hệ số chính quy hóa: giá trị lớn làm mịn xuyên qua cả cạnh mạnh hơn (so với phương sai của giá trị 0..1)"
+    },
+    "mode": {
+      "label": "Chế độ",
+      "description": "fast: tính mô hình trên mỗi điểm ảnh thứ `sub`, với bán kính chia cho `sub`"
+    },
+    "sub": {
+      "label": "Tỉ lệ lấy mẫu",
+      "description": "Tỉ lệ lấy mẫu con của chế độ fast"
+    },
+    "planes": {
+      "label": "Kênh lọc",
+      "description": "Các kênh cần lọc, theo bit của FFmpeg trên gbrp: 1 xanh lá, 2 xanh dương, 4 đỏ"
+    }
+  }
+}

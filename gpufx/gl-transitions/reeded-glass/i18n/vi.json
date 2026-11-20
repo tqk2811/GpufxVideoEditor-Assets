@@ -1,0 +1,34 @@
+{
+  "name": "Kính khía (Reeded Glass)",
+  "description": "Tấm kính khía rộng trượt qua khung hình: phía sau các gân của nó hình ảnh vỡ thành các lát hẹp bị lật với viền màu mờ, và chỗ nó đi qua thì clip thứ hai trong suốt. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "kính khía",
+    "kính gân",
+    "kính sọc",
+    "kính mờ",
+    "tấm kính",
+    "gân kính"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "pane_width": {
+      "label": "Độ rộng tấm kính",
+      "description": "Độ rộng tấm kính, tính theo chiều rộng khung hình"
+    },
+    "ribs": {
+      "label": "Số gân",
+      "description": "Số gân trên chiều rộng khung hình"
+    },
+    "strength": {
+      "label": "Độ mạnh",
+      "description": "Mức mỗi gân lật và ép lát phía sau nó mạnh đến đâu"
+    },
+    "shine": {
+      "label": "Độ chói",
+      "description": "Độ mạnh của điểm sáng, đường nối và bóng của kính"
+    }
+  }
+}

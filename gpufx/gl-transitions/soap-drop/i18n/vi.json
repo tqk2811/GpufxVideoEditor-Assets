@@ -1,0 +1,26 @@
+{
+  "name": "Giọt xà phòng (Soap Drop)",
+  "description": "Một giọt xà phòng chạm vào clip đầu, nổi trên nước như một lớp màng: lớp màng lao ra khỏi giọt và dồn thành viền nhăn bóng bị đẩy ra khỏi khung hình, để lại clip thứ hai dưới làn nước trong gợn sóng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xà phòng",
+    "giọt",
+    "màng nước",
+    "nước",
+    "gợn",
+    "bọt xà phòng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Nơi giọt chạm vào lớp màng (0..1, y hướng xuống)"
+    },
+    "crumple": {
+      "label": "Độ nhăn",
+      "description": "Mức lớp màng dồn lại bị nhăn"
+    }
+  }
+}

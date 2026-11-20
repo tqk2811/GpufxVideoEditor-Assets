@@ -1,0 +1,34 @@
+{
+  "name": "Trượt dư ảnh (Echo Slide)",
+  "description": "Clip đầu trượt đi để lại vệt các bản sao mờ dần rời rạc của chính nó, một dư ảnh kiểu nháy sáng, và dư ảnh của clip thứ hai hội tụ vào chỗ. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "dư ảnh",
+    "echo",
+    "bản sao",
+    "trượt",
+    "vệt mờ",
+    "bóng ma"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng các clip trượt (x sang phải, y lên trên)"
+    },
+    "echoes": {
+      "label": "Số dư ảnh",
+      "description": "Số dư ảnh giữa hai clip"
+    },
+    "trail": {
+      "label": "Độ dài vệt",
+      "description": "Độ dài vệt dư ảnh phía sau mỗi clip, theo phần của chuyển cảnh"
+    },
+    "decay": {
+      "label": "Tốc độ mờ",
+      "description": "Tốc độ dư ảnh của clip đầu mờ đi vào dư ảnh của clip thứ hai"
+    }
+  }
+}

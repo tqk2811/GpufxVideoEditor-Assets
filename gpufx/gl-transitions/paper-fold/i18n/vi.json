@@ -1,0 +1,33 @@
+{
+  "name": "Gấp giấy (Paper Fold)",
+  "description": "Clip đầu gấp đôi trong 3D như tờ giấy, rồi gấp đôi lần nữa, và gói gấp bay đi, để lại bóng của nó trên clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "gấp giấy",
+    "origami",
+    "giấy",
+    "gấp đôi",
+    "tờ giấy"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng gói gấp bay đi (x sang phải, y lên trên)"
+    },
+    "tilt": {
+      "label": "Độ nghiêng",
+      "description": "Mức tờ giấy nghiêng và lùi xa khi gấp"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Mức các mặt tối đi khi xoay, và bóng của chúng"
+    },
+    "paper": {
+      "label": "Màu giấy",
+      "description": "Màu mặt sau tờ giấy"
+    }
+  }
+}

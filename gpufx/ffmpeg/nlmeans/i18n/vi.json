@@ -1,0 +1,26 @@
+{
+  "name": "Khử nhiễu NL-Means",
+  "description": "Bộ khử nhiễu non-local means trên từng khung hình: mỗi điểm ảnh trở thành trung bình của các điểm xung quanh có vùng lân cận trông giống nhau.",
+  "tags": [
+    "khử nhiễu",
+    "giảm nhiễu",
+    "nl-means",
+    "nlmeans",
+    "denoise",
+    "nhiễu hạt"
+  ],
+  "params": {
+    "s": {
+      "label": "Cường độ",
+      "description": "Cường độ khử nhiễu"
+    },
+    "p": {
+      "label": "Kích thước mảnh",
+      "description": "Kích thước mảnh (patch), số lẻ (số chẵn được tăng thêm một)"
+    },
+    "r": {
+      "label": "Cửa sổ tìm kiếm",
+      "description": "Kích thước cửa sổ tìm kiếm, số lẻ (số chẵn được tăng thêm một)"
+    }
+  }
+}

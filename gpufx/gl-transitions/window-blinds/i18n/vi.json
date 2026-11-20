@@ -1,0 +1,18 @@
+{
+  "name": "Rèm cuốn cửa sổ (Window Blinds)",
+  "description": "Hòa trộn chéo qua rèm cửa sổ ngang. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "rèm cửa",
+    "mành",
+    "cửa sổ",
+    "rèm ngang",
+    "lá sách",
+    "hòa trộn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

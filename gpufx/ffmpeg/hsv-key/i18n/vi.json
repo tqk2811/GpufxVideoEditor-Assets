@@ -1,0 +1,34 @@
+{
+  "name": "Khóa HSV",
+  "description": "Biến các điểm ảnh gần một bộ sắc độ/bão hòa/giá trị thành trong suốt. Cần dùng định dạng có alpha phía sau, hoặc chồng nó lên clip khác.",
+  "tags": [
+    "xóa màu",
+    "tách nền",
+    "hsv",
+    "khóa màu",
+    "trong suốt",
+    "key"
+  ],
+  "params": {
+    "hue": {
+      "label": "Sắc độ",
+      "description": "Sắc độ khóa tính bằng độ; giá trị âm bỏ qua sắc độ"
+    },
+    "sat": {
+      "label": "Bão hòa",
+      "description": "Độ bão hòa khóa; giá trị âm bỏ qua độ bão hòa"
+    },
+    "val": {
+      "label": "Giá trị",
+      "description": "Giá trị (độ sáng) khóa; giá trị âm bỏ qua giá trị"
+    },
+    "similarity": {
+      "label": "Độ tương đồng",
+      "description": "Khoảng cách tới khóa mà vẫn bị làm trong suốt"
+    },
+    "blend": {
+      "label": "Độ mềm viền",
+      "description": "Độ rộng của viền mềm phía trên ngưỡng tương đồng; 0 = cắt cứng"
+    }
+  }
+}

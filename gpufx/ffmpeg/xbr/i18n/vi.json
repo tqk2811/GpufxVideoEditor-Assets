@@ -1,0 +1,17 @@
+{
+  "name": "Phóng pixel art xBR",
+  "description": "Phóng đại pixel art 2, 3 hoặc 4 lần bằng thuật toán xBR, bám theo các cạnh và hòa trộn các bậc của chúng.",
+  "tags": [
+    "pixel art",
+    "phóng đại",
+    "xbr",
+    "game cũ",
+    "upscale"
+  ],
+  "params": {
+    "n": {
+      "label": "Hệ số phóng",
+      "description": "Hệ số phóng đại; quyết định kích thước đầu ra nên không được đổi khi luồng đang chạy"
+    }
+  }
+}

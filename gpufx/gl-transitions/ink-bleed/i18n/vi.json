@@ -1,0 +1,34 @@
+{
+  "name": "Mực loang (Ink Bleed)",
+  "description": "Clip thứ hai lan phủ lên clip đầu như giọt mực trong nước, nở ra từ vài điểm với mép xoắn, mảnh và viền sẫm hơn. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "mực",
+    "loang",
+    "giọt mực",
+    "nước",
+    "màu nước",
+    "lan"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "drops": {
+      "label": "Số giọt",
+      "description": "Số giọt mực"
+    },
+    "tendrils": {
+      "label": "Tua xoắn",
+      "description": "Mức các tua xoắn vươn ra khỏi các đóa mực"
+    },
+    "rim": {
+      "label": "Viền",
+      "description": "Độ sẫm của viền mực ở mép trước các đóa"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Hạt giống ngẫu nhiên cho vị trí giọt và các xoáy"
+    }
+  }
+}

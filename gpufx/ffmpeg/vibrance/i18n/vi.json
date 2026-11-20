@@ -1,0 +1,46 @@
+{
+  "name": "Rực màu (Vibrance)",
+  "description": "Tăng độ bão hòa của các màu nhạt nhiều hơn các màu đã rực.",
+  "tags": [
+    "vibrance",
+    "rực màu",
+    "bão hòa",
+    "làm tươi màu",
+    "màu sắc",
+    "chỉnh màu"
+  ],
+  "params": {
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Cường độ; giá trị âm làm giảm bão hòa"
+    },
+    "rbal": {
+      "label": "Cân bằng đỏ",
+      "description": "Cân bằng đỏ (nhân cường độ cho màu đỏ)"
+    },
+    "gbal": {
+      "label": "Cân bằng xanh lá",
+      "description": "Cân bằng xanh lá"
+    },
+    "bbal": {
+      "label": "Cân bằng xanh dương",
+      "description": "Cân bằng xanh dương"
+    },
+    "rlum": {
+      "label": "Hệ số luma đỏ",
+      "description": "Hệ số luma của đỏ"
+    },
+    "glum": {
+      "label": "Hệ số luma xanh lá",
+      "description": "Hệ số luma của xanh lá"
+    },
+    "blum": {
+      "label": "Hệ số luma xanh dương",
+      "description": "Hệ số luma của xanh dương"
+    },
+    "alternate": {
+      "label": "Xử lý ngược",
+      "description": "Bắt đầu xử lý từ các màu rực trước"
+    }
+  }
+}

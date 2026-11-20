@@ -1,0 +1,34 @@
+{
+  "name": "Hóa hơi (Vaporize)",
+  "description": "Clip đầu bốc thành khói: từ một phía hình ảnh hóa thành hơi bốc lên, cuộn thành sợi mảnh và nhạt đi khi mỏng dần, để lộ clip thứ hai bên dưới. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "hóa hơi",
+    "bốc hơi",
+    "khói",
+    "hơi nước",
+    "tan biến",
+    "bay hơi"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng hơi bốc lên (x sang phải, y lên trên)"
+    },
+    "rise": {
+      "label": "Độ cao bốc lên",
+      "description": "Độ cao hơi bốc lên trên hình ảnh trước khi biến mất, tính theo chiều cao khung hình"
+    },
+    "swirl": {
+      "label": "Độ xoáy",
+      "description": "Mức hơi xoáy và cuộn khi bốc lên"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu hơi nhạt dần về khi mỏng đi"
+    }
+  }
+}

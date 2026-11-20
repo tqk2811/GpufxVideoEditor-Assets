@@ -1,0 +1,54 @@
+{
+  "name": "Glitch datamosh dải (Strip Datamosh Glitch)",
+  "description": "Glitch datamosh: các dải bị xé, lệch sắc và nhiễu quét kéo clip đầu vào clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "datamosh",
+    "glitch",
+    "nhiễu",
+    "dải",
+    "lỗi",
+    "hỏng hình"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "strength": {
+      "label": "Độ mạnh",
+      "description": "Độ mạnh chung của glitch"
+    },
+    "horizontal_bars": {
+      "label": "Số thanh ngang",
+      "description": "Số thanh ngang trên chiều cao khung hình"
+    },
+    "vertical_slits": {
+      "label": "Số khe dọc",
+      "description": "Số khe dọc trên chiều rộng khung hình"
+    },
+    "tear": {
+      "label": "Độ xé",
+      "description": "Mức các dải bị xé sang bên"
+    },
+    "chroma": {
+      "label": "Tách màu RGB",
+      "description": "Khoảng cách giữa kênh đỏ và xanh dương"
+    },
+    "residue": {
+      "label": "Dư ảnh nhòe",
+      "description": "Độ mạnh của các lát bị nhòe còn lại trong các dải bị xé"
+    },
+    "noise_amount": {
+      "label": "Mức nhiễu",
+      "description": "Độ mạnh của nhiễu"
+    },
+    "scan_amount": {
+      "label": "Mức đường quét",
+      "description": "Độ mạnh của đường quét"
+    },
+    "flash_amount": {
+      "label": "Độ sáng chớp",
+      "description": "Độ sáng của các lần nháy strobe"
+    }
+  }
+}

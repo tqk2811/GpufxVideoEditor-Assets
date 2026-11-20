@@ -1,0 +1,34 @@
+{
+  "name": "Tan chảy bokeh (Bokeh Dissolve)",
+  "description": "Hình ảnh mất nét như ống kính máy ảnh, vùng sáng phình thành các đĩa bokeh lớn sáng rực, và clip thứ hai nét dần lên từ bokeh của chính nó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "bokeh",
+    "mất nét",
+    "nhòe",
+    "xóa phông",
+    "tan",
+    "mờ dần"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "radius": {
+      "label": "Bán kính",
+      "description": "Bán kính các đĩa bokeh ở đỉnh, tính theo chiều cao khung hình"
+    },
+    "blades": {
+      "label": "Số lá",
+      "description": "Số lá khẩu, tạo hình đa giác cho các đĩa (dưới 3: tròn)"
+    },
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Độ sáng mà trên đó điểm ảnh là vùng sáng phình thành đĩa"
+    },
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Độ sáng của các đĩa bokeh"
+    }
+  }
+}

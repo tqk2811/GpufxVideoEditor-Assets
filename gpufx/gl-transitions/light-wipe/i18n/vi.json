@@ -1,0 +1,34 @@
+{
+  "name": "Quét ánh sáng (Light Wipe)",
+  "description": "Một dải ánh sáng cực mạnh quét qua khung hình như ánh lóe trên kính, làm chói vùng sáng của cả hai clip, và để lại clip thứ hai phía sau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ánh sáng",
+    "dải sáng",
+    "quét",
+    "lóe sáng",
+    "chói",
+    "bóng kính"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng dải sáng di chuyển tới (x sang phải, y lên trên)"
+    },
+    "width": {
+      "label": "Độ rộng",
+      "description": "Độ rộng lõi sáng của dải, tính theo chiều cao khung hình"
+    },
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Độ sáng của ánh sáng"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Sắc thái ánh sáng về phía mép dải (lõi cháy trắng)"
+    }
+  }
+}

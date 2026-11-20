@@ -1,0 +1,46 @@
+{
+  "name": "Cân bằng sáng (Eq)",
+  "description": "Độ sáng, tương phản, bão hòa và gamma theo cách bộ lọc eq của FFmpeg tính trên Y'CbCr.",
+  "tags": [
+    "độ sáng",
+    "tương phản",
+    "bão hòa",
+    "gamma",
+    "eq",
+    "chỉnh sáng"
+  ],
+  "params": {
+    "contrast": {
+      "label": "Tương phản",
+      "description": "Tương phản của luma quanh điểm giữa"
+    },
+    "brightness": {
+      "label": "Độ sáng",
+      "description": "Giá trị cộng vào luma"
+    },
+    "saturation": {
+      "label": "Bão hòa",
+      "description": "Độ lợi của chroma (0 = xám)"
+    },
+    "gamma": {
+      "label": "Gamma",
+      "description": "Gamma của luma"
+    },
+    "gamma_r": {
+      "label": "Gamma đỏ",
+      "description": "Gamma cho kênh đỏ (áp lên Cr)"
+    },
+    "gamma_g": {
+      "label": "Gamma xanh lá",
+      "description": "Gamma cho kênh xanh lá (áp lên luma và cả hai chroma)"
+    },
+    "gamma_b": {
+      "label": "Gamma xanh dương",
+      "description": "Gamma cho kênh xanh dương (áp lên Cb)"
+    },
+    "gamma_weight": {
+      "label": "Trọng số gamma",
+      "description": "Mức dùng của đường cong gamma (0 = không dùng)"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Viền đen điện ảnh",
+  "description": "Thanh viền điện ảnh: che phía trên và dưới (hoặc hai bên) để ảnh hiện theo tỷ lệ phim rộng.",
+  "tags": [
+    "viền đen",
+    "letterbox",
+    "điện ảnh",
+    "tỷ lệ"
+  ],
+  "params": {
+    "ratio": {
+      "label": "Tỷ lệ",
+      "description": "Rộng / cao của phần ảnh còn lại giữa hai thanh (2.39 là cinemascope)"
+    },
+    "progress": {
+      "label": "Tiến trình",
+      "description": "Mức hai thanh trượt vào: 0 không có, 1 đủ; dùng keyframe để tạo chuyển động"
+    },
+    "offset": {
+      "label": "Độ lệch",
+      "description": "Dịch phần mở lên (âm) hoặc xuống, tính theo kích thước thanh"
+    },
+    "softness": {
+      "label": "Độ mềm",
+      "description": "Độ mềm cạnh của thanh, tính theo chiều cao khung hình"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu thanh; alpha làm thanh trong suốt"
+    }
+  }
+}

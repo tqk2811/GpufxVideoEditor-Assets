@@ -1,0 +1,33 @@
+{
+  "name": "Kéo rèm lên (Curtain Rise)",
+  "description": "Clip đầu kéo lên như tấm rèm nhà hát kiểu festoon: dây nâng gấu rèm thành các nếp võng lượn sóng trong khi vải xếp thành các nếp bèo đổ bóng, rồi được kéo lên khỏi khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "rèm",
+    "màn",
+    "nhà hát",
+    "sân khấu",
+    "kéo lên"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "swags": {
+      "label": "Số nếp võng",
+      "description": "Số nếp võng trên khung hình 16:9 (ít hơn ở khung dọc)"
+    },
+    "sag": {
+      "label": "Độ võng",
+      "description": "Độ võng xuống của mỗi nếp giữa hai sợi dây, theo phần chiều cao khung hình"
+    },
+    "ruffles": {
+      "label": "Số nếp bèo",
+      "description": "Số nếp bèo xếp trên vải"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ sâu đổ bóng trên nếp bèo và nếp võng, và bóng dưới gấu rèm"
+    }
+  }
+}

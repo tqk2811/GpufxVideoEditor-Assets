@@ -1,0 +1,17 @@
+{
+  "name": "Quét chiếc lá (Leaf Wipe)",
+  "description": "Hình chiếc lá lớn dần từ giữa để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chiếc lá",
+    "lá cây",
+    "hình lá",
+    "thiên nhiên",
+    "quét"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

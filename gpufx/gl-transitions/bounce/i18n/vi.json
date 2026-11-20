@@ -1,0 +1,28 @@
+{
+  "name": "Nảy (Bounce)",
+  "description": "Clip đầu rơi khỏi khung hình với vài lần nảy, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "nảy",
+    "rơi",
+    "bật nảy",
+    "thả rơi"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "shadow_colour": {
+      "label": "Màu bóng",
+      "description": "Màu bóng đổ lên clip thứ hai; alpha là độ mạnh"
+    },
+    "shadow_height": {
+      "label": "Chiều cao bóng",
+      "description": "Chiều cao của bóng, so với chiều cao khung hình"
+    },
+    "bounces": {
+      "label": "Số lần nảy",
+      "description": "Số lần nảy trước khi dừng hẳn"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Ánh xạ lại (Remap)",
+  "description": "Di chuyển điểm ảnh theo hai bản đồ: mỗi điểm ảnh đầu ra lấy điểm ảnh nguồn tại tọa độ X và Y mà các bản đồ chứa.",
+  "tags": [
+    "remap",
+    "ánh xạ",
+    "bản đồ",
+    "biến dạng",
+    "méo hình",
+    "displace"
+  ],
+  "params": {
+    "fill": {
+      "label": "Màu vùng trống",
+      "description": "Màu của các điểm ảnh đầu ra có tọa độ rơi ra ngoài nguồn"
+    },
+    "map_max": {
+      "label": "Giá trị tối đa của bản đồ",
+      "description": "Mã bản đồ của giá trị đầy thang: 65535 cho bản đồ 16-bit, 255 cho bản đồ 8-bit"
+    }
+  }
+}

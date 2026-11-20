@@ -1,0 +1,21 @@
+{
+  "name": "Trượt ra tách đôi ngang (Split Slide Out Horizontal)",
+  "description": "Clip đầu trượt ra thành hai nửa, trên và dưới, di chuyển ngang ngược chiều nhau, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tách đôi",
+    "trượt ra",
+    "ngang",
+    "hai nửa",
+    "mở ra"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "reverse": {
+      "label": "Đảo ngược",
+      "description": "Đổi hướng của hai nửa"
+    }
+  }
+}

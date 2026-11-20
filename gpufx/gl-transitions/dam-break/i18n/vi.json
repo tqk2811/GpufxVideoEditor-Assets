@@ -1,0 +1,30 @@
+{
+  "name": "Vỡ đập (Dam Break)",
+  "description": "Clip đầu là khối nước bị đập chặn ở một bên: đập vỡ, đỉnh nó hạ về phía mở thành sườn dốc dài gợn sóng với mặt nước bóng, sủi bọt tràn ra khỏi khung hình, kéo giãn hình ảnh theo dòng chảy, phần còn lại rút đi để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "vỡ đập",
+    "nước",
+    "lũ",
+    "dòng chảy",
+    "thác nước",
+    "sóng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "gloss": {
+      "label": "Độ bóng",
+      "description": "Độ mạnh của điểm sáng bóng dọc mặt nước"
+    },
+    "foam": {
+      "label": "Bọt",
+      "description": "Lượng bọt trên mặt nước, tăng ở nơi nước chảy nhanh nhất"
+    },
+    "leftward": {
+      "label": "Sang trái",
+      "description": "Cho dòng chảy sang trái thay vì sang phải"
+    }
+  }
+}

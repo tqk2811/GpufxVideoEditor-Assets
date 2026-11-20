@@ -1,0 +1,41 @@
+{
+  "name": "Dải phim (Film Strip)",
+  "description": "Hình ảnh trượt như phim trong khe máy chiếu: thu nhỏ để lộ các lỗ răng cưa, dải phim chạy xuống với nhòe chuyển động và hơi lắc, rồi khung hình clip thứ hai vào đúng chỗ. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "dải phim",
+    "phim",
+    "máy chiếu",
+    "cuộn phim",
+    "lỗ răng cưa"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "frames": {
+      "label": "Số khung hình",
+      "description": "Số khung hình trượt qua"
+    },
+    "shrink": {
+      "label": "Độ thu nhỏ",
+      "description": "Mức hình ảnh thu nhỏ trong lúc trượt, để lộ mép phim"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Độ dài nhòe chuyển động ở tốc độ tối đa"
+    },
+    "weave": {
+      "label": "Độ lắc",
+      "description": "Mức lắc ngang và rung dọc"
+    },
+    "film_color": {
+      "label": "Màu phim",
+      "description": "Màu của phim quanh các hình ảnh và đường giữa các khung"
+    },
+    "hole_color": {
+      "label": "Màu lỗ răng cưa",
+      "description": "Màu ánh sáng xuyên qua các lỗ răng cưa"
+    }
+  }
+}

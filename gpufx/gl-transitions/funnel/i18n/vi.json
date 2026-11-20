@@ -1,0 +1,29 @@
+{
+  "name": "Phễu (Funnel)",
+  "description": "Clip đầu thu hẹp thành chiếc phễu cong về một điểm ở mép dưới và trượt vào đó, như cửa sổ thu nhỏ vào dock, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "phễu",
+    "thu nhỏ",
+    "minimize",
+    "dock",
+    "hút vào"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "neck_x": {
+      "label": "Vị trí cổ phễu",
+      "description": "Điểm trên mép dưới nơi clip biến mất, từ trái (0) sang phải (1)"
+    },
+    "curvature": {
+      "label": "Độ cong",
+      "description": "Hình dạng hai bên phễu: 0 là thẳng, 1 là uốn thành đường cong chữ S"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ mạnh của đổ bóng clip bị uốn và của bóng nó đổ ra"
+    }
+  }
+}

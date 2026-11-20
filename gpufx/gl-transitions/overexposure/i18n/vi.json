@@ -1,0 +1,21 @@
+{
+  "name": "Thừa sáng (Overexposure)",
+  "description": "Hòa trộn chéo qua màu trắng bạc màu do thừa sáng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "thừa sáng",
+    "cháy sáng",
+    "trắng xóa",
+    "chói",
+    "phơi sáng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "strength": {
+      "label": "Độ mạnh",
+      "description": "Mức thừa sáng"
+    }
+  }
+}

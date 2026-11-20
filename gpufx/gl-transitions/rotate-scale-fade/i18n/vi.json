@@ -1,0 +1,34 @@
+{
+  "name": "Xoay thu phóng mờ (Rotate Scale Fade)",
+  "description": "Hình ảnh xoay và zoom trong khi các clip hòa trộn chéo, trên một màu nền. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xoay",
+    "thu phóng",
+    "mờ dần",
+    "hòa trộn",
+    "zoom",
+    "quay"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm xoay (0..1, y hướng xuống)"
+    },
+    "rotations": {
+      "label": "Số vòng xoay",
+      "description": "Số vòng xoay"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Mức thu nhỏ tối đa"
+    },
+    "back_color": {
+      "label": "Màu nền phía sau",
+      "description": "Màu nền"
+    }
+  }
+}

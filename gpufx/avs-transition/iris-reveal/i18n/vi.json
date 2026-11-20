@@ -1,0 +1,32 @@
+{
+  "name": "Mở vòng tròn",
+  "description": "Một vòng tròn mở ra từ điểm chọn, có viền mảnh màu nhấn.",
+  "tags": [
+    "chuyển cảnh",
+    "vòng tròn",
+    "mở ra",
+    "iris"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "x": {
+      "label": "Tâm X",
+      "description": "Tâm theo chiều ngang, phần trăm khung hình"
+    },
+    "y": {
+      "label": "Tâm Y",
+      "description": "Tâm theo chiều dọc, phần trăm khung hình"
+    },
+    "style": {
+      "label": "Kiểu",
+      "description": "color làm tối và nhạt màu clip đầu khi chuyển; plain thì không"
+    },
+    "accent": {
+      "label": "Màu nhấn",
+      "description": "Màu viền"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Cuộn ảnh (Scroll)",
+  "description": "Cuộn ảnh theo chiều ngang và dọc với tốc độ không đổi, quấn vòng.",
+  "tags": [
+    "cuộn",
+    "scroll",
+    "trượt",
+    "chạy",
+    "lặp",
+    "bay",
+    "chữ chạy"
+  ],
+  "params": {
+    "hspeed": {
+      "label": "Tốc độ ngang",
+      "description": "Tốc độ ngang theo chiều rộng khung mỗi giây; giá trị dương dịch ảnh sang trái"
+    },
+    "vspeed": {
+      "label": "Tốc độ dọc",
+      "description": "Tốc độ dọc theo chiều cao khung mỗi giây; giá trị dương dịch ảnh lên trên"
+    },
+    "hpos": {
+      "label": "Vị trí ngang đầu",
+      "description": "Vị trí ngang ban đầu, 0..1"
+    },
+    "vpos": {
+      "label": "Vị trí dọc đầu",
+      "description": "Vị trí dọc ban đầu, 0..1"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Bơi (Swim)",
+  "description": "Clip đầu biến thành con cá và bơi ra khỏi khung hình đầu trước: thân thu hẹp thành đuôi chẻ, một sóng uốn chạy từ đầu đến đuôi và quẫy rộng dần theo từng nhịp, chiếu sáng và đổ bóng hai bên sườn khi uốn và đẩy nó nhanh hơn đến khi biến mất, để lộ clip thứ hai dưới bóng mềm của nó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "bơi",
+    "cá",
+    "đuôi cá",
+    "nước",
+    "sinh vật biển",
+    "lội"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "swing": {
+      "label": "Độ quẫy",
+      "description": "Mức đuôi quẫy, theo phần cạnh ngắn của khung hình"
+    },
+    "beats": {
+      "label": "Số nhịp",
+      "description": "Số nhịp quẫy đuôi"
+    },
+    "taper": {
+      "label": "Độ thon",
+      "description": "Mức thân thu hẹp về phía đuôi"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ mạnh của đổ bóng ở các chỗ uốn và của bóng"
+    }
+  }
+}

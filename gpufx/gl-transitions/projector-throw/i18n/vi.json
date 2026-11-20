@@ -1,0 +1,30 @@
+{
+  "name": "Máy chiếu (Projector Throw)",
+  "description": "Đèn tắt trên clip đầu và máy chiếu chiếu clip thứ hai lên đó: một hình ánh sáng nhỏ, nhòe, méo hình thang đáp lên cảnh, rồi lớn dần, lấy nét và vuông vức lên đến khi lấp đầy khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "máy chiếu",
+    "rạp chiếu phim",
+    "chiếu",
+    "đèn tắt",
+    "trình chiếu",
+    "projector"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "darkness": {
+      "label": "Độ tối",
+      "description": "Độ tối của clip đầu khi đèn tắt"
+    },
+    "keystone": {
+      "label": "Độ méo hình thang",
+      "description": "Mức đỉnh hình chiếu rộng hơn đáy khi nó đáp xuống"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Độ mất nét của hình chiếu khi nó đáp xuống, tính theo chiều cao khung hình"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Nhiệt độ màu",
+  "description": "Đổi nhiệt độ màu (Kelvin) của ảnh.",
+  "tags": [
+    "nhiệt độ màu",
+    "ấm",
+    "lạnh",
+    "kelvin",
+    "cân bằng trắng",
+    "white balance"
+  ],
+  "params": {
+    "temperature": {
+      "label": "Nhiệt độ",
+      "description": "Nhiệt độ tính bằng Kelvin"
+    },
+    "mix": {
+      "label": "Độ trộn",
+      "description": "Trộn với ảnh gốc"
+    },
+    "pl": {
+      "label": "Giữ độ sáng",
+      "description": "Mức giữ độ sáng"
+    }
+  }
+}

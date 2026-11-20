@@ -1,0 +1,21 @@
+{
+  "name": "Biến hình (Morph)",
+  "description": "Hòa trộn chéo trong đó mỗi clip bị dịch chuyển bởi màu của clip kia. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "biến hình",
+    "morph",
+    "dịch chuyển",
+    "hòa trộn",
+    "biến dạng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "strength": {
+      "label": "Độ mạnh",
+      "description": "Độ mạnh của dịch chuyển"
+    }
+  }
+}

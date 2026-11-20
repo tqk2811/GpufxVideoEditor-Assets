@@ -1,0 +1,42 @@
+{
+  "name": "Vệt sáng (Light Streaks)",
+  "description": "Vùng sáng của clip đầu lóe thành các vệt ống kính dài ngang (hoặc dọc) trong khi nó nhòe chuyển động; ở đỉnh, clip thứ hai thế chỗ và vệt của nó co lại vào vùng sáng khi nó nét dần. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "vệt sáng",
+    "vệt ngang",
+    "lóa",
+    "anamorphic",
+    "ống kính",
+    "nhòe sáng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "reach": {
+      "label": "Tầm với",
+      "description": "Độ dài các vệt ở đỉnh, tính theo chiều rộng khung hình"
+    },
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Độ sáng mà trên đó hình ảnh lóe lên"
+    },
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Độ sáng của các vệt"
+    },
+    "tint": {
+      "label": "Sắc thái",
+      "description": "Sắc thái của vệt, hướng về đầu vệt"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Độ dài nhòe chuyển động ở đỉnh"
+    },
+    "vertical": {
+      "label": "Theo chiều dọc",
+      "description": "Vệt và nhòe theo chiều dọc"
+    }
+  }
+}

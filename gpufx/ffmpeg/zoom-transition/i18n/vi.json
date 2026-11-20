@@ -1,0 +1,26 @@
+{
+  "name": "Chuyển cảnh phóng to (Zoom Transition)",
+  "description": "Clip đầu phóng vào một điểm và hòa dần sang clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "phóng to",
+    "zoom",
+    "zoom in",
+    "hòa dần",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "zoom": {
+      "label": "Mức phóng",
+      "description": "Độ phóng đại của clip đầu ở cuối"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm để phóng vào (0..1)"
+    }
+  }
+}

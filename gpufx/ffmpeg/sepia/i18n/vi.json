@@ -1,0 +1,19 @@
+{
+  "name": "Nâu đỏ cổ điển (Sepia)",
+  "description": "Tông ấm kiểu ảnh cũ.",
+  "tags": [
+    "sepia",
+    "ảnh cũ",
+    "cổ điển",
+    "nâu",
+    "vintage",
+    "hoài cổ",
+    "retro"
+  ],
+  "params": {
+    "amount": {
+      "label": "Độ trộn",
+      "description": "Trộn với ảnh gốc"
+    }
+  }
+}

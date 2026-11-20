@@ -1,0 +1,40 @@
+{
+  "name": "Tương phản màu bù",
+  "description": "Tăng hoặc giảm độ tương phản giữa các cặp màu bù nhau (đỏ-cyan, xanh lá-magenta, xanh dương-vàng).",
+  "tags": [
+    "tương phản màu",
+    "màu bù",
+    "color contrast",
+    "chỉnh màu"
+  ],
+  "params": {
+    "rc": {
+      "label": "Đỏ-cyan",
+      "description": "Tương phản đỏ-cyan"
+    },
+    "gm": {
+      "label": "Xanh lá-magenta",
+      "description": "Tương phản xanh lá-magenta"
+    },
+    "by": {
+      "label": "Xanh dương-vàng",
+      "description": "Tương phản xanh dương-vàng"
+    },
+    "rcw": {
+      "label": "Trọng số đỏ-cyan",
+      "description": "Trọng số của tương phản đỏ-cyan"
+    },
+    "gmw": {
+      "label": "Trọng số xanh lá-magenta",
+      "description": "Trọng số của tương phản xanh lá-magenta"
+    },
+    "byw": {
+      "label": "Trọng số xanh dương-vàng",
+      "description": "Trọng số của tương phản xanh dương-vàng"
+    },
+    "pl": {
+      "label": "Giữ độ sáng",
+      "description": "Mức độ sáng được giữ lại"
+    }
+  }
+}

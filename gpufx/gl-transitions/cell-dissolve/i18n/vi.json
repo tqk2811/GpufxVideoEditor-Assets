@@ -1,0 +1,38 @@
+{
+  "name": "Tan thành tế bào (Cell Dissolve)",
+  "description": "Các ô bất quy tắc, như bùn nứt hoặc bọt xà phòng, lần lượt chuyển sang clip thứ hai, với viền sáng tùy chọn phát sáng dọc các vết nứt giữa chúng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tế bào",
+    "ô",
+    "bọt xà phòng",
+    "bùn nứt",
+    "voronoi",
+    "tan"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "cells": {
+      "label": "Số ô",
+      "description": "Số ô theo chiều cao khung hình"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Thời lượng chuyển của mỗi ô, theo phần của chuyển cảnh (0: mỗi ô chuyển ngay lập tức)"
+    },
+    "border": {
+      "label": "Viền",
+      "description": "Độ rộng viền dọc mép các ô, tính theo chiều cao khung hình (0: không viền)"
+    },
+    "border_color": {
+      "label": "Màu viền",
+      "description": "Màu của viền"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Hạt giống ngẫu nhiên: giá trị khác cho ô khác, chuyển theo thứ tự khác"
+    }
+  }
+}

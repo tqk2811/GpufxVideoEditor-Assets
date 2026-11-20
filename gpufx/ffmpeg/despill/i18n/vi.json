@@ -1,0 +1,46 @@
+{
+  "name": "Khử ám phông (Despill)",
+  "description": "Loại bỏ ám xanh lá hoặc xanh dương ở rìa chủ thể đã tách phông.",
+  "tags": [
+    "khử ám màu",
+    "despill",
+    "phông xanh",
+    "tách nền",
+    "viền xanh",
+    "spill"
+  ],
+  "params": {
+    "screen": {
+      "label": "Loại phông",
+      "description": "Loại phông: 0 = xanh lá, 1 = xanh dương (FFmpeg: type)"
+    },
+    "mix": {
+      "label": "Độ trộn",
+      "description": "Trộn spillmap: mức so sánh kênh đỏ với màu phông"
+    },
+    "expand": {
+      "label": "Mở rộng",
+      "description": "Mở rộng spillmap: mức bỏ qua kênh còn lại"
+    },
+    "red": {
+      "label": "Hệ số đỏ",
+      "description": "Hệ số đỏ áp lên phần ám màu"
+    },
+    "green": {
+      "label": "Hệ số xanh lá",
+      "description": "Hệ số xanh lá áp lên phần ám màu"
+    },
+    "blue": {
+      "label": "Hệ số xanh dương",
+      "description": "Hệ số xanh dương áp lên phần ám màu"
+    },
+    "brightness": {
+      "label": "Độ sáng",
+      "description": "Độ sáng cộng lại ở nơi từng bị ám màu"
+    },
+    "alpha": {
+      "label": "Ghi vào alpha",
+      "description": "Ghi spillmap vào alpha (1 - spill)"
+    }
+  }
+}

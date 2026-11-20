@@ -1,0 +1,23 @@
+{
+  "name": "Bàn cờ (Checkerboard)",
+  "description": "Một ô vuông của clip thứ hai lớn dần từ tâm của mỗi ô lưới cho đến khi phủ kín clip đầu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "bàn cờ",
+    "ô vuông",
+    "checkerboard",
+    "lưới",
+    "slideshow",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "cell": {
+      "label": "Kích thước ô",
+      "description": "Kích thước ô tính bằng pixel"
+    }
+  }
+}

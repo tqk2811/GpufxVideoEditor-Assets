@@ -1,0 +1,33 @@
+{
+  "name": "Biểu đồ histogram",
+  "description": "Các cột histogram của luma, hoặc của R, G, B (scope).",
+  "tags": [
+    "histogram",
+    "biểu đồ",
+    "scope",
+    "phân bố sáng",
+    "đo"
+  ],
+  "params": {
+    "display": {
+      "label": "Hiển thị",
+      "description": "0 luma, 1 chồng đỏ/xanh lá/xanh dương (màu cộng), 2 parade đỏ/xanh lá/xanh dương (ba ô cạnh nhau)"
+    },
+    "gain": {
+      "label": "Độ lợi",
+      "description": "Hệ số chiều cao cột. Tuyến tính: một bin đầy gấp 10 lần phân bố đều chạm đỉnh ở mức 1"
+    },
+    "log_scale": {
+      "label": "Thang logarit",
+      "description": "Chiều cao cột theo logarit"
+    },
+    "samples": {
+      "label": "Số mẫu",
+      "description": "Histogram lấy từ lưới samples x samples điểm ảnh đầu vào (chi phí cố định, bất kể kích thước ảnh)"
+    },
+    "opacity": {
+      "label": "Độ mờ lớp phủ",
+      "description": "Trộn lên ảnh đầu vào: 1 = chỉ ảnh được tạo, 0 = giữ nguyên ảnh đầu vào"
+    }
+  }
+}

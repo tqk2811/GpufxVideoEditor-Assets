@@ -1,0 +1,30 @@
+{
+  "name": "LUT RGB",
+  "description": "Tra bảng từng kênh bằng biểu thức: mỗi kênh đỏ, xanh lá, xanh dương và alpha được thay bằng một biểu thức theo giá trị của chính nó.",
+  "tags": [
+    "LUT",
+    "bảng tra",
+    "biểu thức",
+    "lutrgb",
+    "chỉnh màu",
+    "đường cong"
+  ],
+  "params": {
+    "r": {
+      "label": "Đỏ",
+      "description": "Kết quả của kênh đỏ cho giá trị đầu vào `val`, 0..255"
+    },
+    "g": {
+      "label": "Xanh lá",
+      "description": "Kết quả của kênh xanh lá cho `val`, 0..255"
+    },
+    "b": {
+      "label": "Xanh dương",
+      "description": "Kết quả của kênh xanh dương cho `val`, 0..255"
+    },
+    "a": {
+      "label": "Alpha",
+      "description": "Kết quả của kênh alpha cho `val`, 0..255"
+    }
+  }
+}

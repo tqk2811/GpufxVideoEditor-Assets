@@ -1,0 +1,38 @@
+{
+  "name": "Ảnh ba chiều (Hologram)",
+  "description": "Clip đầu biến thành ảnh ba chiều nhấp nháy với đường quét và các hàng rung, vỡ ra, rồi hologram hiện rõ thành clip thứ hai đủ màu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "hologram",
+    "ảnh ba chiều",
+    "tương lai",
+    "đường quét",
+    "khoa học viễn tưởng",
+    "sci-fi"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "tint": {
+      "label": "Sắc thái",
+      "description": "Màu của hologram"
+    },
+    "background": {
+      "label": "Màu nền",
+      "description": "Màu phía sau hologram, thấy được giữa các đường quét và chỗ nó vỡ ra"
+    },
+    "scanlines": {
+      "label": "Số đường quét",
+      "description": "Số đường quét trên chiều cao khung hình"
+    },
+    "jitter": {
+      "label": "Độ rung",
+      "description": "Mức các hàng của hologram nhảy sang bên, so với chiều rộng khung hình"
+    },
+    "flicker": {
+      "label": "Nhấp nháy",
+      "description": "Độ mạnh của nhấp nháy và của các hàng bị rớt"
+    }
+  }
+}

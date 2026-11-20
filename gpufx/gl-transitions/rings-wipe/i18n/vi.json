@@ -1,0 +1,45 @@
+{
+  "name": "Quét vòng đồng tâm (Rings Wipe)",
+  "description": "Các vòng đồng tâm gợn ra từ tâm và lần lượt từng vòng quét như kim đồng hồ theo hướng ngược lại với vòng bên cạnh để lộ clip thứ hai, hoặc lấp đầy theo bề rộng, với viền màu tùy chọn giữa các vòng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "vòng đồng tâm",
+    "vòng tròn",
+    "kim đồng hồ",
+    "quét",
+    "gợn sóng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "count": {
+      "label": "Số lượng",
+      "description": "Số vòng, từ tâm tới góc xa nhất"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm của các vòng (0..1, y hướng xuống)"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ trễ giữa lúc bắt đầu của hai vòng: 0 cho tất cả cùng chuyển, 1 cho mỗi vòng bắt đầu khi vòng trước xong"
+    },
+    "radial": {
+      "label": "Lấp theo bề rộng",
+      "description": "Mỗi vòng lấp đầy theo bề rộng, lần lượt ra ngoài và vào trong, thay vì quét vòng quanh"
+    },
+    "border_width": {
+      "label": "Độ rộng viền",
+      "description": "Độ rộng viền giữa các vòng khi chúng chuyển động, tính theo chiều cao khung hình (0 là tắt)"
+    },
+    "border_color": {
+      "label": "Màu viền",
+      "description": "Màu viền giữa các vòng"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của các cạnh"
+    }
+  }
+}

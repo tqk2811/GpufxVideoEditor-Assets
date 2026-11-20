@@ -1,0 +1,34 @@
+{
+  "name": "Đường cong (Curves)",
+  "description": "Đường cong tông màu: các preset của FFmpeg, hoặc đường cong tùy chỉnh đi qua một điểm giữa cho mỗi kênh.",
+  "tags": [
+    "curves",
+    "đường cong",
+    "tông màu",
+    "tương phản",
+    "vintage",
+    "chỉnh màu"
+  ],
+  "params": {
+    "preset": {
+      "label": "Preset",
+      "description": "Preset: 0 = none, 1 = color_negative, 2 = cross_process, 3 = darker, 4 = increase_contrast, 5 = lighter, 6 = linear_contrast, 7 = medium_contrast, 8 = negative, 9 = strong_contrast, 10 = vintage"
+    },
+    "master": {
+      "label": "Đường chính",
+      "description": "Điểm giữa (x, y) của đường cong chính đi qua (0, 0) và (1, 1); (0.5, 0.5) giữ nguyên preset"
+    },
+    "red": {
+      "label": "Đường đỏ",
+      "description": "Điểm giữa (x, y) của đường cong đỏ; (0.5, 0.5) giữ nguyên preset"
+    },
+    "green": {
+      "label": "Đường xanh lá",
+      "description": "Điểm giữa (x, y) của đường cong xanh lá; (0.5, 0.5) giữ nguyên preset"
+    },
+    "blue": {
+      "label": "Đường xanh dương",
+      "description": "Điểm giữa (x, y) của đường cong xanh dương; (0.5, 0.5) giữ nguyên preset"
+    }
+  }
+}

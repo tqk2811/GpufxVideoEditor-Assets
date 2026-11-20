@@ -1,0 +1,18 @@
+{
+  "name": "Phóng pixel art EPX",
+  "description": "Phóng đại pixel art 2 hoặc 3 lần bằng thuật toán EPX (Scale2x/Scale3x), giữ cạnh sắc nét.",
+  "tags": [
+    "pixel art",
+    "phóng đại",
+    "scale2x",
+    "epx",
+    "game cũ",
+    "upscale"
+  ],
+  "params": {
+    "n": {
+      "label": "Hệ số phóng",
+      "description": "Hệ số phóng đại; quyết định kích thước đầu ra nên không được đổi khi luồng đang chạy"
+    }
+  }
+}

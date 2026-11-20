@@ -1,0 +1,42 @@
+{
+  "name": "Lăng kính (Prisms)",
+  "description": "Khung hình được cắt thành các lăng kính 3D xoay thành thác, như biển quảng cáo xoay, từ clip đầu sang clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lăng kính",
+    "biển quảng cáo",
+    "xoay 3d",
+    "thanh",
+    "tam giác",
+    "billboard"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "slats": {
+      "label": "Số lăng kính",
+      "description": "Số lăng kính"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ trễ của lăng kính cuối, theo phần của chuyển cảnh"
+    },
+    "perspective": {
+      "label": "Phối cảnh",
+      "description": "Mức độ phối cảnh"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Mức các mặt tối đi khi xoay"
+    },
+    "horizontal": {
+      "label": "Theo chiều ngang",
+      "description": "Cắt khung hình thành các lăng kính ngang"
+    },
+    "back_color": {
+      "label": "Màu nền phía sau",
+      "description": "Màu ở chỗ lăng kính xoay để hở khung hình"
+    }
+  }
+}

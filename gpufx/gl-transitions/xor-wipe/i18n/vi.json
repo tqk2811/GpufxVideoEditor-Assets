@@ -1,0 +1,22 @@
+{
+  "name": "Quét XOR (XOR Wipe)",
+  "description": "Các đĩa lớn dần lần lượt từ năm điểm và mỗi cạnh đĩa đảo ngược thứ nó đi qua, đến khi đĩa cuối đáp lên clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xor",
+    "đĩa",
+    "vòng tròn",
+    "đảo ngược",
+    "lớn dần",
+    "năm điểm"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "rim": {
+      "label": "Viền",
+      "description": "Độ rộng vùng bóng bên trong cạnh mỗi đĩa"
+    }
+  }
+}

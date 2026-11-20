@@ -1,0 +1,59 @@
+{
+  "name": "Tích chập (Convolution)",
+  "description": "Tích chập với ma trận 3x3, một số chia và một độ lệch.",
+  "tags": [
+    "tích chập",
+    "convolution",
+    "kernel",
+    "ma trận",
+    "bộ lọc tùy chỉnh",
+    "làm nét",
+    "làm mờ"
+  ],
+  "params": {
+    "m0": {
+      "label": "Ô 1,1",
+      "description": "Ma trận, hàng 1 cột 1 (trên trái)"
+    },
+    "m1": {
+      "label": "Ô 1,2",
+      "description": "Ma trận, hàng 1 cột 2"
+    },
+    "m2": {
+      "label": "Ô 1,3",
+      "description": "Ma trận, hàng 1 cột 3"
+    },
+    "m3": {
+      "label": "Ô 2,1",
+      "description": "Ma trận, hàng 2 cột 1"
+    },
+    "m4": {
+      "label": "Ô 2,2",
+      "description": "Ma trận, hàng 2 cột 2 (giữa)"
+    },
+    "m5": {
+      "label": "Ô 2,3",
+      "description": "Ma trận, hàng 2 cột 3"
+    },
+    "m6": {
+      "label": "Ô 3,1",
+      "description": "Ma trận, hàng 3 cột 1"
+    },
+    "m7": {
+      "label": "Ô 3,2",
+      "description": "Ma trận, hàng 3 cột 2"
+    },
+    "m8": {
+      "label": "Ô 3,3",
+      "description": "Ma trận, hàng 3 cột 3 (dưới phải)"
+    },
+    "rdiv": {
+      "label": "Hệ số nhân",
+      "description": "Hệ số nhân của tổng; 0 = 1 / (tổng của ma trận), hoặc 1 khi tổng đó bằng 0 (`0rdiv`)"
+    },
+    "bias": {
+      "label": "Độ lệch",
+      "description": "Giá trị cộng vào kết quả, tính theo mức 8-bit (`0bias`)"
+    }
+  }
+}

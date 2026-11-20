@@ -1,0 +1,34 @@
+{
+  "name": "Quả cầu (Sphere)",
+  "description": "Clip đầu cuốn lên một quả bóng đổ bóng thu nhỏ và lăn đi, để lộ clip thứ hai dưới bóng của nó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "quả cầu",
+    "quả bóng",
+    "hình cầu",
+    "lăn",
+    "3d",
+    "bóng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng quả bóng lăn (x sang phải, y lên trên)"
+    },
+    "size": {
+      "label": "Bán kính quả cầu",
+      "description": "Bán kính quả bóng được cuốn, so với cạnh ngắn"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ mạnh của ánh sáng trên quả bóng"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng quả bóng"
+    }
+  }
+}

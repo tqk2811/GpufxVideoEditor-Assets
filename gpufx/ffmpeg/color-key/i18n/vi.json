@@ -1,0 +1,26 @@
+{
+  "name": "Khóa màu (Color Key)",
+  "description": "Biến các điểm ảnh gần một màu khóa thành trong suốt (theo khoảng cách RGB). Cần dùng định dạng có alpha phía sau, hoặc chồng nó lên clip khác.",
+  "tags": [
+    "xóa màu",
+    "tách nền",
+    "color key",
+    "khóa màu",
+    "trong suốt",
+    "key"
+  ],
+  "params": {
+    "color": {
+      "label": "Màu khóa",
+      "description": "Màu khóa cần làm trong suốt; bỏ qua alpha"
+    },
+    "similarity": {
+      "label": "Độ tương đồng",
+      "description": "Khoảng cách tới màu khóa mà vẫn bị làm trong suốt; 0.01 chỉ khớp các màu rất gần, 1 là mọi màu"
+    },
+    "blend": {
+      "label": "Độ mềm viền",
+      "description": "Độ rộng của viền mềm phía trên ngưỡng tương đồng; 0 = cắt cứng"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Khối Rubik (Puzzle Cube)",
+  "description": "Khung hình thành mặt của khối xoay kiểu Rubik: các khe tối mở ra giữa các ô nhỏ, rồi cả cột và hàng ô xoay một phần tư vòng quanh khối lần lượt trong 3D, mỗi lần đưa clip thứ hai từ cạnh khối ra mặt trước, đến khi các khe khép lại trên clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "rubik",
+    "khối rubik",
+    "xoay khối",
+    "ô vuông",
+    "puzzle",
+    "3d"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "size": {
+      "label": "Số ô nhỏ",
+      "description": "Số ô nhỏ trên mỗi cạnh của mặt"
+    },
+    "gap": {
+      "label": "Khoảng cách",
+      "description": "Độ rộng khe giữa các ô nhỏ, theo phần chiều cao khung hình"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Mức các mặt đang xoay tối đi khi rời ánh sáng, và bóng bên trong khối"
+    },
+    "background": {
+      "label": "Màu nền",
+      "description": "Màu thân các ô nhỏ, thấy được trong khe, ở mặt trong và quanh khối"
+    }
+  }
+}

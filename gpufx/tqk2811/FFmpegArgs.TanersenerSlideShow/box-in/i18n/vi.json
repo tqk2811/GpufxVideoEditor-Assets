@@ -1,0 +1,31 @@
+{
+  "name": "Hộp vào (Box In)",
+  "description": "Clip đầu thu nhỏ thành một hộp, hộp trượt ra khỏi khung, một hộp của clip thứ hai trượt vào từ cùng phía rồi phóng to kín khung. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "hộp",
+    "box",
+    "thu nhỏ",
+    "trượt",
+    "slideshow",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng hộp thứ hai đi vào: 0 trái, 1 phải, 2 lên, 3 xuống (hộp đầu rời đi theo hướng ngược lại, về phía mà hộp thứ hai đi tới)"
+    },
+    "box": {
+      "label": "Kích thước hộp",
+      "description": "Kích thước hộp so với khung"
+    },
+    "color": {
+      "label": "Màu nền",
+      "description": "Màu nền xung quanh các hộp"
+    }
+  }
+}

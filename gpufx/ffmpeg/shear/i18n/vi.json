@@ -1,0 +1,29 @@
+{
+  "name": "Xô nghiêng (Shear)",
+  "description": "Xô nghiêng ảnh theo chiều ngang và/hoặc chiều dọc.",
+  "tags": [
+    "xô nghiêng",
+    "shear",
+    "nghiêng",
+    "biến dạng",
+    "skew"
+  ],
+  "params": {
+    "shx": {
+      "label": "Xô ngang",
+      "description": "Hệ số xô theo chiều ngang"
+    },
+    "shy": {
+      "label": "Xô dọc",
+      "description": "Hệ số xô theo chiều dọc"
+    },
+    "fillcolor": {
+      "label": "Màu lấp",
+      "description": "Màu của vùng nằm ngoài ảnh đã xô nghiêng"
+    },
+    "interp": {
+      "label": "Nội suy",
+      "description": "Nội suy: 0 = nearest, 1 = bilinear"
+    }
+  }
+}

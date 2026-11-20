@@ -1,0 +1,17 @@
+{
+  "name": "Làm mờ Gaussian",
+  "description": "Làm mờ gaussian tách rời hai lượt.",
+  "tags": [
+    "làm mờ",
+    "mờ",
+    "gaussian",
+    "blur",
+    "mờ ảnh"
+  ],
+  "params": {
+    "radius": {
+      "label": "Bán kính",
+      "description": "Bán kính làm mờ tính bằng pixel"
+    }
+  }
+}

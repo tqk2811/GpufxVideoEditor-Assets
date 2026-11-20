@@ -1,0 +1,40 @@
+{
+  "name": "Quét mũi tên (Arrow Wipe)",
+  "description": "Một ô cửa hình mũi tên khía lõm chứa clip thứ hai bay vào từ mép phía sau nó (hoặc hiện ra ở giữa), rồi phình to đến khi lấp đầy khung hình. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "mũi tên",
+    "quét",
+    "chevron",
+    "hình mũi tên"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng mũi tên chỉ và bay tới (x sang phải, y lên trên)"
+    },
+    "notch": {
+      "label": "Độ sâu khía",
+      "description": "Độ sâu của khía ở phía sau mũi tên (0 cho hình tam giác trơn)"
+    },
+    "width": {
+      "label": "Độ rộng",
+      "description": "Góc mở ở đầu mũi tên, tính bằng độ"
+    },
+    "count": {
+      "label": "Số lượng",
+      "description": "Số chevron lồng nhau bay thành một hàng"
+    },
+    "origin": {
+      "label": "Gốc",
+      "description": "Cho mũi tên lớn dần từ giữa khung hình thay vì bay vào"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của cạnh mũi tên"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Giọt nước co (Bead Up)",
+  "description": "Clip đầu là một lớp chất lỏng mỏng trên kính tự co lại như nước trên bề mặt đánh sáp: các lỗ khô mở ra và lớn dần với viền cuộn bóng, gặp nhau thành mạng lưới gờ, các gờ đứt thành giọt tròn phóng đại hình ảnh, rồi các giọt khô đi trên clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "giọt nước",
+    "hạt nước",
+    "chất lỏng",
+    "kính",
+    "nước đọng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "holes": {
+      "label": "Số hàng lỗ",
+      "description": "Số hàng lỗ trên khung hình"
+    },
+    "rim": {
+      "label": "Viền",
+      "description": "Bán kính của viền và giọt, tính theo chiều cao khung hình (tối đa một phần bảy khoảng cách giữa các lỗ)"
+    },
+    "gloss": {
+      "label": "Độ bóng",
+      "description": "Độ mạnh của phản chiếu và độ phóng đại trong chất lỏng"
+    }
+  }
+}

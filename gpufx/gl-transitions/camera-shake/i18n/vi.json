@@ -1,0 +1,33 @@
+{
+  "name": "Rung máy quay (Camera Shake)",
+  "description": "Máy quay giật mạnh với nhòe chuyển động và viền màu; cảnh cắt xảy ra ở đỉnh của cú rung, rồi lắng xuống clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "rung",
+    "lắc",
+    "máy quay",
+    "giật",
+    "động đất"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "strength": {
+      "label": "Độ mạnh",
+      "description": "Mức máy quay giật và xoay ở đỉnh"
+    },
+    "jolts": {
+      "label": "Số cú giật",
+      "description": "Số cú giật trong suốt chuyển cảnh"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Độ dài nhòe chuyển động trên mỗi cú giật"
+    },
+    "split": {
+      "label": "Độ tách kênh",
+      "description": "Mức các kênh màu tách rời nhau"
+    }
+  }
+}

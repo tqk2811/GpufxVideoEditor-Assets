@@ -1,0 +1,33 @@
+{
+  "name": "Vừa khung ảnh (Fit Picture)",
+  "description": "Đặt đầu vào thứ hai vừa vào khung của đầu vào thứ nhất, như các chế độ màn hình của công cụ làm slideshow: căn giữa, cắt, kéo giãn, hoặc căn giữa trên bản sao mờ. Đầu vào thứ nhất cho kích thước và lộ ra ở nơi ảnh và `color` trong suốt.",
+  "tags": [
+    "vừa khung",
+    "fit",
+    "căn giữa",
+    "cắt",
+    "kéo giãn",
+    "nền mờ",
+    "slideshow",
+    "tỉ lệ khung hình",
+    "letterbox"
+  ],
+  "params": {
+    "mode": {
+      "label": "Chế độ",
+      "description": "0 căn giữa, 1 cắt cho đầy, 2 kéo giãn, 3 căn giữa trên bản sao kéo giãn đã làm mờ"
+    },
+    "upscale": {
+      "label": "Phóng to",
+      "description": "Cho phép các chế độ căn giữa và nền mờ phóng to ảnh nhỏ hơn khung"
+    },
+    "blur": {
+      "label": "Độ mờ",
+      "description": "Bán kính làm mờ nền ở chế độ 3, so với chiều cao khung"
+    },
+    "color": {
+      "label": "Màu nền",
+      "description": "Nền phía sau ảnh ở chế độ 0 đến 2 (trong suốt thì lộ đầu vào thứ nhất); chế độ 3 dùng bản sao đã làm mờ"
+    }
+  }
+}

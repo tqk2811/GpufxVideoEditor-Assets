@@ -1,0 +1,28 @@
+{
+  "name": "Chuyển cảnh xfade",
+  "description": "Chuyển từ đầu vào thứ nhất sang đầu vào thứ hai bằng bất kỳ kiểu chuyển cảnh xfade nào của FFmpeg (fade, wipe, slide, cắt hình tròn/chữ nhật, dissolve, pixelize, wind, cover/reveal... và một biểu thức tùy chỉnh). Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "xfade",
+    "crossfade",
+    "fade",
+    "wipe",
+    "slide",
+    "transition",
+    "hòa trộn"
+  ],
+  "params": {
+    "transition": {
+      "label": "Kiểu chuyển cảnh",
+      "description": "Tên kiểu chuyển cảnh xfade của FFmpeg (hoặc số của nó): custom dùng `expr`; danh sách có trong README"
+    },
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai (thay cho offset và duration của FFmpeg); đúng tại 0 và 1 thì đầu ra bị ép bằng clip đầu / clip thứ hai"
+    },
+    "expr": {
+      "label": "Biểu thức",
+      "description": "Chỉ cho transition -1 (custom). Kết quả cho một kênh màu, 0..255. X, Y là vị trí điểm ảnh, W, H là kích thước, P = 1 - progress (P của FFmpeg: 1 lúc đầu, 0 lúc cuối), A và B là giá trị kênh của clip đầu / clip thứ hai, 0..255, PLANE là kênh: 0, 1, 2 = R, G, B"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Xoay vòng (Ring Spin)",
+  "description": "Khung hình được cắt thành các vòng đồng tâm xoay như mặt số khóa số, ngược chiều xen kẽ và nhòe theo tốc độ, lần lượt từ tâm ra ngoài; mỗi vòng vọt quá một chút rồi khớp vào chỗ trên clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "vòng tròn",
+    "khóa số",
+    "xoay vòng",
+    "đồng tâm",
+    "mặt số",
+    "két sắt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "rings": {
+      "label": "Số vòng",
+      "description": "Số vòng, từ tâm tới góc xa nhất"
+    },
+    "square": {
+      "label": "Vòng vuông",
+      "description": "Vòng vuông như các khung lồng nhau, thay vì vòng tròn"
+    },
+    "turns": {
+      "label": "Số vòng",
+      "description": "Số vòng quay đầy đủ của mỗi vòng"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ trễ giữa vòng đầu và vòng cuối, theo phần của chuyển cảnh"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Mức nhòe chuyển động góc khi các vòng quay nhanh"
+    },
+    "settle": {
+      "label": "Độ vọt khi khớp",
+      "description": "Mức vọt quá khi một vòng khớp vào"
+    }
+  }
+}

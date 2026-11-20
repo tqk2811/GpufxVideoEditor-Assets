@@ -1,0 +1,18 @@
+{
+  "name": "Mặt nạ Min/Max",
+  "description": "Bản port của các bộ lọc maskedmin và maskedmax FFmpeg: theo từng kênh, chọn clip lọc gần nhất (min) hoặc xa nhất (max) so với nguồn.",
+  "tags": [
+    "mặt nạ",
+    "min",
+    "max",
+    "masked min",
+    "masked max",
+    "so sánh"
+  ],
+  "params": {
+    "mode": {
+      "label": "Chế độ",
+      "description": "0 = maskedmin (gần nguồn nhất), 1 = maskedmax (xa nguồn nhất)"
+    }
+  }
+}

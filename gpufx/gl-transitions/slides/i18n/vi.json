@@ -1,0 +1,26 @@
+{
+  "name": "Trượt thu nhỏ (Slides)",
+  "description": "Clip đầu thu nhỏ về một mép, một góc hoặc giữa, hoặc clip thứ hai lớn dần từ đó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "trượt",
+    "thu nhỏ",
+    "mở rộng",
+    "góc",
+    "mép",
+    "vị trí"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "position": {
+      "label": "Vị trí",
+      "description": "Nơi hình ảnh thu nhỏ về hoặc lớn lên từ đó: 0 trên, 1 phải, 2 dưới, 3 trái, 4 trên phải, 5 dưới phải, 6 dưới trái, 7 trên trái, 8 giữa"
+    },
+    "slide_in": {
+      "label": "Trượt clip hai vào",
+      "description": "Cho clip thứ hai lớn dần vào thay vì thu nhỏ clip đầu ra"
+    }
+  }
+}

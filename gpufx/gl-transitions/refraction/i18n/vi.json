@@ -1,0 +1,34 @@
+{
+  "name": "Khúc xạ (Refraction)",
+  "description": "Khung hình được nhìn qua kính lỏng đang chảy bẻ cong clip đầu ngày càng nhiều, với viền cầu vồng, lóe sáng khi clip thứ hai thế chỗ, rồi lắng xuống và trong suốt. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "khúc xạ",
+    "kính lỏng",
+    "cầu vồng",
+    "bẻ cong",
+    "thủy tinh",
+    "sóng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "strength": {
+      "label": "Độ mạnh",
+      "description": "Mức kính bẻ cong hình ảnh ở đỉnh"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Kích thước các sóng chảy: cao hơn cho sóng nhỏ hơn"
+    },
+    "dispersion": {
+      "label": "Độ tán sắc",
+      "description": "Độ lan của viền cầu vồng"
+    },
+    "brightness": {
+      "label": "Độ sáng",
+      "description": "Độ sáng của ánh lóe ở đỉnh"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Trong khối lập phương (Inside Cube)",
+  "description": "Máy quay đứng bên trong một khối lập phương và xoay từ bức tường hiện clip đầu sang bức tường kế hiện clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "khối lập phương",
+    "bên trong",
+    "xoay 3d",
+    "phòng",
+    "bức tường",
+    "cube"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng góc nhìn xoay, căn theo trục chính (x sang phải, y lên trên)"
+    },
+    "fov": {
+      "label": "Trường nhìn",
+      "description": "Trường nhìn dọc theo hướng xoay, tính bằng độ"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Mức các bức tường tối đi khi xoay và bóng ở góc"
+    },
+    "background": {
+      "label": "Màu nền",
+      "description": "Màu của các mặt còn lại của khối lập phương"
+    }
+  }
+}

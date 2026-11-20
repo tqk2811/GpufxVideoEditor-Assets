@@ -1,0 +1,25 @@
+{
+  "name": "Đổ ngửa (Fall Over)",
+  "description": "Clip đầu đổ ngửa ra sau, xoay quanh bản lề ở mép dưới, để lộ clip thứ hai phía sau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "đổ",
+    "ngã",
+    "ngửa",
+    "lật",
+    "xoay bản lề"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "perspective": {
+      "label": "Phối cảnh",
+      "description": "Độ mạnh của phối cảnh"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Mức clip tối đi khi đổ"
+    }
+  }
+}

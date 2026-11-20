@@ -1,0 +1,21 @@
+{
+  "name": "Zoom quét trái (Zoom Wipe Left)",
+  "description": "Máy quay zoom vào clip đầu rồi zoom ra, sau đó clip thứ hai quét vào từ phải sang trái. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "zoom",
+    "quét trái",
+    "quét",
+    "phóng to",
+    "từ phải sang trái"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "zoom_quickness": {
+      "label": "Tốc độ zoom",
+      "description": "Phần của giai đoạn zoom dành cho zoom vào (giới hạn ở 0,5)"
+    }
+  }
+}

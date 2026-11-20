@@ -1,0 +1,33 @@
+{
+  "name": "Cuộn sóng (Billow Wipe)",
+  "description": "Clip thứ hai chảy phủ lên clip đầu như chất lỏng này trượt trên chất lỏng khác, mép đầu cuộn lại thành hàng xoắn ốc quấn hai clip vào nhau, siết chặt khi quét qua khung hình và trôi sang bên, rồi rời đi. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "sóng",
+    "cuộn",
+    "xoắn ốc",
+    "chất lỏng",
+    "quét"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng mép đầu di chuyển tới (x sang phải, y lên trên)"
+    },
+    "spacing": {
+      "label": "Khoảng cách lọn",
+      "description": "Khoảng cách giữa các lọn xoắn, tính theo chiều cao khung hình"
+    },
+    "winding": {
+      "label": "Độ cuộn xoắn",
+      "description": "Số radian các lọn xoắn cuộn lại khi đi qua khung hình"
+    },
+    "drift": {
+      "label": "Độ trôi",
+      "description": "Mức các lọn xoắn trôi sang bên khi đi qua, tính theo chiều cao khung hình"
+    }
+  }
+}

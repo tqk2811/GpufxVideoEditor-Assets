@@ -1,0 +1,26 @@
+{
+  "name": "Gấp xương cá (Herringbone Fold)",
+  "description": "Clip đầu sập dọc theo các nếp gấp zigzag xương cá như tấm bản đồ gấp: trong một chuyển động nó xếp nếp theo cả hai hướng cùng lúc, các mặt sáng tối xen kẽ, thành gói nhỏ gọn rơi khỏi khung hình, để lộ clip thứ hai dưới bóng của nó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "gấp",
+    "xương cá",
+    "bản đồ",
+    "zigzag",
+    "nếp gấp",
+    "giấy"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "rows": {
+      "label": "Số hàng",
+      "description": "Số hàng nếp theo chiều cao khung hình"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng tờ giấy đang gấp đổ xuống"
+    }
+  }
+}

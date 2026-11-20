@@ -1,0 +1,46 @@
+{
+  "name": "Cắt dán hình học (Geometric Collage)",
+  "description": "Clip thứ hai đến dưới dạng tấm áp phích hình học cắt từ các hình quạt, nửa đĩa, tam giác và phần bù của chúng: mảnh này đến mảnh khác xoay vào quanh một góc ô, một tấm màu phẳng đi ngay phía trước, rồi đáp phẳng với bóng giấy mềm. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "cắt dán",
+    "hình học",
+    "áp phích",
+    "tam giác",
+    "mảnh ghép",
+    "collage"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "cells": {
+      "label": "Số ô",
+      "description": "Số ô theo cạnh ngắn khung hình, cạnh dài lấy đủ số ô để giữ chúng gần vuông"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ dàn trải thời gian các mảnh đến: 0 xoay vào cùng lúc, 1 đáp lần lượt từng mảnh"
+    },
+    "plates": {
+      "label": "Tấm màu",
+      "description": "Hiện một tấm màu phẳng xoay vào ngay trước mỗi mảnh"
+    },
+    "color1": {
+      "label": "Màu 1",
+      "description": "Màu tấm thứ nhất"
+    },
+    "color2": {
+      "label": "Màu 2",
+      "description": "Màu tấm thứ hai"
+    },
+    "color3": {
+      "label": "Màu 3",
+      "description": "Màu tấm thứ ba"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng các mảnh đổ xuống khi xoay vào"
+    }
+  }
+}

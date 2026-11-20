@@ -1,0 +1,34 @@
+{
+  "name": "Lệch sắc độ (Chroma Shift)",
+  "description": "Dịch chuyển sắc độ (Cb và Cr) của ảnh theo chiều ngang và dọc, giữ nguyên luma.",
+  "tags": [
+    "lệch màu",
+    "glitch",
+    "chromatic",
+    "sắc độ",
+    "tách màu",
+    "nhiễu màu"
+  ],
+  "params": {
+    "cbh": {
+      "label": "Cb ngang",
+      "description": "Dịch chroma-blue theo chiều ngang, tính bằng pixel"
+    },
+    "cbv": {
+      "label": "Cb dọc",
+      "description": "Dịch chroma-blue theo chiều dọc, tính bằng pixel"
+    },
+    "crh": {
+      "label": "Cr ngang",
+      "description": "Dịch chroma-red theo chiều ngang, tính bằng pixel"
+    },
+    "crv": {
+      "label": "Cr dọc",
+      "description": "Dịch chroma-red theo chiều dọc, tính bằng pixel"
+    },
+    "edge": {
+      "label": "Xử lý biên",
+      "description": "Cách xử lý biên: 0 = smear (lặp lại biên), 1 = wrap (cuộn vòng)"
+    }
+  }
+}

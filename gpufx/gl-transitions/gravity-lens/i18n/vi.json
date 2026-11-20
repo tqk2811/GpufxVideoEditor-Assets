@@ -1,0 +1,34 @@
+{
+  "name": "Thấu kính hấp dẫn (Gravity Lens)",
+  "description": "Một đĩa tối lớn dần, bẻ cong clip đầu quanh nó như khối lượng nặng bẻ cong ánh sáng, nuốt khung hình, rồi co lại, trả hình clip thứ hai về thẳng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "hấp dẫn",
+    "hố đen",
+    "thấu kính",
+    "không gian",
+    "vũ trụ",
+    "bẻ cong"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Tâm của đĩa (0..1, y hướng xuống)"
+    },
+    "strength": {
+      "label": "Độ mạnh",
+      "description": "Mức ánh sáng bị bẻ cong mạnh đến đâu"
+    },
+    "glow": {
+      "label": "Quầng sáng",
+      "description": "Độ sáng của các vòng thấu kính"
+    },
+    "hole": {
+      "label": "Màu lỗ",
+      "description": "Màu của đĩa (bản gốc là đen; màu gần đen giúp nó không bị nhìn nhầm là khung hình trống)"
+    }
+  }
+}

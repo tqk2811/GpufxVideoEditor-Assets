@@ -1,0 +1,29 @@
+{
+  "name": "Đẩy thu phóng (Directional Scaled)",
+  "description": "Clip thứ hai đẩy clip đầu ra khỏi khung hình, cả hai thu nhỏ khi trượt và phóng lại khi kết thúc cú đẩy. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "đẩy",
+    "trượt",
+    "thu nhỏ",
+    "thu phóng",
+    "hướng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng di chuyển; chỉ dấu của mỗi thành phần có tác dụng (x sang phải, y lên trên)"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Kích thước các clip ở giữa lúc đẩy"
+    },
+    "background": {
+      "label": "Màu nền",
+      "description": "Màu xung quanh các clip đã thu nhỏ"
+    }
+  }
+}

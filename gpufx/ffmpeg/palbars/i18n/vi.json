@@ -1,0 +1,22 @@
+{
+  "name": "Thanh màu PAL",
+  "description": "Thanh màu PAL 75% hoặc 100% (bộ tạo hình).",
+  "tags": [
+    "thanh màu",
+    "color bars",
+    "pal",
+    "test",
+    "kiểm tra",
+    "bộ tạo"
+  ],
+  "params": {
+    "full": {
+      "label": "Đủ 100%",
+      "description": "false: thanh 75% (pal75bars), true: thanh 100% (pal100bars)"
+    },
+    "opacity": {
+      "label": "Độ mờ lớp phủ",
+      "description": "Trộn lên ảnh đầu vào: 1 = chỉ ảnh được tạo, 0 = giữ nguyên ảnh đầu vào"
+    }
+  }
+}

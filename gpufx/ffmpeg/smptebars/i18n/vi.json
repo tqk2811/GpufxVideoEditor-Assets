@@ -1,0 +1,18 @@
+{
+  "name": "Thanh màu SMPTE",
+  "description": "Thanh màu SMPTE (bộ tạo hình).",
+  "tags": [
+    "thanh màu",
+    "color bars",
+    "smpte",
+    "test",
+    "kiểm tra",
+    "bộ tạo"
+  ],
+  "params": {
+    "opacity": {
+      "label": "Độ mờ lớp phủ",
+      "description": "Trộn lên ảnh đầu vào: 1 = chỉ ảnh được tạo, 0 = giữ nguyên ảnh đầu vào"
+    }
+  }
+}

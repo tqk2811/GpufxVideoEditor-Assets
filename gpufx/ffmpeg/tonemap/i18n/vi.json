@@ -1,0 +1,31 @@
+{
+  "name": "Ánh xạ tông (Tonemap)",
+  "description": "Nén dải độ sáng bằng một toán tử tone-mapping (none, linear, gamma, clip, reinhard, hable, mobius).",
+  "tags": [
+    "tonemap",
+    "hdr",
+    "sdr",
+    "ánh xạ tông",
+    "nén dải sáng",
+    "hable",
+    "reinhard"
+  ],
+  "params": {
+    "tonemap": {
+      "label": "Thuật toán",
+      "description": "Thuật toán: 0 none, 1 linear, 2 gamma, 3 clip, 4 reinhard, 5 hable, 6 mobius"
+    },
+    "param": {
+      "label": "Tham số",
+      "description": "Tham số của thuật toán; 0 = mặc định của FFmpeg cho thuật toán đó (gamma 1.8, mobius 0.3, các loại khác 1). Reinhard: giá trị p, hợp lệ trong (0,1] (giá trị lớn hơn được coi là 1), được đổi thành (1-p)/p"
+    },
+    "desat": {
+      "label": "Giảm bão hòa",
+      "description": "Cường độ giảm bão hòa của các giá trị sáng hơn mức luma này; 0 là tắt"
+    },
+    "peak": {
+      "label": "Đỉnh tín hiệu",
+      "description": "Ghi đè đỉnh tín hiệu; 0 = 1.0 (trắng SDR)"
+    }
+  }
+}

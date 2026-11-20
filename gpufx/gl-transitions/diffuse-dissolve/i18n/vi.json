@@ -1,0 +1,30 @@
+{
+  "name": "Tan khuếch tán (Diffuse Dissolve)",
+  "description": "Clip đầu khuếch tán thành màn sương hạt lấp lánh, như thể các điểm ảnh bị rải ngày càng xa vị trí đúng, và clip thứ hai ngưng tụ lại từ màn sương khi chúng về chỗ cũ. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "khuếch tán",
+    "hạt",
+    "sương mù",
+    "tan",
+    "lấp lánh",
+    "nhiễu hạt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "radius": {
+      "label": "Bán kính",
+      "description": "Khoảng các điểm ảnh bị rải xa ở đỉnh, tính theo chiều cao khung hình"
+    },
+    "grain_size": {
+      "label": "Cỡ hạt",
+      "description": "Kích thước một hạt, tính theo chiều cao khung hình"
+    },
+    "shimmer": {
+      "label": "Độ lấp lánh",
+      "description": "Mức các hạt xoáy quanh khi bị rải"
+    }
+  }
+}

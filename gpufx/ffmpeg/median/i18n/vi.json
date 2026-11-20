@@ -1,0 +1,26 @@
+{
+  "name": "Lọc trung vị (Median)",
+  "description": "Bộ lọc trung vị (hoặc bất kỳ phân vị nào) trên cửa sổ hình chữ nhật, theo từng kênh.",
+  "tags": [
+    "trung vị",
+    "median",
+    "khử nhiễu",
+    "làm mịn",
+    "lọc nhiễu",
+    "denoise"
+  ],
+  "params": {
+    "radius": {
+      "label": "Bán kính ngang",
+      "description": "Bán kính ngang tính bằng pixel: cửa sổ rộng 2 * radius + 1"
+    },
+    "radius_v": {
+      "label": "Bán kính dọc",
+      "description": "Bán kính dọc; -1 = bằng `radius` (`radiusV`)"
+    },
+    "percentile": {
+      "label": "Phân vị",
+      "description": "Thứ hạng của giá trị được chọn: 0 = nhỏ nhất, 0.5 = trung vị, 1 = lớn nhất"
+    }
+  }
+}

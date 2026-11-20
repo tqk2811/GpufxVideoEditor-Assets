@@ -1,0 +1,29 @@
+{
+  "name": "Giới hạn giá trị (Limiter)",
+  "description": "Kẹp giá trị điểm ảnh của các kênh đã chọn giữa một mức tối thiểu và tối đa.",
+  "tags": [
+    "giới hạn",
+    "kẹp giá trị",
+    "limiter",
+    "clamp",
+    "legal range"
+  ],
+  "params": {
+    "min": {
+      "label": "Tối thiểu",
+      "description": "Giới hạn dưới, tính theo giá trị mã của `depth` bit (kẹp theo mức tối đa của độ sâu bit)"
+    },
+    "max": {
+      "label": "Tối đa",
+      "description": "Giới hạn trên, tính theo giá trị mã của `depth` bit (kẹp theo mức tối đa của độ sâu bit, nên mặc định là không giới hạn)"
+    },
+    "planes": {
+      "label": "Kênh",
+      "description": "Mặt nạ bit các kênh cần giới hạn: 1 xanh lá, 2 xanh dương, 4 đỏ, 8 alpha (thứ tự kênh GBRAP của FFmpeg)"
+    },
+    "depth": {
+      "label": "Độ sâu bit",
+      "description": "Độ sâu bit mà các giá trị `min` và `max` dựa vào; 8 với video 8-bit thông thường"
+    }
+  }
+}

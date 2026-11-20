@@ -1,0 +1,35 @@
+{
+  "name": "Phóng ảnh trên canvas (Zoom Canvas)",
+  "description": "Vẽ đầu vào thứ hai được phóng quanh một điểm neo lên đầu vào thứ nhất (một canvas kích thước cố định, ví dụ trong suốt), giữ nguyên tỉ lệ khung hình.",
+  "tags": [
+    "phóng to",
+    "zoom",
+    "canvas",
+    "neo",
+    "căn chỉnh",
+    "ảnh trên nền",
+    "ken burns"
+  ],
+  "params": {
+    "zoom": {
+      "label": "Phóng",
+      "description": "Kích thước ảnh so với kích thước đã vừa khung (1 = vừa khung theo `fit`)"
+    },
+    "fit": {
+      "label": "Kiểu vừa",
+      "description": "Kích thước ở mức phóng 1: 0 contain (cả ảnh nằm trong canvas), 1 cover (phủ kín canvas), 2 pixel gốc"
+    },
+    "anchor": {
+      "label": "Điểm neo",
+      "description": "Điểm trên canvas (0..1 theo kích thước của nó) nơi đặt điểm xoay của ảnh"
+    },
+    "pivot": {
+      "label": "Điểm xoay",
+      "description": "Điểm của ảnh (0..1 theo kích thước của nó) giữ nguyên tại điểm neo khi phóng"
+    },
+    "opacity": {
+      "label": "Độ mờ",
+      "description": "Độ mờ của ảnh"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Hoán đổi hình chữ nhật",
+  "description": "Hoán đổi hai hình chữ nhật của khung hình, như swaprect của FFmpeg.",
+  "tags": [
+    "hoán đổi",
+    "đổi chỗ",
+    "swap",
+    "vùng",
+    "hình chữ nhật",
+    "glitch"
+  ],
+  "params": {
+    "w": {
+      "label": "Rộng",
+      "description": "Chiều rộng hình chữ nhật, theo tỉ lệ chiều rộng khung (FFmpeg w, mặc định w/2)"
+    },
+    "h": {
+      "label": "Cao",
+      "description": "Chiều cao hình chữ nhật, theo tỉ lệ chiều cao khung (FFmpeg h, mặc định h/2)"
+    },
+    "x1": {
+      "label": "X thứ nhất",
+      "description": "Cạnh trái hình chữ nhật thứ nhất, theo tỉ lệ chiều rộng khung (FFmpeg x1)"
+    },
+    "y1": {
+      "label": "Y thứ nhất",
+      "description": "Cạnh trên hình chữ nhật thứ nhất, theo tỉ lệ chiều cao khung (FFmpeg y1)"
+    },
+    "x2": {
+      "label": "X thứ hai",
+      "description": "Cạnh trái hình chữ nhật thứ hai, theo tỉ lệ chiều rộng khung (FFmpeg x2)"
+    },
+    "y2": {
+      "label": "Y thứ hai",
+      "description": "Cạnh trên hình chữ nhật thứ hai, theo tỉ lệ chiều cao khung (FFmpeg y2)"
+    }
+  }
+}

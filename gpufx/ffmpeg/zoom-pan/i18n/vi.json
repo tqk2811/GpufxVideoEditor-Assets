@@ -1,0 +1,31 @@
+{
+  "name": "Phóng và lia (Zoom and Pan)",
+  "description": "Phóng và lia với zoom, x và y cho dưới dạng biểu thức của thời gian (Ken Burns).",
+  "tags": [
+    "phóng to",
+    "lia",
+    "zoom",
+    "pan",
+    "ken burns",
+    "thu phóng",
+    "chuyển động ảnh"
+  ],
+  "params": {
+    "fps": {
+      "label": "Tốc độ khung",
+      "description": "Tốc độ khung dùng để tính `on` (số thứ tự khung đầu ra) từ thời gian"
+    },
+    "zoom": {
+      "label": "Phóng",
+      "description": "Mức phóng, kẹp trong 1..10. iw, ih là kích thước đầu vào, ow, oh là kích thước đầu ra (pixel), time là giây, on là số thứ tự khung"
+    },
+    "x": {
+      "label": "X",
+      "description": "Cạnh trái của vùng hiển thị theo pixel đầu vào, kẹp trong 0..iw-iw/zoom. Các biến của `zoom` cộng thêm `zoom` (giá trị vừa tính)"
+    },
+    "y": {
+      "label": "Y",
+      "description": "Cạnh trên của vùng hiển thị theo pixel đầu vào, kẹp trong 0..ih-ih/zoom. Các biến của `x` cộng thêm `x`"
+    }
+  }
+}

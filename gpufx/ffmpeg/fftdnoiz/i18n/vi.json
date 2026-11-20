@@ -1,0 +1,41 @@
+{
+  "name": "Khử nhiễu FFT",
+  "description": "Bộ khử nhiễu khối FFT trên từng khung hình: giảm các tần số yếu của các khối cửa sổ chồng lấn.",
+  "tags": [
+    "khử nhiễu",
+    "giảm nhiễu",
+    "fft",
+    "denoise",
+    "nhiễu hạt"
+  ],
+  "params": {
+    "sigma": {
+      "label": "Sigma",
+      "description": "Cường độ khử nhiễu"
+    },
+    "amount": {
+      "label": "Lượng",
+      "description": "Lượng khử nhiễu: các tần số yếu nhất giữ lại 1 - amount kích thước của chúng"
+    },
+    "block": {
+      "label": "Kích thước khối",
+      "description": "Kích thước khối tính bằng pixel"
+    },
+    "overlap": {
+      "label": "Chồng lấn",
+      "description": "Độ chồng lấn của các khối, theo tỉ lệ kích thước khối"
+    },
+    "method": {
+      "label": "Phương pháp",
+      "description": "Cách co từng tần số: bộ lọc Wiener theo công suất, hoặc ngưỡng cứng"
+    },
+    "planes": {
+      "label": "Kênh lọc",
+      "description": "Các kênh cần lọc, theo bit của FFmpeg trên gbrp: 1 xanh lá, 2 xanh dương, 4 đỏ"
+    },
+    "window": {
+      "label": "Hàm cửa sổ",
+      "description": "Hàm cửa sổ của các khối"
+    }
+  }
+}

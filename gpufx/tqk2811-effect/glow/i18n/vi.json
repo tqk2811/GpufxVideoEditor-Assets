@@ -1,0 +1,28 @@
+{
+  "name": "Phát sáng",
+  "description": "Bloom: vùng sáng của ảnh tỏa ánh sáng mềm ra xung quanh.",
+  "tags": [
+    "phát sáng",
+    "bloom",
+    "tỏa sáng",
+    "ánh sáng"
+  ],
+  "params": {
+    "intensity": {
+      "label": "Cường độ sáng",
+      "description": "Cường độ phát sáng"
+    },
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Độ sáng (0..1) mà điểm ảnh cần đạt để phát sáng"
+    },
+    "radius": {
+      "label": "Bán kính",
+      "description": "Độ lan của quầng sáng; 1 lan khoảng một phần mười khung hình"
+    },
+    "tint": {
+      "label": "Sắc thái",
+      "description": "Màu nhân vào quầng sáng"
+    }
+  }
+}

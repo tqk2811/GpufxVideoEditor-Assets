@@ -1,0 +1,38 @@
+{
+  "name": "Tan plasma (Plasma Dissolve)",
+  "description": "Một plasma kiểu demo chảy vẽ các dải chuyển động mà clip thứ hai lan qua như các tua, với cạnh phát sáng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "plasma",
+    "dải chuyển động",
+    "demo",
+    "phát sáng",
+    "tan",
+    "retro"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Kích thước plasma (cao hơn: nhiều dải mỏng hơn)"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của mép dải"
+    },
+    "flow": {
+      "label": "Dòng chảy",
+      "description": "Mức plasma chảy"
+    },
+    "edge_color": {
+      "label": "Màu viền sáng",
+      "description": "Màu quầng sáng dọc các mép"
+    },
+    "edge_strength": {
+      "label": "Độ mạnh viền sáng",
+      "description": "Độ mạnh của quầng sáng"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Ma trận màu (Color Matrix)",
+  "description": "Chuyển đổi màu giữa các ma trận màu YUV BT.709, FCC, BT.601, SMPTE 240M và BT.2020.",
+  "tags": [
+    "chuyển đổi màu",
+    "ma trận màu",
+    "bt709",
+    "bt601",
+    "bt2020",
+    "yuv"
+  ],
+  "params": {
+    "src": {
+      "label": "Ma trận nguồn",
+      "description": "Ma trận nguồn: 0 bt709, 1 fcc, 2 bt601 (bt470, bt470bg, smpte170m), 3 smpte240m, 4 bt2020"
+    },
+    "dst": {
+      "label": "Ma trận đích",
+      "description": "Ma trận đích, đánh số như `src`"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Quét răng cưa (Sawtooth Wipe)",
+  "description": "Hiệu ứng quét có cạnh là hàng răng tam giác nhọn quét qua khung hình, hoặc hai cạnh răng cưa ban đầu cài vào nhau và tách ra từ giữa như hàm đang mở. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "răng cưa",
+    "quét",
+    "hàm",
+    "tam giác",
+    "cưa",
+    "răng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng cạnh răng cưa di chuyển tới (với hàm: trục mà hai cạnh tách ra theo) (x sang phải, y lên trên)"
+    },
+    "teeth": {
+      "label": "Số răng",
+      "description": "Số răng dọc cạnh"
+    },
+    "depth": {
+      "label": "Độ sâu",
+      "description": "Độ dài răng, so với độ rộng của chúng"
+    },
+    "jaws": {
+      "label": "Chế độ hàm",
+      "description": "Hai cạnh răng cưa tách ra từ giữa thay vì một cạnh quét qua"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của cạnh"
+    }
+  }
+}

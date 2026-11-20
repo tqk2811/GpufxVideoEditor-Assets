@@ -1,0 +1,34 @@
+{
+  "name": "Chói ống kính (Lens Flare)",
+  "description": "Một ánh sáng mạnh quét qua khung hình và làm chói ống kính: một vệt ngang dài mỏng, lõi phát sáng và dải bóng phản chiếu nhiều màu; ở đỉnh, clip thứ hai lan ra từ ánh sáng dưới độ chói của nó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chói ống kính",
+    "lens flare",
+    "ánh sáng",
+    "vệt sáng",
+    "lóa",
+    "tia sáng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Góc đường đi của ánh sáng, tính bằng độ (0 quét từ trái sang phải)"
+    },
+    "height": {
+      "label": "Chiều cao",
+      "description": "Mức ánh sáng đi qua phía trên tâm khung hình"
+    },
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Độ sáng của vệt chói"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu của vệt sáng và độ chói"
+    }
+  }
+}

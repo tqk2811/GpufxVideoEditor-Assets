@@ -1,0 +1,18 @@
+{
+  "name": "Tách kênh (Extract Planes)",
+  "description": "Bản port của bộ lọc extractplanes FFmpeg: xuất một kênh (y, u, v, r, g, b, a) thành ảnh xám.",
+  "tags": [
+    "tách kênh",
+    "kênh màu",
+    "plane",
+    "channel",
+    "extract planes",
+    "y u v"
+  ],
+  "params": {
+    "plane": {
+      "label": "Kênh",
+      "description": "Kênh cần tách: 0 = y, 1 = u, 2 = v, 3 = r, 4 = g, 5 = b, 6 = a"
+    }
+  }
+}

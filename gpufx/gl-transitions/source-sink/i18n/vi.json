@@ -1,0 +1,38 @@
+{
+  "name": "Nguồn và hố (Source Sink)",
+  "description": "Clip thứ hai trào lên từ một điểm như bong bóng tròn trong khi clip đầu chảy đi dọc các đường trường cong và chìm vào điểm thứ hai, cả hai hình chảy như trường giữa hai điện tích. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "nguồn",
+    "hố",
+    "dòng chảy",
+    "trường",
+    "điện tích",
+    "bong bóng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "source": {
+      "label": "Điểm nguồn",
+      "description": "Điểm clip thứ hai trào lên từ đó (0..1, y hướng xuống)"
+    },
+    "sink": {
+      "label": "Điểm chìm",
+      "description": "Điểm clip đầu chìm vào (0..1, y hướng xuống)"
+    },
+    "flow": {
+      "label": "Dòng chảy",
+      "description": "Mức các hình đi dọc các đường trường"
+    },
+    "swirl": {
+      "label": "Độ xoáy",
+      "description": "Độ xoáy của dòng quanh hai điểm, 0 cho đường trường thẳng"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Bóng và điểm sáng dọc viền bong bóng"
+    }
+  }
+}

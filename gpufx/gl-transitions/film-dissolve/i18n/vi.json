@@ -1,0 +1,25 @@
+{
+  "name": "Tan phim (Film Dissolve)",
+  "description": "Hòa tan chéo trong ánh sáng tuyến tính, như ánh sáng cộng dồn trên phim, với vùng sáng của mỗi clip xuyên qua clip kia. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tan phim",
+    "hòa trộn",
+    "ánh sáng tuyến tính",
+    "phim",
+    "mờ dần"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "overlap": {
+      "label": "Độ chồng",
+      "description": "Ánh sáng thêm ở chỗ hai clip chồng lên nhau giữa lúc tan"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ làm mượt (0: tuyến tính, 1: vào và ra mượt)"
+    }
+  }
+}

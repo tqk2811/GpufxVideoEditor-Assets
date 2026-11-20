@@ -1,0 +1,19 @@
+{
+  "name": "Hòa tan (Crossfade)",
+  "description": "Hòa tan từ đầu vào thứ nhất sang đầu vào thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "hòa tan",
+    "mờ dần",
+    "crossfade",
+    "dissolve",
+    "fade",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

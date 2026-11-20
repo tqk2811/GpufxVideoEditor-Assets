@@ -1,0 +1,22 @@
+{
+  "name": "Làm mờ YAEP",
+  "description": "Một bộ làm mờ giữ cạnh khác (yet another edge preserving blur): vùng phẳng được lấy trung bình, vùng phương sai cao giữ nguyên giá trị.",
+  "tags": [
+    "làm mờ",
+    "giữ cạnh",
+    "yaep",
+    "làm mịn",
+    "mịn da",
+    "blur"
+  ],
+  "params": {
+    "radius": {
+      "label": "Bán kính",
+      "description": "Bán kính cửa sổ tính bằng pixel; 0 = tắt (`r`)"
+    },
+    "sigma": {
+      "label": "Sigma",
+      "description": "Cường độ làm mờ: cửa sổ có phương sai thấp hơn hẳn giá trị này thì được lấy trung bình, cao hơn hẳn thì được giữ nguyên (`s`)"
+    }
+  }
+}

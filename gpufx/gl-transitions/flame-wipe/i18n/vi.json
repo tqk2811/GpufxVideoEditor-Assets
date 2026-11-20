@@ -1,0 +1,37 @@
+{
+  "name": "Quét lửa (Flame Wipe)",
+  "description": "Bức tường lửa quét qua khung hình, thiêu cháy clip đầu phía trước và để lại clip thứ hai dưới ánh sáng ấm mờ dần. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "lửa",
+    "ngọn lửa",
+    "cháy",
+    "quét",
+    "thiêu"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng ngọn lửa quét tới (x sang phải, y lên trên)"
+    },
+    "height": {
+      "label": "Chiều cao",
+      "description": "Chiều cao ngọn lửa, theo phần chiều cao khung hình"
+    },
+    "scorch": {
+      "label": "Độ cháy sém",
+      "description": "Mức clip đầu ngả nâu và cháy sém phía trước ngọn lửa"
+    },
+    "glow": {
+      "label": "Quầng sáng",
+      "description": "Độ mạnh của ánh sáng ấm để lại trên clip thứ hai"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Sắc thái của thân ngọn lửa"
+    }
+  }
+}

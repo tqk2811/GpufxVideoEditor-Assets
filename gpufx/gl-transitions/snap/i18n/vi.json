@@ -1,0 +1,30 @@
+{
+  "name": "Gãy đôi (Snap)",
+  "description": "Clip đầu bắc ngang khung hình như tấm ván được giữ ở hai bên: nó võng ở giữa dưới sức nặng của chính nó, vết nứt lởm chởm chạy lên từ đáy, và hai nửa gãy rời, xoay xuống quanh góc trên bên ngoài rồi rơi khỏi khung hình, để lộ clip thứ hai dưới bóng của chúng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "gãy",
+    "bẻ gãy",
+    "tấm ván",
+    "nứt",
+    "rơi",
+    "gãy đôi"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "sag": {
+      "label": "Độ võng",
+      "description": "Mức giữa võng xuống trước khi nứt, so với chiều cao khung hình"
+    },
+    "jaggedness": {
+      "label": "Độ lởm chởm",
+      "description": "Độ rung ngang của vết nứt lởm chởm"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Màu bóng đổ lên clip thứ hai (alpha: độ mạnh)"
+    }
+  }
+}

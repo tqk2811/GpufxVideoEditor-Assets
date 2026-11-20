@@ -1,0 +1,25 @@
+{
+  "name": "Giữ một màu (Color Hold)",
+  "description": "Xóa mọi màu trừ các điểm ảnh gần một màu khóa, những điểm này vẫn giữ màu; phần còn lại chuyển sang xám.",
+  "tags": [
+    "giữ màu",
+    "chỉ giữ một màu",
+    "color splash",
+    "trắng đen một màu",
+    "color hold"
+  ],
+  "params": {
+    "color": {
+      "label": "Màu giữ lại",
+      "description": "Màu cần giữ; bỏ qua alpha"
+    },
+    "similarity": {
+      "label": "Độ tương đồng",
+      "description": "Khoảng cách tới màu khóa mà vẫn giữ màu; 0.01 chỉ khớp các màu rất gần, 1 là mọi màu"
+    },
+    "blend": {
+      "label": "Độ mềm viền",
+      "description": "Độ rộng của viền mềm phía trên ngưỡng tương đồng; 0 = cắt cứng"
+    }
+  }
+}

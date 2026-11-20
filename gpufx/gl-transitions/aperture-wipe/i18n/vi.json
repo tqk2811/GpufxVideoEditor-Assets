@@ -1,0 +1,29 @@
+{
+  "name": "Mở khẩu độ (Aperture Wipe)",
+  "description": "Khẩu độ máy ảnh mở các lá xoay để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "khẩu độ",
+    "màn trập",
+    "mở ống kính",
+    "lá chắn",
+    "iris"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "blades": {
+      "label": "Số lá",
+      "description": "Số lá khẩu"
+    },
+    "rotation": {
+      "label": "Góc xoay",
+      "description": "Mức các lá xoay khi mở, tính bằng độ"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng dọc theo cạnh các lá"
+    }
+  }
+}

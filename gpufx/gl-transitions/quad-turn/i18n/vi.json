@@ -1,0 +1,34 @@
+{
+  "name": "Xoay bốn ô (Quad Turn)",
+  "description": "Hình ảnh được cắt thành các ô vuông xoay theo khối bốn như những bàn xoay nhỏ, mỗi lần một phần tư vòng trên hai lưới so le, nâng lên trên các ô lân cận và xáo trộn clip đầu; một đợt sóng lật các ô sang clip thứ hai, rồi các khối xoay ngược lại cùng cách đến khi mọi ô về chỗ. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xoay",
+    "bốn ô",
+    "ô vuông",
+    "bàn xoay",
+    "khối",
+    "lưới"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "tiles": {
+      "label": "Số ô",
+      "description": "Số ô theo cạnh ngắn khung hình"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ trễ giữa khối đầu và khối cuối của mỗi lượt xoay, theo phần của lượt xoay"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng các ô được nhấc lên"
+    },
+    "back_color": {
+      "label": "Màu nền phía sau",
+      "description": "Màu khay thấy được dưới các khối đang xoay"
+    }
+  }
+}

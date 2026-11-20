@@ -1,0 +1,37 @@
+{
+  "name": "Cuộn trụ (Cylinder Roll)",
+  "description": "Khung hình quấn quanh một cái trống đang cuộn lên, clip đầu quay đi qua đỉnh với nhòe chuyển động và clip thứ hai vòng lên từ phía dưới rồi trải phẳng ra. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "hình trụ",
+    "trống",
+    "cuộn",
+    "cuộn tròn",
+    "xoay"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "curvature": {
+      "label": "Độ cong",
+      "description": "Mức khung hình quấn quanh trống"
+    },
+    "blur": {
+      "label": "Độ nhòe",
+      "description": "Độ dài nhòe chuyển động ở tốc độ tối đa"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Mức trống tối đi khi quay đi"
+    },
+    "chroma": {
+      "label": "Tách màu RGB",
+      "description": "Mức tách RGB dọc theo vòng cuộn, tăng theo tốc độ"
+    },
+    "downward": {
+      "label": "Cuộn xuống",
+      "description": "Cuộn xuống dưới thay vì lên, clip thứ hai vòng xuống từ phía trên"
+    }
+  }
+}

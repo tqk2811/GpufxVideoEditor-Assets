@@ -1,0 +1,30 @@
+{
+  "name": "Hình âm thanh (Cymatics)",
+  "description": "Clip đầu là lớp cát trên tấm rung: nó run lên, rồi dồn lại thành các đường đối xứng của hình âm thanh, để lộ clip thứ hai bên dưới như tấm nền, trước khi các đường mỏng đi và hạt cát nhảy đi. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "cymatics",
+    "cát",
+    "rung",
+    "âm thanh",
+    "sóng âm",
+    "hình âm"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "mode_x": {
+      "label": "Chế độ rung ngang",
+      "description": "Chế độ rung theo chiều ngang tấm: giá trị lớn hơn có nhiều đường nút hơn"
+    },
+    "mode_y": {
+      "label": "Chế độ rung dọc",
+      "description": "Chế độ rung theo chiều dọc tấm: giá trị lớn hơn có nhiều đường nút hơn"
+    },
+    "line_width": {
+      "label": "Độ rộng đường",
+      "description": "Độ rộng các đường cát khi đã dồn lại"
+    }
+  }
+}

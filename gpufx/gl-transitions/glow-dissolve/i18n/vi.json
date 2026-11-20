@@ -1,0 +1,37 @@
+{
+  "name": "Tan phát sáng (Glow Dissolve)",
+  "description": "Clip thứ hai lan phủ lên clip đầu từ phần tối đến phần sáng, theo sau một cạnh nóng phát sáng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "phát sáng",
+    "tan",
+    "cạnh sáng",
+    "nóng",
+    "lan"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "line_width": {
+      "label": "Độ rộng đường",
+      "description": "Độ rộng của cạnh phát sáng"
+    },
+    "spread_color": {
+      "label": "Màu rìa",
+      "description": "Màu của phần ngoài của cạnh"
+    },
+    "hot_color": {
+      "label": "Màu vùng nóng",
+      "description": "Màu của phần nóng nhất của cạnh"
+    },
+    "power": {
+      "label": "Hệ số",
+      "description": "Độ tương phản của màu cạnh"
+    },
+    "intensity": {
+      "label": "Cường độ",
+      "description": "Độ sáng của cạnh"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Zoom mơ màng (Dreamy Zoom)",
+  "description": "Zoom và xoay vào một chớp sáng, rồi ra clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "mơ màng",
+    "zoom",
+    "xoay",
+    "chớp sáng",
+    "flash"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "rotation": {
+      "label": "Góc xoay",
+      "description": "Góc xoay, tính bằng độ"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Mức zoom ở chớp sáng"
+    }
+  }
+}

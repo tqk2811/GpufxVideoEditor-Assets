@@ -1,0 +1,30 @@
+{
+  "name": "Đẽo gọt (Whittle)",
+  "description": "Các nhát cắt thẳng được rạch qua clip đầu lần lượt, mỗi mảnh phía bên kia nhát cắt trượt đi, đến khi một đa giác nhỏ trượt đi sau cùng và để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "đẽo",
+    "gọt",
+    "cắt",
+    "nhát cắt",
+    "đa giác",
+    "trượt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "cuts": {
+      "label": "Số nhát cắt",
+      "description": "Số nhát cắt trước khi mảnh cuối trượt đi"
+    },
+    "score": {
+      "label": "Màu đường rạch",
+      "description": "Màu đường rạch dọc mỗi nhát cắt (alpha: cường độ)"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Màu bóng các mảnh được nhấc lên đổ xuống"
+    }
+  }
+}

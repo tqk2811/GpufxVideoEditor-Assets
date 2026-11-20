@@ -1,0 +1,12 @@
+{
+  "name": "Xếp dọc",
+  "description": "Đặt các đầu vào chồng lên nhau theo chiều dọc, từ trên xuống dưới, giống vstack của FFmpeg.",
+  "tags": [
+    "xếp dọc",
+    "ghép ảnh",
+    "trên dưới",
+    "vstack",
+    "chia đôi màn hình",
+    "split screen"
+  ]
+}

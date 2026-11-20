@@ -1,0 +1,34 @@
+{
+  "name": "Mất đồng bộ ngang (Horizontal Hold)",
+  "description": "Hình ảnh mất đồng bộ ngang như TV cũ: nó xiên thành các dải chéo trượt sang bên và cuộn vòng, ngăn cách bởi thanh trống xiên mang clip thứ hai vào, rồi độ xiên thẳng lại, rung rung và khớp. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tv cũ",
+    "mất đồng bộ",
+    "nhiễu",
+    "crt",
+    "cổ điển",
+    "trượt hình"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "slips": {
+      "label": "Số lần trượt",
+      "description": "Số lần hình ảnh trượt sang bên trước khi khớp"
+    },
+    "shear": {
+      "label": "Độ xiên",
+      "description": "Mức các dòng bị trễ từ trên xuống dưới ở lúc xé nặng nhất, tính theo chiều rộng hình"
+    },
+    "bar_width": {
+      "label": "Độ rộng thanh",
+      "description": "Độ rộng thanh trống giữa các bản sao hình ảnh"
+    },
+    "bar_color": {
+      "label": "Màu thanh",
+      "description": "Màu của thanh trống"
+    }
+  }
+}

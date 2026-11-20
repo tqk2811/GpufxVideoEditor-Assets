@@ -1,0 +1,20 @@
+{
+  "name": "Quét theo hướng",
+  "description": "Quét đẩy kèm dải sáng lướt qua và một nhịp nháy đỏ/lục lam ngắn.",
+  "tags": [
+    "chuyển cảnh",
+    "quét",
+    "đẩy",
+    "hướng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Cạnh bắt đầu quét: trái, phải, lên (cạnh dưới) hoặc xuống (cạnh trên)"
+    }
+  }
+}

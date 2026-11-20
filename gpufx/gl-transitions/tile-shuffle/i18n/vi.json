@@ -1,0 +1,34 @@
+{
+  "name": "Xáo trộn ô (Tile Shuffle)",
+  "description": "Khung hình được cắt thành các ô đổi chỗ theo cặp, vòng này đến vòng khác dọc theo các hàng rồi theo các cột, một ô của mỗi cặp nhấc lên xoay qua ô kia với bóng mềm; mỗi ô chuyển sang clip thứ hai trong một lần đổi chỗ, nên hình thứ hai đến bị xáo trộn và các vòng cuối sắp xếp lại. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xáo trộn",
+    "ô vuông",
+    "đổi chỗ",
+    "hoán đổi",
+    "sắp xếp",
+    "trộn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "tiles": {
+      "label": "Số ô",
+      "description": "Số ô theo cạnh dài của khung hình (các ô vẫn gần như vuông)"
+    },
+    "gap": {
+      "label": "Khoảng cách",
+      "description": "Độ rộng khe mở ra giữa các ô, theo phần của một ô"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng các ô đổ xuống"
+    },
+    "tray": {
+      "label": "Màu khay",
+      "description": "Màu khay thấy được dưới các ô"
+    }
+  }
+}

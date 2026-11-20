@@ -1,0 +1,37 @@
+{
+  "name": "Kính nhiều mặt (Faceted Glass)",
+  "description": "Khung hình được nhìn qua một tấm kính cắt với các mặt bất quy tắc, mỗi mặt cho thấy góc nhìn dịch chuyển, phóng to và nghiêng riêng của hình ảnh, với cạnh vát sáng và đường nối tối mỏng; các mặt lần lượt chuyển sang clip thứ hai, rồi tấm kính phẳng ra và trong suốt. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "kính",
+    "kính nhiều mặt",
+    "pha lê",
+    "khúc xạ",
+    "mặt cắt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "facets": {
+      "label": "Số mặt kính",
+      "description": "Số mặt kính theo chiều cao khung hình"
+    },
+    "refraction": {
+      "label": "Khúc xạ",
+      "description": "Mức mỗi mặt dịch chuyển góc nhìn của hình ảnh ở đỉnh"
+    },
+    "bevel": {
+      "label": "Vát cạnh",
+      "description": "Độ mạnh của điểm sáng và bóng dọc cạnh vát, và của ánh lóe khi mỗi mặt xoay"
+    },
+    "highlight": {
+      "label": "Điểm sáng",
+      "description": "Màu ánh sáng mà các cạnh vát bắt được (alpha: độ mạnh)"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Hạt giống ngẫu nhiên: giá trị khác cho mặt kính khác, xoay theo thứ tự khác"
+    }
+  }
+}

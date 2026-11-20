@@ -1,0 +1,42 @@
+{
+  "name": "Quét sóng (Wave Wipe)",
+  "description": "Một con sóng vỡ đập qua khung hình, mép sóng cuộn qua trước mặt sóng và ném bọt, nước bắn lên phía trước, bóng của nó làm tối clip đầu; clip thứ hai được để lại phía sau, nhuốm màu và bị nước bẻ cong, trong dần khi sóng đi qua. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "sóng",
+    "sóng biển",
+    "sóng vỗ",
+    "bọt nước",
+    "đại dương",
+    "quét"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng con sóng đi tới (x sang phải, y lên trên)"
+    },
+    "curl": {
+      "label": "Độ cuộn",
+      "description": "Kích thước mép sóng cuộn, tính theo chiều cao sóng: mức nó nhô ra phía trước mặt sóng"
+    },
+    "foam": {
+      "label": "Bọt",
+      "description": "Lượng bọt trên đỉnh sóng và nước bắn ra phía trước"
+    },
+    "refraction": {
+      "label": "Khúc xạ",
+      "description": "Mức nước bẻ cong clip thứ hai phía sau con sóng"
+    },
+    "water": {
+      "label": "Màu nước",
+      "description": "Màu nước nhuộm clip thứ hai phía sau con sóng (alpha: độ mạnh)"
+    },
+    "foam_color": {
+      "label": "Màu bọt",
+      "description": "Màu của bọt và nước bắn (alpha: độ mạnh)"
+    }
+  }
+}

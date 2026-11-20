@@ -1,0 +1,30 @@
+{
+  "name": "Perlin",
+  "description": "Clip thứ hai hiện ra qua các đốm nhiễu. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "perlin",
+    "nhiễu",
+    "đốm",
+    "ngẫu nhiên",
+    "mây",
+    "tan"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Tỷ lệ của nhiễu (cao hơn: đốm nhỏ hơn)"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của mép đốm"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Hạt giống ngẫu nhiên"
+    }
+  }
+}

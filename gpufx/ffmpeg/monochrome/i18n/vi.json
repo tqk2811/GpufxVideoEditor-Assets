@@ -1,0 +1,30 @@
+{
+  "name": "Đơn sắc (Monochrome)",
+  "description": "Đen trắng qua một bộ lọc màu, như kính lọc màu trên máy ảnh phim.",
+  "tags": [
+    "đơn sắc",
+    "đen trắng",
+    "monochrome",
+    "kính lọc màu",
+    "phim",
+    "trắng đen"
+  ],
+  "params": {
+    "cb": {
+      "label": "Chroma xanh dương",
+      "description": "Điểm chroma xanh dương của bộ lọc"
+    },
+    "cr": {
+      "label": "Chroma đỏ",
+      "description": "Điểm chroma đỏ của bộ lọc"
+    },
+    "size": {
+      "label": "Kích thước",
+      "description": "Kích thước của bộ lọc màu"
+    },
+    "high": {
+      "label": "Độ mạnh vùng sáng",
+      "description": "Cường độ của bộ lọc ở vùng sáng"
+    }
+  }
+}

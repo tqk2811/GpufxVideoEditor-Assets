@@ -1,0 +1,25 @@
+{
+  "name": "Cuộn (Rolls)",
+  "description": "Clip đầu cuộn đi quanh một góc, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "cuộn",
+    "cuộn giấy",
+    "cuộn góc",
+    "cuộn tròn",
+    "cuộn lên"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "corner": {
+      "label": "Góc bo",
+      "description": "Góc để cuộn quanh: 0 dưới phải, 1 dưới trái, 2 trên trái, 3 trên phải"
+    },
+    "roll_down": {
+      "label": "Cuộn xuống",
+      "description": "Cuộn clip đầu xuống dưới thay vì lên"
+    }
+  }
+}

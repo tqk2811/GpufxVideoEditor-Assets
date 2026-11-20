@@ -1,0 +1,38 @@
+{
+  "name": "Tan chảy kiểu Doom (Doom Melt)",
+  "description": "Clip đầu tan chảy xuống thành các cột không đều, như hiệu ứng chuyển màn hình của game Doom. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "doom",
+    "tan chảy",
+    "chảy xuống",
+    "cột",
+    "game",
+    "trò chơi"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "bars": {
+      "label": "Số thanh",
+      "description": "Số cột"
+    },
+    "amplitude": {
+      "label": "Biên độ",
+      "description": "Chênh lệch tốc độ giữa các cột (0: tất cả rơi cùng lúc)"
+    },
+    "noise": {
+      "label": "Nhiễu",
+      "description": "Phần ngẫu nhiên của chênh lệch tốc độ"
+    },
+    "frequency": {
+      "label": "Tần số",
+      "description": "Biến thiên tốc độ qua khung hình (cao hơn: sóng ngắn hơn)"
+    },
+    "drip_scale": {
+      "label": "Độ chảy ở giữa",
+      "description": "Mức các cột ở giữa chạy trước"
+    }
+  }
+}

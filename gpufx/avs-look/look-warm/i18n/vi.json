@@ -1,0 +1,16 @@
+{
+  "name": "Tông ấm",
+  "description": "Tông màu: nâu sepia nhẹ, bão hòa cao hơn, ngả vàng ấm.",
+  "tags": [
+    "ấm",
+    "vàng",
+    "màu",
+    "bộ lọc"
+  ],
+  "params": {
+    "amount": {
+      "label": "Mức độ",
+      "description": "Mức độ: 0 là ảnh gốc, 1 là toàn bộ tông màu"
+    }
+  }
+}

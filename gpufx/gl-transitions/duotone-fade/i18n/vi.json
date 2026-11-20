@@ -1,0 +1,34 @@
+{
+  "name": "Mờ hai tông (Duotone Fade)",
+  "description": "Clip đầu được in bằng hai loại mực, vùng tối trước, thành duotone tương phản mạnh; clip thứ hai được in đè lên bằng cùng hai loại mực, các tông tối của nó xuất hiện trước vùng sáng, rồi màu gốc của nó trở lại, vùng sáng trước. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "duotone",
+    "hai tông màu",
+    "in ấn",
+    "mực",
+    "tương phản",
+    "mờ dần"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "shadow_ink": {
+      "label": "Mực vùng tối",
+      "description": "Mực in ở vùng tối (alpha: độ mạnh)"
+    },
+    "highlight_ink": {
+      "label": "Mực vùng sáng",
+      "description": "Mực in ở vùng sáng (alpha: độ mạnh)"
+    },
+    "contrast": {
+      "label": "Độ tương phản",
+      "description": "Mức đẩy các tông ra xa nhau về phía hai loại mực"
+    },
+    "grain": {
+      "label": "Hạt",
+      "description": "Lượng hạt in trong mực và dọc chỗ chuyển giao"
+    }
+  }
+}

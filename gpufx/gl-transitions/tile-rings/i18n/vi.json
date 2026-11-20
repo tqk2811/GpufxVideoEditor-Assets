@@ -1,0 +1,34 @@
+{
+  "name": "Vòng ô (Tile Rings)",
+  "description": "Hình ảnh được cắt thành các ô đi trên các vòng chữ nhật đồng tâm như mặt số khóa số: các vòng xoay một phần tư vòng theo chiều xen kẽ, các ô rẽ góc như mắt xích, rồi các ô lật sang clip thứ hai theo đợt gợn chạy quanh mỗi vòng, và các vòng xoay ngược lại đến khi mọi ô khớp về chỗ. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "vòng ô",
+    "khóa số",
+    "đồng tâm",
+    "ô vuông",
+    "xoay",
+    "mắt xích"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "rings": {
+      "label": "Số vòng",
+      "description": "Số vòng, từ viền vào tâm"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Độ trễ giữa vòng trong cùng và vòng ngoài cùng, theo phần của chuyển cảnh"
+    },
+    "shadow": {
+      "label": "Bóng đổ",
+      "description": "Độ tối của bóng các ô được nhấc lên"
+    },
+    "back_color": {
+      "label": "Màu nền phía sau",
+      "description": "Màu khay thấy được giữa các ô"
+    }
+  }
+}

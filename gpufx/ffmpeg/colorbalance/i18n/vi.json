@@ -1,0 +1,54 @@
+{
+  "name": "Cân bằng màu",
+  "description": "Dịch riêng các kênh đỏ, xanh lá, xanh dương ở vùng tối, vùng trung tính và vùng sáng.",
+  "tags": [
+    "cân bằng màu",
+    "color balance",
+    "vùng tối",
+    "vùng sáng",
+    "tông màu",
+    "chỉnh màu"
+  ],
+  "params": {
+    "rs": {
+      "label": "Đỏ - vùng tối",
+      "description": "Dịch kênh đỏ ở vùng tối (từ cyan sang đỏ)"
+    },
+    "rm": {
+      "label": "Đỏ - vùng giữa",
+      "description": "Dịch kênh đỏ ở vùng trung tính (từ cyan sang đỏ)"
+    },
+    "rh": {
+      "label": "Đỏ - vùng sáng",
+      "description": "Dịch kênh đỏ ở vùng sáng (từ cyan sang đỏ)"
+    },
+    "gs": {
+      "label": "Xanh lá - vùng tối",
+      "description": "Dịch kênh xanh lá ở vùng tối (từ magenta sang xanh lá)"
+    },
+    "gm": {
+      "label": "Xanh lá - vùng giữa",
+      "description": "Dịch kênh xanh lá ở vùng trung tính (từ magenta sang xanh lá)"
+    },
+    "gh": {
+      "label": "Xanh lá - vùng sáng",
+      "description": "Dịch kênh xanh lá ở vùng sáng (từ magenta sang xanh lá)"
+    },
+    "bs": {
+      "label": "Xanh dương - vùng tối",
+      "description": "Dịch kênh xanh dương ở vùng tối (từ vàng sang xanh dương)"
+    },
+    "bm": {
+      "label": "Xanh dương - vùng giữa",
+      "description": "Dịch kênh xanh dương ở vùng trung tính (từ vàng sang xanh dương)"
+    },
+    "bh": {
+      "label": "Xanh dương - vùng sáng",
+      "description": "Dịch kênh xanh dương ở vùng sáng (từ vàng sang xanh dương)"
+    },
+    "pl": {
+      "label": "Giữ độ sáng",
+      "description": "Giữ nguyên độ sáng"
+    }
+  }
+}

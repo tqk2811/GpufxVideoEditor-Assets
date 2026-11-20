@@ -1,0 +1,29 @@
+{
+  "name": "Cuộn màu (Color Wrap)",
+  "description": "Mỗi kênh màu của clip đầu bị dịch chuyển và cuộn vòng thành các dải ảo giác trong khi hai clip hòa trộn. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "cuộn màu",
+    "ảo giác",
+    "psychedelic",
+    "kênh màu",
+    "dải màu"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "r_strength": {
+      "label": "Dịch kênh đỏ",
+      "description": "Mức dịch kênh đỏ trong suốt chuyển cảnh"
+    },
+    "g_strength": {
+      "label": "Dịch kênh xanh lá",
+      "description": "Mức dịch kênh xanh lá trong suốt chuyển cảnh"
+    },
+    "b_strength": {
+      "label": "Dịch kênh xanh dương",
+      "description": "Mức dịch kênh xanh dương trong suốt chuyển cảnh"
+    }
+  }
+}

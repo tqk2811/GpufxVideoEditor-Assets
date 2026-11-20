@@ -1,0 +1,30 @@
+{
+  "name": "LUT YUV",
+  "description": "Tra bảng bằng biểu thức trên các kênh luma và chroma (BT.709 full range), cộng thêm alpha.",
+  "tags": [
+    "LUT",
+    "bảng tra",
+    "biểu thức",
+    "lutyuv",
+    "chỉnh màu",
+    "yuv"
+  ],
+  "params": {
+    "y": {
+      "label": "Luma (Y)",
+      "description": "Kết quả của luma cho giá trị đầu vào `val`, 0..255"
+    },
+    "u": {
+      "label": "Chroma U",
+      "description": "Kết quả của chroma hiệu xanh dương cho `val`, 0..255 (128 = trung tính)"
+    },
+    "v": {
+      "label": "Chroma V",
+      "description": "Kết quả của chroma hiệu đỏ cho `val`, 0..255 (128 = trung tính)"
+    },
+    "a": {
+      "label": "Alpha",
+      "description": "Kết quả của kênh alpha cho `val`, 0..255"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Đấm zoom",
+  "description": "Bắt đầu phóng to rồi lắng xuống về khung hình gốc.",
+  "tags": [
+    "phóng to",
+    "zoom",
+    "nhấn mạnh",
+    "đấm"
+  ],
+  "params": {
+    "amp": {
+      "label": "Biên độ",
+      "description": "Độ phóng to thêm ở khung đầu tiên"
+    },
+    "duration": {
+      "label": "Thời lượng",
+      "description": "Thời lượng chuyển động tính bằng giây, tự rút ngắn theo clip nếu clip ngắn hơn"
+    },
+    "clip_time": {
+      "label": "Thời gian clip",
+      "description": "Số giây từ đầu clip, do trình chỉnh sửa tự điền"
+    },
+    "clip_duration": {
+      "label": "Độ dài clip",
+      "description": "Độ dài clip trên timeline tính bằng giây, do trình chỉnh sửa tự điền"
+    }
+  }
+}

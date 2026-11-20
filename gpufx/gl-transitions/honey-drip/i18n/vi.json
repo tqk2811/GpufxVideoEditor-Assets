@@ -1,0 +1,26 @@
+{
+  "name": "Mật ong nhỏ giọt (Honey Drip)",
+  "description": "Clip đầu chảy xệ như mật ong treo từ đỉnh khung hình: phần đáy dồn thành một giọt hổ phách nặng kéo phần giữa thành sợi bóng mỏng dần, sợi đứt, giọt rơi khỏi khung hình và phần còn lại bật lên, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "mật ong",
+    "nhỏ giọt",
+    "chảy",
+    "hổ phách",
+    "dính",
+    "giọt"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "snap": {
+      "label": "Thời điểm đứt",
+      "description": "Thời điểm sợi đứt, theo phần của chuyển cảnh"
+    },
+    "gloss": {
+      "label": "Độ bóng",
+      "description": "Độ mạnh của đổ bóng, độ sâu hổ phách và khúc xạ"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Mờ biến thiên (Variable Blur)",
+  "description": "Làm mờ hộp có bán kính thay đổi theo từng điểm ảnh và từng kênh theo độ sáng của bản đồ bán kính (đầu vào thứ hai).",
+  "tags": [
+    "làm mờ",
+    "mờ biến thiên",
+    "variable blur",
+    "độ sâu trường ảnh",
+    "bản đồ",
+    "blur"
+  ],
+  "params": {
+    "min_r": {
+      "label": "Bán kính nhỏ nhất",
+      "description": "Bán kính làm mờ nhỏ nhất, dùng ở nơi bản đồ màu đen"
+    },
+    "max_r": {
+      "label": "Bán kính lớn nhất",
+      "description": "Bán kính làm mờ lớn nhất, dùng ở nơi bản đồ màu trắng (được nâng lên min_r + 1 khi không lớn hơn min_r)"
+    }
+  }
+}

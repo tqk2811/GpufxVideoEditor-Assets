@@ -1,0 +1,24 @@
+{
+  "name": "Nơ (Bow Tie)",
+  "description": "Hai tam giác mọc từ mép trên và dưới thành hình chiếc nơ để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "nơ",
+    "tam giác",
+    "cà vạt",
+    "bướm"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "adjust": {
+      "label": "Vị trí đỉnh",
+      "description": "Vị trí ngang của các đỉnh"
+    },
+    "reverse": {
+      "label": "Đảo ngược",
+      "description": "Chạy hiệu ứng quét ngược lại"
+    }
+  }
+}

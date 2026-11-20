@@ -1,0 +1,32 @@
+{
+  "name": "Trượt (Slide)",
+  "description": "Clip thứ hai trượt vào khung: đẩy clip đầu ra, phủ lên nó, để lộ nó ra, hoặc đẩy qua một khoảng trống màu `color` (`mode`). Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "chuyển cảnh",
+    "trượt",
+    "slide",
+    "đẩy",
+    "push",
+    "cover",
+    "uncover",
+    "transition"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "0 = trái, 1 = phải, 2 = lên, 3 = xuống"
+    },
+    "mode": {
+      "label": "Kiểu",
+      "description": "0 = push (clip thứ hai đẩy clip đầu ra), 1 = cover (clip thứ hai trượt vào phủ lên clip đầu đứng yên), 2 = uncover (clip đầu trượt ra khỏi clip thứ hai đứng yên), 3 = push through color (clip đầu bị đẩy ra, một khoảng trống `color`, rồi clip thứ hai được đẩy vào)"
+    },
+    "color": {
+      "label": "Màu nền",
+      "description": "Nền giữa các clip ở kiểu 3"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Vỡ kính (Shatter)",
+  "description": "Clip đầu nứt như tấm kính từ điểm va chạm, rồi các mảnh vỡ tách ra và rơi đi lăn 3D, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "vỡ kính",
+    "mảnh vỡ",
+    "kính vỡ",
+    "nứt",
+    "va chạm",
+    "vỡ vụn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm va chạm (0..1, y hướng xuống)"
+    },
+    "shards": {
+      "label": "Số mảnh vỡ",
+      "description": "Số hàng mảnh vỡ xấp xỉ"
+    },
+    "gravity": {
+      "label": "Trọng lực",
+      "description": "Độ mạnh của trọng lực"
+    },
+    "seed": {
+      "label": "Hạt giống",
+      "description": "Hạt giống ngẫu nhiên: giá trị khác cho mảnh vỡ khác"
+    }
+  }
+}

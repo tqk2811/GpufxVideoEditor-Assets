@@ -1,0 +1,20 @@
+{
+  "name": "Bàn cờ (Chessboard)",
+  "description": "Các ô của bàn cờ được quét mở lần lượt từng màu, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "bàn cờ",
+    "ô vuông",
+    "caro",
+    "cờ vua"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "squares": {
+      "label": "Số ô vuông",
+      "description": "Số ô vuông theo chiều ngang khung hình"
+    }
+  }
+}

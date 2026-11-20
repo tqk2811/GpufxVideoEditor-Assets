@@ -1,0 +1,22 @@
+{
+  "name": "Xoay 90 độ (Transpose)",
+  "description": "Xoay ảnh 90 độ, có thể kèm lật, đổi chỗ chiều rộng và chiều cao.",
+  "tags": [
+    "xoay 90",
+    "transpose",
+    "lật",
+    "xoay dọc",
+    "xoay ngang",
+    "đổi chiều"
+  ],
+  "params": {
+    "dir": {
+      "label": "Hướng",
+      "description": "cclock_flip = xoay 90 độ ngược chiều kim đồng hồ và lật dọc, clock = xoay 90 độ theo chiều kim đồng hồ, cclock = xoay 90 độ ngược chiều kim đồng hồ, clock_flip = xoay 90 độ theo chiều kim đồng hồ và lật dọc"
+    },
+    "passthrough": {
+      "label": "Giữ nguyên",
+      "description": "Giữ nguyên ảnh khi nó đã là khung dọc (cao >= rộng) hoặc khung ngang (rộng >= cao)"
+    }
+  }
+}

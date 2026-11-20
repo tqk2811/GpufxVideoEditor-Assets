@@ -1,0 +1,29 @@
+{
+  "name": "Gạch chéo (Crosshatch)",
+  "description": "Clip thứ hai hiện ra qua lưới gạch chéo các đường lan ra từ một điểm. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "gạch chéo",
+    "đường kẻ",
+    "lưới",
+    "tỏa ra",
+    "đan chéo"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm các đường lan ra (0..1, y hướng xuống)"
+    },
+    "threshold": {
+      "label": "Ngưỡng",
+      "description": "Độ chậm các đường lan ra từ điểm"
+    },
+    "fade_edge": {
+      "label": "Độ mờ hai đầu",
+      "description": "Phần chuyển cảnh được làm mờ ở mỗi đầu"
+    }
+  }
+}

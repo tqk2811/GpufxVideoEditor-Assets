@@ -1,0 +1,34 @@
+{
+  "name": "Sóng vỗ bờ (Shore Wash)",
+  "description": "Một lớp nước mỏng chảy lên clip đầu như đợt sóng cuối trên bãi biển, mép đầu thùy tròn viền bọt xốp; nó chậm lại, dừng ngay quá mép xa và rút về, để lại clip thứ hai ướt bóng khi khô dần. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "sóng biển",
+    "bờ biển",
+    "nước",
+    "bọt",
+    "bãi biển",
+    "sóng vỗ"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng nước chảy lên (x sang phải, y lên trên)"
+    },
+    "foam": {
+      "label": "Bọt",
+      "description": "Lượng bọt ở mép đầu và để lại phía sau"
+    },
+    "refraction": {
+      "label": "Khúc xạ",
+      "description": "Mức lớp nước bẻ cong hình ảnh bên dưới"
+    },
+    "water": {
+      "label": "Màu nước",
+      "description": "Màu của nước (alpha: độ mạnh)"
+    }
+  }
+}

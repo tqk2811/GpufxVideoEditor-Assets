@@ -1,0 +1,34 @@
+{
+  "name": "Lật tam giác (Triangle Flip)",
+  "description": "Hình ảnh được cắt thành khảm các tam giác lật theo phối cảnh thành một đợt sóng lan từ một điểm, mỗi tam giác lăn đi quanh một trong ba trục, bắt một tia sáng và đổ bóng mềm, và hiện phần clip thứ hai của nó ở mặt sau. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "tam giác",
+    "lật",
+    "mosaic",
+    "khảm",
+    "sóng lật",
+    "3d"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "rows": {
+      "label": "Số hàng",
+      "description": "Số hàng tam giác theo chiều cao khung hình"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm đợt sóng lật lan ra từ đó (0..1, y hướng xuống)"
+    },
+    "stagger": {
+      "label": "Độ so le",
+      "description": "Thời gian sóng đi qua khung hình, theo phần của chuyển cảnh: 0 lật mọi tam giác cùng lúc"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ mạnh của ánh sáng và bóng trên các tam giác đang xoay và của bóng ở các lỗ chúng để lại"
+    }
+  }
+}

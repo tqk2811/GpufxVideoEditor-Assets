@@ -1,0 +1,38 @@
+{
+  "name": "Sóng xung kích (Shockwave)",
+  "description": "Một sóng xung kích chéo làm clip đầu vỡ thành các ô kính rơi với tách sắc và viền neon phát sáng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "sóng xung kích",
+    "nổ",
+    "kính rơi",
+    "neon",
+    "tách sắc",
+    "shockwave"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "tile_size": {
+      "label": "Kích thước ô",
+      "description": "Kích thước mỗi ô, so với chiều cao khung hình"
+    },
+    "scatter": {
+      "label": "Độ tản",
+      "description": "Mức các ô trượt và rơi"
+    },
+    "diagonal": {
+      "label": "Độ chéo",
+      "description": "0: quét ngang, 1: chéo mạnh"
+    },
+    "prism": {
+      "label": "Tách đỏ/xanh",
+      "description": "Mức tách đỏ/xanh ở các mép đang chuyển động"
+    },
+    "glow": {
+      "label": "Quầng sáng",
+      "description": "Độ sáng của viền các ô có màu"
+    }
+  }
+}

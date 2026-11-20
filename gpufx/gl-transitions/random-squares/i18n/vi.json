@@ -1,0 +1,25 @@
+{
+  "name": "Ô vuông ngẫu nhiên (Random Squares)",
+  "description": "Clip thứ hai hiện ra theo từng ô vuông ngẫu nhiên. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ô vuông ngẫu nhiên",
+    "ngẫu nhiên",
+    "pixel",
+    "khối",
+    "mosaic"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "size": {
+      "label": "Số ô",
+      "description": "Số ô vuông (cột, hàng)"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của lần chuyển mỗi ô vuông"
+    }
+  }
+}

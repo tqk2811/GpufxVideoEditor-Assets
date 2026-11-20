@@ -1,0 +1,17 @@
+{
+  "name": "Cuộn trang (Page Curl)",
+  "description": "Clip đầu cuộn đi như một trang giấy, để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "cuộn trang",
+    "lật trang",
+    "giấy",
+    "sách",
+    "trang giấy"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    }
+  }
+}

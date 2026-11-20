@@ -1,0 +1,29 @@
+{
+  "name": "Hoán đổi (Swap)",
+  "description": "Hai clip đổi chỗ trong 3D, có phản chiếu sàn. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "hoán đổi",
+    "đổi chỗ",
+    "3d",
+    "phản chiếu",
+    "đảo chỗ"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "reflection": {
+      "label": "Phản chiếu",
+      "description": "Độ mạnh của phản chiếu"
+    },
+    "perspective": {
+      "label": "Phối cảnh",
+      "description": "Mức độ phối cảnh"
+    },
+    "depth": {
+      "label": "Độ sâu",
+      "description": "Mức các clip lùi ra phía sau"
+    }
+  }
+}

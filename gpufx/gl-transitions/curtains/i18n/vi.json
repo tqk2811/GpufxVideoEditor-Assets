@@ -1,0 +1,33 @@
+{
+  "name": "Rèm mở (Curtains)",
+  "description": "Clip đầu tách ra ở giữa như rèm sân khấu, xếp thành các nếp có đổ bóng khi bị kéo sang hai bên. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "rèm",
+    "màn",
+    "sân khấu",
+    "mở rèm",
+    "kéo rèm"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "folds": {
+      "label": "Số nếp gấp",
+      "description": "Số nếp gấp trên mỗi tấm rèm"
+    },
+    "shading": {
+      "label": "Đổ bóng",
+      "description": "Độ sâu đổ bóng trên các nếp gấp"
+    },
+    "bunch": {
+      "label": "Độ dồn rèm",
+      "description": "Độ rộng mỗi tấm rèm khi dồn lại, theo phần chiều rộng khung hình"
+    },
+    "sway": {
+      "label": "Độ đung đưa",
+      "description": "Mức phần dưới rèm trễ so với phần trên"
+    }
+  }
+}

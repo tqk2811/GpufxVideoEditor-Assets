@@ -1,0 +1,38 @@
+{
+  "name": "Tan khói (Smoke Dissolve)",
+  "description": "Khói cuồn cuộn trôi vào trên clip đầu, với đỉnh được chiếu sáng, nếp tối hơn và mép mảnh, và đặc dần đến khi phủ kín khung hình; khi nó mỏng đi và trôi đi, clip thứ hai hiện qua. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "khói",
+    "sương khói",
+    "cuồn cuộn",
+    "mây khói",
+    "tan",
+    "hơi nước"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "direction": {
+      "label": "Hướng",
+      "description": "Hướng khói trôi tới (nó đi vào từ phía đối diện); độ dài của nó là mức khói trôi, tính theo chiều cao khung hình (x sang phải, y lên trên)"
+    },
+    "scale": {
+      "label": "Tỷ lệ",
+      "description": "Kích thước các cuộn khói: giá trị lớn hơn cho nhiều cuộn nhỏ hơn"
+    },
+    "spread": {
+      "label": "Độ lan",
+      "description": "Mức khói cuộn vào từ một phía thay vì khắp nơi cùng lúc"
+    },
+    "softness": {
+      "label": "Độ mềm",
+      "description": "Độ mềm của khói: giá trị lớn hơn cho mép mảnh, trong suốt hơn"
+    },
+    "color": {
+      "label": "Màu",
+      "description": "Màu của khói, được chiếu sáng từ phía trên"
+    }
+  }
+}

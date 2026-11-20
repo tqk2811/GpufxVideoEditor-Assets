@@ -1,0 +1,24 @@
+{
+  "name": "Quét thẳng",
+  "description": "Hiện ảnh sau một cạnh thẳng mềm quét ngang qua; phần còn lại trong suốt. Điều khiển progress từ 0 (không có gì) đến 1 (toàn bộ ảnh).",
+  "tags": [
+    "quét",
+    "chuyển cảnh",
+    "hiện dần",
+    "cạnh thẳng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = ẩn, 1 = hiện toàn bộ"
+    },
+    "angle": {
+      "label": "Góc",
+      "description": "Hướng di chuyển của cạnh, độ: 0 = trái sang phải, 90 = trên xuống dưới"
+    },
+    "softness": {
+      "label": "Độ mềm",
+      "description": "Độ rộng cạnh, tính theo quãng quét"
+    }
+  }
+}

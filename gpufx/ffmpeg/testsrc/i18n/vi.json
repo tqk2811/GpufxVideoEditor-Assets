@@ -1,0 +1,22 @@
+{
+  "name": "Ảnh kiểm tra (Test Source)",
+  "description": "Mẫu kiểm tra testsrc của FFmpeg: thanh màu, vòng tròn, dải gradient trượt, đồng hồ (bộ tạo hình).",
+  "tags": [
+    "ảnh kiểm tra",
+    "test",
+    "testsrc",
+    "mẫu thử",
+    "bộ tạo",
+    "đồng hồ"
+  ],
+  "params": {
+    "decimals": {
+      "label": "Số thập phân",
+      "description": "Số chữ số thập phân của đồng hồ"
+    },
+    "opacity": {
+      "label": "Độ mờ lớp phủ",
+      "description": "Trộn lên ảnh đầu vào: 1 = chỉ ảnh được tạo, 0 = giữ nguyên ảnh đầu vào"
+    }
+  }
+}

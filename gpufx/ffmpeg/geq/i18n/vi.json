@@ -1,0 +1,34 @@
+{
+  "name": "Phương trình tùy ý (Geq)",
+  "description": "Biểu thức riêng cho từng điểm ảnh của đỏ, xanh lá, xanh dương và alpha, theo vị trí, thời gian và giá trị các kênh của chính điểm ảnh.",
+  "tags": [
+    "biểu thức",
+    "phương trình",
+    "geq",
+    "công thức",
+    "tùy chỉnh",
+    "nâng cao"
+  ],
+  "params": {
+    "fps": {
+      "label": "Tốc độ khung",
+      "description": "Tốc độ khung dùng để tính N từ thời gian"
+    },
+    "r": {
+      "label": "Biểu thức đỏ",
+      "description": "Biểu thức kênh đỏ, kết quả 0..255"
+    },
+    "g": {
+      "label": "Biểu thức xanh lá",
+      "description": "Biểu thức kênh xanh lá, kết quả 0..255"
+    },
+    "b": {
+      "label": "Biểu thức xanh dương",
+      "description": "Biểu thức kênh xanh dương, kết quả 0..255"
+    },
+    "a": {
+      "label": "Biểu thức alpha",
+      "description": "Biểu thức kênh alpha, kết quả 0..255"
+    }
+  }
+}

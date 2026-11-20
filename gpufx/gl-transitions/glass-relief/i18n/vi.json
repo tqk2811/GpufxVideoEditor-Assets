@@ -1,0 +1,30 @@
+{
+  "name": "Chạm nổi thủy tinh (Glass Relief)",
+  "description": "Hình dạng của clip thứ hai trồi lên qua clip đầu như thủy tinh đúc trong suốt, bẻ cong hình và bắt sáng dọc đường viền; rồi thủy tinh đầy màu của clip thứ hai, phần sáng nhất trước, và tan phẳng vào nó. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "thủy tinh",
+    "kính",
+    "chạm nổi",
+    "khúc xạ",
+    "relief",
+    "đúc"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "refraction": {
+      "label": "Khúc xạ",
+      "description": "Mức thủy tinh bẻ cong hình ảnh phía sau mạnh đến đâu"
+    },
+    "shine": {
+      "label": "Độ chói",
+      "description": "Độ sáng của ánh sáng thủy tinh bắt được"
+    },
+    "light": {
+      "label": "Hướng sáng",
+      "description": "Hướng ánh sáng đến ở đỉnh của chạm nổi; nó xoay quanh trong suốt chuyển cảnh (x sang phải, y lên trên)"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Màn hình CRT",
+  "description": "Màn hình CRT cũ: kính cong, đường quét, lớp phủ phosphor RGB và góc tối.",
+  "tags": [
+    "CRT",
+    "đường quét",
+    "TV cũ",
+    "retro"
+  ],
+  "params": {
+    "curvature": {
+      "label": "Độ cong",
+      "description": "Độ phồng của mặt kính"
+    },
+    "lines": {
+      "label": "Số đường quét",
+      "description": "Số đường quét; 0 là cứ 3 pixel một đường"
+    },
+    "scanlines": {
+      "label": "Đường quét",
+      "description": "Độ tối của khe giữa các đường quét"
+    },
+    "mask": {
+      "label": "Lớp phosphor",
+      "description": "Cường độ các sọc phosphor RGB"
+    },
+    "vignette": {
+      "label": "Tối góc",
+      "description": "Độ tối của các góc"
+    },
+    "brightness": {
+      "label": "Độ sáng",
+      "description": "Độ sáng, để bù cho các khe tối"
+    },
+    "border": {
+      "label": "Viền",
+      "description": "Màu bên ngoài màn hình cong"
+    }
+  }
+}

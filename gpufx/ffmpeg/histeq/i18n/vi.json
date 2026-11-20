@@ -1,0 +1,26 @@
+{
+  "name": "Cân bằng histogram",
+  "description": "Cân bằng histogram toàn cục cho luma của từng khung hình, trộn với ảnh gốc theo một cường độ.",
+  "tags": [
+    "histogram",
+    "cân bằng",
+    "tương phản",
+    "tự động",
+    "histeq",
+    "equalization"
+  ],
+  "params": {
+    "strength": {
+      "label": "Cường độ",
+      "description": "Độ trộn của luma đã cân bằng và luma gốc: 0 giữ nguyên ảnh, 1 cân bằng hoàn toàn"
+    },
+    "intensity": {
+      "label": "Cường độ tối đa",
+      "description": "Luma đầu ra lớn nhất của phép cân bằng, theo tỉ lệ của 1000/255 (0.255 ứng với trắng hoàn toàn)"
+    },
+    "antibanding": {
+      "label": "Chống sọc",
+      "description": "Dither ngẫu nhiên luma đầu ra giữa các mục lân cận của bảng, chống sọc màu"
+    }
+  }
+}

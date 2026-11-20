@@ -1,0 +1,22 @@
+{
+  "name": "Gradfun",
+  "description": "Khử sọc màu bằng cách khớp một gradient mượt vào vùng phẳng rồi thêm dither cho kết quả.",
+  "tags": [
+    "khử banding",
+    "sọc màu",
+    "gradient",
+    "làm mịn",
+    "gradfun",
+    "deband"
+  ],
+  "params": {
+    "strength": {
+      "label": "Cường độ",
+      "description": "Lượng thay đổi tối đa của một điểm ảnh, tính theo mức 8-bit"
+    },
+    "radius": {
+      "label": "Bán kính",
+      "description": "Kích thước vùng lân cận mà gradient được khớp vào"
+    }
+  }
+}

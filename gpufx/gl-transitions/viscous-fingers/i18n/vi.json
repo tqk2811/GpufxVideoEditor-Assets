@@ -1,0 +1,26 @@
+{
+  "name": "Ngón nhớt (Viscous Fingers)",
+  "description": "Clip thứ hai được đẩy vào clip đầu như không khí vào dầu bị ép giữa hai tấm kính: bong bóng lớn thành vài ngón tròn liên tục chẻ đôi ở đầu ngón, đẩy hình cũ sang bên thành các sợi bóng mỏng, đến khi các ngón phồng lên và lấp các khe cuối cùng. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "ngón tay nhớt",
+    "dầu",
+    "chất lỏng nhớt",
+    "phân nhánh",
+    "bong bóng",
+    "lan rộng"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "center": {
+      "label": "Tâm",
+      "description": "Điểm clip thứ hai được đẩy vào (0..1, y hướng xuống)"
+    },
+    "fingers": {
+      "label": "Số ngón",
+      "description": "Số ngón rời khỏi bong bóng đầu tiên"
+    }
+  }
+}

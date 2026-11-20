@@ -1,0 +1,29 @@
+{
+  "name": "Quét xoắn ốc (Spiral Wipe)",
+  "description": "Một cánh xoắn ốc cuộn ra từ tâm và rộng dần để lộ clip thứ hai. Điều khiển `progress` từ 0 đến 1.",
+  "tags": [
+    "xoắn ốc",
+    "cuộn",
+    "quét",
+    "xoáy",
+    "hình xoắn"
+  ],
+  "params": {
+    "progress": {
+      "label": "Tiến trình",
+      "description": "0 = clip đầu, 1 = clip thứ hai"
+    },
+    "turns": {
+      "label": "Số vòng",
+      "description": "Số vòng của xoắn ốc"
+    },
+    "smoothness": {
+      "label": "Độ mềm cạnh",
+      "description": "Độ mềm của mép cánh"
+    },
+    "clockwise": {
+      "label": "Theo chiều kim đồng hồ",
+      "description": "Cuộn theo chiều kim đồng hồ (tắt: ngược chiều)"
+    }
+  }
+}

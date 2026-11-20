@@ -1,0 +1,12 @@
+{
+  "name": "Đổi kênh UV",
+  "description": "Bản port của bộ lọc swapuv FFmpeg: hoán đổi hai kênh U và V (các kênh hiệu màu).",
+  "tags": [
+    "đổi kênh",
+    "swap uv",
+    "uv",
+    "hoán đổi",
+    "đổi màu",
+    "kênh màu"
+  ]
+}
