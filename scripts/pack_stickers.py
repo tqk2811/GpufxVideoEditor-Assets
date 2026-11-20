@@ -258,9 +258,7 @@ def main():
     validate(items)
 
     args.output.mkdir(parents=True, exist_ok=True)
-    target = args.output / ZIP_NAME
-    write_zip(target, manifest, items)
-    print(f"{ZIP_NAME}\t{len(items)} items\t{target.stat().st_size} bytes")
+    write_packs(args.output, manifest, items)
     categories = {}
     for item, _ in items:
         categories[item["category"]] = categories.get(item["category"], 0) + 1
